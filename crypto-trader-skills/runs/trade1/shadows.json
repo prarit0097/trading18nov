@@ -6346,8 +6346,14 @@
         "observed_at": "2026-11-19T10:23:39.714299+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "63753.10750",
+        "fees": "0.2032598172356735722898169462",
+        "funding": "0",
+        "net_pnl": "-0.4714373172356735722898169462",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T10:38:19.151200+00:00"
       }
     ]
   },
@@ -6381,8 +6387,14 @@
         "observed_at": "2026-11-19T10:23:39.714299+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "1802.19845",
+        "fees": "0.05751366077880189174986862848",
+        "funding": "0",
+        "net_pnl": "-0.2375601607788018917498686285",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T10:38:19.151200+00:00"
       }
     ]
   },
@@ -6412,8 +6424,10 @@
         "observed_at": "2026-11-19T10:23:39.714299+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 30,
+        "observed_at": "2026-11-19T10:38:19.151200+00:00"
       }
     ]
   },
@@ -6443,8 +6457,14 @@
         "observed_at": "2026-11-19T10:23:39.714299+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "75.3133245",
+        "fees": "0.2403826319185838701980434264",
+        "funding": "0",
+        "net_pnl": "-1.058409131918583870198043426",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T10:38:19.151200+00:00"
       }
     ]
   }

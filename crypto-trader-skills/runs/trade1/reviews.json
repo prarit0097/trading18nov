@@ -12102,10 +12102,10 @@
         }
       },
       "726da93f8aba7aa1c39c7735a8f88be2b58097ed6f16aae29ece1354afef548c": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "9c66ee51fafda10c6c63d087c2d770c42175efe832bfb6548507428c9491d61f",
-        "queued_at": "2026-11-19T10:28:33.429701+00:00",
+        "evidence_sha256": "8ec7d29c5c426070f6832c840d20d13327e4636f445933ea8d31bf383f09f8e3",
+        "queued_at": "2026-11-19T10:38:19.151200+00:00",
         "evidence": [
           {
             "order_id": "2178797838",
@@ -12722,8 +12722,14 @@
                 "observed_at": "2026-11-19T10:23:39.714299+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "63753.10750",
+                "fees": "0.2032598172356735722898169462",
+                "funding": "0",
+                "net_pnl": "-0.4714373172356735722898169462",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T10:38:19.151200+00:00"
               }
             ]
           }
@@ -12748,12 +12754,12 @@
               "mean_paired_change_usd": "-0.235700126730909003900894422"
             },
             "30": {
-              "pairs": 3,
-              "pending": 1,
+              "pairs": 4,
+              "pending": 0,
               "unavailable": 6,
-              "actual_win_rate": 0.3333333333333333,
+              "actual_win_rate": 0.25,
               "modeled_win_rate": 0.0,
-              "mean_paired_change_usd": "-0.1288520432023340313357112480"
+              "mean_paired_change_usd": "-0.1775154392106689165742376726"
             }
           }
         },
@@ -12766,7 +12772,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T10:39:49.835042+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "All ten entries were WAIT. Public closed five-minute candles put READY breadth at 1, 0, 0 and 0 in the represented decisions, with DOGE the sole READY coin and outside its basket. Both wins came from one basket. Five of the eight observable IOC fills belong to this review. All eight forecasts matched full fills, and six snapshots repeated a book last changed more than one second earlier. The earlier BTC zero-fill and SOL price-guard stop had no paired depth. Prospectively record both exchange book-change and receipt times and report full, partial, zero-fill and unsent counts by basket.",
+            "entry_exit": "All ten used the ten-minute timers. Five official 15-minute pairs reduced winners from two to zero and mean net by $0.23570013. Supplemental depth raised coverage to six with the same two lost winners and mean change -$0.19766199. Four official 30-minute pairs reduced winners from one to zero and mean net by $0.17751544. Supplemental depth gave six 30-minute pairs, dropping both winners and mean net by $0.27058674. Four positions each horizon lacked verified incremental funding across a UTC hour. Modeled results use the existing mark-bracket and five-basis-point exit slippage assumptions, with funding evidence required across the UTC hour.",
+            "risk_costs": "Gross profit of $0.54000000 did not cover $1.21563914 in commissions. Funding was zero and net was -$0.67563914. Peak planned position risk was $3.2203424, peak day loss plus reserve was $28.08129031 and leverage stayed at or below five times. Planned initial margin ranged from 69.63 to 70.10 percent of available. The exit delay extended exposure and its P&L impact is unmeasured.",
+            "execution": "The exchange independently confirmed ten full three-contract reduce-only market exits. The last reviewed BTC close was submitted 11.761 seconds late. The three subsequent positions in its basket also submitted 10.051 to 11.286 seconds late. Exchange order creation to fill was under 5.4 milliseconds across that basket. Timing evidence places the delays before submission. The observer creates an MCP session and reconciles paginated history before per-lot exit checks. At this scale the observed page counts imply at least ten history reads. There are no retained phase timings to isolate the cause.",
+            "reconciliation_validation": "Independent verification matched twenty distinct fills, twenty commission debits and ten cashflows with zero funding. The group covers closes 161 through 170 across four basket slices and excludes ETH, XRP and SOL closes 171 through 173. The two winners came from one basket. The group net was -$0.67563914, drawdown was $0.74844085 and net excluding its best trade was -$0.87007861. The first 170 trades have 39 wins across 53 source baskets, with net -$20.42042635. All 173 settle to -$21.18074871."
+          },
+          "manager": {
+            "findings": "Gross performance of 4.72 basis points on $1,144.3995 in entry notional fell short of 10.62 basis points of commissions. The group had two winners in one of four represented baskets and net -$0.67563914. No decision reached four READY coins. In the first 170 closes, 106 official 15-minute pairs went from 26 to 22 winners and lost $0.05159877 per matched trade on average. The 81 official 30-minute pairs went from 18 to 22 winners and lost $0.05234691 per matched trade on average. Three passive flat cycles reached the pre-timer timestamp 9.406 to 10.113 seconds after reconciliation lock creation. The flat timing baseline warrants passive open-basket observation and does not identify the cause of the earlier delays.",
+            "recommendation": "Retain the ten-minute timer, three-contract exposure, IOC guards and frozen four-READY test. Prospectively measure observer wake and session startup, the account and history reads, each due check, pre-submit and acknowledgement, along with exchange creation and fill timestamps. Record monotonic phase durations, queue size and basket association. Compare per-basket due-to-send median, 95th percentile and fraction above ten seconds. Reproduce the observed phases offline before considering a scheduling change. For IOC research, distinguish missing depth, repeated books and guarded orders from partial or zero fills."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "Retain current order size, risk limits and ten-minute exit. The two longer horizons produced fewer winners and lower mean net across this group's respective matched samples. Record fresh phase timings before considering a scheduling change. Preserve the frozen prospective four-READY validation."
+          }
+        }
       }
     },
     "candidate_registry": {
