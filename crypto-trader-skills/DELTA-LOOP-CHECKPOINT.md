@@ -781,3 +781,5 @@ The four positions in batch `demo-1795063166677196500` each closed on their orig
 The following batch `demo-1795063794635876100` filled three contracts each for BTC, ETH, XRP and SOL. All four brackets were verified. Fees-inclusive planned risk was $7.7069942 and timed exits are due from 10:29:56 to 10:30:02 IST. The 15- and 30-minute public depth captures are scheduled.
 
 The Trading project rule book records `prarit0097/trading18nov` as the canonical GitHub repository. Publish verified demo workbooks, research, rules and project changes at each checkpoint. Keep local execution state and private account responses on the workstation.
+
+At 10:25 IST the 15-minute public depth estimate for the four trades in batch `demo-1795063166677196500` paired all four. It recovered XRP's empty candle reference. The 10-minute result was three winners and −$0.08393605 net. The modeled 15-minute result was two winners and −$0.94752674 net. This estimate is tracked as research.
