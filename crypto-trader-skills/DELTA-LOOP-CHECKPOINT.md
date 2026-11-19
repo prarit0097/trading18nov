@@ -803,3 +803,11 @@ The observer produced terminal digest `fc5200b263f66207a2cfd35a464aa76e65b6b1edd
 The official 15-minute comparison had six pairs, with wins falling from two to one and mean net falling by $0.10301677. At 30 minutes four entries matched, with one modeled win and +$0.25094455 mean net change. The matched model still lost $0.33929381 after costs. Six official 30-minute observations were unavailable. Supplemental depth added two pairs at 15 minutes and one at 30 minutes. Five hypothetical funding adjustments remain unverified. Across the first 110 trades, official 15- and 30-minute estimates paired 62 and 47 entries and changed average net by −$0.05816322 and +$0.01261650, respectively. Both modeled aggregates lost money.
 
 The next basket `demo-1795065735250059600` filled BTC, ETH, XRP and SOL at three contracts each. The observer confirmed all four stop-loss and target pairs, with $7.6892738 total planned risk including fees. First-fill deadlines are 11:02:16.441–11:02:22.248 IST. Read-only 15- and 30-minute depth captures are scheduled. The latest verified weekly quota was 82% remaining and the five-hour view was unavailable.
+
+### Trades 112–115 — 19 November, 11:03 IST
+
+Delta India testnet independently confirmed eight fills at three contracts per side for batch `demo-1795065735250059600`. Twelve wallet postings establish +$0.09150000 gross, $0.50254455 commissions, zero funding and −$0.41104455 net. All four positions exited on their original timers. BTC, ETH, XRP and SOL netted −$0.20945657, −$0.01375960, −$0.00160079 and −$0.18622759, respectively. Their exits were submitted 0.965–3.895 seconds after deadline.
+
+Workbook and ledger match at 115 verified closes, eleven finalized reviews and −$12.75964063 cumulative net. Review 12 has five verified closes.
+
+The next batch `demo-1795066360590446300` filled BTC, ETH, XRP and SOL at three contracts each. All four protections were verified. Fees-inclusive planned risk is $7.6908212. Individual deadlines are 11:12:41.811–11:12:47.470 IST. The public 15- and 30-minute depth captures were started for this batch.
