@@ -6892,8 +6892,10 @@
         "observed_at": "2026-11-19T11:59:01.623802+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:09:47.264530+00:00"
       }
     ]
   },
@@ -6927,8 +6929,10 @@
         "observed_at": "2026-11-19T11:59:01.623802+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:09:47.264530+00:00"
       }
     ]
   },
@@ -6958,8 +6962,10 @@
         "observed_at": "2026-11-19T11:59:01.623802+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:09:47.264530+00:00"
       }
     ]
   },
@@ -6983,8 +6989,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T12:09:47.264530+00:00"
       },
       {
         "status": "pending",
@@ -7012,8 +7020,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T12:09:47.264530+00:00"
       },
       {
         "status": "pending",
@@ -7037,6 +7047,124 @@
       "0.00952774",
       "0",
       "-0.09701406",
+      "DOGEUSD"
+    ],
+    "results": [
+      {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T12:09:47.264530+00:00"
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178811430": {
+    "signature": [
+      "2026-11-19T11:59:15.068432Z",
+      "2026-11-19T12:09:18.044117Z",
+      "ten_minute",
+      "63761.5",
+      "63926.5",
+      3,
+      "0.001",
+      "long",
+      "63314.4",
+      "65233.2",
+      "0.20340701",
+      "0.10183493",
+      "0",
+      "-0.69840701",
+      "BTCUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178811434": {
+    "signature": [
+      "2026-11-19T11:59:16.946951Z",
+      "2026-11-19T12:09:19.179391Z",
+      "ten_minute",
+      "1802.65",
+      "1806.45",
+      3,
+      "0.01",
+      "long",
+      "1789.20",
+      "1843.50",
+      "0.05749299",
+      "0.02877676",
+      "0",
+      "-0.17149299",
+      "ETHUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178811443": {
+    "signature": [
+      "2026-11-19T11:59:19.234336Z",
+      "2026-11-19T12:09:33.487372Z",
+      "ten_minute",
+      "0.985",
+      "0.9885",
+      3,
+      "1",
+      "long",
+      "0.9801",
+      "1.0098",
+      "0.00314380",
+      "0.00157469",
+      "0",
+      "-0.01364380",
+      "XRPUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178811450": {
+    "signature": [
+      "2026-11-19T11:59:21.682908Z",
+      "2026-11-19T12:09:34.644921Z",
+      "ten_minute",
+      "0.0594",
+      "0.05963",
+      3,
+      "100",
+      "long",
+      "0.059043",
+      "0.060834",
+      "0.01896148",
+      "0.00949906",
+      "0.00113597",
+      "-0.08682551",
       "DOGEUSD"
     ],
     "results": [

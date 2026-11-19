@@ -1107,3 +1107,9 @@ For trades 184–186, a public India testnet tape recorded 144 funding observati
 The frozen replay reproduced the existing 15-minute results and the default 30-minute missing-funding result. Removing XRP funding observations returned its outcome to unavailable. The public tape checksum, candle inputs and row-level replay are in `runs/trade1/funding-aware-replay-demo-1795088141664266500-30.json`. These are supplemental research results.
 
 Trades 187–189 have zero usable 15-minute supplemental pairs. Both candle and depth methods reported unverified incremental funding across the UTC hour. Two deadline books passed the display checks. This batch has separate market conditions and lacks its own verified public funding schedule.
+
+### Trades 190–193 — 19 November, 17:40 IST
+
+Batch `demo-1795089553628736700` settled all four three-contract positions at their timed exits. Eight signed fills and 13 wallet postings establish −$0.68850000 gross, $0.28300528 in commissions and +$0.00113597 in DOGE funding, for −$0.97036931 net. All four were net losses. Sends followed first-fill deadlines by 1.793–13.858 seconds. Exchange fills followed submissions within 0.440 seconds.
+
+The workbook matched 193 verified closes, 18 finalized reviews and −$24.02868235 cumulative net. No campaign positions remained open. Review 19 covers closes 181–190 and triggered on the BTC close. A signed group audit matched 20 fills, 20 commissions and ten settlement cashflows. Group net is −$1.30432841 with one winner and nine losses. Three later closes belong to Review 20. The observer remains live and is waiting for Review 19, with duration evidence still pending.
