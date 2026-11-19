@@ -1,0 +1,57 @@
+{
+  "environment": "india_testnet",
+  "study": "trade1_shadow_incremental_funding_probe",
+  "source": "wss://socket-ind-pub.testnet.deltaex.org",
+  "window_start_utc": "2026-11-19T11:43:15Z",
+  "window_end_utc": "2026-11-19T12:07:15Z",
+  "batch": "demo-1795088141664266500",
+  "observations": 144,
+  "scope": "Incremental funding from verified actual close to modeled 30-minute deadline",
+  "method": "FundingSchedule.proves_zero requires a stable single stream, one interval and next settlement, and bracketing without a gap above 120 seconds.",
+  "scope_limitation": "Public schedule for this testnet batch, supplemental research only.",
+  "source_digest": "df57f2f90415601f1eab452549524fe9aafcec13598ced58f80ade995e02c53e",
+  "symbols": [
+    {
+      "symbol": "BTCUSD",
+      "observations": 48,
+      "streams": 1,
+      "intervals": [
+        28800
+      ],
+      "schedules_utc": [
+        "2026-11-19T16:00:00+00:00"
+      ],
+      "actual_close_at": "2026-11-19T11:48:15.386283Z",
+      "modeled_deadline_at": "2026-11-19T12:05:43.130096+00:00",
+      "additional_zero_funding_verified": true
+    },
+    {
+      "symbol": "ETHUSD",
+      "observations": 48,
+      "streams": 1,
+      "intervals": [
+        28800
+      ],
+      "schedules_utc": [
+        "2026-11-19T16:00:00+00:00"
+      ],
+      "actual_close_at": "2026-11-19T11:48:16.320141Z",
+      "modeled_deadline_at": "2026-11-19T12:05:45.036489+00:00",
+      "additional_zero_funding_verified": true
+    },
+    {
+      "symbol": "XRPUSD",
+      "observations": 48,
+      "streams": 1,
+      "intervals": [
+        28800
+      ],
+      "schedules_utc": [
+        "2026-11-19T16:00:00+00:00"
+      ],
+      "actual_close_at": "2026-11-19T11:48:17.338441Z",
+      "modeled_deadline_at": "2026-11-19T12:05:46.822673+00:00",
+      "additional_zero_funding_verified": true
+    }
+  ]
+}
