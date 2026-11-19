@@ -1143,3 +1143,9 @@ A targeted offline regression reproduced Windows error 5 before order submission
 The latest batch's 30-minute book capture windows elapsed before valid books were recorded. Three candle pairs were estimable, changing actual net of −$0.88354380 to modeled −$1.46286767, with no winners at either horizon. DOGE remained unavailable. Only BTC close 190 belongs to this review. Weekly quota was 70% remaining and the five-hour reading was unavailable.
 
 Excel refreshed to 193 verified closes and 19 finalized reviews at cumulative net −$24.02868235. After the review gate cleared, the first two demo attempts yielded no fills. BTC had one zero-fill IOC in the first attempt before the ETH price guard stopped the sequence. BTC and ETH returned zero fills in the second attempt before the XRP guard stopped the sequence. The worker remained active.
+
+### First fills after Review 19 — 19 November, 18:09 IST
+
+Batch `demo-1795091906121692100` filled three contracts each in ETH and XRP. The signed India testnet query confirmed both fills and two reduce-only protective orders per position. BTC's IOC filled zero. The DOGE lot was stopped before submission when the quote or mark exceeded its saved bounds.
+
+Combined planned loss including fees is $1.6846984. Daily loss plus reserved risk is $25.71338075, leaving $4.28661925 within the $30 limit. The first-fill deadlines are 18:18:30.298 IST for ETH and 18:18:32.227 IST for XRP. Both public depth capture processes started. The patched observer remained healthy with 193 verified closes and 19 finalized reviews.
