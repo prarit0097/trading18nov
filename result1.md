@@ -82,3 +82,24 @@ News skill ek invocation mein configured RSS/Atom sources poll karti hai, duplic
 Four-READY filter ka pehle se ek historical pilot hai. Base costs par 76 modeled candidate positions ka win rate 36.84% tha, baseline ki 1,656 positions par 17.69%. Phir bhi candidate ki average trade **−$0.1424** thi. Higher execution costs par candidate **−$0.2567**, baseline **−$0.2373** raha. 3,360 possible windows mein sirf 860 ke usable data the. Isi wajah se pehla decision fresh, pre-registered sample par hona chahiye. [Pilot, assumptions aur validation protocol](crypto-trader-skills/runs/trade1/research-ready-pilot.md) · [Qualification calculations](crypto-trader-skills/crypto_skills/delta_candidate_score.py)
 
 **Verification ka scope.** Teen independent agent checks ne workbook ki rows, news records aur strategy/review code dekhe. Chart settled ledger se bana aur totals workbook se reconcile hue. Report 19 November 2026 ke paused cohort par based hai. Ek hi din se alag market conditions mein future profit ki probability estimate karna abhi mumkin nahi hai.
+
+## 7. Purane Delta days par naya backtest | 23 September–20 October 2026
+
+**Four-READY ko abhi promote karne ka evidence nahi mila.** Is naye sample mein base costs par win rate **16.22%** raha, baseline ka **17.90%** tha. Average filled position ka net loss **$0.2381** tha, baseline ka **$0.1298**. Stress test mein bhi candidate ka average after-cost P&L negative raha aur baseline se neeche tha.
+
+4–17 November ko pehle signal-frequency study mein dekha gaya tha. Isliye is test ke liye dono documented Delta studies se pehle ki dates li gayi. Pehli 14-day window mein 9 usable dates mili, isliye window ko usi cutoff se peeche 28 calendar days tak badhaya. Final test mein **21 dates par usable market data** tha. 8,064 five-minute decision times mein se **4,980 usable** the aur unmein **45 four-READY opportunities** thi. 1,344 UTC hour-crossing slots, 56 IST date-crossing slots aur 1,684 incomplete data slots exclude hue. Saat dates par coverage rule se koi slot pass nahi hua. [Pehle ka feasibility check](crypto-trader-skills/runs/trade1/research-ready-feasibility.md) · [Pehla P&L pilot](crypto-trader-skills/runs/trade1/research-ready-pilot.md)
+
+| Cost scenario | Rule | Models mein filled positions | Wins | Win rate | Total net P&L | Average net per position |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| Base | Baseline, WAIT allowed | 3,777 | 676 | 17.90% | −$490.24 | −$0.1298 |
+| Base | Four-READY | 37 | 6 | 16.22% | −$8.81 | −$0.2381 |
+| Stress | Baseline, WAIT allowed | 2,749 | 455 | 16.55% | −$235.41 | −$0.0856 |
+| Stress | Four-READY | 15 | 2 | 13.33% | −$1.36 | −$0.0907 |
+
+Four-READY mein kam total loss ke saath bahut kam positions fill hui. Base scenario mein candidate ke modeled fills 12 dates par aaye. Stress mein wider modeled slippage ke kaaran IOC limit ke andar aur kam orders fill hue. Isliye base aur stress ki totals alag fill samples se aati hain. [Day-wise P&L, fees, no-fills aur drawdown](crypto-trader-skills/research/delta-october-comparison.json)
+
+**Dono rules ke liye ek hi model.** BTC, SOL, ETH, DOGE aur XRP Delta India testnet perpetuals ke 5-minute trade aur mark candles use hue. Signal aur turnover order decide hone se pehle band ho chuke candles se nikle. Dono rules par wahi batch planner laga. Har basket mein chaar eligible coins ke orders the, har order 3 contracts ka tha. Har IST date $160.7083 modeled cash se shuru hui. Planner ka per-position planned loss cap $10, daily realized loss plus reserved risk cap $30, margin budget 80% aur maximum leverage 5× tha. Triggered stop ya target ke baad modeled exit hua, warna 10-minute timer use hua. [Trade 1 planner](crypto-trader-skills/crypto_skills/delta_plan.py)
+
+**Cost aur execution assumptions.** Dono arms ne 5.9 bp per side fees aur 2 bp per side assumed half-spread use kiya. Extra slippage base mein 1 bp aur stress mein 5 bp per side thi. Next traded bar ki open price ko costs ke saath IOC limit par check kiya. Entry bar mein volume zero ya price limit se upar ho to order zero-filled count hua. Agar timer bar mein traded volume zero tha, mark open ko exit proxy banaya. Ek candle mein stop aur target dono touch hone par stop priority thi. UTC-hour crossing omit karke modeled funding settlements se bacha. Planned loss aur actual exit loss alag ho sakte hain, especially gap ke waqt.
+
+Candles se historical spread, executable depth aur intrabar fill sequence pata nahi chala. Kuch slots outcome ke paas price data missing hone par retrospective coverage mask se exclude hue. Isliye ye results model ke under ek screening comparison hain. Isi model mein **baseline aur four-READY dono costs ke baad negative rahe**. [Reproducible backtest script](crypto-trader-skills/research/delta_october_comparison.py) · [Delta candle endpoint](https://docs.delta.exchange/#get-historical-ohlc-candles)

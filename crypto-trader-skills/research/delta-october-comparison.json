@@ -1,0 +1,1115 @@
+{
+  "type": "historical_candle_screen",
+  "source": "https://cdn-ind.testnet.deltaex.org/v2",
+  "resolution": "5m",
+  "from_ist": "2026-09-23T00:00:00+05:30",
+  "to_ist_exclusive": "2026-10-21T00:00:00+05:30",
+  "candle_counts": {
+    "BTCUSD": 8350,
+    "SOLUSD": 8348,
+    "ETHUSD": 8350,
+    "DOGEUSD": 8334,
+    "XRPUSD": 8350,
+    "MARK:BTCUSD": 8352,
+    "MARK:SOLUSD": 8352,
+    "MARK:ETHUSD": 8352,
+    "MARK:DOGEUSD": 8352,
+    "MARK:XRPUSD": 8352
+  },
+  "candle_sha256": {
+    "BTCUSD": "70c54eccc87ee154c7fb9dc1579fa672466cb863531241c8b9245a1e425c50be",
+    "SOLUSD": "dcc9cef265ff7ae51e14d14282e891b4a08e129741618161f4ab32715344b9cb",
+    "ETHUSD": "ef90d7f64437e8498fc3f88449894cfcec7fa9ae624a29b8eacf682fa09a2f25",
+    "DOGEUSD": "2ae7b3a236ad0c2338c9bb854c56b9f0da48a8cd7954ee530efed9ac27f8922b",
+    "XRPUSD": "8388db521287e68e45c7ed8368fff3f9e743046aa11bbeeafc4fec3f88f5a4c1",
+    "MARK:BTCUSD": "9042d3c73893aa4a6ec18209a5f9ac76a92c33f27ed2d4010e3ed3175435df51",
+    "MARK:SOLUSD": "7c2998c2641bf8126263d36ca4025c70b96ddc6fa744b990119c9487f38f63a5",
+    "MARK:ETHUSD": "fd9a31471f6bca23626fc7c939e63003847cf0b2ed8e73097ce42dd54d5ec1be",
+    "MARK:DOGEUSD": "a9857e9fb79526111968599358e4adc338c17f257f67a2adea46f37090a033fd",
+    "MARK:XRPUSD": "14973fdfd0f8c4fc35b74974808b7b5fb7e63ec3fd0aa3ac4d2cd886364a432c"
+  },
+  "coverage": {
+    "usable_slots": 4980,
+    "four_ready_slots": 45,
+    "excluded_hour_crossing": 1344,
+    "excluded_ist_day_crossing": 56,
+    "excluded_incomplete_market_data": 1684
+  },
+  "usable_slots_by_ist_day": {
+    "2026-09-23": 238,
+    "2026-09-24": 238,
+    "2026-09-25": 238,
+    "2026-09-26": 238,
+    "2026-09-27": 238,
+    "2026-09-28": 238,
+    "2026-09-29": 238,
+    "2026-09-30": 0,
+    "2026-10-01": 237,
+    "2026-10-02": 238,
+    "2026-10-03": 238,
+    "2026-10-04": 0,
+    "2026-10-05": 234,
+    "2026-10-06": 238,
+    "2026-10-07": 238,
+    "2026-10-08": 0,
+    "2026-10-09": 236,
+    "2026-10-10": 238,
+    "2026-10-11": 238,
+    "2026-10-12": 0,
+    "2026-10-13": 237,
+    "2026-10-14": 0,
+    "2026-10-15": 234,
+    "2026-10-16": 0,
+    "2026-10-17": 234,
+    "2026-10-18": 0,
+    "2026-10-19": 236,
+    "2026-10-20": 238
+  },
+  "starting_cash_each_day_usd": "160.7083",
+  "fee_each_side": "0.00059",
+  "half_spread_each_side": "0.0002",
+  "extra_slippage_each_side": {
+    "base": "0.0001",
+    "stress": "0.0005"
+  },
+  "arms": {
+    "baseline_base": {
+      "attempted_baskets": 2196,
+      "zero_fills": 5007,
+      "filled_baskets": 1881,
+      "positions": 3777,
+      "wins": 676,
+      "mark_timer_fallbacks": 369,
+      "exit_timer": 3538,
+      "exit_stop": 239,
+      "risk_or_margin_blocked": 1008,
+      "gross_usd": "-195.411174688843587",
+      "fees_usd": "294.82761181175630276367",
+      "net_usd": "-490.23878650059988976367",
+      "mean_usd": "-0.1297958132117023801333518666",
+      "win_rate": "0.1789780248874768334657135293",
+      "profitable_days": 1,
+      "drawdown_usd": "494.50074368733821039367",
+      "days": [
+        {
+          "date": "2026-09-23",
+          "net_usd": "-27.76017514913934006",
+          "attempted_baskets": 58,
+          "zero_fills": 134,
+          "filled_baskets": 50,
+          "positions": 98,
+          "wins": 28,
+          "mark_timer_fallbacks": 5,
+          "exit_timer": 71,
+          "exit_stop": 27,
+          "risk_or_margin_blocked": 132
+        },
+        {
+          "date": "2026-09-24",
+          "net_usd": "-24.3957753479426842980",
+          "attempted_baskets": 120,
+          "zero_fills": 301,
+          "filled_baskets": 89,
+          "positions": 179,
+          "wins": 54,
+          "mark_timer_fallbacks": 12,
+          "exit_timer": 163,
+          "exit_stop": 16,
+          "risk_or_margin_blocked": 34
+        },
+        {
+          "date": "2026-09-25",
+          "net_usd": "-23.9292409581467293719",
+          "attempted_baskets": 98,
+          "zero_fills": 219,
+          "filled_baskets": 88,
+          "positions": 173,
+          "wins": 42,
+          "mark_timer_fallbacks": 13,
+          "exit_timer": 143,
+          "exit_stop": 30,
+          "risk_or_margin_blocked": 58
+        },
+        {
+          "date": "2026-09-26",
+          "net_usd": "-22.2021273400659324621",
+          "attempted_baskets": 128,
+          "zero_fills": 278,
+          "filled_baskets": 116,
+          "positions": 234,
+          "wins": 45,
+          "mark_timer_fallbacks": 13,
+          "exit_stop": 20,
+          "exit_timer": 214
+        },
+        {
+          "date": "2026-09-27",
+          "net_usd": "-23.65196361721032807",
+          "attempted_baskets": 113,
+          "zero_fills": 243,
+          "filled_baskets": 99,
+          "positions": 209,
+          "wins": 28,
+          "mark_timer_fallbacks": 19,
+          "exit_timer": 203,
+          "exit_stop": 6,
+          "risk_or_margin_blocked": 30
+        },
+        {
+          "date": "2026-09-28",
+          "net_usd": "-23.75526440050204515",
+          "attempted_baskets": 79,
+          "zero_fills": 179,
+          "filled_baskets": 64,
+          "positions": 137,
+          "wins": 22,
+          "mark_timer_fallbacks": 13,
+          "exit_timer": 122,
+          "exit_stop": 15,
+          "risk_or_margin_blocked": 100
+        },
+        {
+          "date": "2026-09-29",
+          "net_usd": "-23.7190163625365890872",
+          "attempted_baskets": 100,
+          "zero_fills": 230,
+          "filled_baskets": 87,
+          "positions": 170,
+          "wins": 44,
+          "mark_timer_fallbacks": 12,
+          "exit_timer": 154,
+          "exit_stop": 16,
+          "risk_or_margin_blocked": 55
+        },
+        {
+          "date": "2026-09-30",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-01",
+          "net_usd": "-21.7392439338241271391",
+          "attempted_baskets": 141,
+          "zero_fills": 356,
+          "filled_baskets": 106,
+          "positions": 208,
+          "wins": 50,
+          "mark_timer_fallbacks": 14,
+          "exit_timer": 204,
+          "exit_stop": 4
+        },
+        {
+          "date": "2026-10-02",
+          "net_usd": "-23.6742946138324120311",
+          "attempted_baskets": 111,
+          "zero_fills": 243,
+          "filled_baskets": 96,
+          "positions": 201,
+          "wins": 40,
+          "mark_timer_fallbacks": 18,
+          "exit_timer": 199,
+          "exit_stop": 2,
+          "risk_or_margin_blocked": 37
+        },
+        {
+          "date": "2026-10-03",
+          "net_usd": "18.86331856969001207781",
+          "attempted_baskets": 124,
+          "zero_fills": 285,
+          "filled_baskets": 118,
+          "positions": 211,
+          "wins": 54,
+          "mark_timer_fallbacks": 26,
+          "exit_timer": 177,
+          "exit_stop": 34
+        },
+        {
+          "date": "2026-10-04",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-05",
+          "net_usd": "-65.28477569013175593909",
+          "attempted_baskets": 43,
+          "zero_fills": 112,
+          "filled_baskets": 35,
+          "positions": 60,
+          "wins": 16,
+          "mark_timer_fallbacks": 19,
+          "exit_timer": 52,
+          "exit_stop": 8,
+          "risk_or_margin_blocked": 157
+        },
+        {
+          "date": "2026-10-06",
+          "net_usd": "-24.4007041838911155534",
+          "attempted_baskets": 105,
+          "zero_fills": 249,
+          "filled_baskets": 88,
+          "positions": 171,
+          "wins": 16,
+          "mark_timer_fallbacks": 21,
+          "exit_timer": 171,
+          "risk_or_margin_blocked": 52
+        },
+        {
+          "date": "2026-10-07",
+          "net_usd": "-24.6476983993576732941",
+          "attempted_baskets": 102,
+          "zero_fills": 244,
+          "filled_baskets": 84,
+          "positions": 164,
+          "wins": 16,
+          "mark_timer_fallbacks": 18,
+          "exit_timer": 160,
+          "exit_stop": 4,
+          "risk_or_margin_blocked": 54
+        },
+        {
+          "date": "2026-10-08",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-09",
+          "net_usd": "-23.8445917030571129394",
+          "attempted_baskets": 125,
+          "zero_fills": 303,
+          "filled_baskets": 100,
+          "positions": 197,
+          "wins": 33,
+          "mark_timer_fallbacks": 18,
+          "exit_timer": 197,
+          "risk_or_margin_blocked": 20
+        },
+        {
+          "date": "2026-10-10",
+          "net_usd": "-20.4505539823264355061",
+          "attempted_baskets": 127,
+          "zero_fills": 258,
+          "filled_baskets": 116,
+          "positions": 250,
+          "wins": 13,
+          "mark_timer_fallbacks": 20,
+          "exit_timer": 250
+        },
+        {
+          "date": "2026-10-11",
+          "net_usd": "-20.59202828101164869223",
+          "attempted_baskets": 129,
+          "zero_fills": 271,
+          "filled_baskets": 114,
+          "positions": 245,
+          "wins": 17,
+          "mark_timer_fallbacks": 25,
+          "exit_timer": 243,
+          "exit_stop": 2
+        },
+        {
+          "date": "2026-10-12",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-13",
+          "net_usd": "-27.83875820265286978932",
+          "attempted_baskets": 23,
+          "zero_fills": 56,
+          "filled_baskets": 20,
+          "positions": 36,
+          "wins": 10,
+          "mark_timer_fallbacks": 7,
+          "exit_timer": 23,
+          "exit_stop": 13,
+          "risk_or_margin_blocked": 195
+        },
+        {
+          "date": "2026-10-14",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-15",
+          "net_usd": "-24.07645707934373364864",
+          "attempted_baskets": 101,
+          "zero_fills": 241,
+          "filled_baskets": 85,
+          "positions": 163,
+          "wins": 29,
+          "mark_timer_fallbacks": 26,
+          "exit_timer": 142,
+          "exit_stop": 21,
+          "risk_or_margin_blocked": 54
+        },
+        {
+          "date": "2026-10-16",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-17",
+          "net_usd": "-17.4864682142694482538",
+          "attempted_baskets": 125,
+          "zero_fills": 281,
+          "filled_baskets": 115,
+          "positions": 219,
+          "wins": 24,
+          "mark_timer_fallbacks": 32,
+          "exit_timer": 219
+        },
+        {
+          "date": "2026-10-18",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-19",
+          "net_usd": "-20.486011286466879246",
+          "attempted_baskets": 129,
+          "zero_fills": 282,
+          "filled_baskets": 113,
+          "positions": 234,
+          "wins": 56,
+          "mark_timer_fallbacks": 24,
+          "exit_timer": 233,
+          "exit_stop": 1
+        },
+        {
+          "date": "2026-10-20",
+          "net_usd": "-25.16695632458104131",
+          "attempted_baskets": 115,
+          "zero_fills": 242,
+          "filled_baskets": 98,
+          "positions": 218,
+          "wins": 39,
+          "mark_timer_fallbacks": 14,
+          "exit_timer": 198,
+          "exit_stop": 20,
+          "risk_or_margin_blocked": 30
+        }
+      ]
+    },
+    "four_ready_base": {
+      "risk_or_margin_blocked": 21,
+      "attempted_baskets": 20,
+      "zero_fills": 43,
+      "filled_baskets": 20,
+      "positions": 37,
+      "wins": 6,
+      "mark_timer_fallbacks": 1,
+      "exit_timer": 35,
+      "exit_stop": 2,
+      "gross_usd": "-5.115786784238874",
+      "fees_usd": "3.69212470736554093566",
+      "net_usd": "-8.80791149160441493566",
+      "mean_usd": "-0.2380516619352544577205405405",
+      "win_rate": "0.1621621621621621621621621622",
+      "profitable_days": 2,
+      "drawdown_usd": "8.80791149160441493566",
+      "days": [
+        {
+          "date": "2026-09-23",
+          "net_usd": "0",
+          "risk_or_margin_blocked": 1
+        },
+        {
+          "date": "2026-09-24",
+          "net_usd": "-0.1677074142480",
+          "attempted_baskets": 1,
+          "zero_fills": 3,
+          "filled_baskets": 1,
+          "positions": 1,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 1,
+          "risk_or_margin_blocked": 7
+        },
+        {
+          "date": "2026-09-25",
+          "net_usd": "-0.1901286532305",
+          "risk_or_margin_blocked": 4,
+          "attempted_baskets": 1,
+          "zero_fills": 3,
+          "filled_baskets": 1,
+          "positions": 1,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 1
+        },
+        {
+          "date": "2026-09-26",
+          "net_usd": "0",
+          "risk_or_margin_blocked": 3
+        },
+        {
+          "date": "2026-09-27",
+          "net_usd": "0",
+          "risk_or_margin_blocked": 1
+        },
+        {
+          "date": "2026-09-28",
+          "net_usd": "-2.884467397586100",
+          "attempted_baskets": 1,
+          "zero_fills": 0,
+          "filled_baskets": 1,
+          "positions": 4,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 2,
+          "exit_stop": 2
+        },
+        {
+          "date": "2026-09-29",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-09-30",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-01",
+          "net_usd": "0.04038578668350",
+          "attempted_baskets": 2,
+          "zero_fills": 6,
+          "filled_baskets": 2,
+          "positions": 2,
+          "wins": 1,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 2
+        },
+        {
+          "date": "2026-10-02",
+          "net_usd": "-0.079264576725",
+          "attempted_baskets": 2,
+          "zero_fills": 6,
+          "filled_baskets": 2,
+          "positions": 2,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 2
+        },
+        {
+          "date": "2026-10-03",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-04",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-05",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-06",
+          "net_usd": "-0.216313512744",
+          "attempted_baskets": 1,
+          "zero_fills": 3,
+          "filled_baskets": 1,
+          "positions": 1,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 1
+        },
+        {
+          "date": "2026-10-07",
+          "net_usd": "-0.3520983271873200",
+          "risk_or_margin_blocked": 1,
+          "attempted_baskets": 1,
+          "zero_fills": 2,
+          "filled_baskets": 1,
+          "positions": 2,
+          "wins": 0,
+          "mark_timer_fallbacks": 1,
+          "exit_timer": 2
+        },
+        {
+          "date": "2026-10-08",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-09",
+          "net_usd": "-1.76841415938300",
+          "attempted_baskets": 4,
+          "zero_fills": 8,
+          "filled_baskets": 4,
+          "positions": 8,
+          "wins": 1,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 8,
+          "risk_or_margin_blocked": 1
+        },
+        {
+          "date": "2026-10-10",
+          "net_usd": "-0.015515317698",
+          "attempted_baskets": 1,
+          "zero_fills": 2,
+          "filled_baskets": 1,
+          "positions": 2,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 2
+        },
+        {
+          "date": "2026-10-11",
+          "net_usd": "0.99404904429950506434",
+          "attempted_baskets": 3,
+          "zero_fills": 5,
+          "filled_baskets": 3,
+          "positions": 7,
+          "wins": 3,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 7
+        },
+        {
+          "date": "2026-10-12",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-13",
+          "net_usd": "-1.5456558646545",
+          "risk_or_margin_blocked": 1,
+          "attempted_baskets": 1,
+          "zero_fills": 1,
+          "filled_baskets": 1,
+          "positions": 3,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 3
+        },
+        {
+          "date": "2026-10-14",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-15",
+          "net_usd": "-2.6227810991310",
+          "risk_or_margin_blocked": 2,
+          "attempted_baskets": 2,
+          "zero_fills": 4,
+          "filled_baskets": 2,
+          "positions": 4,
+          "wins": 1,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 4
+        },
+        {
+          "date": "2026-10-16",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-17",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-18",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-19",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-20",
+          "net_usd": "0"
+        }
+      ]
+    },
+    "baseline_stress": {
+      "attempted_baskets": 2952,
+      "zero_fills": 9059,
+      "filled_baskets": 1927,
+      "positions": 2749,
+      "wins": 455,
+      "mark_timer_fallbacks": 334,
+      "exit_timer": 2454,
+      "exit_stop": 295,
+      "risk_or_margin_blocked": 272,
+      "gross_usd": "-132.521911192585611",
+      "fees_usd": "102.88617272110710538551",
+      "net_usd": "-235.40808391369271638551",
+      "mean_usd": "-0.08563407927016832171171698800",
+      "win_rate": "0.1655147326300472899236085849",
+      "profitable_days": 0,
+      "drawdown_usd": "240.66603343656394585551",
+      "days": [
+        {
+          "date": "2026-09-23",
+          "net_usd": "-2.13769103878725228",
+          "attempted_baskets": 142,
+          "zero_fills": 423,
+          "filled_baskets": 102,
+          "positions": 145,
+          "wins": 35,
+          "mark_timer_fallbacks": 10,
+          "exit_timer": 109,
+          "exit_stop": 36
+        },
+        {
+          "date": "2026-09-24",
+          "net_usd": "-10.0987454216104264737",
+          "attempted_baskets": 160,
+          "zero_fills": 507,
+          "filled_baskets": 83,
+          "positions": 133,
+          "wins": 36,
+          "mark_timer_fallbacks": 12,
+          "exit_timer": 111,
+          "exit_stop": 22
+        },
+        {
+          "date": "2026-09-25",
+          "net_usd": "-21.80188488659554854",
+          "attempted_baskets": 147,
+          "zero_fills": 431,
+          "filled_baskets": 99,
+          "positions": 157,
+          "wins": 30,
+          "mark_timer_fallbacks": 13,
+          "exit_timer": 113,
+          "exit_stop": 44
+        },
+        {
+          "date": "2026-09-26",
+          "net_usd": "-9.8452695340401282549",
+          "attempted_baskets": 146,
+          "zero_fills": 432,
+          "filled_baskets": 104,
+          "positions": 152,
+          "wins": 34,
+          "mark_timer_fallbacks": 10,
+          "exit_stop": 22,
+          "exit_timer": 130
+        },
+        {
+          "date": "2026-09-27",
+          "net_usd": "-8.97439217120735036922",
+          "attempted_baskets": 144,
+          "zero_fills": 441,
+          "filled_baskets": 99,
+          "positions": 135,
+          "wins": 21,
+          "mark_timer_fallbacks": 17,
+          "exit_timer": 125,
+          "exit_stop": 10
+        },
+        {
+          "date": "2026-09-28",
+          "net_usd": "-15.93727544186837037",
+          "attempted_baskets": 145,
+          "zero_fills": 424,
+          "filled_baskets": 102,
+          "positions": 156,
+          "wins": 35,
+          "mark_timer_fallbacks": 15,
+          "exit_timer": 120,
+          "exit_stop": 36
+        },
+        {
+          "date": "2026-09-29",
+          "net_usd": "-16.0114297892757717168",
+          "attempted_baskets": 149,
+          "zero_fills": 447,
+          "filled_baskets": 97,
+          "positions": 149,
+          "wins": 37,
+          "mark_timer_fallbacks": 17,
+          "exit_stop": 33,
+          "exit_timer": 116
+        },
+        {
+          "date": "2026-09-30",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-01",
+          "net_usd": "-10.02545281816434351",
+          "attempted_baskets": 154,
+          "zero_fills": 471,
+          "filled_baskets": 92,
+          "positions": 145,
+          "wins": 31,
+          "mark_timer_fallbacks": 17,
+          "exit_timer": 142,
+          "exit_stop": 3
+        },
+        {
+          "date": "2026-10-02",
+          "net_usd": "-11.46905100531652788",
+          "attempted_baskets": 144,
+          "zero_fills": 419,
+          "filled_baskets": 103,
+          "positions": 157,
+          "wins": 23,
+          "mark_timer_fallbacks": 16,
+          "exit_timer": 156,
+          "exit_stop": 1
+        },
+        {
+          "date": "2026-10-03",
+          "net_usd": "-7.26543019234080865152",
+          "attempted_baskets": 143,
+          "zero_fills": 422,
+          "filled_baskets": 103,
+          "positions": 150,
+          "wins": 29,
+          "mark_timer_fallbacks": 24,
+          "exit_timer": 122,
+          "exit_stop": 28
+        },
+        {
+          "date": "2026-10-04",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-05",
+          "net_usd": "-23.68988647605468777447",
+          "attempted_baskets": 106,
+          "zero_fills": 334,
+          "filled_baskets": 63,
+          "positions": 90,
+          "wins": 14,
+          "mark_timer_fallbacks": 29,
+          "exit_timer": 80,
+          "exit_stop": 10,
+          "risk_or_margin_blocked": 72
+        },
+        {
+          "date": "2026-10-06",
+          "net_usd": "-9.46249675113101967",
+          "attempted_baskets": 152,
+          "zero_fills": 475,
+          "filled_baskets": 94,
+          "positions": 133,
+          "wins": 12,
+          "mark_timer_fallbacks": 25,
+          "exit_timer": 133
+        },
+        {
+          "date": "2026-10-07",
+          "net_usd": "-11.5575888861082275444",
+          "attempted_baskets": 145,
+          "zero_fills": 450,
+          "filled_baskets": 97,
+          "positions": 130,
+          "wins": 12,
+          "mark_timer_fallbacks": 18,
+          "exit_timer": 127,
+          "exit_stop": 3
+        },
+        {
+          "date": "2026-10-08",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-09",
+          "net_usd": "-9.73122271440204654",
+          "attempted_baskets": 153,
+          "zero_fills": 478,
+          "filled_baskets": 94,
+          "positions": 134,
+          "wins": 13,
+          "mark_timer_fallbacks": 17,
+          "exit_timer": 134
+        },
+        {
+          "date": "2026-10-10",
+          "net_usd": "-8.7842818382409962820",
+          "attempted_baskets": 147,
+          "zero_fills": 452,
+          "filled_baskets": 101,
+          "positions": 136,
+          "wins": 5,
+          "mark_timer_fallbacks": 17,
+          "exit_timer": 136
+        },
+        {
+          "date": "2026-10-11",
+          "net_usd": "-5.886054629386420032",
+          "attempted_baskets": 148,
+          "zero_fills": 463,
+          "filled_baskets": 99,
+          "positions": 129,
+          "wins": 6,
+          "mark_timer_fallbacks": 17,
+          "exit_timer": 128,
+          "exit_stop": 1
+        },
+        {
+          "date": "2026-10-12",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-13",
+          "net_usd": "-24.63547540545406866960",
+          "attempted_baskets": 22,
+          "zero_fills": 64,
+          "filled_baskets": 16,
+          "positions": 24,
+          "wins": 8,
+          "mark_timer_fallbacks": 6,
+          "exit_timer": 14,
+          "exit_stop": 10,
+          "risk_or_margin_blocked": 200
+        },
+        {
+          "date": "2026-10-14",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-15",
+          "net_usd": "-12.4509292922380632525",
+          "attempted_baskets": 154,
+          "zero_fills": 486,
+          "filled_baskets": 93,
+          "positions": 130,
+          "wins": 25,
+          "mark_timer_fallbacks": 19,
+          "exit_timer": 103,
+          "exit_stop": 27
+        },
+        {
+          "date": "2026-10-16",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-17",
+          "net_usd": "-4.6168465154589190944",
+          "attempted_baskets": 151,
+          "zero_fills": 491,
+          "filled_baskets": 94,
+          "positions": 113,
+          "wins": 9,
+          "mark_timer_fallbacks": 20,
+          "exit_timer": 113
+        },
+        {
+          "date": "2026-10-18",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-19",
+          "net_usd": "-4.61577741654449709",
+          "attempted_baskets": 147,
+          "zero_fills": 468,
+          "filled_baskets": 97,
+          "positions": 120,
+          "wins": 21,
+          "mark_timer_fallbacks": 8,
+          "exit_timer": 120
+        },
+        {
+          "date": "2026-10-20",
+          "net_usd": "-6.41090168946724239",
+          "attempted_baskets": 153,
+          "zero_fills": 481,
+          "filled_baskets": 95,
+          "positions": 131,
+          "wins": 19,
+          "mark_timer_fallbacks": 7,
+          "exit_timer": 122,
+          "exit_stop": 9
+        }
+      ]
+    },
+    "four_ready_stress": {
+      "risk_or_margin_blocked": 23,
+      "attempted_baskets": 22,
+      "zero_fills": 73,
+      "filled_baskets": 12,
+      "positions": 15,
+      "wins": 2,
+      "mark_timer_fallbacks": 0,
+      "exit_timer": 13,
+      "exit_stop": 2,
+      "gross_usd": "-0.8971772400",
+      "fees_usd": "0.463889531228400",
+      "net_usd": "-1.361066771228400",
+      "mean_usd": "-0.090737784748560",
+      "win_rate": "0.1333333333333333333333333333",
+      "profitable_days": 0,
+      "drawdown_usd": "1.361066771228400",
+      "days": [
+        {
+          "date": "2026-09-23",
+          "net_usd": "0",
+          "risk_or_margin_blocked": 1
+        },
+        {
+          "date": "2026-09-24",
+          "net_usd": "-0.2322950199120",
+          "attempted_baskets": 1,
+          "zero_fills": 3,
+          "filled_baskets": 1,
+          "positions": 1,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 1,
+          "risk_or_margin_blocked": 7
+        },
+        {
+          "date": "2026-09-25",
+          "net_usd": "0",
+          "risk_or_margin_blocked": 5,
+          "attempted_baskets": 1,
+          "zero_fills": 4
+        },
+        {
+          "date": "2026-09-26",
+          "net_usd": "0",
+          "risk_or_margin_blocked": 3
+        },
+        {
+          "date": "2026-09-27",
+          "net_usd": "0",
+          "risk_or_margin_blocked": 1
+        },
+        {
+          "date": "2026-09-28",
+          "net_usd": "-0.309514024809900",
+          "attempted_baskets": 1,
+          "zero_fills": 2,
+          "filled_baskets": 1,
+          "positions": 2,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_stop": 2
+        },
+        {
+          "date": "2026-09-29",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-09-30",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-01",
+          "net_usd": "0",
+          "attempted_baskets": 3,
+          "zero_fills": 12
+        },
+        {
+          "date": "2026-10-02",
+          "net_usd": "-0.07773056628300",
+          "attempted_baskets": 3,
+          "zero_fills": 10,
+          "filled_baskets": 2,
+          "positions": 2,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 2
+        },
+        {
+          "date": "2026-10-03",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-04",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-05",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-06",
+          "net_usd": "0",
+          "attempted_baskets": 1,
+          "zero_fills": 4
+        },
+        {
+          "date": "2026-10-07",
+          "net_usd": "0",
+          "risk_or_margin_blocked": 2,
+          "attempted_baskets": 1,
+          "zero_fills": 4
+        },
+        {
+          "date": "2026-10-08",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-09",
+          "net_usd": "-0.12928896000000",
+          "attempted_baskets": 4,
+          "zero_fills": 14,
+          "filled_baskets": 2,
+          "positions": 2,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 2,
+          "risk_or_margin_blocked": 1
+        },
+        {
+          "date": "2026-10-10",
+          "net_usd": "-0.010905660000",
+          "attempted_baskets": 1,
+          "zero_fills": 3,
+          "filled_baskets": 1,
+          "positions": 1,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 1
+        },
+        {
+          "date": "2026-10-11",
+          "net_usd": "-0.00034548844950",
+          "attempted_baskets": 3,
+          "zero_fills": 9,
+          "filled_baskets": 3,
+          "positions": 3,
+          "wins": 1,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 3
+        },
+        {
+          "date": "2026-10-12",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-13",
+          "net_usd": "-0.4075810586325",
+          "risk_or_margin_blocked": 1,
+          "attempted_baskets": 1,
+          "zero_fills": 2,
+          "filled_baskets": 1,
+          "positions": 2,
+          "wins": 0,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 2
+        },
+        {
+          "date": "2026-10-14",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-15",
+          "net_usd": "-0.1934059931415",
+          "risk_or_margin_blocked": 2,
+          "attempted_baskets": 2,
+          "zero_fills": 6,
+          "filled_baskets": 1,
+          "positions": 2,
+          "wins": 1,
+          "mark_timer_fallbacks": 0,
+          "exit_timer": 2
+        },
+        {
+          "date": "2026-10-16",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-17",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-18",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-19",
+          "net_usd": "0"
+        },
+        {
+          "date": "2026-10-20",
+          "net_usd": "0"
+        }
+      ]
+    }
+  }
+}
