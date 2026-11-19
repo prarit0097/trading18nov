@@ -1,0 +1,35 @@
+{
+  "review_id": "8c148d291ba9b231af4614283458ee3d97d22fe40b336898e935667e04929ce1",
+  "order_ids": [
+    "2178788093",
+    "2178788097",
+    "2178788101",
+    "2178788110",
+    "2178789079",
+    "2178789084",
+    "2178789090",
+    "2178789846",
+    "2178789852",
+    "2178789856"
+  ],
+  "status": "awaiting_terminal_exit_comparisons",
+  "specialists": {
+    "market_data": "Public five-minute replay found READY breadth of two, one and zero at the three decision times. The sole middle READY was DOGE outside the selected basket. The two reviewed READY entries came from one basket and lost $0.83813838. SOL closed 1.446 basis points above its preceding high, against 2.368 basis points of spread at the pre-submit check. The later fill was below the high. BTC's larger excess also preceded a loss. Measure how much breakout excess remains at the executable quote.",
+    "entry_exit": "All ten exits used their original ten-minute timers. The first seven official 15-minute pairs individually worsened and mean modeled net fell $0.22897431. Two early 30-minute pairs came from a single basket and lost an additional $0.84117310 per pair. Independent displayed-depth prices covered both empty reference candles in that basket and total modeled net was -$2.79712881 vs -$0.99333888 actual. Final reviewed XRP boundary bars finish at 13:09 and 13:24 IST.",
+    "risk_costs": "Gross loss was $1.13850000, commissions were $1.07124403 and funding was zero. The one positive gross trade lost after fees. Maximum planned position loss was $3.244124. Same-day loss plus maximum reserve peaked at $24.07382615. Planned margin ranged from 78.82 to 79.43 percent of available margin. Entry fills cost $0.1695 less than using the recorded preflight asks for the same quantities. The record lacks matched executable exit quotes for measuring round-trip slippage.",
+    "execution": "Ten owned lots opened and closed three contracts within their IOC limits, with both protective brackets verified and 10-minute exits filled on the first attempt. Submit delays were 0.640 to 7.564 seconds. Exchange fills followed within 0.344 seconds. One separate attempt stopped at a BTC quote guard before sending. In the next attempt the BTC IOC received zero fills due to insufficient order-book quantity. Neither produced a verified lot.",
+    "reconciliation_validation": "The signed Delta India testnet re-read matched all twenty fills, twenty commissions and ten cashflows for closes 131 through 140. Excel and wallet match. Three correlated baskets contributed four, three and three trades. Close 141 was a SOL loss of $1.06013401 and belongs to the next group. The first 140 verified closes show 32 wins and -$16.99237200 net."
+  },
+  "manager": {
+    "findings": "This ten-trade group lost $2.20974403 after costs, with zero winners. Gross was down 11.28 basis points and commissions cost another 10.61 basis points of entry notional. Two READY and eight WAIT trades lost money. The recorded gross price loss persisted across the coin mix. The first 140 positions cover 44 source baskets. Current review evidence supports prospectively testing whether a breakout remains above its reference high at the time of the executable quote.",
+    "recommendation": "Retain three contracts, the ten-minute hold and the frozen four-READY test. In separate prospective research, record closed-bar excess over the prior high, quote spread and age, and the pre-submit midpoint relative to that high. Evaluate after-cost continuation using signals available before order submission, and measure fill retention, guarded entries and no-fills as outcomes. Compare matched baskets and days and include opportunities skipped by a proposed rule."
+  },
+  "ceo": {
+    "decision": "retain_current",
+    "rationale": "The measured longer holds worsened on their available pairs and the reviewed entry signals came from three related baskets. Keep the frozen protocol and agreed limits while gathering independent evidence on executable breakout continuation."
+  },
+  "comparison_eligible_at_ist": {
+    "15": "2026-11-19T13:09:00+05:30",
+    "30": "2026-11-19T13:24:00+05:30"
+  }
+}
