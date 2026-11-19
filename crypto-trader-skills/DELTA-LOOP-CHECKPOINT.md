@@ -783,3 +783,15 @@ The following batch `demo-1795063794635876100` filled three contracts each for B
 The Trading project rule book records `prarit0097/trading18nov` as the canonical GitHub repository. Publish verified demo workbooks, research, rules and project changes at each checkpoint. Keep local execution state and private account responses on the workstation.
 
 At 10:25 IST the 15-minute public depth estimate for the four trades in batch `demo-1795063166677196500` paired all four. It recovered XRP's empty candle reference. The 10-minute result was three winners and −$0.08393605 net. The modeled 15-minute result was two winners and −$0.94752674 net. This estimate is tracked as research.
+
+### Trades 108–111 and review 11 — 19 November, 10:31 IST
+
+The four positions in `demo-1795063794635876100` each closed after their original timer. Eight fills and twelve wallet postings matched $0.50348603 in commissions, zero funding and −$0.98198603 net. Delta India testnet confirmed the account was flat. Excel and the ledger agree at 111 verified trades, ten finalized reviews and −$12.34859608 cumulative net.
+
+The independent signed-account audit for review 11 matched 20 fills, 20 commissions and ten wallet cashflows across closes 101–110. The three baskets produced three wins and seven losses. Gross P&L was −$0.68850000, commissions were $1.06717395 and funding was zero, for −$1.75567395 net. Average net was −$0.175567395 and the group drawdown was $1.75567395. Close 111 was SOL at −$0.54947132 and belongs to review 12.
+
+The six WAIT closes in review 11 earned +$0.03051917. The four READY closes lost $1.78619312 across two baskets, including three carryovers from the same 09:37 basket assessed in review 10. Three total baskets and shared exposure limit inference. Across the first 110 trades there are 30 winners and −$11.79912476 net. The frozen prospective test begins on November 20 at 00:00 IST.
+
+The last included fill was XRP at 10:19:59.845 IST. Its 15- and 30-minute boundary candles finish at 10:35 and 10:50 IST. The observer entered the review gate and remained live. No candidate qualified for promotion.
+
+At 10:36 IST the five specialist findings, profitability manager recommendation and draft decision were validated against the exact group and saved in `runs/trade1/review11-team-draft.json`. The official 15-minute sample matched six entries. Wins fell from two to one and mean net fell by $0.10301677. Displayed-depth estimates covered eight entries, with wins falling from three to two and mean net falling by $0.07725274. The official 30-minute sample still has seven pending observations. The longer hold and broader breakout hypotheses remain research.

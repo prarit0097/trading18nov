@@ -1,0 +1,35 @@
+{
+  "review_id": "c96bda30c74a79627bf71cf663954dd3e3bf512bffb38efd82f45b2c9a28491b",
+  "order_ids": [
+    "2178775096",
+    "2178775106",
+    "2178775115",
+    "2178777531",
+    "2178777534",
+    "2178777538",
+    "2178777544",
+    "2178778438",
+    "2178778442",
+    "2178778448"
+  ],
+  "status": "awaiting_terminal_exit_comparisons",
+  "specialists": {
+    "market_data": "Closed five-minute public replay had READY breadth of five, one and zero across the three basket decisions. The first broad breakout is one execution episode shared with review 10. The sole READY leg in the mixed basket was SOL, with a close of $75.603 above the preceding high of $75.503 and volume at 0.189 times its prior mean. It lost $0.54696993. All four READY closes in this group lost $1.78619312 in total. The six WAIT closes netted +$0.03051917. The evidence predates the frozen sample. Evaluate breadth, observed signal age, coin mix and execution costs at the source-basket level.",
+    "entry_exit": "All ten included exits followed their first-fill timers. Last eligible boundary minutes close at 10:35 and 10:50 IST. The first two official 30-minute pairs came from one basket and SOL supplied $1.06211822 of a $1.09514192 paired improvement. That comparison remained negative in total. Supplemental public bid-depth is modeled evidence with separate coverage. Compare matched trades and keep actual and alternative outcomes distinct.",
+    "risk_costs": "Gross loss was $0.68850000, commissions were $1.06717395 and funding was zero. The gross loss would persist at zero fees. Peak lot planned loss was $3.2300786. Peak day loss plus batch reserve was $19.07360425. Planned margin ranged from 75.43 to 76.65 percent. Entry fills cost $0.0615 less than the recorded preflight offers for the same quantities. Quote age and unavailable exit-time prices limit any causal slippage conclusion. Keep the three-contract size and agreed risk limits.",
+    "execution": "All ten positions opened and closed exactly three contracts within the entry caps and had both protective brackets verified. One successful timed exit per lot. Submission lag was 0.833 to 7.845 seconds and exchange fills followed within 0.599 seconds. The three source baskets each filled all four positions. No partial, zero, abandoned or protective early exit occurred within those attempts. Record deadline-to-send delay separately from trade execution prices in research.",
+    "reconciliation_validation": "Independent authenticated Delta India testnet read matched twenty fills, twenty commissions and ten wallet cashflows. Only closes 101 through 110 belong to the group. The SOL loss of $0.54947132 is close 111. Excel matched the review and campaign totals. The first 110 verified trades have 30 net winners and a net loss of $11.79912476. The three source baskets include one shared with each neighboring review, which limits inference from a single group."
+  },
+  "manager": {
+    "findings": "Three wins and seven losses yielded -$1.75567395 net, or -$0.175567395 per trade. On $1,005.2160 entry notional the gross loss was 6.85 basis points and commissions were a further 10.62 basis points. The three baskets remained within the recorded risk gates. The current sample supports evaluating market movement and costs separately. Stronger long-hold results on a single SOL trade do not establish a repeatable basket effect.",
+    "recommendation": "Retain the three-contract, ten-minute demo baseline and frozen four-READY test. Collect contemporaneous executable bid/depth at the 10-, 15- and 30-minute reference deadlines to partition movement, order latency and fees. Compare after-cost basket-level win rate and mean net by READY breadth, including no-fill opportunities and matching on coin mix and signal age. Cluster by episode and day, test stronger friction and leave out the top contributor as a sensitivity check. Use subsequent independent evidence before changing a rule."
+  },
+  "ceo": {
+    "decision": "retain_current",
+    "rationale": "The negative close group includes three correlated baskets and the apparent long-hold rebound is concentrated in one coin. Preserve the registered rules, timer and risk controls while independent evidence accumulates."
+  },
+  "comparison_eligible_at_ist": {
+    "15": "2026-11-19T10:35:00+05:30",
+    "30": "2026-11-19T10:50:00+05:30"
+  }
+}
