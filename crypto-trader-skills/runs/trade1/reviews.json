@@ -956,6 +956,59 @@
         "status": "research_required",
         "auto_promote": false,
         "settlement_verified": true
+      },
+      {
+        "batch_id": "bf94be5569d8d6ba1ace046c6935f3af0476fe52e08601382d18a4036d945bec",
+        "sequence": 19,
+        "order_ids": [
+          "2178805741",
+          "2178805747",
+          "2178805752",
+          "2178808638",
+          "2178808650",
+          "2178808655",
+          "2178810477",
+          "2178810484",
+          "2178810490",
+          "2178811430"
+        ],
+        "statistics": {
+          "closed": 10,
+          "goal": 10000,
+          "review_batches_due": 1,
+          "wins": 1,
+          "losses": 9,
+          "breakevens": 0,
+          "strategy_sample": 10,
+          "strategy_win_rate": 0.1,
+          "wilson_95": null,
+          "net_pnl": "-1.30432841",
+          "mean_net_pnl": "-0.130432841",
+          "profit_factor": "0.006737429771781363263582430819",
+          "max_closed_trade_drawdown": "1.30432841",
+          "auto_promote": false
+        },
+        "per_version": {
+          "delta-demo-five-coin-v6+trade1-3c-10m-v2": {
+            "closed": 10,
+            "goal": 10000,
+            "review_batches_due": 1,
+            "wins": 1,
+            "losses": 9,
+            "breakevens": 0,
+            "strategy_sample": 10,
+            "strategy_win_rate": 0.1,
+            "wilson_95": null,
+            "net_pnl": "-1.30432841",
+            "mean_net_pnl": "-0.130432841",
+            "profit_factor": "0.006737429771781363263582430819",
+            "max_closed_trade_drawdown": "1.30432841",
+            "auto_promote": false
+          }
+        },
+        "status": "research_required",
+        "auto_promote": false,
+        "settlement_verified": true
       }
     ],
     "manager_handoffs": {
@@ -13555,6 +13608,667 @@
             "rationale": "Retain current size, risk limits and ten-minute exit. The 30-minute headline gain depends on partial coverage. With additional funding and depth evidence all ten positions are matched, with equal winner count and lower net. Gather later independent baskets and preserve the frozen four-READY study."
           }
         }
+      },
+      "bf94be5569d8d6ba1ace046c6935f3af0476fe52e08601382d18a4036d945bec": {
+        "status": "awaiting_manager",
+        "settlement_verified": true,
+        "evidence_sha256": "a5737ea98f9035be6a40343df1043d4e0bbcdb5fdc93532b016d2dfdbcf757fc",
+        "queued_at": "2026-11-19T12:15:02.567748+00:00",
+        "evidence": [
+          {
+            "order_id": "2178805741",
+            "symbol": "ETHUSD",
+            "batch_id": "demo-1795086108390385100",
+            "position_episode_id": "demo-1795086108390385100:1699",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "waiting",
+            "signal": {
+              "status": "waiting",
+              "closed_at": 1795086000,
+              "entry": "1802.4",
+              "breakout_level": "1812.6",
+              "rvol": "0.3269561631301187584171558551",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "55898520.13250001",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:01:51.415737Z",
+            "closed_at": "2026-11-19T11:11:54.909283Z",
+            "planned_risk": "1.1507810",
+            "actual_commission": "0.05742606",
+            "funding": "0",
+            "net_pnl": "-0.06642606",
+            "position": "long",
+            "entry": "1802.6",
+            "exit": "1802.3",
+            "leverage": 5,
+            "stop_loss": "1785.25",
+            "target": "1839.40",
+            "gross_pnl": "-0.009",
+            "fill_ids": [
+              "02dbbc9dbc2243e9913604101deb065b",
+              "b6ba9567a0484554b12f76d46b4e03d3"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:01:51.558205Z",
+            "deadline_at": "2026-11-19T11:11:51.558205Z",
+            "close_submitted_at": "2026-11-19T11:11:54.552213Z",
+            "close_delay_seconds": 2.994008,
+            "exit_order_ids": [
+              "2178806589"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "estimated",
+                "exit_price": "1801.848625",
+                "fees": "0.05741886959599955612273206458",
+                "funding": "0",
+                "net_pnl": "-0.07996011959599955612273206458",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 15,
+                "observed_at": "2026-11-19T11:17:23.232421+00:00"
+              },
+              {
+                "status": "estimated",
+                "exit_price": "1807.49580",
+                "fees": "0.05750882909688287188592354214",
+                "funding": "0",
+                "net_pnl": "0.08936517090311712811407645786",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T11:32:47.843445+00:00"
+              }
+            ]
+          },
+          {
+            "order_id": "2178805747",
+            "symbol": "XRPUSD",
+            "batch_id": "demo-1795086108390385100",
+            "position_episode_id": "demo-1795086108390385100:93723",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "waiting",
+            "signal": {
+              "status": "waiting",
+              "closed_at": 1795086000,
+              "entry": "0.983",
+              "breakout_level": "0.9875",
+              "rvol": "0E+2",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "7281338.316799997",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:01:53.254034Z",
+            "closed_at": "2026-11-19T11:11:55.852690Z",
+            "planned_risk": "0.5356574",
+            "actual_commission": "0.00312707",
+            "funding": "0",
+            "net_pnl": "-0.00612707",
+            "position": "long",
+            "entry": "0.982",
+            "exit": "0.981",
+            "leverage": 1,
+            "stop_loss": "0.9731",
+            "target": "1.0028",
+            "gross_pnl": "-0.003",
+            "fill_ids": [
+              "458b82b940e44835bccf83990601645b",
+              "efd57a6454b1465e99a1bab61669a022"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:01:53.393035Z",
+            "deadline_at": "2026-11-19T11:11:53.393035Z",
+            "close_submitted_at": "2026-11-19T11:11:55.502730Z",
+            "close_delay_seconds": 2.109695,
+            "exit_order_ids": [
+              "2178806590"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "estimated",
+                "exit_price": "0.9815090",
+                "fees": "0.003127880840632008154943934760",
+                "funding": "0",
+                "net_pnl": "-0.004600880840632008154943934760",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 15,
+                "observed_at": "2026-11-19T11:17:23.232421+00:00"
+              },
+              {
+                "status": "estimated",
+                "exit_price": "0.9845075",
+                "fees": "0.003132657472528032619775739042",
+                "funding": "0",
+                "net_pnl": "0.004389842527471967380224260958",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T11:32:47.843445+00:00"
+              }
+            ]
+          },
+          {
+            "order_id": "2178805752",
+            "symbol": "SOLUSD",
+            "batch_id": "demo-1795086108390385100",
+            "position_episode_id": "demo-1795086108390385100:92572",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "waiting",
+            "signal": {
+              "status": "waiting",
+              "closed_at": 1795086000,
+              "entry": "75.268",
+              "breakout_level": "75.637",
+              "rvol": "0.2901501654364978365996436752",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "5575630.434100001",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:01:55.337715Z",
+            "closed_at": "2026-11-19T11:11:57.075920Z",
+            "planned_risk": "3.2141942",
+            "actual_commission": "0.23983731",
+            "funding": "0",
+            "net_pnl": "-0.14083731",
+            "position": "long",
+            "entry": "75.262",
+            "exit": "75.295",
+            "leverage": 5,
+            "stop_loss": "74.5103",
+            "target": "76.7684",
+            "gross_pnl": "0.099",
+            "fill_ids": [
+              "d03febbd14d74762bce4e4f29a7ecf67",
+              "02082adbdd294e7a950e4b7ddfa3c9f9"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:01:55.478633Z",
+            "deadline_at": "2026-11-19T11:11:55.478633Z",
+            "close_submitted_at": "2026-11-19T11:11:56.419966Z",
+            "close_delay_seconds": 0.941333,
+            "exit_order_ids": [
+              "2178806593"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+                "minutes": 15,
+                "observed_at": "2026-11-19T11:17:23.232421+00:00"
+              },
+              {
+                "status": "estimated",
+                "exit_price": "75.6301660",
+                "fees": "0.2403712294602568563649644731",
+                "funding": "0",
+                "net_pnl": "0.8641267705397431436350355269",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T11:32:47.843445+00:00"
+              }
+            ]
+          },
+          {
+            "order_id": "2178808638",
+            "symbol": "BTCUSD",
+            "batch_id": "demo-1795088141664266500",
+            "position_episode_id": "demo-1795088141664266500:84",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "ready",
+            "signal": {
+              "status": "ready",
+              "closed_at": 1795088100,
+              "entry": "64013.0",
+              "breakout_level": "63951.0",
+              "rvol": "4.348123780142290499275955424",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "326537208.9134986",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:35:42.986066Z",
+            "closed_at": "2026-11-19T11:48:15.386283Z",
+            "planned_risk": "2.8074524",
+            "actual_commission": "0.20390959",
+            "funding": "0",
+            "net_pnl": "-0.07340959",
+            "position": "long",
+            "entry": "63980",
+            "exit": "64023.5",
+            "leverage": 5,
+            "stop_loss": "63345.6",
+            "target": "65265.3",
+            "gross_pnl": "0.1305",
+            "fill_ids": [
+              "d0baccdb8b3f432b88b5dba66d8e46a3",
+              "d0a916b74d6b45628767560301f17ca4"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:35:43.130096Z",
+            "deadline_at": "2026-11-19T11:45:43.130096Z",
+            "close_submitted_at": "2026-11-19T11:48:14.947559Z",
+            "close_delay_seconds": 151.817463,
+            "exit_order_ids": [
+              "2178810429"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "estimated",
+                "exit_price": "63992.98750",
+                "fees": "0.2038609835805895491499215132",
+                "funding": "0",
+                "net_pnl": "-0.1648984835805895491499215132",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 15,
+                "observed_at": "2026-11-19T11:59:01.623802+00:00"
+              },
+              {
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T12:09:47.264530+00:00"
+              }
+            ]
+          },
+          {
+            "order_id": "2178808650",
+            "symbol": "ETHUSD",
+            "batch_id": "demo-1795088141664266500",
+            "position_episode_id": "demo-1795088141664266500:1699",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "waiting",
+            "signal": {
+              "status": "waiting",
+              "closed_at": 1795088100,
+              "entry": "1811.25",
+              "breakout_level": "1812.6",
+              "rvol": "2.825732463644140290846877673",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "55853616.748000056",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:35:44.895501Z",
+            "closed_at": "2026-11-19T11:48:16.320141Z",
+            "planned_risk": "1.1542160",
+            "actual_commission": "0.05766901",
+            "funding": "0",
+            "net_pnl": "-0.02016901",
+            "position": "long",
+            "entry": "1809.45",
+            "exit": "1810.7",
+            "leverage": 1,
+            "stop_loss": "1792.30",
+            "target": "1846.75",
+            "gross_pnl": "0.0375",
+            "fill_ids": [
+              "3dfd4541a9e04d36b26bbcc6c5b8c83b",
+              "c856046dd66943248233462bd1441b37"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:35:45.036489Z",
+            "deadline_at": "2026-11-19T11:45:45.036489Z",
+            "close_submitted_at": "2026-11-19T11:48:15.945692Z",
+            "close_delay_seconds": 150.909203,
+            "exit_order_ids": [
+              "2178810435"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "estimated",
+                "exit_price": "1809.39485",
+                "fees": "0.05764821895401281272436074446",
+                "funding": "0",
+                "net_pnl": "-0.05930271895401281272436074446",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 15,
+                "observed_at": "2026-11-19T11:59:01.623802+00:00"
+              },
+              {
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T12:09:47.264530+00:00"
+              }
+            ]
+          },
+          {
+            "order_id": "2178808655",
+            "symbol": "XRPUSD",
+            "batch_id": "demo-1795088141664266500",
+            "position_episode_id": "demo-1795088141664266500:93723",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "ready",
+            "signal": {
+              "status": "ready",
+              "closed_at": 1795088100,
+              "entry": "0.988",
+              "breakout_level": "0.9875",
+              "rvol": "2.616406327728584220475574570",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "7088835.228799996",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:35:46.728586Z",
+            "closed_at": "2026-11-19T11:48:17.338441Z",
+            "planned_risk": "0.5356904",
+            "actual_commission": "0.00315257",
+            "funding": "0",
+            "net_pnl": "0.00884743",
+            "position": "long",
+            "entry": "0.9875",
+            "exit": "0.9915",
+            "leverage": 1,
+            "stop_loss": "0.9786",
+            "target": "1.0083",
+            "gross_pnl": "0.0120",
+            "fill_ids": [
+              "231fcd83f4da4b438f8f55846bf219f8",
+              "568ed15d2ff7469fb9d06acfdf40c290"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:35:46.822673Z",
+            "deadline_at": "2026-11-19T11:45:46.822673Z",
+            "close_submitted_at": "2026-11-19T11:48:16.889080Z",
+            "close_delay_seconds": 150.066407,
+            "exit_order_ids": [
+              "2178810437"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+                "minutes": 15,
+                "observed_at": "2026-11-19T11:59:01.623802+00:00"
+              },
+              {
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T12:09:47.264530+00:00"
+              }
+            ]
+          },
+          {
+            "order_id": "2178810477",
+            "symbol": "ETHUSD",
+            "batch_id": "demo-1795088916446080800",
+            "position_episode_id": "demo-1795088916446080800:1699",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "waiting",
+            "signal": {
+              "status": "waiting",
+              "closed_at": 1795088700,
+              "entry": "1808.1",
+              "breakout_level": "1812.65",
+              "rvol": "1.354694124772864930345245306",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "56113667.50950004",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:48:39.048594Z",
+            "closed_at": "2026-11-19T11:58:40.913531Z",
+            "planned_risk": "1.1542640",
+            "actual_commission": "0.05762998",
+            "funding": "0",
+            "net_pnl": "-0.19562998",
+            "position": "long",
+            "entry": "1811.15",
+            "exit": "1806.55",
+            "leverage": 1,
+            "stop_loss": "1793.10",
+            "target": "1847.55",
+            "gross_pnl": "-0.1380",
+            "fill_ids": [
+              "c3e7884a43f34e0b83fb8b806e494349",
+              "a08206f744f94ed791f39ba7519c1240"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:48:39.101287Z",
+            "deadline_at": "2026-11-19T11:58:39.101287Z",
+            "close_submitted_at": "2026-11-19T11:58:40.528905Z",
+            "close_delay_seconds": 1.427618,
+            "exit_order_ids": [
+              "2178811381"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 15,
+                "observed_at": "2026-11-19T12:09:47.264530+00:00"
+              },
+              {
+                "status": "pending",
+                "minutes": 30
+              }
+            ]
+          },
+          {
+            "order_id": "2178810484",
+            "symbol": "XRPUSD",
+            "batch_id": "demo-1795088916446080800",
+            "position_episode_id": "demo-1795088916446080800:93723",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "ready",
+            "signal": {
+              "status": "ready",
+              "closed_at": 1795088700,
+              "entry": "0.989",
+              "breakout_level": "0.9885",
+              "rvol": "6.460816179126038280967858433",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "7092984.448199996",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:48:40.802338Z",
+            "closed_at": "2026-11-19T11:58:41.971209Z",
+            "planned_risk": "0.5360210",
+            "actual_commission": "0.00315575",
+            "funding": "0",
+            "net_pnl": "-0.01515575",
+            "position": "long",
+            "entry": "0.9925",
+            "exit": "0.9885",
+            "leverage": 1,
+            "stop_loss": "0.9835",
+            "target": "1.0135",
+            "gross_pnl": "-0.0120",
+            "fill_ids": [
+              "2ba4a9aa495f481eabc667bdec6a60b7",
+              "ca7863063b6e4175add787294d129624"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:48:40.943601Z",
+            "deadline_at": "2026-11-19T11:58:40.943601Z",
+            "close_submitted_at": "2026-11-19T11:58:41.607835Z",
+            "close_delay_seconds": 0.664234,
+            "exit_order_ids": [
+              "2178811385"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 15,
+                "observed_at": "2026-11-19T12:09:47.264530+00:00"
+              },
+              {
+                "status": "pending",
+                "minutes": 30
+              }
+            ]
+          },
+          {
+            "order_id": "2178810490",
+            "symbol": "DOGEUSD",
+            "batch_id": "demo-1795088916446080800",
+            "position_episode_id": "demo-1795088916446080800:101555",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "waiting",
+            "signal": {
+              "status": "waiting",
+              "closed_at": 1795088700,
+              "entry": "0.05961",
+              "breakout_level": "0.05969",
+              "rvol": "0.005616399887672002246559955069",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "780408.5816",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:48:43.056568Z",
+            "closed_at": "2026-11-19T11:58:52.242603Z",
+            "planned_risk": "0.715945400",
+            "actual_commission": "0.01901406",
+            "funding": "0",
+            "net_pnl": "-0.09701406",
+            "position": "long",
+            "entry": "0.05981",
+            "exit": "0.05955",
+            "leverage": 2,
+            "stop_loss": "0.059211",
+            "target": "0.061008",
+            "gross_pnl": "-0.07800",
+            "fill_ids": [
+              "4cebd9d606f243ec8db12bd0dbc3ac17",
+              "3630e94009ff4db0960784bae178d43a"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:48:43.193362Z",
+            "deadline_at": "2026-11-19T11:58:43.193362Z",
+            "close_submitted_at": "2026-11-19T11:58:51.860732Z",
+            "close_delay_seconds": 8.66737,
+            "exit_order_ids": [
+              "2178811409"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 15,
+                "observed_at": "2026-11-19T12:09:47.264530+00:00"
+              },
+              {
+                "status": "pending",
+                "minutes": 30
+              }
+            ]
+          },
+          {
+            "order_id": "2178811430",
+            "symbol": "BTCUSD",
+            "batch_id": "demo-1795089553628736700",
+            "position_episode_id": "demo-1795089553628736700:84",
+            "classification": "strategy",
+            "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+            "signal_status_at_entry": "waiting",
+            "signal": {
+              "status": "waiting",
+              "closed_at": 1795089300,
+              "entry": "63929.5",
+              "breakout_level": "64060.0",
+              "rvol": "0.8289000236378333737024726341",
+              "version": "delta-5m-breakout20-v1"
+            },
+            "turnover_usd_at_entry": "331699642.11839855",
+            "filled_contracts": 3,
+            "opened_at": "2026-11-19T11:59:14.924586Z",
+            "closed_at": "2026-11-19T12:09:18.044117Z",
+            "planned_risk": "2.8063616",
+            "actual_commission": "0.20340701",
+            "funding": "0",
+            "net_pnl": "-0.69840701",
+            "position": "long",
+            "entry": "63926.5",
+            "exit": "63761.5",
+            "leverage": 5,
+            "stop_loss": "63314.4",
+            "target": "65233.2",
+            "gross_pnl": "-0.4950",
+            "fill_ids": [
+              "af4df319e19e4387aed409024ad0b205",
+              "fb317720621246ef9d9d9a240346c570"
+            ],
+            "protection_verified": false,
+            "first_fill_at": "2026-11-19T11:59:15.068432Z",
+            "deadline_at": "2026-11-19T12:09:15.068432Z",
+            "close_submitted_at": "2026-11-19T12:09:17.662564Z",
+            "close_delay_seconds": 2.594132,
+            "exit_order_ids": [
+              "2178813360"
+            ],
+            "exit_reason": "ten_minute",
+            "shadow_exits": [
+              {
+                "status": "estimated",
+                "exit_price": "63742.11300",
+                "fees": "0.2033761265058074229746790775",
+                "funding": "0",
+                "net_pnl": "-0.7565371265058074229746790775",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 15,
+                "observed_at": "2026-11-19T12:15:02.567748+00:00"
+              },
+              {
+                "status": "pending",
+                "minutes": 30
+              }
+            ]
+          }
+        ],
+        "statistics": {
+          "net_pnl_usd": "-1.30432841",
+          "mean_net_pnl_usd": "-0.130432841",
+          "wins": 1,
+          "losses": 9,
+          "breakevens": 0,
+          "largest_win_usd": "0.00884743",
+          "largest_loss_usd": "-0.69840701",
+          "without_largest_win_usd": "-1.31317584",
+          "max_drawdown_usd": "1.30432841",
+          "exit_comparison": {
+            "15": {
+              "pairs": 5,
+              "pending": 0,
+              "unavailable": 5,
+              "actual_win_rate": 0.0,
+              "modeled_win_rate": 0.0,
+              "mean_paired_change_usd": "-0.0401521178954082698253274668"
+            },
+            "30": {
+              "pairs": 3,
+              "pending": 4,
+              "unavailable": 3,
+              "actual_win_rate": 0.0,
+              "modeled_win_rate": 1.0,
+              "mean_paired_change_usd": "0.390424074656777413043112082"
+            }
+          }
+        },
+        "previous_decisions": [],
+        "review_tracks": [
+          "market_data",
+          "entry_exit",
+          "risk_costs",
+          "execution",
+          "reconciliation_validation"
+        ],
+        "workflow": "campaign_v1",
+        "outcome": "losing"
       }
     },
     "candidate_registry": {

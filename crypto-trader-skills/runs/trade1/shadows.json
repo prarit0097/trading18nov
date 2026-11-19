@@ -7082,8 +7082,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "63742.11300",
+        "fees": "0.2033761265058074229746790775",
+        "funding": "0",
+        "net_pnl": "-0.7565371265058074229746790775",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T12:15:02.567748+00:00"
       },
       {
         "status": "pending",
@@ -7111,8 +7117,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "1802.748175",
+        "fees": "0.05749455392859415305245055890",
+        "funding": "0",
+        "net_pnl": "-0.1685493039285941530524505589",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T12:15:02.567748+00:00"
       },
       {
         "status": "pending",
@@ -7140,8 +7152,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 15,
+        "observed_at": "2026-11-19T12:15:02.567748+00:00"
       },
       {
         "status": "pending",
@@ -7169,8 +7183,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "0.059410280",
+        "fees": "0.018963117604000",
+        "funding": "0.00113597",
+        "net_pnl": "-0.083743147604000",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T12:15:02.567748+00:00"
       },
       {
         "status": "pending",
