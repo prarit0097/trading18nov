@@ -975,3 +975,15 @@ The observer published terminal evidence digest `f370911a133ec17c2f97b6f9c3ecc68
 The 15-minute candle comparison matched eight closes, with four winners at both horizons and +$0.08257828 mean modeled change. Supplemental depth gave ten pairs and +$0.07592137 mean with the same four winners. The 30-minute candle comparison matched seven closes, moving from two to three winners while mean net fell by $0.11197187. Supplemental depth gave nine pairs, moving from three to four winners with mean net down $0.08724990. Across the first 160 closes, 101 official 15-minute pairs changed mean net by −$0.04248484 and 77 official 30-minute pairs changed it by −$0.04584465. The manager prioritized measuring executable quantity inside unchanged IOC caps in prospective observations.
 
 After the gate cleared, batch `demo-1795081590539352000` filled exactly three contracts each in BTC, ETH, XRP and SOL. The signed India testnet read confirmed the four positions and all eight reduce-only stop and target orders. Combined planned risk including fees was $7.7113544. Deadlines are 15:26:31.764–15:26:37.602 IST. Both public 15- and 30-minute capture workers started. Excel shows 161 verified closes, 16 finalized reviews and −$19.75092544 cumulative net. Weekly quota was 78% remaining and the five-hour reading was unavailable.
+
+### Trades 162–165 — 19 November, 15:28 IST
+
+Batch `demo-1795081590539352000` settled all four three-contract positions on their ten-minute timers. A signed Delta India testnet read matched eight fills. Twelve wallet postings establish −$0.11550000 gross, $0.50438767 in fees, zero funding and −$0.61988767 net. All four closed at a net loss. Submission delays ranged from 1.728 to 7.453 seconds. Excel shows 165 verified closes, 16 final reviews and −$20.37081311 total net. Review 17 has five verified closes.
+
+The next batch `demo-1795082222536893200` filled three contracts each for BTC, ETH, XRP and SOL. The signed read confirmed the four fills and all eight reduce-only protection orders. Combined planned risk including fees is $7.7104772. The deadlines range from 15:37:03.724 to 15:37:09.295 IST. Both public order-book capture workers started. Daily loss plus reserved risk was $28.08129031 against the $30 limit. Weekly quota was 78% remaining and the five-hour reading was unavailable.
+
+### First IOC depth observation — 19 November, 15:29 IST
+
+A bounded public testnet order-book probe captured 2,488 offer snapshots across five symbols and two connections. For the four IOC submissions in batch `demo-1795082222536893200`, the last eligible snapshots arrived 257–493 ms before the journaled submission starts. Each showed at least three displayed contracts within the saved cap. All four signed exchange fills matched those quantities. The matched levels, clocks and limits are in `runs/trade1/ioc-probe-20261119-1524.json`.
+
+This single correlated basket provides a check of the measurement method. It contains no partial, zero-fill or guarded-unsent observations. No strategy decision relies on this sample.
