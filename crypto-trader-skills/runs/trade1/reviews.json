@@ -12846,10 +12846,10 @@
         }
       },
       "cff25354df5b18dbb2fef2d233ead2e992acb903591d62faacfec9898ec7ee72": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "ac3b8f40cd2630ad9d495869acdcab40a727cd9bb373ebd5ff079add78baf071",
-        "queued_at": "2026-11-19T11:22:10.317903+00:00",
+        "evidence_sha256": "e089808f65852faf992edf670be7a15fc77600254b8965ab7ea76149b625dcec",
+        "queued_at": "2026-11-19T11:32:47.843445+00:00",
         "evidence": [
           {
             "order_id": "2178801704",
@@ -13486,8 +13486,14 @@
                 "observed_at": "2026-11-19T11:17:23.232421+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "63880.04400",
+                "fees": "0.2033170666093998540249099428",
+                "funding": "0",
+                "net_pnl": "0.1823149333906001459750900572",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T11:32:47.843445+00:00"
               }
             ]
           }
@@ -13512,12 +13518,12 @@
               "mean_paired_change_usd": "-0.01986697627723789051140587375"
             },
             "30": {
-              "pairs": 5,
-              "pending": 1,
+              "pairs": 6,
+              "pending": 0,
               "unavailable": 4,
               "actual_win_rate": 0.0,
-              "modeled_win_rate": 0.0,
-              "mean_paired_change_usd": "-0.0506053142952868488464393664"
+              "modeled_win_rate": 0.16666666666666666,
+              "mean_paired_change_usd": "0.04305562531902765029048220417"
             }
           }
         },
@@ -13530,7 +13536,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T11:34:54.683052+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "All ten entries were WAIT. Public closed five-minute candles confirmed zero of five READY at each of the four represented decisions. Eight positions had below-average relative volume, including the only winner. The small set of correlated baskets supports no relative-volume selection advantage. Three reviewed orders from the 15:35 IOC probe filled three contracts as projected. The two archived probes observed eight full fills. A later BTC IOC returned zero after a checked ask $1 inside its limit. A separate SOL lot stopped before submission when its ask exceeded its cap by $0.009. These two later events lack matched depth. Extend passive capture across full, partial, zero and unsent outcomes before evaluating fillability.",
+            "entry_exit": "All ten used ten-minute timers. Eight official 15-minute pairs went from one winner to zero and mean net fell $0.01986698. Depth extended coverage to all ten with the same lost winner and mean net down $0.04638116. Six official 30-minute pairs went from zero winners to one and mean net improved $0.04305563. Supplemental depth matched seven, added the same winner and improved mean net $0.03540969. Three funding-proven cross-hour estimates were evaluated offline. Combined with the seven depth observations they cover all ten, with one winner at each horizon and mean net down $0.04233533 at 30 minutes. The research extension preserves the original fee, mark-path, price and timestamp rules.",
+            "risk_costs": "Gross loss was $0.96300000, commissions were $1.06896529 and funding was zero, giving net -$2.03196529. Peak planned position risk including fees was $3.2261240. The day-loss-plus-reserve peak was $29.82311945 and initial basket margin peaked at 70.81 percent of available. Leverage stayed at or below five times. After 183 settled closes the risk room was $7.33421792. The observed fresh preflight found a lower-risk four-coin combination with DOGE replacing SOL. The next attempt requires current quotes and another preflight.",
+            "execution": "Signed India testnet confirmed ten fully filled reduce-only market exits, three contracts each. Six sends were more than ten seconds after their deadlines. The slowest send was 13.520 seconds late. Passive traced lock-to-timer durations varied from 5.956 to 12.313 seconds. On the slowest measured basket the lag accrued mainly before timer evaluation. The latest measured basket reached all four staggered deadlines within one cycle and sent all within 3.795 seconds. Use the observed phase timings as offline fixtures. A same-session deadline check must retain fresh ownership, bracket, time, side and de-duplication checks. The constituent startup and read durations and on-time P&L are unmeasured.",
+            "reconciliation_validation": "Closes 171 through 180 reconcile twenty distinct fills, twenty fee debits and ten gross cashflows to Excel. Funding was zero. One winner and nine losses gave net -$2.03196529. All four represented basket slices were negative, split 3, 3, 3 and 1. Removing the best close leaves -$2.03333583. The first 180 verified closes have 40 winners across 56 source baskets and net -$22.45239164. ETH, XRP and SOL closes 181 through 183 belong to review 19. Their separate results bring Excel to -$22.66578208. The delay evidence needs executable prices and independent basket-level comparisons before drawing a profit conclusion."
+          },
+          "manager": {
+            "findings": "The four represented basket slices all lost. The two SOL lots produced about 69 percent of the group's $2.03196529 net loss. None of the decision windows had a READY coin. The official 30-minute subset improved, with six of ten matches. The complete ten-member research sensitivity gave -$2.45531862 modeled versus -$2.03196529 realized and one winner at both horizons. The three funded-schedule recoveries were evaluated separately and leave official comparisons intact. In the first 180 closes, 114 and 87 official 15- and 30-minute pairs lost $0.04937197 and $0.04576743 per matched trade on average, respectively.",
+            "recommendation": "Retain the ten-minute policy and frozen four-READY study. Continue collecting validated public funding schedules and book snapshots when longer holds cross a UTC hour. Use the covered and uncovered outcomes as controls in the separate research path. Evaluate after-cost win probability and average net on common, independent baskets before any change to the holding period. Keep the measured timer phases available for a distinct scheduling test."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "Retain current size, risk limits and ten-minute exit. The 30-minute headline gain depends on partial coverage. With additional funding and depth evidence all ten positions are matched, with equal winner count and lower net. Gather later independent baskets and preserve the frozen four-READY study."
+          }
+        }
       }
     },
     "candidate_registry": {
