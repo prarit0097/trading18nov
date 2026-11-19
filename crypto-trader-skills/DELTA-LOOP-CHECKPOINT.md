@@ -899,3 +899,11 @@ After the review gate cleared, one BTC quote guard stopped the first attempt bef
 The three filled positions in `demo-1795074991923931100` closed on their original timers. The signed Delta India testnet read confirmed six fills at three contracts per side for BTC, ETH and XRP. Twelve wallet postings reconcile −$0.23100000 gross, $0.26342331 commissions, $0.02482762 funding paid and −$0.51925093 net. The workbook and ledger match at 144 verified trades, fourteen finalized reviews and −$18.57175694 cumulative net. Review 15 now has four verified trades.
 
 The next attempt had an unfilled BTC IOC and an ETH quote guard blocked the unsent legs. The following attempt `demo-1795075665522060600` filled three contracts each for BTC, ETH, XRP and SOL and verified each stop-loss and target pair. The combined planned risk including fees was $7.7095934. Individual deadlines are 13:47:46.796–13:47:52.429 IST. The 15- and 30-minute public depth captures were started.
+
+### Trades 145–148 — 19 November, 13:49 IST
+
+The 15-minute research comparison for `demo-1795074991923931100` paired BTC and XRP. Both remained losses, with −$0.40189292 modeled net and −$0.43538812 realized. ETH's reference lacked an executable price.
+
+The signed Delta India testnet endpoint matched eight fills, each three contracts per side, for `demo-1795075665522060600`. Twelve wallet postings establish +$0.24900000 gross, $0.50449997 commissions, zero funding and −$0.25549997 net. One trade won and three lost. All four closed on their original timers. Excel and the ledger match at 148 verified trades, fourteen finalized reviews and −$18.82725691 cumulative net. Two more closes will complete review 15 membership.
+
+The subsequent batch `demo-1795076296560259600` filled BTC, ETH and XRP at three contracts each and verified both protection orders on all three. The SOL leg stopped before submission on the quote guard. Combined planned risk including fees is $4.4886954 and the individual deadlines are 13:58:18.022–13:58:21.743 IST. The 15- and 30-minute public depth captures were started.
