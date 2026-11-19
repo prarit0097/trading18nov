@@ -316,6 +316,55 @@
       }
     }
   ],
-  "realized_after_cost_status": "pending_settlement",
-  "interpretation": "The four submissions all filled three contracts in one basket. The pre-intent book, saved ticker and always-full baseline each agreed on all four. This sample contains zero partial and zero unfilled cases, so it provides no evidence that the display improves fill accuracy over either baseline."
+  "realized_after_cost_status": "verified_settled",
+  "interpretation": "The four submissions all filled three contracts in one basket. The pre-intent book, saved ticker and always-full baseline each agreed on all four. This sample contains zero partial and zero unfilled cases, so it provides no evidence that the display improves fill accuracy over either baseline.",
+  "realized_after_cost": {
+    "batch": "demo-1795095248645280700",
+    "closed": 4,
+    "wins": 2,
+    "totals": {
+      "gross_pnl": "0.15150",
+      "actual_commission": "0.28263568",
+      "funding": "0",
+      "net_pnl": "-0.13113568"
+    },
+    "positions": [
+      {
+        "symbol": "BTCUSD",
+        "order_id": "2178822453",
+        "gross_pnl": "0.0975",
+        "actual_commission": "0.20299362",
+        "funding": "0",
+        "net_pnl": "-0.10549362",
+        "closed_at": "2026-11-19T13:44:23.634059Z"
+      },
+      {
+        "symbol": "ETHUSD",
+        "order_id": "2178822463",
+        "gross_pnl": "0.0675",
+        "actual_commission": "0.05751129",
+        "funding": "0",
+        "net_pnl": "0.00998871",
+        "closed_at": "2026-11-19T13:44:24.605361Z"
+      },
+      {
+        "symbol": "XRPUSD",
+        "order_id": "2178822470",
+        "gross_pnl": "0.0045",
+        "actual_commission": "0.00315176",
+        "funding": "0",
+        "net_pnl": "0.00134824",
+        "closed_at": "2026-11-19T13:44:25.583521Z"
+      },
+      {
+        "symbol": "DOGEUSD",
+        "order_id": "2178822476",
+        "gross_pnl": "-0.01800",
+        "actual_commission": "0.01897901",
+        "funding": "0",
+        "net_pnl": "-0.03697901",
+        "closed_at": "2026-11-19T13:44:26.842892Z"
+      }
+    ]
+  }
 }
