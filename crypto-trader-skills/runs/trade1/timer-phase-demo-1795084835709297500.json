@@ -1,0 +1,47 @@
+{
+  "study": "Passive observer phase timing",
+  "environment": "india_testnet",
+  "scope": "Three journaled ten-minute exits in one batch",
+  "method": "Sample the ledger and reconciliation lock once every 200 ms. Ledger as_of is taken before timer calls. Join the first matching submit event to the same ledger cycle. Use exchange first-fill deadlines and local submit timestamps.",
+  "limitation": "The lock-to-timer span combines startup, account reads and reconciliation. Timing inside those phases was not recorded.",
+  "batch": "demo-1795084835709297500",
+  "observed_ledger_cycles": 7,
+  "samples": [
+    {
+      "symbol": "BTCUSD",
+      "deadline": "2026-11-19T10:50:37.178615Z",
+      "before_timer": "2026-11-19T10:50:38.593795+00:00",
+      "submitted": "2026-11-19T10:50:39.201422Z",
+      "last_pre_timer": "2026-11-19T10:50:30.152913+00:00",
+      "lock_start_s_relative_to_deadline": -5.728,
+      "reconcile_lock_to_timer_s": 7.143,
+      "timer_start_s_relative_to_deadline": 1.415,
+      "timer_to_submission_s": 0.608,
+      "due_to_submit_s": 2.023
+    },
+    {
+      "symbol": "ETHUSD",
+      "deadline": "2026-11-19T10:50:39.229125Z",
+      "before_timer": "2026-11-19T10:50:38.593795+00:00",
+      "submitted": "2026-11-19T10:50:40.195130Z",
+      "last_pre_timer": "2026-11-19T10:50:30.152913+00:00",
+      "lock_start_s_relative_to_deadline": -7.779,
+      "reconcile_lock_to_timer_s": 7.143,
+      "timer_start_s_relative_to_deadline": -0.635,
+      "timer_to_submission_s": 1.601,
+      "due_to_submit_s": 0.966
+    },
+    {
+      "symbol": "XRPUSD",
+      "deadline": "2026-11-19T10:50:41.196048Z",
+      "before_timer": "2026-11-19T10:50:48.610208+00:00",
+      "submitted": "2026-11-19T10:50:49.197628Z",
+      "last_pre_timer": "2026-11-19T10:50:38.593795+00:00",
+      "lock_start_s_relative_to_deadline": 0.687,
+      "reconcile_lock_to_timer_s": 6.727,
+      "timer_start_s_relative_to_deadline": 7.414,
+      "timer_to_submission_s": 0.587,
+      "due_to_submit_s": 8.002
+    }
+  ]
+}
