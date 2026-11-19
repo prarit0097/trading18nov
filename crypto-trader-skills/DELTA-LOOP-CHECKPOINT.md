@@ -811,3 +811,11 @@ Delta India testnet independently confirmed eight fills at three contracts per s
 Workbook and ledger match at 115 verified closes, eleven finalized reviews and −$12.75964063 cumulative net. Review 12 has five verified closes.
 
 The next batch `demo-1795066360590446300` filled BTC, ETH, XRP and SOL at three contracts each. All four protections were verified. Fees-inclusive planned risk is $7.6908212. Individual deadlines are 11:12:41.811–11:12:47.470 IST. The public 15- and 30-minute depth captures were started for this batch.
+
+### Trades 116–119 — 19 November, 11:14 IST
+
+The public 15-minute research comparison for the preceding batch `demo-1795065735250059600` matched all four entries, including a displayed-depth estimate for XRP. Actual 10-minute net was −$0.41104455 with zero winners. Modeled 15-minute net was +$0.16911272 with two winners. The four related positions came from one basket.
+
+The four positions in `demo-1795066360590446300` closed on their original timers. A direct Delta India testnet read matched eight fills at three contracts per side. Twelve wallet postings give −$0.27450000 gross, $0.50252704 commissions, zero funding and −$0.77702704 net. Exit submissions were 2.457–5.282 seconds after the deadline. Workbook and ledger match at 119 verified closes, eleven finalized reviews and −$13.53666767 cumulative net. One more close completes review 12 membership.
+
+The next batch `demo-1795066987122547900` filled three contracts each for BTC, ETH, XRP and SOL. Both protections were verified for all four positions. Fees-inclusive planned risk is $7.6879454 and the original deadlines are 11:23:08.658–11:23:14.457 IST. Public 15- and 30-minute depth captures were started.
