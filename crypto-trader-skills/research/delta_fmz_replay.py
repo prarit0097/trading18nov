@@ -7,7 +7,7 @@ Only public candles and source documents are read. Original Pine never executes.
 import argparse
 import ast
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from itertools import groupby
 from pathlib import Path
 import csv
@@ -59,6 +59,9 @@ class Order:
     identity: str
     direction: int
     conditions: tuple
+    prices: dict = field(default_factory=dict)
+    from_entry: str = ""
+    oca_group: str = ""
 
 
 @dataclass
@@ -122,7 +125,7 @@ def literal(node):
         raise Unsupported("Order uses a computed identifier or parameter") from exc
 
 
-def parse(code, interval):
+def parse(code, interval, *, priced_orders=False):
     # Captures ordinary quote-delimited string literals and removes comments without touching them.
     comment = re.compile(r"""("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')|//.*""")
     code = re.sub(r"/\*.*?\*/", "", code, flags=re.S)
@@ -133,10 +136,15 @@ def parse(code, interval):
     ]
     variables, orders = {}, []
     stack = []
+    previous_if = {}
     found_header = False
     for indent, line in lines:
         while stack and indent <= stack[-1][0]:
             stack.pop()
+        for depth in tuple(previous_if):
+            if depth > indent:
+                previous_if.pop(depth)
+        prior_if = previous_if.pop(indent, None)
         if re.match(r"strategy\s*\(", line):
             _, kw = call_parts(line)
             unsafe = {
@@ -162,25 +170,63 @@ def parse(code, interval):
                 raise Unsupported("Nonstandard Pine order timing")
             found_header = True
         elif line.startswith("if ") or line.startswith("if("):
-            stack.append((indent, expression(line[2:])))
+            condition = expression(line[2:])
+            stack.append((indent, condition))
+            previous_if[indent] = condition
+        elif priced_orders and line == "else" and prior_if is not None:
+            stack.append((indent, ast.UnaryOp(op=ast.Not(), operand=prior_if)))
         elif match := re.match(r"strategy\.(\w+)\s*\(", line):
             kind = match[1]
             args, kw = call_parts(line)
-            if kind not in {"entry", "close", "close_all"}:
+            supported = {"entry", "close", "close_all"}
+            if priced_orders:
+                supported |= {"exit", "cancel", "cancel_all"}
+            if kind not in supported:
                 raise Unsupported("Stop, limit, cancel or other order model")
             allowed = {"when", "comment", "alert_message"}
+            maximum = {
+                "entry": 2,
+                "close": 1,
+                "close_all": 0,
+                "exit": 2,
+                "cancel": 1,
+                "cancel_all": 0,
+            }
             if kind == "entry":
                 allowed.update(("id", "direction"))
-            if kind == "close":
+                if priced_orders:
+                    allowed.update(("stop", "limit", "oca_name", "oca_type"))
+            if kind in {"close", "cancel"}:
                 allowed.add("id")
-            if (
-                set(kw) - allowed
-                or len(args) > {"entry": 2, "close": 1, "close_all": 0}[kind]
-            ):
+            if kind == "exit":
+                allowed.update(
+                    (
+                        "id",
+                        "from_entry",
+                        "stop",
+                        "limit",
+                        "loss",
+                        "profit",
+                        "qty_percent",
+                        "comment_profit",
+                        "comment_loss",
+                        "alert_profit",
+                        "alert_loss",
+                    )
+                )
+                if "qty_percent" in kw and literal(kw["qty_percent"]) != 100:
+                    raise Unsupported(
+                        "Partial protective exit requires a quantity model"
+                    )
+                if not (set(kw) & {"stop", "limit", "profit", "loss"}):
+                    raise Unsupported("Missing bracket price")
+            if priced_orders and kind == "entry" and {"stop", "limit"} <= set(kw):
+                raise Unsupported("Stop-limit entry requires a two-stage fill model")
+            if set(kw) - allowed or len(args) > maximum[kind]:
                 raise Unsupported("Stop, limit, sizing or fill parameter")
             direction = 0
             identity = ""
-            if kind != "close_all":
+            if kind not in {"close_all", "cancel_all"}:
                 identity = literal(args[0] if args else kw.get("id"))
                 if not isinstance(identity, str):
                     raise Unsupported("Unsupported order identifier")
@@ -197,12 +243,36 @@ def parse(code, interval):
             conditions = [node for _, node in stack]
             if "when" in kw:
                 conditions.append(kw["when"])
-            orders.append(Order(kind, identity, direction, tuple(conditions)))
+            linked = (
+                literal(args[1] if len(args) > 1 else kw["from_entry"])
+                if kind == "exit" and (len(args) > 1 or "from_entry" in kw)
+                else ""
+            )
+            group = ""
+            if "oca_type" in kw:
+                mode = ast.unparse(kw["oca_type"])
+                if mode not in {"strategy.oca.none", "strategy.oca.cancel"}:
+                    raise Unsupported("Unsupported OCA order reduction")
+                if mode.endswith(".cancel") and "oca_name" in kw:
+                    group = literal(kw["oca_name"])
+            prices = {k: kw[k] for k in ("stop", "limit", "loss", "profit") if k in kw}
+            orders.append(
+                Order(
+                    kind, identity, direction, tuple(conditions), prices, linked, group
+                )
+            )
         elif re.match(r"(?:" + "|".join(IMPLICIT_PLOTS) + r")\s*\(", line):
             continue
         elif (
             not stack
-            and (match := re.fullmatch(r"(\w+)\s*=\s*(.+)", line))
+            and (
+                match := re.fullmatch(
+                    r"(?:float |int |bool |color )?(\w+)\s*=\s*(.+)"
+                    if priced_orders
+                    else r"(\w+)\s*=\s*(.+)",
+                    line,
+                )
+            )
             and match[1] not in variables
         ):
             # Parse only reachable variables so a drawing expression cannot invalidate clean order logic.
