@@ -1,0 +1,15 @@
+{
+  "source": "Delta india_testnet 5m public candles cached for delta-october-comparison.json",
+  "window_ist": ["2026-09-23", "2026-10-21 exclusive"],
+  "universe": ["BTCUSD", "ETHUSD", "SOLUSD", "XRPUSD", "DOGEUSD"],
+  "rules": "Every 10 minutes from midnight IST, provided t+10m is strictly before the window end. Rank five symbols by previous closed candle price divided by close 12 five-minute bars earlier. Skip if all returns equal. Ties sort by symbol. For ETH/BTC variants use latest closed log price ratio vs population mean and SD of 24 preceding closed log ratios, trigger absolute z>2. Pair rows are long and short equal-dollar positions. Require all five ranking inputs, and available prior ETH/BTC ratio history for ratio variants. Model fills using open prices of entry and exit five-minute bars with positive traded volume on both ends for each leg. Retrospective price availability mask. No costs, funding, size limits or historical quote/queue model. Pooled nominal percentage returns per gross notional, positive above 1e-12 counts as win, flat counts as non-win.",
+  "columns": ["rule", "wins", "closed", "flat", "gross_win_pct", "mean_gross_bp"],
+  "results": [
+    ["long strongest prior hour", 1299, 2982, 313, 43.56, 0.53],
+    ["long weakest prior hour", 1355, 3049, 317, 44.44, 6.53],
+    ["long strongest short weakest", 1099, 2339, 34, 46.99, -3.83],
+    ["long weakest short strongest", 1206, 2339, 34, 51.56, 3.83],
+    ["ETH/BTC ratio reversion", 286, 536, 0, 53.36, 5.32],
+    ["ETH/BTC ratio continuation", 250, 536, 0, 46.64, -5.32]
+  ]
+}
