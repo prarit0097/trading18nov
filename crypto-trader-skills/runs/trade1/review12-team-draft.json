@@ -1,0 +1,35 @@
+{
+  "review_id": "a77b25c41eb121d7602625e23ded18a6eefc7d0d0e7ff29b2ca878782f06ecf9",
+  "order_ids": [
+    "2178778457",
+    "2178780644",
+    "2178780648",
+    "2178780651",
+    "2178780656",
+    "2178781169",
+    "2178781178",
+    "2178781182",
+    "2178781186",
+    "2178782014"
+  ],
+  "status": "awaiting_terminal_exit_comparisons",
+  "specialists": {
+    "market_data": "All ten recorded entries were WAIT. Closed five-minute public replay found zero READY signals across five coins at each of the four decision times. Each reviewed leg had relative volume between 0.106 and 0.757 of the preceding 20-bar mean. XRP in the final basket was 2.192 times that mean and belongs to the next review. Preserve continuous relative volume and breakout breadth at the basket decision.",
+    "entry_exit": "All ten lots closed on the ten-minute timer. At the preliminary six official 15-minute pairs, two modeled wins came from one basket. SOL added $0.43537919, more than the combined paired improvement of $0.42607064. The preliminary 30-minute model worsened both paired net results in aggregate. The final reviewed BTC boundary bars become available at 11:29 and 11:44 IST. Use only like-for-like entries and track missing funding or executable prices.",
+    "risk_costs": "Gross loss of $0.48750000 plus $1.44722867 in commissions gave a $1.93472867 net loss. Funding was zero. Five gross winners became net losers. The highest lot planned loss was $3.226088 and day loss plus full batch reserve peaked at $21.22461307. Recorded margin ranged from 76.65 to 77.54 percent. Total executed entry cost was $0.0405 below the recorded preflight ask cost for the same quantities. Exit quotes are unavailable for measuring exact round-trip slippage.",
+    "execution": "Ten lots opened and closed exactly three contracts. Entries stayed within the IOC cap and both brackets were confirmed. All four represented baskets completely filled. No observed partial, zero, abandoned or early protective exit affected the group. Timed submissions lagged by 0.965 to 5.446 seconds. Exchange fills followed within 0.595 seconds.",
+    "reconciliation_validation": "The signed Delta India testnet read matched twenty fills, twenty commissions and ten cashflows. Excel matched exact group membership, fees and wallet net. All ten lost and there were no breakevens. The four execution baskets contributed one, four, four and one position. The first and last baskets are shared with the neighboring reviews. Closes 121 through 123 belong to review 13. The first 120 verified trades have 30 net winners and -$13.73385343 aggregate net."
+  },
+  "manager": {
+    "findings": "The group average was -$0.193472867 per trade. On $1,362.9825 entry notional, gross lost 3.58 basis points and fees cost 10.62 basis points. Fees represented 74.80 percent of the net loss, while the underlying gross outcome was also negative. The apparent 15-minute recovery is concentrated in one SOL position. Recent turnover and fees support testing a cost hurdle on independent data.",
+    "recommendation": "Retain three contracts, 10-minute exits and the registered four-READY test. Record continuous closed-bar relative volume, recent price movement, quoted spread and pre-entry round-trip fee and slippage assumptions. In separate research, test whether low-volume and high-cost observations cover costs less often, using future whole baskets and matched days. Account for gains forgone, losses avoided, and idle or unfilled opportunities. Keep the frozen criteria intact and validate a proposed filter before deployment."
+  },
+  "ceo": {
+    "decision": "retain_current",
+    "rationale": "The results justify testing a pre-entry cost and relative-volume hypothesis using new data. Four related baskets and limited paired exit coverage do not justify changing the active strategy, risk limits, or frozen comparison."
+  },
+  "comparison_eligible_at_ist": {
+    "15": "2026-11-19T11:29:00+05:30",
+    "30": "2026-11-19T11:44:00+05:30"
+  }
+}
