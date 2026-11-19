@@ -1,0 +1,321 @@
+{
+  "environment": "india_testnet",
+  "study": "trade1_ioc_pre_intent_displayed_depth",
+  "scope": "First frozen prospective fill-count window",
+  "protocol_path": "runs/trade1/ioc-pre-intent-protocol-20261119.json",
+  "protocol_sha256": "e4d530827d100f880d941b76fd58faf11df49302a068ebdfba5ab217c2dfee70",
+  "tape_sha256": "d7aee28edacfafd6392b8e0a15a9f9e8b7f5d5502db047f0be443b3a68500d59",
+  "sealed_local_prediction_sha256": "d50f2c6c3bff078ff7baeb096b67d9cf4351dea642b36712731fe69cb4b2407f",
+  "capture": {
+    "environment": "india_testnet",
+    "venue": "wss://socket-ind-pub.testnet.deltaex.org",
+    "stream": "ob_l2",
+    "sessions": 1,
+    "invalid": 20,
+    "sample_start": "2026-11-19T13:29:30.000Z",
+    "sample_end": "2026-11-19T13:39:30.000Z",
+    "completed_at": "2026-11-19T13:39:30.000Z",
+    "counts": {
+      "BTCUSD": 1190,
+      "ETHUSD": 1198,
+      "XRPUSD": 1196,
+      "SOLUSD": 1190,
+      "DOGEUSD": 1198
+    },
+    "clock_start_ms": 1795094543254,
+    "max_clock_drift_ms": 11.830100000021048,
+    "match_rule": "Record local receipt and monotonic elapsed time. Prediction and comparison are defined by the published Trade 1 pre-intent protocol."
+  },
+  "clock_eligible": true,
+  "guarded_or_other_unsent": 0,
+  "counts": {
+    "submitted": 4,
+    "signed": 4,
+    "unresolved": 0,
+    "book_available": 4,
+    "ticker_available": 4,
+    "common": 4
+  },
+  "scores": {
+    "displayed_book": {
+      "n": 4,
+      "exact": 4,
+      "mean_absolute_contract_error": 0,
+      "false_full": 0,
+      "predicted_full": 4
+    },
+    "saved_ticker": {
+      "n": 4,
+      "exact": 4,
+      "mean_absolute_contract_error": 0,
+      "false_full": 0,
+      "predicted_full": 4
+    },
+    "always_full": {
+      "n": 4,
+      "exact": 4,
+      "mean_absolute_contract_error": 0,
+      "false_full": 0,
+      "predicted_full": 4
+    }
+  },
+  "by_basket": {
+    "demo-1795095248645280700": {
+      "displayed_book": {
+        "n": 4,
+        "exact": 4,
+        "mean_absolute_contract_error": 0,
+        "false_full": 0,
+        "predicted_full": 4
+      },
+      "saved_ticker": {
+        "n": 4,
+        "exact": 4,
+        "mean_absolute_contract_error": 0,
+        "false_full": 0,
+        "predicted_full": 4
+      },
+      "always_full": {
+        "n": 4,
+        "exact": 4,
+        "mean_absolute_contract_error": 0,
+        "false_full": 0,
+        "predicted_full": 4
+      }
+    }
+  },
+  "outcome_distribution": [
+    0,
+    0,
+    0,
+    4
+  ],
+  "observations": [
+    {
+      "batch": "demo-1795095248645280700",
+      "symbol": "BTCUSD",
+      "product_id": 84,
+      "intent": "2026-11-19T13:34:09.487739+00:00",
+      "limit": "63699.0",
+      "requested": 3,
+      "always_full_prediction": 3,
+      "saved_preflight_ask": "63698",
+      "ticker_prediction": 3,
+      "book_status": "eligible",
+      "book_prediction": 3,
+      "displayed_quantity_within_cap": "4816",
+      "local_receipt_age_ms": 89.739,
+      "selected_book": {
+        "symbol": "BTCUSD",
+        "exchange_us": 1795095250859671,
+        "receipt_ms": 1795095249398,
+        "elapsed_ms": 706144.9741,
+        "book_update_us": 1795095250495513,
+        "asks": [
+          [
+            "63698.0",
+            "1229"
+          ],
+          [
+            "63698.5",
+            "1573"
+          ],
+          [
+            "63699.0",
+            "2014"
+          ],
+          [
+            "63699.5",
+            "2578"
+          ],
+          [
+            "63700.0",
+            "3300"
+          ]
+        ]
+      },
+      "signed": {
+        "resolved": true,
+        "order_id": "2178822453",
+        "symbol": "BTCUSD",
+        "filled": 3,
+        "state": "closed",
+        "created_at": "2026-11-19T13:34:11.175522Z"
+      },
+      "diagnostics": {
+        "venue_message_to_order_creation_ms": 315.851,
+        "venue_book_update_to_order_creation_ms": 680.009
+      }
+    },
+    {
+      "batch": "demo-1795095248645280700",
+      "symbol": "ETHUSD",
+      "product_id": 1699,
+      "intent": "2026-11-19T13:34:11.298722+00:00",
+      "limit": "1804.15",
+      "requested": 3,
+      "always_full_prediction": 3,
+      "saved_preflight_ask": "1803.65",
+      "ticker_prediction": 3,
+      "book_status": "eligible",
+      "book_prediction": 3,
+      "displayed_quantity_within_cap": "14946",
+      "local_receipt_age_ms": 69.722,
+      "selected_book": {
+        "symbol": "ETHUSD",
+        "exchange_us": 1795095252691603,
+        "receipt_ms": 1795095251229,
+        "elapsed_ms": 707976.0065,
+        "book_update_us": 1795095249184464,
+        "asks": [
+          [
+            "1803.85",
+            "2061"
+          ],
+          [
+            "1803.90",
+            "2530"
+          ],
+          [
+            "1803.95",
+            "2995"
+          ],
+          [
+            "1804.00",
+            "3454"
+          ],
+          [
+            "1804.05",
+            "3906"
+          ]
+        ]
+      },
+      "signed": {
+        "resolved": true,
+        "order_id": "2178822463",
+        "symbol": "ETHUSD",
+        "filled": 3,
+        "state": "closed",
+        "created_at": "2026-11-19T13:34:12.984807Z"
+      },
+      "diagnostics": {
+        "venue_message_to_order_creation_ms": 293.204,
+        "venue_book_update_to_order_creation_ms": 3800.343
+      }
+    },
+    {
+      "batch": "demo-1795095248645280700",
+      "symbol": "XRPUSD",
+      "product_id": 93723,
+      "intent": "2026-11-19T13:34:13.099752+00:00",
+      "limit": "0.9895",
+      "requested": 3,
+      "always_full_prediction": 3,
+      "saved_preflight_ask": "0.9885",
+      "ticker_prediction": 3,
+      "book_status": "eligible",
+      "book_prediction": 3,
+      "displayed_quantity_within_cap": "161512",
+      "local_receipt_age_ms": 368.752,
+      "selected_book": {
+        "symbol": "XRPUSD",
+        "exchange_us": 1795095254193608,
+        "receipt_ms": 1795095252731,
+        "elapsed_ms": 709477.4607,
+        "book_update_us": 1795095252754332,
+        "asks": [
+          [
+            "0.9885",
+            "55680"
+          ],
+          [
+            "0.9890",
+            "105832"
+          ],
+          [
+            "0.9900",
+            "153483"
+          ],
+          [
+            "0.9925",
+            "197460"
+          ],
+          [
+            "0.9965",
+            "236679"
+          ]
+        ]
+      },
+      "signed": {
+        "resolved": true,
+        "order_id": "2178822470",
+        "symbol": "XRPUSD",
+        "filled": 3,
+        "state": "closed",
+        "created_at": "2026-11-19T13:34:14.795487Z"
+      },
+      "diagnostics": {
+        "venue_message_to_order_creation_ms": 601.879,
+        "venue_book_update_to_order_creation_ms": 2041.155
+      }
+    },
+    {
+      "batch": "demo-1795095248645280700",
+      "symbol": "DOGEUSD",
+      "product_id": 101555,
+      "intent": "2026-11-19T13:34:15.043916+00:00",
+      "limit": "0.059600",
+      "requested": 3,
+      "always_full_prediction": 3,
+      "saved_preflight_ask": "0.05959",
+      "ticker_prediction": 3,
+      "book_status": "eligible",
+      "book_prediction": 3,
+      "displayed_quantity_within_cap": "38825",
+      "local_receipt_age_ms": 311.916,
+      "selected_book": {
+        "symbol": "DOGEUSD",
+        "exchange_us": 1795095256194640,
+        "receipt_ms": 1795095254732,
+        "elapsed_ms": 711478.7638,
+        "book_update_us": 1795095254473335,
+        "asks": [
+          [
+            "0.059600",
+            "38825"
+          ],
+          [
+            "0.059610",
+            "2239"
+          ],
+          [
+            "0.059620",
+            "2823"
+          ],
+          [
+            "0.059630",
+            "3401"
+          ],
+          [
+            "0.059640",
+            "3969"
+          ]
+        ]
+      },
+      "signed": {
+        "resolved": true,
+        "order_id": "2178822476",
+        "symbol": "DOGEUSD",
+        "filled": 3,
+        "state": "closed",
+        "created_at": "2026-11-19T13:34:17.068775Z"
+      },
+      "diagnostics": {
+        "venue_message_to_order_creation_ms": 874.135,
+        "venue_book_update_to_order_creation_ms": 2595.44
+      }
+    }
+  ],
+  "realized_after_cost_status": "pending_settlement",
+  "interpretation": "The four submissions all filled three contracts in one basket. The pre-intent book, saved ticker and always-full baseline each agreed on all four. This sample contains zero partial and zero unfilled cases, so it provides no evidence that the display improves fill accuracy over either baseline."
+}
