@@ -3,6 +3,51 @@ from crypto_skills import delta_ledger as d
 
 
 class DeltaLedgerTests(unittest.TestCase):
+    def test_atomic_json_retries_windows_replace_contention(self):
+        import json
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+        from unittest.mock import patch
+
+        original_replace = Path.replace
+        with TemporaryDirectory() as directory:
+            target = Path(directory) / 'observer.json'
+            target.write_text('{"cycles": 1}', encoding='utf-8')
+            attempts = []
+
+            def interrupted_replace(source, destination):
+                attempts.append(source)
+                if len(attempts) < 3:
+                    self.assertEqual(json.loads(target.read_text(encoding='utf-8')), {'cycles': 1})
+                    error = PermissionError('Windows file is in use')
+                    error.winerror = 5 if len(attempts) == 1 else 32
+                    raise error
+                return original_replace(source, destination)
+
+            with patch.object(Path, 'replace', interrupted_replace), patch.object(d.time, 'sleep'):
+                d.atomic_json(target, {'cycles': 2})
+            self.assertEqual(len(attempts), 3)
+            self.assertEqual(json.loads(target.read_text(encoding='utf-8')), {'cycles': 2})
+            self.assertFalse(target.with_suffix('.tmp').exists())
+
+    def test_atomic_json_keeps_previous_state_when_replace_cannot_succeed(self):
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+        from unittest.mock import patch
+
+        with TemporaryDirectory() as directory:
+            target = Path(directory) / 'observer.json'
+            target.write_text('{"cycles": 1}', encoding='utf-8')
+            for windows_error, expected_attempts in ((33, 6), (87, 1)):
+                with self.subTest(windows_error=windows_error):
+                    error = PermissionError('Cannot replace target')
+                    error.winerror = windows_error
+                    with patch.object(Path, 'replace', side_effect=error) as replace, patch.object(d.time, 'sleep'):
+                        with self.assertRaises(PermissionError):
+                            d.atomic_json(target, {'cycles': 2})
+                    self.assertEqual(replace.call_count, expected_attempts)
+                    self.assertEqual(target.read_text(encoding='utf-8'), '{"cycles": 1}')
+
     def test_history_query_includes_an_event_exactly_at_its_start(self):
         from datetime import datetime
 

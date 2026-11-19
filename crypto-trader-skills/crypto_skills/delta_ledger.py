@@ -147,7 +147,15 @@ def atomic_json(path,data):
     path.parent.mkdir(parents=True,exist_ok=True)
     temporary=path.with_suffix('.tmp')
     temporary.write_text(json.dumps(data,indent=2),encoding='utf-8')
-    temporary.replace(path)
+    for delay in (.025, .05, .10, .20, .40, None):
+        try:
+            temporary.replace(path)
+            return
+        except PermissionError as error:
+            # Windows readers can temporarily deny atomic replacement.
+            if delay is None or getattr(error, 'winerror', None) not in (5, 32, 33):
+                raise
+            time.sleep(delay)
 
 
 def _wallet_proves_flat_funding(transactions, wallet, first_fill, closing_fill, *, gross):
