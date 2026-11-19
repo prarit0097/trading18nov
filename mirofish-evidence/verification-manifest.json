@@ -1,0 +1,38 @@
+{
+  "snapshot": "7657031ac01184afe2cb220f5ee3545573b5e843",
+  "checks": [
+    {
+      "command": "python -m pytest tests -q --disable-warnings -p no:cacheprovider",
+      "cwd": "E:\\coding\\code\\Trade\\MiroFish\\backend",
+      "python": "3.12 isolated venv",
+      "exit_code": 0,
+      "result": "129 passed in 14.56s",
+      "evidence": "backend-tests.txt"
+    },
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "cwd": "E:\\coding\\code\\Trade\\MiroFish",
+      "python": "3.12 isolated venv; also reproduced on3.13",
+      "exit_code": 1,
+      "result": "28 tests:27 pass1fail Windows symlink count-file rejection",
+      "evidence": "root-tests-py312.txt"
+    },
+    {
+      "command": "npm ci --no-audit --no-fund; npm run build",
+      "cwd": "E:\\coding\\code\\Trade\\mirofish-evidence\\frontend-build",
+      "node": "24.18.1",
+      "exit_code": 0,
+      "result": "build successful; >500kB chunk warning",
+      "evidence": "frontend-build.txt"
+    }
+  ],
+  "not_executed": [
+    "real LLM inference",
+    "Zep Cloud graph mutation/validation",
+    "OASIS end-to-end simulation",
+    "Docker image build/pull/run",
+    "hosted app/browser runtime",
+    "full historical Git analysis"
+  ],
+  "source_modified": false
+}

@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-11-17T19:08:58.344149Z",
+  "data": {
+    "account_digest": "8c754d4cce1065a7185b1372e629761bec30a01fdffb1d97e27ad2a63ae012c8",
+    "cash": "8072.3399052396000000000",
+    "daily_realized": {},
+    "positions": [
+      {
+        "entry_fee": "1.9257343604000000000",
+        "entry_fee_rate": "0.001",
+        "entry_price": "63787.16000000",
+        "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+        "opened_at": "2026-11-17T19:08:58.344149Z",
+        "quantity": "0.03019000",
+        "stop": "63117.72000000",
+        "symbol": "BTCUSDT",
+        "target": "65030.40000000"
+      }
+    ],
+    "quote_currency": "USDT",
+    "realized_pnl": "0"
+  },
+  "digest": "cbbe0306c382fd59579f4bc63616eb18b522a9f8b570741695939ae9b166a7d8",
+  "inputs": {
+    "ledger": "8c754d4cce1065a7185b1372e629761bec30a01fdffb1d97e27ad2a63ae012c8"
+  },
+  "kind": "portfolio",
+  "schema_version": 1
+}

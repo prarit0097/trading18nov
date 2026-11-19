@@ -1,0 +1,16 @@
+{
+  "quotes": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "price": 159.58,
+      "open": 159.00250244140625,
+      "high": 163.0,
+      "low": 158.11,
+      "prev_close": 162.85,
+      "time": "2026-11-16T15:28:07Z",
+      "currency": "USD",
+      "source": "yahoo"
+    }
+  },
+  "errors": []
+}

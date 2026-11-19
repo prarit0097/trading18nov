@@ -1,0 +1,151 @@
+{
+  "repository": "E:\\coding\\code\\Trade\\OpenBB",
+  "revision": "e43353a82815ff9ba56ad1b7ad47c32729dcf314",
+  "source_status_porcelain": "",
+  "status": "PASS_BOUNDED_LOCAL_RUNTIME",
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "install": {
+    "command": "E:\\coding\\code\\Trade\\runtime-tests\\openbb\\venv\\Scripts\\python.exe -m pip install E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core pytest httpx",
+    "exit_code": 0,
+    "log": "install.log",
+    "test_dependency_command": "E:\\coding\\code\\Trade\\runtime-tests\\openbb\\venv\\Scripts\\python.exe -m pip install pytest-asyncio",
+    "test_dependency_exit_code": 0
+  },
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "82",
+    "time": "7.159",
+    "timestamp": "2026-11-17T07:23:45.783551+05:30",
+    "hostname": "DESKTOP-D2FUMUG"
+  },
+  "checks": {
+    "smoke": {
+      "command": [
+        "E:\\coding\\code\\Trade\\runtime-tests\\openbb\\venv\\Scripts\\python.exe",
+        "E:\\coding\\code\\Trade\\runtime-tests\\openbb\\smoke.py"
+      ],
+      "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\openbb",
+      "exit_code": 0,
+      "seconds": 2.16,
+      "isolation": "whitelisted OS env, empty HOME/USERPROFILE, no dotenv credentials; DEV_MODE true"
+    },
+    "core-tests": {
+      "command": [
+        "E:\\coding\\code\\Trade\\runtime-tests\\openbb\\venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-p",
+        "pytest_asyncio.plugin",
+        "-q",
+        "-rs",
+        "-c",
+        "E:\\coding\\code\\Trade\\OpenBB\\pytest.ini",
+        "--override-ini",
+        "cache_dir=E:\\coding\\code\\Trade\\runtime-tests\\openbb\\pytest-cache",
+        "--junitxml=E:\\coding\\code\\Trade\\runtime-tests\\openbb\\core-tests.xml",
+        "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\provider\\test_registry.py",
+        "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\provider\\test_registry_map.py",
+        "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\provider\\test_query_executor.py",
+        "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\api\\test_rest_api.py",
+        "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\app\\static\\test_app_factory.py",
+        "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\app\\static\\test_package_builder_generated.py",
+        "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\app\\test_command_output_extensions_e2e.py"
+      ],
+      "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\openbb",
+      "exit_code": 0,
+      "seconds": 10.08,
+      "isolation": "whitelisted OS env, empty HOME/USERPROFILE, no dotenv credentials; DEV_MODE true"
+    }
+  },
+  "pip_check": "No broken requirements found.",
+  "quota_latest": {
+    "windowDurationMins": 300,
+    "usedPercent": 69,
+    "remainingPercent": 31
+  },
+  "limits": [
+    "Core only, no provider packages installed; empty registry is expected",
+    "ASGI TestClient in-process, no bound uvicorn HTTP server",
+    "DEV_MODE enabled only inside isolated child environment",
+    "Repository tests use deterministic synthetic providers and command-runner stubs; not live vendor integration",
+    "No broker, API key, paid model, external data provider or private .env accessed",
+    "Source wheel bundled stale extension metadata; auto-build removed unavailable extensions in venv only",
+    "Optional email-validator absent; system warns fields fall back to str",
+    "Starlette warns httpx TestClient deprecated; route checks passed",
+    "Prior premature smoke and overstrict loopback-blocked smoke are harness setup failures, retained separately; first suite skipped23 due ruff PATH, final suite82passed0skipped"
+  ],
+  "evidence_files": [
+    {
+      "path": "core-tests-no-ruff-path.log",
+      "sha256": "b0d9c436155d9aa1321bedb92ab95531dd264ba95497c79f5c0a65cfc6209c0c"
+    },
+    {
+      "path": "core-tests-no-ruff-path.xml",
+      "sha256": "8ca7a19e27be9e8b51950264e55d0d3e8cf925eb186d6c59cae34bacc20d50f5"
+    },
+    {
+      "path": "core-tests.json",
+      "sha256": "548afadb1f20a2430c55351d57917f3d3438917cae70d69f96b3b385b02b6f27"
+    },
+    {
+      "path": "core-tests.log",
+      "sha256": "45513a3b07cd7155f3f99bde1dee4a1d0cd4dac1bb1ec7868323ff465fccffd3"
+    },
+    {
+      "path": "core-tests.xml",
+      "sha256": "fd1ecfc20fe34f0e53862b03c1842a98a183567fa5a64820066289b9d63bf8dd"
+    },
+    {
+      "path": "install-test.log",
+      "sha256": "7272c145cbf65182d12806642d494fb07da5336ba62efc4dd33612804f0142e6"
+    },
+    {
+      "path": "install.log",
+      "sha256": "6b7967b70bec8c8457dbda1402ef9342ea77e4ea0166b2a0a20e3672248d2705"
+    },
+    {
+      "path": "packages.txt",
+      "sha256": "e25b3c0d64e58e7d731f537466cc8331fadd3cb2b4bdba64a32d0076d842c59e"
+    },
+    {
+      "path": "pip-check.log",
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "path": "run.py",
+      "sha256": "ec5a37c57af41504f00a0cf621f5e0999e7ede5d7ebc0b08ce00c481e526187f"
+    },
+    {
+      "path": "smoke-loopback-blocked.json",
+      "sha256": "36aa12940be737bbfcbcaaed7e5247c7d010bb2ca3ec917115948ca441fd603a"
+    },
+    {
+      "path": "smoke-loopback-blocked.log",
+      "sha256": "7ef8fd7c3a2d7e7b16cb3461fe30e478fe27e87462453fe3f00ba19433f40fd1"
+    },
+    {
+      "path": "smoke-premature.json",
+      "sha256": "327ff0cabb484cc1a2eebafcbfbb7d6bbaf1366166685f40b70ad9243f86904f"
+    },
+    {
+      "path": "smoke-premature.log",
+      "sha256": "bff6d41d6bdfb2561de16e3173503a504fe5536e83887d7ac1087ecc01e15db6"
+    },
+    {
+      "path": "smoke.json",
+      "sha256": "eefcbc40044ea288e82d2f570355bc5ed3048d145a742cbb79c7353e6d82b623"
+    },
+    {
+      "path": "smoke.log",
+      "sha256": "f4908d665157f71fd7a77f46f6c7770a1fc360be036ef13d19b4e657cab86d43"
+    },
+    {
+      "path": "smoke.py",
+      "sha256": "22f24a82f7a667594d1a7afd362fe9409f1c4ac2465f4582fb1d9caeb2fd0ee7"
+    }
+  ]
+}

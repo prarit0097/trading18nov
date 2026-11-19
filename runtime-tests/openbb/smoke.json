@@ -1,0 +1,10 @@
+{
+  "command": [
+    "E:\\coding\\code\\Trade\\runtime-tests\\openbb\\venv\\Scripts\\python.exe",
+    "E:\\coding\\code\\Trade\\runtime-tests\\openbb\\smoke.py"
+  ],
+  "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\openbb",
+  "exit_code": 0,
+  "seconds": 2.16,
+  "isolation": "whitelisted OS env, empty HOME/USERPROFILE, no dotenv credentials; DEV_MODE true"
+}

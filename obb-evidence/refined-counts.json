@@ -1,0 +1,10 @@
+{
+  "production_command_declarations": 985,
+  "test_or_example_command_declarations": 8,
+  "production_provider_constructor_sites": 19,
+  "test_provider_constructor_sites": 13,
+  "provider_package_manifests": 17,
+  "source_tests_files": 875,
+  "workflow_files": 77,
+  "git_head": "e43353a82815ff9ba56ad1b7ad47c32729dcf314"
+}

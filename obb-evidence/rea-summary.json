@@ -1,0 +1,54 @@
+{
+  "evidence_id": "ev_fb36e84d81928c5858fbc5a8f35f7db2896c5f34e6595707625fec77923193e8",
+  "subject": {
+    "name": "OpenBB-source.zip",
+    "digest": {
+      "sha256": "ec9d3892a8f029349f792d1d0f54f0d4bd8361d6803ea2054e238f99c8eb42b7"
+    },
+    "local_path": "E:\\coding\\code\\Trade\\obb-evidence\\OpenBB-source.zip",
+    "format": "zip",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "operation": "inspect_artifact",
+  "confidence": "observed",
+  "coverage": {
+    "status": "complete-within-substeps",
+    "substeps_completed": 1,
+    "observations_retained": 1,
+    "observations_omitted": 0,
+    "hypotheses_retained": 0,
+    "hypotheses_omitted": 0,
+    "unexplored_branches_retained": 0,
+    "unexplored_branches_omitted": 0,
+    "next_probes_retained": 0,
+    "next_probes_omitted": 0
+  },
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "manifest": {
+    "manifest_id": "agm_87554dc72ab55c81303ac2ed6e7c06c0c31bde1d3fbe3ed6224dd45c3c2248e9",
+    "root_artifact_id": "art_831ec7571ed21ad93c9e6ee2c4bef9166c530ca33b9c32c2e4635068cf9099eb",
+    "root_sha256": "ec9d3892a8f029349f792d1d0f54f0d4bd8361d6803ea2054e238f99c8eb42b7",
+    "root_format": "zip",
+    "graph_sha256": "d347b2f6204de73bd4e9bc5d3e139dc72267f4085688f83920b40f544a31a2c3",
+    "node_count": 4557,
+    "occurrence_count": 4642,
+    "edge_count": 4641
+  },
+  "archive_sha256_recomputed": "ec9d3892a8f029349f792d1d0f54f0d4bd8361d6803ea2054e238f99c8eb42b7",
+  "hash_matches": true,
+  "zip_comment": "e43353a82815ff9ba56ad1b7ad47c32729dcf314",
+  "archive_files": 4143,
+  "tracked_files": 4143,
+  "path_lists_match": true,
+  "byte_exact_payloads": 176,
+  "CRLF_LF_only_payloads": 3967,
+  "unmatched_payloads": []
+}

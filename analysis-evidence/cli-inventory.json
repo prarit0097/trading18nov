@@ -1,0 +1,352 @@
+[
+  {
+    "script": "trader-alerts/alerts.py",
+    "subcommands": [
+      "clock",
+      "quote",
+      "check",
+      "add",
+      "list",
+      "reset"
+    ],
+    "flags": [
+      "--above",
+      "--at",
+      "--before-close",
+      "--below",
+      "--config",
+      "--date",
+      "--direction",
+      "--from-plan",
+      "--holdings",
+      "--id",
+      "--json",
+      "--label",
+      "--no-write",
+      "--note",
+      "--now",
+      "--offline",
+      "--opening-bell",
+      "--pct",
+      "--plan",
+      "--portfolio",
+      "--prices-out",
+      "--rearm",
+      "--rules",
+      "--source",
+      "--state",
+      "--stop",
+      "--symbol",
+      "--target",
+      "--write"
+    ],
+    "help_commands": [
+      "python trader-alerts/alerts.py --help",
+      "python trader-alerts/alerts.py clock --help",
+      "python trader-alerts/alerts.py quote --help",
+      "python trader-alerts/alerts.py check --help",
+      "python trader-alerts/alerts.py add --help",
+      "python trader-alerts/alerts.py list --help",
+      "python trader-alerts/alerts.py reset --help"
+    ]
+  },
+  {
+    "script": "trader-analyst/facts.py",
+    "subcommands": [],
+    "flags": [
+      "--cik",
+      "--config",
+      "--json",
+      "--metrics",
+      "--no-filings",
+      "--offline",
+      "--quarters",
+      "--user-agent"
+    ],
+    "help_commands": [
+      "python trader-analyst/facts.py --help"
+    ]
+  },
+  {
+    "script": "trader-broker/ticket.py",
+    "subcommands": [
+      "show",
+      "approve",
+      "decline",
+      "result",
+      "fill",
+      "flatten",
+      "log"
+    ],
+    "flags": [
+      "--all",
+      "--broker-id",
+      "--config",
+      "--date",
+      "--filled-price",
+      "--filled-qty",
+      "--index",
+      "--json",
+      "--note",
+      "--now",
+      "--orders",
+      "--plan",
+      "--portfolio",
+      "--price",
+      "--qty",
+      "--reply",
+      "--risk",
+      "--side",
+      "--state",
+      "--status",
+      "--symbol",
+      "--today"
+    ],
+    "help_commands": [
+      "python trader-broker/ticket.py --help",
+      "python trader-broker/ticket.py show --help",
+      "python trader-broker/ticket.py approve --help",
+      "python trader-broker/ticket.py decline --help",
+      "python trader-broker/ticket.py result --help",
+      "python trader-broker/ticket.py fill --help",
+      "python trader-broker/ticket.py flatten --help",
+      "python trader-broker/ticket.py log --help"
+    ]
+  },
+  {
+    "script": "trader-budget/size.py",
+    "subcommands": [],
+    "flags": [
+      "--budget",
+      "--cents",
+      "--config",
+      "--json",
+      "--limit",
+      "--now",
+      "--plan",
+      "--portfolio",
+      "--prices",
+      "--targets",
+      "--top",
+      "--weights",
+      "--whole-shares",
+      "--write"
+    ],
+    "help_commands": [
+      "python trader-budget/size.py --help"
+    ]
+  },
+  {
+    "script": "trader-entry/entry.py",
+    "subcommands": [
+      "check",
+      "watch",
+      "watchlist"
+    ],
+    "flags": [
+      "--config",
+      "--every",
+      "--interval",
+      "--json",
+      "--level",
+      "--min-volume-x",
+      "--now",
+      "--offline",
+      "--or-minutes",
+      "--out",
+      "--setup",
+      "--side",
+      "--until",
+      "--watchlist",
+      "--write"
+    ],
+    "help_commands": [
+      "python trader-entry/entry.py --help",
+      "python trader-entry/entry.py check --help",
+      "python trader-entry/entry.py watch --help",
+      "python trader-entry/entry.py watchlist --help"
+    ]
+  },
+  {
+    "script": "trader-exit/exit.py",
+    "subcommands": [
+      "plan",
+      "show"
+    ],
+    "flags": [
+      "--config",
+      "--date",
+      "--entry",
+      "--entry-bar",
+      "--flat-by",
+      "--from",
+      "--interval",
+      "--json",
+      "--now",
+      "--offline",
+      "--or-high",
+      "--or-low",
+      "--or-minutes",
+      "--plan",
+      "--setup",
+      "--side",
+      "--stop",
+      "--symbol",
+      "--target",
+      "--time",
+      "--write"
+    ],
+    "help_commands": [
+      "python trader-exit/exit.py --help",
+      "python trader-exit/exit.py plan --help",
+      "python trader-exit/exit.py show --help"
+    ]
+  },
+  {
+    "script": "trader-news/news.py",
+    "subcommands": [],
+    "flags": [
+      "--all",
+      "--config",
+      "--dry-run",
+      "--forms",
+      "--hours",
+      "--json",
+      "--move-pct",
+      "--no-moves",
+      "--no-sec",
+      "--now",
+      "--offline",
+      "--plan",
+      "--portfolio",
+      "--state",
+      "--tickers",
+      "--user-agent",
+      "--watchlist"
+    ],
+    "help_commands": [
+      "python trader-news/news.py --help"
+    ]
+  },
+  {
+    "script": "trader-pelosi/ptr.py",
+    "subcommands": [
+      "index",
+      "new",
+      "fetch",
+      "parse"
+    ],
+    "flags": [
+      "--dry-run",
+      "--filed",
+      "--json",
+      "--limit",
+      "--member",
+      "--offline",
+      "--pdf-dir",
+      "--portfolio",
+      "--read",
+      "--since",
+      "--state",
+      "--tickers",
+      "--today",
+      "--type",
+      "--year"
+    ],
+    "help_commands": [
+      "python trader-pelosi/ptr.py --help",
+      "python trader-pelosi/ptr.py index --help",
+      "python trader-pelosi/ptr.py new --help",
+      "python trader-pelosi/ptr.py fetch --help",
+      "python trader-pelosi/ptr.py parse --help"
+    ]
+  },
+  {
+    "script": "trader-risk/check.py",
+    "subcommands": [],
+    "flags": [
+      "--config",
+      "--json",
+      "--no-write",
+      "--now",
+      "--orders",
+      "--out",
+      "--portfolio",
+      "--prices",
+      "--state",
+      "--today"
+    ],
+    "help_commands": [
+      "python trader-risk/check.py --help"
+    ]
+  },
+  {
+    "script": "trader-scanner/scan.py",
+    "subcommands": [
+      "universe",
+      "daily",
+      "orb"
+    ],
+    "flags": [
+      "--at",
+      "--config",
+      "--json",
+      "--limit",
+      "--max-confirm",
+      "--min-price",
+      "--min-volume",
+      "--no-write",
+      "--now",
+      "--offline",
+      "--or-minutes",
+      "--out",
+      "--pause",
+      "--quiet",
+      "--show",
+      "--symbols",
+      "--universe",
+      "--until",
+      "--watchlist"
+    ],
+    "help_commands": [
+      "python trader-scanner/scan.py --help",
+      "python trader-scanner/scan.py universe --help",
+      "python trader-scanner/scan.py daily --help",
+      "python trader-scanner/scan.py orb --help"
+    ]
+  },
+  {
+    "script": "trader-timemachine/timemachine.py",
+    "subcommands": [
+      "run",
+      "chart"
+    ],
+    "flags": [
+      "--date",
+      "--entry",
+      "--entry-time",
+      "--from",
+      "--json",
+      "--now",
+      "--offline",
+      "--or-minutes",
+      "--plan",
+      "--replays",
+      "--seed",
+      "--setup",
+      "--side",
+      "--stop",
+      "--stop-rule",
+      "--symbol",
+      "--target",
+      "--until",
+      "--window",
+      "--write"
+    ],
+    "help_commands": [
+      "python trader-timemachine/timemachine.py --help",
+      "python trader-timemachine/timemachine.py run --help",
+      "python trader-timemachine/timemachine.py chart --help"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "daytrade": "PASS existing validator rerun",
+  "obb": "PASS existing validator rerun",
+  "tradingagent": "PASS after validator cwd fix",
+  "paperclip_in_mirofish_md": {
+    "status": "PASS",
+    "source_links": 2016,
+    "errors": []
+  },
+  "original_mirofish_backup": "PASS adapted original validator rerun",
+  "scope": "Source/document checks; no new full runtime tests; original test failures and integration exclusions retained"
+}

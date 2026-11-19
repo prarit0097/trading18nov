@@ -1,0 +1,9 @@
+file:///E:/coding/code/Trade/paperclip/packages/shared/scripts/generate-runner-skill-frontmatter.ts:36
+  if (await readFile(target, "utf8") !== generated) throw new Error("Runner skill frontmatter contract is stale. Regenerate it.");
+                                                          ^
+
+Error: Runner skill frontmatter contract is stale. Regenerate it.
+    at file:///E:/coding/code/Trade/paperclip/packages/shared/scripts/generate-runner-skill-frontmatter.ts:36:59
+
+Node.js v24.18.1
+JSON report written to E:/coding/code/Trade/runtime-tests/paperclip/shared-tests.json

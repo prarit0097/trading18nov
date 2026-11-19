@@ -1,0 +1,542 @@
+[
+  {
+    "path": "backend/app/__init__.py",
+    "line": 73,
+    "function": "health",
+    "route": "/health",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 133,
+    "function": "get_project",
+    "route": "/api/graph/project/<project_id>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 152,
+    "function": "list_projects",
+    "route": "/api/graph/project/list",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 167,
+    "function": "delete_project",
+    "route": "/api/graph/project/<project_id>",
+    "methods": [
+      "DELETE"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 214,
+    "function": "reset_project",
+    "route": "/api/graph/project/<project_id>/reset",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 266,
+    "function": "generate_ontology",
+    "route": "/api/graph/ontology/generate",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 449,
+    "function": "build_graph",
+    "route": "/api/graph/build",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 845,
+    "function": "get_task",
+    "route": "/api/graph/task/<task_id>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 864,
+    "function": "list_tasks",
+    "route": "/api/graph/tasks",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 880,
+    "function": "get_graph_data",
+    "route": "/api/graph/data/<graph_id>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 908,
+    "function": "delete_graph",
+    "route": "/api/graph/delete/<graph_id>",
+    "methods": [
+      "DELETE"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 33,
+    "function": "generate_report",
+    "route": "/api/report/generate",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 323,
+    "function": "get_generate_status",
+    "route": "/api/report/generate/status",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 397,
+    "function": "get_report",
+    "route": "/api/report/<report_id>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 439,
+    "function": "get_report_by_simulation",
+    "route": "/api/report/by-simulation/<simulation_id>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 478,
+    "function": "list_reports",
+    "route": "/api/report/list",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 518,
+    "function": "download_report",
+    "route": "/api/report/<report_id>/download",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 564,
+    "function": "delete_report",
+    "route": "/api/report/<report_id>",
+    "methods": [
+      "DELETE"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 592,
+    "function": "chat_with_report_agent",
+    "route": "/api/report/chat",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 689,
+    "function": "get_report_progress",
+    "route": "/api/report/<report_id>/progress",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 730,
+    "function": "get_report_sections",
+    "route": "/api/report/<report_id>/sections",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 781,
+    "function": "get_single_section",
+    "route": "/api/report/<report_id>/section/<int:section_index>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 827,
+    "function": "check_report_status",
+    "route": "/api/report/check/<simulation_id>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 878,
+    "function": "get_agent_log",
+    "route": "/api/report/<report_id>/agent-log",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 937,
+    "function": "stream_agent_log",
+    "route": "/api/report/<report_id>/agent-log/stream",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 973,
+    "function": "get_console_log",
+    "route": "/api/report/<report_id>/console-log",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 1019,
+    "function": "stream_console_log",
+    "route": "/api/report/<report_id>/console-log/stream",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 1055,
+    "function": "search_graph_tool",
+    "route": "/api/report/tools/search",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 1103,
+    "function": "get_graph_statistics_tool",
+    "route": "/api/report/tools/statistics",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 79,
+    "function": "get_graph_entities",
+    "route": "/api/simulation/entities/<graph_id>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 124,
+    "function": "get_entity_detail",
+    "route": "/api/simulation/entities/<graph_id>/<entity_uuid>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 157,
+    "function": "get_entities_by_type",
+    "route": "/api/simulation/entities/<graph_id>/by-type/<entity_type>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 196,
+    "function": "create_simulation",
+    "route": "/api/simulation/create",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 390,
+    "function": "prepare_simulation",
+    "route": "/api/simulation/prepare",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 678,
+    "function": "get_prepare_status",
+    "route": "/api/simulation/prepare/status",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 791,
+    "function": "get_simulation",
+    "route": "/api/simulation/<simulation_id>",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 824,
+    "function": "list_simulations",
+    "route": "/api/simulation/list",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 912,
+    "function": "get_simulation_history",
+    "route": "/api/simulation/history",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1026,
+    "function": "get_simulation_profiles",
+    "route": "/api/simulation/<simulation_id>/profiles",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1064,
+    "function": "get_simulation_profiles_realtime",
+    "route": "/api/simulation/<simulation_id>/profiles/realtime",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1179,
+    "function": "get_simulation_config_realtime",
+    "route": "/api/simulation/<simulation_id>/config/realtime",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1309,
+    "function": "get_simulation_config",
+    "route": "/api/simulation/<simulation_id>/config",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1345,
+    "function": "download_simulation_config",
+    "route": "/api/simulation/<simulation_id>/config/download",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1374,
+    "function": "download_simulation_script",
+    "route": "/api/simulation/script/<script_name>/download",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1428,
+    "function": "generate_profiles",
+    "route": "/api/simulation/generate-profiles",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1502,
+    "function": "start_simulation",
+    "route": "/api/simulation/start",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1789,
+    "function": "stop_simulation",
+    "route": "/api/simulation/stop",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1866,
+    "function": "get_run_status",
+    "route": "/api/simulation/<simulation_id>/run-status",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1924,
+    "function": "get_run_status_detail",
+    "route": "/api/simulation/<simulation_id>/run-status/detail",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2025,
+    "function": "get_simulation_actions",
+    "route": "/api/simulation/<simulation_id>/actions",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2079,
+    "function": "get_simulation_timeline",
+    "route": "/api/simulation/<simulation_id>/timeline",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2119,
+    "function": "get_agent_stats",
+    "route": "/api/simulation/<simulation_id>/agent-stats",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2148,
+    "function": "get_simulation_posts",
+    "route": "/api/simulation/<simulation_id>/posts",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2226,
+    "function": "get_simulation_comments",
+    "route": "/api/simulation/<simulation_id>/comments",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2305,
+    "function": "interview_agent",
+    "route": "/api/simulation/interview",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2434,
+    "function": "interview_agents_batch",
+    "route": "/api/simulation/interview/batch",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2572,
+    "function": "interview_all_agents",
+    "route": "/api/simulation/interview/all",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2675,
+    "function": "get_interview_history",
+    "route": "/api/simulation/interview/history",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2747,
+    "function": "get_env_status",
+    "route": "/api/simulation/env-status",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2812,
+    "function": "close_simulation_env",
+    "route": "/api/simulation/close-env",
+    "methods": [
+      "POST"
+    ]
+  }
+]

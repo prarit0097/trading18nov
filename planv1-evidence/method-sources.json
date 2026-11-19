@@ -1,0 +1,57 @@
+{
+  "checked_date": "2026-11-17",
+  "purpose": "Primary methodological references read for root composition and cross-checking",
+  "sources": [
+    {
+      "url": "https://www.freqtrade.io/en/stable/backtesting/",
+      "supports": "Candle fill/slippage assumptions; historical tests do not replace forward observation",
+      "limit_note": "Paraphrased under200derivedwords in final plan"
+    },
+    {
+      "url": "https://www.freqtrade.io/en/latest/lookahead-analysis/",
+      "supports": "Future-data diagnostic; only exercised signal paths are verified",
+      "limit_note": "Paraphrased under200derivedwords in final plan"
+    },
+    {
+      "url": "https://nautilustrader.io/docs/latest/concepts/backtesting/fill-models/",
+      "supports": "Fill-model assumptions, finite historical depth vs synthetic liquidity and defaults must be qualified",
+      "limit_note": "Paraphrased under200derivedwords in final plan"
+    },
+    {
+      "url": "https://nautilustrader.io/docs/latest/concepts/backtesting/trade-execution/",
+      "supports": "Trade-based execution and explicit queue/consumption configuration",
+      "limit_note": "Paraphrased under200derivedwords in final plan"
+    },
+    {
+      "url": "https://nautilustrader.io/docs/latest/concepts/backtesting/execution-flow/",
+      "supports": "Market update, strategy callback and command-settling ordering; reference for proposed causality tests"
+    },
+    {
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "supports": "Backtest model-selection/overfitting risk, multiple configurations and validation caveats",
+      "limit_note": "Paraphrased under200derivedwords; no performance outcome copied"
+    },
+    {
+      "url": "https://www.cftc.gov/RSS/index.htm",
+      "supports": "Root independently confirmed official temporary RSS disable notice effectiveOctober2026"
+    },
+    {
+      "url": "https://developers.binance.com/en/docs/products/announcements/general-info",
+      "supports": "Root independently confirmed signed credential requirement and connection controls; pricing not certified"
+    },
+    {
+      "url": "https://www.alphavantage.co/documentation/#news-sentiment",
+      "supports": "Root independently confirmed NEWS_SENTIMENT premium marking despite generic free-key example wording"
+    },
+    {
+      "url": "https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/market-data",
+      "supports": "Current mark/index/funding history and adjustment endpoint contracts; old3 endpoint docs redirect here; account eligibility and real historical data availability untested"
+    },
+    {
+      "url": "https://www.bybit.com/en/help-center/article/UTA-Trading-Rules-Liquidation-Process",
+      "supports": "Mark-price liquidation and separate margin-mode rules; venue-specific example, no user account qualification"
+    }
+  ],
+  "boundaries": "No live trading, paid subscription, simulation benchmark, strategy backtest or current market-price recommendation performed for this plan. Numeric engineering targets and worked examples are proposals/hypotheticals.",
+  "preference_update": "User confirmed spot and perpetual futures comparison on2026-11-17; no execution authorization."
+}

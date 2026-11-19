@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="21" time="14.468" timestamp="2026-11-17T07:29:07.782519+05:30" hostname="DESKTOP-D2FUMUG"><testcase classname="test_installed_runtime" name="test_import_is_from_isolated_installed_wheel" time="0.005" /><testcase classname="test_installed_runtime" name="test_real_provider_sdk_initialization[openai-gpt-6-luna]" time="1.894" /><testcase classname="test_installed_runtime" name="test_real_provider_sdk_initialization[anthropic-claude-sonnet-4-6]" time="4.353" /><testcase classname="test_installed_runtime" name="test_real_provider_sdk_initialization[google-gemini-3.1-flash]" time="0.774" /><testcase classname="test_installed_runtime" name="test_real_provider_sdk_initialization[openai_compatible-local-test-model]" time="0.001"><failure message="ValueError: Provider 'openai_compatible' requires a base_url. Set it via backend_url / TRADINGAGENTS_LLM_BACKEND_URL to your endpoint, e.g. http://localhost:8000/v1 (vLLM) or http://localhost:1234/v1 (LM Studio).">provider = 'openai_compatible', model = 'local-test-model'
+
+    @pytest.mark.parametrize('provider,model', [('openai', 'gpt-6-luna'), ('anthropic', 'claude-sonnet-4-6'), ('google', 'gemini-3.1-flash'), ('openai_compatible', 'local-test-model')])
+    def test_real_provider_sdk_initialization(provider, model):
+        from tradingagents.llm_clients import create_llm_client
+        from tradingagents.agents.tools import get_stock_data
+        from tradingagents.agents.schemas import PortfolioDecision
+        client = create_llm_client(provider, model, api_key='runtime-test-placeholder-not-a-real-key', max_retries=0)
+&gt;       llm = client.get_llm()
+              ^^^^^^^^^^^^^^^^
+
+test_installed_runtime.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;tradingagents.llm_clients.openai_client.OpenAIClient object at 0x000001F6DB7F2D50&gt;
+
+    def get_llm(self) -&gt; Any:
+        """Return a configured ChatOpenAI instance, driven by the provider registry."""
+        self.warn_if_unknown_model()
+        llm_kwargs = {"model": self.model}
+        spec = OPENAI_COMPATIBLE_PROVIDERS.get(self.provider)
+        chat_cls = NormalizedChatOpenAI
+    
+        if spec is not None:
+            chat_cls = spec.chat_class
+    
+            # base_url precedence: explicit client base_url (carries the config /
+            # TRADINGAGENTS_LLM_BACKEND_URL value) &gt; provider env override (e.g.
+            # OLLAMA_BASE_URL) &gt; provider default. None means use the SDK default.
+            env_base_url = os.environ.get(spec.base_url_env) if spec.base_url_env else None
+            base_url = self.base_url or env_base_url or spec.base_url
+            check_endpoint(self.provider, base_url)
+            if spec.require_base_url and not base_url:
+&gt;               raise ValueError(
+                    f"Provider '{self.provider}' requires a base_url. Set it via "
+                    "backend_url / TRADINGAGENTS_LLM_BACKEND_URL to your endpoint, "
+                    "e.g. http://localhost:8000/v1 (vLLM) or http://localhost:1234/v1 "
+                    "(LM Studio)."
+                )
+E               ValueError: Provider 'openai_compatible' requires a base_url. Set it via backend_url / TRADINGAGENTS_LLM_BACKEND_URL to your endpoint, e.g. http://localhost:8000/v1 (vLLM) or http://localhost:1234/v1 (LM Studio).
+
+venv\Lib\site-packages\tradingagents\llm_clients\openai_client.py:361: ValueError</failure></testcase><testcase classname="test_installed_runtime" name="test_real_provider_graph_compilation" time="0.043" /><testcase classname="test_graph_end_to_end" name="test_a_full_run_reaches_a_logged_decision[free-text]" time="0.225" /><testcase classname="test_graph_end_to_end" name="test_a_full_run_reaches_a_logged_decision[structured]" time="0.192" /><testcase classname="test_graph_end_to_end" name="test_an_interrupted_run_resumes_from_its_checkpoint" time="0.491" /><testcase classname="test_graph_end_to_end" name="test_a_graph_reused_across_runs_keeps_no_run_state" time="0.332" /><testcase classname="test_graph_end_to_end" name="test_the_analysts_run_at_the_same_time" time="0.195" /><testcase classname="test_graph_end_to_end" name="test_a_debug_run_prints_the_analysts_work_and_reaches_the_same_decision" time="0.199" /><testcase classname="test_graph_end_to_end" name="test_each_report_streams_as_soon_as_its_analyst_files_it" time="0.194" /><testcase classname="test_graph_end_to_end" name="test_a_streamed_run_reads_its_own_graph_config" time="0.194" /><testcase classname="test_graph_end_to_end" name="test_an_analyst_that_keeps_calling_tools_writes_its_report_at_the_limit" time="0.117" /><testcase classname="test_graph_end_to_end" name="test_the_last_turn_is_offered_no_tools_and_reads_its_tool_results_as_text" time="0.091" /><testcase classname="test_graph_end_to_end" name="test_a_tool_limit_the_recursion_limit_cannot_hold_is_refused" time="0.003" /><testcase classname="test_graph_end_to_end" name="test_past_decisions_settle_alongside_the_analysts" time="0.589" /><testcase classname="test_graph_end_to_end" name="test_a_settlement_failure_is_noted_and_the_run_goes_on" time="0.301" /><testcase classname="test_graph_end_to_end" name="test_the_run_settles_other_tickers_due_decisions_too" time="0.203" /><testcase classname="test_graph_end_to_end" name="test_the_memory_step_reads_lessons_as_of_the_trade_date_and_settles_once" time="0.037" /></testsuite></testsuites>

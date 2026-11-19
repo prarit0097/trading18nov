@@ -1,0 +1,120 @@
+[
+  {
+    "skill": "crypto-workflow",
+    "args": [
+      "init",
+      "--input",
+      "E:\\coding\\code\\Trade\\crypto-trader-skills\\runs\\btc-real-paper-20261117T190441015606Z\\config-input.json"
+    ],
+    "exit": 0,
+    "kind": "config",
+    "result_status": null,
+    "error": null
+  },
+  {
+    "skill": "crypto-news",
+    "args": [
+      "--fetch"
+    ],
+    "exit": 0,
+    "kind": "news",
+    "result_status": null,
+    "error": null
+  },
+  {
+    "skill": "crypto-market",
+    "args": [
+      "--fetch",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "5m",
+      "--limit",
+      "1000"
+    ],
+    "exit": 0,
+    "kind": "market",
+    "result_status": null,
+    "error": null
+  },
+  {
+    "skill": "crypto-entry",
+    "args": [],
+    "exit": 1,
+    "kind": "proposal",
+    "result_status": "waiting",
+    "error": null
+  },
+  {
+    "skill": "crypto-exit",
+    "args": [],
+    "exit": 1,
+    "kind": "plan",
+    "result_status": "waiting",
+    "error": null
+  },
+  {
+    "skill": "crypto-backtest",
+    "args": [],
+    "exit": 0,
+    "kind": "backtest",
+    "result_status": "complete",
+    "error": null
+  },
+  {
+    "skill": "crypto-report",
+    "args": [],
+    "exit": 0,
+    "kind": "report",
+    "result_status": "inspection",
+    "error": null
+  },
+  {
+    "skill": "crypto-market",
+    "args": [
+      "--fetch",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "5m",
+      "--limit",
+      "1000"
+    ],
+    "exit": 0,
+    "kind": "market",
+    "result_status": null,
+    "error": null
+  },
+  {
+    "skill": "crypto-entry",
+    "args": [],
+    "exit": 1,
+    "kind": "proposal",
+    "result_status": "waiting",
+    "error": null
+  },
+  {
+    "skill": "crypto-exit",
+    "args": [],
+    "exit": 1,
+    "kind": "plan",
+    "result_status": "waiting",
+    "error": null
+  },
+  {
+    "skill": "crypto-backtest",
+    "args": [],
+    "exit": 0,
+    "kind": "backtest",
+    "result_status": "complete",
+    "error": null
+  },
+  {
+    "skill": "crypto-report",
+    "args": [],
+    "exit": 0,
+    "kind": "report",
+    "result_status": "inspection",
+    "error": null
+  }
+]

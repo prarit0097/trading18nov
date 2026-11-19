@@ -1,0 +1,14 @@
+{
+  "calculation_code_hash": "40c1dd1e1dbcd16305689f77641a0446e71b5c56b8f47b4d0003b6c3b815722e",
+  "source_sha256": {
+    "run.py": "fa5ca6bc479971214dd09197ac57214da2b3358bed37c9a725ac48587e9a6bdf",
+    "crypto_skills/cli.py": "54c7144636e2f8cdc9cff329e4bb38215fa871cba5273e4431a730e9f86a745e",
+    "crypto_skills/core.py": "815eed9ce4393e49ab6c94340327554c650cc324edd5c8c690801f6d66b8d496",
+    "crypto_skills/market.py": "76e3069633435b73f3bfb3156b688595ca0105ae84090302f1e196cc56fa8199",
+    "crypto_skills/news.py": "5ed1d200530b52b06063887df19daf192c91213691c7c9cfc43690de3687e960",
+    "crypto_skills/research.py": "b033791fb5aca112f3d63094dc955b812966b7c8e28af38ad55af6f6edb31feb",
+    "crypto_skills/trade.py": "6a6fe0a482c19c5497a48e24804088b8f990a09f016e137e65e292c220f03b8e",
+    "crypto_skills/validation.py": "33b4c869ecd6f7c798cb4c19558e17de632afa814eda87c52a4db58a6c5b0ccc",
+    "crypto_skills/__init__.py": "fb1daf0d936fc344922054151b3321d7a6d0411983b5beaa10cfb54ad343f2b9"
+  }
+}

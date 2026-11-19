@@ -1,0 +1,650 @@
+✔ regex matches common git push forms (1.6633ms)
+✔ regex ignores unrelated `push` usages (0.216ms)
+✔ findGitPushOffenses flags a bare invocation in a string (0.5248ms)
+✔ findGitPushOffenses ignores mentions inside `//` comments (1.1682ms)
+✔ findGitPushOffenses allows opt-in marker on the same line (0.2561ms)
+✔ findGitPushOffenses allows opt-in marker on the line above (0.1998ms)
+✔ findGitPushOffenses flags string-literal push even when text is split across mixed quotes (0.1989ms)
+✔ findGitPushOffenses flags args-array form passed to spawn/execFile (1.28ms)
+✔ findGitPushOffenses ignores `git push` in a comment after a string ending with a literal backslash (0.2895ms)
+✔ findGitPushOffenses does not flag args-array form when allow marker is present (0.3784ms)
+✔ runCheck passes when scoped tree has no offenses (7.1944ms)
+✔ runCheck fails when scoped tree contains an unapproved git push (7.3274ms)
+✔ runCheck ignores opt-in marker outside the scoped tree (3.4634ms)
+✔ collectScannableFiles skips node_modules, dist, and .d.ts (9.6357ms)
+✖ release package manifest covers all public packages with explicit CI enrollment (1309.0338ms)
+✖ release package list only contains CI-enrolled packages (15.388ms)
+✖ release package list publishes the installable channel entrypoint last (12.0206ms)
+✖ release package list keeps runtime workspace dependencies ahead of consumers (11.9713ms)
+✖ Hermes release surface publishes the unified built-in package and keeps gateway as a shim (11.0621ms)
+✖ release package configuration validates successfully (9.5142ms)
+✔ guard flags a publishFromCi:true package depending on a publishFromCi:false package (0.7002ms)
+✔ guard inspects optional and peer dependency sections too (0.2443ms)
+✔ guard treats a workspace dep on an unknown @paperclipai package as unpublishable (0.2365ms)
+✔ guard allows true->true workspace edges (1.0074ms)
+✔ guard ignores non-workspace specs, non-internal deps, and edges from off-train packages (0.2238ms)
+✖ the live release manifest has no unpublishable workspace edges (8.8984ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 19
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1603.2818
+
+✖ failing tests:
+
+test at scripts\release-package-map.test.mjs:15:1
+✖ release package manifest covers all public packages with explicit CI enrollment (1309.0338ms)
+  Error: release package manifest validation failed:
+  - packages/adapter-utils is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/claude-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/codex-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-cloud is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/gemini-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/grok-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/kimi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/opencode-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/pi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/openclaw-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/shared is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/skills-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/teams-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/db is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sdk is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/plugin-workspace-diff is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/google-sheets-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/kv-demo-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/create-paperclip-plugin is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/boxd is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/cloudflare is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/createos is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/daytona is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/exe-dev is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/e2b is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/modal is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/kubernetes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/novita is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages\adapter-utils (@paperclipai/adapter-utils) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\claude-local (@paperclipai/adapter-claude-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\codex-local (@paperclipai/adapter-codex-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-cloud (@paperclipai/adapter-cursor-cloud) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-local (@paperclipai/adapter-cursor-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\gemini-local (@paperclipai/adapter-gemini-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\grok-local (@paperclipai/adapter-grok-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes (@paperclipai/hermes-paperclip-adapter) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes-gateway (@paperclipai/adapter-hermes-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\kimi-local (@paperclipai/adapter-kimi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\openclaw-gateway (@paperclipai/adapter-openclaw-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\opencode-local (@paperclipai/adapter-opencode-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\pi-local (@paperclipai/adapter-pi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\db (@paperclipai/db) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\google-sheets-mcp-server (@paperclipai/google-sheets-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\kv-demo-mcp-server (@paperclipai/kv-demo-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\mcp-server (@paperclipai/mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\create-paperclip-plugin (@paperclipai/create-paperclip-plugin) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\plugin-workspace-diff (@paperclipai/plugin-workspace-diff) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\boxd (@paperclipai/plugin-boxd) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\cloudflare (@paperclipai/plugin-cloudflare-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\createos (@paperclipai/plugin-createos) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\daytona (@paperclipai/plugin-daytona) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\e2b (@paperclipai/plugin-e2b) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\exe-dev (@paperclipai/plugin-exe-dev) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\kubernetes (@paperclipai/plugin-kubernetes) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\modal (@paperclipai/plugin-modal) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\novita (@paperclipai/plugin-novita-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sdk (@paperclipai/plugin-sdk) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\shared (@paperclipai/shared) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\skills-catalog (@paperclipai/skills-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\teams-catalog (@paperclipai/teams-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+      at buildReleasePackagePlan (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:159:11)
+      at TestContext.<anonymous> (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:16:20)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at scripts\release-package-map.test.mjs:21:1
+✖ release package list only contains CI-enrolled packages (15.388ms)
+  Error: release package manifest validation failed:
+  - packages/adapter-utils is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/claude-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/codex-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-cloud is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/gemini-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/grok-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/kimi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/opencode-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/pi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/openclaw-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/shared is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/skills-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/teams-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/db is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sdk is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/plugin-workspace-diff is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/google-sheets-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/kv-demo-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/create-paperclip-plugin is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/boxd is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/cloudflare is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/createos is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/daytona is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/exe-dev is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/e2b is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/modal is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/kubernetes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/novita is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages\adapter-utils (@paperclipai/adapter-utils) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\claude-local (@paperclipai/adapter-claude-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\codex-local (@paperclipai/adapter-codex-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-cloud (@paperclipai/adapter-cursor-cloud) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-local (@paperclipai/adapter-cursor-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\gemini-local (@paperclipai/adapter-gemini-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\grok-local (@paperclipai/adapter-grok-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes (@paperclipai/hermes-paperclip-adapter) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes-gateway (@paperclipai/adapter-hermes-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\kimi-local (@paperclipai/adapter-kimi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\openclaw-gateway (@paperclipai/adapter-openclaw-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\opencode-local (@paperclipai/adapter-opencode-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\pi-local (@paperclipai/adapter-pi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\db (@paperclipai/db) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\google-sheets-mcp-server (@paperclipai/google-sheets-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\kv-demo-mcp-server (@paperclipai/kv-demo-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\mcp-server (@paperclipai/mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\create-paperclip-plugin (@paperclipai/create-paperclip-plugin) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\plugin-workspace-diff (@paperclipai/plugin-workspace-diff) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\boxd (@paperclipai/plugin-boxd) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\cloudflare (@paperclipai/plugin-cloudflare-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\createos (@paperclipai/plugin-createos) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\daytona (@paperclipai/plugin-daytona) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\e2b (@paperclipai/plugin-e2b) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\exe-dev (@paperclipai/plugin-exe-dev) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\kubernetes (@paperclipai/plugin-kubernetes) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\modal (@paperclipai/plugin-modal) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\novita (@paperclipai/plugin-novita-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sdk (@paperclipai/plugin-sdk) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\shared (@paperclipai/shared) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\skills-catalog (@paperclipai/skills-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\teams-catalog (@paperclipai/teams-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+      at buildReleasePackagePlan (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:159:11)
+      at getReleasePackages (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:215:37)
+      at TestContext.<anonymous> (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:22:27)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+
+test at scripts\release-package-map.test.mjs:27:1
+✖ release package list publishes the installable channel entrypoint last (12.0206ms)
+  Error: release package manifest validation failed:
+  - packages/adapter-utils is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/claude-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/codex-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-cloud is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/gemini-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/grok-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/kimi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/opencode-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/pi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/openclaw-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/shared is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/skills-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/teams-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/db is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sdk is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/plugin-workspace-diff is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/google-sheets-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/kv-demo-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/create-paperclip-plugin is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/boxd is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/cloudflare is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/createos is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/daytona is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/exe-dev is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/e2b is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/modal is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/kubernetes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/novita is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages\adapter-utils (@paperclipai/adapter-utils) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\claude-local (@paperclipai/adapter-claude-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\codex-local (@paperclipai/adapter-codex-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-cloud (@paperclipai/adapter-cursor-cloud) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-local (@paperclipai/adapter-cursor-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\gemini-local (@paperclipai/adapter-gemini-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\grok-local (@paperclipai/adapter-grok-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes (@paperclipai/hermes-paperclip-adapter) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes-gateway (@paperclipai/adapter-hermes-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\kimi-local (@paperclipai/adapter-kimi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\openclaw-gateway (@paperclipai/adapter-openclaw-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\opencode-local (@paperclipai/adapter-opencode-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\pi-local (@paperclipai/adapter-pi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\db (@paperclipai/db) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\google-sheets-mcp-server (@paperclipai/google-sheets-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\kv-demo-mcp-server (@paperclipai/kv-demo-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\mcp-server (@paperclipai/mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\create-paperclip-plugin (@paperclipai/create-paperclip-plugin) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\plugin-workspace-diff (@paperclipai/plugin-workspace-diff) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\boxd (@paperclipai/plugin-boxd) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\cloudflare (@paperclipai/plugin-cloudflare-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\createos (@paperclipai/plugin-createos) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\daytona (@paperclipai/plugin-daytona) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\e2b (@paperclipai/plugin-e2b) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\exe-dev (@paperclipai/plugin-exe-dev) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\kubernetes (@paperclipai/plugin-kubernetes) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\modal (@paperclipai/plugin-modal) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\novita (@paperclipai/plugin-novita-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sdk (@paperclipai/plugin-sdk) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\shared (@paperclipai/shared) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\skills-catalog (@paperclipai/skills-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\teams-catalog (@paperclipai/teams-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+      at buildReleasePackagePlan (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:159:11)
+      at getReleasePackages (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:215:37)
+      at TestContext.<anonymous> (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:28:27)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at scripts\release-package-map.test.mjs:34:1
+✖ release package list keeps runtime workspace dependencies ahead of consumers (11.9713ms)
+  Error: release package manifest validation failed:
+  - packages/adapter-utils is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/claude-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/codex-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-cloud is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/gemini-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/grok-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/kimi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/opencode-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/pi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/openclaw-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/shared is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/skills-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/teams-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/db is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sdk is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/plugin-workspace-diff is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/google-sheets-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/kv-demo-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/create-paperclip-plugin is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/boxd is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/cloudflare is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/createos is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/daytona is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/exe-dev is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/e2b is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/modal is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/kubernetes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/novita is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages\adapter-utils (@paperclipai/adapter-utils) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\claude-local (@paperclipai/adapter-claude-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\codex-local (@paperclipai/adapter-codex-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-cloud (@paperclipai/adapter-cursor-cloud) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-local (@paperclipai/adapter-cursor-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\gemini-local (@paperclipai/adapter-gemini-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\grok-local (@paperclipai/adapter-grok-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes (@paperclipai/hermes-paperclip-adapter) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes-gateway (@paperclipai/adapter-hermes-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\kimi-local (@paperclipai/adapter-kimi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\openclaw-gateway (@paperclipai/adapter-openclaw-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\opencode-local (@paperclipai/adapter-opencode-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\pi-local (@paperclipai/adapter-pi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\db (@paperclipai/db) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\google-sheets-mcp-server (@paperclipai/google-sheets-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\kv-demo-mcp-server (@paperclipai/kv-demo-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\mcp-server (@paperclipai/mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\create-paperclip-plugin (@paperclipai/create-paperclip-plugin) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\plugin-workspace-diff (@paperclipai/plugin-workspace-diff) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\boxd (@paperclipai/plugin-boxd) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\cloudflare (@paperclipai/plugin-cloudflare-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\createos (@paperclipai/plugin-createos) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\daytona (@paperclipai/plugin-daytona) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\e2b (@paperclipai/plugin-e2b) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\exe-dev (@paperclipai/plugin-exe-dev) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\kubernetes (@paperclipai/plugin-kubernetes) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\modal (@paperclipai/plugin-modal) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\novita (@paperclipai/plugin-novita-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sdk (@paperclipai/plugin-sdk) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\shared (@paperclipai/shared) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\skills-catalog (@paperclipai/skills-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\teams-catalog (@paperclipai/teams-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+      at buildReleasePackagePlan (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:159:11)
+      at getReleasePackages (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:215:37)
+      at TestContext.<anonymous> (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:35:27)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at scripts\release-package-map.test.mjs:54:1
+✖ Hermes release surface publishes the unified built-in package and keeps gateway as a shim (11.0621ms)
+  Error: release package manifest validation failed:
+  - packages/adapter-utils is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/claude-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/codex-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-cloud is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/gemini-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/grok-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/kimi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/opencode-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/pi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/openclaw-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/shared is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/skills-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/teams-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/db is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sdk is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/plugin-workspace-diff is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/google-sheets-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/kv-demo-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/create-paperclip-plugin is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/boxd is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/cloudflare is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/createos is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/daytona is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/exe-dev is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/e2b is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/modal is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/kubernetes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/novita is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages\adapter-utils (@paperclipai/adapter-utils) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\claude-local (@paperclipai/adapter-claude-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\codex-local (@paperclipai/adapter-codex-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-cloud (@paperclipai/adapter-cursor-cloud) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-local (@paperclipai/adapter-cursor-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\gemini-local (@paperclipai/adapter-gemini-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\grok-local (@paperclipai/adapter-grok-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes (@paperclipai/hermes-paperclip-adapter) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes-gateway (@paperclipai/adapter-hermes-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\kimi-local (@paperclipai/adapter-kimi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\openclaw-gateway (@paperclipai/adapter-openclaw-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\opencode-local (@paperclipai/adapter-opencode-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\pi-local (@paperclipai/adapter-pi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\db (@paperclipai/db) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\google-sheets-mcp-server (@paperclipai/google-sheets-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\kv-demo-mcp-server (@paperclipai/kv-demo-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\mcp-server (@paperclipai/mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\create-paperclip-plugin (@paperclipai/create-paperclip-plugin) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\plugin-workspace-diff (@paperclipai/plugin-workspace-diff) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\boxd (@paperclipai/plugin-boxd) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\cloudflare (@paperclipai/plugin-cloudflare-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\createos (@paperclipai/plugin-createos) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\daytona (@paperclipai/plugin-daytona) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\e2b (@paperclipai/plugin-e2b) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\exe-dev (@paperclipai/plugin-exe-dev) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\kubernetes (@paperclipai/plugin-kubernetes) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\modal (@paperclipai/plugin-modal) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\novita (@paperclipai/plugin-novita-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sdk (@paperclipai/plugin-sdk) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\shared (@paperclipai/shared) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\skills-catalog (@paperclipai/skills-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\teams-catalog (@paperclipai/teams-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+      at buildReleasePackagePlan (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:159:11)
+      at TestContext.<anonymous> (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:55:20)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at scripts\release-package-map.test.mjs:65:1
+✖ release package configuration validates successfully (9.5142ms)
+  AssertionError [ERR_ASSERTION]: Got unwanted exception.
+  Actual message: "release package manifest validation failed:
+  - packages/adapter-utils is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/claude-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/codex-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-cloud is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/gemini-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/grok-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/kimi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/opencode-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/pi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/openclaw-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/shared is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/skills-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/teams-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/db is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sdk is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/plugin-workspace-diff is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/google-sheets-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/kv-demo-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/create-paperclip-plugin is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/boxd is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/cloudflare is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/createos is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/daytona is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/exe-dev is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/e2b is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/modal is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/kubernetes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/novita is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages\adapter-utils (@paperclipai/adapter-utils) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\claude-local (@paperclipai/adapter-claude-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\codex-local (@paperclipai/adapter-codex-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-cloud (@paperclipai/adapter-cursor-cloud) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-local (@paperclipai/adapter-cursor-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\gemini-local (@paperclipai/adapter-gemini-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\grok-local (@paperclipai/adapter-grok-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes (@paperclipai/hermes-paperclip-adapter) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes-gateway (@paperclipai/adapter-hermes-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\kimi-local (@paperclipai/adapter-kimi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\openclaw-gateway (@paperclipai/adapter-openclaw-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\opencode-local (@paperclipai/adapter-opencode-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\pi-local (@paperclipai/adapter-pi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\db (@paperclipai/db) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\google-sheets-mcp-server (@paperclipai/google-sheets-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\kv-demo-mcp-server (@paperclipai/kv-demo-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\mcp-server (@paperclipai/mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\create-paperclip-plugin (@paperclipai/create-paperclip-plugin) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\plugin-workspace-diff (@paperclipai/plugin-workspace-diff) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\boxd (@paperclipai/plugin-boxd) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\cloudflare (@paperclipai/plugin-cloudflare-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\createos (@paperclipai/plugin-createos) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\daytona (@paperclipai/plugin-daytona) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\e2b (@paperclipai/plugin-e2b) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\exe-dev (@paperclipai/plugin-exe-dev) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\kubernetes (@paperclipai/plugin-kubernetes) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\modal (@paperclipai/plugin-modal) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\novita (@paperclipai/plugin-novita-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sdk (@paperclipai/plugin-sdk) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\shared (@paperclipai/shared) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\skills-catalog (@paperclipai/skills-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\teams-catalog (@paperclipai/teams-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false"
+      at TestContext.<anonymous> (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:66:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: Error: release package manifest validation failed:
+    - packages/adapter-utils is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/claude-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/codex-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/cursor-cloud is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/cursor-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/gemini-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/grok-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/hermes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/hermes-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/kimi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/opencode-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/pi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/adapters/openclaw-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/shared is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/skills-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/teams-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/db is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sdk is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/plugin-workspace-diff is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/google-sheets-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/kv-demo-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/create-paperclip-plugin is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/boxd is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/cloudflare is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/createos is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/daytona is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/exe-dev is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/e2b is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/modal is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/kubernetes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages/plugins/sandbox-providers/novita is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+    - packages\adapter-utils (@paperclipai/adapter-utils) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\claude-local (@paperclipai/adapter-claude-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\codex-local (@paperclipai/adapter-codex-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\cursor-cloud (@paperclipai/adapter-cursor-cloud) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\cursor-local (@paperclipai/adapter-cursor-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\gemini-local (@paperclipai/adapter-gemini-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\grok-local (@paperclipai/adapter-grok-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\hermes (@paperclipai/hermes-paperclip-adapter) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\hermes-gateway (@paperclipai/adapter-hermes-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\kimi-local (@paperclipai/adapter-kimi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\openclaw-gateway (@paperclipai/adapter-openclaw-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\opencode-local (@paperclipai/adapter-opencode-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\adapters\pi-local (@paperclipai/adapter-pi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\db (@paperclipai/db) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\google-sheets-mcp-server (@paperclipai/google-sheets-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\kv-demo-mcp-server (@paperclipai/kv-demo-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\mcp-server (@paperclipai/mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\create-paperclip-plugin (@paperclipai/create-paperclip-plugin) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\plugin-workspace-diff (@paperclipai/plugin-workspace-diff) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\boxd (@paperclipai/plugin-boxd) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\cloudflare (@paperclipai/plugin-cloudflare-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\createos (@paperclipai/plugin-createos) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\daytona (@paperclipai/plugin-daytona) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\e2b (@paperclipai/plugin-e2b) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\exe-dev (@paperclipai/plugin-exe-dev) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\kubernetes (@paperclipai/plugin-kubernetes) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\modal (@paperclipai/plugin-modal) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sandbox-providers\novita (@paperclipai/plugin-novita-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\plugins\sdk (@paperclipai/plugin-sdk) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\shared (@paperclipai/shared) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\skills-catalog (@paperclipai/skills-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+    - packages\teams-catalog (@paperclipai/teams-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+        at buildReleasePackagePlan (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:159:11)
+        at checkConfiguration (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:287:20)
+        at file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:66:29
+        at getActual (node:assert:611:5)
+        at strict.doesNotThrow (node:assert:779:32)
+        at TestContext.<anonymous> (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:66:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1325:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+        at Test.postRun (node:internal/test_runner/test:1465:19),
+    expected: undefined,
+    operator: 'doesNotThrow',
+    diff: 'simple'
+  }
+
+test at scripts\release-package-map.test.mjs:140:1
+✖ the live release manifest has no unpublishable workspace edges (8.8984ms)
+  Error: release package manifest validation failed:
+  - packages/adapter-utils is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/claude-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/codex-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-cloud is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/cursor-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/gemini-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/grok-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/hermes-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/kimi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/opencode-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/pi-local is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/adapters/openclaw-gateway is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/shared is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/skills-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/teams-catalog is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/db is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sdk is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/plugin-workspace-diff is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/google-sheets-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/kv-demo-mcp-server is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/create-paperclip-plugin is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/boxd is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/cloudflare is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/createos is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/daytona is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/exe-dev is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/e2b is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/modal is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/kubernetes is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages/plugins/sandbox-providers/novita is listed in E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json but is not a public package in this repo
+  - packages\adapter-utils (@paperclipai/adapter-utils) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\claude-local (@paperclipai/adapter-claude-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\codex-local (@paperclipai/adapter-codex-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-cloud (@paperclipai/adapter-cursor-cloud) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\cursor-local (@paperclipai/adapter-cursor-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\gemini-local (@paperclipai/adapter-gemini-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\grok-local (@paperclipai/adapter-grok-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes (@paperclipai/hermes-paperclip-adapter) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\hermes-gateway (@paperclipai/adapter-hermes-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\kimi-local (@paperclipai/adapter-kimi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\openclaw-gateway (@paperclipai/adapter-openclaw-gateway) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\opencode-local (@paperclipai/adapter-opencode-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\adapters\pi-local (@paperclipai/adapter-pi-local) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\db (@paperclipai/db) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\google-sheets-mcp-server (@paperclipai/google-sheets-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\kv-demo-mcp-server (@paperclipai/kv-demo-mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\mcp-server (@paperclipai/mcp-server) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\create-paperclip-plugin (@paperclipai/create-paperclip-plugin) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\plugin-workspace-diff (@paperclipai/plugin-workspace-diff) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\boxd (@paperclipai/plugin-boxd) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\cloudflare (@paperclipai/plugin-cloudflare-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\createos (@paperclipai/plugin-createos) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\daytona (@paperclipai/plugin-daytona) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\e2b (@paperclipai/plugin-e2b) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\exe-dev (@paperclipai/plugin-exe-dev) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\kubernetes (@paperclipai/plugin-kubernetes) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\modal (@paperclipai/plugin-modal) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sandbox-providers\novita (@paperclipai/plugin-novita-sandbox) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\plugins\sdk (@paperclipai/plugin-sdk) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\shared (@paperclipai/shared) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\skills-catalog (@paperclipai/skills-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+  - packages\teams-catalog (@paperclipai/teams-catalog) is public but missing from E:\coding\code\Trade\paperclip\scripts\release-package-manifest.json; add it with publishFromCi true or false
+      at buildReleasePackagePlan (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.mjs:159:11)
+      at TestContext.<anonymous> (file:///E:/coding/code/Trade/paperclip/scripts/release-package-map.test.mjs:141:52)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)

@@ -1,0 +1,8 @@
+{
+  "campaign_id": "trade1",
+  "environment": "india_testnet",
+  "started_at": "2026-11-18T18:25:01.148058+00:00",
+  "time_exit_seconds": 600,
+  "strategy_version": "delta-demo-five-coin-v6+trade1-3c-10m-v2",
+  "contracts": 3
+}

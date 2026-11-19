@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-11-17T12:31:50.405081Z",
+  "source": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+  "paid_calls": 0,
+  "order_calls": 0,
+  "note": "Read-only RSS smoke; source delay/availability is not guaranteed.",
+  "source_health": {
+    "https://www.coindesk.com/arc/outboundfeeds/rss/": {
+      "status": "error",
+      "last_checked": "2026-11-17T12:31:50.416744Z",
+      "error": "Public feed request failed: Feed redirects are rejected",
+      "next_poll_at": "2026-11-17T12:32:50.416744Z"
+    }
+  },
+  "item_count": 0,
+  "status": "unavailable",
+  "elapsed_seconds": 0.303
+}

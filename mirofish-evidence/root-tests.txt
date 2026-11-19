@@ -1,0 +1,42 @@
+test_fetcher_is_standalone_stdlib_only_and_has_fixed_api (test_local_star_count_fetch.FetchStarCountTests.test_fetcher_is_standalone_stdlib_only_and_has_fixed_api) ... ok
+test_malformed_oversized_and_invalid_counts_are_sanitized (test_local_star_count_fetch.FetchStarCountTests.test_malformed_oversized_and_invalid_counts_are_sanitized) ... ok
+test_missing_or_newline_token_is_rejected_without_stdout (test_local_star_count_fetch.FetchStarCountTests.test_missing_or_newline_token_is_rejected_without_stdout) ... ok
+test_redirect_is_refused_without_forwarding_token (test_local_star_count_fetch.FetchStarCountTests.test_redirect_is_refused_without_forwarding_token) ... ok
+test_status_and_network_errors_do_not_echo_exception_data (test_local_star_count_fetch.FetchStarCountTests.test_status_and_network_errors_do_not_echo_exception_data) ... ok
+test_success_stdout_is_only_one_decimal_count (test_local_star_count_fetch.FetchStarCountTests.test_success_stdout_is_only_one_decimal_count) ... ok
+test_workflow_keeps_credentials_out_of_record_and_render_steps (test_local_star_count_fetch.FetchStarCountTests.test_workflow_keeps_credentials_out_of_record_and_render_steps) ... ok
+test_workflow_submits_a_verified_pull_request_for_manual_merge (test_local_star_count_fetch.FetchStarCountTests.test_workflow_submits_a_verified_pull_request_for_manual_merge) ... ok
+test_graphql_gateway_does_not_echo_failed_command_stderr (test_local_star_history.GitHubAdapterTests.test_graphql_gateway_does_not_echo_failed_command_stderr) ... ok
+test_graphql_gateway_rejects_malformed_nested_shape (test_local_star_history.GitHubAdapterTests.test_graphql_gateway_rejects_malformed_nested_shape) ... ok
+test_graphql_gateway_uses_identity_free_paginated_query (test_local_star_history.GitHubAdapterTests.test_graphql_gateway_uses_identity_free_paginated_query) ... ok
+test_backfill_accepts_exact_rate_limit_reserve_after_first_page (test_local_star_history.StarHistoryBehaviorTests.test_backfill_accepts_exact_rate_limit_reserve_after_first_page) ... ok
+test_backfill_fails_closed_on_cursor_or_count_inconsistency (test_local_star_history.StarHistoryBehaviorTests.test_backfill_fails_closed_on_cursor_or_count_inconsistency) ... ok
+test_backfill_reads_101_edges_across_pages (test_local_star_history.StarHistoryBehaviorTests.test_backfill_reads_101_edges_across_pages) ... ok
+test_backfill_refuses_dangling_output_symlink (test_local_star_history.StarHistoryBehaviorTests.test_backfill_refuses_dangling_output_symlink) ... ok
+test_backfill_writes_hand_computed_completed_daily_history (test_local_star_history.StarHistoryBehaviorTests.test_backfill_writes_hand_computed_completed_daily_history) ... ok
+test_check_detects_svg_tampering (test_local_star_history.StarHistoryBehaviorTests.test_check_detects_svg_tampering) ... ok
+test_count_file_rejects_symlinks_malformed_and_extreme_values (test_local_star_history.StarHistoryBehaviorTests.test_count_file_rejects_symlinks_malformed_and_extreme_values) ... FAIL
+test_due_boundary_matches_configured_interval (test_local_star_history.StarHistoryBehaviorTests.test_due_boundary_matches_configured_interval) ... ok
+test_force_same_day_changed_count_replaces_snapshot (test_local_star_history.StarHistoryBehaviorTests.test_force_same_day_changed_count_replaces_snapshot) ... ok
+test_force_same_day_same_count_is_idempotent (test_local_star_history.StarHistoryBehaviorTests.test_force_same_day_same_count_is_idempotent) ... ok
+test_initialize_starts_from_one_honest_aggregate_snapshot (test_local_star_history.StarHistoryBehaviorTests.test_initialize_starts_from_one_honest_aggregate_snapshot) ... ok
+test_new_date_appends_even_when_count_is_unchanged (test_local_star_history.StarHistoryBehaviorTests.test_new_date_appends_even_when_count_is_unchanged) ... ok
+test_record_applies_count_file_without_github_credentials (test_local_star_history.StarHistoryBehaviorTests.test_record_applies_count_file_without_github_credentials) ... ok
+test_record_before_due_does_not_write (test_local_star_history.StarHistoryBehaviorTests.test_record_before_due_does_not_write) ... ok
+test_schema_rejects_unknown_identity_fields_and_boolean_counts (test_local_star_history.StarHistoryBehaviorTests.test_schema_rejects_unknown_identity_fields_and_boolean_counts) ... ok
+test_svg_is_accessible_self_contained_and_deterministic (test_local_star_history.StarHistoryBehaviorTests.test_svg_is_accessible_self_contained_and_deterministic) ... ok
+test_svg_validator_rejects_unreviewed_or_active_content (test_local_star_history.StarHistoryBehaviorTests.test_svg_validator_rejects_unreviewed_or_active_content) ... ok
+
+======================================================================
+FAIL: test_count_file_rejects_symlinks_malformed_and_extreme_values (test_local_star_history.StarHistoryBehaviorTests.test_count_file_rejects_symlinks_malformed_and_extreme_values)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\coding\code\Trade\MiroFish\tests\test_local_star_history.py", line 440, in test_count_file_rejects_symlinks_malformed_and_extreme_values
+    with self.assertRaises(star_history.StarHistoryError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: StarHistoryError not raised
+
+----------------------------------------------------------------------
+Ran 28 tests in 3.662s
+
+FAILED (failures=1)

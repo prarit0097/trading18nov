@@ -1,0 +1,27 @@
+{
+  "command": [
+    "E:\\coding\\code\\Trade\\runtime-tests\\openbb\\venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-p",
+    "pytest_asyncio.plugin",
+    "-q",
+    "-rs",
+    "-c",
+    "E:\\coding\\code\\Trade\\OpenBB\\pytest.ini",
+    "--override-ini",
+    "cache_dir=E:\\coding\\code\\Trade\\runtime-tests\\openbb\\pytest-cache",
+    "--junitxml=E:\\coding\\code\\Trade\\runtime-tests\\openbb\\core-tests.xml",
+    "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\provider\\test_registry.py",
+    "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\provider\\test_registry_map.py",
+    "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\provider\\test_query_executor.py",
+    "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\api\\test_rest_api.py",
+    "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\app\\static\\test_app_factory.py",
+    "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\app\\static\\test_package_builder_generated.py",
+    "E:\\coding\\code\\Trade\\OpenBB\\openbb_platform\\core\\tests\\app\\test_command_output_extensions_e2e.py"
+  ],
+  "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\openbb",
+  "exit_code": 0,
+  "seconds": 10.08,
+  "isolation": "whitelisted OS env, empty HOME/USERPROFILE, no dotenv credentials; DEV_MODE true"
+}

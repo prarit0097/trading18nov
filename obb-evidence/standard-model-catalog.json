@@ -1,0 +1,2966 @@
+[
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/ameribor.py",
+    "line": 15,
+    "class": "AmeriborQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/ameribor.py",
+    "line": 28,
+    "class": "AmeriborData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/analyst_estimates.py",
+    "line": 15,
+    "class": "AnalystEstimatesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/analyst_estimates.py",
+    "line": 27,
+    "class": "AnalystEstimatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/analyst_search.py",
+    "line": 13,
+    "class": "AnalystSearchQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/analyst_search.py",
+    "line": 28,
+    "class": "AnalystSearchData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/available_indicators.py",
+    "line": 10,
+    "class": "AvailableIndicesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/available_indicators.py",
+    "line": 14,
+    "class": "AvailableIndicatorsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/available_indices.py",
+    "line": 12,
+    "class": "AvailableIndicesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/available_indices.py",
+    "line": 16,
+    "class": "AvailableIndicesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 13,
+    "class": "BalanceOfPaymentsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 17,
+    "class": "BP6BopUsdData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 96,
+    "class": "ECBMain",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 148,
+    "class": "ECBSummary",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 204,
+    "class": "ECBServices",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 255,
+    "class": "ECBInvestmentIncome",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 311,
+    "class": "ECBDirectInvestment",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 357,
+    "class": "ECBPortfolioInvestment",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 424,
+    "class": "ECBOtherInvestment",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_of_payments.py",
+    "line": 484,
+    "class": "ECBCountry",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_sheet.py",
+    "line": 14,
+    "class": "BalanceSheetQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_sheet.py",
+    "line": 29,
+    "class": "BalanceSheetData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_sheet_growth.py",
+    "line": 12,
+    "class": "BalanceSheetGrowthQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/balance_sheet_growth.py",
+    "line": 27,
+    "class": "BalanceSheetGrowthData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bls_search.py",
+    "line": 10,
+    "class": "SearchQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bls_search.py",
+    "line": 19,
+    "class": "SearchData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bls_series.py",
+    "line": 15,
+    "class": "SeriesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bls_series.py",
+    "line": 35,
+    "class": "SeriesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bond_indices.py",
+    "line": 18,
+    "class": "BondIndicesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bond_indices.py",
+    "line": 44,
+    "class": "BondIndicesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bond_prices.py",
+    "line": 13,
+    "class": "BondPricesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bond_prices.py",
+    "line": 70,
+    "class": "BondPricesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bond_reference.py",
+    "line": 13,
+    "class": "BondReferenceQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bond_reference.py",
+    "line": 70,
+    "class": "BondReferenceData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bond_trades.py",
+    "line": 19,
+    "class": "BondTradesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/bond_trades.py",
+    "line": 63,
+    "class": "BondTradesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_dividend.py",
+    "line": 15,
+    "class": "CalendarDividendQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_dividend.py",
+    "line": 26,
+    "class": "CalendarDividendData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_earnings.py",
+    "line": 15,
+    "class": "CalendarEarningsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_earnings.py",
+    "line": 26,
+    "class": "CalendarEarningsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_events.py",
+    "line": 15,
+    "class": "CalendarEventsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_events.py",
+    "line": 26,
+    "class": "CalendarEventsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_ipo.py",
+    "line": 15,
+    "class": "CalendarIpoQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_ipo.py",
+    "line": 32,
+    "class": "CalendarIpoData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_splits.py",
+    "line": 15,
+    "class": "CalendarSplitsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/calendar_splits.py",
+    "line": 26,
+    "class": "CalendarSplitsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cash_flow.py",
+    "line": 12,
+    "class": "CashFlowStatementQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cash_flow.py",
+    "line": 27,
+    "class": "CashFlowStatementData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cash_flow_growth.py",
+    "line": 12,
+    "class": "CashFlowStatementGrowthQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cash_flow_growth.py",
+    "line": 27,
+    "class": "CashFlowStatementGrowthData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/central_bank_holdings.py",
+    "line": 17,
+    "class": "CentralBankHoldingsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/central_bank_holdings.py",
+    "line": 26,
+    "class": "CentralBankHoldingsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cik_map.py",
+    "line": 13,
+    "class": "CikMapQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cik_map.py",
+    "line": 25,
+    "class": "CikMapData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/commercial_paper.py",
+    "line": 17,
+    "class": "CommercialPaperParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/commercial_paper.py",
+    "line": 30,
+    "class": "CommercialPaperData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/commodity_psd_data.py",
+    "line": 9,
+    "class": "CommodityPsdDataQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/commodity_psd_data.py",
+    "line": 13,
+    "class": "CommodityPsdData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/commodity_psd_report.py",
+    "line": 9,
+    "class": "CommodityPsdReportQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/commodity_psd_report.py",
+    "line": 25,
+    "class": "CommodityPsdReportData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/commodity_spot_prices.py",
+    "line": 17,
+    "class": "CommoditySpotPricesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/commodity_spot_prices.py",
+    "line": 30,
+    "class": "CommoditySpotPricesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/company_filings.py",
+    "line": 17,
+    "class": "CompanyFilingsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/company_filings.py",
+    "line": 33,
+    "class": "CompanyFilingsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/company_news.py",
+    "line": 19,
+    "class": "CompanyNewsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/company_news.py",
+    "line": 44,
+    "class": "CompanyNewsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/compare_company_facts.py",
+    "line": 15,
+    "class": "CompareCompanyFactsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/compare_company_facts.py",
+    "line": 27,
+    "class": "CompareCompanyFactsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/compare_groups.py",
+    "line": 7,
+    "class": "CompareGroupsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/compare_groups.py",
+    "line": 11,
+    "class": "CompareGroupsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/composite_leading_indicator.py",
+    "line": 15,
+    "class": "CompositeLeadingIndicatorQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/composite_leading_indicator.py",
+    "line": 26,
+    "class": "CompositeLeadingIndicatorData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/consumer_price_index.py",
+    "line": 16,
+    "class": "ConsumerPriceIndexQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/consumer_price_index.py",
+    "line": 42,
+    "class": "ConsumerPriceIndexData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cot.py",
+    "line": 15,
+    "class": "COTQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cot.py",
+    "line": 32,
+    "class": "COTData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cot_search.py",
+    "line": 10,
+    "class": "CotSearchQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/cot_search.py",
+    "line": 20,
+    "class": "CotSearchData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/country_interest_rates.py",
+    "line": 15,
+    "class": "CountryInterestRatesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/country_interest_rates.py",
+    "line": 30,
+    "class": "CountryInterestRatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/country_profile.py",
+    "line": 13,
+    "class": "CountryProfileQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/country_profile.py",
+    "line": 25,
+    "class": "CountryProfileData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/crypto_historical.py",
+    "line": 19,
+    "class": "CryptoHistoricalQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/crypto_historical.py",
+    "line": 39,
+    "class": "CryptoHistoricalData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/crypto_search.py",
+    "line": 10,
+    "class": "CryptoSearchQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/crypto_search.py",
+    "line": 16,
+    "class": "CryptoSearchData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/currency_historical.py",
+    "line": 19,
+    "class": "CurrencyHistoricalQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/currency_historical.py",
+    "line": 43,
+    "class": "CurrencyHistoricalData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/currency_pairs.py",
+    "line": 10,
+    "class": "CurrencyPairsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/currency_pairs.py",
+    "line": 18,
+    "class": "CurrencyPairsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/currency_reference_rates.py",
+    "line": 14,
+    "class": "CurrencyReferenceRatesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/currency_reference_rates.py",
+    "line": 18,
+    "class": "CurrencyReferenceRatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/currency_snapshots.py",
+    "line": 12,
+    "class": "CurrencySnapshotsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/currency_snapshots.py",
+    "line": 47,
+    "class": "CurrencySnapshotsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/direction_of_trade.py",
+    "line": 16,
+    "class": "DirectionOfTradeQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/direction_of_trade.py",
+    "line": 53,
+    "class": "DirectionOfTradeData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/discovery_filings.py",
+    "line": 18,
+    "class": "DiscoveryFilingsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/discovery_filings.py",
+    "line": 40,
+    "class": "DiscoveryFilingsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/dwpcr_rates.py",
+    "line": 17,
+    "class": "DiscountWindowPrimaryCreditRateParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/dwpcr_rates.py",
+    "line": 30,
+    "class": "DiscountWindowPrimaryCreditRateData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/earnings_call_transcript.py",
+    "line": 16,
+    "class": "EarningsCallTranscriptQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/earnings_call_transcript.py",
+    "line": 34,
+    "class": "EarningsCallTranscriptData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/ecb_interest_rates.py",
+    "line": 18,
+    "class": "EuropeanCentralBankInterestRatesParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/ecb_interest_rates.py",
+    "line": 41,
+    "class": "EuropeanCentralBankInterestRatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/economic_calendar.py",
+    "line": 18,
+    "class": "EconomicCalendarQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/economic_calendar.py",
+    "line": 31,
+    "class": "EconomicCalendarData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/economic_indicators.py",
+    "line": 15,
+    "class": "EconomicIndicatorsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/economic_indicators.py",
+    "line": 33,
+    "class": "EconomicIndicatorsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_ftd.py",
+    "line": 18,
+    "class": "EquityFtdQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_ftd.py",
+    "line": 30,
+    "class": "EquityFtdData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_historical.py",
+    "line": 18,
+    "class": "EquityHistoricalQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_historical.py",
+    "line": 38,
+    "class": "EquityHistoricalData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_info.py",
+    "line": 15,
+    "class": "EquityInfoQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_info.py",
+    "line": 27,
+    "class": "EquityInfoData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_nbbo.py",
+    "line": 10,
+    "class": "EquityNBBOQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_nbbo.py",
+    "line": 24,
+    "class": "EquityNBBOData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_ownership.py",
+    "line": 15,
+    "class": "EquityOwnershipQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_ownership.py",
+    "line": 27,
+    "class": "EquityOwnershipData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_peers.py",
+    "line": 13,
+    "class": "EquityPeersQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_peers.py",
+    "line": 25,
+    "class": "EquityPeersData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_performance.py",
+    "line": 12,
+    "class": "EquityPerformanceQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_performance.py",
+    "line": 27,
+    "class": "EquityPerformanceData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_quote.py",
+    "line": 15,
+    "class": "EquityQuoteQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_quote.py",
+    "line": 27,
+    "class": "EquityQuoteData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_screener.py",
+    "line": 10,
+    "class": "EquityScreenerQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_screener.py",
+    "line": 14,
+    "class": "EquityScreenerData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_search.py",
+    "line": 10,
+    "class": "EquitySearchQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_search.py",
+    "line": 19,
+    "class": "EquitySearchData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_short_interest.py",
+    "line": 15,
+    "class": "ShortInterestQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/equity_short_interest.py",
+    "line": 21,
+    "class": "ShortInterestData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/esg_risk_rating.py",
+    "line": 15,
+    "class": "ESGRiskRatingQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/esg_risk_rating.py",
+    "line": 27,
+    "class": "ESGRiskRatingData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/esg_score.py",
+    "line": 18,
+    "class": "EsgScoreQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/esg_score.py",
+    "line": 30,
+    "class": "EsgScoreData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/esg_sector.py",
+    "line": 7,
+    "class": "ESGSectorQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/esg_sector.py",
+    "line": 19,
+    "class": "ESGSectorData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_countries.py",
+    "line": 13,
+    "class": "EtfCountriesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_countries.py",
+    "line": 25,
+    "class": "EtfCountriesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_equity_exposure.py",
+    "line": 10,
+    "class": "EtfEquityExposureQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_equity_exposure.py",
+    "line": 24,
+    "class": "EtfEquityExposureData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_historical.py",
+    "line": 19,
+    "class": "EtfHistoricalQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_historical.py",
+    "line": 39,
+    "class": "EtfHistoricalData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_historical_nav.py",
+    "line": 15,
+    "class": "EtfHistoricalNavQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_historical_nav.py",
+    "line": 27,
+    "class": "EtfHistoricalNavData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_holdings.py",
+    "line": 13,
+    "class": "EtfHoldingsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_holdings.py",
+    "line": 25,
+    "class": "EtfHoldingsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_info.py",
+    "line": 15,
+    "class": "EtfInfoQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_info.py",
+    "line": 27,
+    "class": "EtfInfoData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_performance.py",
+    "line": 16,
+    "class": "ETFPerformanceQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_performance.py",
+    "line": 35,
+    "class": "ETFPerformanceData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_search.py",
+    "line": 10,
+    "class": "EtfSearchQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_search.py",
+    "line": 16,
+    "class": "EtfSearchData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_sectors.py",
+    "line": 13,
+    "class": "EtfSectorsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/etf_sectors.py",
+    "line": 25,
+    "class": "EtfSectorsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/euro_short_term_rate.py",
+    "line": 15,
+    "class": "EuroShortTermRateQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/euro_short_term_rate.py",
+    "line": 28,
+    "class": "EuroShortTermRateData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/executive_compensation.py",
+    "line": 15,
+    "class": "ExecutiveCompensationQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/executive_compensation.py",
+    "line": 27,
+    "class": "ExecutiveCompensationData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/export_destinations.py",
+    "line": 10,
+    "class": "ExportDestinationsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/export_destinations.py",
+    "line": 16,
+    "class": "ExportDestinationsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/fed_projections.py",
+    "line": 12,
+    "class": "PROJECTIONQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/fed_projections.py",
+    "line": 16,
+    "class": "PROJECTIONData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/federal_funds_rate.py",
+    "line": 15,
+    "class": "FederalFundsRateQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/federal_funds_rate.py",
+    "line": 28,
+    "class": "FederalFundsRateData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/ffrmc.py",
+    "line": 18,
+    "class": "SelectedTreasuryConstantMaturityQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/ffrmc.py",
+    "line": 41,
+    "class": "SelectedTreasuryConstantMaturityData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/financial_attributes.py",
+    "line": 16,
+    "class": "FinancialAttributesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/financial_attributes.py",
+    "line": 45,
+    "class": "FinancialAttributesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/financial_ratios.py",
+    "line": 15,
+    "class": "FinancialRatiosQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/financial_ratios.py",
+    "line": 30,
+    "class": "FinancialRatiosData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/form_13FHR.py",
+    "line": 15,
+    "class": "Form13FHRQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/form_13FHR.py",
+    "line": 45,
+    "class": "Form13FHRData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/forward_ebitda_estimates.py",
+    "line": 15,
+    "class": "ForwardEbitdaEstimatesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/forward_ebitda_estimates.py",
+    "line": 30,
+    "class": "ForwardEbitdaEstimatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/forward_eps_estimates.py",
+    "line": 15,
+    "class": "ForwardEpsEstimatesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/forward_eps_estimates.py",
+    "line": 30,
+    "class": "ForwardEpsEstimatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/forward_pe_estimates.py",
+    "line": 13,
+    "class": "ForwardPeEstimatesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/forward_pe_estimates.py",
+    "line": 28,
+    "class": "ForwardPeEstimatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/forward_sales_estimates.py",
+    "line": 15,
+    "class": "ForwardSalesEstimatesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/forward_sales_estimates.py",
+    "line": 30,
+    "class": "ForwardSalesEstimatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/fred_release_table.py",
+    "line": 15,
+    "class": "ReleaseTableQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/fred_release_table.py",
+    "line": 53,
+    "class": "ReleaseTableData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/fred_search.py",
+    "line": 14,
+    "class": "SearchQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/fred_search.py",
+    "line": 20,
+    "class": "SearchData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/fred_series.py",
+    "line": 15,
+    "class": "SeriesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/fred_series.py",
+    "line": 38,
+    "class": "SeriesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/futures_curve.py",
+    "line": 15,
+    "class": "FuturesCurveQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/futures_curve.py",
+    "line": 53,
+    "class": "FuturesCurveData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/futures_historical.py",
+    "line": 18,
+    "class": "FuturesHistoricalQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/futures_historical.py",
+    "line": 42,
+    "class": "FuturesHistoricalData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/futures_info.py",
+    "line": 10,
+    "class": "FuturesInfoQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/futures_info.py",
+    "line": 16,
+    "class": "FuturesInfoData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/futures_instruments.py",
+    "line": 7,
+    "class": "FuturesInstrumentsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/futures_instruments.py",
+    "line": 11,
+    "class": "FuturesInstrumentsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/gdp_forecast.py",
+    "line": 15,
+    "class": "GdpForecastQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/gdp_forecast.py",
+    "line": 26,
+    "class": "GdpForecastData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/gdp_nominal.py",
+    "line": 15,
+    "class": "GdpNominalQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/gdp_nominal.py",
+    "line": 26,
+    "class": "GdpNominalData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/gdp_real.py",
+    "line": 15,
+    "class": "GdpRealQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/gdp_real.py",
+    "line": 26,
+    "class": "GdpRealData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/government_trades.py",
+    "line": 16,
+    "class": "GovernmentTradesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/government_trades.py",
+    "line": 36,
+    "class": "GovernmentTradesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/high_quality_market.py",
+    "line": 17,
+    "class": "HighQualityMarketCorporateBondQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/high_quality_market.py",
+    "line": 26,
+    "class": "HighQualityMarketCorporateBondData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_attributes.py",
+    "line": 16,
+    "class": "HistoricalAttributesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_attributes.py",
+    "line": 59,
+    "class": "HistoricalAttributesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_dividends.py",
+    "line": 15,
+    "class": "HistoricalDividendsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_dividends.py",
+    "line": 33,
+    "class": "HistoricalDividendsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_employees.py",
+    "line": 15,
+    "class": "HistoricalEmployeesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_employees.py",
+    "line": 33,
+    "class": "HistoricalEmployeesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_eps.py",
+    "line": 15,
+    "class": "HistoricalEpsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_eps.py",
+    "line": 27,
+    "class": "HistoricalEpsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_market_cap.py",
+    "line": 15,
+    "class": "HistoricalMarketCapQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_market_cap.py",
+    "line": 33,
+    "class": "HistoricalMarketCapData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_splits.py",
+    "line": 15,
+    "class": "HistoricalSplitsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/historical_splits.py",
+    "line": 27,
+    "class": "HistoricalSplitsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/house_price_index.py",
+    "line": 16,
+    "class": "HousePriceIndexQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/house_price_index.py",
+    "line": 42,
+    "class": "HousePriceIndexData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/income_statement.py",
+    "line": 14,
+    "class": "IncomeStatementQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/income_statement.py",
+    "line": 29,
+    "class": "IncomeStatementData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/income_statement_growth.py",
+    "line": 12,
+    "class": "IncomeStatementGrowthQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/income_statement_growth.py",
+    "line": 27,
+    "class": "IncomeStatementGrowthData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_constituents.py",
+    "line": 13,
+    "class": "IndexConstituentsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_constituents.py",
+    "line": 25,
+    "class": "IndexConstituentsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_historical.py",
+    "line": 19,
+    "class": "IndexHistoricalQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_historical.py",
+    "line": 37,
+    "class": "IndexHistoricalData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_info.py",
+    "line": 13,
+    "class": "IndexInfoQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_info.py",
+    "line": 25,
+    "class": "IndexInfoData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_search.py",
+    "line": 10,
+    "class": "IndexSearchQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_search.py",
+    "line": 19,
+    "class": "IndexSearchData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_sectors.py",
+    "line": 10,
+    "class": "IndexSectorsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_sectors.py",
+    "line": 22,
+    "class": "IndexSectorsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_snapshots.py",
+    "line": 10,
+    "class": "IndexSnapshotsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/index_snapshots.py",
+    "line": 18,
+    "class": "IndexSnapshotsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/industry_pe.py",
+    "line": 12,
+    "class": "IndustryPEQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/industry_pe.py",
+    "line": 16,
+    "class": "IndustryPEData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/insider_trading.py",
+    "line": 20,
+    "class": "InsiderTradingQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/insider_trading.py",
+    "line": 36,
+    "class": "InsiderTradingData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/institutional_ownership.py",
+    "line": 15,
+    "class": "InstitutionalOwnershipQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/institutional_ownership.py",
+    "line": 27,
+    "class": "InstitutionalOwnershipData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/iorb_rates.py",
+    "line": 15,
+    "class": "IORBQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/iorb_rates.py",
+    "line": 28,
+    "class": "IORBData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/key_executives.py",
+    "line": 10,
+    "class": "KeyExecutivesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/key_executives.py",
+    "line": 22,
+    "class": "KeyExecutivesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/key_metrics.py",
+    "line": 15,
+    "class": "KeyMetricsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/key_metrics.py",
+    "line": 27,
+    "class": "KeyMetricsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/latest_attributes.py",
+    "line": 13,
+    "class": "LatestAttributesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/latest_attributes.py",
+    "line": 34,
+    "class": "LatestAttributesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/latest_financial_reports.py",
+    "line": 12,
+    "class": "LatestFinancialReportsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/latest_financial_reports.py",
+    "line": 16,
+    "class": "LatestFinancialReportsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/lbma_fixing.py",
+    "line": 16,
+    "class": "LbmaFixingQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/lbma_fixing.py",
+    "line": 37,
+    "class": "LbmaFixingData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/management_discussion_analysis.py",
+    "line": 16,
+    "class": "ManagementDiscussionAnalysisQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/management_discussion_analysis.py",
+    "line": 38,
+    "class": "ManagementDiscussionAnalysisData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/manufacturing_outlook_texas.py",
+    "line": 17,
+    "class": "ManufacturingOutlookTexasQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/manufacturing_outlook_texas.py",
+    "line": 30,
+    "class": "ManufacturingOutlookTexasData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/maritime_chokepoint_info.py",
+    "line": 9,
+    "class": "MaritimeChokePointInfoQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/maritime_chokepoint_info.py",
+    "line": 13,
+    "class": "MaritimeChokePointInfoData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/maritime_chokepoint_volume.py",
+    "line": 15,
+    "class": "MaritimeChokePointVolumeQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/maritime_chokepoint_volume.py",
+    "line": 26,
+    "class": "MaritimeChokePointVolumeData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/market_movers.py",
+    "line": 10,
+    "class": "MarketMoversQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/market_movers.py",
+    "line": 14,
+    "class": "MarketMoversData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/market_snapshots.py",
+    "line": 10,
+    "class": "MarketSnapshotsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/market_snapshots.py",
+    "line": 14,
+    "class": "MarketSnapshotsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/money_measures.py",
+    "line": 15,
+    "class": "MoneyMeasuresQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/money_measures.py",
+    "line": 31,
+    "class": "MoneyMeasuresData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/mortgage_indices.py",
+    "line": 17,
+    "class": "MortgageIndicesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/mortgage_indices.py",
+    "line": 30,
+    "class": "MortgageIndicesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/non_farm_payrolls.py",
+    "line": 15,
+    "class": "NonFarmPayrollsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/non_farm_payrolls.py",
+    "line": 25,
+    "class": "NonFarmPayrollsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/nport_disclosure.py",
+    "line": 13,
+    "class": "NportDisclosureQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/nport_disclosure.py",
+    "line": 35,
+    "class": "NportDisclosureData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/options_chains.py",
+    "line": 26,
+    "class": "OptionsChainsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/options_chains.py",
+    "line": 38,
+    "class": "OptionsChainsData",
+    "bases": [
+      "OptionsChainsProperties"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/options_snapshots.py",
+    "line": 15,
+    "class": "OptionsSnapshotsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/options_snapshots.py",
+    "line": 19,
+    "class": "OptionsSnapshotsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/options_unusual.py",
+    "line": 13,
+    "class": "OptionsUnusualQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/options_unusual.py",
+    "line": 28,
+    "class": "OptionsUnusualData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/otc_aggregate.py",
+    "line": 15,
+    "class": "OTCAggregateQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/otc_aggregate.py",
+    "line": 24,
+    "class": "OTCAggregateData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/overnight_bank_funding_rate.py",
+    "line": 15,
+    "class": "OvernightBankFundingRateQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/overnight_bank_funding_rate.py",
+    "line": 28,
+    "class": "OvernightBankFundingRateData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/personal_consumption_expenditures.py",
+    "line": 15,
+    "class": "PersonalConsumptionExpendituresQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/personal_consumption_expenditures.py",
+    "line": 25,
+    "class": "PersonalConsumptionExpendituresData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/petroleum_status_report.py",
+    "line": 15,
+    "class": "PetroleumStatusReportQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/petroleum_status_report.py",
+    "line": 28,
+    "class": "PetroleumStatusReportData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/port_info.py",
+    "line": 9,
+    "class": "PortInfoQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/port_info.py",
+    "line": 13,
+    "class": "PortInfoData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/port_volume.py",
+    "line": 15,
+    "class": "PortVolumeQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/port_volume.py",
+    "line": 26,
+    "class": "PortVolumeData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/price_target.py",
+    "line": 19,
+    "class": "PriceTargetQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/price_target.py",
+    "line": 36,
+    "class": "PriceTargetData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/price_target_consensus.py",
+    "line": 13,
+    "class": "PriceTargetConsensusQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/price_target_consensus.py",
+    "line": 27,
+    "class": "PriceTargetConsensusData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/primary_dealer_fails.py",
+    "line": 17,
+    "class": "PrimaryDealerFailsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/primary_dealer_fails.py",
+    "line": 28,
+    "class": "PrimaryDealerFailsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/primary_dealer_positioning.py",
+    "line": 17,
+    "class": "PrimaryDealerPositioningQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/primary_dealer_positioning.py",
+    "line": 28,
+    "class": "PrimaryDealerPositioningData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/recent_performance.py",
+    "line": 13,
+    "class": "RecentPerformanceQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/recent_performance.py",
+    "line": 25,
+    "class": "RecentPerformanceData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/reported_financials.py",
+    "line": 14,
+    "class": "ReportedFinancialsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/reported_financials.py",
+    "line": 48,
+    "class": "ReportedFinancialsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/retail_prices.py",
+    "line": 15,
+    "class": "RetailPricesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/retail_prices.py",
+    "line": 34,
+    "class": "RetailPricesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/revenue_business_line.py",
+    "line": 12,
+    "class": "RevenueBusinessLineQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/revenue_business_line.py",
+    "line": 24,
+    "class": "RevenueBusinessLineData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/revenue_geographic.py",
+    "line": 12,
+    "class": "RevenueGeographicQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/revenue_geographic.py",
+    "line": 24,
+    "class": "RevenueGeographicData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/risk_premium.py",
+    "line": 9,
+    "class": "RiskPremiumQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/risk_premium.py",
+    "line": 13,
+    "class": "RiskPremiumData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/search_attributes.py",
+    "line": 10,
+    "class": "SearchAttributesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/search_attributes.py",
+    "line": 17,
+    "class": "SearchAttributesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/search_financial_attributes.py",
+    "line": 10,
+    "class": "SearchFinancialAttributesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/search_financial_attributes.py",
+    "line": 17,
+    "class": "SearchFinancialAttributesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sector_pe.py",
+    "line": 12,
+    "class": "SectorPEQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sector_pe.py",
+    "line": 16,
+    "class": "SectorPEData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sector_performance.py",
+    "line": 9,
+    "class": "SectorPerformanceQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sector_performance.py",
+    "line": 13,
+    "class": "SectorPerformanceData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/senior_loan_officer_survey.py",
+    "line": 17,
+    "class": "SeniorLoanOfficerSurveyQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/senior_loan_officer_survey.py",
+    "line": 30,
+    "class": "SeniorLoanOfficerSurveyData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/share_price_index.py",
+    "line": 16,
+    "class": "SharePriceIndexQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/share_price_index.py",
+    "line": 36,
+    "class": "SharePriceIndexData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/share_statistics.py",
+    "line": 18,
+    "class": "ShareStatisticsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/share_statistics.py",
+    "line": 30,
+    "class": "ShareStatisticsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/short_term_energy_outlook.py",
+    "line": 15,
+    "class": "ShortTermEnergyOutlookQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/short_term_energy_outlook.py",
+    "line": 28,
+    "class": "ShortTermEnergyOutlookData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/short_volume.py",
+    "line": 15,
+    "class": "ShortVolumeQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/short_volume.py",
+    "line": 21,
+    "class": "ShortVolumeData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sofr.py",
+    "line": 15,
+    "class": "SOFRQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sofr.py",
+    "line": 28,
+    "class": "SOFRData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sonia_rates.py",
+    "line": 15,
+    "class": "SONIAQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sonia_rates.py",
+    "line": 28,
+    "class": "SONIAData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sp500_multiples.py",
+    "line": 55,
+    "class": "SP500MultiplesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/sp500_multiples.py",
+    "line": 70,
+    "class": "SP500MultiplesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/spot.py",
+    "line": 17,
+    "class": "SpotRateQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/spot.py",
+    "line": 41,
+    "class": "SpotRateData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/survey_of_economic_conditions_chicago.py",
+    "line": 17,
+    "class": "SurveyOfEconomicConditionsChicagoQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/survey_of_economic_conditions_chicago.py",
+    "line": 30,
+    "class": "SurveyOfEconomicConditionsChicagoData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/symbol_map.py",
+    "line": 8,
+    "class": "SymbolMapQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/tbffr.py",
+    "line": 18,
+    "class": "SelectedTreasuryBillQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/tbffr.py",
+    "line": 41,
+    "class": "SelectedTreasuryBillData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/tips_yields.py",
+    "line": 15,
+    "class": "TipsYieldsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/tips_yields.py",
+    "line": 28,
+    "class": "TipsYieldsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/tmc.py",
+    "line": 18,
+    "class": "TreasuryConstantMaturityQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/tmc.py",
+    "line": 41,
+    "class": "TreasuryConstantMaturityData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/top_retail.py",
+    "line": 15,
+    "class": "TopRetailQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/top_retail.py",
+    "line": 21,
+    "class": "TopRetailData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/trailing_dividend_yield.py",
+    "line": 15,
+    "class": "TrailingDivYieldQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/trailing_dividend_yield.py",
+    "line": 25,
+    "class": "TrailingDivYieldData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/treasury_auctions.py",
+    "line": 17,
+    "class": "USTreasuryAuctionsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/treasury_auctions.py",
+    "line": 68,
+    "class": "USTreasuryAuctionsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/treasury_prices.py",
+    "line": 12,
+    "class": "TreasuryPricesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/treasury_prices.py",
+    "line": 22,
+    "class": "TreasuryPricesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/treasury_rates.py",
+    "line": 15,
+    "class": "TreasuryRatesQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/treasury_rates.py",
+    "line": 28,
+    "class": "TreasuryRatesData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/unemployment.py",
+    "line": 16,
+    "class": "UnemploymentQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/unemployment.py",
+    "line": 36,
+    "class": "UnemploymentData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/university_of_michigan.py",
+    "line": 17,
+    "class": "UofMichiganQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/university_of_michigan.py",
+    "line": 30,
+    "class": "UofMichiganData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/weather_bulletin.py",
+    "line": 11,
+    "class": "WeatherBulletinQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/weather_bulletin.py",
+    "line": 33,
+    "class": "WeatherBulletinData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/weather_bulletin_download.py",
+    "line": 9,
+    "class": "WeatherBulletinDownloadQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/weather_bulletin_download.py",
+    "line": 32,
+    "class": "WeatherBulletinDownloadData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/world_news.py",
+    "line": 20,
+    "class": "WorldNewsQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/world_news.py",
+    "line": 56,
+    "class": "WorldNewsData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/yield_curve.py",
+    "line": 15,
+    "class": "YieldCurveQueryParams",
+    "bases": [
+      "QueryParams"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/openbb_core/provider/standard_models/yield_curve.py",
+    "line": 48,
+    "class": "YieldCurveData",
+    "bases": [
+      "Data"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/standard_models/test_options_chains.py",
+    "line": 96,
+    "class": "TestModelSerializer",
+    "bases": []
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/standard_models/test_options_chains.py",
+    "line": 181,
+    "class": "TestOpenAPISchema",
+    "bases": []
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/standard_models/test_options_chains.py",
+    "line": 295,
+    "class": "_Greeks",
+    "bases": [
+      "BaseModel"
+    ]
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/standard_models/test_options_chains.py",
+    "line": 298,
+    "class": "_SubChains",
+    "bases": [
+      "OptionsChainsData"
+    ]
+  }
+]

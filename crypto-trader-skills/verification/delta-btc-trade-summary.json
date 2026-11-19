@@ -1,0 +1,38 @@
+{
+  "verified_at": "2026-11-17T21:10:02.110930+00:00",
+  "environment": "india_testnet",
+  "entry_order_id": 2178653579,
+  "status": "filled_and_exchange_brackets_verified",
+  "contracts": 10,
+  "btc_quantity": ".01",
+  "side": "long",
+  "entry_price": "63976",
+  "stop_loss": "63191.5",
+  "take_profit": "65591.5",
+  "leverage": "5",
+  "margin_mode": "isolated",
+  "entry_paid_commission": "0.33971256",
+  "planned_loss_with_conservative_fee_buffer": "9.295830",
+  "price_loss_from_actual_fill_at_stop": "7.845",
+  "bracket_orders": [
+    {
+      "id": 2178653581,
+      "type": "take_profit_order",
+      "stop_price": "65591.5",
+      "state": "pending",
+      "reduce_only": true
+    },
+    {
+      "id": 2178653580,
+      "type": "stop_loss_order",
+      "stop_price": "63191.5",
+      "state": "pending",
+      "reduce_only": true
+    }
+  ],
+  "strategy_signal": "waiting",
+  "classification": "manual_demo_execution_test",
+  "persistent_local_monitor": false,
+  "protective_orders_hosted_at_exchange": true,
+  "max_loss_not_guaranteed": "Stop-market slippage, gaps and holding funding can increase loss."
+}

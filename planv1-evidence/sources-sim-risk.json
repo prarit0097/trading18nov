@@ -1,0 +1,236 @@
+{
+  "created_date": "2026-11-17",
+  "scope": "Crypto Plan v1 points 5,7,8",
+  "sources": [
+    {
+      "id": "S1",
+      "claim_or_topic": "MiroFish action configuration",
+      "url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/backend/app/config.py#L44-L55",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\MiroFish\\backend\\app\\config.py",
+      "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "line_start": 44,
+      "line_end": 55,
+      "excerpt": "44:     # OASIS模拟配置\n45:     OASIS_DEFAULT_MAX_ROUNDS = int(os.environ.get('OASIS_DEFAULT_MAX_ROUNDS', '10'))\n46:     OASIS_SIMULATION_DATA_DIR = os.path.join(os.path.dirname(__file__), '../uploads/simulations')\n47:     \n48:     # OASIS平台可用动作配置\n49:     OASIS_TWITTER_ACTIONS = [\n50:         'CREATE_POST', 'LIKE_POST', 'REPOST', 'FOLLOW', 'DO_NOTHING', 'QUOTE_POST'\n51:     ]\n52:     OASIS_REDDIT_ACTIONS = [\n53:         'LIKE_POST', 'DISLIKE_POST', 'CREATE_POST', 'CREATE_COMMENT',\n54:         'LIKE_COMMENT', 'DISLIKE_COMMENT', 'SEARCH_POSTS', 'SEARCH_USER',\n55:         'TREND', 'REFRESH', 'DO_NOTHING', 'FOLLOW', 'MUTE'"
+    },
+    {
+      "id": "S2",
+      "claim_or_topic": "active-agent execution",
+      "url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/backend/scripts/run_parallel_simulation.py#L1235-L1258",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\MiroFish\\backend\\scripts\\run_parallel_simulation.py",
+      "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "line_start": 1235,
+      "line_end": 1258,
+      "excerpt": "1235:         simulated_minutes = round_num * minutes_per_round\n1236:         simulated_hour = (simulated_minutes // 60) % 24\n1237:         simulated_day = simulated_minutes // (60 * 24) + 1\n1238:         \n1239:         active_agents = get_active_agents_for_round(\n1240:             result.env, config, simulated_hour, round_num\n1241:         )\n1242:         \n1243:         # 无论是否有活跃agent，都记录round开始\n1244:         if action_logger:\n1245:             action_logger.log_round_start(round_num + 1, simulated_hour)\n1246:         \n1247:         if not active_agents:\n1248:             # 没有活跃agent时也记录round结束（actions_count=0）\n1249:             if action_logger:\n1250:                 action_logger.log_round_end(round_num + 1, 0)\n1251:             continue\n1252:         \n1253:         actions = {agent: LLMAction() for _, agent in active_agents}\n1254:         await result.env.step(actions)\n1255:         \n1256:         # 从数据库获取实际执行的动作并记录\n1257:         actual_actions, last_rowid = fetch_new_actions_from_db(\n1258:             db_path, last_rowid, agent_names"
+    },
+    {
+      "id": "S3",
+      "claim_or_topic": "MiroFish license",
+      "url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/LICENSE#L1",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\MiroFish\\LICENSE",
+      "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "line_start": 1,
+      "line_end": 1,
+      "excerpt": "1:                     GNU AFFERO GENERAL PUBLIC LICENSE"
+    },
+    {
+      "id": "S4",
+      "claim_or_topic": "configuration validation",
+      "url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/backend/app/config.py#L64-L76",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\MiroFish\\backend\\app\\config.py",
+      "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "line_start": 64,
+      "line_end": 76,
+      "excerpt": "64:     def validate(cls) -> list[str]:\n65:         \"\"\"验证必要配置\"\"\"\n66:         errors: list[str] = []\n67:         if not cls.LLM_API_KEY:\n68:             errors.append(\"LLM_API_KEY 未配置\")\n69:         if not cls.ZEP_API_KEY:\n70:             errors.append(\"ZEP_API_KEY 未配置\")\n71:         if os.environ.get(\"ZEP_API_URL\"):\n72:             errors.append(\"ZEP_API_URL 不受支持；MiroFish 仅连接 Zep Cloud\")\n73:         if cls.DEBUG:\n74:             import warnings\n75:             warnings.warn(\"Flask DEBUG mode is enabled. Do not use in production.\", RuntimeWarning)\n76:         return errors"
+    },
+    {
+      "id": "S5",
+      "claim_or_topic": "Ollama compatibility",
+      "url": "https://docs.ollama.com/api/openai-compatibility",
+      "accessed_date": "2026-11-17",
+      "type": "official_primary_web_documentation",
+      "limitation": "Documentation changes; no provider, exchange or local model execution performed."
+    },
+    {
+      "id": "S6",
+      "claim_or_topic": "Alpaca paper limitations",
+      "url": "https://docs.alpaca.markets/us/docs/paper-trading",
+      "accessed_date": "2026-11-17",
+      "type": "official_primary_web_documentation",
+      "limitation": "Documentation changes; no provider, exchange or local model execution performed."
+    },
+    {
+      "id": "S7",
+      "claim_or_topic": "Exit inputs",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill/blob/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-exit/exit.py#L234-L262",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\day-trader-skill\\trader-exit\\exit.py",
+      "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+      "line_start": 234,
+      "line_end": 262,
+      "excerpt": "234: def parse_stop(text):\n235:     t = str(text).strip().lower()\n236:     if t in (\"or-mid\", \"or_mid\", \"mid\", \"or-midpoint\"):\n237:         return \"or_mid\", None\n238:     if t in (\"or-low\", \"or_low\", \"low\"):\n239:         return \"or_low\", None\n240:     m = re.match(r\"^(price|pct|atr):\\s*\\$?([0-9][0-9,]*\\.?[0-9]*)$\", t)\n241:     if not m:\n242:         raise PlanError(\"--stop is or-mid, or-low, price:X, pct:X or atr:K (got %r)\" % text)\n243:     kind, val = m.group(1), D(m.group(2), \"--stop\")\n244:     if val <= 0:\n245:         raise PlanError(\"--stop %s needs a number above 0\" % kind)\n246:     if kind == \"pct\" and val >= 100:\n247:         raise PlanError(\"--stop pct:X needs X under 100\")\n248:     return kind, val\n249: \n250: \n251: def parse_target(text):\n252:     t = str(text).strip()\n253:     m = re.match(r\"^([0-9]*\\.?[0-9]+)\\s*[Rr]$\", t)\n254:     if m:\n255:         r = D(m.group(1), \"--target\")\n256:         if r <= 0:\n257:             raise PlanError(\"--target needs an R multiple above 0, like 1R or 2R\")\n258:         return \"r\", r\n259:     m = re.match(r\"^price:\\s*\\$?([0-9][0-9,]*\\.?[0-9]*)$\", t.lower())\n260:     if m:\n261:         return \"price\", D(m.group(1), \"--target\")\n262:     raise PlanError(\"--target is 2R, 1R, 1.5R ... or price:X (got %r)\" % text)"
+    },
+    {
+      "id": "S8",
+      "claim_or_topic": "sizing and bracket",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill/blob/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-budget/size.py#L305-L440",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\day-trader-skill\\trader-budget\\size.py",
+      "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+      "line_start": 305,
+      "line_end": 440,
+      "excerpt": "305: def size_trade(plan, cfg, budget=None, limit=None, price=None, cash=None, today=None):\n306:     \"\"\"Pure function: one plan + your rules -> the sizing (a dict). qty may be 0.\n307: \n308:     limit  the limit price for a limit order (None = market)\n309:     price  a FRESH latest price; a market order is sized at the higher of it and the plan's entry\n310:     cash   the cash in trader/portfolio.json, if there is one\n311:     today  New York date (YYYY-MM-DD); a plan for another day is refused\"\"\"\n312:     c = dict(DEFAULTS)\n313:     c.update(cfg or {})\n314:     if not isinstance(plan, dict):\n315:         raise SizeError(\"the plan is not a JSON object\")\n316:     sym = str(plan.get(\"symbol\") or \"\").strip().upper()\n317:     if not sym:\n318:         raise SizeError(\"the plan has no symbol (run trader-exit)\")\n319:     side = str(plan.get(\"side\") or \"buy\").strip().lower()\n320:     if side != \"buy\":\n321:         raise SizeError(\"this pack sizes long (buy) day trades only; the plan says %r\" % side)\n322:     if today and plan.get(\"date\") and str(plan[\"date\"]) != today:\n323:         raise SizeError(\"the plan is for %s and today is %s in New York: make a new plan with trader-exit\"\n324:                         % (plan[\"date\"], today))\n325:     entry_plan, stop, target = _f(plan.get(\"entry\")), _f(plan.get(\"stop\")), _f(plan.get(\"target\"))\n326:     for name, v in ((\"entry\", entry_plan), (\"stop\", stop), (\"target\", target)):\n327:         if v is None or v <= 0:\n328:             raise SizeError(\"the plan needs a positive %s (run trader-exit); a bracket order needs entry, \"\n329:                             \"stop and target\" % name)\n330:     blocked = {str(b).upper() for b in (c.get(\"blocked\") or [])}\n331:     if sym in blocked:\n332:         raise SizeError(\"%s is on your blocked list\" % sym)\n333: \n334:     budget = float(budget if budget is not None else (c.get(\"budget\") or 0))\n335:     if budget <= 0:\n336:         raise SizeError(\"no budget: pass --budget or set \\\"budget\\\" in trader/config.json\")\n337:     buf_pct = float(c.get(\"cash_buffer_pct\") or 0)\n338:     if not 0 <= buf_pct < 100:\n339:         raise SizeError(\"cash_buffer_pct must be between 0 and 100\")\n340: \n341:     if limit is not None:\n342:         ref, ref_from = round_cent(limit), \"limit\"\n343:     elif price is not None and round_cent(price) > round_cent(entry_plan):\n344:         ref, ref_from = round_cent(price), \"price\"\n345:     else:\n346:         ref, ref_from = round_cent(entry_plan), \"plan\"\n347:     stop, target = round_cent(stop), round_cent(target)\n348:     if stop >= ref:\n349:         raise SizeError(\"the stop %s is not below the entry %s; a long trade needs its stop underneath\"\n350:                         % (_price(stop), _price(ref)))\n351:     if target <= ref:\n352:         raise SizeError(\"the target %s is not above the entry %s: the move has already happened. \"\n353:                         \"Skip it or make a new plan with trader-exit\" % (_price(target), _price(ref)))\n354:     risk_c = int(round((ref - stop) * 100))\n355:     reward_c = int(round((target - ref) * 100))\n356:     risk = risk_c / 100.0\n357: \n358:     cash_buffer = round(budget * buf_pct / 100.0, 2)\n359:     available = budget - cash_buffer\n360:     cash_note = \"budget %s minus the %s cash buffer\" % (money(budget), money(cash_buffer))\n361:     if cash is not None and cash - cash_buffer < available - 0.005:\n362:         available = cash - cash_buffer\n363:         cash_note = \"cash %s in trader/portfolio.json minus the %s buffer\" % (money(cash), money(cash_buffer))\n364:     available = max(round(available, 2), 0.0)\n365: \n366:     limits = []\n367:     max_loss = _f(c.get(\"max_loss_per_trade_usd\"))\n368:     if max_loss:\n369:         limits.append({\"name\": \"max loss\", \"usd\": max_loss, \"per\": risk, \"shares\": shares_for(max_loss, risk),\n370:                        \"how\": \"%s max loss / %s risk a share\" % (money(max_loss), _price(risk))})\n371:     cap_pct = _f(c.get(\"max_position_pct\"))\n372:     if cap_pct:\n373:         cap = round(budget * cap_pct / 100.0, 2)\n374:         limits.append({\"name\": \"position cap\", \"usd\": cap, \"per\": ref, \"shares\": shares_for(cap, ref),\n375:                        \"how\": \"%s%% of %s = %s / %s\" % (_num(cap_pct), money(budget), money(cap), _price(ref))})\n376:     max_order = _f(c.get(\"max_order_usd\"))\n377:     if max_order:\n378:         limits.append({\"name\": \"max order\", \"usd\": max_order, \"per\": ref, \"shares\": shares_for(max_order, ref),\n379:                        \"how\": \"%s / %s\" % (money(max_order), _price(ref))})\n380:     limits.append({\"name\": \"cash\", \"usd\": available, \"per\": ref, \"shares\": shares_for(available, ref),\n381:                    \"how\": \"%s = %s / %s\" % (cash_note, money(available), _price(ref))})\n382: \n383:     qty = max(0, min(l[\"shares\"] for l in limits))\n384:     bound = [l[\"name\"] for l in limits if l[\"shares\"] == qty]\n385:     for l in limits:\n386:         l[\"binds\"] = l[\"name\"] == bound[0]\n387:     cost = round(qty * ref, 2)\n388:     loss = round(qty * risk_c / 100.0, 2)\n389:     refusal = None\n390:     if qty == 0:\n391:         if bound[0] == \"max loss\":\n392:             refusal = (\"one share risks %s (entry %s minus stop %s), more than your %s max loss per trade. \"\n393:                        \"No order. Skip this trade, or plan a closer stop with trader-exit.\"\n394:                        % (money(risk), _price(ref), _price(stop), money(max_loss)))\n395:         else:\n396:             refusal = (\"one share of %s costs %s, more than your %s limit (%s). No order.\"\n397:                        % (sym, money(ref), bound[0], limits[[l[\"name\"] for l in limits].index(bound[0])][\"how\"]))\n398:     elif _f(c.get(\"min_reward_risk\")) and reward_c < _f(c[\"min_reward_risk\"]) * risk_c - EPS:\n399:         refusal = (\"reward:risk %.2f (target %s, entry %s, stop %s) is under your minimum %s, so trader-risk \"\n400:                    \"would block it. No order. Skip it, or make a new plan with trader-exit.\"\n401:                    % (reward_c / float(risk_c), _price(target), _price(ref), _price(stop), _num(c[\"min_reward_risk\"])))\n402:     elif cost < float(c.get(\"min_order_usd\") or 0) - 0.005:\n403:         refusal = (\"%d share%s of %s is %s, under your %s minimum order. No order.\"\n404:                    % (qty, \"\" if qty == 1 else \"s\", sym, money(cost), money(c[\"min_order_usd\"])))\n405:     return {\n406:         \"symbol\": sym, \"side\": \"buy\", \"setup\": plan.get(\"setup\", \"\"), \"date\": plan.get(\"date\"),\n407:         \"entry_time\": plan.get(\"entry_time\", \"\"), \"entry_plan\": round_cent(entry_plan),\n408:         \"entry\": ref, \"entry_from\": ref_from, \"stop\": stop, \"target\": target,\n409:         \"risk_per_share\": risk, \"reward_risk\": round(reward_c / float(risk_c), 2),\n410:         \"stop_label\": plan.get(\"stop_label\", \"\"), \"target_label\": plan.get(\"target_label\", \"\"),\n411:         \"budget\": budget, \"cash_buffer_pct\": buf_pct, \"cash_buffer\": cash_buffer, \"cash_available\": available,\n412:         \"max_loss_per_trade_usd\": max_loss, \"limits\": limits, \"qty\": qty, \"bound_by\": bound[0],\n413:         \"cost\": cost, \"max_loss\": loss, \"flat_by\": plan.get(\"flat_by\") or c.get(\"flat_by\"),\n414:         \"order_type\": \"limit\" if limit is not None else \"market\", \"refusal\": refusal,\n415:     }\n416: \n417: \n418: def bracket_order(s):\n419:     \"\"\"The one proposed order, Alpaca place_stock_order fields (strings) plus why and plan.\"\"\"\n420:     if s[\"refusal\"] or s[\"qty\"] <= 0:\n421:         return None\n422:     o = {\"symbol\": s[\"symbol\"], \"side\": \"buy\", \"qty\": str(int(s[\"qty\"])), \"type\": s[\"order_type\"],\n423:          \"time_in_force\": \"day\"}\n424:     if s[\"order_type\"] == \"limit\":\n425:         o[\"limit_price\"] = _price(s[\"entry\"])\n426:     setup = SETUP_WORDS.get(s[\"setup\"], s[\"setup\"] or \"day trade\")\n427:     why = (\"%s on %s: %d shares, bound by your %s (%d x %s = %s at the stop)\"\n428:            % (setup, s[\"symbol\"], s[\"qty\"], {\"max loss\": \"%s max loss per trade\" % money(s[\"max_loss_per_trade_usd\"] or 0),\n429:                                              \"position cap\": \"position cap\", \"max order\": \"max order\",\n430:                                              \"cash\": \"cash after the buffer\"}[s[\"bound_by\"]],\n431:               s[\"qty\"], _price(s[\"risk_per_share\"]), money(s[\"max_loss\"])))\n432:     o.update({\n433:         \"order_class\": \"bracket\",\n434:         \"take_profit_limit_price\": _price(s[\"target\"]),\n435:         \"stop_loss_stop_price\": _price(s[\"stop\"]),\n436:         \"why\": why,\n437:         \"plan\": {\"entry\": s[\"entry\"], \"stop\": s[\"stop\"], \"target\": s[\"target\"],\n438:                  \"risk_per_share\": s[\"risk_per_share\"], \"max_loss\": s[\"max_loss\"], \"setup\": s[\"setup\"],\n439:                  \"entry_time\": s[\"entry_time\"], \"flat_by\": s[\"flat_by\"]},\n440:     })"
+    },
+    {
+      "id": "S9",
+      "claim_or_topic": "Risk reference",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill/blob/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-risk/check.py#L486-L506",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\day-trader-skill\\trader-risk\\check.py",
+      "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+      "line_start": 486,
+      "line_end": 506,
+      "excerpt": "486:         # the reference price: what one share costs to get in\n487:         plan_entry = _f(plan.get(\"entry\"))\n488:         live = fresh(sym)\n489:         ref, ref_from = None, None\n490:         if typ in (\"limit\", \"stop_limit\"):\n491:             ref, ref_from = _f(o.get(\"limit_price\")), \"limit\"\n492:         elif typ == \"stop\":\n493:             ref, ref_from = _f(o.get(\"stop_price\")), \"stop price\"\n494:         if ref is None:\n495:             cands = [(p, w) for p, w in ((plan_entry, \"plan\"), (live, \"price\")) if p]\n496:             if cands:\n497:                 ref, ref_from = max(cands, key=lambda x: x[0])\n498:                 ref = _cent(ref)\n499:                 if live and ref_from == \"price\" and plan_entry and live > plan_entry + CENT:\n500:                     info.append(\"%s last %s is above the plan's entry %s: the risk is measured from %s\"\n501:                                 % (sym, _p(ref), _p(plan_entry), _p(ref)))\n502:             elif sym in prices:\n503:                 ref, ref_from = prices[sym], \"stale price\"\n504:         if plan_entry and live is None and sym in prices and price_times is not None and typ == \"market\":\n505:             warns.append(\"the %s price in trader/prices.json is older than %d minutes: not used\"\n506:                          % (sym, FRESH_MINUTES))"
+    },
+    {
+      "id": "S10",
+      "claim_or_topic": "measured loss",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill/blob/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-risk/check.py#L589-L621",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\day-trader-skill\\trader-risk\\check.py",
+      "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+      "line_start": 589,
+      "line_end": 621,
+      "excerpt": "589:             elif ref:\n590:                 if (long and stop >= ref - CENT) or (not long and stop <= ref + CENT):\n591:                     later.append(\"stop: the stop %s must be %s the entry %s for a %s\"\n592:                                  % (_p(stop), \"below\" if long else \"above\", _p(ref), side))\n593:                 else:\n594:                     risk_c = int(round(abs(ref - stop) * 100))\n595:                     risk_ps = risk_c / 100.0\n596:                     shares = q if q is not None else ((value or 0) / ref)\n597:                     max_loss = round(shares * risk_ps, 2)\n598:                     cap = _f(c.get(\"max_loss_per_trade_usd\"))\n599:                     if cap and max_loss > cap + CENT:\n600:                         later.append(\"loss: %s shares x %s risk a share = %s at the stop, over your %s max loss \"\n601:                                      \"per trade\" % (_num(shares), _p(risk_ps), money(max_loss), money(cap)))\n602:                     min_rr = _f(c.get(\"min_reward_risk\"))\n603:                     if target:\n604:                         if (long and target <= ref + CENT) or (not long and target >= ref - CENT):\n605:                             later.append(\"target: the target %s must be %s the entry %s\"\n606:                                          % (_p(target), \"above\" if long else \"below\", _p(ref)))\n607:                         else:\n608:                             rr = round(int(round(abs(target - ref) * 100)) / float(risk_c), 2)\n609:                             if min_rr and rr < min_rr - 1e-9:\n610:                                 later.append(\"reward:risk: %.2f (target %s, entry %s, stop %s) is under your \"\n611:                                              \"minimum %s\" % (rr, _p(target), _p(ref), _p(stop), _num(min_rr)))\n612:                     elif min_rr:\n613:                         later.append(\"reward:risk: no target to measure it against (min_reward_risk %s)\"\n614:                                      % _num(min_rr))\n615:             daily = _f(c.get(\"max_daily_loss_usd\"))\n616:             if daily and max_loss is not None:\n617:                 used = loss_today + batch_loss\n618:                 if used + max_loss > daily + CENT:\n619:                     later.append(\"daily loss: %s already at risk today plus %s for this one = %s, over your %s \"\n620:                                  \"daily loss limit\" % (money(used), money(max_loss), money(used + max_loss),\n621:                                                        money(daily)))"
+    },
+    {
+      "id": "S11",
+      "claim_or_topic": "ticket loss",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill/blob/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-broker/ticket.py#L195-L211",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\day-trader-skill\\trader-broker\\ticket.py",
+      "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+      "line_start": 195,
+      "line_end": 211,
+      "excerpt": "195: def max_loss(order):\n196:     \"\"\"(dollars, stop) lost if the stop fills exactly at the stop, or (None, stop).\"\"\"\n197:     stop = _f(order.get(\"stop_loss_stop_price\")) or _f((order.get(\"plan\") or {}).get(\"stop\"))\n198:     q = _f(order.get(\"qty\"))\n199:     if not stop or not q:\n200:         return None, stop\n201:     plan = order.get(\"plan\") or {}\n202:     if str(order.get(\"type\", \"market\")) == \"limit\" and _f(order.get(\"limit_price\")):\n203:         entry = _f(order[\"limit_price\"])\n204:     elif _f(plan.get(\"max_loss\")) is not None:\n205:         return round(_f(plan[\"max_loss\"]), 2), stop\n206:     else:\n207:         entry = _f(plan.get(\"entry\"))\n208:     if not entry:\n209:         return None, stop\n210:     risk = abs(entry - stop)\n211:     return round(q * int(round(risk * 100)) / 100.0, 2), stop"
+    },
+    {
+      "id": "S12",
+      "claim_or_topic": "dated readiness",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill/blob/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-broker/ticket.py#L315-L340",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\day-trader-skill\\trader-broker\\ticket.py",
+      "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+      "line_start": 315,
+      "line_end": 340,
+      "excerpt": "315: def risk_verdict(risk, fp, today):\n316:     if not risk:\n317:         return None, \"trader-risk has not checked these orders (run check.py)\"\n318:     if risk.get(\"date\") != today:\n319:         return None, \"the risk check is from %s, not today; run check.py again\" % risk.get(\"date\")\n320:     for r in risk.get(\"results\", []):\n321:         if r.get(\"fingerprint\") == fp:\n322:             return r, None\n323:     return None, \"this exact order was not in the last risk check (it changed or is new); run check.py again\"\n324: \n325: \n326: def status_of(order, risk, state, today):\n327:     \"\"\"(ready, label, risk_result)\"\"\"\n328:     fp = fingerprint(order)\n329:     rv, why = risk_verdict(risk, fp, today)\n330:     if rv is None:\n331:         return False, \"NOT READY: \" + why, None\n332:     if rv.get(\"verdict\") != \"PASS\":\n333:         return False, \"BLOCKED by trader-risk: \" + \"; \".join(rv.get(\"reasons\", [])), rv\n334:     rec = latest(state, fp, today)\n335:     if rec:\n336:         st = rec.get(\"status\")\n337:         if st == \"approved\":\n338:             return False, \"APPROVED by you at %s, waiting for the place_stock_order call\" % rec.get(\"at\"), rv\n339:         return False, \"DONE: %s at %s\" % (st, rec.get(\"at\")), rv\n340:     return True, \"READY: trader-risk PASS, waiting for your yes\", rv"
+    },
+    {
+      "id": "S13",
+      "claim_or_topic": "Trader proposal",
+      "url": "https://github.com/TauricResearch/TradingAgents/blob/9fa1196fffbcfd9de5146d2dd2869df84ab99838/tradingagents/agents/trader/trader.py#L21-L98",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\TradingAgents\\tradingagents\\agents\\trader\\trader.py",
+      "commit": "9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+      "line_start": 21,
+      "line_end": 98,
+      "excerpt": "21:     structured_llm = bind_structured(llm, TraderProposal, \"Trader\")\n22: \n23:     def trader_node(state):\n24:         company_name = state[\"company_of_interest\"]\n25:         instrument_context = get_instrument_context_from_state(state)\n26:         investment_plan = state[\"investment_plan\"]\n27:         # The research plan digests the debate but loses exact price structure;\n28:         # give the Trader the technical market report so entry/stop levels are\n29:         # grounded in real ATR / support-resistance / current price (#1167). The\n30:         # report is empty when the user did not select the market analyst, so\n31:         # only offer it (and the grounding instruction) when it has content.\n32:         market_report = (state[\"market_report\"] or \"\").strip()\n33:         portfolio_context = get_portfolio_context_from_state(state)\n34: \n35:         if market_report:\n36:             grounding = (\n37:                 \"Ground concrete price levels (entry, stop-loss, position sizing) in the technical \"\n38:                 \"market report's price structure -- current price, support/resistance, ATR, and \"\n39:                 \"volatility -- and use the research plan for direction and strategy. \"\n40:             )\n41:             report_section = f\"Technical Market Report:\\n{market_report}\\n\\n\"\n42:         else:\n43:             grounding = \"\"\n44:             report_section = \"\"\n45: \n46:         messages = [\n47:             {\n48:                 \"role\": \"system\",\n49:                 \"content\": (\n50:                     \"You are a trading agent analyzing market data to make investment decisions. \"\n51:                     \"Based on your analysis, provide a specific recommendation to buy, sell, or hold. \"\n52:                     + grounding\n53:                     # Entry/stop are numeric price fields. Asking for concrete\n54:                     # levels invites a percentage (\"15%\"), which is not a price\n55:                     # and fails the structured parse (#1288).\n56:                     + \"State entry price and stop-loss as absolute price levels in the \"\n57:                     \"instrument's quote currency (for example 189.5), never a percentage \"\n58:                     \"or a range; convert a percentage distance to the price level it \"\n59:                     \"implies, or omit the field if you cannot state a number. \"\n60:                     + NO_EXTERNAL_TOOLS\n61:                     + get_language_instruction()\n62:                 ),\n63:             },\n64:             {\n65:                 \"role\": \"user\",\n66:                 \"content\": (\n67:                     f\"Here is the research team's investment plan for {company_name}. \"\n68:                     f\"{instrument_context}\\n\\n\"\n69:                     f\"{report_section}\"\n70:                     f\"{portfolio_context}\\n\\n\"\n71:                     f\"Proposed Investment Plan:\\n{investment_plan}\\n\\n\"\n72:                     \"Make an informed, strategic trading decision.\\n\\n\"\n73:                     \"## Output\\n\\n\"\n74:                     \"Write these sections, in this order, starting with the action \"\n75:                     \"on its own line:\\n\\n\"\n76:                     \"- **Action**: exactly one of Buy / Hold / Sell. A research \"\n77:                     \"recommendation of Overweight is a Buy and Underweight is a Sell, \"\n78:                     \"sized by how strong the case is; conflict alone is not a Hold.\\n\"\n79:                     \"- **Reasoning**: why, against the plan and the price structure\\n\"\n80:                     \"- **Entry Price**, **Stop Loss**, **Position Sizing**: when you can state them\"\n81:                 ),\n82:             },\n83:         ]\n84: \n85:         trader_plan = invoke_structured_or_freetext(\n86:             structured_llm,\n87:             llm,\n88:             messages,\n89:             render_trader_proposal,\n90:             \"Trader\",\n91:         )\n92: \n93:         return {\n94:             \"messages\": [AIMessage(content=trader_plan)],\n95:             \"trader_investment_plan\": trader_plan,\n96:         }\n97: \n98:     return trader_node"
+    },
+    {
+      "id": "S14",
+      "claim_or_topic": "final synthesis",
+      "url": "https://github.com/TauricResearch/TradingAgents/blob/9fa1196fffbcfd9de5146d2dd2869df84ab99838/tradingagents/agents/managers/portfolio_manager.py#L23-L104",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\TradingAgents\\tradingagents\\agents\\managers\\portfolio_manager.py",
+      "commit": "9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+      "line_start": 23,
+      "line_end": 104,
+      "excerpt": "23: def create_portfolio_manager(llm):\n24:     structured_llm = bind_structured(llm, PortfolioDecision, \"Portfolio Manager\")\n25: \n26:     def portfolio_manager_node(state) -> dict:\n27:         instrument_context = get_instrument_context_from_state(state)\n28:         portfolio_context = get_portfolio_context_from_state(state)\n29: \n30:         history = state[\"risk_debate_state\"][\"history\"]\n31:         risk_debate_state = state[\"risk_debate_state\"]\n32:         research_plan = state[\"investment_plan\"]\n33:         trader_plan = state[\"trader_investment_plan\"]\n34: \n35:         past_context = state.get(\"past_context\", \"\")\n36:         lessons_line = (\n37:             f\"- Lessons from prior decisions and outcomes:\\n{past_context}\\n\"\n38:             if past_context\n39:             else \"\"\n40:         )\n41: \n42:         prompt = f\"\"\"As the Portfolio Manager, synthesize the risk analysts' debate and deliver the final trading decision.\n43: \n44: {instrument_context}\n45: \n46: {portfolio_context}\n47: \n48: ---\n49: \n50: **Rating Scale** (use exactly one):\n51: - **Buy**: Strong conviction to enter or add to position\n52: - **Overweight**: Favorable outlook, gradually increase exposure\n53: - **Hold**: Maintain current position, no action needed\n54: - **Underweight**: Reduce exposure, take partial profits\n55: - **Sell**: Exit position or avoid entry\n56: \n57: **Context:**\n58: - Research Manager's investment plan: **{research_plan}**\n59: - Trader's transaction proposal: **{trader_plan}**\n60: {lessons_line}\n61: **Risk Analysts Debate History:**\n62: {history}\n63: \n64: ---\n65: \n66: Ground every conclusion in specific evidence from the analysts. The risk debate always contains conflicting stances; deciding which is stronger is the job, so conflict alone is not a reason to Hold. Commit to the stronger case, sized by how decisively it wins. Choose Hold only when the evidence is still balanced after that weighing, or too thin to support a call; do not force a direction to appear decisive. Weigh the analysts on their merits, independent of speaking order.\n67: \n68: ## Output\n69: \n70: Write these sections, in this order, starting with the rating on its own line:\n71: \n72: - **Rating**: exactly one of Buy / Overweight / Hold / Underweight / Sell\n73: - **Executive Summary**: the call and how to act on it\n74: - **Investment Thesis**: the evidence that decided it, and what would change it\n75: \n76: {NO_EXTERNAL_TOOLS}{get_language_instruction()}\"\"\"\n77: \n78:         # The typed rating is the decision; the rendered text only carries it.\n79:         # Read back from text, a rating the thesis quotes could replace it.\n80:         decision = invoke_structured(structured_llm, prompt, \"Portfolio Manager\")\n81:         if decision is not None:\n82:             final_trade_decision = render_pm_decision(decision)\n83:             final_rating = decision.rating.value\n84:         else:\n85:             final_trade_decision = llm.invoke(prompt).content\n86:             final_rating = parse_rating(final_trade_decision)\n87: \n88:         new_risk_debate_state = {\n89:             \"history\": risk_debate_state[\"history\"],\n90:             \"aggressive_history\": risk_debate_state[\"aggressive_history\"],\n91:             \"conservative_history\": risk_debate_state[\"conservative_history\"],\n92:             \"neutral_history\": risk_debate_state[\"neutral_history\"],\n93:             \"latest_speaker\": \"Judge\",\n94:             \"current_aggressive_response\": risk_debate_state[\"current_aggressive_response\"],\n95:             \"current_conservative_response\": risk_debate_state[\"current_conservative_response\"],\n96:             \"current_neutral_response\": risk_debate_state[\"current_neutral_response\"],\n97:             \"count\": risk_debate_state[\"count\"],\n98:         }\n99: \n100:         return {\n101:             \"risk_debate_state\": new_risk_debate_state,\n102:             \"final_trade_decision\": final_trade_decision,\n103:             \"final_rating\": final_rating,\n104:         }"
+    },
+    {
+      "id": "S15",
+      "claim_or_topic": "Binance symbol filters",
+      "url": "https://github.com/binance/binance-spot-api-docs/blob/master/filters.md",
+      "accessed_date": "2026-11-17",
+      "type": "official_primary_web_documentation",
+      "limitation": "Documentation changes; no provider, exchange or local model execution performed."
+    },
+    {
+      "id": "S16",
+      "claim_or_topic": "Book synchronization",
+      "url": "https://github.com/binance/binance-spot-api-docs/blob/master/web-socket-streams.md#how-to-manage-a-local-order-book-correctly",
+      "accessed_date": "2026-11-17",
+      "type": "official_primary_web_documentation",
+      "limitation": "Documentation changes; no provider, exchange or local model execution performed."
+    },
+    {
+      "id": "S17",
+      "claim_or_topic": "Approval resolution",
+      "url": "https://github.com/paperclipai/paperclip/blob/9de343b3fe2e2d4dc84fc8386d9ce04d553f39d6/server/src/lib/approval-records.ts#L7-L48",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\paperclip\\server\\src\\lib\\approval-records.ts",
+      "commit": "9de343b3fe2e2d4dc84fc8386d9ce04d553f39d6",
+      "line_start": 7,
+      "line_end": 48,
+      "excerpt": "7: export const resolvableApprovalStatuses = [\"pending\", \"revision_requested\"];\n8: \n9: export function approvalResolutionRecords(db: Db) {\n10:   const canResolveStatuses = new Set(resolvableApprovalStatuses);\n11:   const resolvableStatuses = resolvableApprovalStatuses;\n12:   type ApprovalRecord = typeof approvals.$inferSelect;\n13:   type ResolutionResult = { approval: ApprovalRecord; applied: boolean };\n14:   async function getExistingApproval(id: string, database: Db = db) {\n15:     const existing = await database\n16:       .select()\n17:       .from(approvals)\n18:       .where(eq(approvals.id, id))\n19:       .then((rows) => rows[0] ?? null);\n20:     if (!existing) throw notFound(\"Approval not found\");\n21:     return existing;\n22:   }\n23: \n24:   async function resolveApproval(\n25:     id: string,\n26:     targetStatus: \"approved\" | \"rejected\",\n27:     decidedByUserId: string,\n28:     decisionNote: string | null | undefined,\n29:     database: Db = db,\n30:   ): Promise<ResolutionResult> {\n31:     const existing = await getExistingApproval(id, database);\n32:     if (!canResolveStatuses.has(existing.status)) {\n33:       if (existing.status === targetStatus) {\n34:         return { approval: existing, applied: false };\n35:       }\n36:       throw unprocessable(\n37:         `Only pending or revision requested approvals can be ${targetStatus === \"approved\" ? \"approved\" : \"rejected\"}`,\n38:       );\n39:     }\n40: \n41:     const now = new Date();\n42:     const updated = await writeApprovalChange(database, existing.companyId, async tx => {\n43:       await notifyToolReviewChange(tx, existing.companyId);\n44:       return tx.update(approvals)\n45:       .set({\n46:         status: targetStatus,\n47:         decidedByUserId,\n48:         decisionNote: decisionNote ?? null,"
+    },
+    {
+      "id": "S18",
+      "claim_or_topic": "Hard-stop condition",
+      "url": "https://github.com/paperclipai/paperclip/blob/9de343b3fe2e2d4dc84fc8386d9ce04d553f39d6/server/src/services/budgets.ts#L254-L263",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\paperclip\\server\\src\\services\\budgets.ts",
+      "commit": "9de343b3fe2e2d4dc84fc8386d9ce04d553f39d6",
+      "line_start": 254,
+      "line_end": 263,
+      "excerpt": "254: /** Spend reached the limit, or the operator blocks unpriced usage. Only this\n255:  * opens a hard-stop incident, pauses a scope, or stops running work. */\n256: function hardStopReached(policy: PolicyRow, observed: Awaited<ReturnType<typeof computeObservedSpend>>) {\n257:   if (!policy.isActive || !policy.hardStopEnabled || policy.amount <= 0) return false;\n258:   return compareCents(observed.totalExact, policy.amount) >= 0 || unpricedUsageBlocks(policy, observed);\n259: }\n260: \n261: export async function policyBlocks(db: Db, policy: PolicyRow) {\n262:   if (!policy.isActive || !policy.hardStopEnabled || policy.amount <= 0) return false;\n263:   return hardStopReached(policy, await computeObservedSpend(db, policy));"
+    },
+    {
+      "id": "S19",
+      "claim_or_topic": "scope enforcement",
+      "url": "https://github.com/paperclipai/paperclip/blob/9de343b3fe2e2d4dc84fc8386d9ce04d553f39d6/server/src/services/budgets.ts#L695-L725",
+      "accessed_date": "2026-11-17",
+      "type": "pinned_source",
+      "absolute_path": "E:\\coding\\code\\Trade\\paperclip\\server\\src\\services\\budgets.ts",
+      "commit": "9de343b3fe2e2d4dc84fc8386d9ce04d553f39d6",
+      "line_start": 695,
+      "line_end": 725,
+      "excerpt": "695:   async function reconcileScope(companyId: string, scopeType: BudgetScopeType, scopeId: string,\n696:     prepared?: { scope: ScopeRecord; policies: PolicyRow[]; observations: ObservedSpend[] }) {\n697:     const scope = prepared?.scope ?? await resolveScopeRecord(db, scopeType, scopeId);\n698:     if (scope.companyId !== companyId) throw notFound(\"Budget scope not found\");\n699:     const policies = prepared?.policies ?? await db.select().from(budgetPolicies).where(and(\n700:       eq(budgetPolicies.companyId, companyId), eq(budgetPolicies.scopeType, scopeType), eq(budgetPolicies.scopeId, scopeId),\n701:     ));\n702:     const observations = prepared?.observations ?? await computeObservedSpends(db, policies, now);\n703:     const title = scopeType === \"company\" ? \"Company\" : scopeType === \"agent\" ? \"Agent\" : \"Project\";\n704:     for (const [index, policy] of policies.entries()) {\n705:       const observed = observations[index];\n706:       if (hardStopReached(policy, observed)) {\n707:         await createIncidentIfNeeded(policy, \"hard\", observed);\n708:         await pauseAndCancelScopeForBudget(policy, !scope.budgetHeld);\n709:         if (unpricedUsageBlocks(policy, observed)) {\n710:           return { scopeType, scopeId, scopeName: scope.name, reason: `${title} cannot start work because recorded usage has no reliable price.` };\n711:         }\n712:         return { scopeType, scopeId, scopeName: scope.name, reason: scopeType === \"project\"\n713:           ? \"Project cannot start work because its budget hard-stop is still exceeded.\"\n714:           : `${title} is paused because its budget hard-stop was reached.` };\n715:       }\n716:       // A closed UTC window, inactive policy, or budget raise releases only\n717:       // budget-owned pauses. Manual pauses remain operator decisions.\n718:       await resolveOpenIncidentsForPolicy(policy.id, policy.companyId, \"approved\", \"budget_service\", \"hard\");\n719:       if (shouldResolveSoftIncident(policy, observed)) {\n720:         await resolveOpenIncidentsForPolicy(policy.id, policy.companyId, \"approved\", \"budget_service\", \"soft\");\n721:       }\n722:     }\n723:     const pauseBlock = scopePauseBlock(scopeType, scopeId, scope, policies.length > 0);\n724:     if (pauseBlock) return pauseBlock;\n725:     if (scope.budgetHeld && policies[0]) await resumeScopeFromBudget(policies[0]);"
+    }
+  ],
+  "original_reports": [
+    "E:\\coding\\code\\Trade\\paperclip-evidence\\mirofish-original-report.md",
+    "E:\\coding\\code\\Trade\\daytrade.md",
+    "E:\\coding\\code\\Trade\\tradingagent.md",
+    "E:\\coding\\code\\Trade\\mirofish.md"
+  ],
+  "proposal_status": "Proposed simulator and risk contracts are design recommendations. 10000-agent target not benchmarked. No trades, source edits, installs or paid calls.",
+  "quota_latest_verified": {
+    "usedPercent": 12,
+    "remainingPercent": 88,
+    "windowDurationMins": 300
+  },
+  "verification": {
+    "notes_word_count": 1866,
+    "source_line_ranges_checked": true,
+    "web_sources_checked": "2026-11-17",
+    "runtime_tests": "Not run: research-only task; no implementation changes."
+  }
+}

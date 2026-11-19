@@ -1,0 +1,100 @@
+{
+  "observed_at": "2026-11-17T20:32:54.748152Z",
+  "workspace": "E:\\coding\\code\\Trade\\crypto-trader-skills\\runs\\manual-real-paper-btc-eth-sol-20261117T190847278192Z",
+  "elapsed_seconds": 60.329,
+  "cli_exit": 0,
+  "watch_status": "complete",
+  "cycles": 4,
+  "positions_checked": 12,
+  "errors": [],
+  "new_paper_exits": [],
+  "open_positions": [
+    {
+      "entry_fee": "1.9257343604000000000",
+      "entry_fee_rate": "0.001",
+      "entry_price": "63787.16000000",
+      "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+      "opened_at": "2026-11-17T19:08:58.344149Z",
+      "quantity": "0.03019000",
+      "stop": "63117.72000000",
+      "symbol": "BTCUSDT",
+      "target": "65030.40000000"
+    },
+    {
+      "entry_fee": "1.9247227540000000000",
+      "entry_fee_rate": "0.001",
+      "entry_price": "1791.94000000",
+      "id": "044965cf60588bc41e0f6a136fbf04d40e30fe8b9d2611ead13c77c0e69f33a2",
+      "opened_at": "2026-11-17T19:09:09.181252Z",
+      "quantity": "1.07410000",
+      "stop": "1773.12000000",
+      "symbol": "ETHUSDT",
+      "target": "1826.88000000"
+    },
+    {
+      "entry_fee": "0.1494725400000000000",
+      "entry_fee_rate": "0.001",
+      "entry_price": "72.63000000",
+      "id": "4351cac8b692847eece06b22c8d7ea425752d024adb0c56c7c98adaee1554bf3",
+      "opened_at": "2026-11-17T19:09:19.168047Z",
+      "quantity": "2.05800000",
+      "stop": "71.86000000",
+      "symbol": "SOLUSDT",
+      "target": "74.05000000"
+    }
+  ],
+  "cash_before": "5996.0704159456000000000",
+  "cash_after": "5996.0704159456000000000",
+  "realized_pnl": "0",
+  "latest_observations": {
+    "BTCUSDT": {
+      "status": "holding",
+      "symbol": "BTCUSDT",
+      "position_id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+      "bid": "64037.60000000",
+      "stop": "63117.72000000",
+      "target": "65030.40000000",
+      "quote_digest": "45f54d98fdde5214773debcc7bce46a7b0a01d94b882e1f14c38cba10d2f3336",
+      "settings_source": "verified_archived_entry_config",
+      "observed_at": "2026-11-17T20:32:47.884241Z",
+      "estimated_exit_fill": "64005.58000000",
+      "estimated_liquidation_value": "1930.3961317398000000000",
+      "estimated_net_pnl": "2.7360369794000000000"
+    },
+    "ETHUSDT": {
+      "status": "holding",
+      "symbol": "ETHUSDT",
+      "position_id": "044965cf60588bc41e0f6a136fbf04d40e30fe8b9d2611ead13c77c0e69f33a2",
+      "bid": "1799.92000000",
+      "stop": "1773.12000000",
+      "target": "1826.88000000",
+      "quote_digest": "f9c11f6d63e9120f80394c7275bf867a16daa66618eac9432b9e2b3f8305fddd",
+      "settings_source": "verified_archived_entry_config",
+      "observed_at": "2026-11-17T20:32:48.679131Z",
+      "estimated_exit_fill": "1799.02000000",
+      "estimated_liquidation_value": "1930.3950546180000000000",
+      "estimated_net_pnl": "3.7475778640000000000"
+    },
+    "SOLUSDT": {
+      "status": "holding",
+      "symbol": "SOLUSDT",
+      "position_id": "4351cac8b692847eece06b22c8d7ea425752d024adb0c56c7c98adaee1554bf3",
+      "bid": "73.14000000",
+      "stop": "71.86000000",
+      "target": "74.05000000",
+      "quote_digest": "56c3fe20a1ad7f2c8130afc27325027b1d52221eee87bf82a0fb086589c7d2c5",
+      "settings_source": "verified_archived_entry_config",
+      "observed_at": "2026-11-17T20:32:49.475298Z",
+      "estimated_exit_fill": "73.10000000",
+      "estimated_liquidation_value": "150.2893602000000000000",
+      "estimated_net_pnl": "0.6673476600000000000"
+    }
+  },
+  "watcher_running": false,
+  "background_process_started": false,
+  "locks_released": true,
+  "cash_reconciled": true,
+  "config_unchanged": true,
+  "live_exchange_orders": 0,
+  "watcher_digest": "1f21012dfb24c6180ed04c489866c3dd218e1d2f8d14b49b01742b82b9ff6ac4"
+}

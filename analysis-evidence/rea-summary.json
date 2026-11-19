@@ -1,0 +1,45 @@
+{
+  "evidence_id": "ev_4399d9480b4543f24207cdb7b901d69d69febad57f426a9023165d4977c7070d",
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "operation": "inspect_artifact",
+  "subject": {
+    "name": "day-trader-skill-source.zip",
+    "digest": {
+      "sha256": "ea23cec8907d77b6d636529316661f3b35ae380ea2a1c543b255c40fc950f269"
+    },
+    "local_path": "E:\\coding\\code\\Trade\\analysis-evidence\\day-trader-skill-source.zip",
+    "format": "zip",
+    "architecture": null
+  },
+  "manifest": {
+    "manifest_id": "agm_e573484f4514ee99d47e740ed305b91cb404b706de8b7c9bc5768b2fd8e459de",
+    "root_artifact_id": "art_0a99de19e8f18c5097f140e093318319f1a943512b554280b832a1407edaa14c",
+    "root_sha256": "ea23cec8907d77b6d636529316661f3b35ae380ea2a1c543b255c40fc950f269",
+    "root_format": "zip",
+    "graph_sha256": "cecb84aec8cc7a02d4a3a0551430dc9734bc8aff34369e9fd4c823c94432272e",
+    "node_count": 111,
+    "occurrence_count": 111,
+    "edge_count": 110
+  },
+  "coverage": {
+    "status": "complete-within-substeps",
+    "substeps_completed": 1,
+    "observations_retained": 1,
+    "observations_omitted": 0,
+    "hypotheses_retained": 0,
+    "hypotheses_omitted": 0,
+    "unexplored_branches_retained": 0,
+    "unexplored_branches_omitted": 0,
+    "next_probes_retained": 0,
+    "next_probes_omitted": 0
+  },
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "inventory_evidence_id": "ev_6342b5f3e1969f80b0dbc054cb5ebf1e672f09b800f469d9d6a371d1c8f219b8"
+}

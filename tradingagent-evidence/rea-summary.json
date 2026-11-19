@@ -1,0 +1,54 @@
+{
+  "evidence_id": "ev_49de5e326a1cdf49d1ef2800d33cf4c8f9847a56535a083f702bfed5a8027c7c",
+  "subject": {
+    "name": "source.zip",
+    "digest": {
+      "sha256": "fafb75fd03c56f996cb416af19d0270203bff97659c639c2e8976b9adeafb522"
+    },
+    "local_path": "E:\\coding\\code\\Trade\\tradingagent-evidence\\source.zip",
+    "format": "zip",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "operation": "inspect_artifact",
+  "confidence": "observed",
+  "coverage": {
+    "status": "complete-within-substeps",
+    "substeps_completed": 1,
+    "observations_retained": 1,
+    "observations_omitted": 0,
+    "hypotheses_retained": 0,
+    "hypotheses_omitted": 0,
+    "unexplored_branches_retained": 0,
+    "unexplored_branches_omitted": 0,
+    "next_probes_retained": 0,
+    "next_probes_omitted": 0
+  },
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "manifest": {
+    "manifest_id": "agm_0197e7a10d8f9793c56834017115b1957152607dcafa5a5af8973517103af9b0",
+    "root_artifact_id": "art_bd34835aa061490d3a0d99547450291dd5d5444a8b7e07f1048423b9066ce92a",
+    "root_sha256": "fafb75fd03c56f996cb416af19d0270203bff97659c639c2e8976b9adeafb522",
+    "root_format": "zip",
+    "graph_sha256": "e974c6e8784ea6020d5bd4188cd6b907cf84b70381b61b0fab951a0808b3ff89",
+    "node_count": 231,
+    "occurrence_count": 237,
+    "edge_count": 236
+  },
+  "archive_sha256_recomputed": "fafb75fd03c56f996cb416af19d0270203bff97659c639c2e8976b9adeafb522",
+  "hash_matches": true,
+  "zip_comment": "9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+  "archive_files": 213,
+  "tracked_files": 213,
+  "path_lists_match": true,
+  "byte_exact_payloads": 17,
+  "CRLF_LF_only_payloads": 196,
+  "unmatched_payloads": []
+}

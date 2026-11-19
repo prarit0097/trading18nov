@@ -1,0 +1,1857 @@
+{
+  "list_products": {
+    "properties": {
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Filter by contract types: perpetual_futures, call_options, put_options, futures, spot.",
+        "title": "Contract Types"
+      },
+      "states": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Filter by product state: live, upcoming, expired, settled.",
+        "title": "States"
+      },
+      "expiry": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Expiry date filter in YYYY-MM-DD format (current and future expiries only).",
+        "title": "Expiry"
+      },
+      "page_size": {
+        "default": 100,
+        "maximum": 500,
+        "minimum": 1,
+        "title": "Page Size",
+        "type": "integer"
+      },
+      "after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Cursor from a previous response's meta.after.",
+        "title": "After"
+      }
+    },
+    "type": "object",
+    "title": "list_productsArguments",
+    "additionalProperties": false
+  },
+  "get_product": {
+    "properties": {
+      "symbol": {
+        "title": "Symbol",
+        "type": "string"
+      }
+    },
+    "required": [
+      "symbol"
+    ],
+    "type": "object",
+    "title": "get_productArguments",
+    "additionalProperties": false
+  },
+  "get_ticker": {
+    "properties": {
+      "symbol": {
+        "title": "Symbol",
+        "type": "string"
+      }
+    },
+    "required": [
+      "symbol"
+    ],
+    "type": "object",
+    "title": "get_tickerArguments",
+    "additionalProperties": false
+  },
+  "list_tickers": {
+    "properties": {
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Filter: perpetual_futures, futures, call_options, put_options.",
+        "title": "Contract Types"
+      },
+      "underlying_asset_symbols": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Underlying symbols e.g. BTC, ETH, SOL.",
+        "title": "Underlying Asset Symbols"
+      }
+    },
+    "type": "object",
+    "title": "list_tickersArguments",
+    "additionalProperties": false
+  },
+  "get_orderbook": {
+    "properties": {
+      "symbol": {
+        "title": "Symbol",
+        "type": "string"
+      },
+      "depth": {
+        "anyOf": [
+          {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Levels per side (max 100).",
+        "title": "Depth"
+      }
+    },
+    "required": [
+      "symbol"
+    ],
+    "type": "object",
+    "title": "get_orderbookArguments",
+    "additionalProperties": false
+  },
+  "get_recent_trades": {
+    "properties": {
+      "symbol": {
+        "title": "Symbol",
+        "type": "string"
+      }
+    },
+    "required": [
+      "symbol"
+    ],
+    "type": "object",
+    "title": "get_recent_tradesArguments",
+    "additionalProperties": false
+  },
+  "get_candles": {
+    "properties": {
+      "symbol": {
+        "title": "Symbol",
+        "type": "string"
+      },
+      "resolution": {
+        "enum": [
+          "1m",
+          "3m",
+          "5m",
+          "15m",
+          "30m",
+          "1h",
+          "2h",
+          "4h",
+          "6h",
+          "1d",
+          "1w"
+        ],
+        "title": "Resolution",
+        "type": "string"
+      },
+      "start": {
+        "description": "Unix timestamp in seconds, inclusive.",
+        "title": "Start",
+        "type": "integer"
+      },
+      "end": {
+        "description": "Unix timestamp in seconds, inclusive.",
+        "title": "End",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "symbol",
+      "resolution",
+      "start",
+      "end"
+    ],
+    "type": "object",
+    "title": "get_candlesArguments",
+    "additionalProperties": false
+  },
+  "get_settlement_prices": {
+    "properties": {
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Filter expired products by contract type (e.g. call_options, put_options, futures).",
+        "title": "Contract Types"
+      },
+      "page_size": {
+        "default": 100,
+        "maximum": 500,
+        "minimum": 1,
+        "title": "Page Size",
+        "type": "integer"
+      },
+      "after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Cursor from previous response's meta.after.",
+        "title": "After"
+      }
+    },
+    "type": "object",
+    "title": "get_settlement_pricesArguments",
+    "additionalProperties": false
+  },
+  "get_funding_history": {
+    "properties": {
+      "symbol": {
+        "description": "Perpetual symbol, e.g. BTCUSD or ETHUSD.",
+        "title": "Symbol",
+        "type": "string"
+      },
+      "resolution": {
+        "default": "1h",
+        "enum": [
+          "1m",
+          "3m",
+          "5m",
+          "15m",
+          "30m",
+          "1h",
+          "2h",
+          "4h",
+          "6h",
+          "1d",
+          "1w"
+        ],
+        "title": "Resolution",
+        "type": "string"
+      },
+      "start": {
+        "description": "Unix timestamp in seconds, inclusive.",
+        "title": "Start",
+        "type": "integer"
+      },
+      "end": {
+        "description": "Unix timestamp in seconds, inclusive.",
+        "title": "End",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "symbol",
+      "start",
+      "end"
+    ],
+    "type": "object",
+    "title": "get_funding_historyArguments",
+    "additionalProperties": false
+  },
+  "get_mark_price_history": {
+    "properties": {
+      "symbol": {
+        "description": "Product symbol, e.g. BTCUSD or C-BTC-66400-010824.",
+        "title": "Symbol",
+        "type": "string"
+      },
+      "resolution": {
+        "default": "1m",
+        "enum": [
+          "1m",
+          "3m",
+          "5m",
+          "15m",
+          "30m",
+          "1h",
+          "2h",
+          "4h",
+          "6h",
+          "1d",
+          "1w"
+        ],
+        "title": "Resolution",
+        "type": "string"
+      },
+      "start": {
+        "description": "Unix timestamp in seconds, inclusive.",
+        "title": "Start",
+        "type": "integer"
+      },
+      "end": {
+        "description": "Unix timestamp in seconds, inclusive.",
+        "title": "End",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "symbol",
+      "start",
+      "end"
+    ],
+    "type": "object",
+    "title": "get_mark_price_historyArguments",
+    "additionalProperties": false
+  },
+  "get_oi_history": {
+    "properties": {
+      "symbol": {
+        "description": "Product symbol, e.g. BTCUSD or ETHUSD.",
+        "title": "Symbol",
+        "type": "string"
+      },
+      "resolution": {
+        "default": "1h",
+        "enum": [
+          "1m",
+          "3m",
+          "5m",
+          "15m",
+          "30m",
+          "1h",
+          "2h",
+          "4h",
+          "6h",
+          "1d",
+          "1w"
+        ],
+        "title": "Resolution",
+        "type": "string"
+      },
+      "start": {
+        "description": "Unix timestamp in seconds, inclusive.",
+        "title": "Start",
+        "type": "integer"
+      },
+      "end": {
+        "description": "Unix timestamp in seconds, inclusive.",
+        "title": "End",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "symbol",
+      "start",
+      "end"
+    ],
+    "type": "object",
+    "title": "get_oi_historyArguments",
+    "additionalProperties": false
+  },
+  "get_options_chain": {
+    "properties": {
+      "underlying": {
+        "description": "Underlying asset symbol, e.g. BTC or ETH.",
+        "title": "Underlying",
+        "type": "string"
+      },
+      "expiry_date": {
+        "description": "Expiry date in DD-MM-YYYY format (note: different from /products).",
+        "title": "Expiry Date",
+        "type": "string"
+      }
+    },
+    "required": [
+      "underlying",
+      "expiry_date"
+    ],
+    "type": "object",
+    "title": "get_options_chainArguments",
+    "additionalProperties": false
+  },
+  "get_indices": {
+    "properties": {},
+    "type": "object",
+    "title": "get_indicesArguments",
+    "additionalProperties": false
+  },
+  "get_reference_data": {
+    "properties": {},
+    "type": "object",
+    "title": "get_reference_dataArguments",
+    "additionalProperties": false
+  },
+  "get_positions": {
+    "properties": {
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Single product id.",
+        "title": "Product Id"
+      },
+      "underlying_asset_symbol": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Underlying asset symbol (e.g. BTC) \u2014 returns all positions under it.",
+        "title": "Underlying Asset Symbol"
+      }
+    },
+    "type": "object",
+    "title": "get_positionsArguments",
+    "additionalProperties": false
+  },
+  "get_margined_positions": {
+    "properties": {
+      "product_ids": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Max 10 product ids.",
+        "title": "Product Ids"
+      },
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Subset of: perpetual_futures, call_options, put_options.",
+        "title": "Contract Types"
+      }
+    },
+    "type": "object",
+    "title": "get_margined_positionsArguments",
+    "additionalProperties": false
+  },
+  "get_wallet_balances": {
+    "properties": {},
+    "type": "object",
+    "title": "get_wallet_balancesArguments",
+    "additionalProperties": false
+  },
+  "get_wallet_transactions": {
+    "properties": {
+      "asset_ids": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Filter by asset ids.",
+        "title": "Asset Ids"
+      },
+      "transaction_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Filter by transaction type (e.g. deposit, withdrawal, funding, settlement, commission). Note: sparse/older types like deposit and liquidation_fee may sit outside the default ~90-day window \u2014 pass start_time_us to find them.",
+        "title": "Transaction Types"
+      },
+      "start_time_us": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Window start, microseconds epoch. If omitted the API returns only the last ~90 days; set this to reach older history.",
+        "title": "Start Time Us"
+      },
+      "end_time_us": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "End Time Us"
+      },
+      "page_size": {
+        "default": 50,
+        "maximum": 200,
+        "minimum": 1,
+        "title": "Page Size",
+        "type": "integer"
+      },
+      "after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "After"
+      },
+      "before": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Before"
+      }
+    },
+    "type": "object",
+    "title": "get_wallet_transactionsArguments",
+    "additionalProperties": false
+  },
+  "get_fills": {
+    "properties": {
+      "product_ids": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Product Ids"
+      },
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Contract Types"
+      },
+      "start_time_us": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Window start, microseconds epoch. If omitted the API returns only the last ~90 days; set this to reach older fills.",
+        "title": "Start Time Us"
+      },
+      "end_time_us": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "End Time Us"
+      },
+      "page_size": {
+        "default": 50,
+        "maximum": 200,
+        "minimum": 1,
+        "title": "Page Size",
+        "type": "integer"
+      },
+      "after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "After"
+      }
+    },
+    "type": "object",
+    "title": "get_fillsArguments",
+    "additionalProperties": false
+  },
+  "get_open_orders": {
+    "properties": {
+      "product_ids": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Max 10 product ids.",
+        "title": "Product Ids"
+      },
+      "states": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Subset of: open, pending.",
+        "title": "States"
+      },
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Contract Types"
+      },
+      "page_size": {
+        "default": 50,
+        "maximum": 200,
+        "minimum": 1,
+        "title": "Page Size",
+        "type": "integer"
+      },
+      "after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Cursor from previous response's meta.after.",
+        "title": "After"
+      }
+    },
+    "type": "object",
+    "title": "get_open_ordersArguments",
+    "additionalProperties": false
+  },
+  "get_order_history": {
+    "properties": {
+      "product_ids": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Product Ids"
+      },
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Contract Types"
+      },
+      "order_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "market, limit, stop_market, stop_limit, all_stop.",
+        "title": "Order Types"
+      },
+      "start_time_us": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Microseconds epoch (note: micro, not milli).",
+        "title": "Start Time Us"
+      },
+      "end_time_us": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "End Time Us"
+      },
+      "page_size": {
+        "default": 50,
+        "maximum": 200,
+        "minimum": 1,
+        "title": "Page Size",
+        "type": "integer"
+      },
+      "after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "After"
+      }
+    },
+    "type": "object",
+    "title": "get_order_historyArguments",
+    "additionalProperties": false
+  },
+  "get_order_by_id": {
+    "properties": {
+      "order_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Delta-assigned order id.",
+        "title": "Order Id"
+      },
+      "client_order_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Your client_order_id if you set one.",
+        "title": "Client Order Id"
+      }
+    },
+    "type": "object",
+    "title": "get_order_by_idArguments",
+    "additionalProperties": false
+  },
+  "get_product_leverage": {
+    "properties": {
+      "product_id": {
+        "description": "Product id to fetch leverage for.",
+        "title": "Product Id",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "product_id"
+    ],
+    "type": "object",
+    "title": "get_product_leverageArguments",
+    "additionalProperties": false
+  },
+  "get_trading_stats": {
+    "properties": {},
+    "type": "object",
+    "title": "get_trading_statsArguments",
+    "additionalProperties": false
+  },
+  "get_trading_preferences": {
+    "properties": {},
+    "type": "object",
+    "title": "get_trading_preferencesArguments",
+    "additionalProperties": false
+  },
+  "bulk_fills_export": {
+    "properties": {
+      "output_path": {
+        "description": "Where to write the CSV. Must be inside the current working directory or the user's home directory; ~ is expanded.",
+        "title": "Output Path",
+        "type": "string"
+      },
+      "start_time_us": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Window start in microseconds epoch.",
+        "title": "Start Time Us"
+      },
+      "end_time_us": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Window end in microseconds epoch.",
+        "title": "End Time Us"
+      },
+      "product_ids": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Product Ids"
+      },
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Contract Types"
+      }
+    },
+    "required": [
+      "output_path"
+    ],
+    "type": "object",
+    "title": "bulk_fills_exportArguments",
+    "additionalProperties": false
+  },
+  "place_order": {
+    "properties": {
+      "size": {
+        "description": "Order size in contracts.",
+        "title": "Size",
+        "type": "integer"
+      },
+      "side": {
+        "description": "buy or sell.",
+        "title": "Side",
+        "type": "string"
+      },
+      "order_type": {
+        "description": "limit_order or market_order.",
+        "title": "Order Type",
+        "type": "string"
+      },
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Product id (or pass product_symbol).",
+        "title": "Product Id"
+      },
+      "product_symbol": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "e.g. BTCUSD (or pass product_id).",
+        "title": "Product Symbol"
+      },
+      "limit_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Required for limit_order.",
+        "title": "Limit Price"
+      },
+      "stop_order_type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "stop_loss_order or take_profit_order.",
+        "title": "Stop Order Type"
+      },
+      "stop_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Trigger price for stop orders.",
+        "title": "Stop Price"
+      },
+      "trail_amount": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Trailing-stop amount.",
+        "title": "Trail Amount"
+      },
+      "stop_trigger_method": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "mark_price, last_traded_price, spot_price",
+        "title": "Stop Trigger Method"
+      },
+      "time_in_force": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "gtc or ioc.",
+        "title": "Time In Force"
+      },
+      "post_only": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Reject if it would take liquidity.",
+        "title": "Post Only"
+      },
+      "reduce_only": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Only reduce an existing position.",
+        "title": "Reduce Only"
+      },
+      "client_order_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Your id, max 32 chars.",
+        "title": "Client Order Id"
+      },
+      "bracket_stop_loss_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Bracket SL trigger price.",
+        "title": "Bracket Stop Loss Price"
+      },
+      "bracket_stop_loss_limit_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Bracket SL limit price.",
+        "title": "Bracket Stop Loss Limit Price"
+      },
+      "bracket_take_profit_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Bracket TP trigger price.",
+        "title": "Bracket Take Profit Price"
+      },
+      "bracket_take_profit_limit_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Bracket TP limit price.",
+        "title": "Bracket Take Profit Limit Price"
+      },
+      "bracket_trail_amount": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Bracket trailing-stop amount.",
+        "title": "Bracket Trail Amount"
+      },
+      "bracket_stop_trigger_method": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "mark_price, last_traded_price, spot_price",
+        "title": "Bracket Stop Trigger Method"
+      }
+    },
+    "required": [
+      "size",
+      "side",
+      "order_type"
+    ],
+    "type": "object",
+    "title": "place_orderArguments",
+    "additionalProperties": false
+  },
+  "edit_order": {
+    "properties": {
+      "id": {
+        "description": "Order id to edit.",
+        "title": "Id",
+        "type": "integer"
+      },
+      "size": {
+        "description": "Total size after the edit.",
+        "title": "Size",
+        "type": "integer"
+      },
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Product id (or pass product_symbol).",
+        "title": "Product Id"
+      },
+      "product_symbol": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "e.g. BTCUSD (or pass product_id).",
+        "title": "Product Symbol"
+      },
+      "limit_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "New limit price.",
+        "title": "Limit Price"
+      },
+      "stop_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "New stop trigger price.",
+        "title": "Stop Price"
+      },
+      "trail_amount": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "New trailing-stop amount.",
+        "title": "Trail Amount"
+      },
+      "post_only": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Reject if it would take liquidity.",
+        "title": "Post Only"
+      }
+    },
+    "required": [
+      "id",
+      "size"
+    ],
+    "type": "object",
+    "title": "edit_orderArguments",
+    "additionalProperties": false
+  },
+  "cancel_order": {
+    "properties": {
+      "product_id": {
+        "description": "Product id the order belongs to.",
+        "title": "Product Id",
+        "type": "integer"
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Order id to cancel.",
+        "title": "Id"
+      },
+      "client_order_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Your client_order_id.",
+        "title": "Client Order Id"
+      }
+    },
+    "required": [
+      "product_id"
+    ],
+    "type": "object",
+    "title": "cancel_orderArguments",
+    "additionalProperties": false
+  },
+  "cancel_all_orders": {
+    "properties": {
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Limit to one product.",
+        "title": "Product Id"
+      },
+      "contract_types": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Limit to contract types (ignored if product_id is set).",
+        "title": "Contract Types"
+      }
+    },
+    "type": "object",
+    "title": "cancel_all_ordersArguments",
+    "additionalProperties": false
+  },
+  "place_batch_orders": {
+    "properties": {
+      "orders": {
+        "description": "Orders, each {size, side, order_type, limit_price?, time_in_force?, post_only?, client_order_id?}. All same contract. No IOC/stop.",
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Orders",
+        "type": "array"
+      },
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Product id (or pass product_symbol).",
+        "title": "Product Id"
+      },
+      "product_symbol": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "e.g. BTCUSD (or pass product_id).",
+        "title": "Product Symbol"
+      }
+    },
+    "required": [
+      "orders"
+    ],
+    "type": "object",
+    "title": "place_batch_ordersArguments",
+    "additionalProperties": false
+  },
+  "edit_batch_orders": {
+    "properties": {
+      "orders": {
+        "description": "Edits, each {id, size, order_type, limit_price?, post_only?}.",
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Orders",
+        "type": "array"
+      },
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Product id (or pass product_symbol).",
+        "title": "Product Id"
+      },
+      "product_symbol": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "e.g. BTCUSD (or pass product_id).",
+        "title": "Product Symbol"
+      }
+    },
+    "required": [
+      "orders"
+    ],
+    "type": "object",
+    "title": "edit_batch_ordersArguments",
+    "additionalProperties": false
+  },
+  "cancel_batch_orders": {
+    "properties": {
+      "orders": {
+        "description": "Orders to cancel, each {id} or {client_order_id}.",
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Orders",
+        "type": "array"
+      },
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Product id (or pass product_symbol).",
+        "title": "Product Id"
+      },
+      "product_symbol": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "e.g. BTCUSD (or pass product_id).",
+        "title": "Product Symbol"
+      }
+    },
+    "required": [
+      "orders"
+    ],
+    "type": "object",
+    "title": "cancel_batch_ordersArguments",
+    "additionalProperties": false
+  },
+  "place_bracket_order": {
+    "properties": {
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Product id (or pass product_symbol).",
+        "title": "Product Id"
+      },
+      "product_symbol": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "e.g. BTCUSD (or pass product_id).",
+        "title": "Product Symbol"
+      },
+      "stop_loss_order": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "{order_type, stop_price, limit_price?, trail_amount?}.",
+        "title": "Stop Loss Order"
+      },
+      "take_profit_order": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "{order_type, stop_price, limit_price?}.",
+        "title": "Take Profit Order"
+      },
+      "bracket_stop_trigger_method": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "mark_price, last_traded_price, spot_price",
+        "title": "Bracket Stop Trigger Method"
+      }
+    },
+    "type": "object",
+    "title": "place_bracket_orderArguments",
+    "additionalProperties": false
+  },
+  "edit_bracket_order": {
+    "properties": {
+      "id": {
+        "description": "Order id whose bracket params to update.",
+        "title": "Id",
+        "type": "integer"
+      },
+      "product_id": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Product id (or pass product_symbol).",
+        "title": "Product Id"
+      },
+      "product_symbol": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "e.g. BTCUSD (or pass product_id).",
+        "title": "Product Symbol"
+      },
+      "bracket_stop_loss_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Stop-loss trigger price.",
+        "title": "Bracket Stop Loss Price"
+      },
+      "bracket_stop_loss_limit_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Stop-loss limit price.",
+        "title": "Bracket Stop Loss Limit Price"
+      },
+      "bracket_take_profit_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Take-profit trigger price.",
+        "title": "Bracket Take Profit Price"
+      },
+      "bracket_take_profit_limit_price": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Take-profit limit price.",
+        "title": "Bracket Take Profit Limit Price"
+      },
+      "bracket_trail_amount": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Trailing-stop amount.",
+        "title": "Bracket Trail Amount"
+      },
+      "bracket_stop_trigger_method": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "mark_price, last_traded_price, spot_price",
+        "title": "Bracket Stop Trigger Method"
+      }
+    },
+    "required": [
+      "id"
+    ],
+    "type": "object",
+    "title": "edit_bracket_orderArguments",
+    "additionalProperties": false
+  },
+  "set_product_leverage": {
+    "properties": {
+      "product_id": {
+        "description": "Product id to set order leverage for.",
+        "title": "Product Id",
+        "type": "integer"
+      },
+      "leverage": {
+        "description": "Leverage multiplier, e.g. '10'.",
+        "title": "Leverage",
+        "type": "string"
+      }
+    },
+    "required": [
+      "product_id",
+      "leverage"
+    ],
+    "type": "object",
+    "title": "set_product_leverageArguments",
+    "additionalProperties": false
+  },
+  "adjust_position_margin": {
+    "properties": {
+      "product_id": {
+        "description": "Product id of the position.",
+        "title": "Product Id",
+        "type": "integer"
+      },
+      "delta_margin": {
+        "description": "Margin to add (positive) or remove (negative), e.g. '5.0'.",
+        "title": "Delta Margin",
+        "type": "string"
+      }
+    },
+    "required": [
+      "product_id",
+      "delta_margin"
+    ],
+    "type": "object",
+    "title": "adjust_position_marginArguments",
+    "additionalProperties": false
+  },
+  "close_all_positions": {
+    "properties": {},
+    "type": "object",
+    "title": "close_all_positionsArguments",
+    "additionalProperties": false
+  },
+  "configure_auto_topup": {
+    "properties": {
+      "product_id": {
+        "description": "Product id of the position.",
+        "title": "Product Id",
+        "type": "integer"
+      },
+      "auto_topup": {
+        "description": "Enable or disable auto top-up for this position.",
+        "title": "Auto Topup",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "product_id",
+      "auto_topup"
+    ],
+    "type": "object",
+    "title": "configure_auto_topupArguments",
+    "additionalProperties": false
+  },
+  "setup_credentials": {
+    "properties": {},
+    "type": "object",
+    "title": "setup_credentialsArguments",
+    "additionalProperties": false
+  },
+  "save_credentials": {
+    "properties": {
+      "environment": {
+        "title": "Environment",
+        "type": "string"
+      },
+      "api_key": {
+        "title": "Api Key",
+        "type": "string"
+      },
+      "api_secret": {
+        "title": "Api Secret",
+        "type": "string"
+      },
+      "grant": {
+        "title": "Grant",
+        "type": "string"
+      }
+    },
+    "required": [
+      "environment",
+      "api_key",
+      "api_secret",
+      "grant"
+    ],
+    "type": "object",
+    "title": "save_credentialsArguments",
+    "additionalProperties": false
+  },
+  "get_connection_status": {
+    "properties": {},
+    "type": "object",
+    "title": "get_connection_statusArguments",
+    "additionalProperties": false
+  }
+}

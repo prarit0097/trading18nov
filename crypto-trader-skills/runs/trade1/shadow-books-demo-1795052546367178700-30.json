@@ -1,0 +1,86 @@
+{
+  "status": "depth_research_only",
+  "environment": "india_testnet",
+  "campaign_id": "trade1",
+  "batch_id": "demo-1795052546367178700",
+  "minutes": 30,
+  "comparisons": [
+    {
+      "symbol": "BTCUSD",
+      "order_id": "2178766140",
+      "first_fill_at": "2026-11-19T01:42:27.519363Z",
+      "deadline_at": 1795054347.519363,
+      "capture": {
+        "status": "valid",
+        "book_observed_at": 1795054349.8943,
+        "book": {
+          "symbol": "BTCUSD",
+          "buy": [
+            {
+              "size": 2120,
+              "depth": "2.12E+3",
+              "price": "62830.0"
+            },
+            {
+              "size": 2686,
+              "depth": "4806",
+              "price": "62829.5"
+            },
+            {
+              "size": 3410,
+              "depth": "8216",
+              "price": "62829.0"
+            },
+            {
+              "size": 4338,
+              "depth": "12554",
+              "price": "62828.5"
+            },
+            {
+              "size": 5525,
+              "depth": "18079",
+              "price": "62828.0"
+            }
+          ],
+          "sell": [
+            {
+              "size": 12513,
+              "depth": "12513",
+              "price": "62831.0"
+            },
+            {
+              "size": 16019,
+              "depth": "28532",
+              "price": "62831.5"
+            },
+            {
+              "size": 20508,
+              "depth": "4.904E+4",
+              "price": "62832.0"
+            },
+            {
+              "size": 26254,
+              "depth": "75294",
+              "price": "62832.5"
+            },
+            {
+              "size": 33611,
+              "depth": "108905",
+              "price": "62833.0"
+            }
+          ],
+          "last_updated_at": 1795054349689000
+        }
+      },
+      "candle_baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "depth_fallback": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "realized_net_usd": "-0.45936019"
+    }
+  ]
+}

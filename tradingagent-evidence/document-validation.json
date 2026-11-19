@@ -1,0 +1,23 @@
+{
+  "status": "verified within documented source-analysis scope",
+  "source_commit": "9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+  "document": "E:\\coding\\code\\Trade\\tradingagent.md",
+  "bytes": 102291,
+  "words": 6625,
+  "source_refs": 262,
+  "source_reference_errors": [],
+  "missing_local_evidence": [],
+  "source_file_inventory_matches": true,
+  "all_tracked_files_in_document": true,
+  "all_default_keys_documented": true,
+  "all_env_overrides_documented": true,
+  "source_diff": "",
+  "template_tokens": [],
+  "balanced_fences": true,
+  "selected_test_exit": 0,
+  "selected_test_source_hash_errors": [],
+  "selected_test_pass_log": true,
+  "metadata_matches_source": true,
+  "runtime_exclusions": "Full graph/model/vendor integrations, builds, account auth and broker execution not run; absent dependencies explicitly documented.",
+  "sha256": "af389984999d136028ddb6d44ea93a9f281c990a3f4b9c4546b65331b928759d"
+}

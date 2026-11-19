@@ -1,0 +1,191 @@
+{
+  "defaults": [
+    {
+      "key": "results_dir",
+      "expression": "os.getenv('TRADINGAGENTS_RESULTS_DIR') or os.path.join(_TRADINGAGENTS_HOME, 'logs')",
+      "line": 84
+    },
+    {
+      "key": "data_cache_dir",
+      "expression": "os.getenv('TRADINGAGENTS_CACHE_DIR') or os.path.join(_TRADINGAGENTS_HOME, 'cache')",
+      "line": 85
+    },
+    {
+      "key": "memory_log_path",
+      "expression": "os.getenv('TRADINGAGENTS_MEMORY_LOG_PATH') or os.path.join(_TRADINGAGENTS_HOME, 'memory', 'trading_memory.md')",
+      "line": 86
+    },
+    {
+      "key": "memory_log_max_entries",
+      "expression": "None",
+      "line": 90
+    },
+    {
+      "key": "llm_provider",
+      "expression": "'openai'",
+      "line": 92
+    },
+    {
+      "key": "deep_think_llm",
+      "expression": "'gpt-6-sol'",
+      "line": 93
+    },
+    {
+      "key": "quick_think_llm",
+      "expression": "'gpt-6-luna'",
+      "line": 94
+    },
+    {
+      "key": "backend_url",
+      "expression": "None",
+      "line": 100
+    },
+    {
+      "key": "quick_think_provider",
+      "expression": "None",
+      "line": 104
+    },
+    {
+      "key": "deep_think_provider",
+      "expression": "None",
+      "line": 105
+    },
+    {
+      "key": "quick_think_backend_url",
+      "expression": "None",
+      "line": 106
+    },
+    {
+      "key": "deep_think_backend_url",
+      "expression": "None",
+      "line": 107
+    },
+    {
+      "key": "google_thinking_level",
+      "expression": "None",
+      "line": 109
+    },
+    {
+      "key": "openai_reasoning_effort",
+      "expression": "None",
+      "line": 110
+    },
+    {
+      "key": "anthropic_effort",
+      "expression": "None",
+      "line": 111
+    },
+    {
+      "key": "temperature",
+      "expression": "None",
+      "line": 116
+    },
+    {
+      "key": "llm_max_retries",
+      "expression": "None",
+      "line": 120
+    },
+    {
+      "key": "max_tokens",
+      "expression": "None",
+      "line": 125
+    },
+    {
+      "key": "checkpoint_enabled",
+      "expression": "False",
+      "line": 128
+    },
+    {
+      "key": "output_language",
+      "expression": "'English'",
+      "line": 131
+    },
+    {
+      "key": "max_debate_rounds",
+      "expression": "1",
+      "line": 133
+    },
+    {
+      "key": "max_risk_discuss_rounds",
+      "expression": "1",
+      "line": 134
+    },
+    {
+      "key": "max_recur_limit",
+      "expression": "100",
+      "line": 135
+    },
+    {
+      "key": "max_tool_rounds",
+      "expression": "20",
+      "line": 137
+    },
+    {
+      "key": "news_article_limit",
+      "expression": "20",
+      "line": 141
+    },
+    {
+      "key": "global_news_article_limit",
+      "expression": "10",
+      "line": 142
+    },
+    {
+      "key": "global_news_lookback_days",
+      "expression": "7",
+      "line": 143
+    },
+    {
+      "key": "global_news_queries",
+      "expression": "['Federal Reserve interest rates inflation', 'S&P 500 earnings GDP economic outlook', 'geopolitical risk trade war sanctions', 'ECB Bank of England BOJ central bank policy', 'oil commodities supply chain energy']",
+      "line": 146
+    },
+    {
+      "key": "data_vendors",
+      "expression": "{'core_stock_apis': 'yfinance', 'technical_indicators': 'yfinance', 'fundamental_data': 'sec_edgar,yfinance', 'news_data': 'yfinance', 'macro_data': 'fred', 'prediction_markets': 'polymarket'}",
+      "line": 158
+    },
+    {
+      "key": "tool_vendors",
+      "expression": "{}",
+      "line": 169
+    },
+    {
+      "key": "holding_period_days",
+      "expression": "5",
+      "line": 180
+    },
+    {
+      "key": "benchmark_ticker",
+      "expression": "None",
+      "line": 181
+    },
+    {
+      "key": "benchmark_map",
+      "expression": "{'.NS': '^NSEI', '.BO': '^BSESN', '.T': '^N225', '.TW': '^TWII', '.TWO': '^TWII', '.KS': '^KS11', '.KQ': '^KQ11', '.HK': '^HSI', '.SI': '^STI', '.L': '^FTSE', '.DE': '^GDAXI', '.PA': '^FCHI', '.AS': '^AEX', '.SW': '^SSMI', '.MI': 'FTSEMIB.MI', '.TO': '^GSPTSE', '.AX': '^AXJO', '.SS': '000001.SS', '.SZ': '399001.SZ', '.SA': '^BVSP', '': 'SPY'}",
+      "line": 182
+    }
+  ],
+  "env_mapping": {
+    "TRADINGAGENTS_LLM_PROVIDER": "llm_provider",
+    "TRADINGAGENTS_DEEP_THINK_LLM": "deep_think_llm",
+    "TRADINGAGENTS_QUICK_THINK_LLM": "quick_think_llm",
+    "TRADINGAGENTS_DEEP_THINK_PROVIDER": "deep_think_provider",
+    "TRADINGAGENTS_QUICK_THINK_PROVIDER": "quick_think_provider",
+    "TRADINGAGENTS_DEEP_THINK_BACKEND_URL": "deep_think_backend_url",
+    "TRADINGAGENTS_QUICK_THINK_BACKEND_URL": "quick_think_backend_url",
+    "TRADINGAGENTS_LLM_BACKEND_URL": "backend_url",
+    "TRADINGAGENTS_OUTPUT_LANGUAGE": "output_language",
+    "TRADINGAGENTS_MAX_DEBATE_ROUNDS": "max_debate_rounds",
+    "TRADINGAGENTS_MAX_RISK_ROUNDS": "max_risk_discuss_rounds",
+    "TRADINGAGENTS_MAX_TOOL_ROUNDS": "max_tool_rounds",
+    "TRADINGAGENTS_CHECKPOINT_ENABLED": "checkpoint_enabled",
+    "TRADINGAGENTS_BENCHMARK_TICKER": "benchmark_ticker",
+    "TRADINGAGENTS_TEMPERATURE": "temperature",
+    "TRADINGAGENTS_LLM_MAX_RETRIES": "llm_max_retries",
+    "TRADINGAGENTS_MAX_TOKENS": "max_tokens",
+    "TRADINGAGENTS_GOOGLE_THINKING_LEVEL": "google_thinking_level",
+    "TRADINGAGENTS_OPENAI_REASONING_EFFORT": "openai_reasoning_effort",
+    "TRADINGAGENTS_ANTHROPIC_EFFORT": "anthropic_effort"
+  }
+}

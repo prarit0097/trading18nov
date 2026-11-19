@@ -1,0 +1,1983 @@
+[
+  {
+    "path": "cli/pyproject.toml",
+    "project": {
+      "name": "openbb-cli",
+      "version": "2.0.1",
+      "description": "Investment Research for Everyone, Anywhere.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.1",
+        "prompt-toolkit>=3.0.50,<4.0.0",
+        "rich>=14.0.0,<15.0.0",
+        "python-dotenv>=1.0.1,<2.0.0",
+        "openpyxl>=3.1.5,<4.0.0",
+        "httpx>=0.28.0,<1.0.0",
+        "pyyaml>=6.0"
+      ],
+      "optional-dependencies": {
+        "charting": [
+          "openbb-charting>=4.0.0"
+        ],
+        "interactive": [
+          "pywry>=2.0.6"
+        ],
+        "all": [
+          "openbb-charting>=4.0.0",
+          "pywry>=2.0.6"
+        ]
+      },
+      "scripts": {
+        "openbb": "openbb_cli.cli:main"
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB",
+        "Documentation": "https://docs.openbb.co/cli"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {}
+  },
+  {
+    "path": "cookiecutter/pyproject.toml",
+    "project": {
+      "name": "openbb-cookiecutter",
+      "version": "1.0.0",
+      "description": "Extensions template for the OpenBB Python Package.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "cookiecutter>=2.6.0",
+        "rich>=13.0.0"
+      ],
+      "scripts": {
+        "openbb-cookiecutter": "openbb_cookiecutter.cli:main"
+      },
+      "entry-points": {
+        "cookiecutter.templates": {
+          "openbb": "openbb_cookiecutter"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "cookiecutter.templates": {
+        "openbb": "openbb_cookiecutter"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/core/pyproject.toml",
+    "project": {
+      "name": "openbb-core",
+      "version": "2.0.1",
+      "description": "OpenBB package with core functionality.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "uvicorn>=0.48.0",
+        "websockets>=15.0",
+        "fastapi>=0.137.2",
+        "uuid7>=0.1.0",
+        "python-multipart>=0.0.29",
+        "pydantic>=2.12.3,<3.0.0",
+        "requests>=2.34.2",
+        "importlib-metadata>=6.8.0",
+        "python-dotenv>=1.0.0",
+        "aiohttp>=3.14.2",
+        "ruff>=0.15",
+        "pyjwt>=2.13.0"
+      ],
+      "optional-dependencies": {
+        "pandas": [
+          "pandas>=1.5.3"
+        ],
+        "flask": [
+          "flask>=3.1.2",
+          "a2wsgi>=1.10.10"
+        ]
+      },
+      "scripts": {
+        "openbb-build": "openbb_core.build:main"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {}
+  },
+  {
+    "path": "openbb_platform/extensions/commodity/pyproject.toml",
+    "project": {
+      "name": "openbb-commodity",
+      "version": "2.0.0",
+      "description": "Commodity extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "commodity": "openbb_commodity.commodity_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "commodity": "openbb_commodity.commodity_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/crypto/pyproject.toml",
+    "project": {
+      "name": "openbb-crypto",
+      "version": "2.0.0",
+      "description": "Crypto extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "crypto": "openbb_crypto.crypto_router:router"
+        },
+        "openbb_charting_extension": {
+          "crypto": "openbb_crypto.crypto_views:CryptoViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "crypto": "openbb_crypto.crypto_router:router"
+      },
+      "openbb_charting_extension": {
+        "crypto": "openbb_crypto.crypto_views:CryptoViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/currency/pyproject.toml",
+    "project": {
+      "name": "openbb-currency",
+      "version": "2.0.0",
+      "description": "Currency extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "currency": "openbb_currency.currency_router:router"
+        },
+        "openbb_charting_extension": {
+          "currency": "openbb_currency.currency_views:CurrencyViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "currency": "openbb_currency.currency_router:router"
+      },
+      "openbb_charting_extension": {
+        "currency": "openbb_currency.currency_views:CurrencyViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/derivatives/pyproject.toml",
+    "project": {
+      "name": "openbb-derivatives",
+      "version": "2.0.0",
+      "description": "Derivatives extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "derivatives": "openbb_derivatives.derivatives_router:router"
+        },
+        "openbb_charting_extension": {
+          "derivatives": "openbb_derivatives.derivatives_views:DerivativesViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "derivatives": "openbb_derivatives.derivatives_router:router"
+      },
+      "openbb_charting_extension": {
+        "derivatives": "openbb_derivatives.derivatives_views:DerivativesViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/devtools/pyproject.toml",
+    "project": {
+      "name": "openbb-devtools",
+      "version": "2.0.1",
+      "description": "Tools for OpenBB Platform Developers",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "ruff>=0.15",
+        "ty>=0.0.40",
+        "httpx2>=2.0.0",
+        "pydocstyle>=6.3.0,<7.0.0",
+        "codespell>=2.2.5,<3.0.0",
+        "pre-commit>=3.5.0,<4.0.0",
+        "tox>=4.11.3,<5.0.0",
+        "pytest>=9.0.3",
+        "pytest-subtests>=0.11.0,<1.0.0",
+        "pytest-recorder>=1.0.0",
+        "pytest-asyncio>=1.3.0,<2.0.0",
+        "pytest-order>=1.3.0,<2.0.0",
+        "pytest-cov>=4.1.0,<5.0.0",
+        "pytest-freezer>=0.4.9,<1.0.0",
+        "ipykernel>=6.30.1",
+        "types-python-dateutil>=2.8.19.14,<3.0.0",
+        "types-requests>=2.32,<3.0.0",
+        "types-toml>=0.10.8.7,<1.0.0"
+      ]
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {}
+  },
+  {
+    "path": "openbb_platform/extensions/econometrics/pyproject.toml",
+    "project": {
+      "name": "openbb-econometrics",
+      "version": "2.0.0",
+      "description": "Econometrics Toolkit for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "statsmodels>=0.15",
+        "linearmodels>=6",
+        "scipy>=1.11",
+        "arch>=7.2"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "econometrics": "openbb_econometrics.router:router"
+        },
+        "openbb_charting_extension": {
+          "econometrics": "openbb_econometrics.econometrics_views:EconometricsViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "econometrics": "openbb_econometrics.router:router"
+      },
+      "openbb_charting_extension": {
+        "econometrics": "openbb_econometrics.econometrics_views:EconometricsViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/economy/pyproject.toml",
+    "project": {
+      "name": "openbb-economy",
+      "version": "2.0.0",
+      "description": "Economy extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "economy": "openbb_economy.economy_router:router"
+        },
+        "openbb_charting_extension": {
+          "economy": "openbb_economy.economy_views:EconomyViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "economy": "openbb_economy.economy_router:router"
+      },
+      "openbb_charting_extension": {
+        "economy": "openbb_economy.economy_views:EconomyViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/equity/pyproject.toml",
+    "project": {
+      "name": "openbb-equity",
+      "version": "2.0.0",
+      "description": "Equity extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "equity": "openbb_equity.equity_router:router"
+        },
+        "openbb_charting_extension": {
+          "equity": "openbb_equity.equity_views:EquityViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "equity": "openbb_equity.equity_router:router"
+      },
+      "openbb_charting_extension": {
+        "equity": "openbb_equity.equity_views:EquityViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/etf/pyproject.toml",
+    "project": {
+      "name": "openbb-etf",
+      "version": "2.0.0",
+      "description": "ETF extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "etf": "openbb_etf.etf_router:router"
+        },
+        "openbb_charting_extension": {
+          "etf": "openbb_etf.etf_views:EtfViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "etf": "openbb_etf.etf_router:router"
+      },
+      "openbb_charting_extension": {
+        "etf": "openbb_etf.etf_views:EtfViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/fixedincome/pyproject.toml",
+    "project": {
+      "name": "openbb-fixedincome",
+      "version": "2.0.0",
+      "description": "Fixed income extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "fixedincome": "openbb_fixedincome.fixedincome_router:router"
+        },
+        "openbb_charting_extension": {
+          "fixedincome": "openbb_fixedincome.fixedincome_views:FixedIncomeViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "fixedincome": "openbb_fixedincome.fixedincome_router:router"
+      },
+      "openbb_charting_extension": {
+        "fixedincome": "openbb_fixedincome.fixedincome_views:FixedIncomeViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/index/pyproject.toml",
+    "project": {
+      "name": "openbb-index",
+      "version": "2.0.0",
+      "description": "Index extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "index": "openbb_index.index_router:router"
+        },
+        "openbb_charting_extension": {
+          "index": "openbb_index.index_views:IndexViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "index": "openbb_index.index_router:router"
+      },
+      "openbb_charting_extension": {
+        "index": "openbb_index.index_views:IndexViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/mcp_server/pyproject.toml",
+    "project": {
+      "name": "openbb-mcp-server",
+      "version": "2.0.1",
+      "description": "OpenBB Platform MCP Server: Model-Context-Protocol bridge for the Open Data Platform by OpenBB.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.1",
+        "fastapi>=0.138.2",
+        "fastmcp>=4.0.9"
+      ],
+      "optional-dependencies": {
+        "cli": [
+          "openbb-cli>=2.0.1"
+        ]
+      },
+      "scripts": {
+        "openbb-mcp": "openbb_mcp_server.main:main"
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB",
+        "Documentation": "https://docs.openbb.co/odp/python/extensions/interface/openbb-mcp"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {}
+  },
+  {
+    "path": "openbb_platform/extensions/news/pyproject.toml",
+    "project": {
+      "name": "openbb-news",
+      "version": "2.0.0",
+      "description": "RSS news feeds extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "feedparser>=6.0",
+        "lxml>=5.0"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "news": "openbb_news.router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "news": "openbb_news.router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/platform_api/pyproject.toml",
+    "project": {
+      "name": "openbb-platform-api",
+      "version": "2.0.1",
+      "description": "OpenBB Platform API: launcher and widgets builder for the Open Data Platform REST API and OpenBB Workspace custom-backend connector.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core>=2.0.1",
+        "deepdiff>=8.6.2"
+      ],
+      "scripts": {
+        "openbb-api": "openbb_platform_api.main:main"
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB",
+        "Documentation": "https://docs.openbb.co/odp/python/extensions/interface/openbb-api"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {}
+  },
+  {
+    "path": "openbb_platform/extensions/quantitative/pyproject.toml",
+    "project": {
+      "name": "openbb-quantitative",
+      "version": "2.0.0",
+      "description": "Quantitative analysis extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "numpy>=1.24",
+        "scipy>=1.11",
+        "statsmodels>=0.15"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "quantitative": "openbb_quantitative.router:router"
+        },
+        "openbb_charting_extension": {
+          "quantitative": "openbb_quantitative.quantitative_views:QuantitativeViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "quantitative": "openbb_quantitative.router:router"
+      },
+      "openbb_charting_extension": {
+        "quantitative": "openbb_quantitative.quantitative_views:QuantitativeViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/extensions/technical/pyproject.toml",
+    "project": {
+      "name": "openbb-technical",
+      "version": "2.0.1",
+      "description": "Technical Analysis extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "pandas-ta-openbb>=0.4.25",
+        "scipy>=1.11",
+        "statsmodels>=0.15"
+      ],
+      "entry-points": {
+        "openbb_core_extension": {
+          "technical": "openbb_technical.router:router"
+        },
+        "openbb_charting_extension": {
+          "technical": "openbb_technical.technical_views:TechnicalViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_core_extension": {
+        "technical": "openbb_technical.router:router"
+      },
+      "openbb_charting_extension": {
+        "technical": "openbb_technical.technical_views:TechnicalViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/obbject_extensions/charting/pyproject.toml",
+    "project": {
+      "name": "openbb-charting",
+      "version": "4.0.0",
+      "description": "Charting extension for OpenBB",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "pandas-ta-openbb>=0.4.25",
+        "plotly>=6.3.1",
+        "statsmodels>=0.15"
+      ],
+      "optional-dependencies": {
+        "pywry": [
+          "pywry>=2.0.4"
+        ]
+      },
+      "entry-points": {
+        "openbb_obbject_extension": {
+          "openbb_charting": "openbb_charting:ext"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_obbject_extension": {
+        "openbb_charting": "openbb_charting:ext"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/bls/pyproject.toml",
+    "project": {
+      "name": "openbb-bls",
+      "version": "2.0.0",
+      "description": "BLS provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "requests>=2.31",
+        "beautifulsoup4>=4.12",
+        "lxml>=5",
+        "openpyxl>=3.1"
+      ],
+      "scripts": {
+        "generate-bls-cache": "openbb_bls.utils.generate_cache:main"
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "bls": "openbb_bls:bls_provider"
+        },
+        "openbb_core_extension": {
+          "bls": "openbb_bls.bls_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25",
+        "requests>=2.31"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "bls": "openbb_bls:bls_provider"
+      },
+      "openbb_core_extension": {
+        "bls": "openbb_bls.bls_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/cboe/pyproject.toml",
+    "project": {
+      "name": "openbb-cboe",
+      "version": "2.0.0",
+      "description": "Cboe provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "aiohttp-client-cache>=0.11",
+        "aiosqlite>=0.20"
+      ],
+      "optional-dependencies": {
+        "charting": [
+          "openbb-charting>=4.0.0"
+        ]
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "cboe": "openbb_cboe:cboe_provider"
+        },
+        "openbb_core_extension": {
+          "cboe": "openbb_cboe.cboe_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "cboe": "openbb_cboe:cboe_provider"
+      },
+      "openbb_core_extension": {
+        "cboe": "openbb_cboe.cboe_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/cftc/pyproject.toml",
+    "project": {
+      "name": "openbb-cftc",
+      "version": "2.0.0",
+      "description": "CFTC and DTCC Public Price Dissemination data integration for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "xlrd>=2.0.1",
+        "openpyxl>=3.1",
+        "diskcache>=5.6",
+        "pyarrow>=17"
+      ],
+      "entry-points": {
+        "openbb_provider_extension": {
+          "cftc": "openbb_cftc:cftc_provider"
+        },
+        "openbb_core_extension": {
+          "cftc": "openbb_cftc.cftc_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "cftc": "openbb_cftc:cftc_provider"
+      },
+      "openbb_core_extension": {
+        "cftc": "openbb_cftc.cftc_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/deribit/pyproject.toml",
+    "project": {
+      "name": "openbb-deribit",
+      "version": "2.0.0",
+      "description": "Deribit provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "aiohttp-client-cache>=0.11",
+        "aiosqlite>=0.20"
+      ],
+      "entry-points": {
+        "openbb_provider_extension": {
+          "deribit": "openbb_deribit:deribit_provider"
+        },
+        "openbb_core_extension": {
+          "deribit": "openbb_deribit.deribit_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "deribit": "openbb_deribit:deribit_provider"
+      },
+      "openbb_core_extension": {
+        "deribit": "openbb_deribit.deribit_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/ecb/pyproject.toml",
+    "project": {
+      "name": "openbb-ecb",
+      "version": "2.0.0",
+      "description": "ECB provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "requests>=2.31",
+        "xmltodict>=0.13",
+        "defusedxml>=0.7.1",
+        "diskcache>=5",
+        "beautifulsoup4>=4.12",
+        "markdownify>=0.11"
+      ],
+      "scripts": {
+        "generate-ecb-cache": "openbb_ecb.utils.generate_cache:main"
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "ecb": "openbb_ecb:ecb_provider"
+        },
+        "openbb_core_extension": {
+          "ecb": "openbb_ecb.ecb_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25",
+        "requests>=2.31"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "ecb": "openbb_ecb:ecb_provider"
+      },
+      "openbb_core_extension": {
+        "ecb": "openbb_ecb.ecb_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/eia/pyproject.toml",
+    "project": {
+      "name": "openbb-us-eia",
+      "version": "2.0.0",
+      "description": "U.S. Energy Information Administration (EIA) provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "async-lru>=2",
+        "curl-cffi>=0.7",
+        "fastmcp>=2.0",
+        "feedparser>=6.0",
+        "openpyxl>=3.1.5",
+        "python-calamine>=0.9.0"
+      ],
+      "scripts": {
+        "generate-eia-catalog": "openbb_us_eia.utils.generate_catalog:main"
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "us_eia": "openbb_us_eia:eia_provider"
+        },
+        "openbb_core_extension": {
+          "eia": "openbb_us_eia.eia_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25",
+        "requests>=2.31"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "us_eia": "openbb_us_eia:eia_provider"
+      },
+      "openbb_core_extension": {
+        "eia": "openbb_us_eia.eia_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/famafrench/pyproject.toml",
+    "project": {
+      "name": "openbb-famafrench",
+      "version": "2.0.0",
+      "description": "Fama-French data integration for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0"
+      ],
+      "entry-points": {
+        "openbb_provider_extension": {
+          "famafrench": "openbb_famafrench:famafrench_provider"
+        },
+        "openbb_core_extension": {
+          "famafrench": "openbb_famafrench.famafrench_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "famafrench": "openbb_famafrench:famafrench_provider"
+      },
+      "openbb_core_extension": {
+        "famafrench": "openbb_famafrench.famafrench_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/federal_reserve/pyproject.toml",
+    "project": {
+      "name": "openbb-federal-reserve",
+      "version": "2.0.0",
+      "description": "US Federal Reserve provider extension for OpenBB. Data, documents, indicators, and research from the Federal Reserve System, FOMC, FRB, and twelve regional districts.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "openbb-platform-api>=2.0.0",
+        "openpyxl>=3.1.5",
+        "beautifulsoup4>=4.13",
+        "diskcache>=5.6",
+        "defusedxml>=0.7",
+        "curl-cffi>=0.7",
+        "pdfplumber>=0.11"
+      ],
+      "entry-points": {
+        "openbb_provider_extension": {
+          "federal_reserve": "openbb_federal_reserve:federal_reserve_provider"
+        },
+        "openbb_core_extension": {
+          "federal_reserve": "openbb_federal_reserve.federal_reserve_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "federal_reserve": "openbb_federal_reserve:federal_reserve_provider"
+      },
+      "openbb_core_extension": {
+        "federal_reserve": "openbb_federal_reserve.federal_reserve_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/finra/pyproject.toml",
+    "project": {
+      "name": "openbb-finra",
+      "version": "2.0.0",
+      "description": "FINRA provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0"
+      ],
+      "scripts": {
+        "generate-finra-security-types": "openbb_finra.utils.generate_securities:main"
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "finra": "openbb_finra:finra_provider"
+        },
+        "openbb_core_extension": {
+          "finra": "openbb_finra.finra_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "finra": "openbb_finra:finra_provider"
+      },
+      "openbb_core_extension": {
+        "finra": "openbb_finra.finra_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/fred/pyproject.toml",
+    "project": {
+      "name": "openbb-fred",
+      "version": "2.0.0",
+      "description": "FRED provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "diskcache>=5.6",
+        "lxml>=5.3.0"
+      ],
+      "scripts": {
+        "generate-fred-release-map": "openbb_fred.utils.generate_release_map:main"
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "fred": "openbb_fred:fred_provider"
+        },
+        "openbb_core_extension": {
+          "fred": "openbb_fred.fred_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "fred": "openbb_fred:fred_provider"
+      },
+      "openbb_core_extension": {
+        "fred": "openbb_fred.fred_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/government_us/pyproject.toml",
+    "project": {
+      "name": "openbb-government-us",
+      "version": "2.0.0",
+      "description": "US Government data extensions for OpenBB Platform, one provider per agency.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "curl-cffi>=0.7",
+        "defusedxml>=0.7",
+        "diskcache>=5",
+        "httpx>=0.27",
+        "random-user-agent>=1.0",
+        "openpyxl>=3.1.5,<4.0.0",
+        "xlrd>=2.0.2"
+      ],
+      "entry-points": {
+        "openbb_provider_extension": {
+          "congress_gov": "openbb_government_us.congress:congress_gov_provider",
+          "us_treasury": "openbb_government_us.treasury:us_treasury_provider",
+          "usda": "openbb_government_us.usda:usda_provider"
+        },
+        "openbb_core_extension": {
+          "uscongress": "openbb_government_us.congress.congress_router:router",
+          "usda": "openbb_government_us.usda.usda_router:router",
+          "ustreasury": "openbb_government_us.treasury.treasury_router:router"
+        }
+      },
+      "scripts": {
+        "generate-usda-ers-catalog": "openbb_government_us.usda.utils.ers_catalog:main"
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "congress_gov": "openbb_government_us.congress:congress_gov_provider",
+        "us_treasury": "openbb_government_us.treasury:us_treasury_provider",
+        "usda": "openbb_government_us.usda:usda_provider"
+      },
+      "openbb_core_extension": {
+        "uscongress": "openbb_government_us.congress.congress_router:router",
+        "usda": "openbb_government_us.usda.usda_router:router",
+        "ustreasury": "openbb_government_us.treasury.treasury_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/imf/pyproject.toml",
+    "project": {
+      "name": "openbb-imf",
+      "version": "3.0.0",
+      "description": "IMF provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "requests>=2.31",
+        "async-lru>=2",
+        "defusedxml>=0.7.1"
+      ],
+      "optional-dependencies": {
+        "charting": [
+          "openbb-charting>=4.0.0"
+        ]
+      },
+      "scripts": {
+        "generate-imf-cache": "openbb_imf.utils.generate_cache:main"
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "imf": "openbb_imf:imf_provider"
+        },
+        "openbb_core_extension": {
+          "imf": "openbb_imf.imf_router:router"
+        },
+        "openbb_charting_extension": {
+          "imf": "openbb_imf.imf_views:ImfViews"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25",
+        "requests>=2.31"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "imf": "openbb_imf:imf_provider"
+      },
+      "openbb_core_extension": {
+        "imf": "openbb_imf.imf_router:router"
+      },
+      "openbb_charting_extension": {
+        "imf": "openbb_imf.imf_views:ImfViews"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/jodi/pyproject.toml",
+    "project": {
+      "name": "openbb-jodi",
+      "version": "2.0.0",
+      "description": "Joint Organisations Data Initiative (JODI) data integration for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "pyarrow>=17.0.0"
+      ],
+      "entry-points": {
+        "openbb_provider_extension": {
+          "jodi": "openbb_jodi:jodi_provider"
+        },
+        "openbb_core_extension": {
+          "jodi": "openbb_jodi.jodi_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "jodi": "openbb_jodi:jodi_provider"
+      },
+      "openbb_core_extension": {
+        "jodi": "openbb_jodi.jodi_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/nasdaq/pyproject.toml",
+    "project": {
+      "name": "openbb-nasdaq",
+      "version": "2.0.0",
+      "description": "Nasdaq provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "aiohttp-client-cache>=0.11",
+        "aiosqlite>=0.20",
+        "async-lru>=2.0.5",
+        "random-user-agent>=1.0.1",
+        "python-dateutil>=2.8",
+        "pdfplumber>=0.11"
+      ],
+      "entry-points": {
+        "openbb_provider_extension": {
+          "nasdaq": "openbb_nasdaq:nasdaq_provider"
+        },
+        "openbb_core_extension": {
+          "nasdaq": "openbb_nasdaq.nasdaq_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "nasdaq": "openbb_nasdaq:nasdaq_provider"
+      },
+      "openbb_core_extension": {
+        "nasdaq": "openbb_nasdaq.nasdaq_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/oecd/pyproject.toml",
+    "project": {
+      "name": "openbb-oecd",
+      "version": "2.0.0",
+      "description": "OECD provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "requests>=2.31"
+      ],
+      "scripts": {
+        "generate-oecd-cache": "openbb_oecd.utils.generate_cache:main"
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "oecd": "openbb_oecd:oecd_provider"
+        },
+        "openbb_core_extension": {
+          "oecd": "openbb_oecd.oecd_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25",
+        "requests>=2.31"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "oecd": "openbb_oecd:oecd_provider"
+      },
+      "openbb_core_extension": {
+        "oecd": "openbb_oecd.oecd_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/sec/pyproject.toml",
+    "project": {
+      "name": "openbb-sec",
+      "version": "2.0.0",
+      "description": "SEC provider extension for OpenBB Platform.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.1",
+        "openbb-platform-api>=2.0.1",
+        "fastmcp>=3.2.0",
+        "diskcache>=5.6.3",
+        "defusedxml>=0.7.1",
+        "xmltodict>=0.13.0",
+        "beautifulsoup4>=4.12",
+        "lxml>=5.2.1"
+      ],
+      "scripts": {
+        "openbb-sec": "openbb_sec.cli:main"
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "sec": "openbb_sec:sec_provider"
+        },
+        "openbb_core_extension": {
+          "sec": "openbb_sec.sec_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "sec": "openbb_sec:sec_provider"
+      },
+      "openbb_core_extension": {
+        "sec": "openbb_sec.sec_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/providers/tmx/pyproject.toml",
+    "project": {
+      "name": "openbb-tmx",
+      "version": "2.0.0",
+      "description": "Unofficial TMX data provider extension for the OpenBB Platform - Public Canadian markets data for Python and Fast API.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[pandas]>=2.0.0",
+        "aiohttp-client-cache>=0.11",
+        "aiosqlite>=0.20",
+        "curl-cffi>=0.7",
+        "diskcache>=5.6",
+        "lxml>=5.0",
+        "pyarrow>=16.0",
+        "tzdata>=2024.1",
+        "random-user-agent>=1.0.1",
+        "exchange-calendars>=4.13.2",
+        "python-dateutil>=2.8",
+        "pdfplumber>=0.11"
+      ],
+      "optional-dependencies": {
+        "charting": [
+          "openbb-charting>=4.0.0"
+        ],
+        "builder": [
+          "pywry>=2.0.6"
+        ],
+        "all": [
+          "openbb-charting>=4.0.0",
+          "pywry>=2.0.6"
+        ]
+      },
+      "entry-points": {
+        "openbb_provider_extension": {
+          "tmx": "openbb_tmx:tmx_provider"
+        },
+        "openbb_core_extension": {
+          "tmx": "openbb_tmx.tmx_router:router"
+        }
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling>=1.25"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {
+      "openbb_provider_extension": {
+        "tmx": "openbb_tmx:tmx_provider"
+      },
+      "openbb_core_extension": {
+        "tmx": "openbb_tmx.tmx_router:router"
+      }
+    }
+  },
+  {
+    "path": "openbb_platform/pyproject.toml",
+    "project": {
+      "name": "openbb",
+      "version": "5.0.0",
+      "description": "Investment research for everyone, anywhere.",
+      "authors": [
+        {
+          "name": "OpenBB Team",
+          "email": "hello@openbb.co"
+        }
+      ],
+      "license": {
+        "text": "Apache-2.0"
+      },
+      "readme": "README.md",
+      "requires-python": ">=3.11,<4",
+      "dependencies": [
+        "openbb-core[flask,pandas]>=2.0.1",
+        "openbb-devtools>=2.0.1",
+        "openbb-mcp-server[cli]>=2.0.1",
+        "openbb-news>=2.0.0",
+        "openbb-platform-api>=2.0.1",
+        "openbb-charting[pywry]>=4.0.0",
+        "openbb-bls>=2.0.0",
+        "openbb-cboe[charting]>=2.0.0",
+        "openbb-cftc>=2.0.0",
+        "openbb-deribit>=2.0.0",
+        "openbb-ecb>=2.0.0",
+        "openbb-us-eia>=2.0.0",
+        "openbb-famafrench>=2.0.0",
+        "openbb-federal-reserve>=2.0.0",
+        "openbb-finra>=2.0.0",
+        "openbb-fred>=2.0.0",
+        "openbb-government-us>=2.0.0",
+        "openbb-imf[charting]>=3.0.0",
+        "openbb-jodi>=2.0.0",
+        "openbb-nasdaq>=2.0.0",
+        "openbb-oecd>=2.0.0",
+        "openbb-sec>=2.0.0",
+        "openbb-tmx[all,builder,charting]>=2.0.0",
+        "openbb-cli[all,charting,interactive]>=2.0.1"
+      ],
+      "optional-dependencies": {
+        "routers": [
+          "openbb-commodity>=2.0.0",
+          "openbb-crypto>=2.0.0",
+          "openbb-currency>=2.0.0",
+          "openbb-derivatives>=2.0.0",
+          "openbb-econometrics>=2.0.0",
+          "openbb-economy>=2.0.0",
+          "openbb-equity>=2.0.0",
+          "openbb-etf>=2.0.0",
+          "openbb-fixedincome>=2.0.0",
+          "openbb-index>=2.0.0",
+          "openbb-quantitative>=2.0.0",
+          "openbb-technical>=2.0.1"
+        ]
+      },
+      "urls": {
+        "Homepage": "https://openbb.co",
+        "Repository": "https://github.com/OpenBB-finance/OpenBB",
+        "Documentation": "https://docs.openbb.co"
+      }
+    },
+    "build_system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "entry_points": {}
+  }
+]

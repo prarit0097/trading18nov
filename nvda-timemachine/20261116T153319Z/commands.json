@@ -1,0 +1,46 @@
+[
+  {
+    "stage": "01-exit",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-exit\\exit.py",
+      "plan",
+      "--from",
+      "trader/entry.json",
+      "--write",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "stage": "02-timemachine",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-timemachine\\timemachine.py",
+      "run",
+      "--plan",
+      "trader/plan.json",
+      "--offline",
+      "E:\\coding\\code\\Trade\\nvda-timemachine\\20261116T153319Z\\NVDA-60d5m.json",
+      "--until",
+      "15:55",
+      "--replays",
+      "10000",
+      "--seed",
+      "19",
+      "--write",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "stage": "03-chart",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-timemachine\\timemachine.py",
+      "chart",
+      "--from"
+    ],
+    "exit_code": 0
+  }
+]

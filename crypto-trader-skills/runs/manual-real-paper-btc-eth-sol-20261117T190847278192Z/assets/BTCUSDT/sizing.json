@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-11-17T19:08:57.065875Z",
+  "data": {
+    "cash_required": "1927.6600947604000000000",
+    "fee": "1.9257343604000000000",
+    "fill_price": "63787.16000000",
+    "notional": "1925.7343604000000000",
+    "quantity": "0.03019000",
+    "reasons": [],
+    "status": "ready",
+    "stop_fill_assumption": "63086.16000000",
+    "worst_case_loss": "24.9934955308000000000"
+  },
+  "digest": "24c8e849863ba6019eb06925a81ffb34d91f5fa0f555acebdc6a6417de023212",
+  "inputs": {
+    "config": "866b8ef2d00f66e71b619f30dc79406777dad61c16950a9f547790f964047500",
+    "market": "6829269ba7a3e9c67421b7921f43efcbafa7517bfd1a76aa00da477a54f7120a",
+    "plan": "238a86ac1d09980cc76ce23118acae44d4f84281356b3b51f2e324164639f8fd",
+    "portfolio": "f49dbb93ddf33bad3cdaf134a9feab82ea833742a38d34da2e66a14cb7ef79dd",
+    "proposal": "053c072c431257c5b4091866a55ad15fcf5d54078bcf967e6905b16090ea67f2"
+  },
+  "kind": "sizing",
+  "schema_version": 1
+}

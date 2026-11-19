@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-11-17T19:12:49.755400Z",
+  "mode": "paper_positions_real_public_market_quotes",
+  "source": "https://data-api.binance.vision/api/v3/ticker/bookTicker",
+  "ledger_digest": "175bf23b9fb69afa644dbcb4312b7dba54d00edd77f220ca609437ae6b1edc54",
+  "cash": "5996.0704159456000000000",
+  "positions": [
+    {
+      "symbol": "BTCUSDT",
+      "observed_at": "2026-11-17T19:12:47.501421Z",
+      "quantity": "0.03019000",
+      "entry": "63787.16000000",
+      "bid": "63827.87000000",
+      "ask": "63827.88000000",
+      "hypothetical_exit_fill": "63795.95000000",
+      "net_liquidation_value": "1924.0737307695000000000",
+      "unrealized_net_pnl": "-3.5863639909000000000",
+      "stop": "63117.72000000",
+      "target": "65030.40000000",
+      "current_quote_below_stop": false,
+      "current_quote_above_target": false
+    },
+    {
+      "symbol": "ETHUSDT",
+      "observed_at": "2026-11-17T19:12:48.627369Z",
+      "quantity": "1.07410000",
+      "entry": "1791.94000000",
+      "bid": "1792.51000000",
+      "ask": "1792.52000000",
+      "hypothetical_exit_fill": "1791.61000000",
+      "net_liquidation_value": "1922.4439326990000000000",
+      "unrealized_net_pnl": "-4.2035440550000000000",
+      "stop": "1773.12000000",
+      "target": "1826.88000000",
+      "current_quote_below_stop": false,
+      "current_quote_above_target": false
+    },
+    {
+      "symbol": "SOLUSDT",
+      "observed_at": "2026-11-17T19:12:49.753503Z",
+      "quantity": "2.05800000",
+      "entry": "72.63000000",
+      "bid": "72.63000000",
+      "ask": "72.64000000",
+      "hypothetical_exit_fill": "72.59000000",
+      "net_liquidation_value": "149.2408297800000000000",
+      "unrealized_net_pnl": "-0.3811827600000000000",
+      "stop": "71.86000000",
+      "target": "74.05000000",
+      "current_quote_below_stop": false,
+      "current_quote_above_target": false
+    }
+  ],
+  "total_unrealized_net_pnl": "-8.1710908059000000000",
+  "net_liquidation_equity": "9991.8289091941000000000",
+  "cost_model": "Recorded assumed fees and adverse slippage; not actual venue fills or verified fee tier",
+  "new_orders": 0,
+  "live_orders": 0,
+  "automatic_exit_watcher": false,
+  "note": "Current quotes only; no claim that recorded stops/targets were watched between observations."
+}

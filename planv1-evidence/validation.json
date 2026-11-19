@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-17T10:34:44.739579+00:00",
+  "file": "E:\\coding\\code\\Trade\\planv1.md",
+  "sha256": "27c452730576812b4b0903317609d82e88c554981dd995e5f1fddf3be1b9a0d0",
+  "words": 11636,
+  "requirements_covered": 8,
+  "proposed_tasks": 8,
+  "pinned_source_links_checked": 28,
+  "local_links_checked": 16,
+  "unique_link_targets": 85,
+  "decimal_checks": {
+    "quantity": "0.01470",
+    "modeled_loss": "24.99000",
+    "modeled_win": "55.86000",
+    "break_even_pct": "30.90909090909090909090909091",
+    "github_requests_per_hour": 36
+  },
+  "spot_perpetual_comparison": {
+    "scope": "user confirmed both; paper only",
+    "notional": "1000.00",
+    "gross_one_pct_move": "10.0000",
+    "two_x_simplified_margin": "500.00",
+    "hypothetical_funding": "0.100000"
+  },
+  "recheck_regressions": {
+    "flat_net_expectancy": "9.8490",
+    "latency_budget": "p95<=250ms,p99<=2s;unmeasured",
+    "dual_product_capture": true,
+    "short_sizing": true,
+    "patch_marker_scan": true
+  },
+  "repo_checks": [
+    {
+      "repo": "day-trader-skill",
+      "head": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+      "tracked_diff_empty": true
+    },
+    {
+      "repo": "OpenBB",
+      "head": "e43353a82815ff9ba56ad1b7ad47c32729dcf314",
+      "tracked_diff_empty": true
+    },
+    {
+      "repo": "TradingAgents",
+      "head": "9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+      "tracked_diff_empty": true
+    },
+    {
+      "repo": "MiroFish",
+      "head": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "tracked_diff_empty": true
+    },
+    {
+      "repo": "paperclip",
+      "head": "9de343b3fe2e2d4dc84fc8386d9ce04d553f39d6",
+      "tracked_diff_empty": true
+    }
+  ],
+  "errors": [],
+  "limits": "Document consistency/arithmetic/source ranges and independent review only; no new crypto system execution, performance benchmark, or profit estimate validated."
+}

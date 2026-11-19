@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "kind": "proposal",
+  "created_at": "2026-11-17T19:09:06.862845Z",
+  "inputs": {
+    "config": "f34b3bc7e4c574efeb3ec171dd6d25bb591682d04ad776371a0ced4299400287",
+    "market": "c6de963e0a767d168ae2c3cc975b224cef2bbda7b853a60f191159b8d7d7408b"
+  },
+  "data": {
+    "status": "waiting",
+    "side": "long",
+    "reasons": [
+      "No closed-bar breakout with sufficient relative volume"
+    ],
+    "research_only": false,
+    "entry": "1789.93000000",
+    "breakout_level": "1805.60000000",
+    "rvol": "0.4573250072427236589076764221",
+    "signal_time": "2026-11-17T19:05:00Z"
+  },
+  "digest": "400cfa9e45dbeca15fd81c1e2945917d2333412dd14f50844070f97f9478c642"
+}

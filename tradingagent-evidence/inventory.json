@@ -1,0 +1,28 @@
+{
+  "commit": "9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+  "tracked_files": 213,
+  "python_files": 184,
+  "test_files": 88,
+  "declared_test_functions": 1009,
+  "ast_syntax_errors": [],
+  "production_python_lines": 13587,
+  "top_level_counts": {
+    ".dockerignore": 1,
+    ".env.enterprise.example": 1,
+    ".env.example": 1,
+    ".github": 6,
+    ".gitignore": 1,
+    "CHANGELOG.md": 1,
+    "Dockerfile": 1,
+    "LICENSE": 1,
+    "README.md": 1,
+    "assets": 10,
+    "cli": 11,
+    "docker-compose.yml": 1,
+    "main.py": 1,
+    "pyproject.toml": 1,
+    "requirements.txt": 1,
+    "tests": 90,
+    "tradingagents": 84
+  }
+}

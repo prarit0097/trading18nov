@@ -1,0 +1,811 @@
+python trader-alerts/alerts.py --help
+usage: alerts.py [-h] {clock,quote,check,add,list,reset} ...
+
+Price alerts and the NYSE clock (trader-alerts).
+
+positional arguments:
+  {clock,quote,check,add,list,reset}
+    clock               is the NYSE open?
+    quote               latest delayed quotes
+    check               check every rule, ring what hit
+    add                 add a rule
+    list                list the rules
+    reset               re-arm a rule that rang
+
+options:
+  -h, --help            show this help message and exit
+
+
+python trader-alerts/alerts.py clock --help
+usage: alerts.py clock [-h] [--now NOW] [--json]
+
+options:
+  -h, --help  show this help message and exit
+  --now NOW
+  --json
+
+
+python trader-alerts/alerts.py quote --help
+usage: alerts.py quote [-h] [--source {yahoo,stooq}] [--offline DIR]
+                       [--now NOW] [--json] [--holdings]
+                       [--portfolio PORTFOLIO] [--plan PLAN] [--write [PATH]]
+                       [symbols ...]
+
+positional arguments:
+  symbols
+
+options:
+  -h, --help            show this help message and exit
+  --source {yahoo,stooq}
+  --offline DIR         read <source>-<TICKER>.json|csv files, no network
+  --now NOW             pretend it is this time (no offset = New York time)
+  --json
+  --holdings            add tickers from your portfolio and plan
+  --portfolio PORTFOLIO
+  --plan PLAN
+  --write [PATH]        save to prices.json (default trader/prices.json)
+
+
+python trader-alerts/alerts.py check --help
+usage: alerts.py check [-h] [--source {yahoo,stooq}] [--offline DIR]
+                       [--now NOW] [--json] [--rules RULES] [--state STATE]
+                       [--prices-out PRICES_OUT] [--no-write]
+
+options:
+  -h, --help            show this help message and exit
+  --source {yahoo,stooq}
+  --offline DIR         read <source>-<TICKER>.json|csv files, no network
+  --now NOW             pretend it is this time (no offset = New York time)
+  --json
+  --rules RULES
+  --state STATE
+  --prices-out PRICES_OUT
+  --no-write
+
+
+python trader-alerts/alerts.py add --help
+usage: alerts.py add [-h] [--rules RULES] [--state STATE] [--symbol SYMBOL]
+                     [--above ABOVE | --below BELOW | --stop STOP |
+                     --target TARGET | --pct PCT | --opening-bell |
+                     --at HH:MM | --from-plan] [--plan PLAN] [--config CONFIG]
+                     [--label LABEL] [--before-close] [--date DATE]
+                     [--direction {up,down}] [--rearm] [--note NOTE] [--id ID]
+
+options:
+  -h, --help            show this help message and exit
+  --rules RULES
+  --state STATE
+  --symbol SYMBOL
+  --above ABOVE
+  --below BELOW
+  --stop STOP
+  --target TARGET
+  --pct PCT
+  --opening-bell
+  --at HH:MM            a time alert, New York time
+  --from-plan           stop, target and flat-by-close from the plan
+  --plan PLAN
+  --config CONFIG       flat_by when the plan has none
+  --label LABEL         what a time alert says, e.g. "flat by close"
+  --before-close        a time alert that moves 3 hours earlier on a 1:00 p.m.
+                        early close
+  --date DATE           watch this rule on this New York date only (YYYY-MM-
+                        DD)
+  --direction {up,down}
+  --rearm
+  --note NOTE
+  --id ID
+
+
+python trader-alerts/alerts.py list --help
+usage: alerts.py list [-h] [--rules RULES] [--state STATE]
+
+options:
+  -h, --help     show this help message and exit
+  --rules RULES
+  --state STATE
+
+
+python trader-alerts/alerts.py reset --help
+usage: alerts.py reset [-h] [--state STATE] id
+
+positional arguments:
+  id
+
+options:
+  -h, --help     show this help message and exit
+  --state STATE
+
+
+python trader-analyst/facts.py --help
+usage: facts.py [-h] [--cik CIK] [--quarters QUARTERS] [--no-filings]
+                [--metrics FILE] [--user-agent USER_AGENT] [--config CONFIG]
+                [--offline DIR] [--json]
+                [tickers ...]
+
+Earnings reader for trader-analyst. Standard library only.
+
+positional arguments:
+  tickers               tickers, e.g. AAPL KO
+
+options:
+  -h, --help            show this help message and exit
+  --cik CIK             use this CIK instead of a ticker lookup (one company)
+  --quarters QUARTERS
+  --no-filings          skip the 8-K and 10-Q links
+  --metrics FILE        merge a row per ticker into this JSON
+  --user-agent USER_AGENT
+  --config CONFIG
+  --offline DIR
+  --json
+
+
+python trader-broker/ticket.py --help
+usage: ticket.py [-h] {show,approve,decline,result,fill,flatten,log} ...
+
+Order tickets and your yes (trader-broker). Never places orders.
+
+positional arguments:
+  {show,approve,decline,result,fill,flatten,log}
+    show                render the tickets
+    approve             record the user's explicit yes for one order
+    decline             record a no
+    result              record what happened after the Allow once / Deny card
+    fill                record a fill in trader/portfolio.json
+    flatten             a sell ticket that closes a symbol's position by
+                        flat_by
+    log                 today's decisions
+
+options:
+  -h, --help            show this help message and exit
+
+
+python trader-broker/ticket.py show --help
+usage: ticket.py show [-h] [--orders ORDERS] [--config CONFIG] [--risk RISK]
+                      [--state STATE] [--now NOW] [--today TODAY]
+                      [--index INDEX] [--json]
+
+options:
+  -h, --help       show this help message and exit
+  --orders ORDERS
+  --config CONFIG
+  --risk RISK
+  --state STATE
+  --now NOW        pretend it is this New York time, e.g. "2026-10-19 10:15"
+  --today TODAY    YYYY-MM-DD (default: today in New York)
+  --index INDEX
+  --json
+
+
+python trader-broker/ticket.py approve --help
+usage: ticket.py approve [-h] [--orders ORDERS] [--config CONFIG]
+                         [--risk RISK] [--state STATE] [--now NOW]
+                         [--today TODAY] --index INDEX --reply REPLY
+
+options:
+  -h, --help       show this help message and exit
+  --orders ORDERS
+  --config CONFIG
+  --risk RISK
+  --state STATE
+  --now NOW        pretend it is this New York time, e.g. "2026-10-19 10:15"
+  --today TODAY    YYYY-MM-DD (default: today in New York)
+  --index INDEX
+  --reply REPLY    the user's reply, word for word
+
+
+python trader-broker/ticket.py decline --help
+usage: ticket.py decline [-h] [--orders ORDERS] [--config CONFIG]
+                         [--risk RISK] [--state STATE] [--now NOW]
+                         [--today TODAY] --index INDEX [--reply REPLY]
+
+options:
+  -h, --help       show this help message and exit
+  --orders ORDERS
+  --config CONFIG
+  --risk RISK
+  --state STATE
+  --now NOW        pretend it is this New York time, e.g. "2026-10-19 10:15"
+  --today TODAY    YYYY-MM-DD (default: today in New York)
+  --index INDEX
+  --reply REPLY
+
+
+python trader-broker/ticket.py result --help
+usage: ticket.py result [-h] [--orders ORDERS] [--config CONFIG] [--risk RISK]
+                        [--state STATE] [--now NOW] [--today TODAY]
+                        --index INDEX --status {placed,denied,failed}
+                        [--broker-id BROKER_ID] [--note NOTE]
+                        [--filled-qty FILLED_QTY]
+                        [--filled-price FILLED_PRICE] [--portfolio PORTFOLIO]
+
+options:
+  -h, --help            show this help message and exit
+  --orders ORDERS
+  --config CONFIG
+  --risk RISK
+  --state STATE
+  --now NOW             pretend it is this New York time, e.g. "2026-10-19
+                        10:15"
+  --today TODAY         YYYY-MM-DD (default: today in New York)
+  --index INDEX
+  --status {placed,denied,failed}
+  --broker-id BROKER_ID
+  --note NOTE
+  --filled-qty FILLED_QTY
+  --filled-price FILLED_PRICE
+  --portfolio PORTFOLIO
+
+
+python trader-broker/ticket.py fill --help
+usage: ticket.py fill [-h] --symbol SYMBOL --side {buy,sell} --qty QTY
+                      --price PRICE [--date DATE] [--now NOW]
+                      [--portfolio PORTFOLIO] [--config CONFIG]
+                      [--state STATE]
+
+options:
+  -h, --help            show this help message and exit
+  --symbol SYMBOL
+  --side {buy,sell}
+  --qty QTY
+  --price PRICE
+  --date DATE           YYYY-MM-DD (default: today in New York)
+  --now NOW
+  --portfolio PORTFOLIO
+  --config CONFIG
+  --state STATE
+
+
+python trader-broker/ticket.py flatten --help
+usage: ticket.py flatten [-h] --symbol SYMBOL [--qty QTY] [--orders ORDERS]
+                         [--portfolio PORTFOLIO] [--plan PLAN]
+                         [--config CONFIG] [--now NOW] [--today TODAY]
+
+options:
+  -h, --help            show this help message and exit
+  --symbol SYMBOL
+  --qty QTY             shares you hold, from get_open_position (default:
+                        trader/portfolio.json)
+  --orders ORDERS       where the ticket is written
+  --portfolio PORTFOLIO
+  --plan PLAN
+  --config CONFIG
+  --now NOW             pretend it is this New York time, e.g. "2026-10-19
+                        10:15"
+  --today TODAY         YYYY-MM-DD (default: today in New York)
+
+
+python trader-broker/ticket.py log --help
+usage: ticket.py log [-h] [--state STATE] [--now NOW] [--today TODAY] [--all]
+
+options:
+  -h, --help     show this help message and exit
+  --state STATE
+  --now NOW      pretend it is this New York time, e.g. "2026-10-19 10:15"
+  --today TODAY  YYYY-MM-DD (default: today in New York)
+  --all
+
+
+python trader-budget/size.py --help
+usage: size.py [-h] [--plan PLAN] [--config CONFIG] [--budget BUDGET]
+               [--limit [PRICE]] [--prices PRICES] [--portfolio PORTFOLIO]
+               [--now NOW] [--write [PATH]] [--json] [--weights WEIGHTS]
+               [--targets TARGETS] [--top TOP] [--whole-shares] [--cents]
+
+Size a day trade to your budget and max loss (trader-budget).
+
+options:
+  -h, --help            show this help message and exit
+  --plan PLAN           the trade plan (default trader/plan.json)
+  --config CONFIG       rules (default trader/config.json)
+  --budget BUDGET       override the budget in the config
+  --limit [PRICE]       a limit order instead of market, at the plan's entry
+                        or at PRICE
+  --prices PRICES       prices JSON (default trader/prices.json if it exists)
+  --portfolio PORTFOLIO
+                        your account; its cash caps the size if it exists
+  --now NOW             pretend it is this New York time, e.g. "2026-10-19
+                        10:15"
+  --write [PATH]        write the proposed order (default trader/orders.json)
+  --json                print JSON instead of the report
+
+weights mode (split a budget across a list):
+  --weights WEIGHTS     inline weights: AAPL=22.04,AXP=17.14
+  --targets TARGETS     a weights file: {"weights": [{"ticker", "weight"}]}
+  --top TOP             keep only the N biggest weights
+  --whole-shares        whole shares only (needs --prices)
+  --cents               size to the cent instead of whole dollars
+
+
+python trader-entry/entry.py --help
+usage: entry.py [-h] {check,watch,watchlist} ...
+
+Entry Timer (trader-entry): watches a setup bar by bar.
+
+positional arguments:
+  {check,watch,watchlist}
+    check               the setup's status right now
+    watch               poll bar by bar until it triggers or expires
+    watchlist           check every hit in trader/watchlist.json
+
+options:
+  -h, --help            show this help message and exit
+
+
+python trader-entry/entry.py check --help
+usage: entry.py check [-h] [--setup {orb,level}] [--or-minutes OR_MINUTES]
+                      [--interval {5m,1m}] [--level LEVEL]
+                      [--min-volume-x MIN_VOLUME_X]
+                      [--side {buy,long,sell,short}] [--now NOW]
+                      [--offline PATH] [--config CONFIG] [--write [PATH]]
+                      [--json]
+                      symbol
+
+positional arguments:
+  symbol
+
+options:
+  -h, --help            show this help message and exit
+  --setup {orb,level}
+  --or-minutes OR_MINUTES
+                        opening range length (default 15)
+  --interval {5m,1m}
+  --level LEVEL         the price to close above (--setup level)
+  --min-volume-x MIN_VOLUME_X
+                        trigger bar volume vs the range bars' average
+  --side {buy,long,sell,short}
+                        v2: buy only
+  --now NOW             pretend it is this New York time, e.g. "2026-10-19
+                        10:15"
+  --offline PATH        saved Yahoo chart JSON (.json/.json.gz) or a folder
+  --config CONFIG
+  --write [PATH]        save the result (default trader/entry.json)
+  --json
+
+
+python trader-entry/entry.py watch --help
+usage: entry.py watch [-h] [--setup {orb,level}] [--or-minutes OR_MINUTES]
+                      [--interval {5m,1m}] [--level LEVEL]
+                      [--min-volume-x MIN_VOLUME_X]
+                      [--side {buy,long,sell,short}] [--now NOW]
+                      [--offline PATH] [--config CONFIG] [--every EVERY]
+                      [--until UNTIL] [--out OUT]
+                      symbol
+
+positional arguments:
+  symbol
+
+options:
+  -h, --help            show this help message and exit
+  --setup {orb,level}
+  --or-minutes OR_MINUTES
+                        opening range length (default 15)
+  --interval {5m,1m}
+  --level LEVEL         the price to close above (--setup level)
+  --min-volume-x MIN_VOLUME_X
+                        trigger bar volume vs the range bars' average
+  --side {buy,long,sell,short}
+                        v2: buy only
+  --now NOW             pretend it is this New York time, e.g. "2026-10-19
+                        10:15"
+  --offline PATH        saved Yahoo chart JSON (.json/.json.gz) or a folder
+  --config CONFIG
+  --every EVERY         seconds between polls while Yahoo is behind
+  --until UNTIL         stop at this New York time (HH:MM)
+  --out OUT             where a trigger is written
+
+
+python trader-entry/entry.py watchlist --help
+usage: entry.py watchlist [-h] [--setup {orb,level}] [--or-minutes OR_MINUTES]
+                          [--interval {5m,1m}] [--level LEVEL]
+                          [--min-volume-x MIN_VOLUME_X]
+                          [--side {buy,long,sell,short}] [--now NOW]
+                          [--offline PATH] [--config CONFIG]
+                          [--watchlist WATCHLIST] [--json]
+
+options:
+  -h, --help            show this help message and exit
+  --setup {orb,level}
+  --or-minutes OR_MINUTES
+                        opening range length (default 15)
+  --interval {5m,1m}
+  --level LEVEL         the price to close above (--setup level)
+  --min-volume-x MIN_VOLUME_X
+                        trigger bar volume vs the range bars' average
+  --side {buy,long,sell,short}
+                        v2: buy only
+  --now NOW             pretend it is this New York time, e.g. "2026-10-19
+                        10:15"
+  --offline PATH        saved Yahoo chart JSON (.json/.json.gz) or a folder
+  --config CONFIG
+  --watchlist WATCHLIST
+  --json
+
+
+python trader-exit/exit.py --help
+usage: exit.py [-h] {plan,show} ...
+
+Exit Planner (trader-exit): the stop and target before the entry.
+
+positional arguments:
+  {plan,show}
+    plan       set the stop and target
+    show       print the current plan
+
+options:
+  -h, --help   show this help message and exit
+
+
+python trader-exit/exit.py plan --help
+usage: exit.py plan [-h] [--from PATH] [--symbol SYMBOL] [--entry ENTRY]
+                    [--or-high OR_HIGH] [--or-low OR_LOW]
+                    [--or-minutes OR_MINUTES] [--setup {orb,level}]
+                    [--date DATE] [--time TIME] [--entry-bar ENTRY_BAR]
+                    [--interval {5m,1m}] [--side {buy,long,sell,short}]
+                    [--stop STOP] [--target TARGET] [--flat-by FLAT_BY]
+                    [--config CONFIG] [--offline PATH] [--now NOW]
+                    [--write [PATH]] [--json]
+
+options:
+  -h, --help            show this help message and exit
+  --from PATH           entry.json to plan from (default trader/entry.json)
+  --symbol SYMBOL
+  --entry ENTRY         entry price (or a plan-ahead price with --from)
+  --or-high OR_HIGH
+  --or-low OR_LOW
+  --or-minutes OR_MINUTES
+  --setup {orb,level}
+  --date DATE           session date YYYY-MM-DD (default: the entry's, or
+                        today)
+  --time TIME           entry time, e.g. 10:15 AM
+  --entry-bar ENTRY_BAR
+  --interval {5m,1m}
+  --side {buy,long,sell,short}
+                        v2: buy only
+  --stop STOP           or-mid (orb default), or-low, price:X, pct:X, atr:K
+  --target TARGET       2R (default), 1R, 1.5R, price:X
+  --flat-by FLAT_BY     HH:MM New York (default: config flat_by, 15:55)
+  --config CONFIG
+  --offline PATH        saved Yahoo chart JSON for an atr stop
+  --now NOW             pretend it is this New York time, e.g. "2026-10-19
+                        10:15"
+  --write [PATH]        save the plan (default trader/plan.json)
+  --json
+
+
+python trader-exit/exit.py show --help
+usage: exit.py show [-h] [--plan PLAN] [--now NOW] [--json]
+
+options:
+  -h, --help   show this help message and exit
+  --plan PLAN
+  --now NOW
+  --json
+
+
+python trader-news/news.py --help
+usage: news.py [-h] [--tickers [TICKERS ...]] [--portfolio PORTFOLIO]
+               [--watchlist WATCHLIST] [--plan PLAN] [--state STATE]
+               [--hours HOURS] [--all] [--forms FORMS] [--no-sec] [--no-moves]
+               [--move-pct MOVE_PCT] [--user-agent USER_AGENT]
+               [--config CONFIG] [--offline DIR] [--now NOW] [--dry-run]
+               [--json]
+
+News monitor for trader-news. Standard library only.
+
+options:
+  -h, --help            show this help message and exit
+  --tickers [TICKERS ...]
+                        default: watchlist + plan + portfolio
+  --portfolio PORTFOLIO
+  --watchlist WATCHLIST
+  --plan PLAN
+  --state STATE
+  --hours HOURS         ignore items older than this
+  --all                 show seen items too
+  --forms FORMS         SEC forms to watch, comma separated
+  --no-sec              headlines only
+  --no-moves            skip the price line per ticker
+  --move-pct MOVE_PCT   flag a move this big (percent)
+  --user-agent USER_AGENT
+                        SEC User-Agent: "Your Name you@example.com"
+  --config CONFIG
+  --offline DIR
+  --now NOW             ISO time, for reproducible runs
+  --dry-run             do not update the state file
+  --json
+
+
+python trader-pelosi/ptr.py --help
+usage: ptr.py [-h] {index,new,fetch,parse} ...
+
+Congress trade tracker for trader-pelosi. Standard library only.
+
+positional arguments:
+  {index,new,fetch,parse}
+    index               list filings from the yearly index
+    new                 filings not seen at the last check
+    fetch               download one PTR PDF and read it
+    parse               rows from pdftotext -layout text of a PTR
+
+options:
+  -h, --help            show this help message and exit
+
+
+python trader-pelosi/ptr.py index --help
+usage: ptr.py index [-h] [--year YEAR] [--member MEMBER] [--type TYPE]
+                    [--since SINCE] [--offline FILE] [--json] [--limit LIMIT]
+
+options:
+  -h, --help       show this help message and exit
+  --year YEAR
+  --member MEMBER  last name or 'First Last'; repeat for more members
+  --type TYPE      FilingType (default P = PTR; '' for all)
+  --since SINCE    only filings on or after YYYY-MM-DD
+  --offline FILE   a saved <YEAR>FD.zip or .xml
+  --json
+  --limit LIMIT
+
+
+python trader-pelosi/ptr.py new --help
+usage: ptr.py new [-h] [--year YEAR] [--member MEMBER] [--type TYPE]
+                  [--since SINCE] [--offline FILE] [--json] [--state STATE]
+                  [--today TODAY] [--dry-run] [--read] [--pdf-dir PDF_DIR]
+                  [--tickers [TICKERS ...]] [--portfolio PORTFOLIO]
+
+options:
+  -h, --help            show this help message and exit
+  --year YEAR
+  --member MEMBER       last name or 'First Last'; repeat for more members
+  --type TYPE           FilingType (default P = PTR; '' for all)
+  --since SINCE         only filings on or after YYYY-MM-DD
+  --offline FILE        a saved <YEAR>FD.zip or .xml
+  --json
+  --state STATE
+  --today TODAY         YYYY-MM-DD, for reproducible runs
+  --dry-run             do not update the state file
+  --read                also download and read each new PTR (needs pdftotext)
+  --pdf-dir PDF_DIR
+  --tickers [TICKERS ...]
+                        flag trades in these tickers
+  --portfolio PORTFOLIO
+
+
+python trader-pelosi/ptr.py fetch --help
+usage: ptr.py fetch [-h] [--year YEAR] [--filed FILED] [--pdf-dir PDF_DIR]
+                    [--tickers [TICKERS ...]] [--portfolio PORTFOLIO] [--json]
+                    doc_id
+
+positional arguments:
+  doc_id
+
+options:
+  -h, --help            show this help message and exit
+  --year YEAR
+  --filed FILED         filing date YYYY-MM-DD if known
+  --pdf-dir PDF_DIR
+  --tickers [TICKERS ...]
+  --portfolio PORTFOLIO
+  --json
+
+
+python trader-pelosi/ptr.py parse --help
+usage: ptr.py parse [-h] [--filed FILED] [--tickers [TICKERS ...]]
+                    [--portfolio PORTFOLIO] [--json]
+                    text_file
+
+positional arguments:
+  text_file
+
+options:
+  -h, --help            show this help message and exit
+  --filed FILED         filing date YYYY-MM-DD (else read from the signature)
+  --tickers [TICKERS ...]
+  --portfolio PORTFOLIO
+  --json
+
+
+python trader-risk/check.py --help
+usage: check.py [-h] [--orders ORDERS] [--config CONFIG]
+                [--portfolio PORTFOLIO] [--prices PRICES] [--state STATE]
+                [--now NOW] [--today TODAY] [--out OUT] [--no-write] [--json]
+
+Check proposed orders against your limits (trader-risk).
+
+options:
+  -h, --help            show this help message and exit
+  --orders ORDERS
+  --config CONFIG
+  --portfolio PORTFOLIO
+                        your account; if missing, a fresh account funded with
+                        the budget
+  --prices PRICES
+  --state STATE         what trader-broker placed today
+  --now NOW             pretend it is this New York time, e.g. "2026-10-19
+                        10:15"
+  --today TODAY         YYYY-MM-DD (default: today in New York)
+  --out OUT             where the verdicts are recorded
+  --no-write            do not record the verdicts
+  --json
+
+
+python trader-scanner/scan.py --help
+usage: scan.py [-h] {universe,daily,orb} ...
+
+Chart Scanner (trader-scanner): daily setups and opening-range breakouts.
+
+positional arguments:
+  {universe,daily,orb}
+    universe            download Nasdaq Trader's lists -> trader/universe.txt
+    daily               pre-market setups from daily closes
+    orb                 opening-range breakouts so far today
+
+options:
+  -h, --help            show this help message and exit
+
+
+python trader-scanner/scan.py universe --help
+usage: scan.py universe [-h] [--out OUT] [--offline DIR] [--no-write]
+                        [--pause PAUSE] [--json]
+
+options:
+  -h, --help     show this help message and exit
+  --out OUT
+  --offline DIR  a folder with nasdaqlisted.txt and otherlisted.txt
+  --no-write
+  --pause PAUSE
+  --json
+
+
+python trader-scanner/scan.py daily --help
+usage: scan.py daily [-h] [--symbols SYMBOLS | --watchlist FILE]
+                     [--universe UNIVERSE] [--limit LIMIT]
+                     [--min-price MIN_PRICE] [--min-volume MIN_VOLUME]
+                     [--offline PATH] [--now NOW] [--out OUT] [--no-write]
+                     [--pause PAUSE] [--show SHOW] [--quiet] [--json]
+
+options:
+  -h, --help            show this help message and exit
+  --symbols SYMBOLS     comma-separated tickers instead of the universe
+  --watchlist FILE      a watchlist.json (hits) or a text file of tickers
+  --universe UNIVERSE   symbol list, one SYMBOL|Name a line (default
+                        trader/universe.txt)
+  --limit LIMIT         scan only the first N symbols
+  --min-price MIN_PRICE
+  --min-volume MIN_VOLUME
+  --offline PATH        fixture folder or file instead of the network
+  --now NOW             pretend it is this time ("2026-10-19 10:15" New York,
+                        or ...Z)
+  --out OUT
+  --no-write
+  --pause PAUSE         seconds between requests (0.3)
+  --show SHOW           hits to print (all are written)
+  --quiet
+  --json
+
+
+python trader-scanner/scan.py orb --help
+usage: scan.py orb [-h] [--symbols SYMBOLS | --watchlist FILE]
+                   [--universe UNIVERSE] [--limit LIMIT]
+                   [--min-price MIN_PRICE] [--min-volume MIN_VOLUME]
+                   [--offline PATH] [--now NOW] [--out OUT] [--no-write]
+                   [--pause PAUSE] [--show SHOW] [--quiet] [--json]
+                   [--or-minutes OR_MINUTES] [--max-confirm MAX_CONFIRM]
+                   [--at AT] [--until UNTIL] [--config CONFIG]
+
+options:
+  -h, --help            show this help message and exit
+  --symbols SYMBOLS     comma-separated tickers instead of the universe
+  --watchlist FILE      a watchlist.json (hits) or a text file of tickers
+  --universe UNIVERSE   symbol list, one SYMBOL|Name a line (default
+                        trader/universe.txt)
+  --limit LIMIT         scan only the first N symbols
+  --min-price MIN_PRICE
+  --min-volume MIN_VOLUME
+  --offline PATH        fixture folder or file instead of the network
+  --now NOW             pretend it is this time ("2026-10-19 10:15" New York,
+                        or ...Z)
+  --out OUT
+  --no-write
+  --pause PAUSE         seconds between requests (0.3)
+  --show SHOW           hits to print (all are written)
+  --quiet
+  --json
+  --or-minutes OR_MINUTES
+  --max-confirm MAX_CONFIRM
+                        v8 charts to fetch in stage 2, most traded first (200;
+                        0 = all)
+  --at AT               cut the clock at this New York time, HH:MM
+  --until UNTIL         no new entries after HH:MM (default: config
+                        no_entries_after, 15:30)
+  --config CONFIG
+
+
+python trader-timemachine/timemachine.py --help
+usage: timemachine.py [-h] {run,chart} ...
+
+Time Machine: replay a planned day trade (trader-timemachine).
+
+positional arguments:
+  {run,chart}
+    run        replay the plan: 10,000 simulated sessions plus the history
+    chart      ASCII fan chart of the replays
+
+options:
+  -h, --help   show this help message and exit
+
+
+python trader-timemachine/timemachine.py run --help
+usage: timemachine.py run [-h] [--plan PLAN] [--symbol SYMBOL]
+                          [--side {buy,sell}] [--date DATE] [--entry ENTRY]
+                          [--stop STOP] [--target TARGET]
+                          [--entry-time ENTRY_TIME] [--setup SETUP]
+                          [--or-minutes OR_MINUTES]
+                          [--stop-rule {auto,or_mid,or_low,or_high,pct}]
+                          [--replays REPLAYS] [--seed SEED] [--window WINDOW]
+                          [--until UNTIL] [--offline FILE] [--now NOW]
+                          [--json] [--write [PATH]]
+
+options:
+  -h, --help            show this help message and exit
+  --plan PLAN           the plan from trader-exit
+  --symbol SYMBOL       or give the plan as flags: ticker
+  --side {buy,sell}
+  --date DATE           the plan's day, YYYY-MM-DD (default today, New York)
+  --entry ENTRY
+  --stop STOP
+  --target TARGET
+  --entry-time ENTRY_TIME
+                        the entry bar's close, e.g. "10:15 AM"
+  --setup SETUP
+  --or-minutes OR_MINUTES
+  --stop-rule {auto,or_mid,or_low,or_high,pct}
+  --replays REPLAYS
+  --seed SEED
+  --window WINDOW       draw from the same time of day +- this many bars
+  --until UNTIL         end each replay at this time (default 16:00, the
+                        close)
+  --offline FILE        a saved Yahoo chart JSON (.json or .json.gz), no
+                        network
+  --now NOW             pretend it is this time ("2026-10-19 10:15" New York,
+                        or ISO with Z)
+  --json
+  --write [PATH]        save the result (default trader/timemachine.json)
+
+
+python trader-timemachine/timemachine.py chart --help
+usage: timemachine.py chart [-h] [--plan PLAN] [--symbol SYMBOL]
+                            [--side {buy,sell}] [--date DATE] [--entry ENTRY]
+                            [--stop STOP] [--target TARGET]
+                            [--entry-time ENTRY_TIME] [--setup SETUP]
+                            [--or-minutes OR_MINUTES]
+                            [--stop-rule {auto,or_mid,or_low,or_high,pct}]
+                            [--replays REPLAYS] [--seed SEED]
+                            [--window WINDOW] [--until UNTIL] [--offline FILE]
+                            [--now NOW] [--from [PATH]]
+
+options:
+  -h, --help            show this help message and exit
+  --plan PLAN           the plan from trader-exit
+  --symbol SYMBOL       or give the plan as flags: ticker
+  --side {buy,sell}
+  --date DATE           the plan's day, YYYY-MM-DD (default today, New York)
+  --entry ENTRY
+  --stop STOP
+  --target TARGET
+  --entry-time ENTRY_TIME
+                        the entry bar's close, e.g. "10:15 AM"
+  --setup SETUP
+  --or-minutes OR_MINUTES
+  --stop-rule {auto,or_mid,or_low,or_high,pct}
+  --replays REPLAYS
+  --seed SEED
+  --window WINDOW       draw from the same time of day +- this many bars
+  --until UNTIL         end each replay at this time (default 16:00, the
+                        close)
+  --offline FILE        a saved Yahoo chart JSON (.json or .json.gz), no
+                        network
+  --now NOW             pretend it is this time ("2026-10-19 10:15" New York,
+                        or ISO with Z)
+  --from [PATH]         draw a saved result instead of running again
+

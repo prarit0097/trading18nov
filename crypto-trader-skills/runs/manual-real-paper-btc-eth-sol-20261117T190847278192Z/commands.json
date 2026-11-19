@@ -1,0 +1,216 @@
+[
+  {
+    "at": "2026-11-17T19:08:51.308568Z",
+    "skill": "crypto-workflow",
+    "args": [
+      "init",
+      "--input",
+      "E:\\coding\\code\\Trade\\crypto-trader-skills\\runs\\manual-real-paper-btc-eth-sol-20261117T190847278192Z\\config-input.json"
+    ],
+    "exit": 0,
+    "kind": "config",
+    "status": null,
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:08:55.616061Z",
+    "skill": "crypto-market",
+    "args": [
+      "--fetch",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "5m",
+      "--limit",
+      "100"
+    ],
+    "exit": 0,
+    "kind": "market",
+    "status": null,
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:08:56.044166Z",
+    "skill": "crypto-entry",
+    "args": [],
+    "exit": 1,
+    "kind": "proposal",
+    "status": "waiting",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:08:56.639643Z",
+    "skill": "crypto-exit",
+    "args": [],
+    "exit": 0,
+    "kind": "plan",
+    "status": "ready",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:08:57.266537Z",
+    "skill": "crypto-size",
+    "args": [],
+    "exit": 0,
+    "kind": "sizing",
+    "status": "ready",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:08:57.837051Z",
+    "skill": "crypto-risk",
+    "args": [],
+    "exit": 0,
+    "kind": "risk",
+    "status": "approved",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:08:58.495507Z",
+    "skill": "crypto-paper",
+    "args": [
+      "submit"
+    ],
+    "exit": 0,
+    "kind": "orders",
+    "status": "paper",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:06.565227Z",
+    "skill": "crypto-market",
+    "args": [
+      "--fetch",
+      "--symbol",
+      "ETHUSDT",
+      "--interval",
+      "5m",
+      "--limit",
+      "100"
+    ],
+    "exit": 0,
+    "kind": "market",
+    "status": null,
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:06.937413Z",
+    "skill": "crypto-entry",
+    "args": [],
+    "exit": 1,
+    "kind": "proposal",
+    "status": "waiting",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:07.500364Z",
+    "skill": "crypto-exit",
+    "args": [],
+    "exit": 0,
+    "kind": "plan",
+    "status": "ready",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:08.074716Z",
+    "skill": "crypto-size",
+    "args": [],
+    "exit": 0,
+    "kind": "sizing",
+    "status": "ready",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:08.780950Z",
+    "skill": "crypto-risk",
+    "args": [],
+    "exit": 0,
+    "kind": "risk",
+    "status": "approved",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:09.398065Z",
+    "skill": "crypto-paper",
+    "args": [
+      "submit"
+    ],
+    "exit": 0,
+    "kind": "orders",
+    "status": "paper",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:17.153577Z",
+    "skill": "crypto-market",
+    "args": [
+      "--fetch",
+      "--symbol",
+      "SOLUSDT",
+      "--interval",
+      "5m",
+      "--limit",
+      "100"
+    ],
+    "exit": 0,
+    "kind": "market",
+    "status": null,
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:17.554912Z",
+    "skill": "crypto-entry",
+    "args": [],
+    "exit": 1,
+    "kind": "proposal",
+    "status": "waiting",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:17.950114Z",
+    "skill": "crypto-exit",
+    "args": [],
+    "exit": 0,
+    "kind": "plan",
+    "status": "ready",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:18.424572Z",
+    "skill": "crypto-size",
+    "args": [],
+    "exit": 0,
+    "kind": "sizing",
+    "status": "ready",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:18.810004Z",
+    "skill": "crypto-risk",
+    "args": [],
+    "exit": 0,
+    "kind": "risk",
+    "status": "approved",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:19.391965Z",
+    "skill": "crypto-paper",
+    "args": [
+      "submit"
+    ],
+    "exit": 0,
+    "kind": "orders",
+    "status": "paper",
+    "error": null
+  },
+  {
+    "at": "2026-11-17T19:09:23.662233Z",
+    "skill": "crypto-report",
+    "args": [],
+    "exit": 0,
+    "kind": "report",
+    "status": "inspection",
+    "error": null
+  }
+]

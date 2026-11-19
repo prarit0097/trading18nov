@@ -1,0 +1,110 @@
+{
+  "checked_date": "2026-11-17",
+  "scope": "Plan v1 points 2, 3, 4, 6; source reading and design only",
+  "live_exchange_access_tested": false,
+  "sources": [
+    {
+      "id": "tradingagents_graph",
+      "url": "https://github.com/TauricResearch/TradingAgents/blob/9fa1196fffbcfd9de5146d2dd2869df84ab99838/tradingagents/graph/trading_graph.py#L167",
+      "local_path": "E:/coding/code/Trade/TradingAgents/tradingagents/graph/trading_graph.py",
+      "supports": ["propagate runs graph for date and asset_type", "returns final state and rating", "method is not an exchange-event portfolio execution backtester"],
+      "method": "local source inspection; capability boundary is inference from inspected contract"
+    },
+    {
+      "id": "openbb_crypto_history",
+      "url": "https://github.com/openbq-org/OpenBB/blob/e43353a82815ff9ba56ad1b7ad47c32729dcf314/openbb_platform/extensions/crypto/openbb_crypto/price/price_router.py#L21",
+      "local_path": "E:/coding/code/Trade/OpenBB/openbb_platform/extensions/crypto/openbb_crypto/price/price_router.py",
+      "supports": ["CryptoHistorical provider query returns OBBject", "historical endpoint does not establish universal data entitlement or execution capability"],
+      "method": "local source inspection"
+    },
+    {
+      "id": "timemachine",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill/blob/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-timemachine/timemachine.py",
+      "local_path": "E:/coding/code/Trade/day-trader-skill/trader-timemachine/timemachine.py",
+      "supports": ["60d 5m Yahoo request at188", "complete NY session bars at271", "78-bar prior full sessions at318; minimum20", "independent same-clock whole-bar resampling at335-416; not block bootstrap", "stop first; gaps scored -1R; no fees/slippage", "price path continues after exit", "separate2000 fan paths", "historical ORB subset at451", "flat_by retained at590 but horizon chooses explicit until or session close at699", "entry candle range mismatch is warning at719"],
+      "method": "local source inspection"
+    },
+    {
+      "id": "entry_volume",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill/blob/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-entry/entry.py#L487",
+      "local_path": "E:/coding/code/Trade/day-trader-skill/trader-entry/entry.py",
+      "supports": ["optional trigger-volume ratio compares opening-range average", "not reproduced in timemachine historical ORB rule"],
+      "method": "local source inspection"
+    },
+    {
+      "id": "nvda_previous_run",
+      "local_path": "E:/coding/code/Trade/nvda-timemachine/20261116T153319Z/RESULT.md",
+      "supports": ["historical triggered-trade replay not live signal", "57 full-session pool; explicit15:55", "Monte Carlo -0.102R; history -0.258R", "captured data hash and reproducibility verification references"],
+      "method": "read preexisting local evidence; not rerun in this research task"
+    },
+    {
+      "id": "binance_archive",
+      "url": "https://github.com/binance/binance-public-data",
+      "supports": ["public daily/monthly files", "Spot archive timestamps microseconds from2025-01-01", "trade/aggTrade/kline formats", "checksums and archive revisions"],
+      "method": "browsed official primary repository"
+    },
+    {
+      "id": "binance_ws",
+      "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/web-socket-streams.md",
+      "supports": ["trade/kline/depth distinct", "kline x closed flag", "default milliseconds; opt-in MICROSECOND", "24h connection and ping/pong", "buffer/snapshot depth synchronization; U/u update IDs; resnapshot on gap", "absolute quantity and zero removal"],
+      "method": "browsed official primary specification"
+    },
+    {
+      "id": "binance_rest",
+      "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+      "supports": ["GET /api/v3/klines open-time keys and max1000", "base/quote/taker-buy volume and trade count fields"],
+      "method": "browsed official primary specification"
+    },
+    {
+      "id": "coinbase_overview",
+      "url": "https://docs.cdp.coinbase.com/exchange/websocket-feed/overview",
+      "supports": ["public ws-feed without authentication vs Direct authentication", "per-product sequence checks, gaps and out-of-order risk"],
+      "method": "browsed official primary documentation"
+    },
+    {
+      "id": "coinbase_channels",
+      "url": "https://docs.cdp.coinbase.com/exchange/websocket-feed/channels",
+      "supports": ["heartbeat sequences and last trade IDs", "L2 synchronization semantics", "full channel snapshot and queued message replay"],
+      "method": "browsed official primary documentation"
+    },
+    {
+      "id": "coinbase_candles",
+      "url": "https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles",
+      "supports": ["max300 candles/request", "300-second granularity supported", "no-tick intervals absent and history may be incomplete", "returned candles may precede requested start", "not for frequent polling"],
+      "method": "browsed official primary documentation"
+    },
+    {
+      "id": "kraken_ohlc",
+      "url": "https://docs.kraken.com/api-reference/market-data/get-ohlc-data",
+      "supports": ["720 most recent entries only regardless since", "last entry is current uncommitted interval"],
+      "method": "browsed official primary documentation"
+    },
+    {
+      "id": "kraken_book",
+      "url": "https://docs.kraken.com/exchange/api-reference/spot-websocket-v2/book",
+      "supports": ["public L2 book aggregated price-level quantity; snapshot and selectable depths"],
+      "method": "browsed official primary documentation"
+    },
+    {
+      "id": "kraken_checksum",
+      "url": "https://docs.kraken.com/exchange/guides/websockets/book-checksum-v2",
+      "supports": ["CRC32 top10 levels", "preserve precision", "apply entire message before checksum; zero remove; depth truncation"],
+      "method": "browsed official primary documentation"
+    },
+    {
+      "id": "backtest_overfitting",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "supports": ["backtest strategy selection can overfit; model selection needs explicit treatment"],
+      "method": "primary research search result; proposed split parameters are our design, not prescribed by paper"
+    },
+    {
+      "id": "wash_trading",
+      "url": "https://www.nber.org/papers/w30783",
+      "title": "Crypto Wash Trading",
+      "supports": ["historical primary study finds substantial wash trading in sampled unregulated exchanges", "does not measure present wash share on selected deployment venue"],
+      "method": "primary research abstract"
+    }
+  ],
+  "failed_or_unverified": ["Kraken historical-data guide URL inaccessible through web tool; no archive availability claim based on it", "No exchange account, country eligibility, live REST/WS response or historical L2 archive entitlement verified"],
+  "design_claims": "24/7 UTC architecture, split dates, purge/embargo logic, costs/fill scenarios, block bootstrap, volume features and release gates are proposed work, not implemented results."
+}

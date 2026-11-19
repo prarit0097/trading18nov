@@ -1,0 +1,2006 @@
+{
+  "count": 400,
+  "issues": [],
+  "references": [
+    {
+      "path": "LICENSE",
+      "first": 1,
+      "last": 7
+    },
+    {
+      "path": "openbb_platform/pyproject.toml",
+      "first": 1,
+      "last": 12
+    },
+    {
+      "path": "openbb_platform/core/pyproject.toml",
+      "first": 1,
+      "last": 12
+    },
+    {
+      "path": "cli/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "cookiecutter/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/core/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/commodity/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/crypto/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/currency/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/derivatives/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/devtools/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/econometrics/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/economy/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/equity/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/etf/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/fixedincome/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/index/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/news/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/quantitative/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/technical/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/obbject_extensions/charting/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/bls/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/cboe/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/cftc/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/deribit/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/ecb/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/eia/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/famafrench/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/federal_reserve/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/finra/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/fred/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/government_us/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/imf/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/jodi/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/oecd/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/sec/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/tmx/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/pyproject.toml",
+      "first": 1,
+      "last": 65
+    },
+    {
+      "path": "openbb_platform/core/pyproject.toml",
+      "first": 1,
+      "last": 61
+    },
+    {
+      "path": "cli/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "cookiecutter/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/core/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/bls/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/ecb/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/eia/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/finra/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/fred/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/government_us/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/imf/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/oecd/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/providers/sec/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/core/openbb/__init__.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "openbb_platform/core/openbb/__init__.py",
+      "first": 41,
+      "last": 41
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/builder.py",
+      "first": 120,
+      "last": 120
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/builder.py",
+      "first": 132,
+      "last": 132
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/builder.py",
+      "first": 152,
+      "last": 152
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/builder.py",
+      "first": 342,
+      "last": 342
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/env.py",
+      "first": 43,
+      "last": 43
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/path_handler.py",
+      "first": 183,
+      "last": 183
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/class_definition.py",
+      "first": 49,
+      "last": 49
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/method_definition.py",
+      "first": 371,
+      "last": 371
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/method_definition.py",
+      "first": 1383,
+      "last": 1383
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/package_builder/builder.py",
+      "first": 293,
+      "last": 293
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/reference_loader.py",
+      "first": 47,
+      "last": 47
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/app_factory.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/app_factory.py",
+      "first": 54,
+      "last": 54
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/container.py",
+      "first": 22,
+      "last": 22
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/preferences.py",
+      "first": 16,
+      "last": 16
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/extension_loader.py",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/extension_loader.py",
+      "first": 116,
+      "last": 116
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/extension_loader.py",
+      "first": 159,
+      "last": 159
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/router.py",
+      "first": 45,
+      "last": 45
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/router.py",
+      "first": 89,
+      "last": 89
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/router.py",
+      "first": 247,
+      "last": 247
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/router.py",
+      "first": 400,
+      "last": 400
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/router.py",
+      "first": 545,
+      "last": 545
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/registry.py",
+      "first": 13,
+      "last": 13
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/abstract/provider.py",
+      "first": 41,
+      "last": 41
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/registry_map.py",
+      "first": 78,
+      "last": 78
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/provider_interface.py",
+      "first": 99,
+      "last": 99
+    },
+    {
+      "path": "openbb_platform/extensions/equity/pyproject.toml",
+      "first": 11,
+      "last": 11
+    },
+    {
+      "path": "openbb_platform/extensions/equity/openbb_equity/equity_router.py",
+      "first": 32,
+      "last": 32
+    },
+    {
+      "path": "openbb_platform/extensions/equity/openbb_equity/price/price_router.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/command_runner.py",
+      "first": 130,
+      "last": 130
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/command_runner.py",
+      "first": 183,
+      "last": 183
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/command_runner.py",
+      "first": 243,
+      "last": 243
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/command_runner.py",
+      "first": 344,
+      "last": 344
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/command_runner.py",
+      "first": 425,
+      "last": 425
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/command_runner.py",
+      "first": 679,
+      "last": 679
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/query.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/query.py",
+      "first": 36,
+      "last": 36
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/query.py",
+      "first": 66,
+      "last": 66
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/query_executor.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/query_executor.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/abstract/fetcher.py",
+      "first": 80,
+      "last": 80
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/pyproject.toml",
+      "first": 19,
+      "last": 19
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/__init__.py",
+      "first": 70,
+      "last": 70
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/__init__.py",
+      "first": 107,
+      "last": 107
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/__init__.py",
+      "first": 199,
+      "last": 199
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/models/equity_historical.py",
+      "first": 33,
+      "last": 33
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/standard_models/equity_historical.py",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/models/equity_historical.py",
+      "first": 57,
+      "last": 57
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 207,
+      "last": 207
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 496,
+      "last": 496
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 604,
+      "last": 604
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/constants.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/obbject.py",
+      "first": 34,
+      "last": 34
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/obbject.py",
+      "first": 79,
+      "last": 79
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/obbject.py",
+      "first": 289,
+      "last": 289
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/obbject.py",
+      "first": 359,
+      "last": 359
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/constants.py",
+      "first": 5,
+      "last": 5
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/system_settings.py",
+      "first": 64,
+      "last": 64
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/system_settings.py",
+      "first": 77,
+      "last": 77
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/user_settings.py",
+      "first": 16,
+      "last": 16
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/service/user_service.py",
+      "first": 39,
+      "last": 39
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/service/system_service.py",
+      "first": 80,
+      "last": 80
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/credentials.py",
+      "first": 31,
+      "last": 31
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/credentials.py",
+      "first": 120,
+      "last": 120
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/credentials.py",
+      "first": 194,
+      "last": 194
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/credentials.py",
+      "first": 213,
+      "last": 213
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/query_executor.py",
+      "first": 38,
+      "last": 38
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/config/loader.py",
+      "first": 138,
+      "last": 138
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/config/loader.py",
+      "first": 156,
+      "last": 156
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/config/loader.py",
+      "first": 188,
+      "last": 188
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/config/loader.py",
+      "first": 246,
+      "last": 246
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/config/loader.py",
+      "first": 352,
+      "last": 352
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/defaults.py",
+      "first": 27,
+      "last": 27
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/container.py",
+      "first": 22,
+      "last": 22
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/static/container.py",
+      "first": 76,
+      "last": 76
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/extension.py",
+      "first": 123,
+      "last": 123
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 25,
+      "last": 25
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 162,
+      "last": 162
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 183,
+      "last": 183
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/utils/__init__.py",
+      "first": 226,
+      "last": 226
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/extension.py",
+      "first": 53,
+      "last": 53
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/extension.py",
+      "first": 95,
+      "last": 95
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/command_runner.py",
+      "first": 499,
+      "last": 499
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/command_runner.py",
+      "first": 530,
+      "last": 530
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/exception_handlers.py",
+      "first": 63,
+      "last": 63
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/exception_handlers.py",
+      "first": 114,
+      "last": 114
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/constants.py",
+      "first": 1,
+      "last": 8
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/preferences.py",
+      "first": 9,
+      "last": 34
+    },
+    {
+      "path": "openbb_platform/core/tests/app/static/package_builder/test_method_definition_helpers.py",
+      "first": 480,
+      "last": 480
+    },
+    {
+      "path": "openbb_platform/core/tests/conftest.py",
+      "first": 153,
+      "last": 153
+    },
+    {
+      "path": "openbb_platform/providers/government_us/pyproject.toml",
+      "first": 21,
+      "last": 21
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/registry_map.py",
+      "first": 30,
+      "last": 30
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/registry_map.py",
+      "first": 78,
+      "last": 78
+    },
+    {
+      "path": "openbb_platform/providers/fred/openbb_fred/__init__.py",
+      "first": 72,
+      "last": 72
+    },
+    {
+      "path": "openbb_platform/providers/famafrench/openbb_famafrench/__init__.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "openbb_platform/providers/finra/openbb_finra/__init__.py",
+      "first": 25,
+      "last": 25
+    },
+    {
+      "path": "openbb_platform/providers/tmx/openbb_tmx/__init__.py",
+      "first": 67,
+      "last": 67
+    },
+    {
+      "path": "openbb_platform/providers/government_us/pyproject.toml",
+      "first": 21,
+      "last": 21
+    },
+    {
+      "path": "openbb_platform/extensions/equity/openbb_equity/equity_router.py",
+      "first": 14,
+      "last": 14
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/extension_loader.py",
+      "first": 21,
+      "last": 21
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/pyproject.toml",
+      "first": 19,
+      "last": 19
+    },
+    {
+      "path": "openbb_platform/providers/cboe/pyproject.toml",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/__init__.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/__init__.py",
+      "first": 35,
+      "last": 35
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/__init__.py",
+      "first": 70,
+      "last": 70
+    },
+    {
+      "path": "openbb_platform/extensions/equity/openbb_equity/price/price_router.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "openbb_platform/extensions/equity/openbb_equity/price/price_router.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/query.py",
+      "first": 28,
+      "last": 28
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/query.py",
+      "first": 36,
+      "last": 36
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/query.py",
+      "first": 66,
+      "last": 66
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/query_executor.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/query_executor.py",
+      "first": 37,
+      "last": 37
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/query_executor.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/abstract/provider.py",
+      "first": 41,
+      "last": 41
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/abstract/fetcher.py",
+      "first": 80,
+      "last": 80
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/abstract/fetcher.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/standard_models/equity_historical.py",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/standard_models/equity_historical.py",
+      "first": 38,
+      "last": 38
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/abstract/data.py",
+      "first": 77,
+      "last": 77
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/models/equity_historical.py",
+      "first": 15,
+      "last": 15
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/models/equity_historical.py",
+      "first": 41,
+      "last": 41
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 496,
+      "last": 496
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 532,
+      "last": 532
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 604,
+      "last": 604
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 85,
+      "last": 85
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 183,
+      "last": 183
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/utils/helpers.py",
+      "first": 207,
+      "last": 207
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/models/equity_historical.py",
+      "first": 15,
+      "last": 15
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/__init__.py",
+      "first": 70,
+      "last": 70
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/models/equity_historical.py",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/models/equity_historical.py",
+      "first": 51,
+      "last": 51
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/models/equity_historical.py",
+      "first": 80,
+      "last": 80
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/models/equity_historical.py",
+      "first": 117,
+      "last": 117
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/models/equity_historical.py",
+      "first": 152,
+      "last": 152
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/models/equity_historical.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/utils/helpers.py",
+      "first": 29,
+      "last": 29
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/utils/helpers.py",
+      "first": 631,
+      "last": 631
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/utils/helpers.py",
+      "first": 350,
+      "last": 350
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/provider/utils/helpers.py",
+      "first": 401,
+      "last": 401
+    },
+    {
+      "path": "openbb_platform/providers/sec/openbb_sec/utils/ratelimit.py",
+      "first": 9,
+      "last": 9
+    },
+    {
+      "path": "openbb_platform/providers/sec/openbb_sec/utils/ratelimit.py",
+      "first": 29,
+      "last": 29
+    },
+    {
+      "path": "openbb_platform/providers/fred/openbb_fred/utils/rate_limiter.py",
+      "first": 38,
+      "last": 38
+    },
+    {
+      "path": "openbb_platform/providers/fred/openbb_fred/utils/rate_limiter.py",
+      "first": 145,
+      "last": 145
+    },
+    {
+      "path": "openbb_platform/extensions/technical/openbb_technical/indicators/trend.py",
+      "first": 98,
+      "last": 98
+    },
+    {
+      "path": "openbb_platform/extensions/technical/openbb_technical/router.py",
+      "first": 5,
+      "last": 5
+    },
+    {
+      "path": "openbb_platform/extensions/econometrics/openbb_econometrics/router.py",
+      "first": 5,
+      "last": 5
+    },
+    {
+      "path": "openbb_platform/extensions/quantitative/openbb_quantitative/router.py",
+      "first": 5,
+      "last": 5
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/obbject.py",
+      "first": 41,
+      "last": 41
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/obbject.py",
+      "first": 359,
+      "last": 359
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/obbject.py",
+      "first": 289,
+      "last": 289
+    },
+    {
+      "path": "openbb_platform/obbject_extensions/charting/openbb_charting/__init__.py",
+      "first": 21,
+      "last": 21
+    },
+    {
+      "path": "openbb_platform/obbject_extensions/charting/openbb_charting/charting.py",
+      "first": 62,
+      "last": 62
+    },
+    {
+      "path": "openbb_platform/obbject_extensions/charting/openbb_charting/charting.py",
+      "first": 493,
+      "last": 493
+    },
+    {
+      "path": "openbb_platform/providers/tests/test_provider_fetcher.py",
+      "first": 16,
+      "last": 16
+    },
+    {
+      "path": "openbb_platform/providers/tests/test_provider_fetcher.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/tests/conftest.py",
+      "first": 10,
+      "last": 10
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/tests/test_models_equity.py",
+      "first": 381,
+      "last": 381
+    },
+    {
+      "path": "openbb_platform/extensions/tests/utils/router_testers.py",
+      "first": 22,
+      "last": 22
+    },
+    {
+      "path": "openbb_platform/obbject_extensions/charting/tests/test_charting.py",
+      "first": 379,
+      "last": 379
+    },
+    {
+      "path": ".github/workflows/test-unit-openbb-nasdaq.yml",
+      "first": 129,
+      "last": 129
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/pyproject.toml",
+      "first": 87,
+      "last": 87
+    },
+    {
+      "path": "openbb_platform/providers/bls/openbb_bls/__init__.py",
+      "first": 74,
+      "last": 74
+    },
+    {
+      "path": "openbb_platform/providers/cboe/openbb_cboe/__init__.py",
+      "first": 70,
+      "last": 70
+    },
+    {
+      "path": "openbb_platform/providers/cftc/openbb_cftc/__init__.py",
+      "first": 25,
+      "last": 25
+    },
+    {
+      "path": "openbb_platform/providers/deribit/openbb_deribit/__init__.py",
+      "first": 84,
+      "last": 84
+    },
+    {
+      "path": "openbb_platform/providers/ecb/openbb_ecb/__init__.py",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "openbb_platform/providers/eia/openbb_us_eia/__init__.py",
+      "first": 16,
+      "last": 16
+    },
+    {
+      "path": "openbb_platform/providers/famafrench/openbb_famafrench/__init__.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "openbb_platform/providers/federal_reserve/openbb_federal_reserve/__init__.py",
+      "first": 475,
+      "last": 475
+    },
+    {
+      "path": "openbb_platform/providers/finra/openbb_finra/__init__.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "openbb_platform/providers/fred/openbb_fred/__init__.py",
+      "first": 72,
+      "last": 72
+    },
+    {
+      "path": "openbb_platform/providers/government_us/openbb_government_us/congress/__init__.py",
+      "first": 37,
+      "last": 37
+    },
+    {
+      "path": "openbb_platform/providers/government_us/openbb_government_us/treasury/__init__.py",
+      "first": 47,
+      "last": 47
+    },
+    {
+      "path": "openbb_platform/providers/government_us/openbb_government_us/usda/__init__.py",
+      "first": 186,
+      "last": 186
+    },
+    {
+      "path": "openbb_platform/providers/imf/openbb_imf/__init__.py",
+      "first": 34,
+      "last": 34
+    },
+    {
+      "path": "openbb_platform/providers/jodi/openbb_jodi/__init__.py",
+      "first": 19,
+      "last": 19
+    },
+    {
+      "path": "openbb_platform/providers/nasdaq/openbb_nasdaq/__init__.py",
+      "first": 199,
+      "last": 199
+    },
+    {
+      "path": "openbb_platform/providers/oecd/openbb_oecd/__init__.py",
+      "first": 30,
+      "last": 30
+    },
+    {
+      "path": "openbb_platform/providers/sec/openbb_sec/__init__.py",
+      "first": 70,
+      "last": 70
+    },
+    {
+      "path": "openbb_platform/providers/tmx/openbb_tmx/__init__.py",
+      "first": 67,
+      "last": 67
+    },
+    {
+      "path": "openbb_platform/extensions/commodity/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/crypto/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/currency/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/derivatives/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/devtools/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/econometrics/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/economy/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/equity/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/etf/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/fixedincome/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/index/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/news/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/quantitative/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/technical/pyproject.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "README.md",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "README.md",
+      "first": 40,
+      "last": 40
+    },
+    {
+      "path": "README.md",
+      "first": 42,
+      "last": 42
+    },
+    {
+      "path": "README.md",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "README.md",
+      "first": 81,
+      "last": 81
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/pyproject.toml",
+      "first": 4,
+      "last": 4
+    },
+    {
+      "path": "openbb_platform/pyproject.toml",
+      "first": 3,
+      "last": 3
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/pyproject.toml",
+      "first": 3,
+      "last": 3
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/pyproject.toml",
+      "first": 15,
+      "last": 15
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/pyproject.toml",
+      "first": 3,
+      "last": 3
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/pyproject.toml",
+      "first": 19,
+      "last": 19
+    },
+    {
+      "path": "cli/pyproject.toml",
+      "first": 3,
+      "last": 3
+    },
+    {
+      "path": "cli/pyproject.toml",
+      "first": 25,
+      "last": 25
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/rest_api.py",
+      "first": 48,
+      "last": 48
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/rest_api.py",
+      "first": 76,
+      "last": 76
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/rest_api.py",
+      "first": 82,
+      "last": 82
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/rest_api.py",
+      "first": 98,
+      "last": 98
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/rest_api.py",
+      "first": 104,
+      "last": 104
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/main.py",
+      "first": 15,
+      "last": 15
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/main.py",
+      "first": 50,
+      "last": 50
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/main.py",
+      "first": 76,
+      "last": 76
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/app.py",
+      "first": 5,
+      "last": 5
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/app.py",
+      "first": 200,
+      "last": 200
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/app.py",
+      "first": 257,
+      "last": 257
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/app.py",
+      "first": 349,
+      "last": 349
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/app.py",
+      "first": 376,
+      "last": 376
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/app.py",
+      "first": 385,
+      "last": 385
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/app.py",
+      "first": 420,
+      "last": 420
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/middleware.py",
+      "first": 7,
+      "last": 7
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/middleware.py",
+      "first": 21,
+      "last": 21
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/middleware.py",
+      "first": 74,
+      "last": 74
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/app/app.py",
+      "first": 544,
+      "last": 544
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/app/args.py",
+      "first": 71,
+      "last": 71
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/app/args.py",
+      "first": 287,
+      "last": 287
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 58,
+      "last": 58
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 152,
+      "last": 152
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/app/discovery.py",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 139,
+      "last": 139
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/app/cli_tools.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/app/cli_tools.py",
+      "first": 104,
+      "last": 104
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 165,
+      "last": 165
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/app/auth.py",
+      "first": 10,
+      "last": 10
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/app/auth.py",
+      "first": 65,
+      "last": 65
+    },
+    {
+      "path": "cli/openbb_cli/cli.py",
+      "first": 254,
+      "last": 254
+    },
+    {
+      "path": "cli/openbb_cli/cli.py",
+      "first": 299,
+      "last": 299
+    },
+    {
+      "path": "cli/openbb_cli/cli.py",
+      "first": 334,
+      "last": 334
+    },
+    {
+      "path": "cli/openbb_cli/dispatchers/local.py",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "cli/openbb_cli/auth.py",
+      "first": 22,
+      "last": 22
+    },
+    {
+      "path": "cookiecutter/pyproject.toml",
+      "first": 2,
+      "last": 2
+    },
+    {
+      "path": "cookiecutter/pyproject.toml",
+      "first": 15,
+      "last": 15
+    },
+    {
+      "path": "cookiecutter/openbb_cookiecutter/cli.py",
+      "first": 80,
+      "last": 80
+    },
+    {
+      "path": "cookiecutter/openbb_cookiecutter/cli.py",
+      "first": 125,
+      "last": 125
+    },
+    {
+      "path": "cookiecutter/openbb_cookiecutter/cli.py",
+      "first": 180,
+      "last": 180
+    },
+    {
+      "path": "desktop/package.json",
+      "first": 4,
+      "last": 4
+    },
+    {
+      "path": "desktop/package.json",
+      "first": 37,
+      "last": 37
+    },
+    {
+      "path": "desktop/package.json",
+      "first": 69,
+      "last": 69
+    },
+    {
+      "path": "desktop/src-tauri/tauri.conf.json",
+      "first": 4,
+      "last": 4
+    },
+    {
+      "path": "desktop/src-tauri/Cargo.toml",
+      "first": 3,
+      "last": 3
+    },
+    {
+      "path": "desktop/src-tauri/Cargo.toml",
+      "first": 4,
+      "last": 4
+    },
+    {
+      "path": "desktop/src-tauri/src/main.rs",
+      "first": 469,
+      "last": 469
+    },
+    {
+      "path": "desktop/src-tauri/src/tauri_handlers/credentials.rs",
+      "first": 73,
+      "last": 73
+    },
+    {
+      "path": "openbb_platform/Dockerfile",
+      "first": 10,
+      "last": 10
+    },
+    {
+      "path": "openbb_platform/Dockerfile",
+      "first": 26,
+      "last": 26
+    },
+    {
+      "path": "openbb_platform/Dockerfile",
+      "first": 33,
+      "last": 33
+    },
+    {
+      "path": "openbb_platform/Dockerfile",
+      "first": 41,
+      "last": 41
+    },
+    {
+      "path": "openbb_platform/docker-compose.yml",
+      "first": 6,
+      "last": 6
+    },
+    {
+      "path": "openbb_platform/docker-compose.yml",
+      "first": 21,
+      "last": 21
+    },
+    {
+      "path": "openbb_platform/openbb.docker.toml",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": ".github/workflows/test-unit-platform-api.yml",
+      "first": 77,
+      "last": 77
+    },
+    {
+      "path": ".github/workflows/test-unit-cli.yml",
+      "first": 109,
+      "last": 109
+    },
+    {
+      "path": ".github/workflows/test-unit-mcp-server.yml",
+      "first": 132,
+      "last": 132
+    },
+    {
+      "path": ".github/workflows/publish-openbb-platform-api.yml",
+      "first": 149,
+      "last": 149
+    },
+    {
+      "path": ".github/workflows/publish-openbb-platform-api.yml",
+      "first": 151,
+      "last": 151
+    },
+    {
+      "path": ".github/workflows/build-desktop-win64.yml",
+      "first": 151,
+      "last": 151
+    },
+    {
+      "path": ".github/workflows/build-desktop-win64.yml",
+      "first": 172,
+      "last": 172
+    },
+    {
+      "path": ".github/workflows/build-desktop-win64.yml",
+      "first": 207,
+      "last": 207
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "first": 35,
+      "last": 35
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/api_settings.py",
+      "first": 11,
+      "last": 11
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/api_settings.py",
+      "first": 30,
+      "last": 30
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/app/model/api_settings.py",
+      "first": 47,
+      "last": 47
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/env.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/env.py",
+      "first": 28,
+      "last": 28
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/router/commands.py",
+      "first": 144,
+      "last": 144
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/auth/user.py",
+      "first": 13,
+      "last": 13
+    },
+    {
+      "path": "openbb_platform/core/openbb_core/api/auth/user.py",
+      "first": 40,
+      "last": 40
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/config.py",
+      "first": 92,
+      "last": 92
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/config.py",
+      "first": 116,
+      "last": 116
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/config.py",
+      "first": 222,
+      "last": 222
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/config.py",
+      "first": 274,
+      "last": 274
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/tests/app/test_config.py",
+      "first": 132,
+      "last": 132
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/tests/app/test_config.py",
+      "first": 478,
+      "last": 478
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/tests/app/test_middleware.py",
+      "first": 183,
+      "last": 183
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/tests/app/test_middleware.py",
+      "first": 216,
+      "last": 216
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/args.py",
+      "first": 83,
+      "last": 83
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/args.py",
+      "first": 86,
+      "last": 86
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/args.py",
+      "first": 96,
+      "last": 96
+    },
+    {
+      "path": "openbb_platform/extensions/platform_api/openbb_platform_api/app/app.py",
+      "first": 206,
+      "last": 206
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/pyproject.toml",
+      "first": 12,
+      "last": 12
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/pyproject.toml",
+      "first": 15,
+      "last": 15
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 47,
+      "last": 47
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 58,
+      "last": 58
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 66,
+      "last": 66
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 79,
+      "last": 79
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 99,
+      "last": 99
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 112,
+      "last": 112
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/openbb_mcp_server/models/settings.py",
+      "first": 124,
+      "last": 124
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/tests/app/test_auth.py",
+      "first": 43,
+      "last": 43
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/tests/app/test_auth.py",
+      "first": 67,
+      "last": 67
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/tests/app/test_auth.py",
+      "first": 97,
+      "last": 97
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/tests/app/test_auth.py",
+      "first": 107,
+      "last": 107
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/tests/app/test_auth.py",
+      "first": 124,
+      "last": 124
+    },
+    {
+      "path": "openbb_platform/extensions/mcp_server/tests/app/test_auth.py",
+      "first": 140,
+      "last": 140
+    },
+    {
+      "path": "cli/openbb_cli/cli.py",
+      "first": 121,
+      "last": 121
+    },
+    {
+      "path": "cli/openbb_cli/cli.py",
+      "first": 213,
+      "last": 213
+    },
+    {
+      "path": "cli/openbb_cli/cli.py",
+      "first": 514,
+      "last": 514
+    },
+    {
+      "path": "cli/openbb_cli/cli.py",
+      "first": 751,
+      "last": 751
+    },
+    {
+      "path": "cli/tests/test_dispatchers_http.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "cli/tests/test_dispatchers_http.py",
+      "first": 254,
+      "last": 254
+    },
+    {
+      "path": "cli/tests/test_dispatchers_http.py",
+      "first": 358,
+      "last": 358
+    },
+    {
+      "path": "cli/tests/test_dispatchers_local.py",
+      "first": 12,
+      "last": 12
+    },
+    {
+      "path": "cli/tests/test_dispatchers_local.py",
+      "first": 205,
+      "last": 205
+    },
+    {
+      "path": "cookiecutter/tests/test_template.py",
+      "first": 139,
+      "last": 139
+    },
+    {
+      "path": "cookiecutter/tests/test_template.py",
+      "first": 170,
+      "last": 170
+    },
+    {
+      "path": "desktop/src-tauri/src/tauri_handlers/backends.rs",
+      "first": 243,
+      "last": 243
+    },
+    {
+      "path": "desktop/src-tauri/src/tauri_handlers/backends.rs",
+      "first": 314,
+      "last": 314
+    },
+    {
+      "path": "desktop/src-tauri/src/tauri_handlers/backends.rs",
+      "first": 674,
+      "last": 674
+    },
+    {
+      "path": "desktop/src-tauri/src/tauri_handlers/backends.rs",
+      "first": 748,
+      "last": 748
+    },
+    {
+      "path": "desktop/src-tauri/src/tauri_handlers/backends.rs",
+      "first": 924,
+      "last": 924
+    },
+    {
+      "path": "desktop/src-tauri/src/tauri_handlers/backends.rs",
+      "first": 944,
+      "last": 944
+    },
+    {
+      "path": "desktop/src-tauri/src/utils/command_sanitizer.rs",
+      "first": 181,
+      "last": 181
+    },
+    {
+      "path": "desktop/src-tauri/src/utils/command_sanitizer.rs",
+      "first": 369,
+      "last": 369
+    },
+    {
+      "path": "desktop/src-tauri/capabilities/default.json",
+      "first": 8,
+      "last": 8
+    },
+    {
+      "path": "desktop/src-tauri/capabilities/desktop.json",
+      "first": 11,
+      "last": 11
+    },
+    {
+      "path": "desktop/src-tauri/tauri.conf.json",
+      "first": 37,
+      "last": 37
+    },
+    {
+      "path": "desktop/src-tauri/tauri.conf.json",
+      "first": 59,
+      "last": 59
+    },
+    {
+      "path": "desktop/src-tauri/src/tauri_handlers/credentials.rs",
+      "first": 73,
+      "last": 73
+    },
+    {
+      "path": "README.md",
+      "first": 122,
+      "last": 136
+    },
+    {
+      "path": "openbb_platform/dev_install.py",
+      "first": 214,
+      "last": 290
+    },
+    {
+      "path": "openbb_platform/Dockerfile",
+      "first": 1,
+      "last": 41
+    },
+    {
+      "path": "desktop/package.json",
+      "first": 7,
+      "last": 17
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "first": 1,
+      "last": 77
+    },
+    {
+      "path": "pytest.ini",
+      "first": 1,
+      "last": 10
+    },
+    {
+      "path": "SECURITY.md",
+      "first": 1,
+      "last": 12
+    }
+  ]
+}

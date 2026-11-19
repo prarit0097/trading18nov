@@ -1,0 +1,27 @@
+{
+  "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+  "files": 128,
+  "python_files": 62,
+  "vue_files": 16,
+  "routes": 60,
+  "python_symbols": 1051,
+  "ast_errors": [],
+  "extensions": {
+    "": 5,
+    ".example": 1,
+    ".md": 3,
+    ".json": 8,
+    ".yml": 3,
+    ".py": 62,
+    ".toml": 1,
+    ".txt": 1,
+    ".lock": 1,
+    ".html": 1,
+    ".png": 10,
+    ".vue": 16,
+    ".js": 9,
+    ".jpeg": 4,
+    ".svg": 2,
+    ".jpg": 1
+  }
+}

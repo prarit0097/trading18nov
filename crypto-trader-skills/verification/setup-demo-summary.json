@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "kind": "demo",
+  "data": {
+    "provenance": "synthetic offline fixture, fictional limits, pinned simulated clock",
+    "stages": [
+      {
+        "kind": "market",
+        "digest": "2ba2083980997b475f32e8cf4a2d5d1b1f49f676689b9bc0974e7b1921fb1d28",
+        "status": null
+      },
+      {
+        "kind": "news",
+        "digest": "91ad6d1e64076beec8858e8a14e002f92a1488d500ee18812aac4751f575fcb2",
+        "status": null
+      },
+      {
+        "kind": "proposal",
+        "digest": "48886d2fa0b4d2bae5a90be1f0fa82c7c93aedc66fda2bd2cb7844b36293a608",
+        "status": "ready"
+      },
+      {
+        "kind": "plan",
+        "digest": "dac5eacec9e6c4d65d8fd8e97056d5f350343238cc6709f29da98a45c1d6be4a",
+        "status": "ready"
+      },
+      {
+        "kind": "sizing",
+        "digest": "49367304ed0367816520ec39f3f8c7bf0a3bcc39aa5858920a1b0f0ca699f1d1",
+        "status": "ready"
+      },
+      {
+        "kind": "risk",
+        "digest": "b0fa9a12cfde28dd0f78cfe04ab45c38534ef508485be7ff70060e21e3592f74",
+        "status": "approved"
+      },
+      {
+        "kind": "backtest",
+        "digest": "53bc647092f069459bcb080b2d1f0d1e0599ca39a14341774a9fb99ebb31eb18",
+        "status": "complete"
+      },
+      {
+        "kind": "simulation",
+        "digest": "dbbf1958314671c17d407b6b30935067922f9c15eca3349b1a5e979d2634b97b",
+        "status": "complete"
+      },
+      {
+        "kind": "world",
+        "digest": "265eae0839c31bba12afc3915ac9c9a2c0fdea15ef56d03f6a70895faf9c6cb2",
+        "status": "complete"
+      },
+      {
+        "kind": "orders",
+        "digest": "d8bd52c1bbd7284bf2a7a9e26baa33f4bb77a9b76bdda61bac0c74cc2c36546e",
+        "status": "paper"
+      },
+      {
+        "kind": "report",
+        "digest": "c86933b2f36c02ca9c60356ef4e18c5ba2a8442e753077f21bcad2b1dd1e45f2",
+        "status": "inspection"
+      }
+    ],
+    "workspace": "E:\\coding\\code\\Trade\\crypto-trader-skills\\verification\\setup-demo",
+    "live_orders_submitted": 0
+  }
+}

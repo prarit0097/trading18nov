@@ -1,0 +1,21 @@
+{
+  "archive_sha256": "955ec49489a5c553deddaa827d37ebeed52c1fda686254be8d55acad665f85cb",
+  "ok": true,
+  "manifests": [
+    {
+      "kind": "root-manifest",
+      "value": {
+        "manifest_id": "agm_95b6a97283f5b0cbf30290147ef8a1c4ecff5ca4aa8e4a1db733a18340f105f2",
+        "root_artifact_id": "art_048f8a8521381f41c34b4e852cca4fecf3afe1e8bb335b0f127deb85a069511d",
+        "root_sha256": "955ec49489a5c553deddaa827d37ebeed52c1fda686254be8d55acad665f85cb",
+        "root_format": "zip",
+        "graph_sha256": "2ed85c42a1a6cb35832f3f343b6c93425fa877d8015a0cd0aa5e6ae402fd14a7",
+        "node_count": 17768,
+        "occurrence_count": 17958,
+        "edge_count": 17954
+      },
+      "evidence_id": "ev_4732966ca9d2d97de3904928bb866034af67008aa2732318f5ca4492470077a9"
+    }
+  ],
+  "scope": "Local pinned source ZIP member inventory, not TypeScript semantic/runtime verification"
+}

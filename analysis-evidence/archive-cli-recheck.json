@@ -1,0 +1,9 @@
+{
+  "scripts": 11,
+  "help_invocations": 38,
+  "all_help_exit_zero": true,
+  "archive_sha256": "ea23cec8907d77b6d636529316661f3b35ae380ea2a1c543b255c40fc950f269",
+  "git_archive_payloads_verified": 85,
+  "byte_exact_files": 20,
+  "text_files_with_only_CRLF_LF_difference": 65
+}

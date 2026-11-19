@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "mode": "offline historical-data CLI integration",
+  "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+  "stages_passed": 6,
+  "historical_session": "2026-11-12",
+  "clock_pinned_et": "2026-11-12 10:00",
+  "fixture_sha256": "3c8ce6d0a4389499490ea91d327f7500f38060a733dadf1e368c7e2033bc1256",
+  "entry_status": "triggered",
+  "risk_block_count": 0,
+  "oversized_block_count": 1,
+  "ticket_ready_count": 1,
+  "orders_approved": 0,
+  "orders_submitted": 0,
+  "limits": [
+    "Historical bar close substituted as deterministic test quote; not a live execution quote",
+    "Example $5000 budget is fictional",
+    "No broker connector, fills, live feed or P&L test"
+  ]
+}

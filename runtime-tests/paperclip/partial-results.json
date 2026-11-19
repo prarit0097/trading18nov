@@ -1,0 +1,14 @@
+{
+  "quota_used_percent": 91,
+  "state": "interrupted at owner reserve",
+  "completed_json_reports": [
+    {
+      "file": "shared-tests.json",
+      "total": 1167,
+      "passed": 1154,
+      "failed": 13,
+      "pending": 0,
+      "success": false
+    }
+  ]
+}

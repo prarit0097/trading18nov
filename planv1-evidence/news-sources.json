@@ -1,0 +1,34 @@
+{
+  "checked_date": "2026-11-17",
+  "purpose": "Current primary-source support for news-notes.md; claims are paraphrased, minimal or no raw quotes",
+  "web_word_limit_rule": "Each browsed source default 200 derived words maximum across final artifact. Preserve this budget when integrating notes; do not duplicate long derived passages elsewhere.",
+  "sources": [
+    {"url":"https://developers.binance.com/en/docs/products/announcements/announcement","supports":["Distinct English announcement topic com_announcement_en","Payload publishDate, title, body"],"not_established":["Free entitlement","Anonymous access","Guaranteed latency"],"wordlim":200},
+    {"url":"https://developers.binance.com/en/docs/products/announcements/general-info","supports":["User API key header and signed secret required","24h connection maximum","Client PING30s","5 incoming messages/s limit"],"not_established":["Pricing","Account regional eligibility"],"wordlim":200},
+    {"url":"https://www.alphavantage.co/documentation/#news-sentiment","supports":["NEWS_SENTIMENT explicitly marked premium","CRYPTO:BTC ticker syntax exists"],"decision":"Exclude from free baseline despite repository adapter","wordlim":200},
+    {"url":"https://www.alphavantage.co/support/","supports":["Generic free API key signup","Generic25requests/day majority datasets"],"not_established":["Free NEWS_SENTIMENT entitlement"],"wordlim":200},
+    {"url":"https://www.sec.gov/about/rss-feeds","supports":["Press release/litigation/EDGAR feed catalogue","Non-EDGAR email updates available"],"not_established":["RSS publish latency SLA"],"wordlim":200},
+    {"url":"https://www.sec.gov/about/developer-resources","supports":["10requests/s total per user across machines","Efficient access and identification required"],"wordlim":200},
+    {"url":"https://www.cftc.gov/RSS/index.htm","supports":["All RSS feeds temporarily disabled as of October2026"],"decision":"Do not configure active CFTC RSS without later verification","wordlim":200},
+    {"url":"https://status.kraken.com/api","supports":["Public GET endpoints summary/incidents/maintenance","RSS/Atom subscription links","Incident webhook subscription form"],"not_established":["News/listing coverage","Numeric request ceiling","Delivery SLA"],"wordlim":200},
+    {"url":"https://blog.ethereum.org/","supports":["Primary Ethereum Foundation blog","Security and protocol categories"],"wordlim":200},
+    {"url":"https://docs.github.com/en/rest/releases/releases#list-releases","supports":["Public releases readable unauthenticated","Regular tags excluded from releases list"],"wordlim":200},
+    {"url":"https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api","supports":["Public unauthenticated60requests/hour/IP","Authenticated personal5000/hour generally","Secondary limits apply"],"wordlim":200},
+    {"url":"https://docs.github.com/en/webhooks/types-of-webhooks","supports":["Repository webhook management requires owner/admin","Arbitrary third-party repo cannot be assumed webhook controllable"],"wordlim":200},
+    {"url":"https://core.telegram.org/bots/faq","supports":["Ordinary bot messaging no-cost","Single chat approximately1message/s","Group20/minute","Bulk approximately30/s free","Bot visibility is membership/access limited"],"decision":"Opt-in outbound delivery only, paid broadcasting disabled","wordlim":200}
+  ],
+  "bounded_live_http_checks": [
+    {"url":"https://blog.ethereum.org/feed.xml","status":200,"content_type":"application/xml","xml_root":"rss","item_count":646},
+    {"url":"https://blog.kraken.com/feed","status":200,"content_type":"application/rss+xml; charset=UTF-8","xml_root":"rss","item_count":10},
+    {"url":"https://www.coindesk.com/arc/outboundfeeds/rss/","status":200,"content_type":"application/xml","xml_root":"rss","item_count":25},
+    {"url":"https://status.kraken.com/history.rss","status":200,"content_type":"application/rss+xml; charset=utf-8","xml_root":"rss","item_count":25}
+  ],
+  "http_check_scope": "One bounded anonymous GET/source, timeout15s/read cap2000000bytes. Counts momentary, not retention commitments. No persistent poll, no credentials, no latency test, no redistribution rights conclusion.",
+  "repo_commits": {
+    "day-trader-skill":"3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+    "OpenBB":"e43353a82815ff9ba56ad1b7ad47c32729dcf314",
+    "TradingAgents":"9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+    "MiroFish":"7657031ac01184afe2cb220f5ee3545573b5e843",
+    "paperclip":"9de343b3fe2e2d4dc84fc8386d9ce04d553f39d6"
+  }
+}

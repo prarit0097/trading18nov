@@ -1,0 +1,32 @@
+{
+  "command": [
+    "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-c",
+    "E:\\coding\\code\\Trade\\obb-evidence\\offline-tests\\pytest.ini",
+    "E:\\coding\\code\\Trade\\obb-evidence\\offline-tests\\test_utils_optional.py",
+    "E:\\coding\\code\\Trade\\obb-evidence\\offline-tests\\test_singleton.py",
+    "E:\\coding\\code\\Trade\\obb-evidence\\offline-tests\\test_warning.py"
+  ],
+  "exit_code": 0,
+  "files": [
+    {
+      "source": "openbb_platform/core/tests/app/test_utils_optional.py",
+      "copy": "obb-evidence/offline-tests/test_utils_optional.py",
+      "sha256": "fe837908fabd136c51060f08467e1536b4cfeaabb4991148c38bc4fe67f7c2be"
+    },
+    {
+      "source": "openbb_platform/core/tests/app/model/abstract/test_singleton.py",
+      "copy": "obb-evidence/offline-tests/test_singleton.py",
+      "sha256": "90fd4251c660fbe19b8fd20505a740a07ce5c0a1794768d78e63665fda505d5a"
+    },
+    {
+      "source": "openbb_platform/core/tests/app/model/abstract/test_warning.py",
+      "copy": "obb-evidence/offline-tests/test_warning.py",
+      "sha256": "72a6f763e12b1e35f7480b873c74f3fe3029c9ce48fa028241ccdf2c094d1633"
+    }
+  ],
+  "scope": "Unmodified source test copies; original repository conftest bypassed to avoid unavailable full-install dependencies; actual core source imported via PYTHONPATH; no stubs or live provider calls."
+}

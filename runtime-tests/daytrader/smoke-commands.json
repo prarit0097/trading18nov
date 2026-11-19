@@ -1,0 +1,99 @@
+[
+  {
+    "label": "01-entry",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-entry\\entry.py",
+      "check",
+      "NVDA",
+      "--offline",
+      "E:\\coding\\code\\Trade\\nvda-timemachine\\20261116T153319Z\\NVDA-60d5m.json",
+      "--now",
+      "2026-11-12 10:00",
+      "--write",
+      "--json"
+    ],
+    "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\daytrader\\historical-nvda",
+    "started": "2026-11-17T01:51:29.094035+00:00",
+    "exit_code": 0,
+    "expected_exit": 0
+  },
+  {
+    "label": "02-plan",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-exit\\exit.py",
+      "plan",
+      "--now",
+      "2026-11-12 10:00",
+      "--write",
+      "--json"
+    ],
+    "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\daytrader\\historical-nvda",
+    "started": "2026-11-17T01:51:34.156653+00:00",
+    "exit_code": 0,
+    "expected_exit": 0
+  },
+  {
+    "label": "03-size",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-budget\\size.py",
+      "--now",
+      "2026-11-12 10:00",
+      "--write",
+      "--json"
+    ],
+    "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\daytrader\\historical-nvda",
+    "started": "2026-11-17T01:51:36.239587+00:00",
+    "exit_code": 0,
+    "expected_exit": 0
+  },
+  {
+    "label": "04-risk",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-risk\\check.py",
+      "--now",
+      "2026-11-12 10:00",
+      "--json"
+    ],
+    "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\daytrader\\historical-nvda",
+    "started": "2026-11-17T01:51:36.932133+00:00",
+    "exit_code": 0,
+    "expected_exit": 0
+  },
+  {
+    "label": "05-ticket",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-broker\\ticket.py",
+      "show",
+      "--now",
+      "2026-11-12 10:00",
+      "--json"
+    ],
+    "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\daytrader\\historical-nvda",
+    "started": "2026-11-17T01:51:37.741162+00:00",
+    "exit_code": 0,
+    "expected_exit": 0
+  },
+  {
+    "label": "06-oversized-risk",
+    "command": [
+      "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "E:\\coding\\code\\Trade\\day-trader-skill\\trader-risk\\check.py",
+      "--orders",
+      "trader/oversized-orders.json",
+      "--out",
+      "trader/state/oversized-risk.json",
+      "--now",
+      "2026-11-12 10:00",
+      "--json"
+    ],
+    "cwd": "E:\\coding\\code\\Trade\\runtime-tests\\daytrader\\historical-nvda",
+    "started": "2026-11-17T01:51:38.184527+00:00",
+    "exit_code": 1,
+    "expected_exit": 1
+  }
+]

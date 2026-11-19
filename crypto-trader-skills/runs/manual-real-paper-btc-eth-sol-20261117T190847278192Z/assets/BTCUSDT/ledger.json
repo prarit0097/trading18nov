@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-11-17T19:08:58.344149Z",
+  "data": {
+    "cash": "8072.3399052396000000000",
+    "daily_realized": {},
+    "initial_cash": "10000",
+    "orders": [
+      {
+        "action": "buy",
+        "at": "2026-11-17T19:08:58.344149Z",
+        "fee": "1.9257343604000000000",
+        "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+        "mode": "paper",
+        "price": "63787.16000000",
+        "price_source": "ask_plus_adverse_slippage",
+        "quantity": "0.03019000",
+        "risk_digest": "964a51bdbe6a03aa1ebaf43a7d0245c82e046804bc66087fb3e7df5b54aeae79",
+        "symbol": "BTCUSDT"
+      }
+    ],
+    "positions": [
+      {
+        "entry_fee": "1.9257343604000000000",
+        "entry_fee_rate": "0.001",
+        "entry_price": "63787.16000000",
+        "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+        "opened_at": "2026-11-17T19:08:58.344149Z",
+        "quantity": "0.03019000",
+        "stop": "63117.72000000",
+        "symbol": "BTCUSDT",
+        "target": "65030.40000000"
+      }
+    ],
+    "quote_currency": "USDT",
+    "realized_pnl": "0"
+  },
+  "digest": "8c754d4cce1065a7185b1372e629761bec30a01fdffb1d97e27ad2a63ae012c8",
+  "inputs": {
+    "config": "866b8ef2d00f66e71b619f30dc79406777dad61c16950a9f547790f964047500",
+    "previous_ledger": "60095b349066072ba67844f900fd41c00cb13f407a3967cf94b31bbc39a5d2da"
+  },
+  "kind": "ledger",
+  "schema_version": 1
+}

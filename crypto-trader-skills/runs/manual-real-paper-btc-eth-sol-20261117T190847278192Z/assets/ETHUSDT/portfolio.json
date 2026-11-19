@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-11-17T19:09:09.181252Z",
+  "data": {
+    "account_digest": "a1841013e601bc36a9162a4cfeb2b02f57036052a56c104af09af94715063ecd",
+    "cash": "6145.6924284856000000000",
+    "daily_realized": {},
+    "positions": [
+      {
+        "entry_fee": "1.9257343604000000000",
+        "entry_fee_rate": "0.001",
+        "entry_price": "63787.16000000",
+        "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+        "opened_at": "2026-11-17T19:08:58.344149Z",
+        "quantity": "0.03019000",
+        "stop": "63117.72000000",
+        "symbol": "BTCUSDT",
+        "target": "65030.40000000"
+      },
+      {
+        "entry_fee": "1.9247227540000000000",
+        "entry_fee_rate": "0.001",
+        "entry_price": "1791.94000000",
+        "id": "044965cf60588bc41e0f6a136fbf04d40e30fe8b9d2611ead13c77c0e69f33a2",
+        "opened_at": "2026-11-17T19:09:09.181252Z",
+        "quantity": "1.07410000",
+        "stop": "1773.12000000",
+        "symbol": "ETHUSDT",
+        "target": "1826.88000000"
+      }
+    ],
+    "quote_currency": "USDT",
+    "realized_pnl": "0"
+  },
+  "digest": "08a7557a0b56137579c16ea0909258b37eeecc230f8208f4819602f16d62ea33",
+  "inputs": {
+    "ledger": "a1841013e601bc36a9162a4cfeb2b02f57036052a56c104af09af94715063ecd"
+  },
+  "kind": "portfolio",
+  "schema_version": 1
+}

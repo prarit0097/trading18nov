@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-17T12:31:30.394157Z",
+  "paid_calls": 0,
+  "order_calls": 0,
+  "endpoint_base": "https://data-api.binance.vision",
+  "status": "passed",
+  "closed_bars": 29,
+  "as_of": "2026-11-17T12:31:30.394256Z",
+  "health": {
+    "valid": true,
+    "gaps": [],
+    "closed_bars": 29
+  },
+  "units": {
+    "mode": "public_rest",
+    "base_url": "https://data-api.binance.vision",
+    "price_unit": "USDT",
+    "volume_unit": "BTC",
+    "retrieved_at": "2026-11-17T12:31:30.394256Z"
+  },
+  "metadata": {
+    "qty_step": "0.00001000",
+    "price_tick": "0.01000000",
+    "min_notional": "5.00000000"
+  },
+  "elapsed_seconds": 2.19
+}

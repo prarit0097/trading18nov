@@ -1,0 +1,23 @@
+{
+  "envelope_keys": [
+    "ok",
+    "data",
+    "meta"
+  ],
+  "zip_sha256": "6f9ad7a2588a0faf975b8d9e8bd536b632c1e42fd3a21092ce27e1a4235ca0c6",
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "root_manifest": {
+    "manifest_id": "agm_f897fa1e0f4d2dba2e14316122464aee5d0900286d93cc73b23cc5380c32fec8",
+    "root_artifact_id": "art_51db12be4d1e45163fad4cd0d29ba8301f97051f290d149ad51bf9dbd3ae1718",
+    "root_sha256": "6f9ad7a2588a0faf975b8d9e8bd536b632c1e42fd3a21092ce27e1a4235ca0c6",
+    "root_format": "zip",
+    "graph_sha256": "7c6e365b9ede3a2c7ed87563f318e318d9fd7e6c3de5ed7d3c18bb2939fd8e30",
+    "node_count": 156,
+    "occurrence_count": 157,
+    "edge_count": 156
+  },
+  "root_evidence_id": "ev_1081269a06ef80e5e55ddb32c323d0b31cf9f6cd9cf1714c2493d1e41fb19b0b"
+}

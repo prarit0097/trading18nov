@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-17T19:08:56.052793Z",
+  "data": {
+    "authorization": "User: Tum trade lo tbhi testing hogi btc , ethirum , solana mai lelo",
+    "entry": "63755.28000000",
+    "execution_test": true,
+    "manual_override": true,
+    "reasons": [
+      "User explicitly requested BTC/ETH/SOL paper buys for execution testing; no claim of strategy trigger"
+    ],
+    "research_only": false,
+    "side": "long",
+    "signal_time": "2026-11-17T19:08:56.052594Z",
+    "status": "ready",
+    "strategy_signal_status": "waiting",
+    "trigger_source": "explicit_user_instruction"
+  },
+  "digest": "053c072c431257c5b4091866a55ad15fcf5d54078bcf967e6905b16090ea67f2",
+  "inputs": {
+    "config": "866b8ef2d00f66e71b619f30dc79406777dad61c16950a9f547790f964047500",
+    "market": "6829269ba7a3e9c67421b7921f43efcbafa7517bfd1a76aa00da477a54f7120a"
+  },
+  "kind": "proposal",
+  "schema_version": 1
+}

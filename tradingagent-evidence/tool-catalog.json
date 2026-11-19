@@ -1,0 +1,62 @@
+[
+  {
+    "name": "get_stock_data",
+    "line": 19,
+    "doc": "Retrieve stock price data (OHLCV) for the instrument under analysis.\nUses the configured core_stock_apis vendor.\nArgs:\n    start_date (str): Start date in yyyy-mm-dd format\n    end_date (str): End date in yyyy-mm-dd format\nReturns:\n    str: A formatted dataframe containing the price data for the instrument over the date range."
+  },
+  {
+    "name": "get_indicators",
+    "line": 42,
+    "doc": "Retrieve a single technical indicator for the instrument under analysis.\nUses the configured technical_indicators vendor.\nArgs:\n    indicator (str): A single technical indicator name, e.g. 'rsi', 'macd'. Call this tool once per indicator.\n    curr_date (str): The current trading date you are trading on, YYYY-mm-dd\n    look_back_days (int): How many days to look back, default is 30\nReturns:\n    str: A formatted dataframe containing the technical indicators for the instrument and indicator."
+  },
+  {
+    "name": "get_verified_market_snapshot",
+    "line": 73,
+    "doc": "Deterministic verification snapshot for exact market-data claims.\n\nReturns the latest OHLCV row on or before curr_date, common technical\nindicators, and recent closes. Call this before making exact claims about\nprice levels, Bollinger bands, RSI, MACD, moving averages, support /\nresistance, or historical comparisons, and treat it as the source of truth."
+  },
+  {
+    "name": "get_fundamentals",
+    "line": 98,
+    "doc": "Retrieve comprehensive fundamental data for the instrument under analysis.\nUses the configured fundamental_data vendor.\nArgs:\n    curr_date (str): Current date you are trading at, yyyy-mm-dd\nReturns:\n    str: A formatted report containing comprehensive fundamental data"
+  },
+  {
+    "name": "get_balance_sheet",
+    "line": 115,
+    "doc": "Retrieve balance sheet data for the instrument under analysis.\nUses the configured fundamental_data vendor.\nArgs:\n    freq (str): Reporting frequency: annual/quarterly (default quarterly)\n    curr_date (str): Current date you are trading at, yyyy-mm-dd\nReturns:\n    str: A formatted report containing balance sheet data"
+  },
+  {
+    "name": "get_cashflow",
+    "line": 134,
+    "doc": "Retrieve cash flow statement data for the instrument under analysis.\nUses the configured fundamental_data vendor.\nArgs:\n    freq (str): Reporting frequency: annual/quarterly (default quarterly)\n    curr_date (str): Current date you are trading at, yyyy-mm-dd\nReturns:\n    str: A formatted report containing cash flow statement data"
+  },
+  {
+    "name": "get_income_statement",
+    "line": 153,
+    "doc": "Retrieve income statement data for the instrument under analysis.\nUses the configured fundamental_data vendor.\nArgs:\n    freq (str): Reporting frequency: annual/quarterly (default quarterly)\n    curr_date (str): Current date you are trading at, yyyy-mm-dd\nReturns:\n    str: A formatted report containing income statement data"
+  },
+  {
+    "name": "get_news",
+    "line": 172,
+    "doc": "Retrieve news data for the instrument under analysis.\nUses the configured news_data vendor.\nArgs:\n    start_date (str): Start date in yyyy-mm-dd format\n    end_date (str): End date in yyyy-mm-dd format\nReturns:\n    str: A formatted string containing news data"
+  },
+  {
+    "name": "get_global_news",
+    "line": 195,
+    "doc": "Retrieve global news data.\nUses the configured news_data vendor. Defaults for look_back_days and\nlimit come from DEFAULT_CONFIG (global_news_lookback_days,\nglobal_news_article_limit); pass explicit values to override.\n\nArgs:\n    curr_date (str): Current date in yyyy-mm-dd format\n    look_back_days (int): Number of days to look back; omit to inherit config\n    limit (int): Maximum number of articles to return; omit to inherit config\n\nReturns:\n    str: A formatted string containing global news data"
+  },
+  {
+    "name": "get_insider_transactions",
+    "line": 219,
+    "doc": "Retrieve insider transaction information about a company.\nUses the configured news_data vendor.\nReturns:\n    str: A report of insider transaction data"
+  },
+  {
+    "name": "get_macro_indicators",
+    "line": 233,
+    "doc": "Retrieve a macroeconomic indicator time series from FRED (Federal Reserve\nEconomic Data): policy rates, Treasury yields, inflation, labor, and growth,\nfor the US and, through FRED's mirrored series, the euro area.\nReturns the series title, units, frequency, the latest value, the change\nover the window, and a recent observation table. Uses the configured\nmacro_data vendor.\n\nArgs:\n    indicator (str): Friendly alias or raw FRED series ID\n    curr_date (str): Current date in yyyy-mm-dd format\n    look_back_days (int): Trailing window length; omit for a 1-year window\n\nReturns:\n    str: A formatted markdown report of the macro series"
+  },
+  {
+    "name": "get_prediction_markets",
+    "line": 268,
+    "doc": "Retrieve live, market-implied probabilities for forward-looking events from\nprediction markets (Polymarket): Fed decisions, recession, elections,\ngeopolitics, crypto. Returns the most-traded open markets matching the\ntopic, each with its implied probability, traded volume, resolution date,\nand recent move. Uses the configured prediction_markets vendor.\n\nArgs:\n    topic (str): Event keyword(s) to search\n    limit (int): Max markets to return; omit for a default of 6\n\nReturns:\n    str: A formatted markdown report of matching prediction markets"
+  }
+]

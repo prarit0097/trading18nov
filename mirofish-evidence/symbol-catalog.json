@@ -1,0 +1,7359 @@
+[
+  {
+    "path": "backend/app/__init__.py",
+    "line": 19,
+    "end_line": 79,
+    "kind": "FunctionDef",
+    "name": "create_app"
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "line": 53,
+    "end_line": 57,
+    "kind": "FunctionDef",
+    "name": "log_request"
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "line": 60,
+    "end_line": 63,
+    "kind": "FunctionDef",
+    "name": "log_response"
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "line": 73,
+    "end_line": 74,
+    "kind": "FunctionDef",
+    "name": "health"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 36,
+    "end_line": 37,
+    "kind": "ClassDef",
+    "name": "GraphInUseError"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 40,
+    "end_line": 73,
+    "kind": "FunctionDef",
+    "name": "_active_graph_consumers"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 76,
+    "end_line": 94,
+    "kind": "FunctionDef",
+    "name": "_delete_cloud_graph_if_present"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 97,
+    "end_line": 102,
+    "kind": "FunctionDef",
+    "name": "_clear_project_graph_reference"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 105,
+    "end_line": 107,
+    "kind": "FunctionDef",
+    "name": "_project_build_lock"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 110,
+    "end_line": 119,
+    "kind": "FunctionDef",
+    "name": "_project_has_active_build"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 122,
+    "end_line": 127,
+    "kind": "FunctionDef",
+    "name": "allowed_file"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 133,
+    "end_line": 148,
+    "kind": "FunctionDef",
+    "name": "get_project"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 152,
+    "end_line": 163,
+    "kind": "FunctionDef",
+    "name": "list_projects"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 167,
+    "end_line": 169,
+    "kind": "FunctionDef",
+    "name": "delete_project"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 172,
+    "end_line": 210,
+    "kind": "FunctionDef",
+    "name": "_delete_project_impl"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 214,
+    "end_line": 216,
+    "kind": "FunctionDef",
+    "name": "reset_project"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 219,
+    "end_line": 260,
+    "kind": "FunctionDef",
+    "name": "_reset_project_impl"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 266,
+    "end_line": 443,
+    "kind": "FunctionDef",
+    "name": "generate_ontology"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 449,
+    "end_line": 457,
+    "kind": "FunctionDef",
+    "name": "build_graph"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 460,
+    "end_line": 839,
+    "kind": "FunctionDef",
+    "name": "_build_graph_impl"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 845,
+    "end_line": 860,
+    "kind": "FunctionDef",
+    "name": "get_task"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 864,
+    "end_line": 874,
+    "kind": "FunctionDef",
+    "name": "list_tasks"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 880,
+    "end_line": 904,
+    "kind": "FunctionDef",
+    "name": "get_graph_data"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 908,
+    "end_line": 963,
+    "kind": "FunctionDef",
+    "name": "delete_graph"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 651,
+    "end_line": 816,
+    "kind": "FunctionDef",
+    "name": "build_task"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 757,
+    "end_line": 763,
+    "kind": "FunctionDef",
+    "name": "wait_progress_callback"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 705,
+    "end_line": 707,
+    "kind": "FunctionDef",
+    "name": "remember_graph"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 723,
+    "end_line": 729,
+    "kind": "FunctionDef",
+    "name": "add_progress_callback"
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "line": 737,
+    "end_line": 740,
+    "kind": "FunctionDef",
+    "name": "remember_batch"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 33,
+    "end_line": 319,
+    "kind": "FunctionDef",
+    "name": "generate_report"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 323,
+    "end_line": 391,
+    "kind": "FunctionDef",
+    "name": "get_generate_status"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 397,
+    "end_line": 435,
+    "kind": "FunctionDef",
+    "name": "get_report"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 439,
+    "end_line": 474,
+    "kind": "FunctionDef",
+    "name": "get_report_by_simulation"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 478,
+    "end_line": 514,
+    "kind": "FunctionDef",
+    "name": "list_reports"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 518,
+    "end_line": 560,
+    "kind": "FunctionDef",
+    "name": "download_report"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 564,
+    "end_line": 586,
+    "kind": "FunctionDef",
+    "name": "delete_report"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 592,
+    "end_line": 683,
+    "kind": "FunctionDef",
+    "name": "chat_with_report_agent"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 689,
+    "end_line": 726,
+    "kind": "FunctionDef",
+    "name": "get_report_progress"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 730,
+    "end_line": 777,
+    "kind": "FunctionDef",
+    "name": "get_report_sections"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 781,
+    "end_line": 821,
+    "kind": "FunctionDef",
+    "name": "get_single_section"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 827,
+    "end_line": 872,
+    "kind": "FunctionDef",
+    "name": "check_report_status"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 878,
+    "end_line": 933,
+    "kind": "FunctionDef",
+    "name": "get_agent_log"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 937,
+    "end_line": 967,
+    "kind": "FunctionDef",
+    "name": "stream_agent_log"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 973,
+    "end_line": 1015,
+    "kind": "FunctionDef",
+    "name": "get_console_log"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 1019,
+    "end_line": 1049,
+    "kind": "FunctionDef",
+    "name": "stream_console_log"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 1055,
+    "end_line": 1099,
+    "kind": "FunctionDef",
+    "name": "search_graph_tool"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 1103,
+    "end_line": 1139,
+    "kind": "FunctionDef",
+    "name": "get_graph_statistics_tool"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 245,
+    "end_line": 292,
+    "kind": "FunctionDef",
+    "name": "run_generate"
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "line": 261,
+    "end_line": 266,
+    "kind": "FunctionDef",
+    "name": "progress_callback"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 30,
+    "end_line": 50,
+    "kind": "FunctionDef",
+    "name": "_get_default_platform"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 58,
+    "end_line": 73,
+    "kind": "FunctionDef",
+    "name": "optimize_interview_prompt"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 79,
+    "end_line": 120,
+    "kind": "FunctionDef",
+    "name": "get_graph_entities"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 124,
+    "end_line": 153,
+    "kind": "FunctionDef",
+    "name": "get_entity_detail"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 157,
+    "end_line": 190,
+    "kind": "FunctionDef",
+    "name": "get_entities_by_type"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 196,
+    "end_line": 267,
+    "kind": "FunctionDef",
+    "name": "create_simulation"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 270,
+    "end_line": 386,
+    "kind": "FunctionDef",
+    "name": "_check_simulation_prepared"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 390,
+    "end_line": 674,
+    "kind": "FunctionDef",
+    "name": "prepare_simulation"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 678,
+    "end_line": 787,
+    "kind": "FunctionDef",
+    "name": "get_prepare_status"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 791,
+    "end_line": 820,
+    "kind": "FunctionDef",
+    "name": "get_simulation"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 824,
+    "end_line": 849,
+    "kind": "FunctionDef",
+    "name": "list_simulations"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 852,
+    "end_line": 908,
+    "kind": "FunctionDef",
+    "name": "_get_report_id_for_simulation"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 912,
+    "end_line": 1022,
+    "kind": "FunctionDef",
+    "name": "get_simulation_history"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1026,
+    "end_line": 1060,
+    "kind": "FunctionDef",
+    "name": "get_simulation_profiles"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1064,
+    "end_line": 1175,
+    "kind": "FunctionDef",
+    "name": "get_simulation_profiles_realtime"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1179,
+    "end_line": 1305,
+    "kind": "FunctionDef",
+    "name": "get_simulation_config_realtime"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1309,
+    "end_line": 1341,
+    "kind": "FunctionDef",
+    "name": "get_simulation_config"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1345,
+    "end_line": 1370,
+    "kind": "FunctionDef",
+    "name": "download_simulation_config"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1374,
+    "end_line": 1422,
+    "kind": "FunctionDef",
+    "name": "download_simulation_script"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1428,
+    "end_line": 1496,
+    "kind": "FunctionDef",
+    "name": "generate_profiles"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1502,
+    "end_line": 1785,
+    "kind": "FunctionDef",
+    "name": "start_simulation"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1789,
+    "end_line": 1860,
+    "kind": "FunctionDef",
+    "name": "stop_simulation"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1866,
+    "end_line": 1920,
+    "kind": "FunctionDef",
+    "name": "get_run_status"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 1924,
+    "end_line": 2021,
+    "kind": "FunctionDef",
+    "name": "get_run_status_detail"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2025,
+    "end_line": 2075,
+    "kind": "FunctionDef",
+    "name": "get_simulation_actions"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2079,
+    "end_line": 2115,
+    "kind": "FunctionDef",
+    "name": "get_simulation_timeline"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2119,
+    "end_line": 2142,
+    "kind": "FunctionDef",
+    "name": "get_agent_stats"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2148,
+    "end_line": 2222,
+    "kind": "FunctionDef",
+    "name": "get_simulation_posts"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2226,
+    "end_line": 2299,
+    "kind": "FunctionDef",
+    "name": "get_simulation_comments"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2305,
+    "end_line": 2430,
+    "kind": "FunctionDef",
+    "name": "interview_agent"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2434,
+    "end_line": 2568,
+    "kind": "FunctionDef",
+    "name": "interview_agents_batch"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2572,
+    "end_line": 2671,
+    "kind": "FunctionDef",
+    "name": "interview_all_agents"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2675,
+    "end_line": 2743,
+    "kind": "FunctionDef",
+    "name": "get_interview_history"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2747,
+    "end_line": 2808,
+    "kind": "FunctionDef",
+    "name": "get_env_status"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 2812,
+    "end_line": 2878,
+    "kind": "FunctionDef",
+    "name": "close_simulation_env"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 538,
+    "end_line": 643,
+    "kind": "FunctionDef",
+    "name": "run_prepare"
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "line": 552,
+    "end_line": 611,
+    "kind": "FunctionDef",
+    "name": "progress_callback"
+  },
+  {
+    "path": "backend/app/config.py",
+    "line": 17,
+    "end_line": 76,
+    "kind": "ClassDef",
+    "name": "Config"
+  },
+  {
+    "path": "backend/app/config.py",
+    "line": 64,
+    "end_line": 76,
+    "kind": "FunctionDef",
+    "name": "validate"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 17,
+    "end_line": 23,
+    "kind": "ClassDef",
+    "name": "ProjectStatus"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 27,
+    "end_line": 104,
+    "kind": "ClassDef",
+    "name": "Project"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 107,
+    "end_line": 320,
+    "kind": "ClassDef",
+    "name": "ProjectManager"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 57,
+    "end_line": 77,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 80,
+    "end_line": 104,
+    "kind": "FunctionDef",
+    "name": "from_dict"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 114,
+    "end_line": 116,
+    "kind": "FunctionDef",
+    "name": "_ensure_projects_dir"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 119,
+    "end_line": 121,
+    "kind": "FunctionDef",
+    "name": "_get_project_dir"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 124,
+    "end_line": 126,
+    "kind": "FunctionDef",
+    "name": "_get_project_meta_path"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 129,
+    "end_line": 131,
+    "kind": "FunctionDef",
+    "name": "_get_project_files_dir"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 134,
+    "end_line": 136,
+    "kind": "FunctionDef",
+    "name": "_get_project_text_path"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 139,
+    "end_line": 171,
+    "kind": "FunctionDef",
+    "name": "create_project"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 174,
+    "end_line": 180,
+    "kind": "FunctionDef",
+    "name": "save_project"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 183,
+    "end_line": 201,
+    "kind": "FunctionDef",
+    "name": "get_project"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 204,
+    "end_line": 225,
+    "kind": "FunctionDef",
+    "name": "list_projects"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 228,
+    "end_line": 235,
+    "kind": "FunctionDef",
+    "name": "find_projects_by_graph_id"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 238,
+    "end_line": 254,
+    "kind": "FunctionDef",
+    "name": "delete_project"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 257,
+    "end_line": 288,
+    "kind": "FunctionDef",
+    "name": "save_file_to_project"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 291,
+    "end_line": 295,
+    "kind": "FunctionDef",
+    "name": "save_extracted_text"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 298,
+    "end_line": 306,
+    "kind": "FunctionDef",
+    "name": "get_extracted_text"
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "line": 309,
+    "end_line": 320,
+    "kind": "FunctionDef",
+    "name": "get_project_files"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 16,
+    "end_line": 21,
+    "kind": "ClassDef",
+    "name": "TaskStatus"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 25,
+    "end_line": 53,
+    "kind": "ClassDef",
+    "name": "Task"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 56,
+    "end_line": 185,
+    "kind": "ClassDef",
+    "name": "TaskManager"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 39,
+    "end_line": 53,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 65,
+    "end_line": 73,
+    "kind": "FunctionDef",
+    "name": "__new__"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 75,
+    "end_line": 101,
+    "kind": "FunctionDef",
+    "name": "create_task"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 103,
+    "end_line": 106,
+    "kind": "FunctionDef",
+    "name": "get_task"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 108,
+    "end_line": 145,
+    "kind": "FunctionDef",
+    "name": "update_task"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 147,
+    "end_line": 155,
+    "kind": "FunctionDef",
+    "name": "complete_task"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 157,
+    "end_line": 164,
+    "kind": "FunctionDef",
+    "name": "fail_task"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 166,
+    "end_line": 172,
+    "kind": "FunctionDef",
+    "name": "list_tasks"
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "line": 174,
+    "end_line": 185,
+    "kind": "FunctionDef",
+    "name": "cleanup_old_tasks"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 35,
+    "end_line": 48,
+    "kind": "ClassDef",
+    "name": "GraphInfo"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 52,
+    "end_line": 58,
+    "kind": "ClassDef",
+    "name": "BatchSubmission"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 61,
+    "end_line": 879,
+    "kind": "ClassDef",
+    "name": "GraphBuilderService"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 42,
+    "end_line": 48,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 67,
+    "end_line": 73,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 75,
+    "end_line": 119,
+    "kind": "FunctionDef",
+    "name": "build_graph_async"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 121,
+    "end_line": 216,
+    "kind": "FunctionDef",
+    "name": "_build_graph_worker"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 218,
+    "end_line": 261,
+    "kind": "FunctionDef",
+    "name": "create_graph"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 264,
+    "end_line": 268,
+    "kind": "FunctionDef",
+    "name": "build_operation_id"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 270,
+    "end_line": 311,
+    "kind": "FunctionDef",
+    "name": "_find_batch_by_operation_id"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 313,
+    "end_line": 405,
+    "kind": "FunctionDef",
+    "name": "set_ontology"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 407,
+    "end_line": 564,
+    "kind": "FunctionDef",
+    "name": "add_text_batches"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 567,
+    "end_line": 580,
+    "kind": "FunctionDef",
+    "name": "validate_batch_chunks"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 582,
+    "end_line": 603,
+    "kind": "FunctionDef",
+    "name": "_list_batch_items"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 605,
+    "end_line": 621,
+    "kind": "FunctionDef",
+    "name": "_reconcile_batch_item_count"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 623,
+    "end_line": 629,
+    "kind": "FunctionDef",
+    "name": "get_batch_summary"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 631,
+    "end_line": 718,
+    "kind": "FunctionDef",
+    "name": "_wait_for_batch"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 720,
+    "end_line": 775,
+    "kind": "FunctionDef",
+    "name": "_wait_for_episodes"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 777,
+    "end_line": 798,
+    "kind": "FunctionDef",
+    "name": "_get_graph_info"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 800,
+    "end_line": 875,
+    "kind": "FunctionDef",
+    "name": "get_graph_data"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 877,
+    "end_line": 879,
+    "kind": "FunctionDef",
+    "name": "delete_graph"
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "line": 324,
+    "end_line": 328,
+    "kind": "FunctionDef",
+    "name": "safe_attr_name"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 34,
+    "end_line": 55,
+    "kind": "FunctionDef",
+    "name": "_coerce_to_str"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 58,
+    "end_line": 76,
+    "kind": "FunctionDef",
+    "name": "_coerce_to_str_list"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 80,
+    "end_line": 202,
+    "kind": "ClassDef",
+    "name": "OasisAgentProfile"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 205,
+    "end_line": 1248,
+    "kind": "ClassDef",
+    "name": "OasisProfileGenerator"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 111,
+    "end_line": 121,
+    "kind": "FunctionDef",
+    "name": "__post_init__"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 123,
+    "end_line": 149,
+    "kind": "FunctionDef",
+    "name": "to_reddit_format"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 151,
+    "end_line": 179,
+    "kind": "FunctionDef",
+    "name": "to_twitter_format"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 181,
+    "end_line": 202,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 243,
+    "end_line": 272,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 274,
+    "end_line": 336,
+    "kind": "FunctionDef",
+    "name": "generate_profile_from_entity"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 338,
+    "end_line": 346,
+    "kind": "FunctionDef",
+    "name": "_generate_username"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 348,
+    "end_line": 455,
+    "kind": "FunctionDef",
+    "name": "_search_zep_for_entity"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 457,
+    "end_line": 530,
+    "kind": "FunctionDef",
+    "name": "_build_entity_context"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 532,
+    "end_line": 534,
+    "kind": "FunctionDef",
+    "name": "_is_individual_entity"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 536,
+    "end_line": 538,
+    "kind": "FunctionDef",
+    "name": "_is_group_entity"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 540,
+    "end_line": 625,
+    "kind": "FunctionDef",
+    "name": "_generate_profile_with_llm"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 627,
+    "end_line": 648,
+    "kind": "FunctionDef",
+    "name": "_fix_truncated_json"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 650,
+    "end_line": 714,
+    "kind": "FunctionDef",
+    "name": "_try_fix_json"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 716,
+    "end_line": 719,
+    "kind": "FunctionDef",
+    "name": "_get_system_prompt"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 721,
+    "end_line": 768,
+    "kind": "FunctionDef",
+    "name": "_build_individual_persona_prompt"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 770,
+    "end_line": 816,
+    "kind": "FunctionDef",
+    "name": "_build_group_persona_prompt"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 818,
+    "end_line": 889,
+    "kind": "FunctionDef",
+    "name": "_generate_profile_rule_based"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 891,
+    "end_line": 893,
+    "kind": "FunctionDef",
+    "name": "set_graph_id"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 895,
+    "end_line": 1058,
+    "kind": "FunctionDef",
+    "name": "generate_profiles_from_entities"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 1060,
+    "end_line": 1089,
+    "kind": "FunctionDef",
+    "name": "_print_generated_profile"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 1091,
+    "end_line": 1112,
+    "kind": "FunctionDef",
+    "name": "save_profiles"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 1114,
+    "end_line": 1163,
+    "kind": "FunctionDef",
+    "name": "_save_twitter_csv"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 1165,
+    "end_line": 1188,
+    "kind": "FunctionDef",
+    "name": "_normalize_gender"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 1190,
+    "end_line": 1237,
+    "kind": "FunctionDef",
+    "name": "_save_reddit_json"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 1240,
+    "end_line": 1248,
+    "kind": "FunctionDef",
+    "name": "save_profiles_to_json"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 383,
+    "end_line": 394,
+    "kind": "FunctionDef",
+    "name": "search_edges"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 396,
+    "end_line": 407,
+    "kind": "FunctionDef",
+    "name": "search_nodes"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 933,
+    "end_line": 961,
+    "kind": "FunctionDef",
+    "name": "save_profiles_realtime"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 966,
+    "end_line": 995,
+    "kind": "FunctionDef",
+    "name": "generate_single_profile"
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "line": 664,
+    "end_line": 670,
+    "kind": "FunctionDef",
+    "name": "fix_string_newlines"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 22,
+    "end_line": 32,
+    "kind": "FunctionDef",
+    "name": "_to_pascal_case"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 35,
+    "end_line": 44,
+    "kind": "FunctionDef",
+    "name": "_to_upper_snake_case"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 194,
+    "end_line": 732,
+    "kind": "ClassDef",
+    "name": "OntologyGenerator"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 200,
+    "end_line": 201,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 203,
+    "end_line": 248,
+    "kind": "FunctionDef",
+    "name": "generate"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 257,
+    "end_line": 294,
+    "kind": "FunctionDef",
+    "name": "_build_user_message"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 296,
+    "end_line": 331,
+    "kind": "FunctionDef",
+    "name": "_build_document_context"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 333,
+    "end_line": 352,
+    "kind": "FunctionDef",
+    "name": "_collect_document_chunks"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 354,
+    "end_line": 368,
+    "kind": "FunctionDef",
+    "name": "_select_representative_chunks"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 370,
+    "end_line": 379,
+    "kind": "FunctionDef",
+    "name": "_calculate_excerpt_budget"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 381,
+    "end_line": 413,
+    "kind": "FunctionDef",
+    "name": "_render_chunked_context"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 416,
+    "end_line": 430,
+    "kind": "FunctionDef",
+    "name": "_excerpt_text"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 432,
+    "end_line": 625,
+    "kind": "FunctionDef",
+    "name": "_validate_and_process"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 627,
+    "end_line": 732,
+    "kind": "FunctionDef",
+    "name": "generate_python_code"
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "line": 557,
+    "end_line": 565,
+    "kind": "FunctionDef",
+    "name": "resolve_entity_name"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 36,
+    "end_line": 304,
+    "kind": "ClassDef",
+    "name": "ReportLogger"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 307,
+    "end_line": 386,
+    "kind": "ClassDef",
+    "name": "ReportConsoleLogger"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 389,
+    "end_line": 395,
+    "kind": "ClassDef",
+    "name": "ReportStatus"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 399,
+    "end_line": 415,
+    "kind": "ClassDef",
+    "name": "ReportSection"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 419,
+    "end_line": 438,
+    "kind": "ClassDef",
+    "name": "ReportOutline"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 442,
+    "end_line": 467,
+    "kind": "ClassDef",
+    "name": "Report"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 871,
+    "end_line": 1928,
+    "kind": "ClassDef",
+    "name": "ReportAgent"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1931,
+    "end_line": 2619,
+    "kind": "ClassDef",
+    "name": "ReportManager"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 44,
+    "end_line": 56,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 58,
+    "end_line": 61,
+    "kind": "FunctionDef",
+    "name": "_ensure_log_file"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 63,
+    "end_line": 65,
+    "kind": "FunctionDef",
+    "name": "_get_elapsed_time"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 67,
+    "end_line": 98,
+    "kind": "FunctionDef",
+    "name": "log"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 100,
+    "end_line": 111,
+    "kind": "FunctionDef",
+    "name": "log_start"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 113,
+    "end_line": 119,
+    "kind": "FunctionDef",
+    "name": "log_planning_start"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 121,
+    "end_line": 130,
+    "kind": "FunctionDef",
+    "name": "log_planning_context"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 132,
+    "end_line": 141,
+    "kind": "FunctionDef",
+    "name": "log_planning_complete"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 143,
+    "end_line": 151,
+    "kind": "FunctionDef",
+    "name": "log_section_start"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 153,
+    "end_line": 165,
+    "kind": "FunctionDef",
+    "name": "log_react_thought"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 167,
+    "end_line": 187,
+    "kind": "FunctionDef",
+    "name": "log_tool_call"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 189,
+    "end_line": 210,
+    "kind": "FunctionDef",
+    "name": "log_tool_result"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 212,
+    "end_line": 235,
+    "kind": "FunctionDef",
+    "name": "log_llm_response"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 237,
+    "end_line": 256,
+    "kind": "FunctionDef",
+    "name": "log_section_content"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 258,
+    "end_line": 279,
+    "kind": "FunctionDef",
+    "name": "log_section_full_complete"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 281,
+    "end_line": 291,
+    "kind": "FunctionDef",
+    "name": "log_report_complete"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 293,
+    "end_line": 304,
+    "kind": "FunctionDef",
+    "name": "log_error"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 315,
+    "end_line": 328,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 330,
+    "end_line": 333,
+    "kind": "FunctionDef",
+    "name": "_ensure_log_file"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 335,
+    "end_line": 364,
+    "kind": "FunctionDef",
+    "name": "_setup_file_handler"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 366,
+    "end_line": 382,
+    "kind": "FunctionDef",
+    "name": "close"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 384,
+    "end_line": 386,
+    "kind": "FunctionDef",
+    "name": "__del__"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 404,
+    "end_line": 408,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 410,
+    "end_line": 415,
+    "kind": "FunctionDef",
+    "name": "to_markdown"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 425,
+    "end_line": 430,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 432,
+    "end_line": 438,
+    "kind": "FunctionDef",
+    "name": "to_markdown"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 455,
+    "end_line": 467,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 890,
+    "end_line": 923,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 925,
+    "end_line": 960,
+    "kind": "FunctionDef",
+    "name": "_define_tools"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 962,
+    "end_line": 1068,
+    "kind": "FunctionDef",
+    "name": "_execute_tool"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1073,
+    "end_line": 1118,
+    "kind": "FunctionDef",
+    "name": "_parse_tool_calls"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1120,
+    "end_line": 1131,
+    "kind": "FunctionDef",
+    "name": "_is_valid_tool_call"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1133,
+    "end_line": 1141,
+    "kind": "FunctionDef",
+    "name": "_get_tools_description"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1144,
+    "end_line": 1174,
+    "kind": "FunctionDef",
+    "name": "_strip_fake_tool_results"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1176,
+    "end_line": 1258,
+    "kind": "FunctionDef",
+    "name": "plan_outline"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1260,
+    "end_line": 1574,
+    "kind": "FunctionDef",
+    "name": "_generate_section_react"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1576,
+    "end_line": 1808,
+    "kind": "FunctionDef",
+    "name": "generate_report"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1810,
+    "end_line": 1928,
+    "kind": "FunctionDef",
+    "name": "chat"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1953,
+    "end_line": 1955,
+    "kind": "FunctionDef",
+    "name": "_ensure_reports_dir"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1958,
+    "end_line": 1960,
+    "kind": "FunctionDef",
+    "name": "_get_report_folder"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1963,
+    "end_line": 1967,
+    "kind": "FunctionDef",
+    "name": "_ensure_report_folder"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1970,
+    "end_line": 1972,
+    "kind": "FunctionDef",
+    "name": "_get_report_path"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1975,
+    "end_line": 1977,
+    "kind": "FunctionDef",
+    "name": "_get_report_markdown_path"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1980,
+    "end_line": 1982,
+    "kind": "FunctionDef",
+    "name": "_get_outline_path"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1985,
+    "end_line": 1987,
+    "kind": "FunctionDef",
+    "name": "_get_progress_path"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1990,
+    "end_line": 1992,
+    "kind": "FunctionDef",
+    "name": "_get_section_path"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 1995,
+    "end_line": 1997,
+    "kind": "FunctionDef",
+    "name": "_get_agent_log_path"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2000,
+    "end_line": 2002,
+    "kind": "FunctionDef",
+    "name": "_get_console_log_path"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2005,
+    "end_line": 2049,
+    "kind": "FunctionDef",
+    "name": "get_console_log"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2052,
+    "end_line": 2063,
+    "kind": "FunctionDef",
+    "name": "get_console_log_stream"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2066,
+    "end_line": 2111,
+    "kind": "FunctionDef",
+    "name": "get_agent_log"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2114,
+    "end_line": 2125,
+    "kind": "FunctionDef",
+    "name": "get_agent_log_stream"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2128,
+    "end_line": 2139,
+    "kind": "FunctionDef",
+    "name": "save_outline"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2142,
+    "end_line": 2176,
+    "kind": "FunctionDef",
+    "name": "save_section"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2179,
+    "end_line": 2244,
+    "kind": "FunctionDef",
+    "name": "_clean_section_content"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2247,
+    "end_line": 2273,
+    "kind": "FunctionDef",
+    "name": "update_progress"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2276,
+    "end_line": 2284,
+    "kind": "FunctionDef",
+    "name": "get_progress"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2287,
+    "end_line": 2315,
+    "kind": "FunctionDef",
+    "name": "get_generated_sections"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2318,
+    "end_line": 2345,
+    "kind": "FunctionDef",
+    "name": "assemble_full_report"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2348,
+    "end_line": 2471,
+    "kind": "FunctionDef",
+    "name": "_post_process_report"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2474,
+    "end_line": 2491,
+    "kind": "FunctionDef",
+    "name": "save_report"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2494,
+    "end_line": 2544,
+    "kind": "FunctionDef",
+    "name": "get_report"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2547,
+    "end_line": 2565,
+    "kind": "FunctionDef",
+    "name": "get_report_by_simulation"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2568,
+    "end_line": 2592,
+    "kind": "FunctionDef",
+    "name": "list_reports"
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "line": 2595,
+    "end_line": 2619,
+    "kind": "FunctionDef",
+    "name": "delete_report"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 53,
+    "end_line": 81,
+    "kind": "ClassDef",
+    "name": "AgentActivityConfig"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 85,
+    "end_line": 111,
+    "kind": "ClassDef",
+    "name": "TimeSimulationConfig"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 115,
+    "end_line": 127,
+    "kind": "ClassDef",
+    "name": "EventConfig"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 131,
+    "end_line": 144,
+    "kind": "ClassDef",
+    "name": "PlatformConfig"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 148,
+    "end_line": 198,
+    "kind": "ClassDef",
+    "name": "SimulationParameters"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 201,
+    "end_line": 991,
+    "kind": "ClassDef",
+    "name": "SimulationConfigGenerator"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 177,
+    "end_line": 194,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 196,
+    "end_line": 198,
+    "kind": "FunctionDef",
+    "name": "to_json"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 226,
+    "end_line": 242,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 244,
+    "end_line": 380,
+    "kind": "FunctionDef",
+    "name": "generate_config"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 382,
+    "end_line": 408,
+    "kind": "FunctionDef",
+    "name": "_build_context"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 410,
+    "end_line": 433,
+    "kind": "FunctionDef",
+    "name": "_summarize_entities"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 435,
+    "end_line": 483,
+    "kind": "FunctionDef",
+    "name": "_call_llm_with_retry"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 485,
+    "end_line": 501,
+    "kind": "FunctionDef",
+    "name": "_fix_truncated_json"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 503,
+    "end_line": 535,
+    "kind": "FunctionDef",
+    "name": "_try_fix_config_json"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 537,
+    "end_line": 597,
+    "kind": "FunctionDef",
+    "name": "_generate_time_config"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 599,
+    "end_line": 611,
+    "kind": "FunctionDef",
+    "name": "_get_default_time_config"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 613,
+    "end_line": 646,
+    "kind": "FunctionDef",
+    "name": "_parse_time_config"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 648,
+    "end_line": 719,
+    "kind": "FunctionDef",
+    "name": "_generate_event_config"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 721,
+    "end_line": 728,
+    "kind": "FunctionDef",
+    "name": "_parse_event_config"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 730,
+    "end_line": 813,
+    "kind": "FunctionDef",
+    "name": "_assign_initial_post_agents"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 815,
+    "end_line": 908,
+    "kind": "FunctionDef",
+    "name": "_generate_agent_configs_batch"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 910,
+    "end_line": 991,
+    "kind": "FunctionDef",
+    "name": "_generate_agent_config_by_rule"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 280,
+    "end_line": 285,
+    "kind": "FunctionDef",
+    "name": "report_progress"
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "line": 516,
+    "end_line": 520,
+    "kind": "FunctionDef",
+    "name": "fix_string"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 25,
+    "end_line": 29,
+    "kind": "ClassDef",
+    "name": "CommandType"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 32,
+    "end_line": 37,
+    "kind": "ClassDef",
+    "name": "CommandStatus"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 41,
+    "end_line": 63,
+    "kind": "ClassDef",
+    "name": "IPCCommand"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 67,
+    "end_line": 92,
+    "kind": "ClassDef",
+    "name": "IPCResponse"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 95,
+    "end_line": 285,
+    "kind": "ClassDef",
+    "name": "SimulationIPCClient"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 288,
+    "end_line": 394,
+    "kind": "ClassDef",
+    "name": "SimulationIPCServer"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 48,
+    "end_line": 54,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 57,
+    "end_line": 63,
+    "kind": "FunctionDef",
+    "name": "from_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 75,
+    "end_line": 82,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 85,
+    "end_line": 92,
+    "kind": "FunctionDef",
+    "name": "from_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 102,
+    "end_line": 115,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 117,
+    "end_line": 187,
+    "kind": "FunctionDef",
+    "name": "send_command"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 189,
+    "end_line": 222,
+    "kind": "FunctionDef",
+    "name": "send_interview"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 224,
+    "end_line": 252,
+    "kind": "FunctionDef",
+    "name": "send_batch_interview"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 254,
+    "end_line": 268,
+    "kind": "FunctionDef",
+    "name": "send_close_env"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 270,
+    "end_line": 285,
+    "kind": "FunctionDef",
+    "name": "check_env_alive"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 295,
+    "end_line": 311,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 313,
+    "end_line": 316,
+    "kind": "FunctionDef",
+    "name": "start"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 318,
+    "end_line": 321,
+    "kind": "FunctionDef",
+    "name": "stop"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 323,
+    "end_line": 330,
+    "kind": "FunctionDef",
+    "name": "_update_env_status"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 332,
+    "end_line": 360,
+    "kind": "FunctionDef",
+    "name": "poll_commands"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 362,
+    "end_line": 378,
+    "kind": "FunctionDef",
+    "name": "send_response"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 380,
+    "end_line": 386,
+    "kind": "FunctionDef",
+    "name": "send_success"
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "line": 388,
+    "end_line": 394,
+    "kind": "FunctionDef",
+    "name": "send_error"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 25,
+    "end_line": 35,
+    "kind": "ClassDef",
+    "name": "SimulationStatus"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 38,
+    "end_line": 41,
+    "kind": "ClassDef",
+    "name": "PlatformType"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 45,
+    "end_line": 125,
+    "kind": "ClassDef",
+    "name": "SimulationState"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 128,
+    "end_line": 564,
+    "kind": "ClassDef",
+    "name": "SimulationManager"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 80,
+    "end_line": 101,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 103,
+    "end_line": 110,
+    "kind": "FunctionDef",
+    "name": "get_default_platform"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 112,
+    "end_line": 125,
+    "kind": "FunctionDef",
+    "name": "to_simple_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 145,
+    "end_line": 150,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 152,
+    "end_line": 156,
+    "kind": "FunctionDef",
+    "name": "_get_simulation_dir"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 158,
+    "end_line": 168,
+    "kind": "FunctionDef",
+    "name": "_save_simulation_state"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 170,
+    "end_line": 206,
+    "kind": "FunctionDef",
+    "name": "_load_simulation_state"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 208,
+    "end_line": 242,
+    "kind": "FunctionDef",
+    "name": "create_simulation"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 244,
+    "end_line": 477,
+    "kind": "FunctionDef",
+    "name": "prepare_simulation"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 479,
+    "end_line": 481,
+    "kind": "FunctionDef",
+    "name": "get_simulation"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 483,
+    "end_line": 499,
+    "kind": "FunctionDef",
+    "name": "list_simulations"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 501,
+    "end_line": 529,
+    "kind": "FunctionDef",
+    "name": "get_profiles"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 531,
+    "end_line": 540,
+    "kind": "FunctionDef",
+    "name": "get_simulation_config"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 542,
+    "end_line": 564,
+    "kind": "FunctionDef",
+    "name": "get_run_instructions"
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "line": 336,
+    "end_line": 345,
+    "kind": "FunctionDef",
+    "name": "profile_progress"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 40,
+    "end_line": 49,
+    "kind": "ClassDef",
+    "name": "RunnerStatus"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 52,
+    "end_line": 53,
+    "kind": "ClassDef",
+    "name": "SimulationStopPending"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 57,
+    "end_line": 80,
+    "kind": "ClassDef",
+    "name": "AgentAction"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 84,
+    "end_line": 106,
+    "kind": "ClassDef",
+    "name": "RoundSummary"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 110,
+    "end_line": 201,
+    "kind": "ClassDef",
+    "name": "SimulationRunState"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 204,
+    "end_line": 2033,
+    "kind": "ClassDef",
+    "name": "SimulationRunner"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 69,
+    "end_line": 80,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 95,
+    "end_line": 106,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 155,
+    "end_line": 166,
+    "kind": "FunctionDef",
+    "name": "add_action"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 168,
+    "end_line": 194,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 196,
+    "end_line": 201,
+    "kind": "FunctionDef",
+    "name": "to_detail_dict"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 242,
+    "end_line": 246,
+    "kind": "FunctionDef",
+    "name": "_finalization_lock"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 249,
+    "end_line": 286,
+    "kind": "FunctionDef",
+    "name": "_sync_simulation_status"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 289,
+    "end_line": 298,
+    "kind": "FunctionDef",
+    "name": "get_run_state"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 301,
+    "end_line": 354,
+    "kind": "FunctionDef",
+    "name": "_load_run_state"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 357,
+    "end_line": 368,
+    "kind": "FunctionDef",
+    "name": "_save_run_state"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 371,
+    "end_line": 617,
+    "kind": "FunctionDef",
+    "name": "start_simulation"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 620,
+    "end_line": 764,
+    "kind": "FunctionDef",
+    "name": "_monitor_simulation"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 767,
+    "end_line": 879,
+    "kind": "FunctionDef",
+    "name": "_read_action_log"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 882,
+    "end_line": 906,
+    "kind": "FunctionDef",
+    "name": "_check_all_platforms_completed"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 909,
+    "end_line": 962,
+    "kind": "FunctionDef",
+    "name": "_terminate_process"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 965,
+    "end_line": 1084,
+    "kind": "FunctionDef",
+    "name": "stop_simulation"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1087,
+    "end_line": 1153,
+    "kind": "FunctionDef",
+    "name": "_read_actions_from_file"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1156,
+    "end_line": 1214,
+    "kind": "FunctionDef",
+    "name": "get_all_actions"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1217,
+    "end_line": 1248,
+    "kind": "FunctionDef",
+    "name": "get_actions"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1251,
+    "end_line": 1319,
+    "kind": "FunctionDef",
+    "name": "get_timeline"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1322,
+    "end_line": 1362,
+    "kind": "FunctionDef",
+    "name": "get_agent_stats"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1365,
+    "end_line": 1443,
+    "kind": "FunctionDef",
+    "name": "cleanup_simulation_logs"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1449,
+    "end_line": 1551,
+    "kind": "FunctionDef",
+    "name": "cleanup_all_simulations"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1554,
+    "end_line": 1624,
+    "kind": "FunctionDef",
+    "name": "register_cleanup"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1627,
+    "end_line": 1635,
+    "kind": "FunctionDef",
+    "name": "get_running_simulations"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1640,
+    "end_line": 1655,
+    "kind": "FunctionDef",
+    "name": "check_env_alive"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1658,
+    "end_line": 1691,
+    "kind": "FunctionDef",
+    "name": "get_env_status_detail"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1694,
+    "end_line": 1755,
+    "kind": "FunctionDef",
+    "name": "interview_agent"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1758,
+    "end_line": 1814,
+    "kind": "FunctionDef",
+    "name": "interview_agents_batch"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1817,
+    "end_line": 1874,
+    "kind": "FunctionDef",
+    "name": "interview_all_agents"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1877,
+    "end_line": 1922,
+    "kind": "FunctionDef",
+    "name": "close_simulation_env"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1925,
+    "end_line": 1980,
+    "kind": "FunctionDef",
+    "name": "_get_interview_history_from_db"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1983,
+    "end_line": 2033,
+    "kind": "FunctionDef",
+    "name": "get_interview_history"
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "line": 1585,
+    "end_line": 1606,
+    "kind": "FunctionDef",
+    "name": "cleanup_handler"
+  },
+  {
+    "path": "backend/app/services/text_processor.py",
+    "line": 9,
+    "end_line": 70,
+    "kind": "ClassDef",
+    "name": "TextProcessor"
+  },
+  {
+    "path": "backend/app/services/text_processor.py",
+    "line": 13,
+    "end_line": 15,
+    "kind": "FunctionDef",
+    "name": "extract_from_files"
+  },
+  {
+    "path": "backend/app/services/text_processor.py",
+    "line": 18,
+    "end_line": 34,
+    "kind": "FunctionDef",
+    "name": "split_text"
+  },
+  {
+    "path": "backend/app/services/text_processor.py",
+    "line": 37,
+    "end_line": 61,
+    "kind": "FunctionDef",
+    "name": "preprocess_text"
+  },
+  {
+    "path": "backend/app/services/text_processor.py",
+    "line": 64,
+    "end_line": 70,
+    "kind": "FunctionDef",
+    "name": "get_text_stats"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 22,
+    "end_line": 50,
+    "kind": "ClassDef",
+    "name": "EntityNode"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 54,
+    "end_line": 67,
+    "kind": "ClassDef",
+    "name": "FilteredEntities"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 70,
+    "end_line": 446,
+    "kind": "ClassDef",
+    "name": "ZepEntityReader"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 34,
+    "end_line": 43,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 45,
+    "end_line": 50,
+    "kind": "FunctionDef",
+    "name": "get_entity_type"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 61,
+    "end_line": 67,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 80,
+    "end_line": 85,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 87,
+    "end_line": 111,
+    "kind": "FunctionDef",
+    "name": "_call_with_retry"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 113,
+    "end_line": 138,
+    "kind": "FunctionDef",
+    "name": "get_all_nodes"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 140,
+    "end_line": 166,
+    "kind": "FunctionDef",
+    "name": "get_all_edges"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 168,
+    "end_line": 219,
+    "kind": "FunctionDef",
+    "name": "get_node_edges"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 221,
+    "end_line": 337,
+    "kind": "FunctionDef",
+    "name": "filter_defined_entities"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 339,
+    "end_line": 422,
+    "kind": "FunctionDef",
+    "name": "get_entity_with_context"
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "line": 424,
+    "end_line": 446,
+    "kind": "FunctionDef",
+    "name": "get_entities_by_type"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 26,
+    "end_line": 204,
+    "kind": "ClassDef",
+    "name": "AgentActivity"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 207,
+    "end_line": 210,
+    "kind": "ClassDef",
+    "name": "_DrainDeadlineExceeded"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 213,
+    "end_line": 640,
+    "kind": "ClassDef",
+    "name": "ZepGraphMemoryUpdater"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 643,
+    "end_line": 791,
+    "kind": "ClassDef",
+    "name": "ZepGraphMemoryManager"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 36,
+    "end_line": 67,
+    "kind": "FunctionDef",
+    "name": "to_episode_text"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 69,
+    "end_line": 73,
+    "kind": "FunctionDef",
+    "name": "_describe_create_post"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 75,
+    "end_line": 86,
+    "kind": "FunctionDef",
+    "name": "_describe_like_post"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 88,
+    "end_line": 99,
+    "kind": "FunctionDef",
+    "name": "_describe_dislike_post"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 101,
+    "end_line": 112,
+    "kind": "FunctionDef",
+    "name": "_describe_repost"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 114,
+    "end_line": 132,
+    "kind": "FunctionDef",
+    "name": "_describe_quote_post"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 134,
+    "end_line": 140,
+    "kind": "FunctionDef",
+    "name": "_describe_follow"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 142,
+    "end_line": 156,
+    "kind": "FunctionDef",
+    "name": "_describe_create_comment"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 158,
+    "end_line": 169,
+    "kind": "FunctionDef",
+    "name": "_describe_like_comment"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 171,
+    "end_line": 182,
+    "kind": "FunctionDef",
+    "name": "_describe_dislike_comment"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 184,
+    "end_line": 187,
+    "kind": "FunctionDef",
+    "name": "_describe_search"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 189,
+    "end_line": 192,
+    "kind": "FunctionDef",
+    "name": "_describe_search_user"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 194,
+    "end_line": 200,
+    "kind": "FunctionDef",
+    "name": "_describe_mute"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 202,
+    "end_line": 204,
+    "kind": "FunctionDef",
+    "name": "_describe_generic"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 208,
+    "end_line": 210,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 243,
+    "end_line": 289,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 291,
+    "end_line": 293,
+    "kind": "FunctionDef",
+    "name": "_get_platform_display_name"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 295,
+    "end_line": 311,
+    "kind": "FunctionDef",
+    "name": "start"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 313,
+    "end_line": 348,
+    "kind": "FunctionDef",
+    "name": "stop"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 350,
+    "end_line": 381,
+    "kind": "FunctionDef",
+    "name": "add_activity"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 383,
+    "end_line": 408,
+    "kind": "FunctionDef",
+    "name": "add_activity_from_dict"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 410,
+    "end_line": 442,
+    "kind": "FunctionDef",
+    "name": "_worker_loop"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 444,
+    "end_line": 470,
+    "kind": "FunctionDef",
+    "name": "_build_episode_payloads"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 472,
+    "end_line": 548,
+    "kind": "FunctionDef",
+    "name": "_send_batch_activities"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 551,
+    "end_line": 558,
+    "kind": "FunctionDef",
+    "name": "_to_rfc3339"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 560,
+    "end_line": 597,
+    "kind": "FunctionDef",
+    "name": "_flush_remaining"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 599,
+    "end_line": 621,
+    "kind": "FunctionDef",
+    "name": "_wait_for_pending_episodes"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 623,
+    "end_line": 640,
+    "kind": "FunctionDef",
+    "name": "get_stats"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 654,
+    "end_line": 679,
+    "kind": "FunctionDef",
+    "name": "create_updater"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 682,
+    "end_line": 685,
+    "kind": "FunctionDef",
+    "name": "get_updater"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 688,
+    "end_line": 696,
+    "kind": "FunctionDef",
+    "name": "get_simulation_ids_for_graph"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 699,
+    "end_line": 703,
+    "kind": "FunctionDef",
+    "name": "get_simulation_ids"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 706,
+    "end_line": 727,
+    "kind": "FunctionDef",
+    "name": "discard_inactive_updater"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 730,
+    "end_line": 745,
+    "kind": "FunctionDef",
+    "name": "stop_updater"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 751,
+    "end_line": 783,
+    "kind": "FunctionDef",
+    "name": "stop_all"
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "line": 786,
+    "end_line": 791,
+    "kind": "FunctionDef",
+    "name": "get_all_stats"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 33,
+    "end_line": 59,
+    "kind": "ClassDef",
+    "name": "SearchResult"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 63,
+    "end_line": 83,
+    "kind": "ClassDef",
+    "name": "NodeInfo"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 87,
+    "end_line": 140,
+    "kind": "ClassDef",
+    "name": "EdgeInfo"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 144,
+    "end_line": 216,
+    "kind": "ClassDef",
+    "name": "InsightForgeResult"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 220,
+    "end_line": 286,
+    "kind": "ClassDef",
+    "name": "PanoramaResult"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 290,
+    "end_line": 342,
+    "kind": "ClassDef",
+    "name": "AgentInterview"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 346,
+    "end_line": 403,
+    "kind": "ClassDef",
+    "name": "InterviewResult"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 406,
+    "end_line": 1734,
+    "kind": "ClassDef",
+    "name": "ZepToolsService"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 41,
+    "end_line": 48,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 50,
+    "end_line": 59,
+    "kind": "FunctionDef",
+    "name": "to_text"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 71,
+    "end_line": 78,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 80,
+    "end_line": 83,
+    "kind": "FunctionDef",
+    "name": "to_text"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 102,
+    "end_line": 115,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 117,
+    "end_line": 130,
+    "kind": "FunctionDef",
+    "name": "to_text"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 133,
+    "end_line": 135,
+    "kind": "FunctionDef",
+    "name": "is_expired"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 138,
+    "end_line": 140,
+    "kind": "FunctionDef",
+    "name": "is_invalid"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 163,
+    "end_line": 174,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 176,
+    "end_line": 216,
+    "kind": "FunctionDef",
+    "name": "to_text"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 242,
+    "end_line": 253,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 255,
+    "end_line": 286,
+    "kind": "FunctionDef",
+    "name": "to_text"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 299,
+    "end_line": 307,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 309,
+    "end_line": 342,
+    "kind": "FunctionDef",
+    "name": "to_text"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 368,
+    "end_line": 378,
+    "kind": "FunctionDef",
+    "name": "to_dict"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 380,
+    "end_line": 403,
+    "kind": "FunctionDef",
+    "name": "to_text"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 430,
+    "end_line": 438,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 441,
+    "end_line": 445,
+    "kind": "FunctionDef",
+    "name": "llm"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 447,
+    "end_line": 455,
+    "kind": "FunctionDef",
+    "name": "_call_with_retry"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 457,
+    "end_line": 540,
+    "kind": "FunctionDef",
+    "name": "search_graph"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 542,
+    "end_line": 644,
+    "kind": "FunctionDef",
+    "name": "_local_search"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 646,
+    "end_line": 672,
+    "kind": "FunctionDef",
+    "name": "get_all_nodes"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 674,
+    "end_line": 710,
+    "kind": "FunctionDef",
+    "name": "get_all_edges"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 712,
+    "end_line": 744,
+    "kind": "FunctionDef",
+    "name": "get_node_detail"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 746,
+    "end_line": 776,
+    "kind": "FunctionDef",
+    "name": "get_node_edges"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 778,
+    "end_line": 804,
+    "kind": "FunctionDef",
+    "name": "get_entities_by_type"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 806,
+    "end_line": 851,
+    "kind": "FunctionDef",
+    "name": "get_entity_summary"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 853,
+    "end_line": 886,
+    "kind": "FunctionDef",
+    "name": "get_graph_statistics"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 888,
+    "end_line": 939,
+    "kind": "FunctionDef",
+    "name": "get_simulation_context"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 943,
+    "end_line": 1088,
+    "kind": "FunctionDef",
+    "name": "insight_forge"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1090,
+    "end_line": 1141,
+    "kind": "FunctionDef",
+    "name": "_generate_sub_queries"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1143,
+    "end_line": 1233,
+    "kind": "FunctionDef",
+    "name": "panorama_search"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1235,
+    "end_line": 1268,
+    "kind": "FunctionDef",
+    "name": "quick_search"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1270,
+    "end_line": 1480,
+    "kind": "FunctionDef",
+    "name": "interview_agents"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1483,
+    "end_line": 1501,
+    "kind": "FunctionDef",
+    "name": "_clean_tool_call_response"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1503,
+    "end_line": 1547,
+    "kind": "FunctionDef",
+    "name": "_load_agent_profiles"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1549,
+    "end_line": 1630,
+    "kind": "FunctionDef",
+    "name": "_select_agents_for_interview"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1632,
+    "end_line": 1679,
+    "kind": "FunctionDef",
+    "name": "_generate_interview_questions"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1681,
+    "end_line": 1734,
+    "kind": "FunctionDef",
+    "name": "_generate_interview_summary"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 573,
+    "end_line": 586,
+    "kind": "FunctionDef",
+    "name": "match_score"
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "line": 1213,
+    "end_line": 1221,
+    "kind": "FunctionDef",
+    "name": "relevance_score"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 11,
+    "end_line": 58,
+    "kind": "FunctionDef",
+    "name": "_read_text_with_fallback"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 61,
+    "end_line": 158,
+    "kind": "ClassDef",
+    "name": "FileParser"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 161,
+    "end_line": 202,
+    "kind": "FunctionDef",
+    "name": "split_text_into_chunks"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 67,
+    "end_line": 78,
+    "kind": "FunctionDef",
+    "name": "is_supported"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 81,
+    "end_line": 108,
+    "kind": "FunctionDef",
+    "name": "extract_text"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 111,
+    "end_line": 125,
+    "kind": "FunctionDef",
+    "name": "_extract_from_pdf"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 128,
+    "end_line": 130,
+    "kind": "FunctionDef",
+    "name": "_extract_from_md"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 133,
+    "end_line": 135,
+    "kind": "FunctionDef",
+    "name": "_extract_from_txt"
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "line": 138,
+    "end_line": 158,
+    "kind": "FunctionDef",
+    "name": "extract_from_multiple"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 19,
+    "end_line": 24,
+    "kind": "ClassDef",
+    "name": "LLMResponseError"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 27,
+    "end_line": 64,
+    "kind": "FunctionDef",
+    "name": "_is_response_format_unsupported"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 67,
+    "end_line": 74,
+    "kind": "FunctionDef",
+    "name": "_clean_chat_text"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 77,
+    "end_line": 88,
+    "kind": "FunctionDef",
+    "name": "_contains_additional_json_container"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 91,
+    "end_line": 290,
+    "kind": "ClassDef",
+    "name": "LLMClient"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 22,
+    "end_line": 24,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 94,
+    "end_line": 110,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 112,
+    "end_line": 129,
+    "kind": "FunctionDef",
+    "name": "_create_completion"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 131,
+    "end_line": 157,
+    "kind": "FunctionDef",
+    "name": "chat"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 159,
+    "end_line": 232,
+    "kind": "FunctionDef",
+    "name": "chat_json"
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "line": 235,
+    "end_line": 290,
+    "kind": "FunctionDef",
+    "name": "_parse_json_response"
+  },
+  {
+    "path": "backend/app/utils/locale.py",
+    "line": 23,
+    "end_line": 25,
+    "kind": "FunctionDef",
+    "name": "set_locale"
+  },
+  {
+    "path": "backend/app/utils/locale.py",
+    "line": 28,
+    "end_line": 32,
+    "kind": "FunctionDef",
+    "name": "get_locale"
+  },
+  {
+    "path": "backend/app/utils/locale.py",
+    "line": 35,
+    "end_line": 63,
+    "kind": "FunctionDef",
+    "name": "t"
+  },
+  {
+    "path": "backend/app/utils/locale.py",
+    "line": 66,
+    "end_line": 69,
+    "kind": "FunctionDef",
+    "name": "get_language_instruction"
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "line": 13,
+    "end_line": 23,
+    "kind": "FunctionDef",
+    "name": "_ensure_utf8_stdout"
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "line": 30,
+    "end_line": 88,
+    "kind": "FunctionDef",
+    "name": "setup_logger"
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "line": 91,
+    "end_line": 104,
+    "kind": "FunctionDef",
+    "name": "get_logger"
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "line": 112,
+    "end_line": 113,
+    "kind": "FunctionDef",
+    "name": "debug"
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "line": 115,
+    "end_line": 116,
+    "kind": "FunctionDef",
+    "name": "info"
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "line": 118,
+    "end_line": 119,
+    "kind": "FunctionDef",
+    "name": "warning"
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "line": 121,
+    "end_line": 122,
+    "kind": "FunctionDef",
+    "name": "error"
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "line": 124,
+    "end_line": 125,
+    "kind": "FunctionDef",
+    "name": "critical"
+  },
+  {
+    "path": "backend/app/utils/ontology.py",
+    "line": 26,
+    "end_line": 49,
+    "kind": "FunctionDef",
+    "name": "normalize_ontology_attribute"
+  },
+  {
+    "path": "backend/app/utils/ontology.py",
+    "line": 52,
+    "end_line": 70,
+    "kind": "FunctionDef",
+    "name": "normalize_ontology_attributes"
+  },
+  {
+    "path": "backend/app/utils/ontology.py",
+    "line": 73,
+    "end_line": 103,
+    "kind": "FunctionDef",
+    "name": "normalize_ontology_source_targets"
+  },
+  {
+    "path": "backend/app/utils/openai_chat_compat.py",
+    "line": 13,
+    "end_line": 17,
+    "kind": "FunctionDef",
+    "name": "is_gpt5_family"
+  },
+  {
+    "path": "backend/app/utils/openai_chat_compat.py",
+    "line": 20,
+    "end_line": 57,
+    "kind": "FunctionDef",
+    "name": "create_chat_completion"
+  },
+  {
+    "path": "backend/app/utils/openai_chat_compat.py",
+    "line": 60,
+    "end_line": 101,
+    "kind": "FunctionDef",
+    "name": "extract_chat_completion_text"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 15,
+    "end_line": 77,
+    "kind": "FunctionDef",
+    "name": "retry_with_backoff"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 80,
+    "end_line": 129,
+    "kind": "FunctionDef",
+    "name": "retry_with_backoff_async"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 132,
+    "end_line": 237,
+    "kind": "ClassDef",
+    "name": "RetryableAPIClient"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 41,
+    "end_line": 76,
+    "kind": "FunctionDef",
+    "name": "decorator"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 94,
+    "end_line": 128,
+    "kind": "FunctionDef",
+    "name": "decorator"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 137,
+    "end_line": 147,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 149,
+    "end_line": 193,
+    "kind": "FunctionDef",
+    "name": "call_with_retry"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 195,
+    "end_line": 237,
+    "kind": "FunctionDef",
+    "name": "call_batch_with_retry"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 43,
+    "end_line": 74,
+    "kind": "FunctionDef",
+    "name": "wrapper"
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "line": 96,
+    "end_line": 126,
+    "kind": "AsyncFunctionDef",
+    "name": "wrapper"
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "line": 33,
+    "end_line": 41,
+    "kind": "FunctionDef",
+    "name": "normalize_zep_search_query"
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "line": 44,
+    "end_line": 53,
+    "kind": "FunctionDef",
+    "name": "normalize_zep_search_limit"
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "line": 57,
+    "end_line": 62,
+    "kind": "FunctionDef",
+    "name": "_cached_zep_client"
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "line": 65,
+    "end_line": 83,
+    "kind": "FunctionDef",
+    "name": "get_zep_client"
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "line": 86,
+    "end_line": 89,
+    "kind": "FunctionDef",
+    "name": "clear_zep_client_cache"
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "line": 92,
+    "end_line": 104,
+    "kind": "FunctionDef",
+    "name": "is_retryable_zep_error"
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "line": 107,
+    "end_line": 123,
+    "kind": "FunctionDef",
+    "name": "_retry_after_seconds"
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "line": 126,
+    "end_line": 162,
+    "kind": "FunctionDef",
+    "name": "call_zep_read_with_retry"
+  },
+  {
+    "path": "backend/app/utils/zep_lifecycle.py",
+    "line": 17,
+    "end_line": 23,
+    "kind": "FunctionDef",
+    "name": "graph_lifecycle_lock"
+  },
+  {
+    "path": "backend/app/utils/zep_lifecycle.py",
+    "line": 26,
+    "end_line": 32,
+    "kind": "FunctionDef",
+    "name": "register_graph_reader"
+  },
+  {
+    "path": "backend/app/utils/zep_lifecycle.py",
+    "line": 35,
+    "end_line": 44,
+    "kind": "FunctionDef",
+    "name": "unregister_graph_reader"
+  },
+  {
+    "path": "backend/app/utils/zep_lifecycle.py",
+    "line": 47,
+    "end_line": 51,
+    "kind": "FunctionDef",
+    "name": "get_graph_readers"
+  },
+  {
+    "path": "backend/app/utils/zep_paging.py",
+    "line": 21,
+    "end_line": 36,
+    "kind": "FunctionDef",
+    "name": "_fetch_page_with_retry"
+  },
+  {
+    "path": "backend/app/utils/zep_paging.py",
+    "line": 39,
+    "end_line": 52,
+    "kind": "FunctionDef",
+    "name": "_header_value"
+  },
+  {
+    "path": "backend/app/utils/zep_paging.py",
+    "line": 55,
+    "end_line": 118,
+    "kind": "FunctionDef",
+    "name": "_fetch_all"
+  },
+  {
+    "path": "backend/app/utils/zep_paging.py",
+    "line": 121,
+    "end_line": 139,
+    "kind": "FunctionDef",
+    "name": "fetch_all_nodes"
+  },
+  {
+    "path": "backend/app/utils/zep_paging.py",
+    "line": 142,
+    "end_line": 160,
+    "kind": "FunctionDef",
+    "name": "fetch_all_edges"
+  },
+  {
+    "path": "backend/run.py",
+    "line": 25,
+    "end_line": 45,
+    "kind": "FunctionDef",
+    "name": "main"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 22,
+    "end_line": 116,
+    "kind": "ClassDef",
+    "name": "PlatformActionLogger"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 119,
+    "end_line": 196,
+    "kind": "ClassDef",
+    "name": "SimulationLogManager"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 201,
+    "end_line": 288,
+    "kind": "ClassDef",
+    "name": "ActionLogger"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 295,
+    "end_line": 305,
+    "kind": "FunctionDef",
+    "name": "get_logger"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 25,
+    "end_line": 37,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 39,
+    "end_line": 41,
+    "kind": "FunctionDef",
+    "name": "_ensure_dir"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 43,
+    "end_line": 66,
+    "kind": "FunctionDef",
+    "name": "log_action"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 68,
+    "end_line": 78,
+    "kind": "FunctionDef",
+    "name": "log_round_start"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 80,
+    "end_line": 90,
+    "kind": "FunctionDef",
+    "name": "log_round_end"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 92,
+    "end_line": 103,
+    "kind": "FunctionDef",
+    "name": "log_simulation_start"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 105,
+    "end_line": 116,
+    "kind": "FunctionDef",
+    "name": "log_simulation_end"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 125,
+    "end_line": 138,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 140,
+    "end_line": 167,
+    "kind": "FunctionDef",
+    "name": "_setup_main_logger"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 169,
+    "end_line": 173,
+    "kind": "FunctionDef",
+    "name": "get_twitter_logger"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 175,
+    "end_line": 179,
+    "kind": "FunctionDef",
+    "name": "get_reddit_logger"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 181,
+    "end_line": 184,
+    "kind": "FunctionDef",
+    "name": "log"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 186,
+    "end_line": 187,
+    "kind": "FunctionDef",
+    "name": "info"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 189,
+    "end_line": 190,
+    "kind": "FunctionDef",
+    "name": "warning"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 192,
+    "end_line": 193,
+    "kind": "FunctionDef",
+    "name": "error"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 195,
+    "end_line": 196,
+    "kind": "FunctionDef",
+    "name": "debug"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 207,
+    "end_line": 209,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 211,
+    "end_line": 214,
+    "kind": "FunctionDef",
+    "name": "_ensure_dir"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 216,
+    "end_line": 240,
+    "kind": "FunctionDef",
+    "name": "log_action"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 242,
+    "end_line": 252,
+    "kind": "FunctionDef",
+    "name": "log_round_start"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 254,
+    "end_line": 264,
+    "kind": "FunctionDef",
+    "name": "log_round_end"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 266,
+    "end_line": 276,
+    "kind": "FunctionDef",
+    "name": "log_simulation_start"
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "line": 278,
+    "end_line": 288,
+    "kind": "FunctionDef",
+    "name": "log_simulation_end"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 106,
+    "end_line": 113,
+    "kind": "ClassDef",
+    "name": "MaxTokensWarningFilter"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 120,
+    "end_line": 138,
+    "kind": "FunctionDef",
+    "name": "disable_oasis_logging"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 141,
+    "end_line": 155,
+    "kind": "FunctionDef",
+    "name": "init_logging_for_simulation"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 210,
+    "end_line": 214,
+    "kind": "ClassDef",
+    "name": "CommandType"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 217,
+    "end_line": 601,
+    "kind": "ClassDef",
+    "name": "ParallelIPCHandler"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 604,
+    "end_line": 607,
+    "kind": "FunctionDef",
+    "name": "load_config"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 633,
+    "end_line": 654,
+    "kind": "FunctionDef",
+    "name": "get_agent_names_from_config"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 657,
+    "end_line": 746,
+    "kind": "FunctionDef",
+    "name": "fetch_new_actions_from_db"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 749,
+    "end_line": 854,
+    "kind": "FunctionDef",
+    "name": "_enrich_action_context"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 857,
+    "end_line": 900,
+    "kind": "FunctionDef",
+    "name": "_get_post_info"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 903,
+    "end_line": 935,
+    "kind": "FunctionDef",
+    "name": "_get_user_name"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 938,
+    "end_line": 981,
+    "kind": "FunctionDef",
+    "name": "_get_comment_info"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 984,
+    "end_line": 1037,
+    "kind": "FunctionDef",
+    "name": "create_model"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1040,
+    "end_line": 1090,
+    "kind": "FunctionDef",
+    "name": "get_active_agents_for_round"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1093,
+    "end_line": 1098,
+    "kind": "ClassDef",
+    "name": "PlatformSimulation"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1101,
+    "end_line": 1290,
+    "kind": "AsyncFunctionDef",
+    "name": "run_twitter_simulation"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1293,
+    "end_line": 1489,
+    "kind": "AsyncFunctionDef",
+    "name": "run_reddit_simulation"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1492,
+    "end_line": 1650,
+    "kind": "AsyncFunctionDef",
+    "name": "main"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1653,
+    "end_line": 1681,
+    "kind": "FunctionDef",
+    "name": "setup_signal_handlers"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 53,
+    "end_line": 63,
+    "kind": "FunctionDef",
+    "name": "_utf8_open"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 109,
+    "end_line": 113,
+    "kind": "FunctionDef",
+    "name": "filter"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 224,
+    "end_line": 244,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 246,
+    "end_line": 254,
+    "kind": "FunctionDef",
+    "name": "update_status"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 256,
+    "end_line": 277,
+    "kind": "FunctionDef",
+    "name": "poll_command"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 279,
+    "end_line": 298,
+    "kind": "FunctionDef",
+    "name": "send_response"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 300,
+    "end_line": 315,
+    "kind": "FunctionDef",
+    "name": "_get_env_and_graph"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 317,
+    "end_line": 343,
+    "kind": "AsyncFunctionDef",
+    "name": "_interview_single_platform"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 345,
+    "end_line": 414,
+    "kind": "AsyncFunctionDef",
+    "name": "handle_interview"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 416,
+    "end_line": 515,
+    "kind": "AsyncFunctionDef",
+    "name": "handle_batch_interview"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 517,
+    "end_line": 558,
+    "kind": "FunctionDef",
+    "name": "_get_interview_result"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 560,
+    "end_line": 601,
+    "kind": "AsyncFunctionDef",
+    "name": "process_commands"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1095,
+    "end_line": 1098,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1122,
+    "end_line": 1125,
+    "kind": "FunctionDef",
+    "name": "log_info"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1314,
+    "end_line": 1317,
+    "kind": "FunctionDef",
+    "name": "log_info"
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "line": 1663,
+    "end_line": 1678,
+    "kind": "FunctionDef",
+    "name": "signal_handler"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 53,
+    "end_line": 67,
+    "kind": "ClassDef",
+    "name": "UnicodeFormatter"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 70,
+    "end_line": 77,
+    "kind": "ClassDef",
+    "name": "MaxTokensWarningFilter"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 84,
+    "end_line": 115,
+    "kind": "FunctionDef",
+    "name": "setup_oasis_logging"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 139,
+    "end_line": 143,
+    "kind": "ClassDef",
+    "name": "CommandType"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 146,
+    "end_line": 382,
+    "kind": "ClassDef",
+    "name": "IPCHandler"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 385,
+    "end_line": 692,
+    "kind": "ClassDef",
+    "name": "RedditSimulationRunner"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 695,
+    "end_line": 734,
+    "kind": "AsyncFunctionDef",
+    "name": "main"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 737,
+    "end_line": 756,
+    "kind": "FunctionDef",
+    "name": "setup_signal_handlers"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 58,
+    "end_line": 67,
+    "kind": "FunctionDef",
+    "name": "format"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 73,
+    "end_line": 77,
+    "kind": "FunctionDef",
+    "name": "filter"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 149,
+    "end_line": 160,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 162,
+    "end_line": 168,
+    "kind": "FunctionDef",
+    "name": "update_status"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 170,
+    "end_line": 191,
+    "kind": "FunctionDef",
+    "name": "poll_command"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 193,
+    "end_line": 212,
+    "kind": "FunctionDef",
+    "name": "send_response"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 214,
+    "end_line": 246,
+    "kind": "AsyncFunctionDef",
+    "name": "handle_interview"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 248,
+    "end_line": 298,
+    "kind": "AsyncFunctionDef",
+    "name": "handle_batch_interview"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 300,
+    "end_line": 341,
+    "kind": "FunctionDef",
+    "name": "_get_interview_result"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 343,
+    "end_line": 382,
+    "kind": "AsyncFunctionDef",
+    "name": "process_commands"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 405,
+    "end_line": 419,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 421,
+    "end_line": 424,
+    "kind": "FunctionDef",
+    "name": "_load_config"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 426,
+    "end_line": 428,
+    "kind": "FunctionDef",
+    "name": "_get_profile_path"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 430,
+    "end_line": 432,
+    "kind": "FunctionDef",
+    "name": "_get_db_path"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 434,
+    "end_line": 467,
+    "kind": "FunctionDef",
+    "name": "_create_model"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 469,
+    "end_line": 521,
+    "kind": "FunctionDef",
+    "name": "_get_active_agents_for_round"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 523,
+    "end_line": 692,
+    "kind": "AsyncFunctionDef",
+    "name": "run"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 742,
+    "end_line": 753,
+    "kind": "FunctionDef",
+    "name": "signal_handler"
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "line": 61,
+    "end_line": 65,
+    "kind": "FunctionDef",
+    "name": "replace_unicode"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 53,
+    "end_line": 67,
+    "kind": "ClassDef",
+    "name": "UnicodeFormatter"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 70,
+    "end_line": 77,
+    "kind": "ClassDef",
+    "name": "MaxTokensWarningFilter"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 84,
+    "end_line": 115,
+    "kind": "FunctionDef",
+    "name": "setup_oasis_logging"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 139,
+    "end_line": 143,
+    "kind": "ClassDef",
+    "name": "CommandType"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 146,
+    "end_line": 382,
+    "kind": "ClassDef",
+    "name": "IPCHandler"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 385,
+    "end_line": 704,
+    "kind": "ClassDef",
+    "name": "TwitterSimulationRunner"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 707,
+    "end_line": 746,
+    "kind": "AsyncFunctionDef",
+    "name": "main"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 749,
+    "end_line": 768,
+    "kind": "FunctionDef",
+    "name": "setup_signal_handlers"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 58,
+    "end_line": 67,
+    "kind": "FunctionDef",
+    "name": "format"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 73,
+    "end_line": 77,
+    "kind": "FunctionDef",
+    "name": "filter"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 149,
+    "end_line": 160,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 162,
+    "end_line": 168,
+    "kind": "FunctionDef",
+    "name": "update_status"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 170,
+    "end_line": 191,
+    "kind": "FunctionDef",
+    "name": "poll_command"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 193,
+    "end_line": 212,
+    "kind": "FunctionDef",
+    "name": "send_response"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 214,
+    "end_line": 246,
+    "kind": "AsyncFunctionDef",
+    "name": "handle_interview"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 248,
+    "end_line": 298,
+    "kind": "AsyncFunctionDef",
+    "name": "handle_batch_interview"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 300,
+    "end_line": 341,
+    "kind": "FunctionDef",
+    "name": "_get_interview_result"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 343,
+    "end_line": 382,
+    "kind": "AsyncFunctionDef",
+    "name": "process_commands"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 398,
+    "end_line": 412,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 414,
+    "end_line": 417,
+    "kind": "FunctionDef",
+    "name": "_load_config"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 419,
+    "end_line": 421,
+    "kind": "FunctionDef",
+    "name": "_get_profile_path"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 423,
+    "end_line": 425,
+    "kind": "FunctionDef",
+    "name": "_get_db_path"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 427,
+    "end_line": 460,
+    "kind": "FunctionDef",
+    "name": "_create_model"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 462,
+    "end_line": 529,
+    "kind": "FunctionDef",
+    "name": "_get_active_agents_for_round"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 531,
+    "end_line": 704,
+    "kind": "AsyncFunctionDef",
+    "name": "run"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 754,
+    "end_line": 765,
+    "kind": "FunctionDef",
+    "name": "signal_handler"
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "line": 61,
+    "end_line": 65,
+    "kind": "FunctionDef",
+    "name": "replace_unicode"
+  },
+  {
+    "path": "backend/scripts/test_profile_format.py",
+    "line": 20,
+    "end_line": 127,
+    "kind": "FunctionDef",
+    "name": "test_profile_formats"
+  },
+  {
+    "path": "backend/scripts/test_profile_format.py",
+    "line": 130,
+    "end_line": 159,
+    "kind": "FunctionDef",
+    "name": "show_expected_formats"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 42,
+    "end_line": 46,
+    "kind": "ClassDef",
+    "name": "SourceEpisode"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 216,
+    "end_line": 217,
+    "kind": "FunctionDef",
+    "name": "_uuid"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 220,
+    "end_line": 223,
+    "kind": "FunctionDef",
+    "name": "_status_code"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 226,
+    "end_line": 231,
+    "kind": "FunctionDef",
+    "name": "_require_process_api_key"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 234,
+    "end_line": 250,
+    "kind": "FunctionDef",
+    "name": "_drain_updater_after_failure"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 253,
+    "end_line": 288,
+    "kind": "FunctionDef",
+    "name": "_cleanup_graph"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 291,
+    "end_line": 298,
+    "kind": "FunctionDef",
+    "name": "_wait_for_episode"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 301,
+    "end_line": 314,
+    "kind": "FunctionDef",
+    "name": "_list_batch_items"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 317,
+    "end_line": 335,
+    "kind": "FunctionDef",
+    "name": "_raw_pages"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 338,
+    "end_line": 350,
+    "kind": "FunctionDef",
+    "name": "_edge_view"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 353,
+    "end_line": 360,
+    "kind": "FunctionDef",
+    "name": "_node_view"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 363,
+    "end_line": 371,
+    "kind": "FunctionDef",
+    "name": "_search_view"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 374,
+    "end_line": 387,
+    "kind": "FunctionDef",
+    "name": "_episode_to_batch_item"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 390,
+    "end_line": 403,
+    "kind": "FunctionDef",
+    "name": "_add_and_wait"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 406,
+    "end_line": 464,
+    "kind": "FunctionDef",
+    "name": "_activities"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 467,
+    "end_line": 818,
+    "kind": "FunctionDef",
+    "name": "run"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 821,
+    "end_line": 866,
+    "kind": "FunctionDef",
+    "name": "_compact_result"
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "line": 869,
+    "end_line": 900,
+    "kind": "FunctionDef",
+    "name": "main"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 8,
+    "end_line": 18,
+    "kind": "ClassDef",
+    "name": "CompletionSequence"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 21,
+    "end_line": 25,
+    "kind": "ClassDef",
+    "name": "ProviderError"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 28,
+    "end_line": 37,
+    "kind": "FunctionDef",
+    "name": "_response"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 40,
+    "end_line": 46,
+    "kind": "FunctionDef",
+    "name": "_client_for"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 49,
+    "end_line": 64,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_retries_truncated_completion_without_token_cap"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 67,
+    "end_line": 75,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_omits_token_cap_when_requested"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 78,
+    "end_line": 91,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_retries_empty_content_once"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 94,
+    "end_line": 102,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_accepts_complete_object_before_trailing_text"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 113,
+    "end_line": 120,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_rejects_a_second_json_document"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 123,
+    "end_line": 131,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_rejects_top_level_array"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 134,
+    "end_line": 149,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_error_does_not_echo_partial_model_output"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 152,
+    "end_line": 173,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_falls_back_only_for_explicit_response_format_rejection"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 176,
+    "end_line": 203,
+    "kind": "FunctionDef",
+    "name": "test_response_format_fallback_keeps_content_retry_available"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 206,
+    "end_line": 218,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_defaults_to_one_content_attempt"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 222,
+    "end_line": 243,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_does_not_retry_unrelated_provider_errors"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 246,
+    "end_line": 259,
+    "kind": "FunctionDef",
+    "name": "test_chat_json_reports_missing_choices_without_retrying_forever"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 9,
+    "end_line": 11,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 13,
+    "end_line": 18,
+    "kind": "FunctionDef",
+    "name": "create"
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "line": 22,
+    "end_line": 25,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "line": 9,
+    "end_line": 17,
+    "kind": "FunctionDef",
+    "name": "_post_ontology"
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "line": 20,
+    "end_line": 46,
+    "kind": "FunctionDef",
+    "name": "test_ontology_api_returns_safe_truncation_error_and_failed_project"
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "line": 49,
+    "end_line": 70,
+    "kind": "FunctionDef",
+    "name": "test_ontology_api_does_not_expose_provider_error_body"
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "line": 24,
+    "end_line": 29,
+    "kind": "ClassDef",
+    "name": "FailingGenerator"
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "line": 50,
+    "end_line": 53,
+    "kind": "ClassDef",
+    "name": "ProviderError"
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "line": 55,
+    "end_line": 57,
+    "kind": "ClassDef",
+    "name": "FailingGenerator"
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "line": 25,
+    "end_line": 29,
+    "kind": "FunctionDef",
+    "name": "generate"
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "line": 56,
+    "end_line": 57,
+    "kind": "FunctionDef",
+    "name": "generate"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 15,
+    "end_line": 20,
+    "kind": "FunctionDef",
+    "name": "test_normalize_string_attribute"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 23,
+    "end_line": 26,
+    "kind": "FunctionDef",
+    "name": "test_preserve_valid_dictionary_attribute"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 29,
+    "end_line": 31,
+    "kind": "FunctionDef",
+    "name": "test_reject_unusable_attribute_shapes"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 34,
+    "end_line": 47,
+    "kind": "FunctionDef",
+    "name": "test_attribute_list_is_non_empty_and_capped_for_zep"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 50,
+    "end_line": 65,
+    "kind": "FunctionDef",
+    "name": "test_generator_normalizes_entity_and_edge_attributes"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 68,
+    "end_line": 75,
+    "kind": "FunctionDef",
+    "name": "test_generator_adds_a_property_to_empty_custom_types"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 78,
+    "end_line": 99,
+    "kind": "FunctionDef",
+    "name": "test_graph_builder_safety_net_accepts_strings_and_skips_invalid_values"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 102,
+    "end_line": 147,
+    "kind": "FunctionDef",
+    "name": "test_graph_builder_emits_a_pinned_zep_sdk_compatible_schema"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 150,
+    "end_line": 171,
+    "kind": "FunctionDef",
+    "name": "test_graph_builder_passes_an_empty_entity_mapping_for_edge_only_ontology"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 174,
+    "end_line": 206,
+    "kind": "FunctionDef",
+    "name": "test_graph_builder_deduplicates_and_caps_edge_source_targets_for_zep"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 209,
+    "end_line": 237,
+    "kind": "FunctionDef",
+    "name": "test_generator_ignores_invalid_entries_and_normalizes_edge_names"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 240,
+    "end_line": 257,
+    "kind": "FunctionDef",
+    "name": "test_generator_caps_after_discarding_invalid_edge_endpoints"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 81,
+    "end_line": 83,
+    "kind": "ClassDef",
+    "name": "GraphApi"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 85,
+    "end_line": 86,
+    "kind": "ClassDef",
+    "name": "Client"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 105,
+    "end_line": 107,
+    "kind": "ClassDef",
+    "name": "GraphApi"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 109,
+    "end_line": 110,
+    "kind": "ClassDef",
+    "name": "Client"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 153,
+    "end_line": 155,
+    "kind": "ClassDef",
+    "name": "GraphApi"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 157,
+    "end_line": 158,
+    "kind": "ClassDef",
+    "name": "Client"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 177,
+    "end_line": 179,
+    "kind": "ClassDef",
+    "name": "GraphApi"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 181,
+    "end_line": 182,
+    "kind": "ClassDef",
+    "name": "Client"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 82,
+    "end_line": 83,
+    "kind": "FunctionDef",
+    "name": "set_ontology"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 106,
+    "end_line": 107,
+    "kind": "FunctionDef",
+    "name": "set_ontology"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 154,
+    "end_line": 155,
+    "kind": "FunctionDef",
+    "name": "set_ontology"
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "line": 178,
+    "end_line": 179,
+    "kind": "FunctionDef",
+    "name": "set_ontology"
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "line": 4,
+    "end_line": 14,
+    "kind": "ClassDef",
+    "name": "RecordingLLMClient"
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "line": 17,
+    "end_line": 24,
+    "kind": "FunctionDef",
+    "name": "_generator_for_test"
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "line": 27,
+    "end_line": 33,
+    "kind": "FunctionDef",
+    "name": "test_short_ontology_context_keeps_original_text"
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "line": 36,
+    "end_line": 49,
+    "kind": "FunctionDef",
+    "name": "test_long_ontology_context_samples_across_document"
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "line": 52,
+    "end_line": 65,
+    "kind": "FunctionDef",
+    "name": "test_very_long_ontology_context_selects_representative_chunks"
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "line": 68,
+    "end_line": 79,
+    "kind": "FunctionDef",
+    "name": "test_ontology_generation_does_not_cap_structured_output_tokens"
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "line": 5,
+    "end_line": 6,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "line": 8,
+    "end_line": 14,
+    "kind": "FunctionDef",
+    "name": "chat_json"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 12,
+    "end_line": 22,
+    "kind": "ClassDef",
+    "name": "CompletionRecorder"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 25,
+    "end_line": 26,
+    "kind": "FunctionDef",
+    "name": "client_for"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 29,
+    "end_line": 50,
+    "kind": "FunctionDef",
+    "name": "test_gpt5_uses_completion_token_limit_without_temperature"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 53,
+    "end_line": 74,
+    "kind": "FunctionDef",
+    "name": "test_legacy_model_preserves_original_request_shape"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 77,
+    "end_line": 90,
+    "kind": "FunctionDef",
+    "name": "test_provider_error_is_propagated_without_guessing_or_retrying"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 103,
+    "end_line": 104,
+    "kind": "FunctionDef",
+    "name": "test_gpt5_family_detection"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 107,
+    "end_line": 123,
+    "kind": "FunctionDef",
+    "name": "test_extracts_text_from_supported_content_shapes"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 13,
+    "end_line": 16,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "line": 18,
+    "end_line": 22,
+    "kind": "FunctionDef",
+    "name": "create"
+  },
+  {
+    "path": "backend/tests/test_platform_profiles.py",
+    "line": 9,
+    "end_line": 20,
+    "kind": "FunctionDef",
+    "name": "_manager"
+  },
+  {
+    "path": "backend/tests/test_platform_profiles.py",
+    "line": 23,
+    "end_line": 30,
+    "kind": "FunctionDef",
+    "name": "test_twitter_default_reads_generated_csv"
+  },
+  {
+    "path": "backend/tests/test_platform_profiles.py",
+    "line": 33,
+    "end_line": 38,
+    "kind": "FunctionDef",
+    "name": "test_reddit_default_preserves_json_behavior"
+  },
+  {
+    "path": "backend/tests/test_platform_profiles.py",
+    "line": 41,
+    "end_line": 48,
+    "kind": "FunctionDef",
+    "name": "test_explicit_platform_overrides_dual_platform_default"
+  },
+  {
+    "path": "backend/tests/test_platform_profiles.py",
+    "line": 51,
+    "end_line": 55,
+    "kind": "FunctionDef",
+    "name": "test_invalid_platform_is_rejected"
+  },
+  {
+    "path": "backend/tests/test_profile_field_normalization.py",
+    "line": 12,
+    "end_line": 16,
+    "kind": "FunctionDef",
+    "name": "test_text_coercion_handles_none_nested_objects_and_lists"
+  },
+  {
+    "path": "backend/tests/test_profile_field_normalization.py",
+    "line": 19,
+    "end_line": 23,
+    "kind": "FunctionDef",
+    "name": "test_list_coercion_flattens_nested_values_and_drops_missing_items"
+  },
+  {
+    "path": "backend/tests/test_profile_field_normalization.py",
+    "line": 26,
+    "end_line": 47,
+    "kind": "FunctionDef",
+    "name": "test_profile_construction_is_the_single_normalization_boundary"
+  },
+  {
+    "path": "backend/tests/test_profile_field_normalization.py",
+    "line": 50,
+    "end_line": 76,
+    "kind": "FunctionDef",
+    "name": "test_normalized_profile_serializes_to_twitter_and_reddit"
+  },
+  {
+    "path": "backend/tests/test_report_tool_result_sanitizer.py",
+    "line": 21,
+    "end_line": 22,
+    "kind": "FunctionDef",
+    "name": "test_strip_fake_tool_results"
+  },
+  {
+    "path": "backend/tests/test_report_tool_result_sanitizer.py",
+    "line": 25,
+    "end_line": 28,
+    "kind": "FunctionDef",
+    "name": "test_preserves_legitimate_text_without_tool_result_tags"
+  },
+  {
+    "path": "backend/tests/test_simulation_prepare_failure.py",
+    "line": 16,
+    "end_line": 31,
+    "kind": "FunctionDef",
+    "name": "_write_failed_state"
+  },
+  {
+    "path": "backend/tests/test_simulation_prepare_failure.py",
+    "line": 34,
+    "end_line": 59,
+    "kind": "FunctionDef",
+    "name": "test_realtime_endpoints_expose_terminal_failure"
+  },
+  {
+    "path": "backend/tests/test_simulation_prepare_failure.py",
+    "line": 62,
+    "end_line": 102,
+    "kind": "FunctionDef",
+    "name": "test_zero_entities_persists_failed_state_and_raises"
+  },
+  {
+    "path": "backend/tests/test_simulation_prepare_failure.py",
+    "line": 63,
+    "end_line": 70,
+    "kind": "ClassDef",
+    "name": "EmptyReader"
+  },
+  {
+    "path": "backend/tests/test_simulation_prepare_failure.py",
+    "line": 64,
+    "end_line": 70,
+    "kind": "FunctionDef",
+    "name": "filter_defined_entities"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 16,
+    "end_line": 31,
+    "kind": "FunctionDef",
+    "name": "test_report_search_caps_the_query_sent_to_zep"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 34,
+    "end_line": 56,
+    "kind": "FunctionDef",
+    "name": "test_profile_context_search_caps_both_queries_sent_to_zep"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 59,
+    "end_line": 120,
+    "kind": "FunctionDef",
+    "name": "test_entity_context_includes_incoming_edges_from_the_full_graph"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 123,
+    "end_line": 135,
+    "kind": "FunctionDef",
+    "name": "test_entity_reader_does_not_turn_auth_failure_into_missing_entity"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 138,
+    "end_line": 152,
+    "kind": "FunctionDef",
+    "name": "test_entity_reader_does_not_turn_edge_failure_into_empty_data"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 155,
+    "end_line": 171,
+    "kind": "FunctionDef",
+    "name": "test_report_tools_do_not_turn_zep_read_failures_into_empty_data"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 174,
+    "end_line": 189,
+    "kind": "FunctionDef",
+    "name": "test_episode_processing_timeout_fails_instead_of_reporting_success"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 192,
+    "end_line": 234,
+    "kind": "FunctionDef",
+    "name": "test_document_ingestion_uses_current_batch_api_and_persists_identity"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 237,
+    "end_line": 263,
+    "kind": "FunctionDef",
+    "name": "test_graph_create_persists_identity_before_post_and_reconciles_timeout"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 266,
+    "end_line": 309,
+    "kind": "FunctionDef",
+    "name": "test_batch_create_timeout_is_reconciled_by_operation_metadata"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 312,
+    "end_line": 349,
+    "kind": "FunctionDef",
+    "name": "test_batch_add_timeout_recovers_a_fully_accepted_group_without_replay"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 352,
+    "end_line": 395,
+    "kind": "FunctionDef",
+    "name": "test_batch_wait_validates_terminal_items_and_opaque_zero_cursor"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 399,
+    "end_line": 415,
+    "kind": "FunctionDef",
+    "name": "test_batch_non_success_terminal_states_fail"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 418,
+    "end_line": 433,
+    "kind": "FunctionDef",
+    "name": "test_batch_wait_times_out_while_status_remains_nonterminal"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 436,
+    "end_line": 501,
+    "kind": "FunctionDef",
+    "name": "test_installed_sdk_serializes_the_batch_325_contract"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 19,
+    "end_line": 22,
+    "kind": "ClassDef",
+    "name": "GraphApi"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 37,
+    "end_line": 40,
+    "kind": "ClassDef",
+    "name": "GraphApi"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 124,
+    "end_line": 125,
+    "kind": "FunctionDef",
+    "name": "unauthorized"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 139,
+    "end_line": 140,
+    "kind": "FunctionDef",
+    "name": "forbidden"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 156,
+    "end_line": 157,
+    "kind": "FunctionDef",
+    "name": "unauthorized"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 195,
+    "end_line": 209,
+    "kind": "ClassDef",
+    "name": "BatchApi"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 240,
+    "end_line": 247,
+    "kind": "ClassDef",
+    "name": "GraphApi"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 270,
+    "end_line": 300,
+    "kind": "ClassDef",
+    "name": "BatchApi"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 316,
+    "end_line": 337,
+    "kind": "ClassDef",
+    "name": "BatchApi"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 355,
+    "end_line": 385,
+    "kind": "ClassDef",
+    "name": "BatchApi"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 439,
+    "end_line": 478,
+    "kind": "FunctionDef",
+    "name": "handler"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 20,
+    "end_line": 22,
+    "kind": "FunctionDef",
+    "name": "search"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 38,
+    "end_line": 40,
+    "kind": "FunctionDef",
+    "name": "search"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 196,
+    "end_line": 198,
+    "kind": "FunctionDef",
+    "name": "create"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 200,
+    "end_line": 205,
+    "kind": "FunctionDef",
+    "name": "add"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 207,
+    "end_line": 209,
+    "kind": "FunctionDef",
+    "name": "process"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 241,
+    "end_line": 243,
+    "kind": "FunctionDef",
+    "name": "create"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 245,
+    "end_line": 247,
+    "kind": "FunctionDef",
+    "name": "get"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 271,
+    "end_line": 273,
+    "kind": "FunctionDef",
+    "name": "create"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 275,
+    "end_line": 292,
+    "kind": "FunctionDef",
+    "name": "list"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 294,
+    "end_line": 296,
+    "kind": "FunctionDef",
+    "name": "add"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 298,
+    "end_line": 300,
+    "kind": "FunctionDef",
+    "name": "process"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 317,
+    "end_line": 318,
+    "kind": "FunctionDef",
+    "name": "create"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 320,
+    "end_line": 322,
+    "kind": "FunctionDef",
+    "name": "add"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 324,
+    "end_line": 334,
+    "kind": "FunctionDef",
+    "name": "list_items"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 336,
+    "end_line": 337,
+    "kind": "FunctionDef",
+    "name": "process"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 356,
+    "end_line": 363,
+    "kind": "FunctionDef",
+    "name": "get"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "line": 365,
+    "end_line": 385,
+    "kind": "FunctionDef",
+    "name": "list_items"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_validation_script.py",
+    "line": 9,
+    "end_line": 45,
+    "kind": "FunctionDef",
+    "name": "test_validation_script_preserves_the_process_key_across_app_config_import"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_validation_script.py",
+    "line": 48,
+    "end_line": 80,
+    "kind": "FunctionDef",
+    "name": "test_validation_cleanup_retains_graph_when_updater_cannot_drain"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_validation_script.py",
+    "line": 83,
+    "end_line": 105,
+    "kind": "FunctionDef",
+    "name": "test_validation_cleanup_deletes_graph_after_confirmed_drain"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_validation_script.py",
+    "line": 52,
+    "end_line": 54,
+    "kind": "ClassDef",
+    "name": "FailingUpdater"
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_validation_script.py",
+    "line": 53,
+    "end_line": 54,
+    "kind": "FunctionDef",
+    "name": "stop"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 6,
+    "end_line": 15,
+    "kind": "FunctionDef",
+    "name": "_client"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 18,
+    "end_line": 41,
+    "kind": "FunctionDef",
+    "name": "test_edge_cap_stops_pagination_at_requested_limit"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 44,
+    "end_line": 57,
+    "kind": "FunctionDef",
+    "name": "test_existing_positional_retry_arguments_keep_their_meaning"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 60,
+    "end_line": 92,
+    "kind": "FunctionDef",
+    "name": "test_pagination_uses_the_current_opaque_response_cursor"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 95,
+    "end_line": 112,
+    "kind": "FunctionDef",
+    "name": "test_pagination_fails_if_the_service_repeats_a_cursor"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 31,
+    "end_line": 33,
+    "kind": "FunctionDef",
+    "name": "fake_fetch"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 47,
+    "end_line": 49,
+    "kind": "FunctionDef",
+    "name": "fake_fetch"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 63,
+    "end_line": 74,
+    "kind": "ClassDef",
+    "name": "RawEdgeApi"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 76,
+    "end_line": 80,
+    "kind": "ClassDef",
+    "name": "EdgeApi"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 96,
+    "end_line": 101,
+    "kind": "ClassDef",
+    "name": "RawEdgeApi"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 64,
+    "end_line": 74,
+    "kind": "FunctionDef",
+    "name": "get_by_graph_id"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 79,
+    "end_line": 80,
+    "kind": "FunctionDef",
+    "name": "get_by_graph_id"
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "line": 97,
+    "end_line": 101,
+    "kind": "FunctionDef",
+    "name": "get_by_graph_id"
+  },
+  {
+    "path": "backend/tests/test_zep_entity_reader_edges.py",
+    "line": 7,
+    "end_line": 9,
+    "kind": "FunctionDef",
+    "name": "test_pinned_zep_sdk_exposes_get_edges_not_get_entity_edges"
+  },
+  {
+    "path": "backend/tests/test_zep_entity_reader_edges.py",
+    "line": 12,
+    "end_line": 44,
+    "kind": "FunctionDef",
+    "name": "test_get_node_edges_uses_the_supported_sdk_method"
+  },
+  {
+    "path": "backend/tests/test_zep_entity_reader_edges.py",
+    "line": 15,
+    "end_line": 25,
+    "kind": "ClassDef",
+    "name": "NodeApi"
+  },
+  {
+    "path": "backend/tests/test_zep_entity_reader_edges.py",
+    "line": 27,
+    "end_line": 28,
+    "kind": "ClassDef",
+    "name": "GraphApi"
+  },
+  {
+    "path": "backend/tests/test_zep_entity_reader_edges.py",
+    "line": 30,
+    "end_line": 31,
+    "kind": "ClassDef",
+    "name": "Client"
+  },
+  {
+    "path": "backend/tests/test_zep_entity_reader_edges.py",
+    "line": 16,
+    "end_line": 25,
+    "kind": "FunctionDef",
+    "name": "get_edges"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 14,
+    "end_line": 27,
+    "kind": "FunctionDef",
+    "name": "_project"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 30,
+    "end_line": 35,
+    "kind": "FunctionDef",
+    "name": "_json_result"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 38,
+    "end_line": 70,
+    "kind": "FunctionDef",
+    "name": "test_project_reset_deletes_the_cloud_graph_before_clearing_reference"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 73,
+    "end_line": 92,
+    "kind": "FunctionDef",
+    "name": "test_project_reset_refuses_a_graph_with_an_active_simulation"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 95,
+    "end_line": 116,
+    "kind": "FunctionDef",
+    "name": "test_graph_delete_cannot_discard_an_updater_during_finalization"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 119,
+    "end_line": 147,
+    "kind": "FunctionDef",
+    "name": "test_repeated_build_request_reuses_the_existing_task"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 150,
+    "end_line": 183,
+    "kind": "FunctionDef",
+    "name": "test_stale_build_after_restart_is_recoverable_instead_of_reused"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 186,
+    "end_line": 244,
+    "kind": "FunctionDef",
+    "name": "test_stale_build_resumes_a_persisted_processing_batch"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 247,
+    "end_line": 285,
+    "kind": "FunctionDef",
+    "name": "test_project_delete_removes_cloud_graph_before_local_files"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 288,
+    "end_line": 307,
+    "kind": "FunctionDef",
+    "name": "test_completed_build_request_is_idempotent_without_force"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 310,
+    "end_line": 328,
+    "kind": "FunctionDef",
+    "name": "test_force_must_be_a_json_boolean"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 331,
+    "end_line": 418,
+    "kind": "FunctionDef",
+    "name": "test_graph_reset_and_memory_start_cannot_cross_between_delete_and_clear"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 42,
+    "end_line": 47,
+    "kind": "ClassDef",
+    "name": "Builder"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 190,
+    "end_line": 195,
+    "kind": "ClassDef",
+    "name": "Tasks"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 197,
+    "end_line": 203,
+    "kind": "ClassDef",
+    "name": "Builder"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 205,
+    "end_line": 210,
+    "kind": "ClassDef",
+    "name": "Thread"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 251,
+    "end_line": 256,
+    "kind": "ClassDef",
+    "name": "Builder"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 345,
+    "end_line": 352,
+    "kind": "ClassDef",
+    "name": "Builder"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 354,
+    "end_line": 356,
+    "kind": "ClassDef",
+    "name": "Simulations"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 385,
+    "end_line": 389,
+    "kind": "FunctionDef",
+    "name": "reset"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 391,
+    "end_line": 400,
+    "kind": "FunctionDef",
+    "name": "start"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 43,
+    "end_line": 44,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 46,
+    "end_line": 47,
+    "kind": "FunctionDef",
+    "name": "delete_graph"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 191,
+    "end_line": 192,
+    "kind": "FunctionDef",
+    "name": "get_task"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 194,
+    "end_line": 195,
+    "kind": "FunctionDef",
+    "name": "create_task"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 198,
+    "end_line": 199,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 201,
+    "end_line": 203,
+    "kind": "FunctionDef",
+    "name": "get_batch_summary"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 206,
+    "end_line": 207,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 209,
+    "end_line": 210,
+    "kind": "FunctionDef",
+    "name": "start"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 252,
+    "end_line": 253,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 255,
+    "end_line": 256,
+    "kind": "FunctionDef",
+    "name": "delete_graph"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 346,
+    "end_line": 347,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 349,
+    "end_line": 352,
+    "kind": "FunctionDef",
+    "name": "delete_graph"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "line": 355,
+    "end_line": 356,
+    "kind": "FunctionDef",
+    "name": "get_simulation"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 15,
+    "end_line": 24,
+    "kind": "FunctionDef",
+    "name": "_activity"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 27,
+    "end_line": 35,
+    "kind": "FunctionDef",
+    "name": "_client"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 38,
+    "end_line": 47,
+    "kind": "FunctionDef",
+    "name": "_updater"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 50,
+    "end_line": 63,
+    "kind": "FunctionDef",
+    "name": "test_stop_drains_an_immediately_queued_tail_activity"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 66,
+    "end_line": 83,
+    "kind": "FunctionDef",
+    "name": "test_network_write_happens_outside_the_buffer_lock"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 86,
+    "end_line": 106,
+    "kind": "FunctionDef",
+    "name": "test_activity_episode_has_provenance_time_and_a_safe_size"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 109,
+    "end_line": 120,
+    "kind": "FunctionDef",
+    "name": "test_failed_non_idempotent_write_is_reported_by_stop"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 123,
+    "end_line": 141,
+    "kind": "FunctionDef",
+    "name": "test_failed_simulation_action_is_not_ingested"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 144,
+    "end_line": 177,
+    "kind": "FunctionDef",
+    "name": "test_stop_cannot_finish_between_acceptance_check_and_enqueue"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 180,
+    "end_line": 195,
+    "kind": "FunctionDef",
+    "name": "test_pending_episode_wait_has_a_deadline"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 198,
+    "end_line": 209,
+    "kind": "FunctionDef",
+    "name": "test_explicit_graph_destruction_can_discard_a_stopped_failed_updater"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 212,
+    "end_line": 237,
+    "kind": "FunctionDef",
+    "name": "test_flush_deadline_keeps_unattempted_platform_for_a_safe_retry"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 70,
+    "end_line": 75,
+    "kind": "FunctionDef",
+    "name": "add"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 110,
+    "end_line": 111,
+    "kind": "FunctionDef",
+    "name": "add"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 154,
+    "end_line": 158,
+    "kind": "ClassDef",
+    "name": "BlockingQueue"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 216,
+    "end_line": 219,
+    "kind": "FunctionDef",
+    "name": "add"
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "line": 155,
+    "end_line": 158,
+    "kind": "FunctionDef",
+    "name": "put"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 18,
+    "end_line": 23,
+    "kind": "FunctionDef",
+    "name": "_json_result"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 26,
+    "end_line": 64,
+    "kind": "FunctionDef",
+    "name": "test_report_generation_waits_for_zep_ingestion"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 67,
+    "end_line": 110,
+    "kind": "FunctionDef",
+    "name": "test_active_rerun_does_not_return_a_stale_completed_report"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 113,
+    "end_line": 146,
+    "kind": "FunctionDef",
+    "name": "test_failed_ingestion_cannot_generate_a_report_after_restart"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 149,
+    "end_line": 297,
+    "kind": "FunctionDef",
+    "name": "test_report_reader_lease_blocks_graph_start_and_delete"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 166,
+    "end_line": 177,
+    "kind": "ClassDef",
+    "name": "Tasks"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 179,
+    "end_line": 185,
+    "kind": "ClassDef",
+    "name": "ParkedThread"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 187,
+    "end_line": 197,
+    "kind": "ClassDef",
+    "name": "Agent"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 167,
+    "end_line": 168,
+    "kind": "FunctionDef",
+    "name": "create_task"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 170,
+    "end_line": 171,
+    "kind": "FunctionDef",
+    "name": "update_task"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 173,
+    "end_line": 174,
+    "kind": "FunctionDef",
+    "name": "complete_task"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 176,
+    "end_line": 177,
+    "kind": "FunctionDef",
+    "name": "fail_task"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 180,
+    "end_line": 182,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 184,
+    "end_line": 185,
+    "kind": "FunctionDef",
+    "name": "start"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 188,
+    "end_line": 189,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "line": 191,
+    "end_line": 197,
+    "kind": "FunctionDef",
+    "name": "generate_report"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 10,
+    "end_line": 24,
+    "kind": "FunctionDef",
+    "name": "test_permanent_zep_errors_fail_without_retry"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 27,
+    "end_line": 49,
+    "kind": "FunctionDef",
+    "name": "test_rate_limit_retry_respects_retry_after"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 52,
+    "end_line": 72,
+    "kind": "FunctionDef",
+    "name": "test_zep_client_is_shared_and_uses_an_explicit_timeout"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 75,
+    "end_line": 79,
+    "kind": "FunctionDef",
+    "name": "test_zep_client_rejects_self_hosted_endpoint_override"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 82,
+    "end_line": 104,
+    "kind": "FunctionDef",
+    "name": "test_zep_client_uses_internal_timeout_and_ignores_env_overrides"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 107,
+    "end_line": 112,
+    "kind": "FunctionDef",
+    "name": "test_zep_timeout_policy_is_not_exposed_in_env_example"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 13,
+    "end_line": 15,
+    "kind": "FunctionDef",
+    "name": "operation"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 31,
+    "end_line": 39,
+    "kind": "FunctionDef",
+    "name": "operation"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 55,
+    "end_line": 57,
+    "kind": "FunctionDef",
+    "name": "fake_zep"
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "line": 85,
+    "end_line": 87,
+    "kind": "FunctionDef",
+    "name": "fake_zep"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 18,
+    "end_line": 55,
+    "kind": "FunctionDef",
+    "name": "test_manual_stop_surfaces_graph_ingestion_failure"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 58,
+    "end_line": 79,
+    "kind": "FunctionDef",
+    "name": "test_platform_completion_does_not_publish_terminal_success_before_barrier"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 82,
+    "end_line": 115,
+    "kind": "FunctionDef",
+    "name": "test_manual_stop_timeout_leaves_monitor_owned_state_stopping"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 118,
+    "end_line": 153,
+    "kind": "FunctionDef",
+    "name": "test_failed_ingestion_finalization_can_be_retried"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 156,
+    "end_line": 188,
+    "kind": "FunctionDef",
+    "name": "test_stop_api_keeps_pending_finalization_out_of_failed_state"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 195,
+    "end_line": 205,
+    "kind": "FunctionDef",
+    "name": "test_simulation_start_rejects_string_booleans"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 208,
+    "end_line": 270,
+    "kind": "FunctionDef",
+    "name": "test_force_restart_does_not_continue_while_old_ingestion_is_pending"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 273,
+    "end_line": 336,
+    "kind": "FunctionDef",
+    "name": "test_monitor_start_failure_terminates_the_spawned_process"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 339,
+    "end_line": 425,
+    "kind": "FunctionDef",
+    "name": "test_shutdown_terminates_producer_before_tail_read_and_updater_drain"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 428,
+    "end_line": 484,
+    "kind": "FunctionDef",
+    "name": "test_shutdown_drain_failure_remains_failed_and_retryable"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 88,
+    "end_line": 93,
+    "kind": "ClassDef",
+    "name": "Monitor"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 290,
+    "end_line": 294,
+    "kind": "ClassDef",
+    "name": "Process"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 296,
+    "end_line": 301,
+    "kind": "ClassDef",
+    "name": "BrokenThread"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 349,
+    "end_line": 354,
+    "kind": "ClassDef",
+    "name": "Process"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 358,
+    "end_line": 369,
+    "kind": "ClassDef",
+    "name": "Monitor"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 89,
+    "end_line": 90,
+    "kind": "FunctionDef",
+    "name": "join"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 92,
+    "end_line": 93,
+    "kind": "FunctionDef",
+    "name": "is_alive"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 293,
+    "end_line": 294,
+    "kind": "FunctionDef",
+    "name": "poll"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 297,
+    "end_line": 298,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 300,
+    "end_line": 301,
+    "kind": "FunctionDef",
+    "name": "start"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 353,
+    "end_line": 354,
+    "kind": "FunctionDef",
+    "name": "poll"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 361,
+    "end_line": 366,
+    "kind": "FunctionDef",
+    "name": "join"
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "line": 368,
+    "end_line": 369,
+    "kind": "FunctionDef",
+    "name": "is_alive"
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "line": 25,
+    "end_line": 26,
+    "kind": "ClassDef",
+    "name": "FetchError"
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "line": 29,
+    "end_line": 33,
+    "kind": "ClassDef",
+    "name": "NoRedirectHandler"
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "line": 36,
+    "end_line": 37,
+    "kind": "FunctionDef",
+    "name": "_build_opener"
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "line": 40,
+    "end_line": 53,
+    "kind": "FunctionDef",
+    "name": "_status_error"
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "line": 56,
+    "end_line": 69,
+    "kind": "FunctionDef",
+    "name": "_read_response"
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "line": 72,
+    "end_line": 123,
+    "kind": "FunctionDef",
+    "name": "fetch_star_count"
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "line": 126,
+    "end_line": 142,
+    "kind": "FunctionDef",
+    "name": "main"
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "line": 32,
+    "end_line": 33,
+    "kind": "FunctionDef",
+    "name": "redirect_request"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 151,
+    "end_line": 152,
+    "kind": "ClassDef",
+    "name": "StarHistoryError"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 156,
+    "end_line": 158,
+    "kind": "ClassDef",
+    "name": "StargazerEdge"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 162,
+    "end_line": 167,
+    "kind": "ClassDef",
+    "name": "StargazerPage"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 171,
+    "end_line": 174,
+    "kind": "ClassDef",
+    "name": "Result"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 177,
+    "end_line": 178,
+    "kind": "ClassDef",
+    "name": "Clock"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 181,
+    "end_line": 182,
+    "kind": "ClassDef",
+    "name": "GitHubGateway"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 185,
+    "end_line": 186,
+    "kind": "ClassDef",
+    "name": "CommandRunner"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 189,
+    "end_line": 191,
+    "kind": "ClassDef",
+    "name": "SystemClock"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 194,
+    "end_line": 208,
+    "kind": "ClassDef",
+    "name": "SubprocessCommandRunner"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 211,
+    "end_line": 298,
+    "kind": "ClassDef",
+    "name": "GhGraphQLGateway"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 301,
+    "end_line": 304,
+    "kind": "FunctionDef",
+    "name": "_strict_non_negative_int"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 307,
+    "end_line": 314,
+    "kind": "FunctionDef",
+    "name": "_parse_github_timestamp"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 317,
+    "end_line": 324,
+    "kind": "FunctionDef",
+    "name": "_parse_state_timestamp"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 327,
+    "end_line": 329,
+    "kind": "FunctionDef",
+    "name": "_format_state_timestamp"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 332,
+    "end_line": 335,
+    "kind": "FunctionDef",
+    "name": "_normalize_now"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 338,
+    "end_line": 341,
+    "kind": "FunctionDef",
+    "name": "_expect_keys"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 344,
+    "end_line": 444,
+    "kind": "FunctionDef",
+    "name": "validate_state"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 447,
+    "end_line": 451,
+    "kind": "FunctionDef",
+    "name": "canonical_state_bytes"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 454,
+    "end_line": 461,
+    "kind": "FunctionDef",
+    "name": "_safe_workspace"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 464,
+    "end_line": 494,
+    "kind": "FunctionDef",
+    "name": "_safe_target"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 497,
+    "end_line": 507,
+    "kind": "FunctionDef",
+    "name": "_read_limited"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 510,
+    "end_line": 537,
+    "kind": "FunctionDef",
+    "name": "load_star_count_file"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 540,
+    "end_line": 550,
+    "kind": "FunctionDef",
+    "name": "load_state"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 553,
+    "end_line": 566,
+    "kind": "FunctionDef",
+    "name": "_snapshot_due"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 569,
+    "end_line": 630,
+    "kind": "FunctionDef",
+    "name": "_build_backfill_state"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 633,
+    "end_line": 654,
+    "kind": "FunctionDef",
+    "name": "_build_initial_state"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 657,
+    "end_line": 681,
+    "kind": "FunctionDef",
+    "name": "_updated_with_snapshot"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 685,
+    "end_line": 688,
+    "kind": "ClassDef",
+    "name": "ChartPoint"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 691,
+    "end_line": 706,
+    "kind": "FunctionDef",
+    "name": "_chart_points"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 709,
+    "end_line": 728,
+    "kind": "FunctionDef",
+    "name": "_nice_y_axis"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 731,
+    "end_line": 736,
+    "kind": "FunctionDef",
+    "name": "_format_number"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 739,
+    "end_line": 741,
+    "kind": "FunctionDef",
+    "name": "_format_float"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 744,
+    "end_line": 764,
+    "kind": "FunctionDef",
+    "name": "_x_tick_label"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 767,
+    "end_line": 772,
+    "kind": "FunctionDef",
+    "name": "_sign"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 775,
+    "end_line": 839,
+    "kind": "FunctionDef",
+    "name": "_monotone_x_path"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 842,
+    "end_line": 1039,
+    "kind": "FunctionDef",
+    "name": "render_svg"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1042,
+    "end_line": 1067,
+    "kind": "FunctionDef",
+    "name": "_reviewed_avatar_dimensions"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1070,
+    "end_line": 1286,
+    "kind": "FunctionDef",
+    "name": "_validate_svg"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1289,
+    "end_line": 1294,
+    "kind": "FunctionDef",
+    "name": "_output_payloads"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1297,
+    "end_line": 1346,
+    "kind": "FunctionDef",
+    "name": "_write_outputs"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1349,
+    "end_line": 1357,
+    "kind": "FunctionDef",
+    "name": "check_workspace"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1360,
+    "end_line": 1417,
+    "kind": "FunctionDef",
+    "name": "execute"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1420,
+    "end_line": 1421,
+    "kind": "FunctionDef",
+    "name": "_repository_root"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1424,
+    "end_line": 1427,
+    "kind": "FunctionDef",
+    "name": "_production_gateway"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1430,
+    "end_line": 1455,
+    "kind": "FunctionDef",
+    "name": "build_parser"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 1458,
+    "end_line": 1485,
+    "kind": "FunctionDef",
+    "name": "main"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 178,
+    "end_line": 178,
+    "kind": "FunctionDef",
+    "name": "now"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 182,
+    "end_line": 182,
+    "kind": "FunctionDef",
+    "name": "fetch_stargazer_page"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 186,
+    "end_line": 186,
+    "kind": "FunctionDef",
+    "name": "run"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 190,
+    "end_line": 191,
+    "kind": "FunctionDef",
+    "name": "now"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 195,
+    "end_line": 208,
+    "kind": "FunctionDef",
+    "name": "run"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 214,
+    "end_line": 215,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 217,
+    "end_line": 298,
+    "kind": "FunctionDef",
+    "name": "fetch_stargazer_page"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 906,
+    "end_line": 909,
+    "kind": "FunctionDef",
+    "name": "x_coord"
+  },
+  {
+    "path": "scripts/star_history.py",
+    "line": 911,
+    "end_line": 912,
+    "kind": "FunctionDef",
+    "name": "y_coord"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 18,
+    "end_line": 34,
+    "kind": "ClassDef",
+    "name": "RecordingHandler"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 37,
+    "end_line": 62,
+    "kind": "ClassDef",
+    "name": "LocalHttpServer"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 65,
+    "end_line": 327,
+    "kind": "ClassDef",
+    "name": "FetchStarCountTests"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 19,
+    "end_line": 31,
+    "kind": "FunctionDef",
+    "name": "do_GET"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 33,
+    "end_line": 34,
+    "kind": "FunctionDef",
+    "name": "log_message"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 38,
+    "end_line": 43,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 45,
+    "end_line": 57,
+    "kind": "FunctionDef",
+    "name": "__enter__"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 59,
+    "end_line": 62,
+    "kind": "FunctionDef",
+    "name": "__exit__"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 66,
+    "end_line": 76,
+    "kind": "FunctionDef",
+    "name": "run_main"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 78,
+    "end_line": 93,
+    "kind": "FunctionDef",
+    "name": "test_fetcher_is_standalone_stdlib_only_and_has_fixed_api"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 95,
+    "end_line": 108,
+    "kind": "FunctionDef",
+    "name": "test_success_stdout_is_only_one_decimal_count"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 110,
+    "end_line": 124,
+    "kind": "FunctionDef",
+    "name": "test_redirect_is_refused_without_forwarding_token"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 126,
+    "end_line": 146,
+    "kind": "FunctionDef",
+    "name": "test_malformed_oversized_and_invalid_counts_are_sanitized"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 148,
+    "end_line": 167,
+    "kind": "FunctionDef",
+    "name": "test_status_and_network_errors_do_not_echo_exception_data"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 169,
+    "end_line": 183,
+    "kind": "FunctionDef",
+    "name": "test_missing_or_newline_token_is_rejected_without_stdout"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 185,
+    "end_line": 246,
+    "kind": "FunctionDef",
+    "name": "test_workflow_keeps_credentials_out_of_record_and_render_steps"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 248,
+    "end_line": 327,
+    "kind": "FunctionDef",
+    "name": "test_workflow_submits_a_verified_pull_request_for_manual_merge"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 161,
+    "end_line": 163,
+    "kind": "ClassDef",
+    "name": "FailingOpener"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "line": 162,
+    "end_line": 163,
+    "kind": "FunctionDef",
+    "name": "open"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 23,
+    "end_line": 30,
+    "kind": "ClassDef",
+    "name": "FixedClock"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 33,
+    "end_line": 40,
+    "kind": "ClassDef",
+    "name": "FakeGitHub"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 43,
+    "end_line": 50,
+    "kind": "ClassDef",
+    "name": "FakeRunner"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 53,
+    "end_line": 57,
+    "kind": "FunctionDef",
+    "name": "edge"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 60,
+    "end_line": 67,
+    "kind": "FunctionDef",
+    "name": "page"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 70,
+    "end_line": 82,
+    "kind": "FunctionDef",
+    "name": "state_with_snapshots"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 85,
+    "end_line": 94,
+    "kind": "FunctionDef",
+    "name": "seed_workspace"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 97,
+    "end_line": 864,
+    "kind": "ClassDef",
+    "name": "StarHistoryBehaviorTests"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 867,
+    "end_line": 951,
+    "kind": "ClassDef",
+    "name": "GitHubAdapterTests"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 24,
+    "end_line": 27,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 29,
+    "end_line": 30,
+    "kind": "FunctionDef",
+    "name": "now"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 34,
+    "end_line": 36,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 38,
+    "end_line": 40,
+    "kind": "FunctionDef",
+    "name": "fetch_stargazer_page"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 44,
+    "end_line": 46,
+    "kind": "FunctionDef",
+    "name": "__init__"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 48,
+    "end_line": 50,
+    "kind": "FunctionDef",
+    "name": "run"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 98,
+    "end_line": 132,
+    "kind": "FunctionDef",
+    "name": "test_backfill_writes_hand_computed_completed_daily_history"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 134,
+    "end_line": 166,
+    "kind": "FunctionDef",
+    "name": "test_backfill_reads_101_edges_across_pages"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 168,
+    "end_line": 217,
+    "kind": "FunctionDef",
+    "name": "test_backfill_fails_closed_on_cursor_or_count_inconsistency"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 219,
+    "end_line": 240,
+    "kind": "FunctionDef",
+    "name": "test_backfill_accepts_exact_rate_limit_reserve_after_first_page"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 242,
+    "end_line": 257,
+    "kind": "FunctionDef",
+    "name": "test_backfill_refuses_dangling_output_symlink"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 259,
+    "end_line": 280,
+    "kind": "FunctionDef",
+    "name": "test_initialize_starts_from_one_honest_aggregate_snapshot"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 282,
+    "end_line": 344,
+    "kind": "FunctionDef",
+    "name": "test_due_boundary_matches_configured_interval"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 346,
+    "end_line": 372,
+    "kind": "FunctionDef",
+    "name": "test_record_before_due_does_not_write"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 374,
+    "end_line": 413,
+    "kind": "FunctionDef",
+    "name": "test_record_applies_count_file_without_github_credentials"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 415,
+    "end_line": 441,
+    "kind": "FunctionDef",
+    "name": "test_count_file_rejects_symlinks_malformed_and_extreme_values"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 443,
+    "end_line": 467,
+    "kind": "FunctionDef",
+    "name": "test_force_same_day_same_count_is_idempotent"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 469,
+    "end_line": 493,
+    "kind": "FunctionDef",
+    "name": "test_force_same_day_changed_count_replaces_snapshot"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 495,
+    "end_line": 520,
+    "kind": "FunctionDef",
+    "name": "test_new_date_appends_even_when_count_is_unchanged"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 522,
+    "end_line": 551,
+    "kind": "FunctionDef",
+    "name": "test_schema_rejects_unknown_identity_fields_and_boolean_counts"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 553,
+    "end_line": 778,
+    "kind": "FunctionDef",
+    "name": "test_svg_is_accessible_self_contained_and_deterministic"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 780,
+    "end_line": 849,
+    "kind": "FunctionDef",
+    "name": "test_svg_validator_rejects_unreviewed_or_active_content"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 851,
+    "end_line": 864,
+    "kind": "FunctionDef",
+    "name": "test_check_detects_svg_tampering"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 868,
+    "end_line": 922,
+    "kind": "FunctionDef",
+    "name": "test_graphql_gateway_uses_identity_free_paginated_query"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 924,
+    "end_line": 942,
+    "kind": "FunctionDef",
+    "name": "test_graphql_gateway_rejects_malformed_nested_shape"
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "line": 944,
+    "end_line": 951,
+    "kind": "FunctionDef",
+    "name": "test_graphql_gateway_does_not_echo_failed_command_stderr"
+  }
+]

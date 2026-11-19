@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-11-17T19:09:19.168047Z",
+  "data": {
+    "orders": [
+      {
+        "action": "buy",
+        "at": "2026-11-17T19:08:58.344149Z",
+        "fee": "1.9257343604000000000",
+        "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+        "mode": "paper",
+        "price": "63787.16000000",
+        "price_source": "ask_plus_adverse_slippage",
+        "quantity": "0.03019000",
+        "risk_digest": "964a51bdbe6a03aa1ebaf43a7d0245c82e046804bc66087fb3e7df5b54aeae79",
+        "symbol": "BTCUSDT"
+      },
+      {
+        "action": "buy",
+        "at": "2026-11-17T19:09:09.181252Z",
+        "fee": "1.9247227540000000000",
+        "id": "044965cf60588bc41e0f6a136fbf04d40e30fe8b9d2611ead13c77c0e69f33a2",
+        "mode": "paper",
+        "price": "1791.94000000",
+        "price_source": "ask_plus_adverse_slippage",
+        "quantity": "1.07410000",
+        "risk_digest": "de986246cf5aa6cf4c9e0ac2dac2b1d4de788ab2e0f1f901f8659ccc77cedc15",
+        "symbol": "ETHUSDT"
+      },
+      {
+        "action": "buy",
+        "at": "2026-11-17T19:09:19.168047Z",
+        "fee": "0.1494725400000000000",
+        "id": "4351cac8b692847eece06b22c8d7ea425752d024adb0c56c7c98adaee1554bf3",
+        "mode": "paper",
+        "price": "72.63000000",
+        "price_source": "ask_plus_adverse_slippage",
+        "quantity": "2.05800000",
+        "risk_digest": "c041b9d856ad9a6ec282a3251103d20caa732ec0ff381593a444ef0198d37a76",
+        "symbol": "SOLUSDT"
+      }
+    ],
+    "status": "paper"
+  },
+  "digest": "49876021f8c56a7a6192d28e561db790a7491989759b70f209a05802e84bde94",
+  "inputs": {
+    "ledger": "175bf23b9fb69afa644dbcb4312b7dba54d00edd77f220ca609437ae6b1edc54"
+  },
+  "kind": "orders",
+  "schema_version": 1
+}

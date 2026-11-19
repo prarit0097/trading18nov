@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-16T16:02:31.295512+00:00",
+  "document": "E:\\coding\\code\\Trade\\paperclip-evidence\\mirofish-original-report.md",
+  "document_sha256": "0fd484504ebe738d0f1bcbbcaf21e7aebbd55fa149a88911be0ecb27d503121a",
+  "words": 15391,
+  "source_links_checked": 928,
+  "local_evidence_links_checked": 17,
+  "tracked_files_checked": 128,
+  "route_registrations_checked": 60,
+  "python_ast_files_checked": 62,
+  "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+  "repository_clean": true,
+  "errors": [],
+  "status": "PASS",
+  "limits": "Mechanical completeness/citation checks plus separate independent semantic audits; not all runtime paths or external providers verified."
+}

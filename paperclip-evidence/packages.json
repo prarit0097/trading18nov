@@ -1,0 +1,1666 @@
+[
+  {
+    "path": "cli/package.json",
+    "name": "paperclipai",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "dev": "tsx src/index.ts",
+      "build": "node --input-type=module -e \"import esbuild from 'esbuild'; import config from './esbuild.config.mjs'; await esbuild.build(config);\" && chmod +x dist/index.js",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@clack/prompts": "^1.7.0",
+      "@paperclipai/adapter-claude-local": "workspace:*",
+      "@paperclipai/adapter-codex-local": "workspace:*",
+      "@paperclipai/adapter-cursor-cloud": "workspace:*",
+      "@paperclipai/adapter-cursor-local": "workspace:*",
+      "@paperclipai/adapter-gemini-local": "workspace:*",
+      "@paperclipai/adapter-grok-local": "workspace:*",
+      "@paperclipai/adapter-kimi-local": "workspace:*",
+      "@paperclipai/adapter-opencode-local": "workspace:*",
+      "@paperclipai/adapter-pi-local": "workspace:*",
+      "@paperclipai/adapter-openclaw-gateway": "workspace:*",
+      "@paperclipai/adapter-utils": "workspace:*",
+      "@paperclipai/db": "workspace:*",
+      "@paperclipai/server": "workspace:*",
+      "@paperclipai/shared": "workspace:*",
+      "@paperclipai/hermes-paperclip-adapter": "workspace:*",
+      "drizzle-orm": "0.45.2",
+      "dotenv": "^17.4.2",
+      "commander": "^15.0.0",
+      "embedded-postgres": "^18.1.0-beta.16",
+      "picocolors": "^1.1.1"
+    },
+    "exports": null,
+    "bin": {
+      "paperclipai": "./dist/index.js"
+    }
+  },
+  {
+    "path": "package.json",
+    "name": "paperclip",
+    "version": null,
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "perf:workspace-admission": "node --import ./server/node_modules/tsx/dist/loader.mjs server/scripts/benchmark-workspace-admission.ts",
+      "postinstall": "node scripts/link-plugin-dev-sdk.mjs",
+      "preflight:workspace-links": "node cli/node_modules/tsx/dist/cli.mjs scripts/ensure-workspace-package-links.ts",
+      "dev": "pnpm --filter @paperclipai/server exec tsx ../scripts/dev-runner.ts watch",
+      "dev:watch": "pnpm --filter @paperclipai/server exec tsx ../scripts/dev-runner.ts watch",
+      "dev:once": "pnpm --filter @paperclipai/server exec tsx ../scripts/dev-runner.ts dev",
+      "dev:list": "pnpm --filter @paperclipai/server exec tsx ../scripts/dev-service.ts list",
+      "dev:stop": "pnpm --filter @paperclipai/server exec tsx ../scripts/dev-service.ts stop",
+      "dev:server": "pnpm --filter @paperclipai/server dev",
+      "dev:ui": "pnpm --filter @paperclipai/ui dev",
+      "dev:mobile": "pnpm --filter @paperclipai/ui build && pnpm --filter @paperclipai/ui preview",
+      "dev:both": "node scripts/dev-both.mjs",
+      "prototype:dot": "pnpm --filter @paperclipai/server exec tsx scripts/dot-runner-demo.ts",
+      "prototype:dot:live": "pnpm --filter @paperclipai/server exec tsx scripts/dot-runner-live.ts",
+      "storybook": "pnpm --filter @paperclipai/ui storybook",
+      "build-storybook": "pnpm --filter @paperclipai/ui build-storybook",
+      "build": "pnpm run preflight:workspace-links && pnpm -r build",
+      "build:feature-catalog": "node cli/node_modules/tsx/dist/cli.mjs scripts/generate-feature-catalog.ts",
+      "typecheck": "pnpm run preflight:workspace-links && pnpm -r typecheck",
+      "typecheck:build-gaps": "pnpm run preflight:workspace-links && pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && pnpm --filter @paperclipai/server build && node scripts/run-typecheck-build-gaps.mjs",
+      "test": "pnpm run test:run",
+      "test:watch": "pnpm run preflight:workspace-links && vitest",
+      "test:run": "pnpm run preflight:workspace-links && node scripts/run-vitest-stable.mjs",
+      "test:runner-acceptance": "vitest run --config tests/runner-acceptance/vitest.config.ts",
+      "test:runner-acceptance:typecheck": "tsc -p tests/runner-acceptance/tsconfig.json",
+      "test:run:general": "pnpm run preflight:workspace-links && pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && node scripts/run-vitest-stable.mjs --mode general",
+      "test:run:serialized": "pnpm run preflight:workspace-links && pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && node scripts/run-vitest-stable.mjs --mode serialized",
+      "db:generate": "pnpm --filter @paperclipai/db generate",
+      "db:migrate": "pnpm --filter @paperclipai/db migrate",
+      "issue-references:backfill": "pnpm run preflight:workspace-links && tsx scripts/backfill-issue-reference-mentions.ts",
+      "secrets:migrate-inline-env": "tsx scripts/migrate-inline-env-secrets.ts",
+      "db:backup": "./scripts/backup-db.sh",
+      "paperclipai": "node cli/node_modules/tsx/dist/cli.mjs cli/src/index.ts",
+      "build:npm": "./scripts/build-npm.sh",
+      "release": "./scripts/release.sh",
+      "release:canary": "./scripts/release.sh canary",
+      "release:stable": "./scripts/release.sh stable",
+      "release:github": "./scripts/create-github-release.sh",
+      "release:rollback": "./scripts/rollback-latest.sh",
+      "release:bootstrap-package": "node scripts/bootstrap-npm-package.mjs",
+      "check:tokens": "node scripts/check-forbidden-tokens.mjs",
+      "check:token-gates": "node scripts/check-token-gates.mjs && node scripts/sync-agent-palette-tokens.mjs --check && node scripts/sync-cliplab-character.mjs --check",
+      "check:node-version": "node scripts/check-node-version-policy.mjs",
+      "check:no-git-push": "node scripts/check-no-git-push.mjs",
+      "check:module-boundaries": "node scripts/check-module-boundaries.mjs",
+      "test:check-no-git-push": "node --test scripts/check-no-git-push.test.mjs",
+      "test:install-sh-docker": "./scripts/test-install-sh-docker.sh",
+      "test:hermes-gateway-smoke": "node --test scripts/smoke/hermes-gateway-smoke.test.mjs",
+      "docs:dev": "cd docs && npx mintlify dev",
+      "smoke:hermes-gateway-join": "./scripts/smoke/hermes-gateway-join.sh",
+      "smoke:hermes-gateway-e2e": "./scripts/smoke/hermes-gateway-e2e.sh",
+      "smoke:openclaw-join": "./scripts/smoke/openclaw-join.sh",
+      "smoke:openclaw-docker-ui": "./scripts/smoke/openclaw-docker-ui.sh",
+      "smoke:openclaw-sse-standalone": "./scripts/smoke/openclaw-sse-standalone.sh",
+      "smoke:mcp-fixtures": "node scripts/smoke/mcp-fixture-harness.mjs",
+      "smoke:notion-generic-live": "node scripts/smoke/notion-generic-live.mjs",
+      "smoke:posthog-live": "node scripts/smoke/posthog-live.mjs",
+      "smoke:terminal-bench-loop-skill": "node scripts/smoke/terminal-bench-loop-skill-smoke.mjs",
+      "test:release-registry": "node scripts/ci-profile/node-test.mjs scripts/ci-profile/reporters.test.mjs scripts/ci/retry-reporter.test.mjs scripts/__tests__/runner-vitest-package-lanes.test.mjs scripts/__tests__/canary-startup-playwright.test.mjs scripts/__tests__/cursor-public-install-sandbox.test.mjs scripts/__tests__/grok-public-install-sandbox.test.mjs scripts/__tests__/public-install-closure.test.mjs scripts/__tests__/public-install-registry.test.mjs scripts/__tests__/prefetch-child.test.mjs scripts/__tests__/stage-bundled-packages.test.mjs scripts/__tests__/pack-staged-packages.test.mjs scripts/__tests__/retain-runner-qualification-packages.test.mjs scripts/__tests__/runner-release-crate-cache.test.mjs scripts/__tests__/runner-debug-crate-cache.test.mjs scripts/__tests__/agent-build-cache.test.mjs scripts/__tests__/agent-preflight.test.mjs scripts/__tests__/vitest-worker-isolation.test.mjs scripts/verify-release-registry-state.test.mjs scripts/release-package-map.test.mjs scripts/check-release-package-bootstrap.test.mjs scripts/check-no-git-push.test.mjs scripts/release-lib.test.mjs scripts/draft-stable-notes.test.mjs scripts/release-registry-versions.test.mjs scripts/link-plugin-dev-sdk.test.js scripts/acpx-patch-packaging.test.mjs scripts/service-onboard-smoke.test.mjs scripts/docker-onboard-smoke.test.mjs scripts/preview-artifacts.test.mjs scripts/cloud-migrator-artifacts.test.mjs scripts/typecheck-test-programs.test.mjs scripts/__tests__/local-verify.test.mjs scripts/test-sandbox-providers.test.mjs scripts/__tests__/ci-typecheck-lane.test.mjs scripts/scale-ramp/scale-ramp.test.ts scripts/scale-ramp/scale-ramp-spend.test.ts",
+      "storybook-visual:baseline": "node scripts/storybook-visual-baseline.mjs",
+      "test:storybook-visual": "node scripts/storybook-visual-baseline.mjs download && node scripts/storybook-visual-baseline.mjs verify && pnpm build-storybook && npx playwright test --config tests/storybook-visual/playwright.config.ts",
+      "test:storybook-visual:update": "node scripts/storybook-visual-baseline.mjs download && pnpm build-storybook && npx playwright test --config tests/storybook-visual/playwright.config.ts --update-snapshots && node scripts/storybook-visual-baseline.mjs pack",
+      "test:e2e": "node scripts/ci-profile/run.mjs playwright npx playwright test --config tests/e2e/playwright.config.ts",
+      "test:e2e:runner": "node cli/node_modules/tsx/dist/cli.mjs tests/runner-e2e/launch.ts",
+      "test:e2e:runner:image-id": "node cli/node_modules/tsx/dist/cli.mjs tests/runner-e2e/daytona-image-content.ts",
+      "test:e2e:runner:judge-first-task": "node cli/node_modules/tsx/dist/cli.mjs tests/runner-e2e/first-task-judge.ts",
+      "test:e2e:runner:dashboard": "node cli/node_modules/tsx/dist/cli.mjs tests/runner-e2e/dashboard-regenerate.ts",
+      "test:e2e:runner:models:update": "node cli/node_modules/tsx/dist/cli.mjs tests/runner-e2e/openrouter-models-update.ts",
+      "test:e2e:runner:history:publish": "node cli/node_modules/tsx/dist/cli.mjs tests/runner-e2e/history-publish.ts",
+      "test:runner-recovery": "vitest run server/src/services/native-runtime/native-replacement-evidence.test.ts server/src/services/native-runtime/stopped-codex-turn.test.ts server/src/services/native-runtime/native-safe-replacement.test.ts",
+      "test:slack-connector": "node server/src/services/connectors/slack/evals/run-regressions.mjs",
+      "test:e2e:browser-context": "playwright test --config tests/e2e/playwright-company-context.config.ts",
+      "test:e2e:runner:browser-support": "playwright test --config tests/runner-e2e/playwright-support.config.ts",
+      "test:e2e:runner:unit": "node tests/runner-e2e/run-unit.mjs",
+      "test:e2e:runner:stock-harness": "node tests/runner-e2e/stock-harness-checks.mjs",
+      "test:e2e:runner:typecheck": "node scripts/typecheck-test-projects.mjs tests/runner-e2e",
+      "test:e2e:runner:report": "node cli/node_modules/tsx/dist/cli.mjs tests/runner-e2e/report.ts",
+      "test:runner-workflow-evals": "pnpm --filter @paperclipai/paperclip-eval-kernel build && pnpm --filter @paperclipai/paperclip-runner test:runner-workflow-evals",
+      "test:e2e:mcp-user-stories": "node scripts/e2e-mcp-user-stories.mjs",
+      "test:e2e:connection-intents": "npx playwright test --config tests/e2e/playwright.config.ts tests/e2e/connection-intents.spec.ts",
+      "test:e2e:headed": "npx playwright test --config tests/e2e/playwright.config.ts --headed",
+      "test:e2e:multiuser-authenticated": "npx playwright test --config tests/e2e/playwright-multiuser-authenticated.config.ts",
+      "evals:smoke": "cd evals/promptfoo && npx promptfoo@0.103.3 eval",
+      "test:release-smoke": "npx playwright test --config tests/release-smoke/playwright.config.ts",
+      "test:release-smoke:headed": "npx playwright test --config tests/release-smoke/playwright.config.ts --headed",
+      "test:canary-onboarding-smoke": "npx playwright test --config tests/canary-onboarding/playwright.config.ts",
+      "metrics:paperclip-commits": "tsx scripts/paperclip-commit-metrics.ts",
+      "perf:issue-chat-long-thread": "node scripts/measure-issue-chat-long-thread.mjs",
+      "connections:ingest-app-definitions": "node scripts/ingest-app-definitions.mjs",
+      "test:lifecycle-baseline": "node tests/lifecycle-baseline/run.mjs",
+      "test:lifecycle-baseline:support": "node --test tests/lifecycle-baseline/report.test.mjs",
+      "test:lifecycle-baseline:typecheck": "node scripts/typecheck-test-projects.mjs tests/lifecycle-baseline",
+      "verify": "node --import ./cli/node_modules/tsx/dist/loader.mjs scripts/ensure-workspace-package-links.ts && node scripts/local-verify.mjs"
+    },
+    "dependencies": null,
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "packages/adapter-utils/package.json",
+    "name": "@paperclipai/adapter-utils",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/shared": "workspace:*",
+      "acpx": "0.22.0",
+      "picocolors": "^1.1.1",
+      "smol-toml": "^1.9.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./*": "./src/*.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/claude-local/package.json",
+    "name": "@paperclipai/adapter-claude-local",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit",
+      "probe:quota": "pnpm exec tsx src/cli/quota-probe.ts --json",
+      "probe:quota:raw": "pnpm exec tsx src/cli/quota-probe.ts --json --raw-cli"
+    },
+    "dependencies": {
+      "@agentclientprotocol/claude-agent-acp": "^0.73.0",
+      "@anthropic-ai/sdk": "0.129.0",
+      "@paperclipai/adapter-utils": "workspace:*",
+      "@paperclipai/shared": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/codex-local/package.json",
+    "name": "@paperclipai/adapter-codex-local",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc && cp src/server/codex-auth-merge-decision.cjs src/server/codex-auth-merge-extract.sh dist/server/",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit",
+      "probe:quota": "pnpm exec tsx src/cli/quota-probe.ts --json"
+    },
+    "dependencies": {
+      "@agentclientprotocol/codex-acp": "^1.6.2",
+      "@paperclipai/adapter-utils": "workspace:*",
+      "@paperclipai/shared": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/cursor-cloud/package.json",
+    "name": "@paperclipai/adapter-cursor-cloud",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@cursor/sdk": "^1.0.28",
+      "@paperclipai/adapter-utils": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/cursor-local/package.json",
+    "name": "@paperclipai/adapter-cursor-local",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/adapter-utils": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/gemini-local/package.json",
+    "name": "@paperclipai/adapter-gemini-local",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/adapter-utils": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/grok-local/package.json",
+    "name": "@paperclipai/adapter-grok-local",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc && cp src/server/grok-auth-merge-decision.cjs dist/server/",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/adapter-utils": "workspace:*",
+      "@paperclipai/shared": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/hermes-gateway/package.json",
+    "name": "@paperclipai/adapter-hermes-gateway",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/hermes-paperclip-adapter": "workspace:*"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts",
+      "./ui-parser": "./ui-parser.cjs"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/hermes/package.json",
+    "name": "@paperclipai/hermes-paperclip-adapter",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "dev": "tsc --watch",
+      "lint": "eslint src/",
+      "typecheck": "tsc --noEmit",
+      "test": "vitest run",
+      "test:command-resolution": "vitest run src/server/command-resolution.test.ts",
+      "prepack": "node scripts/prepare-publish-package.mjs",
+      "postpack": "node scripts/restore-dev-package.mjs",
+      "clean": "rm -rf dist"
+    },
+    "dependencies": {
+      "@paperclipai/adapter-utils": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts",
+      "./ui-parser": "./ui-parser.cjs",
+      "./gateway": "./src/gateway/index.ts",
+      "./gateway/server": "./src/gateway/server/index.ts",
+      "./gateway/ui": "./src/gateway/ui/index.ts",
+      "./gateway/cli": "./src/gateway/cli/index.ts",
+      "./gateway/ui-parser": "./gateway-ui-parser.cjs"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/kimi-local/package.json",
+    "name": "@paperclipai/adapter-kimi-local",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/adapter-utils": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/openclaw-gateway/package.json",
+    "name": "@paperclipai/adapter-openclaw-gateway",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/adapter-utils": "workspace:*",
+      "picocolors": "^1.1.1",
+      "ws": "^8.22.0"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/opencode-local/package.json",
+    "name": "@paperclipai/adapter-opencode-local",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/adapter-utils": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/adapters/pi-local/package.json",
+    "name": "@paperclipai/adapter-pi-local",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/adapter-utils": "workspace:*",
+      "picocolors": "^1.1.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./server": "./src/server/index.ts",
+      "./ui": "./src/ui/index.ts",
+      "./cli": "./src/cli/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/db/package.json",
+    "name": "@paperclipai/db",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "check:migrations": "tsx src/check-migration-numbering.ts && tsx src/check-migration-safety.ts && tsx scripts/migration-compatibility.ts --check",
+      "build": "pnpm run check:migrations && tsc && rm -rf dist/migrations && mkdir -p dist/migrations/meta && cp src/migrations/*.sql dist/migrations/ && cp src/migrations/meta/_journal.json dist/migrations/meta/",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm run check:migrations && tsc --noEmit",
+      "generate": "pnpm run check:migrations && pnpm run clean && tsc -p tsconfig.json && drizzle-kit generate && pnpm run prune:snapshots",
+      "prune:snapshots": "ls src/migrations/meta/*_snapshot.json | sort -r | tail -n +6 | xargs rm -f",
+      "migrate": "pnpm run check:migrations && tsx src/migrate.ts",
+      "seed": "pnpm --filter @paperclipai/server exec tsx scripts/seed.ts"
+    },
+    "dependencies": {
+      "@paperclipai/shared": "workspace:*",
+      "drizzle-orm": "^0.45.2",
+      "embedded-postgres": "^18.1.0-beta.16",
+      "postgres": "^3.4.9"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./*": "./src/*.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/google-sheets-mcp-server/package.json",
+    "name": "@paperclipai/google-sheets-mcp-server",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit",
+      "test": "vitest run"
+    },
+    "dependencies": {
+      "@modelcontextprotocol/sdk": "^1.31.0",
+      "googleapis": "^182.0.0",
+      "zod": "^4.6.6"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": {
+      "paperclip-google-sheets-mcp-server": "./dist/stdio.js",
+      "paperclip-google-sheets-mcp-http-server": "./dist/http-server.js"
+    }
+  },
+  {
+    "path": "packages/kv-demo-mcp-server/package.json",
+    "name": "@paperclipai/kv-demo-mcp-server",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "start": "node dist/main.js",
+      "typecheck": "tsc --noEmit",
+      "test": "vitest run"
+    },
+    "dependencies": {
+      "@modelcontextprotocol/sdk": "^1.31.0",
+      "zod": "^4.6.6"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": {
+      "paperclip-kv-demo-mcp-server": "./dist/main.js",
+      "paperclip-tasks-demo-mcp-server": "./dist/tasks/main.js"
+    }
+  },
+  {
+    "path": "packages/mcp-server/package.json",
+    "name": "@paperclipai/mcp-server",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit",
+      "test": "vitest run"
+    },
+    "dependencies": {
+      "@modelcontextprotocol/sdk": "^1.31.0",
+      "@paperclipai/shared": "workspace:*",
+      "zod": "^4.6.6"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": {
+      "paperclip-mcp-server": "./dist/stdio.js"
+    }
+  },
+  {
+    "path": "packages/paperclip-eval-kernel/package.json",
+    "name": "@paperclipai/paperclip-eval-kernel",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc -p tsconfig.json",
+      "typecheck": "tsc -p tsconfig.json --noEmit",
+      "test": "pnpm run build && node ../../scripts/ci-profile/node-test.mjs test/*.test.mjs"
+    },
+    "dependencies": null,
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      }
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/paperclip-runner/package.json",
+    "name": "@paperclipai/paperclip-runner",
+    "version": "0.0.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "node scripts/record-build-inputs.mjs --begin && pnpm run check:protocol-manifest && pnpm run build:typescript && pnpm run check:capability-contract && pnpm run check:capability-inventory && pnpm run check:protocol-coverage && node scripts/generate-semantic-contracts.mjs --check && node scripts/check-runner-workflow-traceability.mjs && node scripts/build-runner-binary.mjs && node scripts/generate-replay-goldens.mjs --check && node scripts/generate-semantic-action-catalog.mjs --check && node scripts/record-build-inputs.mjs --finish",
+      "build:typescript": "pnpm run check:acpx-profiles && pnpm run ensure:eval-build-deps && pnpm run check:protocol-types && node ./node_modules/typescript/bin/tsc --version && node ./node_modules/typescript/bin/tsc -p tsconfig.json && node ./node_modules/typescript/bin/tsc -p tsconfig.surfaces.json && node scripts/build-verified-provider-entrypoints.mjs && node scripts/install-copilot-assets.mjs",
+      "build:rust": "cargo build --manifest-path runner/Cargo.toml --locked --workspace --bins",
+      "build:binary": "cargo build --release --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --bin paperclip-runnerd && node scripts/stage-runner-binary.mjs",
+      "stage:release-binaries": "node scripts/stage-release-runner-binaries.mjs",
+      "build:provider-pack": "pnpm run build:typescript && node scripts/build-provider-pack.mjs",
+      "build:runner-binaries": "cargo build --manifest-path runner/Cargo.toml --locked --workspace --bins",
+      "build:browser": "vite build --config vite.config.ts",
+      "build:sdk": "vite build --config vite.sdk.config.ts",
+      "build:standalone": "vite build --config vite.standalone.config.ts",
+      "build:scenarios": "vite build --config vite.scenarios.config.ts && node scripts/check-capability-csp-bundle.mjs",
+      "build:issue-thread": "vite build --config vite.issue-thread.config.ts",
+      "typecheck": "pnpm run typecheck:typescript && pnpm run typecheck:rust",
+      "typecheck:typescript": "pnpm run check:acpx-profiles && pnpm run ensure:eval-build-deps && node --check scripts/protocol-contract.mjs && node --check scripts/generate-protocol-manifest.mjs && node --check scripts/generate-protocol-schema-module.mjs && node --check scripts/generate-acpx-sidecar-contract.mjs && node --check scripts/generate-replay-goldens.mjs && node --check scripts/generate-semantic-action-catalog.mjs && pnpm run check:protocol-types && node ./node_modules/typescript/bin/tsc --version && node ./node_modules/typescript/bin/tsc -p tsconfig.json --noEmit && node ./node_modules/typescript/bin/tsc -p tsconfig.surfaces.json --noEmit",
+      "typecheck:rust": "pnpm run check:acpx-profiles && cargo fmt --manifest-path runner/Cargo.toml --all -- --check && cargo check --manifest-path runner/Cargo.toml --locked --workspace",
+      "typecheck:browser": "tsc -p tsconfig.browser.json --noEmit",
+      "test": "pnpm run test:typescript && pnpm run test:rust",
+      "test:typescript": "pnpm run test:typescript:prep && vitest run",
+      "test:typescript:prep": "pnpm run ensure:eval-build-deps && pnpm run build:rust && node ../../scripts/ci-profile/node-test.mjs test/protocol-contract.test.mjs test/acpx-sidecar-contract.test.mjs test/acpx-codex-package-contract.test.mjs test/acpx-model-selection-package-contract.test.mjs test/acpx-session-carry-forward-package-contract.test.mjs test/acpx-message-boundaries-package-contract.test.mjs test/acpx-rich-extensions-package-contract.test.mjs scripts/candidate-provider-pack.test.mjs scripts/materialize-pi-distribution.test.mjs scripts/cursor-provisioner-layout.test.mjs scripts/release-provider-pack.test.mjs scripts/acpx-release-attestations.test.mjs scripts/provider-pack-runtime-tree.test.mjs scripts/aws-agentcore-provisioning.test.mjs scripts/build-verified-provider-entrypoints.test.mjs scripts/local-provider-smoke-environment.test.mjs scripts/materialize-opencode-binary.test.mjs scripts/materialize-kimi-distribution.test.mjs scripts/provision-kimi-package.test.mjs scripts/kimi-metadata-probe.test.mjs scripts/patch-kimi-runtime.test.mjs test/kimi-installed-runtime.test.mjs scripts/installed-package-pack.test.mjs scripts/runner-runtime-dependency-roots.test.mjs scripts/runner-package-executable.test.mjs scripts/stage-runner-provider-node.test.mjs scripts/stage-runner-binary.test.mjs scripts/build-inputs.test.mjs scripts/contracts/contract-fingerprints.test.mjs scripts/provider-pack-executable-shims.test.mjs scripts/controlled-evals/controller.test.mjs scripts/controlled-evals/portable.test.mjs scripts/runner-protocol-testops.test.mjs scripts/runner-protocol-eval-workflow-security.test.mjs && node --test scripts/build-copilot-distribution.test.mjs scripts/copilot-inner-distribution.test.mjs scripts/copilot-smoke-resources.test.mjs scripts/discover-copilot-acp.test.mjs scripts/materialize-copilot-binary.test.mjs scripts/install-copilot-assets.test.mjs scripts/probe-copilot-acp.test.mjs scripts/qualify-copilot-acp.test.mjs test/acpx-message-boundaries-package-contract.test.mjs",
+      "test:typescript:vitest": "node ./scripts/run-pr-vitest-lane.mjs",
+      "test:rust": "cargo test --release --manifest-path runner/Cargo.toml --locked --workspace",
+      "test:codex": "cargo test --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --test codex_provider",
+      "test:durable": "cargo test --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core durable::",
+      "test:browser": "pnpm run build:typescript && pnpm run build:runner-binaries && pnpm run build:browser && playwright test --config devtools/browser/playwright.config.ts",
+      "test:sdk": "vitest run src/browser/client.test.ts src/browser/transcript-model.test.ts src/react/public-contract.test.tsx",
+      "test:scenarios": "vitest run src/scenarios src/live src/semantic-tools/semantic-tools.test.ts src/mock-core/capability-mock-control-plane-adapter.test.ts src/issue-thread devtools/issue-thread/src examples/scenario-explorer",
+      "test:browser:sdk": "pnpm run build:typescript && playwright test --config examples/playwright.config.ts",
+      "test:browser:scenarios": "playwright test --config examples/playwright.scenarios.config.ts && pnpm run test:browser:issue-thread",
+      "test:browser:issue-thread": "pnpm run build:typescript && pnpm run build:issue-thread && playwright test --config devtools/issue-thread/playwright.config.ts",
+      "record:sdk:codex": "pnpm run build:typescript && playwright test --config examples/playwright.real.config.ts",
+      "generate:protocol-manifest": "node scripts/generate-protocol-manifest.mjs",
+      "check:protocol-manifest": "node scripts/generate-protocol-manifest.mjs --check",
+      "generate:protocol-types": "node scripts/generate-protocol-schema-module.mjs && node scripts/generate-acpx-sidecar-contract.mjs && node scripts/generate-runtime-context-contract.mjs && node scripts/generate-provider-failure-contract.mjs",
+      "check:protocol-types": "node scripts/generate-protocol-schema-module.mjs --check && node scripts/generate-acpx-sidecar-contract.mjs --check && node scripts/generate-runtime-context-contract.mjs --check && node scripts/generate-provider-failure-contract.mjs --check",
+      "generate:capability-contract": "node scripts/generate-capability-contract.mjs",
+      "check:capability-contract": "node scripts/generate-capability-contract.mjs --check",
+      "generate:semantic-contracts": "pnpm run build:typescript && node scripts/generate-semantic-contracts.mjs",
+      "check:semantic-contracts": "pnpm run build:typescript && node scripts/generate-semantic-contracts.mjs --check",
+      "generate:semantic-action-catalog": "pnpm run build:typescript && node scripts/generate-semantic-action-catalog.mjs",
+      "check:semantic-action-catalog": "pnpm run build:typescript && node scripts/generate-semantic-action-catalog.mjs --check",
+      "check:protocol": "pnpm run typecheck:typescript && pnpm run check:protocol-manifest && pnpm run test:typescript && pnpm run check:replay-goldens",
+      "check:protocol-without-vitest": "pnpm run typecheck:typescript && pnpm run check:protocol-manifest && pnpm run test:typescript:prep && pnpm run check:replay-goldens",
+      "check:runner": "pnpm run typecheck:rust && pnpm run test:rust && pnpm run check:conformance-parity && pnpm run check:replay-parity",
+      "check:all": "pnpm run check:eval-kernel && pnpm run check:protocol && pnpm run check:runner && pnpm run check:api-authority",
+      "check:all-without-vitest": "pnpm run check:eval-kernel && pnpm run check:protocol-without-vitest && pnpm run check:runner && pnpm run check:api-authority",
+      "check:static": "pnpm run check:eval-kernel && pnpm run check:protocol-without-vitest && pnpm run check:api-authority",
+      "check:api-authority": "node scripts/check-api-authority.mjs",
+      "generate:replay-goldens": "pnpm run build:typescript && node scripts/generate-replay-goldens.mjs",
+      "check:replay-goldens": "pnpm run build:typescript && node scripts/generate-replay-goldens.mjs --check",
+      "check:browser-tokens": "node scripts/check-browser-tokens.mjs",
+      "check:forbidden-imports": "node scripts/check-forbidden-imports.mjs",
+      "check:tracked-imports": "node scripts/check-tracked-imports.mjs",
+      "check:numbered-milestones": "node scripts/check-numbered-milestones.mjs",
+      "check:package-boundaries": "node scripts/check-package-boundaries.mjs",
+      "check:clean-consumers": "node scripts/check-clean-consumers.mjs",
+      "check:eval-kernel": "pnpm --filter @paperclipai/paperclip-eval-kernel test",
+      "ensure:eval-build-deps": "pnpm --filter @paperclipai/paperclip-eval-kernel build",
+      "generate:capability-inventory": "node scripts/generate-capability-inventory.mjs",
+      "generate:protocol-coverage": "pnpm run build:typescript && node scripts/generate-protocol-coverage.mjs",
+      "check:protocol-coverage": "node scripts/generate-protocol-coverage.mjs --check",
+      "check:capability-inventory": "node scripts/check-capability-inventory.mjs",
+      "test:capability-inventory": "node scripts/check-capability-inventory.test.mjs",
+      "test:capability-evals": "vitest run src/conformance/capability-eval-suite.test.ts",
+      "test:eval-slice": "pnpm run ensure:eval-build-deps && vitest run src/eval",
+      "test:runner-workflow-evals": "pnpm run ensure:eval-build-deps && node --test scripts/render-runner-workflow-evalbook.test.mjs && vitest run src/eval/workflow-evals.test.ts src/eval/live-workflow-executor.test.ts",
+      "test:runner-protocol-eval-publish": "node --test scripts/stage-runner-provider-node.test.mjs scripts/runner-protocol-testops.test.mjs scripts/runner-protocol-eval-campaign.test.mjs scripts/publish-runner-protocol-eval-history.test.mjs scripts/runner-protocol-eval-metrics.test.mjs scripts/runner-protocol-eval-workflow-security.test.mjs scripts/public-eval-chat.test.mjs",
+      "check:runner-workflow-traceability": "pnpm run build:typescript && node scripts/check-runner-workflow-traceability.mjs",
+      "report:capability-evals": "pnpm run build:typescript && node scripts/run-capability-eval-suite.mjs",
+      "report:capability-live-evals": "pnpm run build:typescript && cargo build --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --bin paperclip-runnerd && node scripts/run-capability-live-eval-matrix.mjs",
+      "report:runner-workflow-evals": "pnpm run build:typescript && node scripts/run-runner-workflow-evals.mjs",
+      "report:runner-live-evals": "pnpm run build:typescript && pnpm run build:runner-binaries && node scripts/run-runner-live-eval-schedule.mjs --mode nightly --execute",
+      "report:runner-protocol-eval:catalog": "node scripts/runner-protocol-eval-campaign.mjs catalog",
+      "report:runner-protocol-eval:publish": "node scripts/publish-runner-protocol-eval-history.mjs",
+      "report:runner-chaos-evals": "pnpm run build:typescript && node scripts/run-runner-live-eval-schedule.mjs --mode chaos",
+      "check:conformance-parity": "cargo test --release --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core runs_the_mock_core_path_with_stable_output",
+      "check:replay-parity": "cargo test --release --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core replay_fixture_parity",
+      "docs:validate": "node scripts/validate-doc-links.mjs",
+      "trace:conformance": "pnpm run trace:conformance:rust",
+      "trace:conformance:rust": "cargo run --quiet --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --bin conformance-tracer",
+      "trace:conformance:typescript": "pnpm run build:typescript && node dist/tracer/conformance.js",
+      "replay:fixture": "pnpm run build:typescript && node dist/cli/replay.js",
+      "trace:local-runner": "pnpm run build:typescript && pnpm run build:runner-binaries && node dist/cli/local-runner.js",
+      "trace:codex": "pnpm run build:typescript && node dist/cli/codex.js",
+      "trace:standalone": "pnpm run build:typescript && node dist/cli/paperclip-adapter.js",
+      "trace:live-runner": "pnpm run build:typescript && cargo build --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --bin paperclip-runnerd && node dist/cli/live-runner.js",
+      "demo:standalone": "pnpm run build:typescript && vite --config vite.standalone.config.ts --host 127.0.0.1 --port 4182",
+      "demo:scenarios": "pnpm run build:typescript && vite --config vite.scenarios.config.ts --host 127.0.0.1 --port 4183",
+      "console:issue-thread": "pnpm run build:typescript && vite --config vite.issue-thread.config.ts --host 127.0.0.1 --port 4184",
+      "aws-agentcore:provision": "bash scripts/aws-agentcore.sh provision",
+      "aws-agentcore:probe": "bash scripts/aws-agentcore.sh probe",
+      "aws-agentcore:lab": "bash scripts/aws-agentcore.sh lab",
+      "aws-agentcore:destroy": "bash scripts/aws-agentcore.sh destroy",
+      "test:aws-agentcore-provisioning": "node --test scripts/aws-agentcore-provisioning.test.mjs",
+      "smoke:capability:aws-agentcore": "pnpm run build:typescript && cargo build --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --bin paperclip-runnerd && node scripts/capability-aws-agentcore-smoke.mjs",
+      "demo:live-console": "pnpm run build:typescript && node scripts/live-console-demo-server.mjs",
+      "smoke:capability:ui": "pnpm run build:typescript && cargo build --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --bin paperclip-runnerd && node scripts/capability-issue-thread-smoke.mjs",
+      "smoke:capability:cleanroom": "pnpm run build:typescript && cargo build --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --bin paperclip-runnerd && node scripts/capability-clean-room-smoke.mjs",
+      "smoke:local-provider": "node scripts/run-local-provider-smoke.mjs",
+      "console:live-console": "pnpm run build:typescript && vite --config vite.config.ts --host 127.0.0.1 --port 4180",
+      "console:sdk": "pnpm run build:typescript && vite --config vite.sdk.config.ts --host 127.0.0.1 --port 4181",
+      "browser:dev": "pnpm run build:typescript && pnpm run build:runner-binaries && vite --config vite.config.ts",
+      "browser:preview": "vite preview --config vite.config.ts",
+      "verify": "pnpm run build && pnpm run typecheck && pnpm run check:replay-goldens && pnpm run test && pnpm run test:sdk && pnpm run test:scenarios && pnpm run check:browser-tokens && pnpm run test:browser && pnpm run test:browser:sdk && pnpm run test:browser:scenarios && pnpm run check:forbidden-imports && pnpm run check:tracked-imports && pnpm run check:numbered-milestones && pnpm run check:package-boundaries && pnpm run check:clean-consumers && pnpm run docs:validate && pnpm run check:conformance-parity && pnpm run check:replay-parity && pnpm run trace:conformance && pnpm run replay:fixture && pnpm run trace:local-runner -- --quiet",
+      "verify:rootless": "bash scripts/verify-rootless-linux.sh",
+      "test:opencode:qualification": "PAPERCLIP_OPENCODE_QUALIFY=1 node --test scripts/qualify-opencode-runtime.test.mjs",
+      "generate:acpx-profiles": "node scripts/generate-acpx-profiles.mjs",
+      "check:acpx-profiles": "node scripts/generate-acpx-profiles.mjs --check",
+      "postinstall": "node scripts/install-copilot-assets.mjs"
+    },
+    "dependencies": {
+      "@agentclientprotocol/claude-agent-acp": "0.73.0",
+      "@agentclientprotocol/codex-acp": "1.6.2",
+      "@agentclientprotocol/sdk": "1.9.0",
+      "@openai/codex": "0.160.0",
+      "acpx": "0.22.0",
+      "ajv": "^8.20.0",
+      "json-schema-to-ts": "^3.1.1",
+      "opencode-ai": "1.18.34",
+      "react-markdown": "^10.1.0",
+      "remark-gfm": "^4.0.1",
+      "smol-toml": "^1.9.1"
+    },
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "./testing": {
+        "types": "./dist/testing.d.ts",
+        "import": "./dist/testing.js"
+      },
+      "./evals": {
+        "types": "./dist/evals/index.d.ts",
+        "import": "./dist/evals/index.js"
+      },
+      "./live": {
+        "types": "./dist/live/index.d.ts",
+        "import": "./dist/live/index.js"
+      },
+      "./devtools": {
+        "types": "./dist/devtools/index.d.ts",
+        "import": "./dist/devtools/index.js"
+      },
+      "./browser": {
+        "types": "./dist/browser/index.d.ts",
+        "import": "./dist/browser/index.js"
+      },
+      "./react": {
+        "types": "./dist/react/index.d.ts",
+        "import": "./dist/react/index.js"
+      },
+      "./standalone": {
+        "types": "./dist/standalone/index.d.ts",
+        "import": "./dist/standalone/index.js"
+      },
+      "./styles.css": "./styles.css"
+    },
+    "bin": {
+      "paperclip-runner-eval-session": "./dist/cli/eval-session.js",
+      "paperclip-runner-codex-proxy": "./dist/cli/codex-app-server-unix-proxy.js",
+      "paperclip-runner-opencode-proxy": "./dist/cli/opencode-app-server-proxy.js",
+      "paperclip-runner-acpx-sidecar": "./dist/cli/acpx-runtime-sidecar.js",
+      "paperclip-runner-copilot-metadata-probe": "./dist/cli/copilot-metadata-probe.js"
+    }
+  },
+  {
+    "path": "packages/paperclip-runner/scripts/kimi-distribution/package.json",
+    "name": "paperclip-kimi-runtime-distribution",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": null,
+    "dependencies": {
+      "@moonshot-ai/kimi-code": "2.3.3"
+    },
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "packages/paperclip-runner/scripts/pi-distribution/package.json",
+    "name": "paperclip-pi-runtime-distribution",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": null,
+    "dependencies": {
+      "@agentclientprotocol/sdk": "0.26.0",
+      "@earendil-works/pi-coding-agent": "1.0.0",
+      "pi-acp": "0.0.33",
+      "zod": "3.25.76"
+    },
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/create-paperclip-plugin/package.json",
+    "name": "@paperclipai/create-paperclip-plugin",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "test": "pnpm -w exec vitest run --root packages/plugins/create-paperclip-plugin --config vitest.config.ts",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/plugin-sdk": "workspace:*"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": {
+      "create-paperclip-plugin": "./dist/bin.js"
+    }
+  },
+  {
+    "path": "packages/plugins/examples/plugin-authoring-smoke-example/package.json",
+    "name": "@paperclipai/plugin-authoring-smoke-example",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "node ./esbuild.config.mjs",
+      "build:rollup": "rollup -c",
+      "dev": "node ./esbuild.config.mjs --watch",
+      "dev:ui": "paperclip-plugin-dev-server --root . --ui-dir dist/ui --port 4177",
+      "test": "vitest run --config ./vitest.config.ts",
+      "typecheck": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/plugin-sdk": "workspace:*"
+    },
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/examples/plugin-file-browser-example/package.json",
+    "name": "@paperclipai/plugin-file-browser-example",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "tsc && node ./scripts/build-ui.mjs",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit"
+    },
+    "dependencies": {
+      "@codemirror/lang-javascript": "^6.2.5",
+      "@codemirror/language": "^6.12.4",
+      "@codemirror/state": "^6.7.6",
+      "@codemirror/view": "^6.43.9",
+      "@lezer/highlight": "^1.2.1",
+      "@paperclipai/plugin-sdk": "workspace:*",
+      "codemirror": "^6.0.1"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/examples/plugin-hello-world-example/package.json",
+    "name": "@paperclipai/plugin-hello-world-example",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/plugin-sdk": "workspace:*"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/examples/plugin-kitchen-sink-example/package.json",
+    "name": "@paperclipai/plugin-kitchen-sink-example",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "tsc && node ./scripts/build-ui.mjs",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/plugin-sdk": "workspace:*",
+      "@paperclipai/shared": "workspace:*"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/examples/plugin-orchestration-smoke-example/package.json",
+    "name": "@paperclipai/plugin-orchestration-smoke-example",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "node ./esbuild.config.mjs",
+      "build:rollup": "rollup -c",
+      "dev": "node ./esbuild.config.mjs --watch",
+      "dev:ui": "paperclip-plugin-dev-server --root . --ui-dir dist/ui --port 4177",
+      "test": "vitest run --config ./vitest.config.ts",
+      "typecheck": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit"
+    },
+    "dependencies": {
+      "@paperclipai/plugin-sdk": "workspace:*"
+    },
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/paperclip-plugin-fake-sandbox/package.json",
+    "name": "@paperclipai/plugin-fake-sandbox",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts"
+    },
+    "dependencies": {
+      "@paperclipai/plugin-sdk": "workspace:*"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/plugin-llm-wiki/package.json",
+    "name": "@paperclipai/plugin-llm-wiki",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "node ./esbuild.config.mjs",
+      "build:rollup": "rollup -c",
+      "dev": "node ./esbuild.config.mjs --watch",
+      "dev:ui": "paperclip-plugin-dev-server --root . --ui-dir dist/ui --port 4177",
+      "test": "vitest run --config ./vitest.config.ts",
+      "typecheck": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit"
+    },
+    "dependencies": null,
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/plugin-workspace-diff/package.json",
+    "name": "@paperclipai/plugin-workspace-diff",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "tsc && node ./scripts/build-ui.mjs",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
+      "test": "vitest run",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "@paperclipai/plugin-sdk": "workspace:*",
+      "@pierre/diffs": "^1.3.6"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/boxd/package.json",
+    "name": "@paperclipai/plugin-boxd",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "@boxd-sh/sdk": "^0.2.20"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/cloudflare/bridge-template/package.json",
+    "name": "paperclip-cloudflare-sandbox-bridge-template",
+    "version": null,
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "dev": "wrangler dev",
+      "deploy": "wrangler deploy",
+      "build": "tsc --noEmit",
+      "typecheck": "tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts"
+    },
+    "dependencies": {
+      "@cloudflare/sandbox": "^0.7.0"
+    },
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/cloudflare/package.json",
+    "name": "@paperclipai/plugin-cloudflare-sandbox",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": null,
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/createos/package.json",
+    "name": "@paperclipai/plugin-createos",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "tar": "^7.5.22"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/daytona/package.json",
+    "name": "@paperclipai/plugin-daytona",
+    "version": "0.1.10",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "@daytonaio/sdk": "0.203.0"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/e2b/package.json",
+    "name": "@paperclipai/plugin-e2b",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "e2b": "^2.19.0"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/exe-dev/package.json",
+    "name": "@paperclipai/plugin-exe-dev",
+    "version": "0.1.2",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": null,
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/kubernetes/package.json",
+    "name": "@paperclipai/plugin-kubernetes",
+    "version": "0.1.0-alpha.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "@kubernetes/client-node": "^1.0.0",
+      "zod": "^4.6.6"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/modal/package.json",
+    "name": "@paperclipai/plugin-modal",
+    "version": "0.1.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "modal": "^0.7.4"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sandbox-providers/novita/package.json",
+    "name": "@paperclipai/plugin-novita-sandbox",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "prebuild": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps",
+      "build": "rm -rf dist && tsc",
+      "clean": "rm -rf dist",
+      "typecheck": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && tsc --noEmit",
+      "test": "pnpm -C ../../../.. --filter @paperclipai/plugin-sdk ensure-build-deps && vitest run --config vitest.config.ts",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../../../../scripts/generate-plugin-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "novita-sandbox": "^1.0.3-b2"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/plugins/sdk/package.json",
+    "name": "@paperclipai/plugin-sdk",
+    "version": "1.0.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "pnpm --filter @paperclipai/shared build && tsc",
+      "clean": "rm -rf dist",
+      "ensure-build-deps": "node ../../../scripts/ensure-plugin-build-deps.mjs",
+      "typecheck": "pnpm --filter @paperclipai/shared build && tsc --noEmit",
+      "dev:server": "tsx src/dev-cli.ts"
+    },
+    "dependencies": {
+      "@paperclipai/shared": "workspace:*",
+      "zod": "^4.6.6"
+    },
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "./protocol": {
+        "types": "./dist/protocol.d.ts",
+        "import": "./dist/protocol.js"
+      },
+      "./types": {
+        "types": "./dist/types.d.ts",
+        "import": "./dist/types.js"
+      },
+      "./ui": {
+        "types": "./dist/ui/index.d.ts",
+        "import": "./dist/ui/index.js"
+      },
+      "./ui/hooks": {
+        "types": "./dist/ui/hooks.d.ts",
+        "import": "./dist/ui/hooks.js"
+      },
+      "./ui/types": {
+        "types": "./dist/ui/types.d.ts",
+        "import": "./dist/ui/types.js"
+      },
+      "./testing": {
+        "types": "./dist/testing.d.ts",
+        "import": "./dist/testing.js"
+      },
+      "./bundlers": {
+        "types": "./dist/bundlers.d.ts",
+        "import": "./dist/bundlers.js"
+      },
+      "./dev-server": {
+        "types": "./dist/dev-server.d.ts",
+        "import": "./dist/dev-server.js"
+      }
+    },
+    "bin": {
+      "paperclip-plugin-dev-server": "./dist/dev-cli.js"
+    }
+  },
+  {
+    "path": "packages/shared/package.json",
+    "name": "@paperclipai/shared",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc && mkdir -p dist/cliplab && cp src/cliplab/LICENSE src/cliplab/PROVENANCE.md dist/cliplab/",
+      "clean": "rm -rf dist",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "zod": "^4.6.6",
+      "three": "0.185.1"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./telemetry": "./src/telemetry/index.ts",
+      "./*": "./src/*.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/skills-catalog/package.json",
+    "name": "@paperclipai/skills-catalog",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "pnpm run build:manifest && tsc -p tsconfig.json",
+      "build:manifest": "node ../../cli/node_modules/tsx/dist/cli.mjs scripts/build-catalog-manifest.ts",
+      "clean": "rm -rf dist",
+      "test": "pnpm -w exec vitest run --root packages/skills-catalog --config vitest.config.ts",
+      "typecheck": "tsc -p tsconfig.json --noEmit",
+      "validate": "node ../../cli/node_modules/tsx/dist/cli.mjs scripts/validate-catalog.ts"
+    },
+    "dependencies": {
+      "@paperclipai/shared": "workspace:*"
+    },
+    "exports": {
+      ".": "./src/index.ts",
+      "./package.json": "./package.json",
+      "./types": "./src/types.ts",
+      "./catalog.json": "./generated/catalog.json"
+    },
+    "bin": null
+  },
+  {
+    "path": "packages/tailscale-https-broker/package.json",
+    "name": "@paperclipai/tailscale-https-broker",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "tsc && node scripts/build-native.mjs",
+      "typecheck": "tsc --noEmit",
+      "test": "node scripts/build-native.mjs && vitest run"
+    },
+    "dependencies": null,
+    "exports": {
+      ".": "./src/index.ts",
+      "./*": "./src/*.ts"
+    },
+    "bin": {
+      "paperclip-tailscale-https-broker": "./dist/main.js"
+    }
+  },
+  {
+    "path": "packages/teams-catalog/package.json",
+    "name": "@paperclipai/teams-catalog",
+    "version": "0.1.0",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "build": "pnpm run build:manifest && tsc -p tsconfig.json",
+      "build:manifest": "node ../../cli/node_modules/tsx/dist/cli.mjs scripts/build-catalog-manifest.ts",
+      "clean": "rm -rf dist",
+      "test": "pnpm -w exec vitest run --root packages/teams-catalog --config vitest.config.ts",
+      "typecheck": "tsc -p tsconfig.json --noEmit",
+      "validate": "node ../../cli/node_modules/tsx/dist/cli.mjs scripts/validate-catalog.ts"
+    },
+    "dependencies": null,
+    "exports": {
+      ".": "./src/index.ts",
+      "./types": "./src/types.ts",
+      "./catalog.json": "./generated/catalog.json"
+    },
+    "bin": null
+  },
+  {
+    "path": "scripts/typecheck-sandbox-providers/package.json",
+    "name": "@paperclipai/typecheck-sandbox-providers",
+    "version": null,
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": null,
+    "dependencies": null,
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "server/package.json",
+    "name": "@paperclipai/server",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "dev": "tsx src/index.ts",
+      "dev:watch": "cross-env PAPERCLIP_MIGRATION_PROMPT=never PAPERCLIP_MIGRATION_AUTO_APPLY=true tsx ./scripts/dev-watch.ts",
+      "prepare:ui-dist": "bash ../scripts/prepare-server-ui-dist.sh",
+      "build": "pnpm run prepare:runner-vendor && node scripts/verify-runner-vendor-dependencies.mjs && node ../scripts/run-tsc.mjs && mkdir -p dist/onboarding-assets dist/built-ins dist/services/scripts dist/vendor/paperclip-runner && cp -R src/onboarding-assets/. dist/onboarding-assets/ && cp -R src/built-ins/. dist/built-ins/ && cp -R src/services/scripts/. dist/services/scripts/ && cp -Rf ../packages/paperclip-runner/dist/. dist/vendor/paperclip-runner/ && cp ../packages/paperclip-runner/scripts/install-copilot-assets.mjs ../packages/paperclip-runner/scripts/materialize-copilot-binary.mjs ../packages/paperclip-runner/scripts/copilot-inner-distribution.mjs dist/ && node dist/install-copilot-assets.mjs && node scripts/write-build-stamp.mjs",
+      "prepack": "pnpm run prepare:ui-dist && pnpm run build",
+      "postpack": "rm -rf ui-dist",
+      "clean": "rm -rf dist",
+      "build:runtime": "node scripts/bundle-runtime.mjs",
+      "start": "node dist/index.js",
+      "prepare:runner-vendor": "node scripts/prepare-runner-vendor.mjs",
+      "typecheck": "pnpm --filter @paperclipai/paperclip-runner run build:typescript && pnpm --filter @paperclipai/plugin-sdk ensure-build-deps && node scripts/typecheck-layers.mjs",
+      "postinstall": "node scripts/install-copilot-assets.mjs"
+    },
+    "dependencies": {
+      "@1password/sdk": "0.5.0",
+      "@agentclientprotocol/claude-agent-acp": "0.73.0",
+      "@agentclientprotocol/codex-acp": "1.6.2",
+      "@agentclientprotocol/sdk": "1.9.0",
+      "@ai-sdk/amazon-bedrock": "5.0.113",
+      "@ai-sdk/anthropic": "4.0.78",
+      "@ai-sdk/google": "4.0.93",
+      "@ai-sdk/openai": "4.0.86",
+      "@ai-sdk/xai": "5.0.20",
+      "@aws-sdk/client-s3": "^3.1141.0",
+      "@chat-adapter/discord": "4.39.0",
+      "@chat-adapter/github": "4.39.0",
+      "@chat-adapter/slack": "4.39.0",
+      "@chat-adapter/teams": "4.39.0",
+      "@chat-adapter/telegram": "4.39.0",
+      "@discordjs/ws": "1.2.3",
+      "@grpc/grpc-js": "1.14.5",
+      "@modelcontextprotocol/sdk": "^1.31.0",
+      "@openrouter/ai-sdk-provider": "3.1.0",
+      "@opentelemetry/api": "^1.9.0",
+      "@opentelemetry/otlp-transformer": "0.221.0",
+      "@paperclipai/adapter-claude-local": "workspace:*",
+      "@paperclipai/adapter-codex-local": "workspace:*",
+      "@paperclipai/adapter-cursor-cloud": "workspace:*",
+      "@paperclipai/adapter-cursor-local": "workspace:*",
+      "@paperclipai/adapter-gemini-local": "workspace:*",
+      "@paperclipai/adapter-grok-local": "workspace:*",
+      "@paperclipai/adapter-kimi-local": "workspace:*",
+      "@paperclipai/adapter-openclaw-gateway": "workspace:*",
+      "@paperclipai/adapter-opencode-local": "workspace:*",
+      "@paperclipai/adapter-pi-local": "workspace:*",
+      "@paperclipai/adapter-utils": "workspace:*",
+      "@paperclipai/db": "workspace:*",
+      "@paperclipai/hermes-paperclip-adapter": "workspace:*",
+      "@paperclipai/plugin-sdk": "workspace:*",
+      "@paperclipai/shared": "workspace:*",
+      "@paperclipai/skills-catalog": "workspace:*",
+      "@photon-ai/advanced-imessage": "2.2.0",
+      "@vercel/connect": "2.3.3",
+      "acorn": "8.18.0",
+      "acpx": "0.22.0",
+      "ai": "7.0.130",
+      "ajv": "^8.20.0",
+      "ajv-formats": "^3.0.1",
+      "better-auth": "1.7.16",
+      "chat": "4.39.0",
+      "chokidar": "^5.0.0",
+      "compression": "^1.8.2",
+      "detect-port": "^2.1.0",
+      "dompurify": "^3.4.16",
+      "dotenv": "^17.4.2",
+      "drizzle-orm": "^0.45.2",
+      "embedded-postgres": "^18.1.0-beta.16",
+      "express": "^5.1.0",
+      "heif2jpeg": "0.1.6",
+      "jsdom": "^30.0.1",
+      "light-my-request": "^6.6.0",
+      "multer": "^2.4.0",
+      "nice-grpc": "2.1.17",
+      "nice-grpc-common": "2.0.4",
+      "open": "^11.0.4",
+      "opencode-ai": "1.18.34",
+      "pino": "^10.0.0",
+      "pino-http": "^11.0.0",
+      "pino-pretty": "^13.1.3",
+      "sharp": "^0.35.4",
+      "smol-toml": "^1.9.1",
+      "ssh2": "^1.17.0",
+      "svix": "1.76.1",
+      "tar-stream": "3.2.0",
+      "ws": "^8.22.0",
+      "zod": "^4.6.6",
+      "@opentelemetry/resources": "2.10.0"
+    },
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "bin": null
+  },
+  {
+    "path": "tests/speko-voice-proof/package.json",
+    "name": "@paperclipai/speko-voice-proof",
+    "version": null,
+    "private": true,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "test": "node --test *.test.mjs",
+      "init": "node cli.mjs init",
+      "serve": "node cli.mjs serve",
+      "provision": "node cli.mjs provision",
+      "live": "node live-client.mjs"
+    },
+    "dependencies": {
+      "standardwebhooks": "1.0.0"
+    },
+    "exports": null,
+    "bin": null
+  },
+  {
+    "path": "ui/package.json",
+    "name": "@paperclipai/ui",
+    "version": "0.3.1",
+    "private": null,
+    "engines": {
+      "node": ">=24.11.0"
+    },
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "build:preview": "vite build --config vite.preview.config.mjs",
+      "storybook": "storybook dev -p 6006 -c storybook/.storybook",
+      "build-storybook": "storybook build -c storybook/.storybook -o storybook-static",
+      "preview": "vite preview",
+      "typecheck": "node ../scripts/storybook-catalog.mjs && node ../scripts/run-tsc.mjs -b",
+      "clean": "rm -rf dist dist-preview storybook-static tsconfig.tsbuildinfo",
+      "prepack": "rm -f package.dev.json && cp package.json package.dev.json && node ../scripts/generate-ui-package-json.mjs",
+      "postpack": "if [ -f package.dev.json ]; then mv package.dev.json package.json; fi"
+    },
+    "dependencies": {
+      "@assistant-ui/react": "0.15.22",
+      "@base-ui/react": "^1.7.0",
+      "@codemirror/lang-yaml": "^6.1.3",
+      "@codemirror/language": "^6.12.4",
+      "@codemirror/state": "^6.7.2",
+      "@codemirror/view": "^6.43.11",
+      "@dnd-kit/core": "^6.3.1",
+      "@dnd-kit/sortable": "^10.0.0",
+      "@dnd-kit/utilities": "^3.2.2",
+      "@lexical/clipboard": "0.48.0",
+      "@lexical/link": "0.48.0",
+      "@lezer/highlight": "^1.2.3",
+      "@mdxeditor/editor": "^4.2.3",
+      "@paperclipai/adapter-claude-local": "workspace:*",
+      "@paperclipai/adapter-codex-local": "workspace:*",
+      "@paperclipai/adapter-cursor-cloud": "workspace:*",
+      "@paperclipai/adapter-cursor-local": "workspace:*",
+      "@paperclipai/adapter-gemini-local": "workspace:*",
+      "@paperclipai/adapter-grok-local": "workspace:*",
+      "@paperclipai/adapter-kimi-local": "workspace:*",
+      "@paperclipai/adapter-openclaw-gateway": "workspace:*",
+      "@paperclipai/adapter-opencode-local": "workspace:*",
+      "@paperclipai/adapter-pi-local": "workspace:*",
+      "@paperclipai/adapter-utils": "workspace:*",
+      "@paperclipai/hermes-paperclip-adapter": "workspace:*",
+      "@paperclipai/shared": "workspace:*",
+      "@radix-ui/react-slot": "^1.3.3",
+      "@spekoai/client": "0.0.13",
+      "@tailwindcss/typography": "^0.5.20",
+      "@tanstack/react-query": "^5.102.8",
+      "@xterm/addon-fit": "^0.11.0",
+      "@xterm/xterm": "^6.0.0",
+      "class-variance-authority": "^0.7.1",
+      "clsx": "^2.1.1",
+      "cmdk": "^1.1.1",
+      "codemirror": "^6.0.2",
+      "i18next": "^26.4.2",
+      "lexical": "0.48.0",
+      "lucide-react": "^1.48.0",
+      "mdast-util-from-markdown": "^2.0.3",
+      "mermaid": "^12.1.0",
+      "motion": "^13.1.1",
+      "radix-ui": "^1.6.7",
+      "react": "^19.2.8",
+      "react-dom": "^19.2.8",
+      "react-i18next": "^17.0.15",
+      "react-markdown": "^10.1.0",
+      "react-resizable-panels": "^4.12.3",
+      "react-router-dom": "^7.18.4",
+      "remark-gfm": "^4.0.1",
+      "tailwind-merge": "^3.6.0",
+      "yaml": "^2.8.1",
+      "yjs": "13.6.32"
+    },
+    "exports": null,
+    "bin": null
+  }
+]

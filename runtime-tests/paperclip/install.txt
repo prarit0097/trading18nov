@@ -1,0 +1,191 @@
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+Scope: all 36 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1354
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1354, reused 0, downloaded 0, added 0
+
+   ╭───────────────────────────────────────────────────────────────────╮
+   │                                                                   │
+   │                Update available! 9.15.4 → 12.21.0.                │
+   │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v12.21.0   │
+   │                 Run "pnpm add -g pnpm" to update.                 │
+   │                                                                   │
+   ╰───────────────────────────────────────────────────────────────────╯
+
+Progress: resolved 1354, reused 0, downloaded 1, added 0
+Progress: resolved 1354, reused 0, downloaded 28, added 26
+Progress: resolved 1354, reused 0, downloaded 36, added 32
+Progress: resolved 1354, reused 0, downloaded 50, added 41
+Progress: resolved 1354, reused 0, downloaded 55, added 45
+Progress: resolved 1354, reused 0, downloaded 56, added 49
+Progress: resolved 1354, reused 0, downloaded 66, added 60
+Progress: resolved 1354, reused 0, downloaded 71, added 64
+Progress: resolved 1354, reused 0, downloaded 79, added 68
+Progress: resolved 1354, reused 0, downloaded 80, added 69
+Progress: resolved 1354, reused 0, downloaded 93, added 78
+Progress: resolved 1354, reused 0, downloaded 105, added 89
+Progress: resolved 1354, reused 0, downloaded 120, added 102
+Progress: resolved 1354, reused 0, downloaded 157, added 147
+Progress: resolved 1354, reused 0, downloaded 178, added 174
+Progress: resolved 1354, reused 0, downloaded 192, added 188
+Progress: resolved 1354, reused 0, downloaded 204, added 203
+Progress: resolved 1354, reused 0, downloaded 213, added 211
+Progress: resolved 1354, reused 0, downloaded 224, added 223
+Progress: resolved 1354, reused 0, downloaded 228, added 229
+Progress: resolved 1354, reused 0, downloaded 239, added 241
+Progress: resolved 1354, reused 0, downloaded 255, added 253
+Progress: resolved 1354, reused 0, downloaded 267, added 267
+Progress: resolved 1354, reused 0, downloaded 277, added 278
+Progress: resolved 1354, reused 0, downloaded 284, added 286
+Progress: resolved 1354, reused 0, downloaded 302, added 302
+Progress: resolved 1354, reused 0, downloaded 336, added 335
+Progress: resolved 1354, reused 0, downloaded 367, added 367
+Progress: resolved 1354, reused 0, downloaded 382, added 383
+Progress: resolved 1354, reused 0, downloaded 387, added 389
+Progress: resolved 1354, reused 0, downloaded 391, added 393
+Progress: resolved 1354, reused 0, downloaded 406, added 407
+Progress: resolved 1354, reused 0, downloaded 421, added 423
+Progress: resolved 1354, reused 0, downloaded 424, added 426
+Progress: resolved 1354, reused 0, downloaded 437, added 435
+Progress: resolved 1354, reused 0, downloaded 449, added 448
+Progress: resolved 1354, reused 0, downloaded 460, added 461
+Progress: resolved 1354, reused 0, downloaded 469, added 471
+Progress: resolved 1354, reused 0, downloaded 481, added 482
+Progress: resolved 1354, reused 0, downloaded 487, added 488
+Progress: resolved 1354, reused 0, downloaded 490, added 491
+Progress: resolved 1354, reused 0, downloaded 492, added 492
+Progress: resolved 1354, reused 0, downloaded 498, added 496
+Progress: resolved 1354, reused 0, downloaded 500, added 502
+Progress: resolved 1354, reused 0, downloaded 504, added 505
+Progress: resolved 1354, reused 0, downloaded 514, added 515
+Progress: resolved 1354, reused 0, downloaded 525, added 524
+Progress: resolved 1354, reused 0, downloaded 530, added 530
+Progress: resolved 1354, reused 0, downloaded 535, added 536
+Progress: resolved 1354, reused 0, downloaded 541, added 541
+Progress: resolved 1354, reused 0, downloaded 544, added 545
+Progress: resolved 1354, reused 0, downloaded 548, added 545
+Progress: resolved 1354, reused 0, downloaded 551, added 546
+Progress: resolved 1354, reused 0, downloaded 556, added 550
+Progress: resolved 1354, reused 0, downloaded 564, added 559
+Progress: resolved 1354, reused 0, downloaded 578, added 577
+Progress: resolved 1354, reused 0, downloaded 591, added 591
+Progress: resolved 1354, reused 0, downloaded 615, added 613
+Progress: resolved 1354, reused 0, downloaded 627, added 624
+Progress: resolved 1354, reused 0, downloaded 631, added 630
+Progress: resolved 1354, reused 0, downloaded 633, added 633
+Progress: resolved 1354, reused 0, downloaded 642, added 640
+Progress: resolved 1354, reused 0, downloaded 664, added 662
+Progress: resolved 1354, reused 0, downloaded 668, added 664
+Progress: resolved 1354, reused 0, downloaded 672, added 666
+Progress: resolved 1354, reused 0, downloaded 674, added 666
+Progress: resolved 1354, reused 0, downloaded 677, added 672
+Progress: resolved 1354, reused 0, downloaded 684, added 674
+Progress: resolved 1354, reused 0, downloaded 693, added 685
+Progress: resolved 1354, reused 0, downloaded 700, added 698
+Progress: resolved 1354, reused 0, downloaded 716, added 715
+Progress: resolved 1354, reused 0, downloaded 740, added 735
+Progress: resolved 1354, reused 0, downloaded 762, added 753
+Progress: resolved 1354, reused 0, downloaded 779, added 780
+Progress: resolved 1354, reused 0, downloaded 799, added 797
+Progress: resolved 1354, reused 0, downloaded 816, added 816
+Progress: resolved 1354, reused 0, downloaded 820, added 817
+Progress: resolved 1354, reused 0, downloaded 830, added 827
+Progress: resolved 1354, reused 0, downloaded 843, added 839
+Progress: resolved 1354, reused 0, downloaded 860, added 861
+Progress: resolved 1354, reused 0, downloaded 872, added 872
+Progress: resolved 1354, reused 0, downloaded 889, added 887
+Progress: resolved 1354, reused 0, downloaded 900, added 898
+Progress: resolved 1354, reused 0, downloaded 908, added 906
+Progress: resolved 1354, reused 0, downloaded 915, added 913
+Progress: resolved 1354, reused 0, downloaded 932, added 931
+Progress: resolved 1354, reused 0, downloaded 948, added 947
+Progress: resolved 1354, reused 0, downloaded 959, added 959
+Progress: resolved 1354, reused 0, downloaded 969, added 969
+Progress: resolved 1354, reused 0, downloaded 977, added 977
+Progress: resolved 1354, reused 0, downloaded 992, added 985
+Progress: resolved 1354, reused 0, downloaded 1015, added 1012
+Progress: resolved 1354, reused 0, downloaded 1021, added 1016
+Progress: resolved 1354, reused 0, downloaded 1032, added 1028
+Progress: resolved 1354, reused 0, downloaded 1052, added 1051
+Progress: resolved 1354, reused 0, downloaded 1067, added 1068
+Progress: resolved 1354, reused 0, downloaded 1089, added 1090
+Progress: resolved 1354, reused 0, downloaded 1092, added 1094
+Progress: resolved 1354, reused 0, downloaded 1097, added 1097
+Progress: resolved 1354, reused 0, downloaded 1115, added 1114
+Progress: resolved 1354, reused 0, downloaded 1130, added 1126
+Progress: resolved 1354, reused 0, downloaded 1136, added 1135
+Progress: resolved 1354, reused 0, downloaded 1138, added 1138
+Progress: resolved 1354, reused 0, downloaded 1140, added 1138
+Progress: resolved 1354, reused 0, downloaded 1141, added 1139
+Progress: resolved 1354, reused 0, downloaded 1149, added 1142
+Progress: resolved 1354, reused 0, downloaded 1150, added 1144
+Progress: resolved 1354, reused 0, downloaded 1162, added 1160
+Progress: resolved 1354, reused 0, downloaded 1165, added 1165
+Progress: resolved 1354, reused 0, downloaded 1165, added 1166
+Progress: resolved 1354, reused 0, downloaded 1166, added 1166
+Progress: resolved 1354, reused 0, downloaded 1170, added 1167
+Progress: resolved 1354, reused 0, downloaded 1173, added 1169
+Progress: resolved 1354, reused 0, downloaded 1173, added 1170
+Progress: resolved 1354, reused 0, downloaded 1173, added 1172
+Progress: resolved 1354, reused 0, downloaded 1180, added 1177
+Progress: resolved 1354, reused 0, downloaded 1189, added 1186
+Progress: resolved 1354, reused 0, downloaded 1197, added 1196
+Progress: resolved 1354, reused 0, downloaded 1205, added 1204
+Progress: resolved 1354, reused 0, downloaded 1209, added 1206
+Progress: resolved 1354, reused 0, downloaded 1221, added 1219
+Progress: resolved 1354, reused 0, downloaded 1231, added 1224
+Progress: resolved 1354, reused 0, downloaded 1242, added 1235
+Progress: resolved 1354, reused 0, downloaded 1253, added 1243
+Progress: resolved 1354, reused 0, downloaded 1258, added 1254
+Progress: resolved 1354, reused 0, downloaded 1266, added 1260
+Progress: resolved 1354, reused 0, downloaded 1270, added 1264
+Progress: resolved 1354, reused 0, downloaded 1270, added 1265
+Progress: resolved 1354, reused 0, downloaded 1282, added 1275
+Progress: resolved 1354, reused 0, downloaded 1288, added 1286
+Progress: resolved 1354, reused 0, downloaded 1293, added 1286
+Progress: resolved 1354, reused 0, downloaded 1298, added 1291
+Progress: resolved 1354, reused 0, downloaded 1301, added 1294
+Progress: resolved 1354, reused 0, downloaded 1309, added 1299
+Progress: resolved 1354, reused 0, downloaded 1324, added 1319
+Progress: resolved 1354, reused 0, downloaded 1344, added 1342
+Progress: resolved 1354, reused 0, downloaded 1348, added 1347
+Progress: resolved 1354, reused 0, downloaded 1349, added 1347
+Progress: resolved 1354, reused 0, downloaded 1349, added 1348
+Progress: resolved 1354, reused 0, downloaded 1349, added 1349
+Progress: resolved 1354, reused 0, downloaded 1350, added 1350
+Progress: resolved 1354, reused 0, downloaded 1350, added 1351
+Progress: resolved 1354, reused 0, downloaded 1350, added 1352
+Progress: resolved 1354, reused 0, downloaded 1351, added 1352
+Progress: resolved 1354, reused 0, downloaded 1351, added 1353
+Progress: resolved 1354, reused 0, downloaded 1352, added 1353
+Progress: resolved 1354, reused 0, downloaded 1352, added 1354, done
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\packages\plugins\create-paperclip-plugin\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\packages\plugins\examples\plugin-authoring-smoke-example\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\packages\plugins\examples\plugin-hello-world-example\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\packages\plugins\examples\plugin-kitchen-sink-example\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\packages\plugins\paperclip-plugin-fake-sandbox\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\packages\plugins\plugin-llm-wiki\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\packages\plugins\examples\plugin-file-browser-example\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\packages\plugins\plugin-workspace-diff\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\server\node_modules\.bin\paperclip-runner-eval-session. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\paperclip-runner\dist\cli\eval-session.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\server\node_modules\.bin\paperclip-runner-codex-proxy. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\paperclip-runner\dist\cli\codex-app-server-unix-proxy.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\server\node_modules\.bin\paperclip-runner-opencode-proxy. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\paperclip-runner\dist\cli\opencode-app-server-proxy.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\server\node_modules\.bin\paperclip-runner-copilot-metadata-probe. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\paperclip-runner\dist\cli\copilot-metadata-probe.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\server\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\server\node_modules\.bin\paperclip-runner-acpx-sidecar. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\paperclip-runner\dist\cli\acpx-runtime-sidecar.js.EXE'
+ WARN  Failed to create bin at E:\coding\code\Trade\paperclip\ui\node_modules\.bin\paperclip-plugin-dev-server. ENOENT: no such file or directory, stat 'E:\coding\code\Trade\paperclip\packages\plugins\sdk\dist\dev-cli.js.EXE'
+
+devDependencies:
++ @playwright/test 1.62.1
++ agentmail 0.5.31
++ cross-env 10.1.0
++ esbuild 0.28.2
++ oxc-parser 0.127.0
++ turbo 2.11.10
++ typescript 7.0.2
++ vitest 5.0.3
++ yaml 2.9.1
+
+Done in 4m 30.4s

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-12",
+  "now_new_york": "2026-11-12 10:00",
+  "paper": true,
+  "results": [
+    {
+      "index": 1,
+      "symbol": "NVDA",
+      "side": "buy",
+      "kind": "entry",
+      "amount": "10000 shares",
+      "value_usd": 1626600.0,
+      "entry_ref": 162.66,
+      "entry_ref_from": "plan",
+      "stop": 155.56,
+      "target": 176.86,
+      "risk_per_share": 7.1,
+      "max_loss": 71000.0,
+      "reward_risk": 2.0,
+      "fingerprint": "c04e98c2b11f1a27",
+      "verdict": "BLOCK",
+      "reasons": [
+        "size: $1,626,600 is over your $4,000 max order",
+        "cash: needs $1,626,600 but only $5,000 cash; that would be margin (borrowed money)",
+        "position: NVDA would be $1,626,600, 32532.0% of the $5,000 account, over your 75% cap",
+        "loss: 10000 shares x 7.10 risk a share = $71,000 at the stop, over your $50 max loss per trade",
+        "daily loss: $0 already at risk today plus $71,000 for this one = $71,000, over your $150 daily loss limit"
+      ],
+      "warnings": [
+        "send qty as a string (\"10000\"), the way place_stock_order types it"
+      ],
+      "info": [
+        "entry 162.66 (the plan's entry), stop 155.56, target 176.86: risk 7.10 a share",
+        "max loss $71,000 (limit $50), reward:risk 2.00 (min 1)",
+        "today before this: 0 of 3 trades, $0 of $150 daily loss"
+      ]
+    }
+  ],
+  "pass": 0,
+  "block": 1,
+  "warnings": [],
+  "cash_after": 5000.0,
+  "today": {
+    "orders_placed": 0,
+    "entries_placed": 0,
+    "loss_at_risk": 0.0,
+    "day_trades_5d": null
+  },
+  "prices_as_of": "2026-11-12T15:00:00Z"
+}

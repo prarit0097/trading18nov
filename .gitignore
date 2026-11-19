@@ -1,0 +1,44 @@
+# Upstream source checkouts
+/day-trader-skill/
+/OpenBB/
+/TradingAgents/
+/MiroFish/
+/paperclip/
+
+# Local runtimes, caches, and temporary test state
+.venv/
+venv/
+__pycache__/
+node_modules/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.log
+*.lock
+~$*
+*.tmp
+.env
+.env.*
+*.pem
+*.key
+/runtime-tests/*/home/
+/runtime-tests/*/projects/
+/runtime-tests/*/app-logs/
+/runtime-tests/*/pytest-*/
+
+# Local Delta account state and process controls
+/crypto-trader-skills/verification/delta-current-account.json
+/crypto-trader-skills/verification/delta-demo-connection.json
+/crypto-trader-skills/verification/delta-btc-execution.json
+/crypto-trader-skills/verification/delta-btc-trade-preflight.json
+/crypto-trader-skills/verification/delta-btc-contract-preflight.json
+/crypto-trader-skills/runs/delta-demo-loop/
+/crypto-trader-skills/runs/trade1/*
+!/crypto-trader-skills/runs/trade1/campaign.json
+!/crypto-trader-skills/runs/trade1/baseline-3c.zip
+!/crypto-trader-skills/runs/trade1/candidate-input-products.json
+!/crypto-trader-skills/runs/trade1/research-*.md
+!/crypto-trader-skills/runs/trade1/review*.json
+!/crypto-trader-skills/runs/trade1/shadow-books-*.json
+!/crypto-trader-skills/runs/trade1/shadows.json
+/paperclip-evidence/paperclip-source.zip

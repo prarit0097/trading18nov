@@ -1,0 +1,130 @@
+{
+  "workspace": "E:\\coding\\code\\Trade\\crypto-trader-skills\\runs\\demo-20261117T174757926354Z",
+  "mode": "synthetic historical demo / paper only",
+  "elapsed_seconds": 4.88,
+  "summary": {
+    "provenance": "synthetic offline fixture, fictional limits, pinned simulated clock",
+    "stages": [
+      {
+        "kind": "market",
+        "digest": "2ba2083980997b475f32e8cf4a2d5d1b1f49f676689b9bc0974e7b1921fb1d28",
+        "status": null
+      },
+      {
+        "kind": "news",
+        "digest": "91ad6d1e64076beec8858e8a14e002f92a1488d500ee18812aac4751f575fcb2",
+        "status": null
+      },
+      {
+        "kind": "proposal",
+        "digest": "48886d2fa0b4d2bae5a90be1f0fa82c7c93aedc66fda2bd2cb7844b36293a608",
+        "status": "ready"
+      },
+      {
+        "kind": "plan",
+        "digest": "dac5eacec9e6c4d65d8fd8e97056d5f350343238cc6709f29da98a45c1d6be4a",
+        "status": "ready"
+      },
+      {
+        "kind": "sizing",
+        "digest": "49367304ed0367816520ec39f3f8c7bf0a3bcc39aa5858920a1b0f0ca699f1d1",
+        "status": "ready"
+      },
+      {
+        "kind": "risk",
+        "digest": "b0fa9a12cfde28dd0f78cfe04ab45c38534ef508485be7ff70060e21e3592f74",
+        "status": "approved"
+      },
+      {
+        "kind": "backtest",
+        "digest": "bd5da3150c56529375af62268eed64aaa3735f88d722d1ea441fcced70a957e1",
+        "status": "complete"
+      },
+      {
+        "kind": "simulation",
+        "digest": "d97a7679266815f8e5d5cc43407e7019a0351ef78467be581770506c414cf6cf",
+        "status": "complete"
+      },
+      {
+        "kind": "world",
+        "digest": "ced7a872fc3d0b5cccfd7b6c1657c959b9afb62e210a57dd426d65837cba8682",
+        "status": "complete"
+      },
+      {
+        "kind": "orders",
+        "digest": "d8bd52c1bbd7284bf2a7a9e26baa33f4bb77a9b76bdda61bac0c74cc2c36546e",
+        "status": "paper"
+      },
+      {
+        "kind": "report",
+        "digest": "d7c112440657a9e1a5a02eb2b8b781b470238b042dbfa62f39a5312ca3547763",
+        "status": "inspection"
+      }
+    ],
+    "workspace": "E:\\coding\\code\\Trade\\crypto-trader-skills\\runs\\demo-20261117T174757926354Z",
+    "live_orders_submitted": 0
+  },
+  "paper": {
+    "order_count": 1,
+    "order": {
+      "action": "buy",
+      "at": "2026-11-17T12:00:00Z",
+      "fee": "1.9261349676",
+      "id": "4f93e22d8fc373b19f13170aade5d20990f973b93b5418a96b2c42435c43e6c0",
+      "mode": "paper",
+      "price": "100950.47",
+      "price_source": "ask_plus_adverse_slippage",
+      "quantity": "0.01908",
+      "risk_digest": "b0fa9a12cfde28dd0f78cfe04ab45c38534ef508485be7ff70060e21e3592f74",
+      "symbol": "BTCUSDT"
+    },
+    "cash": "8071.9388974324",
+    "idempotent_retry_verified": true
+  },
+  "backtest": {
+    "closed_bars": 160,
+    "final_cash": "10000",
+    "initial_cash": "10000",
+    "max_drawdown_quote": "0",
+    "net_pnl": "0",
+    "total_fees": "0",
+    "trade_count": 0
+  },
+  "replay": {
+    "distinct_historical_blocks": 156,
+    "expected_shortfall_05_per_unit": "-564.848013872730363005771187",
+    "flat_count": 0,
+    "historical_return_bars": 159,
+    "horizon_bars": 20,
+    "loss_count": 9688,
+    "mean_net_pnl_per_unit": "-240.3506848959602221745767506",
+    "mean_underlying_return": "0.0006188949137986349120299732539",
+    "p05_net_pnl_per_unit": "-551.6901711365017695356255205",
+    "possible_block_starts": 156,
+    "replays": 10000,
+    "stop_count": 0,
+    "target_count": 1,
+    "timeout_count": 9999,
+    "underlying_positive_count": 7572,
+    "unique_block_sequences": 10000,
+    "unique_net_pnl": 10000,
+    "win_count": 312
+  },
+  "world": {
+    "all_balances_nonnegative": true,
+    "final_cash_units": 1000000000000000,
+    "final_inventory_lots": 10000000,
+    "initial_cash_units": 1000000000000000,
+    "initial_inventory_lots": 10000000,
+    "last_price": "100900.00",
+    "matched_quantity": "28.43033",
+    "matched_trades": 111293,
+    "participant_count": 10000,
+    "participants_traded": 10000,
+    "steps": 20,
+    "submitted_orders": 200000
+  },
+  "live_orders_submitted": 0,
+  "all_artifact_digests_verified": true,
+  "chart": "E:\\coding\\code\\Trade\\crypto-trader-skills\\runs\\demo-20261117T174757926354Z\\chart.svg"
+}

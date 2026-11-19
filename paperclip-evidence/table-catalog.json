@@ -1,0 +1,1652 @@
+[
+  {
+    "path": "packages/db/src/schema/accounting.ts",
+    "line": 7,
+    "table": "provider_billing_snapshots"
+  },
+  {
+    "path": "packages/db/src/schema/accounting.ts",
+    "line": 23,
+    "table": "run_usage_receipts"
+  },
+  {
+    "path": "packages/db/src/schema/accounting.ts",
+    "line": 40,
+    "table": "accounting_runtime_baselines"
+  },
+  {
+    "path": "packages/db/src/schema/accounting.ts",
+    "line": 52,
+    "table": "budget_reservations"
+  },
+  {
+    "path": "packages/db/src/schema/accounting.ts",
+    "line": 77,
+    "table": "billing_invoices"
+  },
+  {
+    "path": "packages/db/src/schema/accounting.ts",
+    "line": 88,
+    "table": "billing_invoice_lines"
+  },
+  {
+    "path": "packages/db/src/schema/accounting.ts",
+    "line": 108,
+    "table": "cost_adjustments"
+  },
+  {
+    "path": "packages/db/src/schema/activity_log.ts",
+    "line": 7,
+    "table": "activity_log"
+  },
+  {
+    "path": "packages/db/src/schema/adapter_auth_sessions.ts",
+    "line": 45,
+    "table": "adapter_auth_sessions"
+  },
+  {
+    "path": "packages/db/src/schema/agent_api_keys.ts",
+    "line": 6,
+    "table": "agent_api_keys"
+  },
+  {
+    "path": "packages/db/src/schema/agent_commentary.ts",
+    "line": 9,
+    "table": "agent_commentary"
+  },
+  {
+    "path": "packages/db/src/schema/agent_config_revisions.ts",
+    "line": 5,
+    "table": "agent_config_revisions"
+  },
+  {
+    "path": "packages/db/src/schema/agent_file_roots.ts",
+    "line": 10,
+    "table": "agent_file_roots"
+  },
+  {
+    "path": "packages/db/src/schema/agent_identity_keys.ts",
+    "line": 5,
+    "table": "agent_identity_keys"
+  },
+  {
+    "path": "packages/db/src/schema/agent_instruction_revisions.ts",
+    "line": 17,
+    "table": "agent_instruction_revisions"
+  },
+  {
+    "path": "packages/db/src/schema/agent_instruction_revisions.ts",
+    "line": 60,
+    "table": "agent_instruction_heads"
+  },
+  {
+    "path": "packages/db/src/schema/agent_instruction_revisions.ts",
+    "line": 90,
+    "table": "agent_instruction_working_copies"
+  },
+  {
+    "path": "packages/db/src/schema/agent_memberships.ts",
+    "line": 5,
+    "table": "agent_memberships"
+  },
+  {
+    "path": "packages/db/src/schema/agent_runtime_state.ts",
+    "line": 5,
+    "table": "agent_runtime_state"
+  },
+  {
+    "path": "packages/db/src/schema/agent_task_sessions.ts",
+    "line": 16,
+    "table": "agent_task_sessions"
+  },
+  {
+    "path": "packages/db/src/schema/agent_task_sessions.ts",
+    "line": 59,
+    "table": "agent_session_goal_actions"
+  },
+  {
+    "path": "packages/db/src/schema/agent_wakeup_requests.ts",
+    "line": 15,
+    "table": "agent_wakeup_requests"
+  },
+  {
+    "path": "packages/db/src/schema/agents.ts",
+    "line": 17,
+    "table": "agents"
+  },
+  {
+    "path": "packages/db/src/schema/ai_connection_defaults.ts",
+    "line": 16,
+    "table": "ai_connection_defaults"
+  },
+  {
+    "path": "packages/db/src/schema/ai_connection_routing.ts",
+    "line": 7,
+    "table": "ai_connection_pools"
+  },
+  {
+    "path": "packages/db/src/schema/ai_connection_routing.ts",
+    "line": 19,
+    "table": "ai_connection_router_cursors"
+  },
+  {
+    "path": "packages/db/src/schema/ai_connection_routing.ts",
+    "line": 25,
+    "table": "ai_connection_task_pins"
+  },
+  {
+    "path": "packages/db/src/schema/ai_provider_defaults.ts",
+    "line": 9,
+    "table": "ai_provider_defaults"
+  },
+  {
+    "path": "packages/db/src/schema/ai_subscriptions.ts",
+    "line": 7,
+    "table": "ai_subscriptions"
+  },
+  {
+    "path": "packages/db/src/schema/ai_subscriptions.ts",
+    "line": 32,
+    "table": "ai_subscription_prices"
+  },
+  {
+    "path": "packages/db/src/schema/ai_subscriptions.ts",
+    "line": 52,
+    "table": "ai_subscription_connections"
+  },
+  {
+    "path": "packages/db/src/schema/announcement_dismissals.ts",
+    "line": 6,
+    "table": "announcement_publications"
+  },
+  {
+    "path": "packages/db/src/schema/announcement_dismissals.ts",
+    "line": 12,
+    "table": "announcement_dismissals"
+  },
+  {
+    "path": "packages/db/src/schema/approval_comments.ts",
+    "line": 6,
+    "table": "approval_comments"
+  },
+  {
+    "path": "packages/db/src/schema/approvals.ts",
+    "line": 6,
+    "table": "approvals"
+  },
+  {
+    "path": "packages/db/src/schema/assets.ts",
+    "line": 5,
+    "table": "assets"
+  },
+  {
+    "path": "packages/db/src/schema/auth.ts",
+    "line": 3,
+    "table": "user"
+  },
+  {
+    "path": "packages/db/src/schema/auth.ts",
+    "line": 13,
+    "table": "session"
+  },
+  {
+    "path": "packages/db/src/schema/auth.ts",
+    "line": 24,
+    "table": "account"
+  },
+  {
+    "path": "packages/db/src/schema/auth.ts",
+    "line": 47,
+    "table": "verification"
+  },
+  {
+    "path": "packages/db/src/schema/automatic_run_brakes.ts",
+    "line": 4,
+    "table": "automatic_run_brakes"
+  },
+  {
+    "path": "packages/db/src/schema/board_api_keys.ts",
+    "line": 4,
+    "table": "board_api_keys"
+  },
+  {
+    "path": "packages/db/src/schema/browser_use.ts",
+    "line": 17,
+    "table": "browser_use_settings"
+  },
+  {
+    "path": "packages/db/src/schema/browser_use.ts",
+    "line": 30,
+    "table": "browser_use_sessions"
+  },
+  {
+    "path": "packages/db/src/schema/browser_use.ts",
+    "line": 71,
+    "table": "browser_use_runs"
+  },
+  {
+    "path": "packages/db/src/schema/browser_use.ts",
+    "line": 104,
+    "table": "browser_use_browsers"
+  },
+  {
+    "path": "packages/db/src/schema/budget_evaluation_work.ts",
+    "line": 5,
+    "table": "budget_evaluation_work"
+  },
+  {
+    "path": "packages/db/src/schema/budget_incidents.ts",
+    "line": 7,
+    "table": "budget_incidents"
+  },
+  {
+    "path": "packages/db/src/schema/budget_policies.ts",
+    "line": 5,
+    "table": "budget_policies"
+  },
+  {
+    "path": "packages/db/src/schema/budget_resume_claims.ts",
+    "line": 13,
+    "table": "budget_resume_claims"
+  },
+  {
+    "path": "packages/db/src/schema/built_in_managed_resources.ts",
+    "line": 4,
+    "table": "built_in_managed_resources"
+  },
+  {
+    "path": "packages/db/src/schema/cases.ts",
+    "line": 25,
+    "table": "cases"
+  },
+  {
+    "path": "packages/db/src/schema/cases.ts",
+    "line": 69,
+    "table": "case_issue_links"
+  },
+  {
+    "path": "packages/db/src/schema/cases.ts",
+    "line": 89,
+    "table": "case_events"
+  },
+  {
+    "path": "packages/db/src/schema/cases.ts",
+    "line": 132,
+    "table": "case_documents"
+  },
+  {
+    "path": "packages/db/src/schema/cases.ts",
+    "line": 150,
+    "table": "case_labels"
+  },
+  {
+    "path": "packages/db/src/schema/cases.ts",
+    "line": 167,
+    "table": "case_attachments"
+  },
+  {
+    "path": "packages/db/src/schema/cases.ts",
+    "line": 184,
+    "table": "case_access_sources"
+  },
+  {
+    "path": "packages/db/src/schema/cases.ts",
+    "line": 197,
+    "table": "case_handoffs"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 38,
+    "table": "chat_endpoints"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 206,
+    "table": "chat_endpoint_resources"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 263,
+    "table": "chat_external_principals"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 309,
+    "table": "chat_identity_links"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 363,
+    "table": "chat_conversations"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 431,
+    "table": "chat_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 516,
+    "table": "chat_publications"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 591,
+    "table": "chat_message_links"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 664,
+    "table": "chat_actions"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 746,
+    "table": "chat_agent_routes"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 788,
+    "table": "chat_endpoint_leases"
+  },
+  {
+    "path": "packages/db/src/schema/chat_channels.ts",
+    "line": 820,
+    "table": "chat_sdk_state"
+  },
+  {
+    "path": "packages/db/src/schema/chat_completion_deliveries.ts",
+    "line": 9,
+    "table": "chat_task_handoffs"
+  },
+  {
+    "path": "packages/db/src/schema/chat_completion_deliveries.ts",
+    "line": 19,
+    "table": "chat_completion_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/chat_discord_command_owners.ts",
+    "line": 9,
+    "table": "chat_discord_command_owners"
+  },
+  {
+    "path": "packages/db/src/schema/chat_github.ts",
+    "line": 27,
+    "table": "chat_github_configurations"
+  },
+  {
+    "path": "packages/db/src/schema/chat_github.ts",
+    "line": 54,
+    "table": "chat_github_registrations"
+  },
+  {
+    "path": "packages/db/src/schema/chat_github.ts",
+    "line": 118,
+    "table": "chat_github_reviews"
+  },
+  {
+    "path": "packages/db/src/schema/chat_slack_manager_grants.ts",
+    "line": 6,
+    "table": "chat_slack_manager_grants"
+  },
+  {
+    "path": "packages/db/src/schema/chat_slack_registrations.ts",
+    "line": 8,
+    "table": "chat_slack_registrations"
+  },
+  {
+    "path": "packages/db/src/schema/chat_teams_file_transfers.ts",
+    "line": 25,
+    "table": "chat_teams_file_transfers"
+  },
+  {
+    "path": "packages/db/src/schema/chat_voice_callbacks.ts",
+    "line": 5,
+    "table": "chat_voice_callbacks"
+  },
+  {
+    "path": "packages/db/src/schema/chat_voice_inbound.ts",
+    "line": 8,
+    "table": "chat_voice_phone_lines"
+  },
+  {
+    "path": "packages/db/src/schema/chat_voice_inbound.ts",
+    "line": 21,
+    "table": "chat_voice_inbound_calls"
+  },
+  {
+    "path": "packages/db/src/schema/chat_voice_reports.ts",
+    "line": 6,
+    "table": "chat_voice_reports"
+  },
+  {
+    "path": "packages/db/src/schema/chat_voice_sessions.ts",
+    "line": 9,
+    "table": "chat_voice_sessions"
+  },
+  {
+    "path": "packages/db/src/schema/chat_voice_sessions.ts",
+    "line": 54,
+    "table": "chat_voice_tool_calls"
+  },
+  {
+    "path": "packages/db/src/schema/chat_voice_sessions.ts",
+    "line": 74,
+    "table": "chat_voice_replies"
+  },
+  {
+    "path": "packages/db/src/schema/cli_auth_challenges.ts",
+    "line": 6,
+    "table": "cli_auth_challenges"
+  },
+  {
+    "path": "packages/db/src/schema/companies.ts",
+    "line": 4,
+    "table": "companies"
+  },
+  {
+    "path": "packages/db/src/schema/company_logos.ts",
+    "line": 5,
+    "table": "company_logos"
+  },
+  {
+    "path": "packages/db/src/schema/company_memberships.ts",
+    "line": 4,
+    "table": "company_memberships"
+  },
+  {
+    "path": "packages/db/src/schema/company_observability.ts",
+    "line": 6,
+    "table": "company_observability"
+  },
+  {
+    "path": "packages/db/src/schema/company_onboarding_seeds.ts",
+    "line": 18,
+    "table": "company_onboarding_seeds"
+  },
+  {
+    "path": "packages/db/src/schema/company_secret_bindings.ts",
+    "line": 5,
+    "table": "company_secret_bindings"
+  },
+  {
+    "path": "packages/db/src/schema/company_secret_proposals.ts",
+    "line": 10,
+    "table": "company_secret_proposals"
+  },
+  {
+    "path": "packages/db/src/schema/company_secret_provider_configs.ts",
+    "line": 6,
+    "table": "company_secret_provider_configs"
+  },
+  {
+    "path": "packages/db/src/schema/company_secret_versions.ts",
+    "line": 5,
+    "table": "company_secret_versions"
+  },
+  {
+    "path": "packages/db/src/schema/company_secrets.ts",
+    "line": 10,
+    "table": "company_secrets"
+  },
+  {
+    "path": "packages/db/src/schema/company_skill_policies.ts",
+    "line": 4,
+    "table": "company_skill_policies"
+  },
+  {
+    "path": "packages/db/src/schema/company_skill_sources.ts",
+    "line": 9,
+    "table": "company_skill_sources"
+  },
+  {
+    "path": "packages/db/src/schema/company_skill_sources.ts",
+    "line": 50,
+    "table": "project_skill_sources"
+  },
+  {
+    "path": "packages/db/src/schema/company_skill_sources.ts",
+    "line": 76,
+    "table": "company_skill_source_entries"
+  },
+  {
+    "path": "packages/db/src/schema/company_skill_sources.ts",
+    "line": 94,
+    "table": "company_skill_import_budgets"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 19,
+    "table": "company_skills"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 73,
+    "table": "company_skill_mutation_receipts"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 128,
+    "table": "skill_package_deletions"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 138,
+    "table": "company_skill_repository_snapshots"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 158,
+    "table": "company_skill_versions"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 198,
+    "table": "company_skill_stars"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 219,
+    "table": "company_skill_comments"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 243,
+    "table": "company_skill_test_inputs"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 270,
+    "table": "company_skill_test_run_templates"
+  },
+  {
+    "path": "packages/db/src/schema/company_skills.ts",
+    "line": 295,
+    "table": "company_skill_test_runs"
+  },
+  {
+    "path": "packages/db/src/schema/company_transfer_runs.ts",
+    "line": 10,
+    "table": "company_transfer_runs"
+  },
+  {
+    "path": "packages/db/src/schema/company_user_sidebar_preferences.ts",
+    "line": 4,
+    "table": "company_user_sidebar_preferences"
+  },
+  {
+    "path": "packages/db/src/schema/completion_contracts.ts",
+    "line": 15,
+    "table": "completion_contracts"
+  },
+  {
+    "path": "packages/db/src/schema/connection_event_deliveries.ts",
+    "line": 11,
+    "table": "connection_event_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/connection_intent_deliveries.ts",
+    "line": 6,
+    "table": "connection_intent_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/controller_instances.ts",
+    "line": 13,
+    "table": "controller_instances"
+  },
+  {
+    "path": "packages/db/src/schema/cost_events.ts",
+    "line": 11,
+    "table": "cost_events"
+  },
+  {
+    "path": "packages/db/src/schema/decision_models.ts",
+    "line": 6,
+    "table": "company_decision_models"
+  },
+  {
+    "path": "packages/db/src/schema/decision_models.ts",
+    "line": 20,
+    "table": "decision_invocations"
+  },
+  {
+    "path": "packages/db/src/schema/decision_queues.ts",
+    "line": 23,
+    "table": "decision_queues"
+  },
+  {
+    "path": "packages/db/src/schema/decision_queues.ts",
+    "line": 61,
+    "table": "decision_queue_items"
+  },
+  {
+    "path": "packages/db/src/schema/decision_queues.ts",
+    "line": 104,
+    "table": "decision_triage"
+  },
+  {
+    "path": "packages/db/src/schema/decision_queues.ts",
+    "line": 149,
+    "table": "decision_triage_events"
+  },
+  {
+    "path": "packages/db/src/schema/decision_queues.ts",
+    "line": 186,
+    "table": "decision_retention"
+  },
+  {
+    "path": "packages/db/src/schema/decision_queues.ts",
+    "line": 225,
+    "table": "decision_archive_notification_outbox"
+  },
+  {
+    "path": "packages/db/src/schema/decision_training_examples.ts",
+    "line": 11,
+    "table": "decision_training_examples"
+  },
+  {
+    "path": "packages/db/src/schema/decisions.ts",
+    "line": 20,
+    "table": "decision_bundles"
+  },
+  {
+    "path": "packages/db/src/schema/decisions.ts",
+    "line": 37,
+    "table": "decisions"
+  },
+  {
+    "path": "packages/db/src/schema/decisions.ts",
+    "line": 86,
+    "table": "decision_target_issues"
+  },
+  {
+    "path": "packages/db/src/schema/decisions.ts",
+    "line": 100,
+    "table": "decision_effect_executions"
+  },
+  {
+    "path": "packages/db/src/schema/document_annotation_anchor_snapshots.ts",
+    "line": 12,
+    "table": "document_annotation_anchor_snapshots"
+  },
+  {
+    "path": "packages/db/src/schema/document_annotation_comments.ts",
+    "line": 14,
+    "table": "document_annotation_comments"
+  },
+  {
+    "path": "packages/db/src/schema/document_annotation_threads.ts",
+    "line": 17,
+    "table": "document_annotation_threads"
+  },
+  {
+    "path": "packages/db/src/schema/document_memberships.ts",
+    "line": 5,
+    "table": "document_memberships"
+  },
+  {
+    "path": "packages/db/src/schema/document_revisions.ts",
+    "line": 7,
+    "table": "document_revisions"
+  },
+  {
+    "path": "packages/db/src/schema/documents.ts",
+    "line": 6,
+    "table": "documents"
+  },
+  {
+    "path": "packages/db/src/schema/dot_runner.ts",
+    "line": 8,
+    "table": "dot_agent_bindings"
+  },
+  {
+    "path": "packages/db/src/schema/dot_runner.ts",
+    "line": 32,
+    "table": "dot_runner_assignments"
+  },
+  {
+    "path": "packages/db/src/schema/dot_runner.ts",
+    "line": 58,
+    "table": "dot_runner_operations"
+  },
+  {
+    "path": "packages/db/src/schema/dot_runner.ts",
+    "line": 74,
+    "table": "dot_mailbox_items"
+  },
+  {
+    "path": "packages/db/src/schema/email.ts",
+    "line": 26,
+    "table": "email_endpoints"
+  },
+  {
+    "path": "packages/db/src/schema/email.ts",
+    "line": 52,
+    "table": "email_messages"
+  },
+  {
+    "path": "packages/db/src/schema/email.ts",
+    "line": 96,
+    "table": "email_sends"
+  },
+  {
+    "path": "packages/db/src/schema/environment_custom_image_setup_sessions.ts",
+    "line": 12,
+    "table": "environment_custom_image_setup_sessions"
+  },
+  {
+    "path": "packages/db/src/schema/environment_custom_image_templates.ts",
+    "line": 16,
+    "table": "environment_custom_image_templates"
+  },
+  {
+    "path": "packages/db/src/schema/environment_leases.ts",
+    "line": 9,
+    "table": "environment_leases"
+  },
+  {
+    "path": "packages/db/src/schema/environments.ts",
+    "line": 4,
+    "table": "environments"
+  },
+  {
+    "path": "packages/db/src/schema/execution_admissions.ts",
+    "line": 12,
+    "table": "project_task_execution_policies"
+  },
+  {
+    "path": "packages/db/src/schema/execution_admissions.ts",
+    "line": 32,
+    "table": "execution_admissions"
+  },
+  {
+    "path": "packages/db/src/schema/execution_admissions.ts",
+    "line": 54,
+    "table": "execution_admission_project_charges"
+  },
+  {
+    "path": "packages/db/src/schema/execution_workspace_repositories.ts",
+    "line": 6,
+    "table": "execution_workspace_repositories"
+  },
+  {
+    "path": "packages/db/src/schema/execution_workspace_repository_access.ts",
+    "line": 5,
+    "table": "execution_workspace_repository_access"
+  },
+  {
+    "path": "packages/db/src/schema/execution_workspace_repository_roots.ts",
+    "line": 5,
+    "table": "execution_workspace_repository_roots"
+  },
+  {
+    "path": "packages/db/src/schema/execution_workspace_restore_points.ts",
+    "line": 14,
+    "table": "execution_workspace_restore_points"
+  },
+  {
+    "path": "packages/db/src/schema/execution_workspace_runtime_leases.ts",
+    "line": 11,
+    "table": "execution_workspace_runtime_leases"
+  },
+  {
+    "path": "packages/db/src/schema/execution_workspace_snapshots.ts",
+    "line": 5,
+    "table": "execution_workspace_snapshots"
+  },
+  {
+    "path": "packages/db/src/schema/execution_workspaces.ts",
+    "line": 15,
+    "table": "execution_workspaces"
+  },
+  {
+    "path": "packages/db/src/schema/external_object_mentions.ts",
+    "line": 9,
+    "table": "external_object_mentions"
+  },
+  {
+    "path": "packages/db/src/schema/external_objects.ts",
+    "line": 19,
+    "table": "external_objects"
+  },
+  {
+    "path": "packages/db/src/schema/fast_responses.ts",
+    "line": 16,
+    "table": "company_fast_responses"
+  },
+  {
+    "path": "packages/db/src/schema/fast_responses.ts",
+    "line": 41,
+    "table": "fast_response_requests"
+  },
+  {
+    "path": "packages/db/src/schema/feedback_exports.ts",
+    "line": 7,
+    "table": "feedback_exports"
+  },
+  {
+    "path": "packages/db/src/schema/feedback_votes.ts",
+    "line": 5,
+    "table": "feedback_votes"
+  },
+  {
+    "path": "packages/db/src/schema/finance_events.ts",
+    "line": 10,
+    "table": "finance_events"
+  },
+  {
+    "path": "packages/db/src/schema/folders.ts",
+    "line": 15,
+    "table": "folders"
+  },
+  {
+    "path": "packages/db/src/schema/goals.ts",
+    "line": 12,
+    "table": "goals"
+  },
+  {
+    "path": "packages/db/src/schema/grok_bot.ts",
+    "line": 11,
+    "table": "grok_bot_routines"
+  },
+  {
+    "path": "packages/db/src/schema/grok_bot.ts",
+    "line": 30,
+    "table": "grok_bot_dispatches"
+  },
+  {
+    "path": "packages/db/src/schema/heartbeat_run_events.ts",
+    "line": 18,
+    "table": "heartbeat_run_events"
+  },
+  {
+    "path": "packages/db/src/schema/heartbeat_run_watchdog_decisions.ts",
+    "line": 7,
+    "table": "heartbeat_run_watchdog_decisions"
+  },
+  {
+    "path": "packages/db/src/schema/heartbeat_runs.ts",
+    "line": 31,
+    "table": "heartbeat_runs"
+  },
+  {
+    "path": "packages/db/src/schema/inbox_dismissals.ts",
+    "line": 4,
+    "table": "inbox_dismissals"
+  },
+  {
+    "path": "packages/db/src/schema/instance_settings.ts",
+    "line": 4,
+    "table": "instance_settings"
+  },
+  {
+    "path": "packages/db/src/schema/instance_user_roles.ts",
+    "line": 3,
+    "table": "instance_user_roles"
+  },
+  {
+    "path": "packages/db/src/schema/invites.ts",
+    "line": 4,
+    "table": "invites"
+  },
+  {
+    "path": "packages/db/src/schema/issue_access_grants.ts",
+    "line": 6,
+    "table": "issue_access_grants"
+  },
+  {
+    "path": "packages/db/src/schema/issue_approvals.ts",
+    "line": 7,
+    "table": "issue_approvals"
+  },
+  {
+    "path": "packages/db/src/schema/issue_attachments.ts",
+    "line": 8,
+    "table": "issue_attachments"
+  },
+  {
+    "path": "packages/db/src/schema/issue_comments.ts",
+    "line": 16,
+    "table": "issue_comments"
+  },
+  {
+    "path": "packages/db/src/schema/issue_create_idempotency_keys.ts",
+    "line": 5,
+    "table": "issue_create_idempotency_keys"
+  },
+  {
+    "path": "packages/db/src/schema/issue_documents.ts",
+    "line": 6,
+    "table": "issue_documents"
+  },
+  {
+    "path": "packages/db/src/schema/issue_execution_decisions.ts",
+    "line": 7,
+    "table": "issue_execution_decisions"
+  },
+  {
+    "path": "packages/db/src/schema/issue_inbox_archives.ts",
+    "line": 8,
+    "table": "issue_inbox_archives"
+  },
+  {
+    "path": "packages/db/src/schema/issue_labels.ts",
+    "line": 6,
+    "table": "issue_labels"
+  },
+  {
+    "path": "packages/db/src/schema/issue_plan_decompositions.ts",
+    "line": 10,
+    "table": "issue_plan_decompositions"
+  },
+  {
+    "path": "packages/db/src/schema/issue_question_response_deliveries.ts",
+    "line": 23,
+    "table": "issue_question_response_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/issue_read_states.ts",
+    "line": 5,
+    "table": "issue_read_states"
+  },
+  {
+    "path": "packages/db/src/schema/issue_recovery_actions.ts",
+    "line": 16,
+    "table": "issue_recovery_actions"
+  },
+  {
+    "path": "packages/db/src/schema/issue_recovery_full_passes.ts",
+    "line": 11,
+    "table": "issue_recovery_full_passes"
+  },
+  {
+    "path": "packages/db/src/schema/issue_recovery_full_passes.ts",
+    "line": 27,
+    "table": "issue_recovery_deferrals"
+  },
+  {
+    "path": "packages/db/src/schema/issue_reference_mentions.ts",
+    "line": 6,
+    "table": "issue_reference_mentions"
+  },
+  {
+    "path": "packages/db/src/schema/issue_relations.ts",
+    "line": 6,
+    "table": "issue_relations"
+  },
+  {
+    "path": "packages/db/src/schema/issue_thread_interaction_idempotency_keys.ts",
+    "line": 7,
+    "table": "issue_thread_interaction_idempotency_keys"
+  },
+  {
+    "path": "packages/db/src/schema/issue_thread_interactions.ts",
+    "line": 16,
+    "table": "issue_thread_interactions"
+  },
+  {
+    "path": "packages/db/src/schema/issue_tree_hold_members.ts",
+    "line": 8,
+    "table": "issue_tree_hold_members"
+  },
+  {
+    "path": "packages/db/src/schema/issue_tree_holds.ts",
+    "line": 7,
+    "table": "issue_tree_holds"
+  },
+  {
+    "path": "packages/db/src/schema/issue_watchdogs.ts",
+    "line": 8,
+    "table": "issue_watchdogs"
+  },
+  {
+    "path": "packages/db/src/schema/issue_work_products.ts",
+    "line": 18,
+    "table": "issue_work_products"
+  },
+  {
+    "path": "packages/db/src/schema/issues.ts",
+    "line": 26,
+    "table": "issues"
+  },
+  {
+    "path": "packages/db/src/schema/join_requests.ts",
+    "line": 7,
+    "table": "join_requests"
+  },
+  {
+    "path": "packages/db/src/schema/labels.ts",
+    "line": 4,
+    "table": "labels"
+  },
+  {
+    "path": "packages/db/src/schema/managed_agent_profiles.ts",
+    "line": 24,
+    "table": "managed_agent_profiles"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 10,
+    "table": "muse_agent_bindings"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 25,
+    "table": "muse_credentials"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 33,
+    "table": "muse_runner_assignments"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 46,
+    "table": "muse_runner_operations"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 55,
+    "table": "muse_mailbox_items"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 65,
+    "table": "muse_input_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 74,
+    "table": "external_agent_holds"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 83,
+    "table": "muse_idle_receipts"
+  },
+  {
+    "path": "packages/db/src/schema/muse_runner.ts",
+    "line": 89,
+    "table": "muse_receiver_contact_buckets"
+  },
+  {
+    "path": "packages/db/src/schema/native_harness_backups.ts",
+    "line": 4,
+    "table": "native_harness_backups"
+  },
+  {
+    "path": "packages/db/src/schema/native_provider_artifacts.ts",
+    "line": 13,
+    "table": "native_provider_artifacts"
+  },
+  {
+    "path": "packages/db/src/schema/native_provider_artifacts.ts",
+    "line": 37,
+    "table": "native_provider_artifact_references"
+  },
+  {
+    "path": "packages/db/src/schema/native_run_finalizations.ts",
+    "line": 20,
+    "table": "native_run_finalizations"
+  },
+  {
+    "path": "packages/db/src/schema/native_run_results.ts",
+    "line": 16,
+    "table": "native_run_results"
+  },
+  {
+    "path": "packages/db/src/schema/native_runner_checkpoints.ts",
+    "line": 5,
+    "table": "native_runner_checkpoints"
+  },
+  {
+    "path": "packages/db/src/schema/pipeline_case_events.ts",
+    "line": 8,
+    "table": "pipeline_case_events"
+  },
+  {
+    "path": "packages/db/src/schema/pipeline_cases.ts",
+    "line": 36,
+    "table": "pipeline_cases"
+  },
+  {
+    "path": "packages/db/src/schema/pipeline_cases.ts",
+    "line": 89,
+    "table": "pipeline_case_issue_links"
+  },
+  {
+    "path": "packages/db/src/schema/pipeline_cases.ts",
+    "line": 114,
+    "table": "pipeline_case_blockers"
+  },
+  {
+    "path": "packages/db/src/schema/pipeline_cases.ts",
+    "line": 132,
+    "table": "pipeline_documents"
+  },
+  {
+    "path": "packages/db/src/schema/pipeline_cases.ts",
+    "line": 158,
+    "table": "pipeline_case_documents"
+  },
+  {
+    "path": "packages/db/src/schema/pipeline_cases.ts",
+    "line": 184,
+    "table": "pipeline_automation_executions"
+  },
+  {
+    "path": "packages/db/src/schema/pipelines.ts",
+    "line": 7,
+    "table": "pipelines"
+  },
+  {
+    "path": "packages/db/src/schema/pipelines.ts",
+    "line": 30,
+    "table": "pipeline_stages"
+  },
+  {
+    "path": "packages/db/src/schema/pipelines.ts",
+    "line": 50,
+    "table": "pipeline_transitions"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_company_settings.ts",
+    "line": 18,
+    "table": "plugin_company_settings"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_config.ts",
+    "line": 15,
+    "table": "plugin_config"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_database.ts",
+    "line": 23,
+    "table": "plugin_database_namespaces"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_database.ts",
+    "line": 50,
+    "table": "plugin_migrations"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_entities.ts",
+    "line": 28,
+    "table": "plugin_entities"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_jobs.ts",
+    "line": 31,
+    "table": "plugin_jobs"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_jobs.ts",
+    "line": 72,
+    "table": "plugin_job_runs"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_lifecycle_acknowledgments.ts",
+    "line": 5,
+    "table": "plugin_lifecycle_acknowledgments"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_lifecycle_resource_cursors.ts",
+    "line": 11,
+    "table": "plugin_lifecycle_resource_cursors"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_logs.ts",
+    "line": 25,
+    "table": "plugin_logs"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_managed_resources.ts",
+    "line": 5,
+    "table": "plugin_managed_resources"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_state.ts",
+    "line": 36,
+    "table": "plugin_state"
+  },
+  {
+    "path": "packages/db/src/schema/plugin_webhooks.ts",
+    "line": 35,
+    "table": "plugin_webhook_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/plugins.ts",
+    "line": 23,
+    "table": "plugins"
+  },
+  {
+    "path": "packages/db/src/schema/principal_permission_grants.ts",
+    "line": 4,
+    "table": "principal_permission_grants"
+  },
+  {
+    "path": "packages/db/src/schema/project_access_members.ts",
+    "line": 7,
+    "table": "project_access_members"
+  },
+  {
+    "path": "packages/db/src/schema/project_goals.ts",
+    "line": 6,
+    "table": "project_goals"
+  },
+  {
+    "path": "packages/db/src/schema/project_memberships.ts",
+    "line": 5,
+    "table": "project_memberships"
+  },
+  {
+    "path": "packages/db/src/schema/project_workspaces.ts",
+    "line": 14,
+    "table": "project_workspaces"
+  },
+  {
+    "path": "packages/db/src/schema/projects.ts",
+    "line": 10,
+    "table": "projects"
+  },
+  {
+    "path": "packages/db/src/schema/prompt_injection_prevention.ts",
+    "line": 6,
+    "table": "company_prompt_injection_prevention"
+  },
+  {
+    "path": "packages/db/src/schema/prompt_injection_prevention.ts",
+    "line": 17,
+    "table": "prompt_injection_invocations"
+  },
+  {
+    "path": "packages/db/src/schema/provider_trace_records.ts",
+    "line": 15,
+    "table": "provider_trace_records"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 9,
+    "table": "mcp_oauth_clients"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 20,
+    "table": "mcp_oauth_metadata_admissions"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 26,
+    "table": "mcp_oauth_grants"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 47,
+    "table": "mcp_oauth_requests"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 68,
+    "table": "mcp_oauth_tokens"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 85,
+    "table": "mcp_oauth_device_requests"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 108,
+    "table": "mcp_mutation_receipts"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 125,
+    "table": "mcp_event_subscriptions"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 148,
+    "table": "mcp_event_admissions"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 163,
+    "table": "mcp_event_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 182,
+    "table": "mcp_attachment_uploads"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 210,
+    "table": "mcp_file_tickets"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 221,
+    "table": "mcp_oauth_client_mirror_state"
+  },
+  {
+    "path": "packages/db/src/schema/public_mcp.ts",
+    "line": 230,
+    "table": "mcp_oauth_client_changes"
+  },
+  {
+    "path": "packages/db/src/schema/remote_agent_profiles.ts",
+    "line": 21,
+    "table": "remote_agent_profiles"
+  },
+  {
+    "path": "packages/db/src/schema/resource_lifecycle_events.ts",
+    "line": 6,
+    "table": "resource_lifecycle_events"
+  },
+  {
+    "path": "packages/db/src/schema/routine_documents.ts",
+    "line": 6,
+    "table": "routine_documents"
+  },
+  {
+    "path": "packages/db/src/schema/routines.ts",
+    "line": 23,
+    "table": "routines"
+  },
+  {
+    "path": "packages/db/src/schema/routines.ts",
+    "line": 67,
+    "table": "routine_revisions"
+  },
+  {
+    "path": "packages/db/src/schema/routines.ts",
+    "line": 106,
+    "table": "routine_triggers"
+  },
+  {
+    "path": "packages/db/src/schema/routines.ts",
+    "line": 144,
+    "table": "routine_runs"
+  },
+  {
+    "path": "packages/db/src/schema/routines.ts",
+    "line": 183,
+    "table": "routine_webhook_test_receipts"
+  },
+  {
+    "path": "packages/db/src/schema/run_identity_contexts.ts",
+    "line": 14,
+    "table": "run_identity_contexts"
+  },
+  {
+    "path": "packages/db/src/schema/runner_api_response_reservations.ts",
+    "line": 6,
+    "table": "runner_api_response_reservations"
+  },
+  {
+    "path": "packages/db/src/schema/sandbox_creation_operations.ts",
+    "line": 5,
+    "table": "sandbox_creation_operations"
+  },
+  {
+    "path": "packages/db/src/schema/secret_access_events.ts",
+    "line": 9,
+    "table": "secret_access_events"
+  },
+  {
+    "path": "packages/db/src/schema/smoke_lab.ts",
+    "line": 10,
+    "table": "smoke_runs"
+  },
+  {
+    "path": "packages/db/src/schema/smoke_lab.ts",
+    "line": 29,
+    "table": "smoke_run_steps"
+  },
+  {
+    "path": "packages/db/src/schema/status_cards.ts",
+    "line": 27,
+    "table": "status_cards"
+  },
+  {
+    "path": "packages/db/src/schema/status_cards.ts",
+    "line": 75,
+    "table": "status_card_updates"
+  },
+  {
+    "path": "packages/db/src/schema/status_decision_effects.ts",
+    "line": 17,
+    "table": "status_decision_effects"
+  },
+  {
+    "path": "packages/db/src/schema/status_decisions.ts",
+    "line": 16,
+    "table": "status_decisions"
+  },
+  {
+    "path": "packages/db/src/schema/summary_slots.ts",
+    "line": 8,
+    "table": "summary_slots"
+  },
+  {
+    "path": "packages/db/src/schema/tailscale_connections.ts",
+    "line": 5,
+    "table": "tailscale_connections"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 85,
+    "table": "tool_applications"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 111,
+    "table": "tool_connections"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 180,
+    "table": "connection_grants"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 278,
+    "table": "connection_grant_members"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 300,
+    "table": "connection_grant_delegations"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 321,
+    "table": "tool_connection_installs"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 346,
+    "table": "tool_oauth_states"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 374,
+    "table": "tool_catalog_entries"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 420,
+    "table": "tool_profiles"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 442,
+    "table": "tool_profile_entries"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 467,
+    "table": "tool_profile_bindings"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 493,
+    "table": "tool_mcp_gateways"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 567,
+    "table": "tool_mcp_gateway_tokens"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 607,
+    "table": "tool_policies"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 632,
+    "table": "tool_runtime_slots"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 676,
+    "table": "tool_stdio_command_templates"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 702,
+    "table": "tool_gateway_sessions"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 737,
+    "table": "tool_gateway_rate_limit_counters"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 761,
+    "table": "tool_invocations"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 827,
+    "table": "tool_mcp_app_views"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 863,
+    "table": "tool_mcp_skills"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 903,
+    "table": "tool_mcp_tasks"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 978,
+    "table": "tool_mcp_elicitations"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 1033,
+    "table": "tool_mcp_skill_files"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 1050,
+    "table": "tool_action_requests"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 1090,
+    "table": "tool_call_events"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 1146,
+    "table": "connection_token_issuances"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 1181,
+    "table": "tool_rate_limit_counters"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 1210,
+    "table": "tool_runtime_metric_counters"
+  },
+  {
+    "path": "packages/db/src/schema/tool_access.ts",
+    "line": 1228,
+    "table": "tool_access_audit_events"
+  },
+  {
+    "path": "packages/db/src/schema/tool_action_deliveries.ts",
+    "line": 8,
+    "table": "tool_action_deliveries"
+  },
+  {
+    "path": "packages/db/src/schema/tool_connection_app_snapshots.ts",
+    "line": 7,
+    "table": "tool_connection_app_snapshots"
+  },
+  {
+    "path": "packages/db/src/schema/tool_connection_app_syncs.ts",
+    "line": 6,
+    "table": "tool_connection_app_syncs"
+  },
+  {
+    "path": "packages/db/src/schema/user_company_preferences.ts",
+    "line": 5,
+    "table": "user_company_preferences"
+  },
+  {
+    "path": "packages/db/src/schema/user_inbox_agent_policies.ts",
+    "line": 5,
+    "table": "user_inbox_agent_policies"
+  },
+  {
+    "path": "packages/db/src/schema/user_secret_declarations.ts",
+    "line": 6,
+    "table": "user_secret_declarations"
+  },
+  {
+    "path": "packages/db/src/schema/user_secret_definitions.ts",
+    "line": 7,
+    "table": "user_secret_definitions"
+  },
+  {
+    "path": "packages/db/src/schema/user_sidebar_preferences.ts",
+    "line": 3,
+    "table": "user_sidebar_preferences"
+  },
+  {
+    "path": "packages/db/src/schema/user_workspace_preferences.ts",
+    "line": 5,
+    "table": "user_workspace_preferences"
+  },
+  {
+    "path": "packages/db/src/schema/work_assessments.ts",
+    "line": 20,
+    "table": "work_assessments"
+  },
+  {
+    "path": "packages/db/src/schema/workflows.ts",
+    "line": 5,
+    "table": "workflows"
+  },
+  {
+    "path": "packages/db/src/schema/workspace_operations.ts",
+    "line": 17,
+    "table": "workspace_operations"
+  },
+  {
+    "path": "packages/db/src/schema/workspace_runtime_services.ts",
+    "line": 19,
+    "table": "workspace_runtime_services"
+  }
+]

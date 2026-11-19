@@ -1,0 +1,478 @@
+{
+  "status": "passed",
+  "transport": "real loopback HTTP / Werkzeug WSGI server",
+  "checks": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200,
+      "response": {
+        "service": "MiroFish Backend",
+        "status": "ok"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/graph/project/list",
+      "status": 200,
+      "response": {
+        "count": 0,
+        "data": [],
+        "success": true
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/graph/project/proj_missing",
+      "status": 404,
+      "response": {
+        "error": "项目不存在: proj_missing",
+        "success": false
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/graph/ontology/generate",
+      "status": 400,
+      "response": {
+        "error": "请提供模拟需求描述 (simulation_requirement)",
+        "success": false
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/graph/ontology/generate",
+      "status": 400,
+      "response": {
+        "error": "请至少上传一个文档文件",
+        "success": false
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/graph/ontology/generate",
+      "status": 400,
+      "response": {
+        "error": "没有成功处理任何文档，请检查文件格式",
+        "success": false
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/graph/ontology/generate",
+      "status": 200,
+      "response": {
+        "data": {
+          "analysis_summary": "Deterministic local fake provider output; no inference.",
+          "files": [
+            {
+              "filename": "source.txt",
+              "size": 57
+            },
+            {
+              "filename": "source.md",
+              "size": 42
+            },
+            {
+              "filename": "source.pdf",
+              "size": 871
+            }
+          ],
+          "ontology": {
+            "edge_types": [
+              {
+                "attributes": [
+                  {
+                    "description": "Additional details about this ontology type.",
+                    "name": "details",
+                    "type": "text"
+                  }
+                ],
+                "description": "Discusses local news",
+                "name": "DISCUSSES_WITH",
+                "source_targets": [
+                  {
+                    "source": "Resident",
+                    "target": "Resident"
+                  }
+                ]
+              }
+            ],
+            "entity_types": [
+              {
+                "attributes": [
+                  {
+                    "description": "Additional details about this ontology type.",
+                    "name": "details",
+                    "type": "text"
+                  }
+                ],
+                "description": "Local resident",
+                "examples": [],
+                "name": "Resident"
+              },
+              {
+                "attributes": [
+                  {
+                    "description": "Full name of the person",
+                    "name": "full_name",
+                    "type": "text"
+                  },
+                  {
+                    "description": "Role or occupation",
+                    "name": "role",
+                    "type": "text"
+                  }
+                ],
+                "description": "Any individual person not fitting other specific person types.",
+                "examples": [
+                  "ordinary citizen",
+                  "anonymous netizen"
+                ],
+                "name": "Person"
+              },
+              {
+                "attributes": [
+                  {
+                    "description": "Name of the organization",
+                    "name": "org_name",
+                    "type": "text"
+                  },
+                  {
+                    "description": "Type of organization",
+                    "name": "org_type",
+                    "type": "text"
+                  }
+                ],
+                "description": "Any organization not fitting other specific organization types.",
+                "examples": [
+                  "small business",
+                  "community group"
+                ],
+                "name": "Organization"
+              }
+            ]
+          },
+          "project_id": "proj_155bea1c34dc",
+          "project_name": "Runtime deterministic local test",
+          "total_text_length": 195
+        },
+        "success": true
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/graph/project/proj_155bea1c34dc",
+      "status": 200,
+      "response": {
+        "data": {
+          "analysis_summary": "Deterministic local fake provider output; no inference.",
+          "chunk_overlap": 50,
+          "chunk_size": 500,
+          "created_at": "2026-11-17T07:22:34.821694",
+          "error": null,
+          "files": [
+            {
+              "filename": "source.txt",
+              "size": 57
+            },
+            {
+              "filename": "source.md",
+              "size": 42
+            },
+            {
+              "filename": "source.pdf",
+              "size": 871
+            }
+          ],
+          "graph_build_task_id": null,
+          "graph_id": null,
+          "name": "Runtime deterministic local test",
+          "ontology": {
+            "edge_types": [
+              {
+                "attributes": [
+                  {
+                    "description": "Additional details about this ontology type.",
+                    "name": "details",
+                    "type": "text"
+                  }
+                ],
+                "description": "Discusses local news",
+                "name": "DISCUSSES_WITH",
+                "source_targets": [
+                  {
+                    "source": "Resident",
+                    "target": "Resident"
+                  }
+                ]
+              }
+            ],
+            "entity_types": [
+              {
+                "attributes": [
+                  {
+                    "description": "Additional details about this ontology type.",
+                    "name": "details",
+                    "type": "text"
+                  }
+                ],
+                "description": "Local resident",
+                "examples": [],
+                "name": "Resident"
+              },
+              {
+                "attributes": [
+                  {
+                    "description": "Full name of the person",
+                    "name": "full_name",
+                    "type": "text"
+                  },
+                  {
+                    "description": "Role or occupation",
+                    "name": "role",
+                    "type": "text"
+                  }
+                ],
+                "description": "Any individual person not fitting other specific person types.",
+                "examples": [
+                  "ordinary citizen",
+                  "anonymous netizen"
+                ],
+                "name": "Person"
+              },
+              {
+                "attributes": [
+                  {
+                    "description": "Name of the organization",
+                    "name": "org_name",
+                    "type": "text"
+                  },
+                  {
+                    "description": "Type of organization",
+                    "name": "org_type",
+                    "type": "text"
+                  }
+                ],
+                "description": "Any organization not fitting other specific organization types.",
+                "examples": [
+                  "small business",
+                  "community group"
+                ],
+                "name": "Organization"
+              }
+            ]
+          },
+          "project_id": "proj_155bea1c34dc",
+          "simulation_requirement": "Model local transit discussion",
+          "status": "ontology_generated",
+          "total_text_length": 195,
+          "updated_at": "2026-11-17T07:22:35.503612",
+          "zep_batch_id": null,
+          "zep_batch_operation_id": null
+        },
+        "success": true
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/graph/project/proj_155bea1c34dc/reset",
+      "status": 200,
+      "response": {
+        "data": {
+          "analysis_summary": "Deterministic local fake provider output; no inference.",
+          "chunk_overlap": 50,
+          "chunk_size": 500,
+          "created_at": "2026-11-17T07:22:34.821694",
+          "error": null,
+          "files": [
+            {
+              "filename": "source.txt",
+              "size": 57
+            },
+            {
+              "filename": "source.md",
+              "size": 42
+            },
+            {
+              "filename": "source.pdf",
+              "size": 871
+            }
+          ],
+          "graph_build_task_id": null,
+          "graph_id": null,
+          "name": "Runtime deterministic local test",
+          "ontology": {
+            "edge_types": [
+              {
+                "attributes": [
+                  {
+                    "description": "Additional details about this ontology type.",
+                    "name": "details",
+                    "type": "text"
+                  }
+                ],
+                "description": "Discusses local news",
+                "name": "DISCUSSES_WITH",
+                "source_targets": [
+                  {
+                    "source": "Resident",
+                    "target": "Resident"
+                  }
+                ]
+              }
+            ],
+            "entity_types": [
+              {
+                "attributes": [
+                  {
+                    "description": "Additional details about this ontology type.",
+                    "name": "details",
+                    "type": "text"
+                  }
+                ],
+                "description": "Local resident",
+                "examples": [],
+                "name": "Resident"
+              },
+              {
+                "attributes": [
+                  {
+                    "description": "Full name of the person",
+                    "name": "full_name",
+                    "type": "text"
+                  },
+                  {
+                    "description": "Role or occupation",
+                    "name": "role",
+                    "type": "text"
+                  }
+                ],
+                "description": "Any individual person not fitting other specific person types.",
+                "examples": [
+                  "ordinary citizen",
+                  "anonymous netizen"
+                ],
+                "name": "Person"
+              },
+              {
+                "attributes": [
+                  {
+                    "description": "Name of the organization",
+                    "name": "org_name",
+                    "type": "text"
+                  },
+                  {
+                    "description": "Type of organization",
+                    "name": "org_type",
+                    "type": "text"
+                  }
+                ],
+                "description": "Any organization not fitting other specific organization types.",
+                "examples": [
+                  "small business",
+                  "community group"
+                ],
+                "name": "Organization"
+              }
+            ]
+          },
+          "project_id": "proj_155bea1c34dc",
+          "simulation_requirement": "Model local transit discussion",
+          "status": "ontology_generated",
+          "total_text_length": 195,
+          "updated_at": "2026-11-17T07:22:35.574638",
+          "zep_batch_id": null,
+          "zep_batch_operation_id": null
+        },
+        "message": "项目已重置: proj_155bea1c34dc",
+        "success": true
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/graph/project/proj_155bea1c34dc",
+      "status": 200,
+      "response": {
+        "message": "项目已删除: proj_155bea1c34dc",
+        "success": true
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/graph/project/proj_155bea1c34dc",
+      "status": 404,
+      "response": {
+        "error": "项目不存在: proj_155bea1c34dc",
+        "success": false
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/graph/ontology/generate",
+      "status": 502,
+      "response": {
+        "data": {
+          "project_id": "proj_2421a8ef0dd2"
+        },
+        "error": "LLM provider request failed (HTTP 401) (request_id: local-provider-denied)",
+        "success": false
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/graph/project/proj_2421a8ef0dd2",
+      "status": 200,
+      "response": {
+        "data": {
+          "analysis_summary": null,
+          "chunk_overlap": 50,
+          "chunk_size": 500,
+          "created_at": "2026-11-17T07:22:35.658467",
+          "error": "LLM provider request failed (HTTP 401) (request_id: local-provider-denied)",
+          "files": [
+            {
+              "filename": "fail.txt",
+              "size": 21
+            }
+          ],
+          "graph_build_task_id": null,
+          "graph_id": null,
+          "name": "Unnamed Project",
+          "ontology": null,
+          "project_id": "proj_2421a8ef0dd2",
+          "simulation_requirement": "Expected provider denial",
+          "status": "failed",
+          "total_text_length": 40,
+          "updated_at": "2026-11-17T07:22:35.703763",
+          "zep_batch_id": null,
+          "zep_batch_operation_id": null
+        },
+        "success": true
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/graph/project/proj_2421a8ef0dd2",
+      "status": 200,
+      "response": {
+        "message": "项目已删除: proj_2421a8ef0dd2",
+        "success": true
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/graph/project/list",
+      "status": 200,
+      "response": {
+        "count": 0,
+        "data": [],
+        "success": true
+      }
+    }
+  ],
+  "provider_call_count": 2,
+  "provider_boundary": "deterministic local OpenAI-compatible HTTP fixture; real SDK + ontology generator; no real model inference",
+  "zep_boundary": "not called",
+  "shutdown": "server stopped and listening socket closed"
+}

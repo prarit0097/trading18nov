@@ -1,0 +1,50 @@
+{
+  "command": [
+    "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-c",
+    "E:\\coding\\code\\Trade\\obb-evidence\\offline-tests\\pytest.ini",
+    "E:\\coding\\code\\Trade\\obb-evidence\\offline-tests"
+  ],
+  "exit_code": 2,
+  "files": [
+    {
+      "source": "openbb_platform/core/tests/provider/utils/test_lru.py",
+      "copy": "obb-evidence/offline-tests/test_lru.py",
+      "sha256": "2f2e0d618adb4ac13256b24ac13953ac117e521315f1e71a46fc707dff433c76"
+    },
+    {
+      "source": "openbb_platform/core/tests/app/test_utils_optional.py",
+      "copy": "obb-evidence/offline-tests/test_utils_optional.py",
+      "sha256": "fe837908fabd136c51060f08467e1536b4cfeaabb4991148c38bc4fe67f7c2be"
+    },
+    {
+      "source": "openbb_platform/core/tests/provider/utils/test_descriptions.py",
+      "copy": "obb-evidence/offline-tests/test_descriptions.py",
+      "sha256": "5c427eea0e67c0dffe2591fc477906768b6c5a450528ea1a0dc4d48f385e298a"
+    },
+    {
+      "source": "openbb_platform/core/tests/provider/abstract/test_data.py",
+      "copy": "obb-evidence/offline-tests/test_data.py",
+      "sha256": "b064fc0d1ce2fcfc01a70c334fe17aef0a6e3a4215f1e63f5af8b6afb119b71f"
+    },
+    {
+      "source": "openbb_platform/core/tests/provider/abstract/test_query_params.py",
+      "copy": "obb-evidence/offline-tests/test_query_params.py",
+      "sha256": "ff63a835cff78ff9b9c77535aa821ca5063bc695f54ce4c33a10ea6cce616041"
+    },
+    {
+      "source": "openbb_platform/core/tests/app/model/abstract/test_singleton.py",
+      "copy": "obb-evidence/offline-tests/test_singleton.py",
+      "sha256": "90fd4251c660fbe19b8fd20505a740a07ce5c0a1794768d78e63665fda505d5a"
+    },
+    {
+      "source": "openbb_platform/core/tests/app/model/abstract/test_warning.py",
+      "copy": "obb-evidence/offline-tests/test_warning.py",
+      "sha256": "72a6f763e12b1e35f7480b873c74f3fe3029c9ce48fa028241ccdf2c094d1633"
+    }
+  ],
+  "scope": "Unmodified source test copies; original repository conftest bypassed to avoid unavailable full-install dependencies; actual core source imported via PYTHONPATH; no stubs or live provider calls."
+}

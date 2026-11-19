@@ -1,0 +1,113 @@
+{
+  "at": "2026-11-17T19:09:22.939320Z",
+  "workspace": "E:\\coding\\code\\Trade\\crypto-trader-skills\\runs\\manual-real-paper-btc-eth-sol-20261117T190847278192Z",
+  "mode": "paper",
+  "entry_policy": "explicit user-directed manual BUY execution test; separate from strategy recommendations",
+  "initial_cash": "10000",
+  "cash": "5996.0704159456000000000",
+  "total_entry_notional": "3999.9296544000000000",
+  "entry_fees": "3.9999296544000000000",
+  "max_total_exposure": "4000",
+  "risk_budget_per_trade": "25",
+  "daily_loss_cutoff": "100",
+  "orders": [
+    {
+      "symbol": "BTCUSDT",
+      "order": {
+        "action": "buy",
+        "at": "2026-11-17T19:08:58.344149Z",
+        "fee": "1.9257343604000000000",
+        "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+        "mode": "paper",
+        "price": "63787.16000000",
+        "price_source": "ask_plus_adverse_slippage",
+        "quantity": "0.03019000",
+        "risk_digest": "964a51bdbe6a03aa1ebaf43a7d0245c82e046804bc66087fb3e7df5b54aeae79",
+        "symbol": "BTCUSDT"
+      },
+      "stop": "63117.72000000",
+      "target": "65030.40000000",
+      "estimated_stop_loss": "24.9934955308000000000",
+      "strategy_signal_status": "waiting",
+      "entry_policy": "manual user-directed paper execution test",
+      "market_as_of": "2026-11-17T19:08:51.758054Z"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "order": {
+        "action": "buy",
+        "at": "2026-11-17T19:09:09.181252Z",
+        "fee": "1.9247227540000000000",
+        "id": "044965cf60588bc41e0f6a136fbf04d40e30fe8b9d2611ead13c77c0e69f33a2",
+        "mode": "paper",
+        "price": "1791.94000000",
+        "price_source": "ask_plus_adverse_slippage",
+        "quantity": "1.07410000",
+        "risk_digest": "de986246cf5aa6cf4c9e0ac2dac2b1d4de788ab2e0f1f901f8659ccc77cedc15",
+        "symbol": "ETHUSDT"
+      },
+      "stop": "1773.12000000",
+      "target": "1826.88000000",
+      "estimated_stop_loss": "24.9987859970000000000",
+      "strategy_signal_status": "waiting",
+      "entry_policy": "manual user-directed paper execution test",
+      "market_as_of": "2026-11-17T19:09:02.798362Z"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "order": {
+        "action": "buy",
+        "at": "2026-11-17T19:09:19.168047Z",
+        "fee": "0.1494725400000000000",
+        "id": "4351cac8b692847eece06b22c8d7ea425752d024adb0c56c7c98adaee1554bf3",
+        "mode": "paper",
+        "price": "72.63000000",
+        "price_source": "ask_plus_adverse_slippage",
+        "quantity": "2.05800000",
+        "risk_digest": "c041b9d856ad9a6ec282a3251103d20caa732ec0ff381593a444ef0198d37a76",
+        "symbol": "SOLUSDT"
+      },
+      "stop": "71.86000000",
+      "target": "74.05000000",
+      "estimated_stop_loss": "1.9642581000000000000",
+      "strategy_signal_status": "waiting",
+      "entry_policy": "manual user-directed paper execution test",
+      "market_as_of": "2026-11-17T19:09:13.692111Z"
+    }
+  ],
+  "marks": [
+    {
+      "symbol": "BTCUSDT",
+      "observed_at": "2026-11-17T19:09:20.585318Z",
+      "bid": "63791.03000000",
+      "hypothetical_liquidation_fill": "63759.13000000",
+      "net_liquidation_value": "1922.9632465653000000000",
+      "net_unrealized_pnl_with_exit_costs": "-4.6968481951000000000"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "observed_at": "2026-11-17T19:09:21.614681Z",
+      "bid": "1791.91000000",
+      "hypothetical_liquidation_fill": "1791.01000000",
+      "net_liquidation_value": "1921.8001171590000000000",
+      "net_unrealized_pnl_with_exit_costs": "-4.8473595950000000000"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "observed_at": "2026-11-17T19:09:22.939243Z",
+      "bid": "72.59000000",
+      "hypothetical_liquidation_fill": "72.55000000",
+      "net_liquidation_value": "149.1585921000000000000",
+      "net_unrealized_pnl_with_exit_costs": "-0.4634204400000000000"
+    }
+  ],
+  "equity_if_liquidated_after_modeled_costs": "9989.9923717699000000000",
+  "net_unrealized_pnl_with_exit_costs": "-10.0076282301000000000",
+  "cost_assumptions": {
+    "fee_per_side": "0.001",
+    "adverse_slippage_bps": "5"
+  },
+  "live_exchange_orders": 0,
+  "background_exit_watcher_running": false,
+  "positions_open": 3
+}

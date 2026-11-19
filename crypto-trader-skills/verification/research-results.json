@@ -1,0 +1,328 @@
+{
+  "backtest": {
+    "assumptions": [
+      "Long spot cash/inventory research baseline; no leverage or shorting.",
+      "Signal uses prior closed highs; fill next closed bar open with adverse slippage.",
+      "Stop gaps fill at worse open; stop wins same-bar ambiguity; exit adverse slippage.",
+      "One position; venue tick/step/minimum filters, cash/notional/total exposure caps.",
+      "Normal stop sizing includes both fees and adverse exit slippage; gaps may exceed budget.",
+      "Daily realized loss blocks later entries after threshold; force settle at final close."
+    ],
+    "benchmark": {
+      "capacity_claim": false,
+      "elapsed_seconds": 0.002777,
+      "measured_locally": true
+    },
+    "limits": [
+      "Not a perpetual margin/funding/liquidation backtest.",
+      "No order-book liquidity, partial fills, funding, latency or market impact.",
+      "Historical research is not a prediction or calibrated win probability."
+    ],
+    "metrics": {
+      "closed_bars": 160,
+      "final_cash": "10000",
+      "initial_cash": "10000",
+      "max_drawdown_quote": "0",
+      "net_pnl": "0",
+      "total_fees": "0",
+      "trade_count": 0
+    },
+    "status": "complete",
+    "trades": []
+  },
+  "simulation": {
+    "assumptions": [
+      "Contiguous OHLC return blocks resampled with replacement; crypto 24/7.",
+      "One unit long plan; adverse entry/exit slip, both fees; every path settled.",
+      "Underlying horizon return continues after plan exit and is reported separately.",
+      "Stops take precedence on ambiguous bars; no favorable target gap improvement."
+    ],
+    "benchmark": {
+      "capacity_claim": false,
+      "elapsed_seconds": 0.358962,
+      "measured_locally": true
+    },
+    "limits": [
+      "Conditional stress replay, not calibrated probabilities or independent observations.",
+      "Repeated blocks and paths do not add historical information; no prediction claim.",
+      "No spread, liquidity, funding, margin, liquidation or market impact qualification."
+    ],
+    "metrics": {
+      "distinct_historical_blocks": 156,
+      "expected_shortfall_05_per_unit": "-564.848013872730363005771187",
+      "flat_count": 0,
+      "historical_return_bars": 159,
+      "horizon_bars": 20,
+      "loss_count": 9688,
+      "mean_net_pnl_per_unit": "-240.3506848959602221745767506",
+      "mean_underlying_return": "0.0006188949137986349120299732539",
+      "p05_net_pnl_per_unit": "-551.6901711365017695356255205",
+      "possible_block_starts": 156,
+      "replays": 10000,
+      "stop_count": 0,
+      "target_count": 1,
+      "timeout_count": 9999,
+      "underlying_positive_count": 7572,
+      "unique_block_sequences": 10000,
+      "unique_net_pnl": 10000,
+      "win_count": 312
+    },
+    "path_sample": [
+      {
+        "net_pnl_per_unit": "-419.3158803653006283897579450",
+        "settlement": "timeout",
+        "underlying_return": "-0.0011574926509665031454979722"
+      },
+      {
+        "net_pnl_per_unit": "-153.8972331608675611471505313",
+        "settlement": "timeout",
+        "underlying_return": "0.001476969590421475643489052"
+      },
+      {
+        "net_pnl_per_unit": "-153.4514915267758738375196727",
+        "settlement": "timeout",
+        "underlying_return": "0.001481393882070903934547776"
+      },
+      {
+        "net_pnl_per_unit": "-20.7007194193532333300381880",
+        "settlement": "timeout",
+        "underlying_return": "0.002799036407626901222922541"
+      },
+      {
+        "net_pnl_per_unit": "-286.7593752514538299470330660",
+        "settlement": "timeout",
+        "underlying_return": "0.000158221641344716422622273"
+      },
+      {
+        "net_pnl_per_unit": "-286.9022436311689755299550093",
+        "settlement": "timeout",
+        "underlying_return": "0.000156803574619517828927440"
+      },
+      {
+        "net_pnl_per_unit": "-286.4851949374939904505770865",
+        "settlement": "timeout",
+        "underlying_return": "0.000160943069142149014681637"
+      },
+      {
+        "net_pnl_per_unit": "-286.6863364237874997392762667",
+        "settlement": "timeout",
+        "underlying_return": "0.000158946601838897468981931"
+      },
+      {
+        "net_pnl_per_unit": "-286.7184363783951988464633789",
+        "settlement": "timeout",
+        "underlying_return": "0.000158627987757878827840867"
+      },
+      {
+        "net_pnl_per_unit": "-286.6026838299975237464190129",
+        "settlement": "timeout",
+        "underlying_return": "0.000159776911246525922345839"
+      }
+    ],
+    "seed": 19,
+    "status": "complete"
+  },
+  "world": {
+    "assumptions": [
+      "Actual lightweight synthetic participants each submit at most one limit order per step.",
+      "Finite initial cash per participant from demo config; each starts with 1000 inventory lots.",
+      "Price-time matching, midpoint execution; unmatched orders expire each step; zero fees.",
+      "Cash and inventory conservation and nonnegative balances checked each step."
+    ],
+    "benchmark": {
+      "capacity_claim": false,
+      "elapsed_seconds": 1.002873,
+      "measured_locally": true
+    },
+    "final_balances_digest": "f9a87932f59048787ff870bbc7ba8176f8df7f13d82740284bd1bfcdfbf76abe",
+    "ledger_digest": "cf701d52d058f33a13ff4b3347468a7276e4fde540ab250eec0a91ce663667da",
+    "ledger_sample": [
+      {
+        "buyer": 15,
+        "price": "100900.00",
+        "quantity": "0.00026",
+        "quote_transferred": "26.2340000",
+        "seller": 9,
+        "step": 0
+      },
+      {
+        "buyer": 15,
+        "price": "100900.00",
+        "quantity": "0.00013",
+        "quote_transferred": "13.1170000",
+        "seller": 13,
+        "step": 0
+      },
+      {
+        "buyer": 15,
+        "price": "100900.00",
+        "quantity": "0.00012",
+        "quote_transferred": "12.1080000",
+        "seller": 31,
+        "step": 0
+      },
+      {
+        "buyer": 71,
+        "price": "100900.00",
+        "quantity": "0.00013",
+        "quote_transferred": "13.1170000",
+        "seller": 31,
+        "step": 0
+      },
+      {
+        "buyer": 96,
+        "price": "100900.00",
+        "quantity": "0.00035",
+        "quote_transferred": "35.3150000",
+        "seller": 31,
+        "step": 0
+      },
+      {
+        "buyer": 96,
+        "price": "100900.00",
+        "quantity": "0.00022",
+        "quote_transferred": "22.1980000",
+        "seller": 39,
+        "step": 0
+      },
+      {
+        "buyer": 135,
+        "price": "100900.00",
+        "quantity": "0.00005",
+        "quote_transferred": "5.0450000",
+        "seller": 39,
+        "step": 0
+      },
+      {
+        "buyer": 135,
+        "price": "100900.00",
+        "quantity": "0.00007",
+        "quote_transferred": "7.0630000",
+        "seller": 41,
+        "step": 0
+      },
+      {
+        "buyer": 181,
+        "price": "100900.00",
+        "quantity": "0.00050",
+        "quote_transferred": "50.4500000",
+        "seller": 41,
+        "step": 0
+      },
+      {
+        "buyer": 184,
+        "price": "100900.00",
+        "quantity": "0.00003",
+        "quote_transferred": "3.0270000",
+        "seller": 41,
+        "step": 0
+      },
+      {
+        "buyer": 184,
+        "price": "100900.00",
+        "quantity": "0.00011",
+        "quote_transferred": "11.0990000",
+        "seller": 45,
+        "step": 0
+      },
+      {
+        "buyer": 184,
+        "price": "100900.00",
+        "quantity": "0.00050",
+        "quote_transferred": "50.4500000",
+        "seller": 51,
+        "step": 0
+      },
+      {
+        "buyer": 184,
+        "price": "100900.00",
+        "quantity": "0.00006",
+        "quote_transferred": "6.0540000",
+        "seller": 57,
+        "step": 0
+      },
+      {
+        "buyer": 213,
+        "price": "100900.00",
+        "quantity": "0.00009",
+        "quote_transferred": "9.0810000",
+        "seller": 57,
+        "step": 0
+      },
+      {
+        "buyer": 223,
+        "price": "100900.00",
+        "quantity": "0.00084",
+        "quote_transferred": "84.7560000",
+        "seller": 57,
+        "step": 0
+      },
+      {
+        "buyer": 227,
+        "price": "100900.00",
+        "quantity": "0.00001",
+        "quote_transferred": "1.0090000",
+        "seller": 57,
+        "step": 0
+      },
+      {
+        "buyer": 227,
+        "price": "100900.00",
+        "quantity": "0.00027",
+        "quote_transferred": "27.2430000",
+        "seller": 69,
+        "step": 0
+      },
+      {
+        "buyer": 229,
+        "price": "100900.00",
+        "quantity": "0.00032",
+        "quote_transferred": "32.2880000",
+        "seller": 69,
+        "step": 0
+      },
+      {
+        "buyer": 229,
+        "price": "100900.00",
+        "quantity": "0.00020",
+        "quote_transferred": "20.1800000",
+        "seller": 90,
+        "step": 0
+      },
+      {
+        "buyer": 231,
+        "price": "100900.00",
+        "quantity": "0.00072",
+        "quote_transferred": "72.6480000",
+        "seller": 90,
+        "step": 0
+      }
+    ],
+    "limits": [
+      "Synthetic closed economy; not real people, MiroFish/OASIS, LLM agents or a prediction.",
+      "Random order policies, no calibrated behavior, external flow, latency or market impact model.",
+      "Ledger sample is bounded; full fill stream and final balances have deterministic digests."
+    ],
+    "metrics": {
+      "all_balances_nonnegative": true,
+      "final_cash_units": 1000000000000000,
+      "final_inventory_lots": 10000000,
+      "initial_cash_units": 1000000000000000,
+      "initial_inventory_lots": 10000000,
+      "last_price": "100900.00",
+      "matched_quantity": "28.43033",
+      "matched_trades": 111293,
+      "participant_count": 10000,
+      "participants_traded": 10000,
+      "steps": 20,
+      "submitted_orders": 200000
+    },
+    "seed": 19,
+    "status": "complete",
+    "units": {
+      "cash_unit": "1E-7",
+      "inventory_lot": "0.00001",
+      "price_tick": "0.01"
+    }
+  }
+}

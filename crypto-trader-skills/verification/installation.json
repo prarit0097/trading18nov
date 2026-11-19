@@ -1,0 +1,93 @@
+{
+  "installed_at": "2026-11-17T12:41:09.248480+00:00",
+  "python": "E:\\coding\\code\\Trade\\crypto-trader-skills\\.venv\\Scripts\\python.exe",
+  "python_version": "3.13.5",
+  "pip": "pip 25.1.1 from E:\\coding\\code\\Trade\\crypto-trader-skills\\.venv\\Lib\\site-packages\\pip (python 3.13)",
+  "runtime_third_party_packages_required": [],
+  "skills": {
+    "crypto-backtest": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-backtest",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-backtest",
+      "help_exit": 0,
+      "instruction_sha256": "5ece201220090d9a0bb715a901f2fde2da714218dba0f06a935bacf74b05c0e8"
+    },
+    "crypto-entry": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-entry",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-entry",
+      "help_exit": 0,
+      "instruction_sha256": "99b56262265ac4735e45cb8b59e2401bc9163e6ad69eae59359c172840845b0e"
+    },
+    "crypto-exit": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-exit",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-exit",
+      "help_exit": 0,
+      "instruction_sha256": "086ede4d846a970db8c2098e66b6861c5a05f1baad474581300c8c4f2e12c16d"
+    },
+    "crypto-market": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-market",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-market",
+      "help_exit": 0,
+      "instruction_sha256": "f95a4d399853a27b83157e92063fc19bf1f6d6efe70755d8ec05dd9ad4687832"
+    },
+    "crypto-news": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-news",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-news",
+      "help_exit": 0,
+      "instruction_sha256": "4b976de3678aea7508e007c11d2e6281f6fc60addc581eec6c5edb9eee7ff733"
+    },
+    "crypto-paper": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-paper",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-paper",
+      "help_exit": 0,
+      "instruction_sha256": "a5105d509ea771a9f8311879bd2e684c503a50148cc071504e00cd0590442c3c"
+    },
+    "crypto-report": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-report",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-report",
+      "help_exit": 0,
+      "instruction_sha256": "361b03bb3e9ca8153a1d07b7b06874914baf83f5b3aa91cafd579b1f29dca253"
+    },
+    "crypto-risk": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-risk",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-risk",
+      "help_exit": 0,
+      "instruction_sha256": "7be943b24650be8f578af80eef62f89d4da7938eb9714491e239efc2d5c7c66d"
+    },
+    "crypto-size": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-size",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-size",
+      "help_exit": 0,
+      "instruction_sha256": "3ef4e466e6b9c17ce409c65dd58710e9f4eb1ba58b30ec4157f0128f438fe04e"
+    },
+    "crypto-timemachine": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-timemachine",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-timemachine",
+      "help_exit": 0,
+      "instruction_sha256": "e0f1345ec93be03aa4cc39d472569042957f66ace5157339099cc8496b70ea6e"
+    },
+    "crypto-workflow": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-workflow",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-workflow",
+      "help_exit": 0,
+      "instruction_sha256": "66d9eb300f6e709314fa41b20e8f48306a5dffac22730f1ce9a8138c43c8662f"
+    },
+    "crypto-world": {
+      "registered_path": "C:\\Users\\hp\\AppData\\Local\\Codex-Home-Test\\skills\\crypto-world",
+      "source": "E:\\coding\\code\\Trade\\crypto-trader-skills\\skills\\crypto-world",
+      "help_exit": 0,
+      "instruction_sha256": "fce6095e985f801c902ec4fcc872c6e083bc8e2048ae52647e9bc95c2f5c674b"
+    }
+  },
+  "isolated_test_exit": 0,
+  "unit_tests": 63,
+  "compileall_exit": 0,
+  "skill_validators_passed": 12,
+  "demo_summary": "verification/setup-demo-summary.json",
+  "demo_workspace": "E:\\coding\\code\\Trade\\crypto-trader-skills\\verification\\setup-demo",
+  "global_path_changed": false,
+  "external_packages_downloaded": 0,
+  "live_order_calls": 0,
+  "discovery_note": "User-root links verified on disk and executed; host selector refresh not observed. Restart Codex if selector remains stale.",
+  "latest_recheck": "verification/recheck/checks.json",
+  "current_primary_discovery_root": "C:\\Users\\hp\\.agents\\skills"
+}

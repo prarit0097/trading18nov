@@ -1,0 +1,50 @@
+{
+  "crypto-backtest": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-entry": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-exit": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-market": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-news": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-paper": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-report": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-risk": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-size": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-timemachine": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-workflow": [
+    true,
+    "Skill is valid!"
+  ],
+  "crypto-world": [
+    true,
+    "Skill is valid!"
+  ]
+}

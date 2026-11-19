@@ -1,0 +1,21 @@
+{
+  "evidence_checks": "PASS",
+  "commands": 9,
+  "live_stage_exit_codes": [
+    0,
+    0,
+    1,
+    1,
+    0
+  ],
+  "expected_refusal_exit_codes": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "entry": "waiting",
+  "opening_range_complete": true,
+  "orders_created": false,
+  "report_exists": true
+}

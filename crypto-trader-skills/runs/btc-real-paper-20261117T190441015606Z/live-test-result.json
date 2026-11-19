@@ -1,0 +1,108 @@
+{
+  "checked_at": "2026-11-17T19:05:31.495249Z",
+  "workspace": "E:\\coding\\code\\Trade\\crypto-trader-skills\\runs\\btc-real-paper-20261117T190441015606Z",
+  "data_source": {
+    "mode": "public_rest",
+    "base_url": "https://data-api.binance.vision",
+    "price_unit": "USDT",
+    "volume_unit": "BTC",
+    "retrieved_at": "2026-11-17T19:05:24.483342Z"
+  },
+  "market_as_of": "2026-11-17T19:05:24.483342Z",
+  "bid": "63787.52000000",
+  "ask": "63787.53000000",
+  "closed_bars": 999,
+  "last_closed_bar": {
+    "time": "2026-11-17T19:00:00Z",
+    "closed": true,
+    "open": "63774.52000000",
+    "high": "63792.09000000",
+    "low": "63723.68000000",
+    "close": "63774.51000000",
+    "volume": "38.83114000"
+  },
+  "proposal": {
+    "status": "waiting",
+    "side": "long",
+    "reasons": [
+      "No closed-bar breakout with sufficient relative volume"
+    ],
+    "research_only": false,
+    "entry": "63774.51000000",
+    "breakout_level": "64094.94000000",
+    "rvol": "0.5914548658856442262311351162",
+    "signal_time": "2026-11-17T19:05:00Z"
+  },
+  "plan": {
+    "status": "waiting",
+    "reasons": [
+      "No closed-bar breakout with sufficient relative volume"
+    ]
+  },
+  "sizing": null,
+  "risk": null,
+  "orders": {
+    "orders": [],
+    "reason": "No ready approved signal; no trade forced"
+  },
+  "news": {
+    "items": 30,
+    "source_health": {
+      "https://cointelegraph.com/rss": {
+        "last_checked": "2026-11-17T19:04:46.427204Z",
+        "next_poll_at": "2026-11-17T19:05:46.427204Z",
+        "http_status": 200,
+        "last_modified": "Tue, 17 Nov 2026 19:00:45 GMT",
+        "status": "ok",
+        "last_success": "2026-11-17T19:04:46.427204Z"
+      }
+    }
+  },
+  "backtest": {
+    "trade_count": 10,
+    "initial_cash": "10000",
+    "final_cash": "9810.2410993354000000000",
+    "net_pnl": "-189.7589006646000000000",
+    "total_fees": "39.8459382646000000000",
+    "max_drawdown_quote": "189.7589006646000000000",
+    "closed_bars": 999
+  },
+  "real_exchange_orders": 0,
+  "virtual_limits": {
+    "initial_cash": "10000",
+    "risk_budget": "25",
+    "max_daily_loss": "100",
+    "max_notional": "2000",
+    "max_total_exposure": "4000"
+  },
+  "execution_cost_assumptions": {
+    "fee_rate": "0.001",
+    "slippage_bps": "5"
+  },
+  "protective_exit_watcher_running": false,
+  "first_check": {
+    "checked_at": "2026-11-17T19:04:54.006938Z",
+    "market_as_of": "2026-11-17T19:04:47.595633Z",
+    "last_closed_bar": {
+      "time": "2026-11-17T18:55:00Z",
+      "closed": true,
+      "open": "63872.95000000",
+      "high": "63872.95000000",
+      "low": "63693.91000000",
+      "close": "63774.53000000",
+      "volume": "85.54968000"
+    },
+    "proposal": {
+      "status": "waiting",
+      "side": "long",
+      "reasons": [
+        "No closed-bar breakout with sufficient relative volume"
+      ],
+      "research_only": false,
+      "entry": "63774.53000000",
+      "breakout_level": "64094.94000000",
+      "rvol": "1.303913013389377263675951515",
+      "signal_time": "2026-11-17T19:00:00Z"
+    }
+  }
+}

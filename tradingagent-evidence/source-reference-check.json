@@ -1,0 +1,1316 @@
+{
+  "count": 262,
+  "issues": [],
+  "references": [
+    {
+      "path": "tradingagents/__init__.py",
+      "first": 1,
+      "last": 13
+    },
+    {
+      "path": "pyproject.toml",
+      "first": 1,
+      "last": 65
+    },
+    {
+      "path": "main.py",
+      "first": 1,
+      "last": 16
+    },
+    {
+      "path": "LICENSE",
+      "first": 1,
+      "last": 8
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 69,
+      "last": 69
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 125,
+      "last": 125
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 30,
+      "last": 30
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 167,
+      "last": 167
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 293,
+      "last": 293
+    },
+    {
+      "path": "tradingagents/graph/analyst_execution.py",
+      "first": 20,
+      "last": 20
+    },
+    {
+      "path": "tradingagents/graph/analyst_execution.py",
+      "first": 49,
+      "last": 49
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 157,
+      "last": 157
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 164,
+      "last": 164
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 168,
+      "last": 168
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 185,
+      "last": 185
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 53,
+      "last": 53
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 48,
+      "last": 48
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 70,
+      "last": 70
+    },
+    {
+      "path": "tradingagents/agents/analysts/turn.py",
+      "first": 13,
+      "last": 13
+    },
+    {
+      "path": "tradingagents/agents/analysts/turn.py",
+      "first": 30,
+      "last": 30
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 88,
+      "last": 88
+    },
+    {
+      "path": "tradingagents/agents/analysts/market_analyst.py",
+      "first": 8,
+      "last": 8
+    },
+    {
+      "path": "tradingagents/agents/analysts/market_analyst.py",
+      "first": 22,
+      "last": 22
+    },
+    {
+      "path": "tradingagents/agents/analysts/market_analyst.py",
+      "first": 46,
+      "last": 46
+    },
+    {
+      "path": "tradingagents/agents/analysts/news_analyst.py",
+      "first": 13,
+      "last": 13
+    },
+    {
+      "path": "tradingagents/agents/analysts/news_analyst.py",
+      "first": 28,
+      "last": 28
+    },
+    {
+      "path": "tradingagents/agents/analysts/fundamentals_analyst.py",
+      "first": 14,
+      "last": 14
+    },
+    {
+      "path": "tradingagents/agents/researchers/bull_researcher.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "tradingagents/agents/analysts/sentiment_analyst.py",
+      "first": 43,
+      "last": 43
+    },
+    {
+      "path": "tradingagents/agents/analysts/sentiment_analyst.py",
+      "first": 63,
+      "last": 63
+    },
+    {
+      "path": "tradingagents/agents/analysts/sentiment_analyst.py",
+      "first": 109,
+      "last": 109
+    },
+    {
+      "path": "tradingagents/agents/schemas.py",
+      "first": 296,
+      "last": 296
+    },
+    {
+      "path": "tradingagents/agents/researchers/bull_researcher.py",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "tradingagents/agents/researchers/bull_researcher.py",
+      "first": 31,
+      "last": 31
+    },
+    {
+      "path": "tradingagents/agents/researchers/bear_researcher.py",
+      "first": 31,
+      "last": 31
+    },
+    {
+      "path": "tradingagents/agents/researchers/bear_researcher.py",
+      "first": 53,
+      "last": 53
+    },
+    {
+      "path": "tradingagents/graph/conditional_logic.py",
+      "first": 12,
+      "last": 12
+    },
+    {
+      "path": "tradingagents/agents/managers/research_manager.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "tradingagents/agents/schemas.py",
+      "first": 95,
+      "last": 95
+    },
+    {
+      "path": "tradingagents/agents/trader/trader.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "tradingagents/agents/trader/trader.py",
+      "first": 46,
+      "last": 46
+    },
+    {
+      "path": "tradingagents/agents/trader/trader.py",
+      "first": 76,
+      "last": 76
+    },
+    {
+      "path": "tradingagents/agents/trader/trader.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "tradingagents/agents/risk_mgmt/aggressive_debator.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "tradingagents/agents/risk_mgmt/conservative_debator.py",
+      "first": 32,
+      "last": 32
+    },
+    {
+      "path": "tradingagents/agents/risk_mgmt/neutral_debator.py",
+      "first": 32,
+      "last": 32
+    },
+    {
+      "path": "tradingagents/graph/conditional_logic.py",
+      "first": 23,
+      "last": 23
+    },
+    {
+      "path": "tradingagents/agents/managers/portfolio_manager.py",
+      "first": 26,
+      "last": 26
+    },
+    {
+      "path": "tradingagents/agents/managers/portfolio_manager.py",
+      "first": 78,
+      "last": 78
+    },
+    {
+      "path": "tradingagents/agents/schemas.py",
+      "first": 221,
+      "last": 221
+    },
+    {
+      "path": "tradingagents/agents/state.py",
+      "first": 45,
+      "last": 45
+    },
+    {
+      "path": "tradingagents/agents/structured.py",
+      "first": 42,
+      "last": 42
+    },
+    {
+      "path": "tradingagents/agents/structured.py",
+      "first": 59,
+      "last": 59
+    },
+    {
+      "path": "tradingagents/agents/schemas.py",
+      "first": 33,
+      "last": 33
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 177,
+      "last": 177
+    },
+    {
+      "path": "tradingagents/graph/checkpointer.py",
+      "first": 19,
+      "last": 19
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 140,
+      "last": 140
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 192,
+      "last": 192
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 221,
+      "last": 221
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 247,
+      "last": 247
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 309,
+      "last": 309
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 359,
+      "last": 359
+    },
+    {
+      "path": "tradingagents/memory/reflection.py",
+      "first": 13,
+      "last": 13
+    },
+    {
+      "path": "tradingagents/memory/reflection.py",
+      "first": 36,
+      "last": 36
+    },
+    {
+      "path": "README.md",
+      "first": 106,
+      "last": 106
+    },
+    {
+      "path": "tradingagents/graph/setup.py",
+      "first": 185,
+      "last": 185
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 373,
+      "last": 373
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "tests/test_graph_end_to_end.py",
+      "first": 50,
+      "last": 50
+    },
+    {
+      "path": "tests/test_graph_end_to_end.py",
+      "first": 102,
+      "last": 102
+    },
+    {
+      "path": "tests/test_graph_end_to_end.py",
+      "first": 133,
+      "last": 133
+    },
+    {
+      "path": "tests/test_graph_end_to_end.py",
+      "first": 151,
+      "last": 151
+    },
+    {
+      "path": "tests/test_graph_end_to_end.py",
+      "first": 182,
+      "last": 182
+    },
+    {
+      "path": "tests/test_graph_end_to_end.py",
+      "first": 257,
+      "last": 257
+    },
+    {
+      "path": "tests/test_graph_end_to_end.py",
+      "first": 334,
+      "last": 334
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 19,
+      "last": 19
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 42,
+      "last": 42
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 73,
+      "last": 73
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 172,
+      "last": 172
+    },
+    {
+      "path": "tradingagents/dataflows/date_window.py",
+      "first": 77,
+      "last": 77
+    },
+    {
+      "path": "tradingagents/dataflows/date_window.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "tradingagents/dataflows/date_window.py",
+      "first": 17,
+      "last": 17
+    },
+    {
+      "path": "tradingagents/dataflows/config.py",
+      "first": 13,
+      "last": 13
+    },
+    {
+      "path": "tradingagents/dataflows/config.py",
+      "first": 26,
+      "last": 26
+    },
+    {
+      "path": "tradingagents/dataflows/config.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "tradingagents/dataflows/router.py",
+      "first": 160,
+      "last": 160
+    },
+    {
+      "path": "tradingagents/dataflows/router.py",
+      "first": 202,
+      "last": 202
+    },
+    {
+      "path": "tradingagents/dataflows/router.py",
+      "first": 233,
+      "last": 233
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 165,
+      "last": 165
+    },
+    {
+      "path": "tradingagents/dataflows/errors.py",
+      "first": 1,
+      "last": 1
+    },
+    {
+      "path": "tradingagents/dataflows/router.py",
+      "first": 178,
+      "last": 178
+    },
+    {
+      "path": "tradingagents/dataflows/router.py",
+      "first": 257,
+      "last": 257
+    },
+    {
+      "path": "tradingagents/dataflows/symbols.py",
+      "first": 51,
+      "last": 51
+    },
+    {
+      "path": "tradingagents/dataflows/symbols.py",
+      "first": 103,
+      "last": 103
+    },
+    {
+      "path": "tradingagents/dataflows/symbols.py",
+      "first": 155,
+      "last": 155
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/market.py",
+      "first": 18,
+      "last": 18
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/ohlcv.py",
+      "first": 45,
+      "last": 45
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/ohlcv.py",
+      "first": 147,
+      "last": 147
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/ohlcv.py",
+      "first": 159,
+      "last": 159
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/ohlcv.py",
+      "first": 249,
+      "last": 249
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/snapshot.py",
+      "first": 33,
+      "last": 33
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/snapshot.py",
+      "first": 73,
+      "last": 73
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/common.py",
+      "first": 32,
+      "last": 32
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/common.py",
+      "first": 69,
+      "last": 69
+    },
+    {
+      "path": "tradingagents/dataflows/date_window.py",
+      "first": 119,
+      "last": 119
+    },
+    {
+      "path": "tradingagents/dataflows/date_window.py",
+      "first": 145,
+      "last": 145
+    },
+    {
+      "path": "tradingagents/dataflows/date_window.py",
+      "first": 164,
+      "last": 164
+    },
+    {
+      "path": "tests/test_statement_knowledge_time.py",
+      "first": 25,
+      "last": 25
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/sec_edgar.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/sec_edgar.py",
+      "first": 123,
+      "last": 123
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/sec_edgar.py",
+      "first": 154,
+      "last": 154
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/sec_edgar.py",
+      "first": 191,
+      "last": 191
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/sec_edgar.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/sec_edgar.py",
+      "first": 79,
+      "last": 79
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/sec_edgar.py",
+      "first": 205,
+      "last": 205
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/sec_edgar.py",
+      "first": 258,
+      "last": 258
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/news.py",
+      "first": 17,
+      "last": 17
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/news.py",
+      "first": 87,
+      "last": 87
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/yahoo/news.py",
+      "first": 137,
+      "last": 137
+    },
+    {
+      "path": "tradingagents/dataflows/date_window.py",
+      "first": 45,
+      "last": 45
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/alpha_vantage/common.py",
+      "first": 90,
+      "last": 90
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/alpha_vantage/common.py",
+      "first": 156,
+      "last": 156
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/alpha_vantage/stock.py",
+      "first": 9,
+      "last": 9
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/alpha_vantage/news.py",
+      "first": 10,
+      "last": 10
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/alpha_vantage/indicator.py",
+      "first": 187,
+      "last": 187
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/fred.py",
+      "first": 102,
+      "last": 102
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/fred.py",
+      "first": 167,
+      "last": 167
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/fred.py",
+      "first": 195,
+      "last": 195
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/polymarket.py",
+      "first": 32,
+      "last": 32
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/polymarket.py",
+      "first": 50,
+      "last": 50
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/polymarket.py",
+      "first": 86,
+      "last": 86
+    },
+    {
+      "path": "tradingagents/agents/analysts/sentiment_analyst.py",
+      "first": 56,
+      "last": 56
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/stocktwits.py",
+      "first": 74,
+      "last": 74
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/reddit.py",
+      "first": 105,
+      "last": 105
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/reddit.py",
+      "first": 175,
+      "last": 175
+    },
+    {
+      "path": "tradingagents/dataflows/vendors/reddit.py",
+      "first": 248,
+      "last": 248
+    },
+    {
+      "path": "tradingagents/agents/post_screen.py",
+      "first": 66,
+      "last": 66
+    },
+    {
+      "path": "tradingagents/agents/post_screen.py",
+      "first": 134,
+      "last": 134
+    },
+    {
+      "path": "tradingagents/agents/post_screen.py",
+      "first": 173,
+      "last": 173
+    },
+    {
+      "path": "tradingagents/agents/context.py",
+      "first": 106,
+      "last": 106
+    },
+    {
+      "path": "tradingagents/llm_clients/factory.py",
+      "first": 6,
+      "last": 6
+    },
+    {
+      "path": "tradingagents/llm_clients/factory.py",
+      "first": 102,
+      "last": 102
+    },
+    {
+      "path": "tradingagents/llm_clients/factory.py",
+      "first": 153,
+      "last": 153
+    },
+    {
+      "path": "tradingagents/llm_clients/base_client.py",
+      "first": 41,
+      "last": 41
+    },
+    {
+      "path": "tradingagents/llm_clients/validators.py",
+      "first": 7,
+      "last": 7
+    },
+    {
+      "path": "tradingagents/llm_clients/openai_client.py",
+      "first": 19,
+      "last": 19
+    },
+    {
+      "path": "tradingagents/llm_clients/openai_client.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "tradingagents/llm_clients/openai_client.py",
+      "first": 129,
+      "last": 129
+    },
+    {
+      "path": "tradingagents/llm_clients/openai_client.py",
+      "first": 276,
+      "last": 276
+    },
+    {
+      "path": "tradingagents/llm_clients/openai_client.py",
+      "first": 344,
+      "last": 344
+    },
+    {
+      "path": "tradingagents/llm_clients/base_client.py",
+      "first": 6,
+      "last": 6
+    },
+    {
+      "path": "tradingagents/llm_clients/google_client.py",
+      "first": 44,
+      "last": 44
+    },
+    {
+      "path": "tradingagents/llm_clients/anthropic_client.py",
+      "first": 60,
+      "last": 60
+    },
+    {
+      "path": "tradingagents/llm_clients/azure_client.py",
+      "first": 35,
+      "last": 35
+    },
+    {
+      "path": "tradingagents/llm_clients/bedrock_client.py",
+      "first": 52,
+      "last": 52
+    },
+    {
+      "path": "tradingagents/llm_clients/openai_client.py",
+      "first": 165,
+      "last": 165
+    },
+    {
+      "path": "tradingagents/llm_clients/openai_client.py",
+      "first": 305,
+      "last": 305
+    },
+    {
+      "path": "tradingagents/llm_clients/chatgpt_auth.py",
+      "first": 75,
+      "last": 75
+    },
+    {
+      "path": "tradingagents/llm_clients/chatgpt_auth.py",
+      "first": 119,
+      "last": 119
+    },
+    {
+      "path": "tradingagents/llm_clients/chatgpt_auth.py",
+      "first": 228,
+      "last": 228
+    },
+    {
+      "path": "tradingagents/llm_clients/chatgpt_auth.py",
+      "first": 365,
+      "last": 365
+    },
+    {
+      "path": "tradingagents/dataflows/net.py",
+      "first": 6,
+      "last": 6
+    },
+    {
+      "path": "tradingagents/dataflows/files.py",
+      "first": 14,
+      "last": 14
+    },
+    {
+      "path": "tests/test_tool_date_enforcement.py",
+      "first": 70,
+      "last": 70
+    },
+    {
+      "path": "tests/test_social_lookahead.py",
+      "first": 155,
+      "last": 155
+    },
+    {
+      "path": "tests/test_tier_providers.py",
+      "first": 42,
+      "last": 42
+    },
+    {
+      "path": "tests/test_chatgpt_auth.py",
+      "first": 182,
+      "last": 182
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 19,
+      "last": 19
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 42,
+      "last": 42
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 73,
+      "last": 73
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 98,
+      "last": 98
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 115,
+      "last": 115
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 134,
+      "last": 134
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 153,
+      "last": 153
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 172,
+      "last": 172
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 195,
+      "last": 195
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 219,
+      "last": 219
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 233,
+      "last": 233
+    },
+    {
+      "path": "tradingagents/agents/tools.py",
+      "first": 268,
+      "last": 268
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 84,
+      "last": 84
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 85,
+      "last": 85
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 86,
+      "last": 86
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 90,
+      "last": 90
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 92,
+      "last": 92
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 93,
+      "last": 93
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 94,
+      "last": 94
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 100,
+      "last": 100
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 104,
+      "last": 104
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 105,
+      "last": 105
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 106,
+      "last": 106
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 107,
+      "last": 107
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 109,
+      "last": 109
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 110,
+      "last": 110
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 111,
+      "last": 111
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 116,
+      "last": 116
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 120,
+      "last": 120
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 125,
+      "last": 125
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 128,
+      "last": 128
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 131,
+      "last": 131
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 133,
+      "last": 133
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 134,
+      "last": 134
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 135,
+      "last": 135
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 137,
+      "last": 137
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 141,
+      "last": 141
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 142,
+      "last": 142
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 143,
+      "last": 143
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 146,
+      "last": 146
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 158,
+      "last": 158
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 169,
+      "last": 169
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 180,
+      "last": 180
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 181,
+      "last": 181
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 182,
+      "last": 182
+    },
+    {
+      "path": "tradingagents/default_config.py",
+      "first": 1,
+      "last": 208
+    },
+    {
+      "path": "tradingagents/__init__.py",
+      "first": 5,
+      "last": 13
+    },
+    {
+      "path": "pyproject.toml",
+      "first": 12,
+      "last": 45
+    },
+    {
+      "path": "requirements.txt",
+      "first": 1,
+      "last": 3
+    },
+    {
+      "path": "cli/main.py",
+      "first": 39,
+      "last": 39
+    },
+    {
+      "path": "cli/main.py",
+      "first": 45,
+      "last": 45
+    },
+    {
+      "path": "cli/main.py",
+      "first": 50,
+      "last": 50
+    },
+    {
+      "path": "cli/main.py",
+      "first": 56,
+      "last": 56
+    },
+    {
+      "path": "cli/main.py",
+      "first": 57,
+      "last": 57
+    },
+    {
+      "path": "cli/main.py",
+      "first": 58,
+      "last": 58
+    },
+    {
+      "path": "cli/main.py",
+      "first": 61,
+      "last": 61
+    },
+    {
+      "path": "cli/main.py",
+      "first": 64,
+      "last": 64
+    },
+    {
+      "path": "cli/main.py",
+      "first": 67,
+      "last": 67
+    },
+    {
+      "path": "cli/main.py",
+      "first": 109,
+      "last": 109
+    },
+    {
+      "path": "cli/main.py",
+      "first": 110,
+      "last": 110
+    },
+    {
+      "path": "cli/main.py",
+      "first": 111,
+      "last": 111
+    },
+    {
+      "path": "cli/main.py",
+      "first": 112,
+      "last": 112
+    },
+    {
+      "path": "cli/main.py",
+      "first": 113,
+      "last": 113
+    },
+    {
+      "path": "cli/main.py",
+      "first": 116,
+      "last": 116
+    },
+    {
+      "path": "cli/main.py",
+      "first": 117,
+      "last": 117
+    },
+    {
+      "path": "cli/main.py",
+      "first": 120,
+      "last": 120
+    },
+    {
+      "path": "cli/main.py",
+      "first": 36,
+      "last": 185
+    },
+    {
+      "path": "cli/prefs.py",
+      "first": 1,
+      "last": 65
+    },
+    {
+      "path": "tests/test_cli_headless.py",
+      "first": 1,
+      "last": 25
+    },
+    {
+      "path": "cli/updates.py",
+      "first": 1,
+      "last": 46
+    },
+    {
+      "path": "tradingagents/portfolio.py",
+      "first": 1,
+      "last": 81
+    },
+    {
+      "path": "tests/test_portfolio_context.py",
+      "first": 1,
+      "last": 49
+    },
+    {
+      "path": "tradingagents/memory/log.py",
+      "first": 12,
+      "last": 131
+    },
+    {
+      "path": "tradingagents/memory/log.py",
+      "first": 138,
+      "last": 309
+    },
+    {
+      "path": "tradingagents/memory/settlement.py",
+      "first": 16,
+      "last": 118
+    },
+    {
+      "path": "tradingagents/memory/settlement.py",
+      "first": 129,
+      "last": 192
+    },
+    {
+      "path": "tradingagents/memory/reflection.py",
+      "first": 6,
+      "last": 63
+    },
+    {
+      "path": "tradingagents/dataflows/files.py",
+      "first": 14,
+      "last": 88
+    },
+    {
+      "path": "tradingagents/backtest.py",
+      "first": 1,
+      "last": 55
+    },
+    {
+      "path": "tradingagents/backtest.py",
+      "first": 66,
+      "last": 128
+    },
+    {
+      "path": "tradingagents/backtest.py",
+      "first": 143,
+      "last": 236
+    },
+    {
+      "path": "tests/test_backtest.py",
+      "first": 1,
+      "last": 15
+    },
+    {
+      "path": "tradingagents/reporting.py",
+      "first": 20,
+      "last": 136
+    },
+    {
+      "path": "tradingagents/report_html.py",
+      "first": 1,
+      "last": 14
+    },
+    {
+      "path": "tradingagents/report_html.py",
+      "first": 187,
+      "last": 208
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 255,
+      "last": 291
+    },
+    {
+      "path": "tradingagents/graph/trading_graph.py",
+      "first": 438,
+      "last": 476
+    },
+    {
+      "path": "cli/run.py",
+      "first": 132,
+      "last": 179
+    },
+    {
+      "path": "cli/run.py",
+      "first": 426,
+      "last": 462
+    },
+    {
+      "path": "pyproject.toml",
+      "first": 47,
+      "last": 76
+    },
+    {
+      "path": "Dockerfile",
+      "first": 1,
+      "last": 30
+    },
+    {
+      "path": "docker-compose.yml",
+      "first": 1,
+      "last": 36
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "first": 1,
+      "last": 67
+    },
+    {
+      "path": ".github/workflows/release-assets.yml",
+      "first": 1,
+      "last": 59
+    },
+    {
+      "path": "tests/conftest.py",
+      "first": 1,
+      "last": 135
+    }
+  ]
+}

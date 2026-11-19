@@ -1,0 +1,1 @@
+exit.py: trader/entry.json says NVDA is waiting, not triggered: plan once it triggers, or give --entry PRICE to plan ahead

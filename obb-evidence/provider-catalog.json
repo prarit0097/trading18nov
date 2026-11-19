@@ -1,0 +1,353 @@
+[
+  {
+    "file": "openbb_platform/core/tests/app/static/package_builder/test_method_definition_helpers.py",
+    "line": 480,
+    "definition": {
+      "name": "'rich_a'",
+      "description": "'rich A'",
+      "website": "'https://example.invalid'",
+      "credentials": "None",
+      "fetcher_dict": "{'RichModel': _RichAFetcher}"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/app/static/package_builder/test_method_definition_helpers.py",
+    "line": 489,
+    "definition": {
+      "name": "'rich_b'",
+      "description": "'rich B'",
+      "website": "'https://example.invalid'",
+      "credentials": "None",
+      "fetcher_dict": "{'RichModel': _RichBFetcher}"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/app/test_extension_loader.py",
+    "line": 271,
+    "definition": {
+      "name": "'ok'",
+      "description": "'ok provider'"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/conftest.py",
+    "line": 153,
+    "definition": {
+      "name": "fake_provider_name",
+      "description": "'Fake provider used to exercise core wiring without external deps.'",
+      "website": "'https://example.invalid'",
+      "credentials": "['api_key', 'api_secret']",
+      "fetcher_dict": "{fake_model_name: _FakeFetcher, single_result_model_name: _SingleResultFetcher}"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/conftest.py",
+    "line": 170,
+    "definition": {
+      "name": "second_fake_provider_name",
+      "description": "'Second fake provider \u2014 exercises multi-provider model merging.'",
+      "website": "'https://example.invalid'",
+      "credentials": "None",
+      "fetcher_dict": "{fake_model_name: _SecondFakeFetcher}"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/abstract/test_provider.py",
+    "line": 9,
+    "definition": {
+      "name": "'TestProvider'",
+      "description": "'A simple test provider.'"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/abstract/test_provider.py",
+    "line": 20,
+    "definition": {
+      "name": "'TestProvider'",
+      "description": "'A simple test provider.'",
+      "website": "'https://testprovider.example.com'",
+      "credentials": "['api_key']",
+      "fetcher_dict": "{'fetcher1': Fetcher}"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/abstract/test_provider.py",
+    "line": 38,
+    "definition": {
+      "name": "'TestProvider'",
+      "description": "'A simple test provider.'",
+      "credentials": "credentials"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/test_query_executor.py",
+    "line": 19,
+    "definition": {
+      "name": "'Test'",
+      "description": "'Test provider'",
+      "fetcher_dict": "{'test_fetcher': Fetcher}"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/test_registry.py",
+    "line": 18,
+    "definition": {
+      "name": "'TestProvider'",
+      "description": "'Just a test provider.'"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/test_registry.py",
+    "line": 30,
+    "definition": {
+      "name": "'MockProviderA'",
+      "description": "'Mock provider A'"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/test_registry.py",
+    "line": 31,
+    "definition": {
+      "name": "'MockProviderB'",
+      "description": "'Mock provider B'"
+    }
+  },
+  {
+    "file": "openbb_platform/core/tests/provider/test_registry_map.py",
+    "line": 280,
+    "definition": {
+      "name": "'bad'",
+      "description": "'bad'",
+      "fetcher_dict": "{'BogusModel': BogusFetcher}"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/bls/openbb_bls/__init__.py",
+    "line": 74,
+    "definition": {
+      "name": "'bls'",
+      "website": "'https://www.bls.gov/developers/api_signature_v2.htm'",
+      "description": "\"The Bureau of Labor Statistics' (BLS) Public Data Application Programming Interface (API)\" + ' gives the public access to economic data from all BLS programs.' + \" It is the Bureau's hope that talented developers and programmers will use the BLS Public Data API to create\" + ' original, inventive applications with published BLS data.'",
+      "credentials": "['api_key']",
+      "fetcher_dict": "{'BlsCpiDocuments': BlsCpiDocumentsFetcher, 'BlsEmpsitDocuments': BlsEmpsitDocumentsFetcher, 'BlsCesTable1': BlsCesTable1Fetcher, 'BlsCesTable2': BlsCesTable2Fetcher, 'BlsCesTable3A': BlsCesTable3AFetcher, 'BlsCesTable3B': BlsCesTable3BFetcher, 'BlsCesTable4': BlsCesTable4Fetcher, 'BlsCesTable5': BlsCesTable5Fetcher, 'BlsCesTable6': BlsCesTable6Fetcher, 'BlsCesTable7': BlsCesTable7Fetcher, 'BlsCesConfidenceIntervals': BlsCesConfidenceIntervalsFetcher, **EMPSIT_SUMMARY_FETCHERS, **EMPSIT_CHART_FETCHERS, 'BlsCpiNrTable1': BlsCpiNrTable1Fetcher, 'BlsCpiNrTable2': BlsCpiNrTable2Fetcher, 'BlsCpiNrTable3': BlsCpiNrTable3Fetcher, 'BlsCpiNrTable4': BlsCpiNrTable4Fetcher, 'BlsCpiNrTable5': BlsCpiNrTable5Fetcher, 'BlsCpiNrTable6': BlsCpiNrTable6Fetcher, 'BlsCpiNrTable7': BlsCpiNrTable7Fetcher, 'BlsCpiRelativeImportance': BlsCpiRelativeImportanceFetcher, 'BlsCpiSeasonalFactors': BlsCpiSeasonalFactorsFetcher, 'BlsCpiSupplementalTables': BlsCpiSupplementalTablesFetcher, **CPI_CHART_FETCHERS, 'BlsJoltsChangeAnalysis': BlsJoltsChangeAnalysisFetcher, 'BlsJoltsDocuments': BlsJoltsDocumentsFetcher, 'BlsJoltsRevisions': BlsJoltsRevisionsFetcher, **JOLTS_CHART_FETCHERS, 'BlsPpiDetailedReport': BlsPpiDetailedReportFetcher, 'BlsPpiDocuments': BlsPpiDocumentsFetcher, 'BlsPpiRelativeImportance': BlsPpiRelativeImportanceFetcher, 'BlsPpiSeasonalFactors': BlsPpiSeasonalFactorsFetcher, **PPI_CHART_FETCHERS, 'BlsProductivityDocuments': BlsProductivityDocumentsFetcher, 'BlsProductivityTables': BlsProductivityTablesFetcher, **PRODUCTIVITY_CHART_FETCHERS, **TFP_CHART_FETCHERS, **WHOLESALE_RETAIL_CHART_FETCHERS, **MINING_MANUFACTURING_CHART_FETCHERS, 'BlsRealerDocuments': BlsRealerDocumentsFetcher, 'BlsSearch': BlsSearchFetcher, 'BlsSeries': BlsSeriesFetcher, 'BlsXimpimImportExport': BlsXimpimImportExportFetcher, 'BlsXimpimImportsByCategory': BlsXimpimImportsByCategoryFetcher, 'BlsXimpimExportsByCategory': BlsXimpimExportsByCategoryFetcher, 'BlsXimpimImportsByOrigin': BlsXimpimImportsByOriginFetcher, 'BlsXimpimExportsByGrains': BlsXimpimExportsByGrainsFetcher, 'BlsXimpimAirFares': BlsXimpimAirFaresFetcher, 'BlsXimpimDocuments': BlsXimpimDocumentsFetcher, _calendar_key: BlsEconomicCalendarFetcher}",
+      "repr_name": "\"Bureau of Labor Statistics' (BLS) Public Data API\"",
+      "instructions": "'Sign up for a free API key here: https://data.bls.gov/registrationEngine/'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/cboe/openbb_cboe/__init__.py",
+    "line": 70,
+    "definition": {
+      "name": "'cboe'",
+      "website": "'https://www.cboe.com'",
+      "description": "\"Cboe is the world's go-to derivatives and exchange network,\\ndelivering cutting-edge trading, clearing and investment solutions to people\\naround the world.\"",
+      "credentials": "None",
+      "fetcher_dict": "_fetcher_dict",
+      "repr_name": "'Chicago Board Options Exchange (CBOE)'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/cftc/openbb_cftc/__init__.py",
+    "line": 25,
+    "definition": {
+      "name": "'cftc'",
+      "website": "'https://cftc.gov/'",
+      "description": "'The mission of the Commodity Futures Trading Commission (CFTC) is to promote the integrity,\\n    resilience, and vibrancy of the U.S. derivatives markets through sound regulation.\\n    Commitment of Traders reports are sourced from the CFTC Public Reporting API. Swap transaction\\n    and pricing data is sourced from the DTCC Public Price Dissemination service, the swap data\\n    repository that publishes CFTC-jurisdiction transactions. Overnight index swap curves and FX\\n    forward points are constructed from those executed transactions.'",
+      "credentials": "['app_token']",
+      "fetcher_dict": "{'CftcCdsIndexTrades': CftcCdsIndexTradesFetcher, 'CftcCot': CftcCotFetcher, 'CftcCotIndex': CftcCotIndexFetcher, 'CftcCotMovers': CftcCotMoversFetcher, 'CftcCotPositioning': CftcCotPositioningFetcher, 'CftcCotSearch': CftcCotSearchFetcher, 'CftcFxForwardCurve': CftcFxForwardCurveFetcher, 'CftcFxForwardPoints': CftcFxForwardPointsFetcher, 'CftcFxForwardTrades': CftcFxForwardTradesFetcher, 'CftcFxImpliedVol': CftcFxImpliedVolFetcher, 'CftcFxOptionTrades': CftcFxOptionTradesFetcher, 'CftcHistoricalFixings': CftcHistoricalFixingsFetcher, 'CftcOisCurve': CftcOisCurveFetcher, 'CftcOisCurveHistory': CftcOisCurveHistoryFetcher, 'CftcOisForwardCurve': CftcOisForwardCurveFetcher, 'CftcOisPolicyPath': CftcOisPolicyPathFetcher, 'CftcSwapSummary': CftcSwapSummaryFetcher, 'CftcSwapTrades': CftcSwapTradesFetcher, 'CftcSwapValuation': CftcSwapValuationFetcher}",
+      "repr_name": "'Commodity Futures Trading Commission (CFTC)'",
+      "instructions": "'Credentials are not required, but your IP address may be subject to throttling limits\\n    on the Commitment of Traders endpoints. API requests made using an application token are not throttled.\\n    Create an account here: https://evergreen.data.socrata.com/signup\\n    and then generate the app_token by signing in with the credentials\\n    here: https://publicreporting.cftc.gov/profile/edit/developer_settings.\\n    The DTCC Public Price Dissemination endpoints are public and require no credentials.'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/deribit/openbb_deribit/__init__.py",
+    "line": 84,
+    "definition": {
+      "name": "'deribit'",
+      "website": "'https://deribit.com/'",
+      "description": "'Deribit is a crypto derivatives exchange listing futures, perpetuals,\\noptions, and spot pairs. This extension covers its public market data API, which\\nneeds no credentials and carries no trading.'",
+      "credentials": "None",
+      "fetcher_dict": "_fetcher_dict",
+      "repr_name": "'Deribit Public Data'",
+      "instructions": "'This provider needs no credentials and is not meant for trading.'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/ecb/openbb_ecb/__init__.py",
+    "line": 18,
+    "definition": {
+      "name": "'ECB'",
+      "website": "'https://data.ecb.europa.eu'",
+      "description": "'The ECB Data Portal provides access to all official ECB statistics\\nthrough the SDMX 2.1 REST API, plus euro reference exchange rates, key ECB interest\\nrates, the euro short-term rate (\u20acSTR), MFI/bank interest rates, the statistical\\nrelease calendar, ECB releases & publications, and the Eurosystem list of eligible\\ncollateral assets.'",
+      "fetcher_dict": "{economy_key('AvailableIndicators', 'AvailableEcbIndicators'): ECBAvailableIndicatorsFetcher, economy_key('EconomicIndicators', 'EcbIndicators'): ECBEconomicIndicatorsFetcher, economy_key('BalanceOfPayments', 'EcbBalanceOfPayments'): ECBBalanceOfPaymentsFetcher, economy_key('EconomicCalendar', 'EcbReleaseCalendar'): ECBEconomicCalendarFetcher, currency_key('CurrencyHistorical', 'EcbCurrencyHistorical'): ECBCurrencyHistoricalFetcher, currency_key('CurrencyReferenceRates', 'EcbCurrencyReferenceRates'): ECBCurrencyReferenceRatesFetcher, fixedincome_key('YieldCurve', 'EcbYieldCurve'): ECBYieldCurveFetcher, fixedincome_key('EuroShortTermRate', 'EcbEuroShortTermRate'): ECBEuroShortTermRateFetcher, 'EcbKeyInterestRates': ECBInterestRatesFetcher, 'EcbMfiInterestRates': ECBMfiInterestRatesFetcher, 'EcbEligibleAssets': ECBEligibleAssetsFetcher}",
+      "repr_name": "'European Central Bank (ECB)'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/eia/openbb_us_eia/__init__.py",
+    "line": 16,
+    "definition": {
+      "name": "'eia'",
+      "website": "'https://eia.gov/'",
+      "description": "'The U.S. Energy Information Administration is committed to its free and open data' + ' by making it available through an Application Programming Interface (API) and its open data tools.' + ' See https://www.eia.gov/opendata/ for more information.'",
+      "credentials": "['api_key']",
+      "fetcher_dict": "{'EiaDataBrowser': EiaDataBrowserFetcher, 'PetroleumStatusReport': EiaPetroleumStatusReportFetcher, 'ShortTermEnergyOutlook': EiaShortTermEnergyOutlookFetcher, **DATASET_FETCHERS}",
+      "repr_name": "'U.S. Energy Information Administration (EIA) Open Data and API'",
+      "instructions": "\"Credentials are required for functions calling the EIA's API.\\n    Register for a free key here: https://www.eia.gov/opendata/register.php\""
+    }
+  },
+  {
+    "file": "openbb_platform/providers/famafrench/openbb_famafrench/__init__.py",
+    "line": 20,
+    "definition": {
+      "name": "'famafrench'",
+      "website": "'https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html'",
+      "description": "'\\n    This provider implements the Fama-French research portfolios and factors data library,\\n    maintained and hosted by Kenneth R. French at Dartmouth College.\\n    '",
+      "fetcher_dict": "{'FamaFrenchBreakpoints': FamaFrenchBreakpointFetcher, 'FamaFrenchCountryPortfolioReturns': FamaFrenchCountryPortfolioReturnsFetcher, 'FamaFrenchFactors': FamaFrenchFactorsFetcher, 'FamaFrenchInternationalIndexReturns': FamaFrenchInternationalIndexReturnsFetcher, 'FamaFrenchRegionalPortfolioReturns': FamaFrenchRegionalPortfolioReturnsFetcher, 'FamaFrenchUSPortfolioReturns': FamaFrenchUSPortfolioReturnsFetcher}",
+      "repr_name": "'Fama-French Research Portfolios and Factors'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/federal_reserve/openbb_federal_reserve/__init__.py",
+    "line": 475,
+    "definition": {
+      "name": "'federal_reserve'",
+      "website": "'https://www.federalreserve.gov/data.htm'",
+      "description": "'Access data provided by the Federal Reserve System, the Central Bank of the United States.'",
+      "fetcher_dict": "{_key('CentralBankHoldings', 'FederalReserveCentralBankHoldings', ECONOMY_INSTALLED): FederalReserveCentralBankHoldingsFetcher, _key('FomcDocuments', 'FederalReserveFomcDocuments', ECONOMY_INSTALLED): FederalReserveFomcDocumentsFetcher, _key('InflationExpectations', 'FederalReserveInflationExpectations', ECONOMY_INSTALLED): FederalReserveInflationExpectationsFetcher, _key('MoneyMeasures', 'FederalReserveMoneyMeasures', ECONOMY_INSTALLED): FederalReserveMoneyMeasuresFetcher, _key('PrimaryDealerFails', 'FederalReservePrimaryDealerFails', ECONOMY_INSTALLED): FederalReservePrimaryDealerFailsFetcher, _key('PrimaryDealerPositioning', 'FederalReservePrimaryDealerPositioning', ECONOMY_INSTALLED): FederalReservePrimaryDealerPositioningFetcher, _key('FederalFundsRate', 'FederalReserveFederalFundsRate', FIXEDINCOME_INSTALLED): FederalReserveFederalFundsRateFetcher, _key('OvernightBankFundingRate', 'FederalReserveOvernightBankFundingRate', FIXEDINCOME_INSTALLED): FederalReserveOvernightBankFundingRateFetcher, _key('SOFR', 'FederalReserveSOFR', FIXEDINCOME_INSTALLED): FederalReserveSOFRFetcher, _key('TreasuryRates', 'FederalReserveTreasuryRates', FIXEDINCOME_INSTALLED): FederalReserveTreasuryRatesFetcher, _key('YieldCurve', 'FederalReserveYieldCurve', FIXEDINCOME_INSTALLED): FederalReserveYieldCurveFetcher, 'FederalReserveDataDownload': FederalReserveDataDownloadFetcher, 'FederalReserveInstitutions': FederalReserveInstitutionsFetcher, 'FederalReserveCallReport': FederalReserveCallReportFetcher, 'FederalReserveCallReportSectioned': FederalReserveCallReportSectionedFetcher, 'FederalReserveUBPR': FederalReserveUBPRFetcher, 'FederalReserveExecutiveSummary': FederalReserveExecutiveSummaryFetcher, 'FederalReserveCustomPeerGroup': FederalReserveCustomPeerGroupFetcher, 'FederalReservePeerGroupAverage': FederalReservePeerGroupAverageFetcher, 'FederalReservePeerGroupBank': FederalReservePeerGroupBankFetcher, 'FederalReservePeerGroupDistribution': FederalReservePeerGroupDistributionFetcher, 'FederalReserveStateAverage': FederalReserveStateAverageFetcher, 'FederalReserveListOfBanksPeerGroup': FederalReserveListOfBanksPeerGroupFetcher, 'FederalReserveCountryExposure': FederalReserveCountryExposureFetcher, 'FederalReserveInternationalPortfolioInvestment': FederalReserveInternationalPortfolioInvestmentFetcher, 'FederalReserveMoneyMarketFunds': FederalReserveMoneyMarketFundsFetcher, 'FederalReserveBhcpr': FederalReserveBhcprFetcher, 'FederalReserveBhcprReport': FederalReserveBhcprReportFetcher, 'FederalReserveFinancialReport': FederalReserveFinancialReportFetcher, 'FederalReserveFinancialReportPdf': FederalReserveFinancialReportPdfFetcher, 'FederalReserveLargeHoldingCompanies': FederalReserveLargeHoldingCompaniesFetcher, 'FederalReserveInstitutionStructure': FederalReserveInstitutionStructureFetcher, 'FederalReserveChicagoNationalActivity': FederalReserveChicagoNationalActivityFetcher, 'FederalReserveChicagoFinancialConditions': FederalReserveChicagoFinancialConditionsFetcher, 'FederalReservePhiladelphiaAds': FederalReservePhiladelphiaAdsFetcher, 'FederalReserveNewYorkSupplyChain': FederalReserveNewYorkSupplyChainFetcher, 'FederalReserveNewYorkCorporateDistress': FederalReserveNewYorkCorporateDistressFetcher, 'FederalReserveNewYorkConsumerExpectations': FederalReserveNewYorkConsumerExpectationsFetcher, 'FederalReserveNewYorkBusinessLeaders': FederalReserveNewYorkBusinessLeadersFetcher, 'FederalReserveNewYorkMarketExpectations': FederalReserveNewYorkMarketExpectationsFetcher, 'FederalReserveNewYorkMarketExpectationsReports': FederalReserveNewYorkMarketExpectationsReportsFetcher, 'FederalReserveNewYorkNowcast': FederalReserveNewYorkNowcastFetcher, 'FederalReserveClevelandInflation': FederalReserveClevelandInflationFetcher, 'FederalReserveClevelandInflationNowcast': FederalReserveClevelandInflationNowcastFetcher, 'FederalReserveClevelandMedianCpi': FederalReserveClevelandMedianCpiFetcher, 'FederalReserveClevelandMedianCpiComponents': FederalReserveClevelandMedianCpiComponentsFetcher, 'FederalReserveClevelandSystemicRisk': FederalReserveClevelandSystemicRiskFetcher, 'FederalReserveClevelandPublicationSeries': FederalReserveClevelandPublicationSeriesFetcher, 'FederalReserveClevelandPublications': FederalReserveClevelandPublicationsFetcher, 'FederalReserveDallasManufacturing': FederalReserveDallasManufacturingFetcher, 'FederalReserveDallasServiceSector': FederalReserveDallasServiceSectorFetcher, 'FederalReserveDallasRetail': FederalReserveDallasRetailFetcher, 'FederalReserveDallasBanking': FederalReserveDallasBankingFetcher, 'FederalReserveDallasEnergy': FederalReserveDallasEnergyFetcher, 'FederalReserveDallasAgSurvey': FederalReserveDallasAgSurveyFetcher, 'FederalReserveDallasBreakeven': FederalReserveDallasBreakevenFetcher, 'FederalReserveDallasDgei': FederalReserveDallasDgeiFetcher, 'FederalReserveDallasGigafactory': FederalReserveDallasGigafactoryFetcher, 'FederalReserveDallasGovernmentDebt': FederalReserveDallasGovernmentDebtFetcher, 'FederalReserveDallasIgrea': FederalReserveDallasIgreaFetcher, 'FederalReserveDallasLithium': FederalReserveDallasLithiumFetcher, 'FederalReserveDallasTrimmedMeanPCE': FederalReserveDallasTrimmedMeanPCEFetcher, 'FederalReserveDallasWeeklyEconomic': FederalReserveDallasWeeklyEconomicFetcher, 'FederalReserveDallasLeadingIndex': FederalReserveDallasLeadingIndexFetcher, 'FederalReserveDallasPublicationSeries': FederalReserveDallasPublicationSeriesFetcher, 'FederalReserveDallasPublications': FederalReserveDallasPublicationsFetcher, 'FederalReserveMinneapolisBusinessConditions': FederalReserveMinneapolisBusinessConditionsFetcher, 'FederalReserveMinneapolisEmployment': FederalReserveMinneapolisEmploymentFetcher, 'FederalReserveMinneapolisUnemployment': FederalReserveMinneapolisUnemploymentFetcher, 'FederalReserveMinneapolisLaborForce': FederalReserveMinneapolisLaborForceFetcher, 'FederalReserveMinneapolisQuitsRate': FederalReserveMinneapolisQuitsRateFetcher, 'FederalReserveMinneapolisGdp': FederalReserveMinneapolisGdpFetcher, 'FederalReserveMinneapolisCpi': FederalReserveMinneapolisCpiFetcher, 'FederalReserveMinneapolisClaims': FederalReserveMinneapolisClaimsFetcher, 'FederalReserveMinneapolisPublicationSeries': FederalReserveMinneapolisPublicationSeriesFetcher, 'FederalReserveMinneapolisPublications': FederalReserveMinneapolisPublicationsFetcher, 'FederalReserveMinneapolisJobOpenings': FederalReserveMinneapolisJobOpeningsFetcher, 'FederalReserveStLouisFredMd': FederalReserveStLouisFredMdFetcher, 'FederalReserveStLouisFredQd': FederalReserveStLouisFredQdFetcher, 'FederalReserveStLouisNationalIndex': FederalReserveStLouisNationalIndexFetcher, 'FederalReserveStLouisPublicationSeries': FederalReserveStLouisPublicationSeriesFetcher, 'FederalReserveStLouisPublications': FederalReserveStLouisPublicationsFetcher, 'FederalReserveAtlantaGdpNow': FederalReserveAtlantaGdpNowFetcher, 'FederalReserveAtlantaWageGrowth': FederalReserveAtlantaWageGrowthFetcher, 'FederalReserveAtlantaStickyCpi': FederalReserveAtlantaStickyCpiFetcher, 'FederalReserveAtlantaBusinessInflation': FederalReserveAtlantaBusinessInflationFetcher, 'FederalReserveAtlantaBusinessUncertainty': FederalReserveAtlantaBusinessUncertaintyFetcher, 'FederalReserveAtlantaMarketProbability': FederalReserveAtlantaMarketProbabilityFetcher, 'FederalReserveAtlantaTaylorRule': FederalReserveAtlantaTaylorRuleFetcher, 'FederalReserveAtlantaTaylorRuleMeasures': FederalReserveAtlantaTaylorRuleMeasuresFetcher, 'FederalReserveAtlantaTaylorRuleHeatmap': FederalReserveAtlantaTaylorRuleHeatmapFetcher, 'FederalReserveAtlantaPublicationSeries': FederalReserveAtlantaPublicationSeriesFetcher, 'FederalReserveAtlantaPublications': FederalReserveAtlantaPublicationsFetcher, 'FederalReserveKansasCityFinancialStress': FederalReserveKansasCityFinancialStressFetcher, 'FederalReserveKansasCityRiskIndex': FederalReserveKansasCityRiskIndexFetcher, 'FederalReserveKansasCityAgCreditSurvey': FederalReserveKansasCityAgCreditSurveyFetcher, 'FederalReserveKansasCityAgRates': FederalReserveKansasCityAgRatesFetcher, 'FederalReserveKansasCityAgFinance': FederalReserveKansasCityAgFinanceFetcher, 'FederalReserveKansasCityAgTermsOfLending': FederalReserveKansasCityAgTermsOfLendingFetcher, 'FederalReserveKansasCityAgDistrictSurveys': FederalReserveKansasCityAgDistrictSurveysFetcher, 'FederalReserveKansasCityAgDatabookArchived': FederalReserveKansasCityAgDatabookArchivedFetcher, 'FederalReserveKansasCityPolicyRateUncertainty': FederalReserveKansasCityPolicyRateUncertaintyFetcher, 'FederalReserveKansasCityNaturalRate': FederalReserveKansasCityNaturalRateFetcher, 'FederalReserveKansasCityDivisionalLmci': FederalReserveKansasCityDivisionalLmciFetcher, 'FederalReserveKansasCityPublicationSeries': FederalReserveKansasCityPublicationSeriesFetcher, 'FederalReserveKansasCityPublications': FederalReserveKansasCityPublicationsFetcher, 'FederalReserveRichmondManufacturing': FederalReserveRichmondManufacturingFetcher, 'FederalReserveRichmondServiceSector': FederalReserveRichmondServiceSectorFetcher, 'FederalReserveRichmondStateSurvey': FederalReserveRichmondStateSurveyFetcher, 'FederalReserveRichmondCFO': FederalReserveRichmondCFOFetcher, 'FederalReserveRichmondNonEmployment': FederalReserveRichmondNonEmploymentFetcher, 'FederalReserveRichmondRecessionIndicator': FederalReserveRichmondRecessionIndicatorFetcher, 'FederalReserveRichmondPublicationSeries': FederalReserveRichmondPublicationSeriesFetcher, 'FederalReserveRichmondPublications': FederalReserveRichmondPublicationsFetcher, 'FederalReserveChicagoEconomicConditions': FederalReserveChicagoEconomicConditionsFetcher, 'FederalReserveChicagoRetailTrade': FederalReserveChicagoRetailTradeFetcher, 'FederalReserveChicagoLaborMarket': FederalReserveChicagoLaborMarketFetcher, 'FederalReserveChicagoFarmlandValues': FederalReserveChicagoFarmlandValuesFetcher, 'FederalReserveChicagoAgCredit': FederalReserveChicagoAgCreditFetcher, 'FederalReserveChicagoFarmLoanRates': FederalReserveChicagoFarmLoanRatesFetcher, 'FederalReserveChicagoBraveButtersKelley': FederalReserveChicagoBraveButtersKelleyFetcher, 'FederalReserveChicagoMidwestEconomy': FederalReserveChicagoMidwestEconomyFetcher, 'FederalReserveChicagoPublicationSeries': FederalReserveChicagoPublicationSeriesFetcher, 'FederalReserveChicagoPublications': FederalReserveChicagoPublicationsFetcher, 'FederalReservePhiladelphiaSpf': FederalReservePhiladelphiaSpfFetcher, 'FederalReservePhiladelphiaAnxious': FederalReservePhiladelphiaAnxiousFetcher, 'FederalReservePhiladelphiaGdpPlus': FederalReservePhiladelphiaGdpPlusFetcher, 'FederalReservePhiladelphiaPartisan': FederalReservePhiladelphiaPartisanFetcher, 'FederalReservePhiladelphiaCoincident': FederalReservePhiladelphiaCoincidentFetcher, 'FederalReservePhiladelphiaLivingston': FederalReservePhiladelphiaLivingstonFetcher, 'FederalReservePhiladelphiaManufacturing': FederalReservePhiladelphiaManufacturingFetcher, 'FederalReservePhiladelphiaNonmanufacturing': FederalReservePhiladelphiaNonmanufacturingFetcher, 'FederalReservePhiladelphiaAtsix': FederalReservePhiladelphiaAtsixFetcher, 'FederalReservePhiladelphiaPublicationSeries': FederalReservePhiladelphiaPublicationSeriesFetcher, 'FederalReservePhiladelphiaPublications': FederalReservePhiladelphiaPublicationsFetcher, 'FederalReserveNewYorkEmpireState': FederalReserveNewYorkEmpireStateFetcher, 'FederalReserveNewYorkEmpireReports': FederalReserveNewYorkEmpireReportsFetcher, 'FederalReserveNewYorkConsumerLaborMarket': FederalReserveNewYorkConsumerLaborMarketFetcher, 'FederalReserveNewYorkConsumerHousing': FederalReserveNewYorkConsumerHousingFetcher, 'FederalReserveNewYorkConsumerCreditAccess': FederalReserveNewYorkConsumerCreditAccessFetcher, 'FederalReserveNewYorkHouseholdDebt': FederalReserveNewYorkHouseholdDebtFetcher, 'FederalReserveNewYorkCoreTrendInflation': FederalReserveNewYorkCoreTrendInflationFetcher, 'FederalReserveNewYorkPublicationSeries': FederalReserveNewYorkPublicationSeriesFetcher, 'FederalReserveNewYorkPublications': FederalReserveNewYorkPublicationsFetcher, 'FederalReserveBostonEconomicIndicators': FederalReserveBostonEconomicIndicatorsFetcher, 'FederalReserveBostonPublicationSeries': FederalReserveBostonPublicationSeriesFetcher, 'FederalReserveBostonPublications': FederalReserveBostonPublicationsFetcher, 'FederalReserveSanFranciscoNewsSentiment': FederalReserveSanFranciscoNewsSentimentFetcher, 'FederalReserveSanFranciscoProxyFundsRate': FederalReserveSanFranciscoProxyFundsRateFetcher, 'FederalReserveSanFranciscoCyclicalPce': FederalReserveSanFranciscoCyclicalPceFetcher, 'FederalReserveSanFranciscoSupplyDemandPce': FederalReserveSanFranciscoSupplyDemandPceFetcher, 'FederalReserveSanFranciscoTfp': FederalReserveSanFranciscoTfpFetcher, 'FederalReserveSanFranciscoShortRatePath': FederalReserveSanFranciscoShortRatePathFetcher, 'FederalReserveSanFranciscoTermPremium': FederalReserveSanFranciscoTermPremiumFetcher, 'FederalReserveSanFranciscoPublicationSeries': FederalReserveSanFranciscoPublicationSeriesFetcher, 'FederalReserveSanFranciscoPublications': FederalReserveSanFranciscoPublicationsFetcher}",
+      "repr_name": "'Federal Reserve (FED)'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/finra/openbb_finra/__init__.py",
+    "line": 44,
+    "definition": {
+      "name": "'finra'",
+      "website": "'https://www.finra.org/finra-data'",
+      "description": "'FINRA Data provides centralized access to the abundance of data FINRA\\nmakes available to the public, media, researchers and member firms.'",
+      "credentials": "None",
+      "fetcher_dict": "_fetcher_dict",
+      "repr_name": "'Financial Industry Regulatory Authority (FINRA)'",
+      "instructions": "'This provider needs no credentials.'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/fred/openbb_fred/__init__.py",
+    "line": 72,
+    "definition": {
+      "name": "'fred'",
+      "website": "'https://fred.stlouisfed.org'",
+      "description": "'Federal Reserve Economic Data is a database maintained by the\\nResearch division of the Federal Reserve Bank of St. Louis that has more than\\n816,000 economic time series from various sources.'",
+      "credentials": "['api_key']",
+      "fetcher_dict": "{_key('BalanceOfPayments', 'FredBalanceOfPayments', ECONOMY_INSTALLED): FredBalanceOfPaymentsFetcher, _key('BondIndices', 'FredBondIndices', FIXEDINCOME_INSTALLED): FredBondIndicesFetcher, _key('CommoditySpotPrices', 'FredCommoditySpotPrices', COMMODITY_INSTALLED): FredCommoditySpotPricesFetcher, _key('ConsumerPriceIndex', 'FredConsumerPriceIndex', ECONOMY_INSTALLED): FREDConsumerPriceIndexFetcher, _key('SOFR', 'FredSOFR', FIXEDINCOME_INSTALLED): FREDSOFRFetcher, _key('EuroShortTermRate', 'FredEuroShortTermRate', FIXEDINCOME_INSTALLED): FredEuroShortTermRateFetcher, _key('SONIA', 'FredSONIA', FIXEDINCOME_INSTALLED): FREDSONIAFetcher, _key('Ameribor', 'FredAmeribor', FIXEDINCOME_INSTALLED): FredAmeriborFetcher, _key('FederalFundsRate', 'FredFederalFundsRate', FIXEDINCOME_INSTALLED): FredFederalFundsRateFetcher, _key('PROJECTIONS', 'FredPROJECTIONS', FIXEDINCOME_INSTALLED): FREDPROJECTIONFetcher, _key('IORB', 'FredIORB', FIXEDINCOME_INSTALLED): FREDIORBFetcher, _key('DiscountWindowPrimaryCreditRate', 'FredDiscountWindowPrimaryCreditRate', FIXEDINCOME_INSTALLED): FREDDiscountWindowPrimaryCreditRateFetcher, _key('EconomicCalendar', 'FredEconomicCalendar', ECONOMY_INSTALLED): FredEconomicCalendarFetcher, _key('EuropeanCentralBankInterestRates', 'FredEuropeanCentralBankInterestRates', FIXEDINCOME_INSTALLED): FREDEuropeanCentralBankInterestRatesFetcher, _key('ManufacturingOutlookNY', 'FredManufacturingOutlookNY', ECONOMY_INSTALLED): FredManufacturingOutlookNYFetcher, _key('ManufacturingOutlookTexas', 'FredManufacturingOutlookTexas', ECONOMY_INSTALLED): FredManufacturingOutlookTexasFetcher, _key('MortgageIndices', 'FredMortgageIndices', FIXEDINCOME_INSTALLED): FredMortgageIndicesFetcher, _key('NonFarmPayrolls', 'FredNonFarmPayrolls', ECONOMY_INSTALLED): FredNonFarmPayrollsFetcher, _key('OvernightBankFundingRate', 'FredOvernightBankFundingRate', FIXEDINCOME_INSTALLED): FredOvernightBankFundingRateFetcher, _key('PersonalConsumptionExpenditures', 'FredPersonalConsumptionExpenditures', ECONOMY_INSTALLED): FredPersonalConsumptionExpendituresFetcher, _key('CommercialPaper', 'FredCommercialPaper', FIXEDINCOME_INSTALLED): FREDCommercialPaperFetcher, 'FredReleaseTable': FredReleaseTableFetcher, 'FredSearch': FredSearchFetcher, 'FredSeries': FredSeriesFetcher, 'FredRegional': FredRegionalDataFetcher, _key('RetailPrices', 'FredRetailPrices', ECONOMY_INSTALLED): FredRetailPricesFetcher, _key('SeniorLoanOfficerSurvey', 'FredSeniorLoanOfficerSurvey', ECONOMY_INSTALLED): FredSeniorLoanOfficerSurveyFetcher, _key('SpotRate', 'FredSpotRate', FIXEDINCOME_INSTALLED): FREDSpotRateFetcher, _key('HighQualityMarketCorporateBond', 'FredHighQualityMarketCorporateBond', FIXEDINCOME_INSTALLED): FredHighQualityMarketCorporateBondFetcher, _key('TreasuryConstantMaturity', 'FredTreasuryConstantMaturity', FIXEDINCOME_INSTALLED): FREDTreasuryConstantMaturityFetcher, _key('SelectedTreasuryConstantMaturity', 'FredSelectedTreasuryConstantMaturity', FIXEDINCOME_INSTALLED): FREDSelectedTreasuryConstantMaturityFetcher, _key('SelectedTreasuryBill', 'FredSelectedTreasuryBill', FIXEDINCOME_INSTALLED): FREDSelectedTreasuryBillFetcher, _key('SurveyOfEconomicConditionsChicago', 'FredSurveyOfEconomicConditionsChicago', ECONOMY_INSTALLED): FredSurveyOfEconomicConditionsChicagoFetcher, _key('TipsYields', 'FredTipsYields', FIXEDINCOME_INSTALLED): FredTipsYieldsFetcher, _key('UniversityOfMichigan', 'FredUniversityOfMichigan', ECONOMY_INSTALLED): FredUofMichiganFetcher, _key('YieldCurve', 'FredYieldCurve', FIXEDINCOME_INSTALLED): FREDYieldCurveFetcher}",
+      "repr_name": "'Federal Reserve Economic Data | St. Louis FED (FRED)'",
+      "deprecated_credentials": "{'API_FRED_KEY': 'fred_api_key'}",
+      "instructions": "'Go to: https://fred.stlouisfed.org\\n\\n![FRED](https://user-images.githubusercontent.com/46355364/207827137-d143ba4c-72cb-467d-a7f4-5cc27c597aec.png)\\n\\nClick on, \"My Account\", create a new account or sign in with Google:\\n\\n![FRED](https://user-images.githubusercontent.com/46355364/207827011-65cdd501-27e3-436f-bd9d-b0d8381d46a7.png)\\n\\nAfter completing the sign-up, go to \"My Account\", and select \"API Keys\". Then, click on, \"Request API Key\".\\n\\n![FRED](https://user-images.githubusercontent.com/46355364/207827577-c869f989-4ef4-4949-ab57-6f3931f2ae9d.png)\\n\\nFill in the box for information about the use-case for FRED, and by clicking, \"Request API key\", at the bottom of the page, the API key will be issued.\\n\\n![FRED](https://user-images.githubusercontent.com/46355364/207828032-0a32d3b8-1378-4db2-9064-aa1eb2111632.png)'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/government_us/openbb_government_us/congress/__init__.py",
+    "line": 37,
+    "definition": {
+      "name": "'congress_gov'",
+      "website": "'https://www.govinfo.gov'",
+      "description": "'Legislative data from the U.S. Congress. Bills, bill metadata,\\nsummaries, bill text, amendments, enacted laws, calendars, mandated reports, and\\ncommittees are all sourced from keyless public data (GovInfo bulk data, the\\nGovInfo link service, and the unitedstates dataset). No API key is required for\\nthe 108th Congress onward; older Congresses predate the GovInfo bulk archives\\nand are served from the Congress.gov API, which needs a free API key.'",
+      "credentials": "['api_key']",
+      "fetcher_dict": "{'CongressBills': CongressBillsFetcher, 'CongressLaws': CongressLawsFetcher, 'CongressCalendars': CongressCalendarsFetcher, 'CongressMandatedReports': CongressMandatedReportsFetcher, 'CongressBillInfo': CongressBillInfoFetcher, 'CongressBillText': CongressBillTextFetcher, 'CongressAmendments': CongressAmendmentsFetcher, 'CongressAmendmentInfo': CongressAmendmentInfoFetcher, 'CongressAmendmentText': CongressAmendmentTextFetcher, 'CongressCommitteeInfo': CongressCommitteeInfoFetcher, 'CongressCommitteeDocuments': CongressCommitteeDocumentsFetcher, 'CongressSearch': CongressSearchFetcher, 'CongressMembers': CongressMembersFetcher, 'CongressMemberVotes': CongressMemberVotesFetcher, 'CongressMemberLegislation': CongressMemberLegislationFetcher}",
+      "repr_name": "'Congress.gov'",
+      "instructions": "\"Most endpoints use public, keyless data from GovInfo (bulk data\\nand the link service) and the unitedstates dataset, so no credentials are\\nrequired for the 108th Congress (2003) onward.\\n\\nGovInfo does not publish bulk archives for earlier Congresses. Those requests\\nfall back to the Congress.gov API, which reaches back to the 93rd Congress\\n(1973) and requires an API key. Sign up for a free key at\\nhttps://api.congress.gov/sign-up/ and set it as 'congress_gov_api_key'.\""
+    }
+  },
+  {
+    "file": "openbb_platform/providers/government_us/openbb_government_us/treasury/__init__.py",
+    "line": 47,
+    "definition": {
+      "name": "'us_treasury'",
+      "website": "'https://fiscaldata.treasury.gov'",
+      "description": "'Data published by the U.S. Department of the Treasury -\\nauction announcements and results from TreasuryDirect, plus FiscalData API\\ndatasets covering the debt to the penny, the Daily Treasury Statement,\\nupcoming and historical marketable securities auctions, and the Treasury\\nBulletin. All sources are public and keyless.'",
+      "fetcher_dict": "{'DailyTreasuryStatement': DailyTreasuryStatementFetcher, 'DebtToPenny': DebtToPennyFetcher, 'TreasuryAuctionResults': TreasuryAuctionResultsFetcher, 'TreasuryAuctions': UsTreasuryAuctionsFetcher, 'TreasuryBillOfferings': TreasuryBillOfferingsFetcher, 'TreasuryBulletin': TreasuryBulletinFetcher, 'TreasuryPrices': UsTreasuryPricesFetcher, 'UpcomingTreasuryAuctions': UpcomingTreasuryAuctionsFetcher, 'UsSpendingAward': UsSpendingAwardFetcher, 'UsSpendingAwardSearch': UsSpendingAwardSearchFetcher, 'UsSpendingExplorer': UsSpendingExplorerFetcher, 'UsSpendingRecipientAwards': UsSpendingRecipientAwardsFetcher, 'UsSpendingRecipientSearch': UsSpendingRecipientSearchFetcher}",
+      "repr_name": "'U.S. Department of the Treasury'",
+      "instructions": "'All endpoints use public, keyless data from TreasuryDirect\\nand the FiscalData API, so no credentials are required.'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/government_us/openbb_government_us/usda/__init__.py",
+    "line": 186,
+    "definition": {
+      "name": "'usda'",
+      "website": "'https://www.usda.gov'",
+      "description": "'Data published by the U.S. Department of Agriculture -\\nProduction, Supply and Distribution (PSD) reports and time series from the\\nForeign Agricultural Service, and the Weekly Weather and Crop Bulletin from\\nthe Economics, Statistics and Market Information System. All sources are\\npublic and keyless.'",
+      "fetcher_dict": "{'AdoptionOfGeneticallyEngineeredCropsInTheUnitedStates': AdoptionOfGeneticallyEngineeredCropsInTheUnitedStatesFetcher, 'AgriculturalAndFoodRdExpenditures': AgriculturalAndFoodRdExpendituresFetcher, 'AgriculturalExchangeRates': AgriculturalExchangeRatesFetcher, 'AgriculturalProductivity': AgriculturalProductivityFetcher, 'AgriculturalTradeMultipliers': AgriculturalTradeMultipliersFetcher, 'AreaAndRoadRuggednessScales': AreaAndRoadRuggednessScalesFetcher, 'CommodityCostsAndReturns': CommodityCostsAndReturnsFetcher, 'CommodityPsdData': UsdaCommodityPsdDataFetcher, 'CommodityPsdReport': UsdaCommodityPsdReportFetcher, 'CommutingZonesAndLaborMarketAreas': CommutingZonesAndLaborMarketAreasFetcher, 'CostEstimatesOfFoodborneIllnesses': CostEstimatesOfFoodborneIllnessesFetcher, 'CottonWoolAndTextileData': CottonWoolAndTextileDataFetcher, 'CountyTypologyCodes': CountyTypologyCodesFetcher, 'DairyData': DairyDataFetcher, 'EatingAndHealthModuleAtus': EatingAndHealthModuleAtusFetcher, 'ErsPublicationDownload': ErsPublicationDownloadFetcher, 'ErsPublications': ErsPublicationsFetcher, 'FarmHouseholdIncomeAndCharacteristics': FarmHouseholdIncomeAndCharacteristicsFetcher, 'FarmIncomeAndWealthStatistics': FarmIncomeAndWealthStatisticsFetcher, 'FarmToConsumerPriceSpreads': FarmToConsumerPriceSpreadsFetcher, 'FasBellReport': FasBellReportFetcher, 'FasReportCalendar': FasReportCalendarFetcher, 'FeedGrainsDatabase': FeedGrainsDatabaseFetcher, 'FertilizerUseAndPrice': FertilizerUseAndPriceFetcher, 'FoodAtHomeMonthlyAreaPrices': FoodAtHomeMonthlyAreaPricesFetcher, 'FoodAvailabilityPerCapitaDataSystem': FoodAvailabilityPerCapitaDataSystemFetcher, 'FoodConsumptionNutrientIntakesAndDietQuality': FoodConsumptionNutrientIntakesAndDietQualityFetcher, 'FoodDollarSeries': FoodDollarSeriesFetcher, 'FoodExpenditureSeries': FoodExpenditureSeriesFetcher, 'FoodPriceOutlook': FoodPriceOutlookFetcher, 'FoodSecurityInTheUnitedStates': FoodSecurityInTheUnitedStatesFetcher, 'FrontierAndRemoteAreaCodes': FrontierAndRemoteAreaCodesFetcher, 'FruitAndTreeNutsData': FruitAndTreeNutsDataFetcher, 'FruitAndVegetablePrices': FruitAndVegetablePricesFetcher, 'GlobalFoodAssessment': GlobalFoodAssessmentFetcher, 'InternationalAgriculturalProductivity': InternationalAgriculturalProductivityFetcher, 'InternationalBaselineData': InternationalBaselineDataFetcher, 'InternationalMacroeconomicDataSet': InternationalMacroeconomicDataSetFetcher, 'LivestockAndMeatDomesticData': LivestockAndMeatDomesticDataFetcher, 'LivestockAndMeatInternationalTradeData': LivestockAndMeatInternationalTradeDataFetcher, 'MajorLandUses': MajorLandUsesFetcher, 'MeatPriceSpreads': MeatPriceSpreadsFetcher, 'MilkCostOfProduction': MilkCostOfProductionFetcher, 'NaturalAmenitiesScale': NaturalAmenitiesScaleFetcher, 'NormalizedPrices': NormalizedPricesFetcher, 'OilCropsYearbook': OilCropsYearbookFetcher, 'PovertyAreaMeasures': PovertyAreaMeasuresFetcher, 'PurchaseToPlate': PurchaseToPlateFetcher, 'ResourceRequirementsOfFoodDemand': ResourceRequirementsOfFoodDemandFetcher, 'RiceYearbook': RiceYearbookFetcher, 'RuralUrbanCommutingAreaCodes': RuralUrbanCommutingAreaCodesFetcher, 'RuralUrbanContinuumCodes': RuralUrbanContinuumCodesFetcher, 'SeasonAveragePriceForecasts': SeasonAveragePriceForecastsFetcher, 'SnapPolicyDataSets': SnapPolicyDataSetsFetcher, 'StateAgriculturalTrade': StateAgriculturalTradeFetcher, 'SugarSweetenersYearbook': SugarSweetenersYearbookFetcher, 'UrbanInfluenceCodes': UrbanInfluenceCodesFetcher, 'UsAgriculturalTrade': UsAgriculturalTradeFetcher, 'UsBioenergyStatistics': UsBioenergyStatisticsFetcher, 'UsFoodImports': UsFoodImportsFetcher, 'VegetablesAndPulses': VegetablesAndPulsesFetcher, 'WeatherBulletin': UsdaWeatherBulletinFetcher, 'WeatherBulletinDownload': UsdaWeatherBulletinDownloadFetcher, 'WheatData': WheatDataFetcher}",
+      "repr_name": "'U.S. Department of Agriculture'",
+      "instructions": "'All endpoints use public, keyless data from USDA FAS PSD\\nOnline and the USDA ESMIS publication service, so no credentials are\\nrequired.'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/imf/openbb_imf/__init__.py",
+    "line": 34,
+    "definition": {
+      "name": "'imf'",
+      "website": "'https://datahelp.imf.org/knowledgebase/articles/667681-using-json-restful-web-service'",
+      "description": "'Access International Monetary Fund (IMF) data APIs.'",
+      "fetcher_dict": "{_key('AvailableIndicators', 'AvailableImfIndicators'): ImfAvailableIndicatorsFetcher, _key('BalanceOfPayments', 'ImfBalanceOfPayments'): ImfBalanceOfPaymentsFetcher, _key('ConsumerPriceIndex', 'ImfConsumerPriceIndex'): ImfConsumerPriceIndexFetcher, 'ContainerMetrics': ImfContainerMetricsFetcher, 'CountryActivity': ImfCountryActivityFetcher, _key('DirectionOfTrade', 'ImfDirectionOfTrade'): ImfDirectionOfTradeFetcher, 'DisruptionEvents': ImfDisruptionEventsFetcher, 'DisruptionSankey': ImfDisruptionSankeyFetcher, _key('EconomicIndicators', 'ImfIndicators'): ImfEconomicIndicatorsFetcher, _key('MaritimeChokePointInfo', 'ImfMaritimeChokePointInfo'): ImfMaritimeChokePointInfoFetcher, _key('MaritimeChokePointVolume', 'ImfMaritimeChokePointVolume'): ImfMaritimeChokePointVolumeFetcher, 'MonthlyTrade': ImfMonthlyTradeFetcher, _key('PortInfo', 'ImfPortInfo'): ImfPortInfoFetcher, _key('PortVolume', 'ImfPortVolume'): ImfPortVolumeFetcher}",
+      "repr_name": "'International Monetary Fund (IMF) Data APIs'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/jodi/openbb_jodi/__init__.py",
+    "line": 19,
+    "definition": {
+      "name": "'jodi'",
+      "website": "'https://www.jodidata.org'",
+      "description": "'The Joint Organisations Data Initiative (JODI) provides free monthly' + ' petroleum and natural gas supply, demand, and stock statistics,' + ' self-reported by over 100 countries, through the JODI-Oil and JODI-Gas' + ' World Databases.'",
+      "fetcher_dict": "{'JodiGasBalance': JodiGasBalanceFetcher, 'JodiGasDemand': JodiGasDemandFetcher, 'JodiGasExports': JodiGasExportsFetcher, 'JodiGasImports': JodiGasImportsFetcher, 'JodiGasProduction': JodiGasProductionFetcher, 'JodiGasStocks': JodiGasStocksFetcher, 'JodiOilBalance': JodiOilBalanceFetcher, 'JodiOilDemand': JodiOilDemandFetcher, 'JodiOilDemandByProduct': JodiOilDemandByProductFetcher, 'JodiOilExports': JodiOilExportsFetcher, 'JodiOilImports': JodiOilImportsFetcher, 'JodiOilProduction': JodiOilProductionFetcher, 'JodiOilStocks': JodiOilStocksFetcher}",
+      "repr_name": "'Joint Organisations Data Initiative (JODI) World Databases'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/nasdaq/openbb_nasdaq/__init__.py",
+    "line": 199,
+    "definition": {
+      "name": "'nasdaq'",
+      "website": "'https://www.nasdaq.com'",
+      "description": "'Positioned at the nexus of technology and the capital markets, Nasdaq\\nprovides premier platforms and services for global capital markets and beyond with\\nunmatched technology, insights and markets expertise.'",
+      "credentials": "None",
+      "fetcher_dict": "_fetcher_dict",
+      "repr_name": "'Nasdaq'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/oecd/openbb_oecd/__init__.py",
+    "line": 30,
+    "definition": {
+      "name": "'oecd'",
+      "website": "'https://data-explorer.oecd.org/'",
+      "description": "'Access OECD data via the SDMX REST API.\\nCovers all OECD dataflows including GDP, CPI, unemployment,\\ninterest rates, and hundreds more.'",
+      "fetcher_dict": "{_key('AvailableIndicators', 'AvailableOecdIndicators'): OecdAvailableIndicatorsFetcher, _key('EconomicIndicators', 'OecdIndicators'): OecdEconomicIndicatorsFetcher, _key('BalanceOfPayments', 'OecdBalanceOfPayments'): OECDBalanceOfPaymentsFetcher, _key('CompositeLeadingIndicator', 'OecdCompositeLeadingIndicator'): OECDCompositeLeadingIndicatorFetcher, _key('ConsumerPriceIndex', 'OecdConsumerPriceIndex'): OECDCPIFetcher, _key('CountryInterestRates', 'OecdCountryInterestRates'): OecdCountryInterestRatesFetcher, _key('GdpNominal', 'OecdGdpNominal'): OECDGdpNominalFetcher, _key('GdpReal', 'OecdGdpReal'): OECDGdpRealFetcher, _key('GdpForecast', 'OecdGdpForecast'): OECDGdpForecastFetcher, _key('HousePriceIndex', 'OecdHousePriceIndex'): OECDHousePriceIndexFetcher, _key('SharePriceIndex', 'OecdSharePriceIndex'): OECDSharePriceIndexFetcher, _key('Unemployment', 'OecdUnemployment'): OECDUnemploymentFetcher}",
+      "repr_name": "'Organization for Economic Co-operation and Development (OECD)'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/sec/openbb_sec/__init__.py",
+    "line": 70,
+    "definition": {
+      "name": "'sec'",
+      "website": "'https://www.sec.gov/data'",
+      "description": "'SEC is the public listings regulatory body for the United States.'",
+      "credentials": "None",
+      "fetcher_dict": "{_equity_key('BalanceSheet', 'SecBalanceSheet'): SecBalanceSheetFetcher, _equity_key('BalanceSheetGrowth', 'SecBalanceSheetGrowth'): SecBalanceSheetGrowthFetcher, _equity_key('CashFlowStatement', 'SecCashFlowStatement'): SecCashFlowStatementFetcher, _equity_key('CashFlowStatementGrowth', 'SecCashFlowStatementGrowth'): SecCashFlowStatementGrowthFetcher, 'CikMap': SecCikMapFetcher, _equity_key('CompanyFilings', 'SecCompanyFilings'): SecCompanyFilingsFetcher, _equity_key('CompareCompanyFacts', 'SecCompareCompanyFacts'): SecCompareCompanyFactsFetcher, _equity_key('EquityFTD', 'SecEquityFtd'): SecEquityFtdFetcher, _equity_key('EquitySearch', 'SecEquitySearch'): SecEquitySearchFetcher, 'Filings': SecCompanyFilingsFetcher, _equity_key('Form13FHR', 'SecForm13FHR'): SecForm13FHRFetcher, 'SecFullTextSearch': SecFullTextSearchFetcher, 'SecHtmFile': SecHtmFileFetcher, _equity_key('IncomeStatement', 'SecIncomeStatement'): SecIncomeStatementFetcher, _equity_key('IncomeStatementGrowth', 'SecIncomeStatementGrowth'): SecIncomeStatementGrowthFetcher, _equity_key('InsiderTrading', 'SecInsiderTrading'): SecInsiderTradingFetcher, 'InstitutionsSearch': SecInstitutionsSearchFetcher, 'SecAdviserFirms': SecAdviserFirmsFetcher, 'SecAdviserIndividuals': SecAdviserIndividualsFetcher, 'SecAdviserDocuments': SecAdviserDocumentsFetcher, 'SecAdviserUniverse': SecAdviserUniverseFetcher, _equity_key('LatestFinancialReports', 'SecLatestFinancialReports'): SecLatestFinancialReportsFetcher, _equity_key('ManagementDiscussionAnalysis', 'SecManagementDiscussionAnalysis'): SecManagementDiscussionAnalysisFetcher, _etf_key('NportDisclosure', 'SecNportDisclosure'): SecNportDisclosureFetcher, 'SecNportFundMetrics': SecNportFundMetricsFetcher, 'RssLitigation': SecRssLitigationFetcher, 'SchemaFiles': SecSchemaFilesFetcher, 'SecAsFiledStatements': SecAsFiledStatementsFetcher, 'SecBeneficialOwnership': SecBeneficialOwnershipFetcher, 'SecCompanyOverview': SecCompanyOverviewFetcher, 'SecDisclosures': SecDisclosuresFetcher, 'SecExecutiveCompensation': SecExecutiveCompensationFetcher, 'SecExhibit': SecExhibitFetcher, 'SecFiling': SecFilingFetcher, 'SecLegalProceedings': SecLegalProceedingsFetcher, 'SecManagementProfiles': SecManagementProfilesFetcher, 'SecPayVersusPerformance': SecPayVersusPerformanceFetcher, 'SecRiskFactors': SecRiskFactorsFetcher, 'SecSegmentRevenue': SecSegmentRevenueFetcher, 'SicSearch': SecSicSearchFetcher, 'SymbolMap': SecSymbolMapFetcher}",
+      "repr_name": "'Securities and Exchange Commission (SEC)'"
+    }
+  },
+  {
+    "file": "openbb_platform/providers/tmx/openbb_tmx/__init__.py",
+    "line": 67,
+    "definition": {
+      "name": "'tmx'",
+      "website": "'https://www.tmx.com'",
+      "description": "'Unofficial TMX Data Provider Extension\\n    TMX Group Companies\\n        - Toronto Stock Exchange\\n        - TSX Venture Exchange\\n        - TSX Trust\\n        - Montr\u00e9al Exchange\\n        - TSX Alpha Exchange\\n        - Shorcan\\n        - CDCC\\n        - CDS\\n        - TMX Datalinx\\n        - Trayport\\n    '",
+      "fetcher_dict": "{_key('AvailableIndices', 'TmxAvailableIndices', INDEX_INSTALLED): TmxAvailableIndicesFetcher, _key('BalanceSheet', 'TmxBalanceSheet', EQUITY_INSTALLED): TmxBalanceSheetFetcher, _key('BondPrices', 'TmxBondPrices', FIXEDINCOME_INSTALLED): TmxBondPricesFetcher, _key('BondTrades', 'TmxBondTrades', FIXEDINCOME_INSTALLED): TmxBondTradesFetcher, _key('CalendarEarnings', 'TmxCalendarEarnings', EQUITY_INSTALLED): TmxCalendarEarningsFetcher, _key('CashFlowStatement', 'TmxCashFlowStatement', EQUITY_INSTALLED): TmxCashFlowStatementFetcher, _key('CompanyFilings', 'TmxCompanyFilings', EQUITY_INSTALLED): TmxCompanyFilingsFetcher, _key('CompanyNews', 'TmxCompanyNews', NEWS_INSTALLED): TmxCompanyNewsFetcher, _key('CurrencyHistorical', 'TmxCurrencyHistorical', CURRENCY_INSTALLED): TmxCurrencyHistoricalFetcher, 'CoveredCallScreener': TmxCoveredCallScreenerFetcher, _key('EquityHistorical', 'TmxEquityHistorical', EQUITY_INSTALLED): TmxEquityHistoricalFetcher, _key('EquityInfo', 'TmxEquityInfo', EQUITY_INSTALLED): TmxEquityProfileFetcher, _key('EquityQuote', 'TmxEquityQuote', EQUITY_INSTALLED): TmxEquityQuoteFetcher, _key('EquityScreener', 'TmxEquityScreener', EQUITY_INSTALLED): TmxEquityScreenerFetcher, _key('EquitySearch', 'TmxEquitySearch', EQUITY_INSTALLED): TmxEquitySearchFetcher, 'SymbolReference': TmxSymbolReferenceFetcher, 'EquityTrades': TmxEquityTradesFetcher, 'ShortInterest': TmxShortInterestFetcher, _key('EtfSearch', 'TmxEtfSearch', ETF_INSTALLED): TmxEtfSearchFetcher, _key('FuturesHistorical', 'TmxFuturesHistorical', DERIVATIVES_INSTALLED): TmxFuturesHistoricalFetcher, _key('FuturesInstruments', 'TmxFuturesInstruments', DERIVATIVES_INSTALLED): TmxFuturesInstrumentsFetcher, _key('EtfHoldings', 'TmxEtfHoldings', ETF_INSTALLED): TmxEtfHoldingsFetcher, _key('EtfSectors', 'TmxEtfSectors', ETF_INSTALLED): TmxEtfSectorsFetcher, _key('EtfCountries', 'TmxEtfCountries', ETF_INSTALLED): TmxEtfCountriesFetcher, _key('EtfHistorical', 'TmxEtfHistorical', ETF_INSTALLED): TmxEquityHistoricalFetcher, _key('EtfInfo', 'TmxEtfInfo', ETF_INSTALLED): TmxEtfInfoFetcher, _key('EquityGainers', 'TmxEquityGainers', EQUITY_INSTALLED): TmxGainersFetcher, _key('HistoricalDividends', 'TmxHistoricalDividends', EQUITY_INSTALLED): TmxHistoricalDividendsFetcher, _key('HistoricalSplits', 'TmxHistoricalSplits', EQUITY_INSTALLED): TmxHistoricalSplitsFetcher, _key('IncomeStatement', 'TmxIncomeStatement', EQUITY_INSTALLED): TmxIncomeStatementFetcher, _key('IndexConstituents', 'TmxIndexConstituents', INDEX_INSTALLED): TmxIndexConstituentsFetcher, 'TmxIndexDocuments': TmxIndexDocumentsFetcher, _key('IndexHistorical', 'TmxIndexHistorical', INDEX_INSTALLED): TmxIndexHistoricalFetcher, _key('IndexInfo', 'TmxIndexInfo', INDEX_INSTALLED): TmxIndexInfoFetcher, _key('IndexSectors', 'TmxIndexSectors', INDEX_INSTALLED): TmxIndexSectorsFetcher, _key('IndexSnapshots', 'TmxIndexSnapshots', INDEX_INSTALLED): TmxIndexSnapshotsFetcher, _key('InsiderTrading', 'TmxInsiderTrading', EQUITY_INSTALLED): TmxInsiderTradingFetcher, 'TmxInsiderTransactions': TmxInsiderTransactionsFetcher, 'TmxRankings': TmxRankingsFetcher, 'MarketMovers': TmxMarketMoversFetcher, _key('OptionsChains', 'TmxOptionsChains', DERIVATIVES_INSTALLED): TmxOptionsChainsFetcher, _key('PriceTargetConsensus', 'TmxPriceTargetConsensus', EQUITY_INSTALLED): TmxPriceTargetConsensusFetcher, _key('TreasuryPrices', 'TmxTreasuryPrices', FIXEDINCOME_INSTALLED): TmxTreasuryPricesFetcher}",
+      "repr_name": "'TMX'"
+    }
+  }
+]

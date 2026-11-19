@@ -1,0 +1,15 @@
+from pathlib import Path
+import re,json,hashlib,subprocess,tomllib
+b=Path(__file__).resolve().parent.parent;r=b/'TradingAgents';e=b/'tradingagent-evidence';p=b/'tradingagent.md';s=p.read_text(encoding='utf-8');(e/'document-validation.json').write_text('{}',encoding='utf-8')
+refs=json.loads((e/'source-reference-check.json').read_text());files=json.loads((e/'tracked-files.json').read_text());defaults=json.loads((e/'default-config-catalog.json').read_text());test=json.loads((e/'offline-test-manifest.json').read_text());missing=[];bad=[]
+for label,url in re.findall(r'\[([^]\n]+)\]\(([^)\n]+)\)',s):
+ if url.startswith('tradingagent-evidence/') and not(b/url).exists():missing.append(url)
+ if '/blob/9fa1196fffbcfd9de5146d2dd2869df84ab99838/' in url:
+  path,anchor=url.split('/blob/9fa1196fffbcfd9de5146d2dd2869df84ab99838/')[1].split('#');f=r/path
+  if not f.exists():bad.append(url);continue
+  length=len(f.read_text(encoding='utf-8-sig').splitlines())
+  if any(int(x)>length or int(x)<1 for x in re.findall(r'L(\d+)',anchor)):bad.append(url)
+copybad=[x['source'] for x in test['files'] if hashlib.sha256((r/x['source']).read_bytes()).hexdigest()!=x['sha256']]
+checks={'status':'verified within documented source-analysis scope','source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=r,text=True).strip(),'document':str(p),'bytes':p.stat().st_size,'words':len(s.split()),'source_refs':refs['count'],'source_reference_errors':refs['issues']+bad,'missing_local_evidence':missing,'source_file_inventory_matches':files==subprocess.check_output(['git','ls-files'],cwd=r,text=True).splitlines(),'all_tracked_files_in_document':all(x in s for x in files),'all_default_keys_documented':all('`'+x['key']+'`' in s for x in defaults['defaults']),'all_env_overrides_documented':all(x in s for x in defaults['env_mapping']),'source_diff':subprocess.check_output(['git','diff','--stat','HEAD'],cwd=r,text=True),'template_tokens':re.findall(r'__[A-Z_]+__',s),'balanced_fences':sum(x.startswith('```') for x in s.splitlines())%2==0,'selected_test_exit':test['exit_code'],'selected_test_source_hash_errors':copybad,'selected_test_pass_log':'54 passed' in (e/'offline-tests.txt').read_text(encoding='utf-8'),'metadata_matches_source':json.loads((e/'project-metadata.json').read_text())==tomllib.loads((r/'pyproject.toml').read_text()),'runtime_exclusions':'Full graph/model/vendor integrations, builds, account auth and broker execution not run; absent dependencies explicitly documented.','sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
+assert not checks['source_reference_errors'] and not missing and checks['source_file_inventory_matches'] and checks['all_tracked_files_in_document'] and checks['all_default_keys_documented'] and checks['all_env_overrides_documented'] and not checks['source_diff'] and not checks['template_tokens'] and checks['balanced_fences'] and checks['selected_test_exit']==0 and not copybad and checks['selected_test_pass_log'] and checks['metadata_matches_source']
+(e/'document-validation.json').write_text(json.dumps(checks,indent=2),encoding='utf-8');print(json.dumps(checks,indent=2))

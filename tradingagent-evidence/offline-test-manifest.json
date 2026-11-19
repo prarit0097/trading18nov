@@ -1,0 +1,38 @@
+{
+  "command": [
+    "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-c",
+    "E:\\coding\\code\\Trade\\tradingagent-evidence\\offline-tests\\pytest.ini",
+    "E:\\coding\\code\\Trade\\tradingagent-evidence\\offline-tests\\test_symbols.py",
+    "E:\\coding\\code\\Trade\\tradingagent-evidence\\offline-tests\\test_safe_ticker_component.py",
+    "E:\\coding\\code\\Trade\\tradingagent-evidence\\offline-tests\\test_env_overrides.py",
+    "E:\\coding\\code\\Trade\\tradingagent-evidence\\offline-tests\\test_get_scrubbed.py"
+  ],
+  "exit_code": 0,
+  "files": [
+    {
+      "source": "tests/test_symbols.py",
+      "copy": "tradingagent-evidence/offline-tests/test_symbols.py",
+      "sha256": "a986236deab7f876eaff7c81e1ad4d446eeb56f3cf644a697d2e97e5ae190d88"
+    },
+    {
+      "source": "tests/test_safe_ticker_component.py",
+      "copy": "tradingagent-evidence/offline-tests/test_safe_ticker_component.py",
+      "sha256": "4ccbc9a167336d846063251bd541687a2ca90b9c29424c65176420423cd7514a"
+    },
+    {
+      "source": "tests/test_env_overrides.py",
+      "copy": "tradingagent-evidence/offline-tests/test_env_overrides.py",
+      "sha256": "a0f78bc6a8b81d2d763744b2770e3f57f52e4dcc97c52e34a365737dc9e0989a"
+    },
+    {
+      "source": "tests/test_get_scrubbed.py",
+      "copy": "tradingagent-evidence/offline-tests/test_get_scrubbed.py",
+      "sha256": "812c8976cb5c998dee7397aeeded12079f345856d1712af0be209d62ffde8c1d"
+    }
+  ],
+  "scope": "Unmodified copies of4upstream testfiles; actual source imports. Full conftest bypassed (requires LangChain/CLI dependencies unavailable here). Local network blocking fixture, isolated dotenv and appstate paths; no source rewrites or dependency stubs."
+}

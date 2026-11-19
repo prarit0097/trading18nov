@@ -1,0 +1,13 @@
+1 SAME-DAY PASS: initial PASS fresh 16:05 check BLOCK broker status READY: trader-risk PASS, waiting for your yes
+2 LOSS MISMATCH: risk PASS 32.64 broker loss 23.44
+2 DAILY CONSEQUENCE: PASS actual cumulative stop risk 57.64
+3 NO QUOTE OR ORDER AGE CHECK: old fixture checked next day PASS
+4 CONSENT: yes buy 8 AAPL => True
+4 CONSENT: yes buy 100 TSLA at 370.04 => True
+5 INCOMPLETE OR: triggered range 2 of 3 complete True
+6 EARLY CLOSE: planner flat_by 12:55 alert rings at 09:55:00
+7 SIMULATION HORIZON: plan flat_by 15:55 default simulation until 16:00
+8 REPLAYED FILL: same fill twice => shares 16.0 cash -826.88
+9 Q4 EPS: 0.20000000000000018 vs 0.5 for equal-length quarters if each quarter earns $100 and diluted shares are 100/100/100/200 (annual EPS=400/125=3.2)
+10 NONFINITE NOTIONAL: PASS cash_after nan
+11 OUTSTANDING ORDER CASH: unfilled KO commitment 3000, next AAPL 3000, budget 5000 => PASS cash_after 2000.0

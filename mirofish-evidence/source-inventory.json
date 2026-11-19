@@ -1,0 +1,755 @@
+[
+  {
+    "path": ".dockerignore",
+    "bytes": 246,
+    "sha256": "f935cfb37b4ccae40bd25b95f07a307f0670f4547111919394bdb6f5c07d5cac",
+    "lines": 23
+  },
+  {
+    "path": ".env.example",
+    "bytes": 731,
+    "sha256": "770675166d2dcd6206868d3e3af7b2ce523ff83f97f5b67afe540d27aa923eec",
+    "lines": 16
+  },
+  {
+    "path": ".github/star-history/THIRD_PARTY_NOTICES.md",
+    "bytes": 1341,
+    "sha256": "722e5f8c9ec847aed75b05d2738938f0501341db089f1a6a49a187de7df5c9f4",
+    "lines": 29
+  },
+  {
+    "path": ".github/star-history/history.json",
+    "bytes": 16319,
+    "sha256": "f5164bf4583835a4fbb2b3fa3ad13736a364842738083666a6facd9e2cd4f728",
+    "lines": 886
+  },
+  {
+    "path": ".github/workflows/docker-image.yml",
+    "bytes": 1617,
+    "sha256": "50fbd25d9a9a53730e9ae7c974bc57935f3f5254a2d47ad3a1db9fdfac4e2b4d",
+    "lines": 60
+  },
+  {
+    "path": ".github/workflows/update-star-history.yml",
+    "bytes": 18711,
+    "sha256": "5785146452fb2c20d4407beaa45ae40ae0920d3fc3e38f8800883eb81e4f34d2",
+    "lines": 500
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 613,
+    "sha256": "f7b223145c9f9fc45e16efd767a107f8b6efd52be1b2d94a662676489982d536",
+    "lines": 60
+  },
+  {
+    "path": "Dockerfile",
+    "bytes": 751,
+    "sha256": "08b6f4b0ec4eddfa93659d065609bf35e155eb3077bc86c84385f98640104dce",
+    "lines": 29
+  },
+  {
+    "path": "LICENSE",
+    "bytes": 35184,
+    "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75",
+    "lines": 661
+  },
+  {
+    "path": "README-ZH.md",
+    "bytes": 8187,
+    "sha256": "cdad9d9b342f4467e044f09e6fe88ca014b00dc53d920217b0ab49df5a8b3de0",
+    "lines": 203
+  },
+  {
+    "path": "README.md",
+    "bytes": 9161,
+    "sha256": "4b8b8f055604e01c5f15fc4aa5fc607fa132de7ba9ad885ff12f3f3104e40f40",
+    "lines": 203
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "bytes": 2792,
+    "sha256": "5662ffbd88b6bfca426a3470e7edcb5e1c16e74c07db4b3cde843cbc1aa02f14",
+    "lines": 80
+  },
+  {
+    "path": "backend/app/api/__init__.py",
+    "bytes": 328,
+    "sha256": "3d15efc98e4b3e88d21157257e88b9f404a3ac51738b46d5f5103aee4400cad1",
+    "lines": 14
+  },
+  {
+    "path": "backend/app/api/graph.py",
+    "bytes": 35328,
+    "sha256": "fdf6ad4c204370231483af03077c2da50b049839d53b115da12d18f628397ffc",
+    "lines": 963
+  },
+  {
+    "path": "backend/app/api/report.py",
+    "bytes": 36441,
+    "sha256": "af0f4f15b2871ac52df41a3b66f5a864a75b89b66b357bcfc52c22d624ac3823",
+    "lines": 1139
+  },
+  {
+    "path": "backend/app/api/simulation.py",
+    "bytes": 103862,
+    "sha256": "7b229d3eb2bfd6d61d23a5f9c03b8308d23090cdd1e7a1b46f93b4f861f09f28",
+    "lines": 2878
+  },
+  {
+    "path": "backend/app/config.py",
+    "bytes": 3038,
+    "sha256": "d57eedfc53bbecf26c04f2e3ed3355082165ab731916722c90bd42be9efc6544",
+    "lines": 76
+  },
+  {
+    "path": "backend/app/models/__init__.py",
+    "bytes": 227,
+    "sha256": "9ea26d150447ea132fc47e0d5cc772a57475131f8d24fa455983556107c74c74",
+    "lines": 9
+  },
+  {
+    "path": "backend/app/models/project.py",
+    "bytes": 10640,
+    "sha256": "33449752ca8fef0a0a7f66877ef22648dcd4d82fce041f09e11a178da9de7099",
+    "lines": 320
+  },
+  {
+    "path": "backend/app/models/task.py",
+    "bytes": 5857,
+    "sha256": "bca7e97b066f0643c8b0ff35b20b2210ea1fc55e7e6185e136c1122c63e636f9",
+    "lines": 186
+  },
+  {
+    "path": "backend/app/services/__init__.py",
+    "bytes": 1825,
+    "sha256": "fcc0c899c7c67789466cd46e302c611d52bb03e99c665a1920c41901251d7f59",
+    "lines": 73
+  },
+  {
+    "path": "backend/app/services/graph_builder.py",
+    "bytes": 34357,
+    "sha256": "3ee4ebe1d811159c5fbc3b0b5f8a3105dcca975ea54342d8f13fe079b1436045",
+    "lines": 879
+  },
+  {
+    "path": "backend/app/services/oasis_profile_generator.py",
+    "bytes": 52260,
+    "sha256": "ea6546c2f35ceada89693766c87fbe560e87a379f39ecfeb40a97f43aee501e1",
+    "lines": 1248
+  },
+  {
+    "path": "backend/app/services/ontology_generator.py",
+    "bytes": 29201,
+    "sha256": "bbb36e963d9fd80c4b15e30136c5d1f3f2d1d91b2544d76f9eb39f31ca188cfe",
+    "lines": 732
+  },
+  {
+    "path": "backend/app/services/report_agent.py",
+    "bytes": 104208,
+    "sha256": "bc6b581164d28bc84ea60d8913c6c955b052142c2dc8b9fec6b2538658add46c",
+    "lines": 2619
+  },
+  {
+    "path": "backend/app/services/simulation_config_generator.py",
+    "bytes": 41056,
+    "sha256": "ff8901835b9830464a2e6ff734e244e0e37777b24e417058bfedb9d71282bbe2",
+    "lines": 993
+  },
+  {
+    "path": "backend/app/services/simulation_ipc.py",
+    "bytes": 12691,
+    "sha256": "0e92e98d25a770551d05244defcea1a6074fa0751c59ebb8a2d09a7b59456b4f",
+    "lines": 394
+  },
+  {
+    "path": "backend/app/services/simulation_manager.py",
+    "bytes": 22143,
+    "sha256": "087def6c0caf3fbf8734aa570ce92dff3fa75d8e3d53c57e49f318e1e300e0ea",
+    "lines": 564
+  },
+  {
+    "path": "backend/app/services/simulation_runner.py",
+    "bytes": 83539,
+    "sha256": "e13959f12b03b1f35812053055727719ba9eed6609c4badbb38a000909179a10",
+    "lines": 2033
+  },
+  {
+    "path": "backend/app/services/text_processor.py",
+    "bytes": 1814,
+    "sha256": "71f964d0ac93cfd80c1a1c5bf5160af9344ccafe5e5e69c3edb3bc6eda1eb23e",
+    "lines": 71
+  },
+  {
+    "path": "backend/app/services/zep_entity_reader.py",
+    "bytes": 16313,
+    "sha256": "44a493b8f0708c53e0935256a9dd557675ef3f2a6f1126f2aaa0be052b15c9f2",
+    "lines": 446
+  },
+  {
+    "path": "backend/app/services/zep_graph_memory_updater.py",
+    "bytes": 32683,
+    "sha256": "a233193faf8d47369c9ff2e4f76fbc31b088de4781ca10f24c9d0b2f4b235724",
+    "lines": 791
+  },
+  {
+    "path": "backend/app/services/zep_tools.py",
+    "bytes": 67735,
+    "sha256": "6c7ebe3875c504d7064e50a403f4a84ccc2fbbe08b80bee499a19a5452acebea",
+    "lines": 1734
+  },
+  {
+    "path": "backend/app/utils/__init__.py",
+    "bytes": 275,
+    "sha256": "f1532c167a676d0d97a14897a217164ef570f92306ebb3a117ac0213dd92ce2b",
+    "lines": 10
+  },
+  {
+    "path": "backend/app/utils/file_parser.py",
+    "bytes": 5819,
+    "sha256": "ed1a0ff5349fe41df937178e86766315c8de20cfe95b9c28ef9175f8fbefc492",
+    "lines": 203
+  },
+  {
+    "path": "backend/app/utils/llm_client.py",
+    "bytes": 10163,
+    "sha256": "46d8fb6bfc54c5baede9c056f813f655720bc25977c4c0bfbaeaaa3d90f7b209",
+    "lines": 290
+  },
+  {
+    "path": "backend/app/utils/locale.py",
+    "bytes": 2052,
+    "sha256": "8388d846bc6cfaf2fc14f626ae2efb8e6dfca0b55da89d73609321e62e5baa6a",
+    "lines": 69
+  },
+  {
+    "path": "backend/app/utils/logger.py",
+    "bytes": 3529,
+    "sha256": "74c14abe9f18fbd22d62dc935d494dbd43b3d5af3c2605296740fcbcd1232d82",
+    "lines": 126
+  },
+  {
+    "path": "backend/app/utils/ontology.py",
+    "bytes": 3107,
+    "sha256": "90b7cfe1d253b3a63161ab8a1f0a088c20f60835ba3f907c149939084644cea0",
+    "lines": 103
+  },
+  {
+    "path": "backend/app/utils/openai_chat_compat.py",
+    "bytes": 3210,
+    "sha256": "c19b8e02b786644ac2df79dd811000a0e8ece664bf91071b90e91c589dd0b47f",
+    "lines": 101
+  },
+  {
+    "path": "backend/app/utils/retry.py",
+    "bytes": 7751,
+    "sha256": "8099a56219c69e2f6f45e77496f1c6f73abbe9454c85b115e5484ce587e4d5cc",
+    "lines": 238
+  },
+  {
+    "path": "backend/app/utils/zep.py",
+    "bytes": 5417,
+    "sha256": "f4e4dbb64be3af157e4111779eeb28b0e84b6dfdabaeb2babe87929000c2e218",
+    "lines": 162
+  },
+  {
+    "path": "backend/app/utils/zep_lifecycle.py",
+    "bytes": 1778,
+    "sha256": "98c347b054a1583f3d221d9d92e0b9f072519c60c66254a465f7ab50dd4003e7",
+    "lines": 51
+  },
+  {
+    "path": "backend/app/utils/zep_paging.py",
+    "bytes": 4608,
+    "sha256": "88714de425c552b1a39c88ca98c76b92951ae56fb93f242ddbe31bb2218b467a",
+    "lines": 160
+  },
+  {
+    "path": "backend/pyproject.toml",
+    "bytes": 1136,
+    "sha256": "ead2dbd034f634b0fa4d122fc330d9a7d4f79025f4230b3738029584e61c9f57",
+    "lines": 56
+  },
+  {
+    "path": "backend/requirements.txt",
+    "bytes": 923,
+    "sha256": "1434b3f1190ba21fad6cdd1c833360b5b06573f828e1a3357cdc1d983e19f3f7",
+    "lines": 36
+  },
+  {
+    "path": "backend/run.py",
+    "bytes": 1344,
+    "sha256": "f8c6f5cf5722e756f9249aa21e53f01ddd12d0e35f82999c10c0414eea5474f1",
+    "lines": 50
+  },
+  {
+    "path": "backend/scripts/action_logger.py",
+    "bytes": 10561,
+    "sha256": "4c81b4fa10a4ff626158a98dda09fb329b7400301bb265a041d0d44738489936",
+    "lines": 305
+  },
+  {
+    "path": "backend/scripts/run_parallel_simulation.py",
+    "bytes": 64601,
+    "sha256": "53e637c56959cbd03a819d341707468ea47312b37ef20de85332eaacd5a92c54",
+    "lines": 1699
+  },
+  {
+    "path": "backend/scripts/run_reddit_simulation.py",
+    "bytes": 27989,
+    "sha256": "7b547287c4c19635aacc16c907552e836968d5396dd7434bca86e8ac2b89c134",
+    "lines": 769
+  },
+  {
+    "path": "backend/scripts/run_twitter_simulation.py",
+    "bytes": 28142,
+    "sha256": "63aa5ae90ebd52969506b76a5cdc0fffac23e36fff276df3782f5fe64587872e",
+    "lines": 780
+  },
+  {
+    "path": "backend/scripts/test_profile_format.py",
+    "bytes": 6022,
+    "sha256": "721f98968a51018c1f971ad9db9d9572f4bb4c2ede98f3e82a3ccd65f8265b99",
+    "lines": 166
+  },
+  {
+    "path": "backend/scripts/validate_zep_cloud_integration.py",
+    "bytes": 35448,
+    "sha256": "e00ee88aaeeea495e7bf4e396e252e92ff9509a1bb5ab145ab5adf2aff3ce009",
+    "lines": 904
+  },
+  {
+    "path": "backend/tests/test_llm_json_responses.py",
+    "bytes": 7978,
+    "sha256": "13da66901228aac6406ff274aa40df88278fee5ed30297afaedcf340ba2f5702",
+    "lines": 259
+  },
+  {
+    "path": "backend/tests/test_ontology_api_errors.py",
+    "bytes": 2434,
+    "sha256": "2a131dce9f36f2e014ddbcd984a0304abd2471b094e92a4eb01b33b157b20ca1",
+    "lines": 70
+  },
+  {
+    "path": "backend/tests/test_ontology_attributes.py",
+    "bytes": 8460,
+    "sha256": "c65947fff5ba4f6365f38fdedb4f355ac67af5571c062d12bade54e05be5d610",
+    "lines": 257
+  },
+  {
+    "path": "backend/tests/test_ontology_generator.py",
+    "bytes": 2536,
+    "sha256": "c6bf3a6e95b9d59a90789c3bc2112e7e8768430aa6d81b8a7d6eea0ff9243467",
+    "lines": 79
+  },
+  {
+    "path": "backend/tests/test_openai_chat_compat.py",
+    "bytes": 3422,
+    "sha256": "4f224829e8760e929f746af9d963589e1c4fa7844594e1e3891ee2589be9390e",
+    "lines": 123
+  },
+  {
+    "path": "backend/tests/test_platform_profiles.py",
+    "bytes": 2102,
+    "sha256": "11e8da170b12d3e5ca638665bd963376fbdad05644362695980e26602c410d60",
+    "lines": 55
+  },
+  {
+    "path": "backend/tests/test_profile_field_normalization.py",
+    "bytes": 2787,
+    "sha256": "e64af7fbf422965c5a38da5f53f07dbc9e2b720fc3c98fa466f199ceea3f2cb8",
+    "lines": 76
+  },
+  {
+    "path": "backend/tests/test_report_tool_result_sanitizer.py",
+    "bytes": 991,
+    "sha256": "061962df7b53b01da026d0c27dd5efefef1367705f23bd82fde25e69fe4491f8",
+    "lines": 28
+  },
+  {
+    "path": "backend/tests/test_simulation_prepare_failure.py",
+    "bytes": 3564,
+    "sha256": "37fad031f2b3b0352d660b951e5a87914a69ceba3873273f01662ec8fa9a54ea",
+    "lines": 102
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_contracts.py",
+    "bytes": 17618,
+    "sha256": "1e05320691f47bb227e84a7522c34d03da9055fafac7f0000d09ac17e40540fb",
+    "lines": 501
+  },
+  {
+    "path": "backend/tests/test_zep_cloud_validation_script.py",
+    "bytes": 3326,
+    "sha256": "2deceea28e47be847c87529ec7f49849fd3aa54aa416deb63cd9604228621ff7",
+    "lines": 105
+  },
+  {
+    "path": "backend/tests/test_zep_edge_paging.py",
+    "bytes": 3512,
+    "sha256": "c9163f2eeb7a086f05bd49c0d76044cb54f737692aa47b450e54d8ed1cd67012",
+    "lines": 112
+  },
+  {
+    "path": "backend/tests/test_zep_entity_reader_edges.py",
+    "bytes": 1273,
+    "sha256": "41c0367ccfeba5742ee17bd6c694a23203353ec23c260413ec73b6a0d1857afd",
+    "lines": 44
+  },
+  {
+    "path": "backend/tests/test_zep_graph_lifecycle.py",
+    "bytes": 13193,
+    "sha256": "03841e6b04d4697faa80c24e85f8c09e6e3f4ab78c05ad1eaafdcdbaef3c6b1b",
+    "lines": 418
+  },
+  {
+    "path": "backend/tests/test_zep_graph_memory_updater.py",
+    "bytes": 7379,
+    "sha256": "d3c02b1bb10149b4e78f31ec8154cd42397d9a490fa96a98eccaa007beb60d23",
+    "lines": 237
+  },
+  {
+    "path": "backend/tests/test_zep_report_barrier.py",
+    "bytes": 9165,
+    "sha256": "e7b41708c73894cbb562534dd4e73bf942f692abbb4ba3bfac5e6ac40ed9d438",
+    "lines": 297
+  },
+  {
+    "path": "backend/tests/test_zep_retry_and_client.py",
+    "bytes": 3253,
+    "sha256": "623fee03a17c26b8077fbd2bab99c1c9a2dc11e03bb61718b3efdd66fa92c0a6",
+    "lines": 112
+  },
+  {
+    "path": "backend/tests/test_zep_simulation_barrier.py",
+    "bytes": 15932,
+    "sha256": "37cdecad9a8fe921d3bafe0e03722f2f910a2e857bf7451ae813c1099b7d0f02",
+    "lines": 484
+  },
+  {
+    "path": "backend/uv.lock",
+    "bytes": 342085,
+    "sha256": "836aa729c48200d6f807fd13f323344c797694ecc61b6c6672f70af2909e2a71",
+    "lines": 2792
+  },
+  {
+    "path": "docker-compose.yml",
+    "bytes": 384,
+    "sha256": "8a27d8bb54f1ea890ad77852c904c5fba42069beeca4dbaf89ed46942a97fa62",
+    "lines": 14
+  },
+  {
+    "path": "frontend/.gitignore",
+    "bytes": 277,
+    "sha256": "d50ab07e11fa4bf3b1c7c3312e1d7baeab56cca756832ccf40476823ad2a38b7",
+    "lines": 24
+  },
+  {
+    "path": "frontend/index.html",
+    "bytes": 937,
+    "sha256": "65f677dd656afe836c5bd8980c94304f7a0af938b509ef7cda3e2aeae692af27",
+    "lines": 18
+  },
+  {
+    "path": "frontend/package-lock.json",
+    "bytes": 76805,
+    "sha256": "d87236a13cc28f498f8000686cc526aea334f4b04577be3eaaf9e01038910dc9",
+    "lines": 2230
+  },
+  {
+    "path": "frontend/package.json",
+    "bytes": 441,
+    "sha256": "88410048b046a1ba0b9480291fff7185995e944583c24bc64702e41f329fe877",
+    "lines": 22
+  },
+  {
+    "path": "frontend/public/icon.png",
+    "bytes": 30341,
+    "sha256": "2b2c19d0400056000bb88636410c71c39ec3bc6b9cc871d6b022adf8cddb6e7a"
+  },
+  {
+    "path": "frontend/src/App.vue",
+    "bytes": 769,
+    "sha256": "4e12b31af7228806fff36cbce0f4995e03f6032f1a85871caa117c10265f730d",
+    "lines": 47
+  },
+  {
+    "path": "frontend/src/api/graph.js",
+    "bytes": 1343,
+    "sha256": "cce2c154cc34c6e9dcfdc3a1422d9a60e7802ffb58cf7215ec7a2fff5bc3540a",
+    "lines": 66
+  },
+  {
+    "path": "frontend/src/api/index.js",
+    "bytes": 1791,
+    "sha256": "130339d531dc1038eaed7a2283eb9420f9cb4bf758d5021daa9897f928877c8f",
+    "lines": 62
+  },
+  {
+    "path": "frontend/src/api/report.js",
+    "bytes": 1388,
+    "sha256": "b2362a3c0c59be8b0a698ce387da507bd37b082d8479c3d527fdc5c123c37c63",
+    "lines": 51
+  },
+  {
+    "path": "frontend/src/api/simulation.js",
+    "bytes": 5687,
+    "sha256": "64a9f49f5bd6c44c3da30ffbe572831a4586d8a98fe02cafd48da8316e05f4da",
+    "lines": 188
+  },
+  {
+    "path": "frontend/src/assets/logo/MiroFish_logo_compressed.jpeg",
+    "bytes": 180620,
+    "sha256": "f2289e76f26f6258e93d08ba10d1cb3ce72dd8663edc7e0efbe0a29ae2128333"
+  },
+  {
+    "path": "frontend/src/assets/logo/MiroFish_logo_left.jpeg",
+    "bytes": 600901,
+    "sha256": "cd3b5a96932368265e66e456de0bb68fc56cdca605bfa148c10e913af33fea6b"
+  },
+  {
+    "path": "frontend/src/components/GraphPanel.vue",
+    "bytes": 41215,
+    "sha256": "d0792b626c164b0c00680979f78652add26fe388b81f088fd38f67284f26fcd4",
+    "lines": 1423
+  },
+  {
+    "path": "frontend/src/components/HistoryDatabase.vue",
+    "bytes": 36318,
+    "sha256": "5abd077fe2c21c11075639956f899c337fa189b90c618d990606578cb2a0e06b",
+    "lines": 1348
+  },
+  {
+    "path": "frontend/src/components/LanguageSwitcher.vue",
+    "bytes": 2719,
+    "sha256": "0a0a19b99156ee23e730bc26458680215bd6aae636dc02fbcd837fc99017c9db",
+    "lines": 124
+  },
+  {
+    "path": "frontend/src/components/Step1GraphBuild.vue",
+    "bytes": 18415,
+    "sha256": "1c09a0f993b5643754e6f69c53b39fae99b9a58eb9307f45763e96e2b9349035",
+    "lines": 700
+  },
+  {
+    "path": "frontend/src/components/Step2EnvSetup.vue",
+    "bytes": 72980,
+    "sha256": "2755fe29b976aea6bbe04baeff924f47312229a35e3a4cd687cb86548cca98ac",
+    "lines": 2623
+  },
+  {
+    "path": "frontend/src/components/Step3Simulation.vue",
+    "bytes": 40231,
+    "sha256": "442de842c440d61794571013a74833abf169214b7558ac42c5c2d48aafe55e42",
+    "lines": 1268
+  },
+  {
+    "path": "frontend/src/components/Step4Report.vue",
+    "bytes": 151029,
+    "sha256": "ddfe35761de9cc0ae302269a2f8e82d1277f77cc35fedf011f1a3e37232af98b",
+    "lines": 5162
+  },
+  {
+    "path": "frontend/src/components/Step5Interaction.vue",
+    "bytes": 66756,
+    "sha256": "a8cd0987c6825ca1064547f7473ae66bdd100e7b3fc26d63cf9a7bc97d372087",
+    "lines": 2584
+  },
+  {
+    "path": "frontend/src/i18n/index.js",
+    "bytes": 700,
+    "sha256": "56aa4c6c744038a5306beb92fc87ad0ee0a376ba7c8743f485107c73de4c5157",
+    "lines": 27
+  },
+  {
+    "path": "frontend/src/main.js",
+    "bytes": 205,
+    "sha256": "14b9f417ff850188fed5518363fb454facacc1ea1e25b45a382e233d08f74cf1",
+    "lines": 11
+  },
+  {
+    "path": "frontend/src/router/index.js",
+    "bytes": 1173,
+    "sha256": "0e4d1e9cfbe5fc10e313272b79753d88896503a037f01ab986454982ea34c934",
+    "lines": 52
+  },
+  {
+    "path": "frontend/src/store/pendingUpload.js",
+    "bytes": 750,
+    "sha256": "bcf85df25e158bd36bfbd727c656afd3a57c9349c7fa6d876f969e6c42de912a",
+    "lines": 33
+  },
+  {
+    "path": "frontend/src/views/Home.vue",
+    "bytes": 22771,
+    "sha256": "7dd2767c8ff54268ad2fccbb8ea9f7c575a687e9b318db1a94afb9b3e681b061",
+    "lines": 953
+  },
+  {
+    "path": "frontend/src/views/InteractionView.vue",
+    "bytes": 9333,
+    "sha256": "f62b13061cca784a837626947a3f3d59355ed96e373494ffeaface0e5748665d",
+    "lines": 355
+  },
+  {
+    "path": "frontend/src/views/MainView.vue",
+    "bytes": 15837,
+    "sha256": "c13aea7715e4d7769dba1e4e449854ca86791216d499410251ca9b9b8011afcb",
+    "lines": 554
+  },
+  {
+    "path": "frontend/src/views/Process.vue",
+    "bytes": 54805,
+    "sha256": "bcbc875eb7109becd96e26adfc31b1c494ec829ceb49ba682c88ddbc44b93526",
+    "lines": 2076
+  },
+  {
+    "path": "frontend/src/views/ReportView.vue",
+    "bytes": 9195,
+    "sha256": "52f6f28f9c00e0a54d47e2346c15e16ef97b99542abc861e838d0f66fe294901",
+    "lines": 353
+  },
+  {
+    "path": "frontend/src/views/SimulationRunView.vue",
+    "bytes": 12503,
+    "sha256": "1af185334bded4cb718a7e0ffe8cc80e9c08161d4e753f6705a1e9d33e24fc2a",
+    "lines": 452
+  },
+  {
+    "path": "frontend/src/views/SimulationView.vue",
+    "bytes": 11826,
+    "sha256": "60a69eac4898b4e0db2e74faba5ddabe7dd79444f889290d5e7f86aa5cd05946",
+    "lines": 439
+  },
+  {
+    "path": "frontend/vite.config.js",
+    "bytes": 522,
+    "sha256": "f78684d65483b7261243177473a04bc9a1f4f5cbaf625985b3a67261e17371f1",
+    "lines": 25
+  },
+  {
+    "path": "locales/en.json",
+    "bytes": 38934,
+    "sha256": "0ec6240440c31284b0d8ca44212e873c016b4d51d40e6b0f65699016795540c4",
+    "lines": 667
+  },
+  {
+    "path": "locales/languages.json",
+    "bytes": 745,
+    "sha256": "19eb477c801a6e5fe92636b381292e7d95e262c9d7c0f158f66af1fa26807aa8",
+    "lines": 30
+  },
+  {
+    "path": "locales/zh.json",
+    "bytes": 37567,
+    "sha256": "6d002dea6f085c0d7c9ff8efedaf90696e284c03f37f0eac90217f370d0b9761",
+    "lines": 667
+  },
+  {
+    "path": "package-lock.json",
+    "bytes": 11521,
+    "sha256": "66092b6fc3d111caf81f99a484deb9a41316c689a568974e9d83a1d12ebdda44",
+    "lines": 333
+  },
+  {
+    "path": "package.json",
+    "bytes": 723,
+    "sha256": "72c69194bf934484ca67fddc63c6c9fd38ffd240bbdefee9360671d62b24c342",
+    "lines": 21
+  },
+  {
+    "path": "scripts/fetch_star_count.py",
+    "bytes": 5082,
+    "sha256": "89104a12c72019d4441662bb38b5da7a75806f0fa22218994c710129190db3e0",
+    "lines": 146
+  },
+  {
+    "path": "scripts/star_history.py",
+    "bytes": 63784,
+    "sha256": "79c27e7ec871ce3a4c425061528d4a72e66017519ba1c3ebddba0f8b72ea2297",
+    "lines": 1489
+  },
+  {
+    "path": "static/image/MiroFish_logo.jpeg",
+    "bytes": 3695828,
+    "sha256": "313e54aa32e51064b08110aba4ef17f681cc99f88dd79b6224c4ad57b240637a"
+  },
+  {
+    "path": "static/image/MiroFish_logo_compressed.jpeg",
+    "bytes": 180620,
+    "sha256": "f2289e76f26f6258e93d08ba10d1cb3ce72dd8663edc7e0efbe0a29ae2128333"
+  },
+  {
+    "path": "static/image/QQ群.png",
+    "bytes": 120848,
+    "sha256": "a430f39eb021b80c39de6a86bae9faef702caaea89b254f67791926e18caf31e"
+  },
+  {
+    "path": "static/image/Screenshot/运行截图1.png",
+    "bytes": 68746,
+    "sha256": "d5613d300fc4e8e8c5ed98c376586fa49228dd3ff9cc642bef1a89f0e41d8979"
+  },
+  {
+    "path": "static/image/Screenshot/运行截图2.png",
+    "bytes": 251662,
+    "sha256": "fd2e8f3dfa4b3f687fc0bfbe92ef18bc2c925309fad98f988da72a70e7c8ded2"
+  },
+  {
+    "path": "static/image/Screenshot/运行截图3.png",
+    "bytes": 261109,
+    "sha256": "e4ff1efdc898cbdb1dfb2b00d014c355d3a9333e790b5344e7079d0951d8dcc3"
+  },
+  {
+    "path": "static/image/Screenshot/运行截图4.png",
+    "bytes": 79115,
+    "sha256": "b4a1c225ef5e0b40e6a9fa26db469ffe4caa2cf5ed7903a4312787ac65b256bd"
+  },
+  {
+    "path": "static/image/Screenshot/运行截图5.png",
+    "bytes": 123071,
+    "sha256": "f77c0af4e6ad1cc97e419477bf85c5bd9b1cdd800df64a7c513783229e8f4f19"
+  },
+  {
+    "path": "static/image/Screenshot/运行截图6.png",
+    "bytes": 460712,
+    "sha256": "3501831a354044daee314a50b7fff789951ecce0ede5f04a5dc0e122ac99dda5"
+  },
+  {
+    "path": "static/image/shanda_logo.png",
+    "bytes": 29599,
+    "sha256": "ee5b395deb5f3347f3e35a1fd5caf1b136ccaaa75edb12fb0142795f15c5d9b0"
+  },
+  {
+    "path": "static/image/star-history-dark.svg",
+    "bytes": 20254,
+    "sha256": "5dbde49c4c901b6707a3bc5fd63c5375a8fd701d1ce496d4cecfb6cc5ce55855",
+    "lines": 1
+  },
+  {
+    "path": "static/image/star-history-light.svg",
+    "bytes": 20254,
+    "sha256": "a37d431502d304de814944eb344a59bf10175694298ebd007aa2f86533389ea2",
+    "lines": 1
+  },
+  {
+    "path": "static/image/武大模拟演示封面.png",
+    "bytes": 203822,
+    "sha256": "3e78079d0fa45cfb380acc7fc03ab2b72f290f589ffac5f1f82c45b4118ae0aa"
+  },
+  {
+    "path": "static/image/红楼梦模拟推演封面.jpg",
+    "bytes": 464493,
+    "sha256": "e4c605ee39b66471fff1f65a007ab96f184249f4cfdf3e4033fb22a9b34cd0d8"
+  },
+  {
+    "path": "tests/test_local_star_count_fetch.py",
+    "bytes": 14174,
+    "sha256": "4252d549256d2a257f626ca818e96cdf64ac9b75ba2641680cfb4b2367d05a87",
+    "lines": 331
+  },
+  {
+    "path": "tests/test_local_star_history.py",
+    "bytes": 36511,
+    "sha256": "d641325adc71678ed0376b89ca3b18a252e675e898449db8e8fcd546f2bc6429",
+    "lines": 954
+  }
+]

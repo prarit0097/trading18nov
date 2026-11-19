@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-11-17T19:09:19.168047Z",
+  "data": {
+    "account_digest": "175bf23b9fb69afa644dbcb4312b7dba54d00edd77f220ca609437ae6b1edc54",
+    "cash": "5996.0704159456000000000",
+    "daily_realized": {},
+    "positions": [
+      {
+        "entry_fee": "1.9257343604000000000",
+        "entry_fee_rate": "0.001",
+        "entry_price": "63787.16000000",
+        "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+        "opened_at": "2026-11-17T19:08:58.344149Z",
+        "quantity": "0.03019000",
+        "stop": "63117.72000000",
+        "symbol": "BTCUSDT",
+        "target": "65030.40000000"
+      },
+      {
+        "entry_fee": "1.9247227540000000000",
+        "entry_fee_rate": "0.001",
+        "entry_price": "1791.94000000",
+        "id": "044965cf60588bc41e0f6a136fbf04d40e30fe8b9d2611ead13c77c0e69f33a2",
+        "opened_at": "2026-11-17T19:09:09.181252Z",
+        "quantity": "1.07410000",
+        "stop": "1773.12000000",
+        "symbol": "ETHUSDT",
+        "target": "1826.88000000"
+      },
+      {
+        "entry_fee": "0.1494725400000000000",
+        "entry_fee_rate": "0.001",
+        "entry_price": "72.63000000",
+        "id": "4351cac8b692847eece06b22c8d7ea425752d024adb0c56c7c98adaee1554bf3",
+        "opened_at": "2026-11-17T19:09:19.168047Z",
+        "quantity": "2.05800000",
+        "stop": "71.86000000",
+        "symbol": "SOLUSDT",
+        "target": "74.05000000"
+      }
+    ],
+    "quote_currency": "USDT",
+    "realized_pnl": "0"
+  },
+  "digest": "d6da667f254ed45e3bfab67554cfda07e39e2301b124e3f15b397ff7f33dc422",
+  "inputs": {
+    "ledger": "175bf23b9fb69afa644dbcb4312b7dba54d00edd77f220ca609437ae6b1edc54"
+  },
+  "kind": "portfolio",
+  "schema_version": 1
+}

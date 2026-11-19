@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-11-17T19:08:58.344149Z",
+  "data": {
+    "orders": [
+      {
+        "action": "buy",
+        "at": "2026-11-17T19:08:58.344149Z",
+        "fee": "1.9257343604000000000",
+        "id": "48e5349c2dc3f39d51fad96e9fd6ae08b89161c0e4015ab9bc3db2c223271a8a",
+        "mode": "paper",
+        "price": "63787.16000000",
+        "price_source": "ask_plus_adverse_slippage",
+        "quantity": "0.03019000",
+        "risk_digest": "964a51bdbe6a03aa1ebaf43a7d0245c82e046804bc66087fb3e7df5b54aeae79",
+        "symbol": "BTCUSDT"
+      }
+    ],
+    "status": "paper"
+  },
+  "digest": "ce4f9c4ee2a0224c51f028a0165e1552abceaf8af5d799253fb437582569c577",
+  "inputs": {
+    "ledger": "8c754d4cce1065a7185b1372e629761bec30a01fdffb1d97e27ad2a63ae012c8"
+  },
+  "kind": "orders",
+  "schema_version": 1
+}

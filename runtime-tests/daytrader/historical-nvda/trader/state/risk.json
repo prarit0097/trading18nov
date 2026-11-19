@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-12",
+  "now_new_york": "2026-11-12 10:00",
+  "paper": true,
+  "results": [
+    {
+      "index": 1,
+      "symbol": "NVDA",
+      "side": "buy",
+      "kind": "entry",
+      "amount": "7 shares",
+      "value_usd": 1138.62,
+      "entry_ref": 162.66,
+      "entry_ref_from": "plan",
+      "stop": 155.56,
+      "target": 176.86,
+      "risk_per_share": 7.1,
+      "max_loss": 49.7,
+      "reward_risk": 2.0,
+      "fingerprint": "142aa484b822ca37",
+      "verdict": "PASS",
+      "reasons": [],
+      "warnings": [],
+      "info": [
+        "entry 162.66 (the plan's entry), stop 155.56, target 176.86: risk 7.10 a share",
+        "max loss $49.70 (limit $50), reward:risk 2.00 (min 1)",
+        "today before this: 0 of 3 trades, $0 of $150 daily loss"
+      ]
+    }
+  ],
+  "pass": 1,
+  "block": 0,
+  "warnings": [],
+  "cash_after": 3861.38,
+  "today": {
+    "orders_placed": 0,
+    "entries_placed": 0,
+    "loss_at_risk": 0.0,
+    "day_trades_5d": null
+  },
+  "prices_as_of": "2026-11-12T15:00:00Z",
+  "checked_at": "2026-11-17T01:51:37Z",
+  "orders_file": "trader/orders.json"
+}

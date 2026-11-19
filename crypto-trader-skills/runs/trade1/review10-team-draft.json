@@ -1,0 +1,35 @@
+{
+  "review_id": "e1cc21f2f8230d68d2156fb9910b57373dbd93af48a526193c77e6e0c9e8cad3",
+  "order_ids": [
+    "2178770640",
+    "2178770647",
+    "2178773043",
+    "2178773049",
+    "2178773056",
+    "2178773967",
+    "2178773972",
+    "2178773981",
+    "2178773986",
+    "2178775089"
+  ],
+  "status": "awaiting_terminal_exit_comparisons",
+  "specialists": {
+    "market_data": "The group contains nine WAIT winners and one READY BTC loss across four execution baskets. Public five-minute replay reconstructed five READY symbols at 09:20 and 09:35 IST. Both moments predate the frozen sample. At 09:20 the BTC ask exceeded the saved buy limit by $12.50 and the attempt ended before submission. Two comparable guard rejections preceded the 09:35 four-READY fills. Prospectively measure quote age, ask drift, headroom and displayed quantity inside the existing IOC limit by READY breadth. Count idle and rejected opportunities as well as fills.",
+    "entry_exit": "Every reviewed position followed the first-fill 10-minute timer. Nine WAIT trades contributed +$2.85407815 and the one READY BTC trade contributed -$0.84089843. The whole final four-READY basket lost $2.08012162, of which trades 101 through 103 belong to the next review. Early paired comparison was concentrated among the realized winners. Use only matched entries and keep the separate public-depth analysis identified as modeled research.",
+    "risk_costs": "At fixed three-contract size, $3.21600000 gross less $1.20282028 in commissions and zero funding gave +$2.01317972 net. Highest planned position loss was $3.2059184, highest day loss plus basket reserve was $20.2196932, and planned basket margins occupied 75.43 to 75.98 percent of reported available margin. The journal does not independently retain the contemporaneous wallet snapshots. Quoted spreads ranged from 0.079 to 5.225 basis points and cannot isolate round-trip spread from slippage. Keep the agreed risk limits and size.",
+    "execution": "All ten lots opened and closed exactly three contracts, filled within their entry limits, had both protections confirmed and received one successful timed exit each. The timer sent exits 0.926 to 6.116 seconds after deadline and exchange fills followed within 0.257 seconds. One submitted SOL IOC in the represented baskets filled zero with insufficient displayed quantity reported by Delta. Other attempted baskets stopped before sending, as recorded separately. Carryover closes 101 through 103 stay outside this review.",
+    "reconciliation_validation": "Independent Delta India testnet retrieval matched all 20 fills, 20 commission debits and ten realized cashflows. Wallet and Excel agree. Trades 91 through 100 had nine wins, one loss, $0.84089843 maximum drawdown and +$1.08569843 excluding the best win. The first 100 trades had 27 winners and -$10.04345081 net. Review 10 includes one time-cluster shared with review 9 and one shared with the next review. Four correlated baskets in a single period leave substantial uncertainty."
+  },
+  "manager": {
+    "findings": "Review 10 is the first profitable group. Net was +$2.01317972, or +$0.201317972 per position. The $1,130.991 entry notional earned 28.44 basis points gross and paid 10.64 in commissions. Excluding the strongest single winner leaves +$1.08569843. Excluding the whole 09:25 IST basket leaves +$0.03812191. All 100 reviewed trades came from 34 baskets, with 27 profitable trades and -$10.04345081 cumulative net. The favorable ten-trade result is concentrated in one market period.",
+    "recommendation": "Retain the three-contract and ten-minute demo rules. Keep the registered four-READY test with its frozen start on November 20. Use contemporaneous quotes to investigate whether synchronized breakouts change IOC fillability and after-cost returns. Include all eligible, idle, rejected, partial and full-fill opportunities and account for basket and day correlation. Compare both endpoints under observed and doubled friction. A newly chosen filter needs its own later validation period."
+  },
+  "ceo": {
+    "decision": "retain_current",
+    "rationale": "Preserve the ten-minute timer, three contracts, current limits and frozen candidate. The positive review relies on closely timed baskets and the final four-READY basket lost money as one shared market event. The published holdout remains the basis for any policy change."
+  },
+  "comparison_eligible_at_ist": {
+    "15": "2026-11-19T09:53:00+05:30",
+    "30": "2026-11-19T10:08:00+05:30"
+  }
+}

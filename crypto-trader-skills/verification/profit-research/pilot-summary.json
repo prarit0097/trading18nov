@@ -1,0 +1,205 @@
+{
+  "status": "rejected",
+  "fingerprint": "f97df913d96c7ea785960faa89e63181499529b6fa2cb4b97dabddcbde92bd37",
+  "selection": {
+    "id": "longer",
+    "training_pass": false,
+    "training_mean_net": "-213.1658923417333333333333333"
+  },
+  "validation_pass": false,
+  "holdout_reused_exploratory": false,
+  "periods": {
+    "train": {
+      "start": "2026-09-15T00:00:00Z",
+      "end": "2026-10-15T00:00:00Z",
+      "bars": 8640
+    },
+    "validation": {
+      "start": "2026-10-15T00:00:00Z",
+      "end": "2026-10-30T00:00:00Z",
+      "bars": 4320
+    },
+    "test": {
+      "start": "2026-10-30T00:00:00Z",
+      "end": "2026-11-14T00:00:00Z",
+      "bars": 4320
+    }
+  },
+  "mean_test_candidate_net": "-212.5007063667666666666666667",
+  "mean_test_baseline_net": "-252.3468207428333333333333333",
+  "mean_test_double_cost_net": "-266.4920959507333333333333333",
+  "bootstrap": {
+    "lower": "-61.47892123984666666666666667",
+    "upper": "-15.59660790800666666666666667",
+    "observations": 15,
+    "replays": 1000,
+    "block_days": 3,
+    "seed": 19,
+    "quantity": "mean pooled daily realized PnL, independent research accounts",
+    "limit": "Conditional short-sample bootstrap, not a future win probability."
+  },
+  "live_defaults_changed": false,
+  "orders_submitted": 0,
+  "test_assets": {
+    "BTCUSDT": {
+      "candidate": {
+        "trade_count": 14,
+        "initial_cash": "10000",
+        "final_cash": "9823.0489370097000000000",
+        "net_pnl": "-176.9510629903000000000",
+        "total_fees": "53.7980332903000000000",
+        "max_drawdown_quote": "199.9544448434000000000",
+        "closed_bars": 4320,
+        "win_count": 3,
+        "loss_count": 11,
+        "flat_count": 0,
+        "win_rate": "0.2142857142857142857142857143",
+        "net_expectancy": "-12.63936164216428571428571429",
+        "profit_factor": "0.3563938706278028812254923365",
+        "return_fraction": "-0.0176951062990300000",
+        "entry_turnover": "26960.5931600000000000"
+      },
+      "baseline": {
+        "trade_count": 17,
+        "initial_cash": "10000",
+        "final_cash": "9748.0733457495000000000",
+        "net_pnl": "-251.9266542505000000000",
+        "total_fees": "65.2864961505000000000",
+        "max_drawdown_quote": "276.6854989195000000000",
+        "closed_bars": 4320,
+        "win_count": 3,
+        "loss_count": 14,
+        "flat_count": 0,
+        "win_rate": "0.1764705882352941176470588235",
+        "net_expectancy": "-14.81921495591176470588235294",
+        "profit_factor": "0.2800526528299489352678807401",
+        "return_fraction": "-0.0251926654250500000",
+        "entry_turnover": "32736.5681543000000000"
+      },
+      "double_cost": {
+        "trade_count": 14,
+        "initial_cash": "10000",
+        "final_cash": "9790.5194447138000000000",
+        "net_pnl": "-209.4805552862000000000",
+        "total_fees": "87.4864455862000000000",
+        "max_drawdown_quote": "214.5445269618000000000",
+        "closed_bars": 4320,
+        "win_count": 3,
+        "loss_count": 11,
+        "flat_count": 0,
+        "win_rate": "0.2142857142857142857142857143",
+        "net_expectancy": "-14.96289680615714285714285714",
+        "profit_factor": "0.2380689520379083988667987140",
+        "return_fraction": "-0.0209480555286200000",
+        "entry_turnover": "21932.6084514000000000"
+      }
+    },
+    "ETHUSDT": {
+      "candidate": {
+        "trade_count": 20,
+        "initial_cash": "10000",
+        "final_cash": "9903.6019701400000000000",
+        "net_pnl": "-96.3980298600000000000",
+        "total_fees": "76.9861578600000000000",
+        "max_drawdown_quote": "161.3622239620000000000",
+        "closed_bars": 4320,
+        "win_count": 7,
+        "loss_count": 13,
+        "flat_count": 0,
+        "win_rate": "0.35",
+        "net_expectancy": "-4.8199014930000000000",
+        "profit_factor": "0.7033744970195207176749897200",
+        "return_fraction": "-0.0096398029860000000",
+        "entry_turnover": "38502.7848660000000000"
+      },
+      "baseline": {
+        "trade_count": 25,
+        "initial_cash": "10000",
+        "final_cash": "9835.8917742720000000000",
+        "net_pnl": "-164.1082257280000000000",
+        "total_fees": "96.1732757280000000000",
+        "max_drawdown_quote": "260.0535120120000000000",
+        "closed_bars": 4320,
+        "win_count": 8,
+        "loss_count": 17,
+        "flat_count": 0,
+        "win_rate": "0.32",
+        "net_expectancy": "-6.5643290291200000000",
+        "profit_factor": "0.6138442482682916500041356469",
+        "return_fraction": "-0.0164108225728000000",
+        "entry_turnover": "48120.6053390000000000"
+      },
+      "double_cost": {
+        "trade_count": 20,
+        "initial_cash": "10000",
+        "final_cash": "9827.7208476740000000000",
+        "net_pnl": "-172.2791523260000000000",
+        "total_fees": "125.2041953260000000000",
+        "max_drawdown_quote": "181.3481350900000000000",
+        "closed_bars": 4320,
+        "win_count": 7,
+        "loss_count": 13,
+        "flat_count": 0,
+        "win_rate": "0.35",
+        "net_expectancy": "-8.6139576163000000000",
+        "profit_factor": "0.4698738608879500664076800953",
+        "return_fraction": "-0.0172279152326000000",
+        "entry_turnover": "31324.5863100000000000"
+      }
+    },
+    "SOLUSDT": {
+      "candidate": {
+        "trade_count": 26,
+        "initial_cash": "10000",
+        "final_cash": "9635.8469737500000000000",
+        "net_pnl": "-364.1530262500000000000",
+        "total_fees": "98.7799162500000000000",
+        "max_drawdown_quote": "421.4408535900000000000",
+        "closed_bars": 4320,
+        "win_count": 5,
+        "loss_count": 21,
+        "flat_count": 0,
+        "win_rate": "0.1923076923076923076923076923",
+        "net_expectancy": "-14.0058856250000000000",
+        "profit_factor": "0.3063601214839820020812180444",
+        "return_fraction": "-0.0364153026250000000",
+        "entry_turnover": "49522.6446800000000000"
+      },
+      "baseline": {
+        "trade_count": 32,
+        "initial_cash": "10000",
+        "final_cash": "9658.9944177500000000000",
+        "net_pnl": "-341.0055822500000000000",
+        "total_fees": "121.9079922500000000000",
+        "max_drawdown_quote": "387.5339428000000000000",
+        "closed_bars": 4320,
+        "win_count": 8,
+        "loss_count": 24,
+        "flat_count": 0,
+        "win_rate": "0.25",
+        "net_expectancy": "-10.6564244453125000000",
+        "profit_factor": "0.4316454664037466966906484470",
+        "return_fraction": "-0.0341005582250000000",
+        "entry_turnover": "61063.5449200000000000"
+      },
+      "double_cost": {
+        "trade_count": 26,
+        "initial_cash": "10000",
+        "final_cash": "9582.2834197600000000000",
+        "net_pnl": "-417.7165802400000000000",
+        "total_fees": "160.8935402400000000000",
+        "max_drawdown_quote": "450.5814352600000000000",
+        "closed_bars": 4320,
+        "win_count": 5,
+        "loss_count": 21,
+        "flat_count": 0,
+        "win_rate": "0.1923076923076923076923076923",
+        "net_expectancy": "-16.06602231692307692307692308",
+        "profit_factor": "0.2043263924026231676259583450",
+        "return_fraction": "-0.0417716580240000000",
+        "entry_turnover": "40351.7965800000000000"
+      }
+    }
+  },
+  "evaluation_seconds": 11.167
+}

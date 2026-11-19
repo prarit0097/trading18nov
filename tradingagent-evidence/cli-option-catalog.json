@@ -1,0 +1,223 @@
+[
+  {
+    "file": "cli/main.py",
+    "line": 39,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--checkpoint/--no-checkpoint'"
+    ],
+    "kwargs": {
+      "help": "'Enable/disable checkpoint-resume (save state after each node so a crashed run can resume). Omit to honor TRADINGAGENTS_CHECKPOINT_ENABLED.'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 45,
+    "kind": "Option",
+    "args": [
+      "False",
+      "'--clear-checkpoints'"
+    ],
+    "kwargs": {
+      "help": "'Delete all saved checkpoints before running (force fresh start).'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 50,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--portfolio'"
+    ],
+    "kwargs": {
+      "help": "'JSON file with current holdings and cash, so the trader, risk and portfolio agents size against your actual position.'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 56,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--ticker'"
+    ],
+    "kwargs": {
+      "help": "'Ticker to analyze, e.g. NVDA or 0700.HK; skips the prompt'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 57,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--date'"
+    ],
+    "kwargs": {
+      "help": "'Analysis date, YYYY-MM-DD; skips the prompt'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 58,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--analysts'"
+    ],
+    "kwargs": {
+      "help": "'Comma-separated analysts, e.g. market,news; skips the prompt'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 61,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--save/--no-save'"
+    ],
+    "kwargs": {
+      "help": "'Save the report under results_dir without asking'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 64,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--show/--no-show'"
+    ],
+    "kwargs": {
+      "help": "'Show the full report at the end without asking'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 67,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--html/--no-html'"
+    ],
+    "kwargs": {
+      "help": "'Save the report as one HTML page too, complete_report.html, without asking (default: yes)'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 109,
+    "kind": "Argument",
+    "args": [
+      "..."
+    ],
+    "kwargs": {
+      "help": "'Comma-separated tickers, e.g. NVDA,AAPL'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 110,
+    "kind": "Option",
+    "args": [
+      "...",
+      "'--start'"
+    ],
+    "kwargs": {
+      "help": "'First analysis date, YYYY-MM-DD'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 111,
+    "kind": "Option",
+    "args": [
+      "...",
+      "'--end'"
+    ],
+    "kwargs": {
+      "help": "'Last analysis date, YYYY-MM-DD'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 112,
+    "kind": "Option",
+    "args": [
+      "7",
+      "'--every'"
+    ],
+    "kwargs": {
+      "help": "'Days between analysis dates'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 113,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--analysts'"
+    ],
+    "kwargs": {
+      "help": "'Comma-separated analysts to run: market, sentiment, news, fundamentals; omit for all the asset type allows'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 116,
+    "kind": "Option",
+    "args": [
+      "'stock'",
+      "'--asset-type'"
+    ],
+    "kwargs": {
+      "help": "'stock or crypto'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 117,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--portfolio'"
+    ],
+    "kwargs": {
+      "help": "'JSON file with holdings and cash, held constant across the grid'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 120,
+    "kind": "Option",
+    "args": [
+      "None",
+      "'--run-id'"
+    ],
+    "kwargs": {
+      "help": "'Continue an earlier sweep: its cells are skipped and its log reused'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 168,
+    "kind": "Argument",
+    "args": [],
+    "kwargs": {
+      "help": "'The plan to sign in with'"
+    }
+  },
+  {
+    "file": "cli/main.py",
+    "line": 183,
+    "kind": "Argument",
+    "args": [],
+    "kwargs": {
+      "help": "'The plan to sign out of'"
+    }
+  }
+]

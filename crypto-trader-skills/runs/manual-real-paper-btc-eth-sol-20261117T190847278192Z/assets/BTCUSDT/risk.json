@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-11-17T19:08:57.695122Z",
+  "data": {
+    "account_digest": "60095b349066072ba67844f900fd41c00cb13f407a3967cf94b31bbc39a5d2da",
+    "approved": true,
+    "expires_at": "2026-11-17T19:09:27.695122Z",
+    "reasons": [],
+    "status": "approved"
+  },
+  "digest": "964a51bdbe6a03aa1ebaf43a7d0245c82e046804bc66087fb3e7df5b54aeae79",
+  "inputs": {
+    "config": "866b8ef2d00f66e71b619f30dc79406777dad61c16950a9f547790f964047500",
+    "market": "6829269ba7a3e9c67421b7921f43efcbafa7517bfd1a76aa00da477a54f7120a",
+    "plan": "238a86ac1d09980cc76ce23118acae44d4f84281356b3b51f2e324164639f8fd",
+    "portfolio": "f49dbb93ddf33bad3cdaf134a9feab82ea833742a38d34da2e66a14cb7ef79dd",
+    "proposal": "053c072c431257c5b4091866a55ad15fcf5d54078bcf967e6905b16090ea67f2",
+    "sizing": "24c8e849863ba6019eb06925a81ffb34d91f5fa0f555acebdc6a6417de023212"
+  },
+  "kind": "risk",
+  "schema_version": 1
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "document": "E:\\coding\\code\\Trade\\mirofish.md",
+  "document_sha256": "074e0e6f0cd5330e835192a1647fafbd689a894203f38cd42c7313a0b83fb1a4",
+  "words": 19350,
+  "source_links_checked": 2016,
+  "tracked_file_inventory": 16844,
+  "errors": [],
+  "backup": "E:\\coding\\code\\Trade\\paperclip-evidence\\mirofish-original-report.md",
+  "backup_sha256": "0fd484504ebe738d0f1bcbbcaf21e7aebbd55fa149a88911be0ecb27d503121a",
+  "limits": "Static/source/document verification; selected tests failed as explicitly recorded; no full runtime qualification"
+}

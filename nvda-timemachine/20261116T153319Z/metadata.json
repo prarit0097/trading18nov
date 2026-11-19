@@ -1,0 +1,39 @@
+{
+  "mode": "historical-trigger-replay",
+  "fetched_utc": "2026-11-16T15:33:20.977698+00:00",
+  "data_url": "https://query2.finance.yahoo.com/v8/finance/chart/NVDA?range=60d&interval=5m",
+  "raw_sha256": "3c8ce6d0a4389499490ea91d327f7500f38060a733dadf1e368c7e2033bc1256",
+  "live_status": "waiting",
+  "selection_attempts": [
+    {
+      "date": "2026-11-13",
+      "status": "expired"
+    },
+    {
+      "date": "2026-11-12",
+      "status": "triggered"
+    }
+  ],
+  "selected_entry": {
+    "created_by": "trader-entry",
+    "symbol": "NVDA",
+    "setup": "orb",
+    "side": "buy",
+    "date": "2026-11-12",
+    "status": "triggered",
+    "time": "10:00 AM",
+    "bar_start": "09:55",
+    "bar_index": 5,
+    "price": 162.66,
+    "level": 162.33,
+    "interval": "5m",
+    "opening_range": {
+      "high": 162.33,
+      "low": 148.8,
+      "minutes": 15
+    },
+    "source": "yahoo",
+    "checked_at": "2026-11-12T20:30:00Z",
+    "reason": "the 9:55 bar closed above the range high"
+  }
+}

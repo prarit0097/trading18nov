@@ -1,0 +1,19 @@
+# Simulation post-write audit
+
+Audited final `E:\coding\code\Trade\mirofish.md`, particularly lines283–398, against `simulation-notes.md` and pinned source `7657031ac01184afe2cb220f5ee3545573b5e843`. Read-only source verification; no live LLM/Zep/OASIS execution or source edits. Live usage at audit start: five-hour bucket46% used /54% remaining.
+
+## Actionable clarifications
+
+1. **Overview should mark graph memory as conditional.** Final document line19 and diagram edge `D --> M` (line41) describe simulated actions entering graph memory without a condition; detailed line353 correctly says graph memory defaults false, while line428 correctly says the current frontend explicitly enables it. Add “when enabled; the current Step3 UI enables it” to overview/diagram. Evidence: `backend/app/api/simulation.py:1554` defaults false; `backend/app/services/simulation_runner.py:440` gates updater creation, `:462` explicitly disables otherwise. This is an overview qualification, not a contradiction in the detailed subsystem account.
+
+2. **Explain that saved platform-enable flags do not select the run mode.** Lines295/299 describe enable_twitter/enable_reddit preparation behavior, and lines353/361 describe start platform selection, but do not explicitly connect their independence. Add: “Prepare enable flags control which profiles/configs are generated; start's platform argument separately selects the script. Omitted platform defaults parallel and is not inferred from saved enable flags.” Evidence: `backend/app/api/simulation.py:1552` defaults parallel; `backend/app/services/simulation_runner.py:465` dispatches solely on platform; `backend/scripts/run_parallel_simulation.py:1579` executes both unless CLI-only flag is set. This also explains why an API-created single-platform simulation must explicitly request the corresponding start platform; the existing missing-profile return behavior at lines347 is already accurately documented.
+
+## Verified substantive coverage
+
+No additional material gap found in the simulation subsection. Checked OASIS/CAMEL dependency boundary; actual graph/env/step calls; state persistence and absence of full live resume; prepare failure/ready detection; API-vs-manager worker defaults5/3; persona normalization/fallback/random statistics; Twitter CSV versus Reddit JSON; runtime30-minute versus generator60-minute fallback; actual scheduler and unused config knobs; initial-post overwrite/Reddit accumulation; action logging/metadata gaps; finalization barrier and STOPPING202/409 behavior; force-cleanup scope; stale liveness and interview IPC; full action-detail histories versus10k timeline/stats limit.
+
+The final document correctly preserves these distinctions: single-platform scripts lack action JSONL projection; simulation_end does not publish terminal runner success; environment remains alive after loop; graph drain can fail and retry; API single/batch/all interview timeout defaults60/120/180; close-env can return before actual env close; test pass is offline mocked/local evidence, not an OASIS end-to-end or prediction-accuracy validation.
+
+Exact source references spot-checked at the implementation statements, including `simulation_manager.py:25`, `oasis_profile_generator.py:338`, `simulation_config_generator.py:593`, `run_reddit_simulation.py:603`, `simulation_runner.py:1044`, and API detail implementation `simulation.py:1960`. No incorrect line number or source mismatch found in those checks. Numerous shorthand `:line` references are context-resolvable but would be easier to independently follow if expanded to full file:line links; this is navigability polish, not a substantive finding.
+
+Test evidence wording is consistent with the main task's129backend passes and separate root27passes/1Windows failure. This auditor did not rerun those checks and does not claim otherwise.

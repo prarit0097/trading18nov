@@ -1,0 +1,26 @@
+[
+  {
+    "validator": "E:\\coding\\code\\Trade\\analysis-evidence\\validate-document.py",
+    "exit": 0,
+    "output": "{\n  \"path\": \"E:\\\\coding\\\\code\\\\Trade\\\\daytrade.md\",\n  \"bytes\": 142770,\n  \"words\": 10375,\n  \"lines\": 679,\n  \"module_sections\": 11,\n  \"missing_modules\": [],\n  \"missing_local_links\": [],\n  \"bad_source_links\": [],\n  \"unexpanded_placeholders\": [],\n  \"balanced_code_fences\": true,\n  \"source_diff\": \"\",\n  \"sha256\": \"daea02f1fc646cd209c24abc4d9a7d31fa05e5a066aae7cd797e9141bff5e1f8\"\n}\n",
+    "error": ""
+  },
+  {
+    "validator": "E:\\coding\\code\\Trade\\obb-evidence\\validate-document.py",
+    "exit": 0,
+    "output": "{\n  \"status\": \"verified within stated source-documentation scope\",\n  \"commit\": \"e43353a82815ff9ba56ad1b7ad47c32729dcf314\",\n  \"document\": \"E:\\\\coding\\\\code\\\\Trade\\\\obb.md\",\n  \"bytes\": 168140,\n  \"words\": 10393,\n  \"source_reference_count\": 400,\n  \"source_reference_errors\": [],\n  \"local_evidence_links_checked\": 40,\n  \"missing_evidence_links\": [],\n  \"package_manifests_checked\": 38,\n  \"manifest_changes\": [],\n  \"packages_missing_from_document\": [],\n  \"tracked_file_inventory_matches\": true,\n  \"tracked_source_diff\": \"\",\n  \"remaining_template_tokens\": [],\n  \"balanced_code_fences\": true,\n  \"offline_test_exit\": 0,\n  \"offline_test_copy_hash_errors\": [],\n  \"offline_test_log_has_22_passed\": true,\n  \"initial_collection_failure_preserved\": true,\n  \"verification_scope_exclusions\": \"Full installed SDK/API/MCP/desktop/provider integration and hosted services not executed; test/environment limitations explicitly documented.\",\n  \"sha256\": \"1a3c860888e9d9c15f4c7c7b04afbafed3dee891f18fa7ddb1df0dd40fdd97b7\"\n}\n",
+    "error": ""
+  },
+  {
+    "validator": "E:\\coding\\code\\Trade\\tradingagent-evidence\\validate-document.py",
+    "exit": 1,
+    "output": "",
+    "error": "ocal\\Programs\\Python\\Python313\\Lib\\pathlib\\_abc.py\", line 632, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\hp\\\\Documents\\\\ChatGPT\\\\Trading\\\\tradingagent.md'\n"
+  },
+  {
+    "validator": "original MiroFish report backup",
+    "exit": 0,
+    "output": "{\"checked_utc\": \"2026-11-16T16:02:31.295512+00:00\", \"document\": \"E:\\\\coding\\\\code\\\\Trade\\\\paperclip-evidence\\\\mirofish-original-report.md\", \"document_sha256\": \"0fd484504ebe738d0f1bcbbcaf21e7aebbd55fa149a88911be0ecb27d503121a\", \"words\": 15391, \"source_links_checked\": 928, \"local_evidence_links_checked\": 17, \"tracked_files_checked\": 128, \"route_registrations_checked\": 60, \"python_ast_files_checked\": 62, \"commit\": \"7657031ac01184afe2cb220f5ee3545573b5e843\", \"repository_clean\": true, \"errors\": [], \"status\": \"PASS\", \"limits\": \"Mechanical completeness/citation checks plus separate independent semantic audits; not all runtime paths or external providers verified.\"}\n",
+    "error": ""
+  }
+]
