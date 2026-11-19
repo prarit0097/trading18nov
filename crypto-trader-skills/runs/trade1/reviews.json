@@ -13610,10 +13610,10 @@
         }
       },
       "bf94be5569d8d6ba1ace046c6935f3af0476fe52e08601382d18a4036d945bec": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "832eae52e4bf21490beb9884120c1905fc265be0f0b6fc6f295067538460fe7a",
-        "queued_at": "2026-11-19T12:19:28.117796+00:00",
+        "evidence_sha256": "5bad260119410f08ca23789f73560bd73fa2e93de48d9ee8f9784a4fad046574",
+        "queued_at": "2026-11-19T12:34:23.131095+00:00",
         "evidence": [
           {
             "order_id": "2178805741",
@@ -14230,8 +14230,14 @@
                 "observed_at": "2026-11-19T12:15:02.567748+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "63639.66425",
+                "fees": "0.2032129256301865545823106420",
+                "funding": "0",
+                "net_pnl": "-1.063720175630186554582310642",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T12:34:23.131095+00:00"
               }
             ]
           }
@@ -14256,12 +14262,12 @@
               "mean_paired_change_usd": "-0.0401521178954082698253274668"
             },
             "30": {
-              "pairs": 3,
-              "pending": 1,
+              "pairs": 4,
+              "pending": 0,
               "unavailable": 6,
               "actual_win_rate": 0.0,
-              "modeled_win_rate": 1.0,
-              "mean_paired_change_usd": "0.390424074656777413043112082"
+              "modeled_win_rate": 0.75,
+              "mean_paired_change_usd": "0.2014897645850364211367564009"
             }
           }
         },
@@ -14274,7 +14280,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T12:36:16.946414+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "Three READY positions lost $0.07971791 net and seven WAIT positions lost $1.22461050. Four decision windows had READY breadth of 0, 3, 1 and 0 across five instruments. One BTC IOC filled zero on a checked ask $1 inside its limit with a quote aged 5.24 seconds. Its book was unavailable. A DOGE lot failed the saved limit before submission. Prospectively retain the observed signal, ranking, feasibility, matching book and fill outcome for each considered coin.",
+            "entry_exit": "The official 15-minute comparison matched five trades, 0 to 0 wins and mean change -$0.04015212. The official 30-minute comparison matched four, 0 to 3 wins and mean change +$0.20148976, with six unavailable. All three modeled winners came from one basket. The final BTC pair lost at both horizons and reduced the 30-minute mean improvement. Depth and funding supplemental research matched nine at 15 minutes, 1 to 1 wins and mean change -$0.03336003. At 30 minutes it matched seven, 1 to 3 wins and mean change -$0.04287786. Three recovery positions in the latter comparison were actually held about 12.5 minutes.",
+            "risk_costs": "Gross -$0.45600000, commission $0.84832841 and zero funding produced -$1.30432841 net. Four trades were positive before fees and one after. The maximum planned risk per lot was $3.2141942, peak daily loss plus proposed reserve $29.82311945 and maximum planned combined margin 76.31%. All were inside the agreed limits. Timing overruns increased exposure duration. Dollar attribution requires a verified executable price at the original deadline.",
+            "execution": "All ten owned lots opened and closed three contracts. Entry protection was verified and every timed close required one acknowledged reduce-only order. Three exits during worker recovery were 150.066 to 151.817 seconds late by recorded intent time, with 137.311 to 141.003 seconds before the successful worker started. The other seven were 0.664 to 8.667 seconds late. Across 193 campaign closes median due-to-intent was 3.791 seconds, 14 exceeded ten seconds and three exceeded thirty. Median intent timestamp to venue fill was 0.300 seconds. The timer journal shares a bounded Windows publish retry after fsync. The intent timestamp is recorded before that save.",
+            "reconciliation_validation": "The signed audit matched 20 unique fills, 20 commissions and ten settlement cashflows. Closes 181 through 190 were disjoint from the prior 180 and next three. One win, nine losses, mean -$0.130432841 and peak drawdown $1.30432841. Excluding the largest winner left -$1.31317584. Every reviewed basket slice was negative. The frozen policy through 190 posted 41 wins (21.58%) and -$23.75672005 net. The observations share a market day and correlated baskets, and some modeled references are unavailable."
+          },
+          "manager": {
+            "findings": "Final sign-off against the terminal evidence digest. Both official campaign-wide mean comparisons remain negative through close 190. The 15-minute result is -$0.04898458 across 119 pairs and the 30-minute result is -$0.03489898 across 91 pairs. The favorable four-pair official 30-minute group estimate is sensitive to basket concentration and missing reference coverage. Additional funding-verified pairs give a negative mean change. The observed recovery fills do not establish the dollar impact of delay.",
+            "recommendation": "Retain the ten-minute demo exit, current risk limits and frozen four-READY study. During a naturally occurring outage, log authenticated-path recovery, the first healthy scheduler cycle and each overdue protected exit. Verify that each gets exactly one reduce-only submission by the end of that cycle. Flag missed, duplicate or later submissions and measure overdue time before and after recovery."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "Independent settlement and paired duration checks support retaining the current tested rule while the frozen four-READY forward window collects independent observations. Both a higher after-cost win probability and improved expectancy within the risk limits are required for promotion. This review is one correlated subset with selective modeled coverage. The Windows journal reliability patch changes file publication and preserves the current trading rules."
+          }
+        }
       }
     },
     "candidate_registry": {

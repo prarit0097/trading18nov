@@ -1,0 +1,109 @@
+{
+  "status": "depth_research_only",
+  "environment": "india_testnet",
+  "campaign_id": "trade1",
+  "batch_id": "demo-1795089553628736700",
+  "minutes": 30,
+  "comparisons": [
+    {
+      "symbol": "BTCUSD",
+      "order_id": "2178811430",
+      "first_fill_at": "2026-11-19T11:59:15.068432Z",
+      "deadline_at": 1795091355.068432,
+      "capture": {
+        "status": "unavailable",
+        "reason": "Book capture window has already passed"
+      },
+      "candle_baseline": {
+        "status": "estimated",
+        "exit_price": "63639.66425",
+        "fees": "0.2032129256301865545823106420",
+        "funding": "0",
+        "net_pnl": "-1.063720175630186554582310642",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "depth_fallback": {
+        "status": "estimated",
+        "exit_price": "63639.66425",
+        "fees": "0.2032129256301865545823106420",
+        "funding": "0",
+        "net_pnl": "-1.063720175630186554582310642",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "realized_net_usd": "-0.69840701"
+    },
+    {
+      "symbol": "ETHUSD",
+      "order_id": "2178811434",
+      "first_fill_at": "2026-11-19T11:59:16.946951Z",
+      "deadline_at": 1795091356.946951,
+      "capture": {
+        "status": "unavailable",
+        "reason": "Book capture window has already passed"
+      },
+      "candle_baseline": {
+        "status": "estimated",
+        "exit_price": "1796.051525",
+        "fees": "0.05738787623651332760103181427",
+        "funding": "0",
+        "net_pnl": "-0.3693421262365133276010318143",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "depth_fallback": {
+        "status": "estimated",
+        "exit_price": "1796.051525",
+        "fees": "0.05738787623651332760103181427",
+        "funding": "0",
+        "net_pnl": "-0.3693421262365133276010318143",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "realized_net_usd": "-0.17149299"
+    },
+    {
+      "symbol": "XRPUSD",
+      "order_id": "2178811443",
+      "first_fill_at": "2026-11-19T11:59:19.234336Z",
+      "deadline_at": 1795091359.234336,
+      "capture": {
+        "status": "unavailable",
+        "reason": "Book capture window has already passed"
+      },
+      "candle_baseline": {
+        "status": "estimated",
+        "exit_price": "0.97960995",
+        "fees": "0.003135213622989340101522842640",
+        "funding": "0",
+        "net_pnl": "-0.02980536362298934010152284264",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "depth_fallback": {
+        "status": "estimated",
+        "exit_price": "0.97960995",
+        "fees": "0.003135213622989340101522842640",
+        "funding": "0",
+        "net_pnl": "-0.02980536362298934010152284264",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "realized_net_usd": "-0.01364380"
+    },
+    {
+      "symbol": "DOGEUSD",
+      "order_id": "2178811450",
+      "first_fill_at": "2026-11-19T11:59:21.682908Z",
+      "deadline_at": 1795091361.682908,
+      "capture": {
+        "status": "unavailable",
+        "reason": "Book capture window has already passed"
+      },
+      "candle_baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute"
+      },
+      "depth_fallback": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No valid depth snapshot at the modeled deadline"
+      },
+      "realized_net_usd": "-0.08682551"
+    }
+  ]
+}

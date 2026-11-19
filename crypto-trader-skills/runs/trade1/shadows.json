@@ -7098,8 +7098,14 @@
         "observed_at": "2026-11-19T12:15:02.567748+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "63639.66425",
+        "fees": "0.2032129256301865545823106420",
+        "funding": "0",
+        "net_pnl": "-1.063720175630186554582310642",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:34:23.131095+00:00"
       }
     ]
   },
@@ -7133,8 +7139,14 @@
         "observed_at": "2026-11-19T12:15:02.567748+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "1796.051525",
+        "fees": "0.05738787623651332760103181427",
+        "funding": "0",
+        "net_pnl": "-0.3693421262365133276010318143",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:34:23.131095+00:00"
       }
     ]
   },
@@ -7164,8 +7176,14 @@
         "observed_at": "2026-11-19T12:15:02.567748+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "0.97960995",
+        "fees": "0.003135213622989340101522842640",
+        "funding": "0",
+        "net_pnl": "-0.02980536362298934010152284264",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:34:23.131095+00:00"
       }
     ]
   },
@@ -7199,8 +7217,10 @@
         "observed_at": "2026-11-19T12:15:02.567748+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:34:23.131095+00:00"
       }
     ]
   }
