@@ -1,0 +1,317 @@
+{
+  "scope": "Public India testnet IOC basket observation",
+  "venue": "wss://socket-ind-pub.testnet.deltaex.org",
+  "environment": "india_testnet",
+  "stream": "ob_l2",
+  "capture": {
+    "environment": "india_testnet",
+    "venue": "wss://socket-ind-pub.testnet.deltaex.org",
+    "stream": "ob_l2",
+    "sessions": 1,
+    "invalid": 10,
+    "sample_start": "2026-11-19T12:56:53.751Z",
+    "sample_end": "2026-11-19T13:04:00.000Z",
+    "completed_at": "2026-11-19T13:04:00.079Z",
+    "counts": {
+      "BTCUSD": 843,
+      "ETHUSD": 850,
+      "XRPUSD": 849,
+      "SOLUSD": 849,
+      "DOGEUSD": 849
+    },
+    "match_rule": "Latest same-symbol receipt and message exchange times both strictly before journaled submit and within 1000 ms. Walk displayed five offers within existing IOC limit."
+  },
+  "source_sha256": "6fb78be01092d69dc2bf9b8638f6d6972432e3b2039559454a0e54920f8f464f",
+  "attempted_counts": {
+    "zero": 2,
+    "full": 2
+  },
+  "eligible_observations": 0,
+  "predicted_exact_matches": 0,
+  "planned_unsubmitted": 4,
+  "pending": [],
+  "attempts": [
+    {
+      "batch": "demo-1795093162745714400",
+      "symbol": "BTCUSD",
+      "product_id": 84,
+      "order_id": "2178818616",
+      "limit": "63837.0",
+      "requested": 3,
+      "submission_started_at": "2026-11-19T12:59:23.606501+00:00",
+      "actual_filled": 0,
+      "status": "zero",
+      "cancellation_reason": "order_size_not_available_in_orderbook",
+      "preflight_ask": "63836"
+    },
+    {
+      "batch": "demo-1795093162745714400",
+      "symbol": "ETHUSD",
+      "product_id": 1699,
+      "order_id": "2178818621",
+      "limit": "1804.85",
+      "requested": 3,
+      "submission_started_at": "2026-11-19T12:59:24.895393+00:00",
+      "actual_filled": 0,
+      "status": "zero",
+      "cancellation_reason": "order_size_not_available_in_orderbook",
+      "preflight_ask": "1804.35"
+    },
+    {
+      "batch": "demo-1795093218265507600",
+      "symbol": "BTCUSD",
+      "product_id": 84,
+      "order_id": "2178818732",
+      "limit": "63854.0",
+      "requested": 3,
+      "submission_started_at": "2026-11-19T13:00:19.138486+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "cancellation_reason": null,
+      "preflight_ask": "63846"
+    },
+    {
+      "batch": "demo-1795093218265507600",
+      "symbol": "ETHUSD",
+      "product_id": 1699,
+      "order_id": "2178818741",
+      "limit": "1806.70",
+      "requested": 3,
+      "submission_started_at": "2026-11-19T13:00:21.081081+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "cancellation_reason": null,
+      "preflight_ask": "1806.2"
+    }
+  ],
+  "signed_venue_orders": [
+    {
+      "symbol": "BTCUSD",
+      "order_id": "2178818616",
+      "filled": 0,
+      "state": "cancelled",
+      "created_at": "2026-11-19T12:59:25.285626Z",
+      "venue_created_minus_local_intent_ms": 1679
+    },
+    {
+      "symbol": "ETHUSD",
+      "order_id": "2178818621",
+      "filled": 0,
+      "state": "cancelled",
+      "created_at": "2026-11-19T12:59:26.571361Z",
+      "venue_created_minus_local_intent_ms": 1676
+    },
+    {
+      "symbol": "BTCUSD",
+      "order_id": "2178818732",
+      "filled": 3,
+      "state": "closed",
+      "created_at": "2026-11-19T13:00:20.816615Z",
+      "venue_created_minus_local_intent_ms": 1678
+    },
+    {
+      "symbol": "ETHUSD",
+      "order_id": "2178818741",
+      "filled": 3,
+      "state": "closed",
+      "created_at": "2026-11-19T13:00:22.757494Z",
+      "venue_created_minus_local_intent_ms": 1676
+    }
+  ],
+  "prospective_readout": {
+    "protocol": {
+      "environment": "india_testnet",
+      "capture": "trade1-ioc-probe-20261119-1827.jsonl",
+      "registered_before_next_batch": true,
+      "horizon_end_utc": "2026-11-19T13:04:00Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "XRPUSD",
+        "DOGEUSD",
+        "SOLUSD"
+      ],
+      "strict_match": "Latest same-symbol quote with local receipt strictly before local intent and venue message time strictly before the signed venue order creation time. Each age must be above zero and no more than 1,000 ms.",
+      "quote_age": "Record underlying book update age separately. Preserve the original mixed-clock result as a comparator.",
+      "outcome": "Walk the recorded five ask levels at or below the exact saved cap. Expected quantity is the displayed quantity capped at three. Compare to the signed full, partial or zero quantity.",
+      "failure": "Missing eligible quotes are unavailable. Every mismatched eligible pair falsifies exact displayed-quantity agreement for that order.",
+      "scope": "Prospective exploratory measurement on new demo attempts. Venue order creation is observed after submission. Report batch correlation and after-cost performance separately for actual closes.",
+      "registered_utc": "2026-11-19T12:57:13.5252256+00:00"
+    },
+    "protocol_sha256": "6c01a2c68555e353c08fe2c9243aa1448e63a2be81163b1e1af99aabd147e9a6",
+    "message_count": 4240,
+    "median_venue_minus_local_ms": 1475.688,
+    "matched": 4,
+    "exact": 4,
+    "by_batch": {
+      "demo-1795093162745714400": 2,
+      "demo-1795093218265507600": 2
+    },
+    "matches": [
+      {
+        "batch": "demo-1795093162745714400",
+        "symbol": "BTCUSD",
+        "order_id": "2178818616",
+        "eligible": true,
+        "signed_fill_quantity": 0,
+        "quote": {
+          "symbol": "BTCUSD",
+          "exchange_us": 1795093164732757,
+          "receipt_ms": 1795093163249,
+          "book_update_us": 1795093163652391,
+          "asks": [
+            [
+              "63852.0",
+              "1220"
+            ],
+            [
+              "63852.5",
+              "1562"
+            ],
+            [
+              "63853.0",
+              "2000"
+            ],
+            [
+              "63853.5",
+              "2560"
+            ],
+            [
+              "63854.0",
+              "3277"
+            ]
+          ]
+        },
+        "local_receipt_to_intent_ms": 357.501,
+        "venue_message_to_order_ms": 552.869,
+        "venue_book_update_to_order_ms": 1633.235,
+        "displayed_quantity_within_cap": "0",
+        "indicated_fill_quantity": 0,
+        "exact": true
+      },
+      {
+        "batch": "demo-1795093162745714400",
+        "symbol": "ETHUSD",
+        "order_id": "2178818621",
+        "eligible": true,
+        "signed_fill_quantity": 0,
+        "quote": {
+          "symbol": "ETHUSD",
+          "exchange_us": 1795093165992674,
+          "receipt_ms": 1795093164506,
+          "book_update_us": 1795093163723666,
+          "asks": [
+            [
+              "1805.45",
+              "208"
+            ],
+            [
+              "1805.50",
+              "256"
+            ],
+            [
+              "1805.55",
+              "303"
+            ],
+            [
+              "1805.60",
+              "349"
+            ],
+            [
+              "1805.65",
+              "395"
+            ]
+          ]
+        },
+        "local_receipt_to_intent_ms": 389.393,
+        "venue_message_to_order_ms": 578.687,
+        "venue_book_update_to_order_ms": 2847.695,
+        "displayed_quantity_within_cap": "0",
+        "indicated_fill_quantity": 0,
+        "exact": true
+      },
+      {
+        "batch": "demo-1795093218265507600",
+        "symbol": "BTCUSD",
+        "order_id": "2178818732",
+        "eligible": true,
+        "signed_fill_quantity": 3,
+        "quote": {
+          "symbol": "BTCUSD",
+          "exchange_us": 1795093220288801,
+          "receipt_ms": 1795093218821,
+          "book_update_us": 1795093219659478,
+          "asks": [
+            [
+              "63846.0",
+              "1220"
+            ],
+            [
+              "63846.5",
+              "1562"
+            ],
+            [
+              "63847.0",
+              "1999"
+            ],
+            [
+              "63847.5",
+              "2560"
+            ],
+            [
+              "63848.0",
+              "3277"
+            ]
+          ]
+        },
+        "local_receipt_to_intent_ms": 317.486,
+        "venue_message_to_order_ms": 527.814,
+        "venue_book_update_to_order_ms": 1157.137,
+        "displayed_quantity_within_cap": "10618",
+        "indicated_fill_quantity": 3,
+        "exact": true
+      },
+      {
+        "batch": "demo-1795093218265507600",
+        "symbol": "ETHUSD",
+        "order_id": "2178818741",
+        "eligible": true,
+        "signed_fill_quantity": 3,
+        "quote": {
+          "symbol": "ETHUSD",
+          "exchange_us": 1795093222547683,
+          "receipt_ms": 1795093221076,
+          "book_update_us": 1795093218734452,
+          "asks": [
+            [
+              "1805.90",
+              "208"
+            ],
+            [
+              "1805.95",
+              "255"
+            ],
+            [
+              "1806.00",
+              "302"
+            ],
+            [
+              "1806.05",
+              "348"
+            ],
+            [
+              "1806.10",
+              "394"
+            ]
+          ]
+        },
+        "local_receipt_to_intent_ms": 5.081,
+        "venue_message_to_order_ms": 209.811,
+        "venue_book_update_to_order_ms": 4023.042,
+        "displayed_quantity_within_cap": "1507",
+        "indicated_fill_quantity": 3,
+        "exact": true
+      }
+    ]
+  }
+}

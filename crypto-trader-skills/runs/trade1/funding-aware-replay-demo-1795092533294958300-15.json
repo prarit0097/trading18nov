@@ -1,0 +1,1069 @@
+{
+  "status": "research_only",
+  "environment": "india_testnet",
+  "batch_id": "demo-1795092533294958300",
+  "minutes": 15,
+  "source": "wss://socket-ind-pub.testnet.deltaex.org",
+  "identity": {
+    "environment": "india_testnet",
+    "study": "trade1_shadow_incremental_funding_probe",
+    "batch": "demo-1795092533294958300",
+    "start": "2026-11-19T12:57:54Z",
+    "end": "2026-11-19T13:20:00Z"
+  },
+  "receipt_and_exchange_cutoff_utc": "2026-11-19T13:05:15Z",
+  "funding_rows": [
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093077773202,
+      "received_utc_ms": 1795093076296,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093077773202,
+      "received_utc_ms": 1795093076297,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093079248707,
+      "received_utc_ms": 1795093077772,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093079248707,
+      "received_utc_ms": 1795093077774,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093099581949,
+      "received_utc_ms": 1795093098105,
+      "next_realization_us": 1795093200000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.00782342325635593,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093099581949,
+      "received_utc_ms": 1795093098105,
+      "next_realization_us": 1795093200000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.00782342325635593,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093137786162,
+      "received_utc_ms": 1795093136313,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093137786162,
+      "received_utc_ms": 1795093136314,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093139251012,
+      "received_utc_ms": 1795093137778,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093139251012,
+      "received_utc_ms": 1795093137778,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093159604153,
+      "received_utc_ms": 1795093158130,
+      "next_realization_us": 1795093200000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.0078702096588983,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093159604153,
+      "received_utc_ms": 1795093158131,
+      "next_realization_us": 1795093200000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.0078702096588983,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093197816885,
+      "received_utc_ms": 1795093196343,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093197816885,
+      "received_utc_ms": 1795093196344,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093199497805,
+      "received_utc_ms": 1795093198024,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093199497805,
+      "received_utc_ms": 1795093198025,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093219608166,
+      "received_utc_ms": 1795093218134,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.007960559778248586,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093219608166,
+      "received_utc_ms": 1795093218135,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.007960559778248586,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093257826652,
+      "received_utc_ms": 1795093256351,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093257826652,
+      "received_utc_ms": 1795093256352,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093259500987,
+      "received_utc_ms": 1795093258026,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093259500987,
+      "received_utc_ms": 1795093258027,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093279858465,
+      "received_utc_ms": 1795093278384,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.008014391314971751,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093279858465,
+      "received_utc_ms": 1795093278385,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.008014391314971751,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093317835096,
+      "received_utc_ms": 1795093316358,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093317835096,
+      "received_utc_ms": 1795093316359,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093319566672,
+      "received_utc_ms": 1795093318092,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093319566672,
+      "received_utc_ms": 1795093318092,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093339862894,
+      "received_utc_ms": 1795093338389,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.008037909459039547,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093339862894,
+      "received_utc_ms": 1795093338390,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.008037909459039547,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093378087382,
+      "received_utc_ms": 1795093376611,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093378087382,
+      "received_utc_ms": 1795093376612,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093379816855,
+      "received_utc_ms": 1795093378341,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093379816855,
+      "received_utc_ms": 1795093378341,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093400112791,
+      "received_utc_ms": 1795093398637,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.008085252166666668,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093400112791,
+      "received_utc_ms": 1795093398638,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.008085252166666668,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093438336957,
+      "received_utc_ms": 1795093436862,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093438336957,
+      "received_utc_ms": 1795093436862,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093440069423,
+      "received_utc_ms": 1795093438593,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093440069423,
+      "received_utc_ms": 1795093438594,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093460117979,
+      "received_utc_ms": 1795093458642,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.008132437356638421,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "DOGEUSD",
+      "observed_exchange_us": 1795093460117979,
+      "received_utc_ms": 1795093458643,
+      "next_realization_us": 1795096800000000,
+      "interval_seconds": 3600,
+      "observed_rate": -0.008132437356638421,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093498344824,
+      "received_utc_ms": 1795093496866,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "ETHUSD",
+      "observed_exchange_us": 1795093498344824,
+      "received_utc_ms": 1795093496867,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093500467885,
+      "received_utc_ms": 1795093498989,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    },
+    {
+      "environment": "india_testnet",
+      "study": "trade1_shadow_incremental_funding_probe",
+      "batch": "demo-1795092533294958300",
+      "start": "2026-11-19T12:57:54Z",
+      "end": "2026-11-19T13:20:00Z",
+      "symbol": "XRPUSD",
+      "observed_exchange_us": 1795093500467885,
+      "received_utc_ms": 1795093498990,
+      "next_realization_us": 1795104000000000,
+      "interval_seconds": 28800,
+      "observed_rate": 0.01,
+      "stream_id": "b7ae61f5-f520-4b05-b5dc-83f385583b40"
+    }
+  ],
+  "funding_rows_sha256": "b90f13194679e007ae2805468ed66d95992b22d3ce31d5116e672eed44fa583e",
+  "controls": "Default replay reproduced saved calculations. Dropping ETH observations left its funding case unavailable.",
+  "summary": {
+    "pairs": 2,
+    "actual_net": "-0.02165350",
+    "modeled_net": "-0.009746076203741764505097473481",
+    "actual_wins": 1,
+    "modeled_wins": 1
+  },
+  "comparisons": [
+    {
+      "symbol": "ETHUSD",
+      "order_id": "2178817426",
+      "first_fill_at": "2026-11-19T12:48:57.324381Z",
+      "actual_close_at": "2026-11-19T12:59:04.051454Z",
+      "realized_net_usd": "-0.02900811",
+      "funding_required_through_epoch": 1795093437.324381,
+      "zero_incremental_funding_proved": true,
+      "default_depth": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "funding_supported_candle": {
+        "status": "estimated",
+        "exit_price": "1805.846625",
+        "fees": "0.05751363173720991415120465245",
+        "funding": "0",
+        "net_pnl": "-0.01861488173720991415120465245",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule"
+      },
+      "funding_supported_depth": {
+        "status": "estimated",
+        "exit_price": "1805.846625",
+        "fees": "0.05751363173720991415120465245",
+        "funding": "0",
+        "net_pnl": "-0.01861488173720991415120465245",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule"
+      }
+    },
+    {
+      "symbol": "XRPUSD",
+      "order_id": "2178817433",
+      "first_fill_at": "2026-11-19T12:48:59.003122Z",
+      "actual_close_at": "2026-11-19T12:59:05.121018Z",
+      "realized_net_usd": "0.00735461",
+      "funding_required_through_epoch": 1795093439.003122,
+      "zero_incremental_funding_proved": true,
+      "default_depth": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "funding_supported_candle": {
+        "status": "estimated",
+        "exit_price": "0.989505",
+        "fees": "0.003146194466531850353892821031",
+        "funding": "0",
+        "net_pnl": "0.008868805533468149646107178969",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule"
+      },
+      "funding_supported_depth": {
+        "status": "estimated",
+        "exit_price": "0.989505",
+        "fees": "0.003146194466531850353892821031",
+        "funding": "0",
+        "net_pnl": "0.008868805533468149646107178969",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule"
+      }
+    },
+    {
+      "symbol": "DOGEUSD",
+      "order_id": "2178817439",
+      "first_fill_at": "2026-11-19T12:49:01.115423Z",
+      "actual_close_at": "2026-11-19T12:59:06.114093Z",
+      "realized_net_usd": "-0.02798060",
+      "funding_required_through_epoch": 1795093441.115423,
+      "zero_incremental_funding_proved": false,
+      "default_depth": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "funding_supported_candle": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute"
+      },
+      "funding_supported_depth": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      }
+    }
+  ],
+  "public_candle_frames": [
+    {
+      "request": {
+        "symbol": "MARK:ETHUSD",
+        "resolution": "1m",
+        "start": 1795093140,
+        "end": 1795093380
+      },
+      "candles": [
+        {
+          "close": 1806.75728138,
+          "high": 1806.8118222,
+          "low": 1805.4938636,
+          "open": 1806.20632427,
+          "time": 1795093380,
+          "volume": null
+        },
+        {
+          "close": 1806.20632427,
+          "high": 1807.93337883,
+          "low": 1806.0663904,
+          "open": 1807.46788146,
+          "time": 1795093320,
+          "volume": null
+        },
+        {
+          "close": 1807.46788146,
+          "high": 1807.96355535,
+          "low": 1806.48657716,
+          "open": 1807.60519537,
+          "time": 1795093260,
+          "volume": null
+        },
+        {
+          "close": 1807.60519537,
+          "high": 1808.39697488,
+          "low": 1805.44836436,
+          "open": 1805.56965059,
+          "time": 1795093200,
+          "volume": null
+        },
+        {
+          "close": 1805.56965059,
+          "high": 1806.0593095,
+          "low": 1804.4082973,
+          "open": 1806.04182372,
+          "time": 1795093140,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "ETHUSD",
+        "resolution": "1m",
+        "start": 1795093140,
+        "end": 1795093380
+      },
+      "candles": [
+        {
+          "close": 1806.75,
+          "high": 1806.75,
+          "low": 1805.55,
+          "open": 1806.05,
+          "time": 1795093380,
+          "volume": 4051.0
+        },
+        {
+          "close": 1806.75,
+          "high": 1807.7,
+          "low": 1806.75,
+          "open": 1807.6,
+          "time": 1795093320,
+          "volume": 363.0
+        },
+        {
+          "close": 1806.95,
+          "high": 1807.8,
+          "low": 1806.9,
+          "open": 1807.7,
+          "time": 1795093260,
+          "volume": 7330.0
+        },
+        {
+          "close": 1808.35,
+          "high": 1808.35,
+          "low": 1805.9,
+          "open": 1806.15,
+          "time": 1795093200,
+          "volume": 8765.0
+        },
+        {
+          "close": 1805.3,
+          "high": 1805.7,
+          "low": 1804.3,
+          "open": 1805.5,
+          "time": 1795093140,
+          "volume": 965.0
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "MARK:XRPUSD",
+        "resolution": "1m",
+        "start": 1795093140,
+        "end": 1795093380
+      },
+      "candles": [
+        {
+          "close": 0.9896905,
+          "high": 0.9898292,
+          "low": 0.98863136,
+          "open": 0.98927358,
+          "time": 1795093380,
+          "volume": null
+        },
+        {
+          "close": 0.98927358,
+          "high": 0.99058355,
+          "low": 0.98914037,
+          "open": 0.99058355,
+          "time": 1795093320,
+          "volume": null
+        },
+        {
+          "close": 0.99058355,
+          "high": 0.99107472,
+          "low": 0.99020882,
+          "open": 0.99037521,
+          "time": 1795093260,
+          "volume": null
+        },
+        {
+          "close": 0.99037521,
+          "high": 0.99051669,
+          "low": 0.98909742,
+          "open": 0.98922226,
+          "time": 1795093200,
+          "volume": null
+        },
+        {
+          "close": 0.98922226,
+          "high": 0.98990576,
+          "low": 0.98866026,
+          "open": 0.98954284,
+          "time": 1795093140,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "XRPUSD",
+        "resolution": "1m",
+        "start": 1795093140,
+        "end": 1795093380
+      },
+      "candles": [
+        {
+          "close": 0.9895,
+          "high": 0.9895,
+          "low": 0.9895,
+          "open": 0.9895,
+          "time": 1795093380,
+          "volume": 12500.0
+        },
+        {
+          "close": 0.99,
+          "high": 0.99,
+          "low": 0.989,
+          "open": 0.989,
+          "time": 1795093320,
+          "volume": 4538.0
+        },
+        {
+          "close": 0.991,
+          "high": 0.991,
+          "low": 0.9905,
+          "open": 0.9905,
+          "time": 1795093260,
+          "volume": 21257.0
+        },
+        {
+          "close": 0.99,
+          "high": 0.99,
+          "low": 0.99,
+          "open": 0.99,
+          "time": 1795093200,
+          "volume": 4200.0
+        },
+        {
+          "close": 0.9895,
+          "high": 0.9895,
+          "low": 0.989,
+          "open": 0.989,
+          "time": 1795093140,
+          "volume": 20513.0
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "MARK:DOGEUSD",
+        "resolution": "1m",
+        "start": 1795093140,
+        "end": 1795093440
+      },
+      "candles": [
+        {
+          "close": 0.05950621,
+          "high": 0.0595726,
+          "low": 0.05950621,
+          "open": 0.05955498,
+          "time": 1795093440,
+          "volume": null
+        },
+        {
+          "close": 0.05955498,
+          "high": 0.05958706,
+          "low": 0.0595242,
+          "open": 0.05958706,
+          "time": 1795093380,
+          "volume": null
+        },
+        {
+          "close": 0.05958706,
+          "high": 0.05963772,
+          "low": 0.0595708,
+          "open": 0.05963662,
+          "time": 1795093320,
+          "volume": null
+        },
+        {
+          "close": 0.05963662,
+          "high": 0.05965974,
+          "low": 0.05961906,
+          "open": 0.05965974,
+          "time": 1795093260,
+          "volume": null
+        },
+        {
+          "close": 0.05965974,
+          "high": 0.05966811,
+          "low": 0.059615,
+          "open": 0.05962323,
+          "time": 1795093200,
+          "volume": null
+        },
+        {
+          "close": 0.05962323,
+          "high": 0.05962998,
+          "low": 0.05957239,
+          "open": 0.05962603,
+          "time": 1795093140,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "DOGEUSD",
+        "resolution": "1m",
+        "start": 1795093140,
+        "end": 1795093440
+      },
+      "candles": [
+        {
+          "close": 0.05956,
+          "high": 0.05956,
+          "low": 0.05956,
+          "open": 0.05956,
+          "time": 1795093440,
+          "volume": 0
+        },
+        {
+          "close": 0.05956,
+          "high": 0.05956,
+          "low": 0.05956,
+          "open": 0.05956,
+          "time": 1795093380,
+          "volume": 0
+        },
+        {
+          "close": 0.05956,
+          "high": 0.05956,
+          "low": 0.05956,
+          "open": 0.05956,
+          "time": 1795093320,
+          "volume": 0
+        },
+        {
+          "close": 0.05956,
+          "high": 0.05956,
+          "low": 0.05956,
+          "open": 0.05956,
+          "time": 1795093260,
+          "volume": 0
+        },
+        {
+          "close": 0.05956,
+          "high": 0.05956,
+          "low": 0.05956,
+          "open": 0.05956,
+          "time": 1795093200,
+          "volume": 0
+        },
+        {
+          "close": 0.05956,
+          "high": 0.05956,
+          "low": 0.05956,
+          "open": 0.05956,
+          "time": 1795093140,
+          "volume": 3.0
+        }
+      ]
+    }
+  ]
+}
