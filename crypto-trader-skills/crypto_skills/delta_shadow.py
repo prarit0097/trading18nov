@@ -46,7 +46,7 @@ def _deadline_book_price(row, capture, end):
     return bid_proceeds(book['buy'], size) / size, stamp
 
 
-def replay(row, marks, trades, closed, end, *, deadline_book=None):
+def replay(row, marks, trades, closed, end, *, deadline_book=None, funding_schedule=None):
     stop, target = D(row['stop_loss']), D(row['target'])
     if row['position'] != 'long' or not 0 < stop < target:
         raise ValueError('Unsupported position or bracket')
@@ -67,10 +67,12 @@ def replay(row, marks, trades, closed, end, *, deadline_book=None):
             px = min(op, stop) if lo <= stop else target
             end = t + 60
             break
-    if int(closed // 3600) != int(end // 3600):
+    crosses_hour = int(closed // 3600) != int(end // 3600)
+    if crosses_hour and funding_schedule is None:
         raise ValueError('Additional funding unverified across UTC hour')
     reference = 'last completed trade close'
     source = {}
+    funding_end = end
     if px is None:
         last = trades.get(end_bar)
         if last is not None and D(str(last['volume'])) > 0:
@@ -79,12 +81,20 @@ def replay(row, marks, trades, closed, end, *, deadline_book=None):
             px, stamp = _deadline_book_price(row, deadline_book, end)
             reference = 'captured displayed bid depth'
             source = dict(reference_exchange_us=stamp)
+            funding_end = max(end, stamp / 1_000_000)
         elif last is None:
             raise KeyError(end_bar)
         else:
             raise ValueError('No traded volume in deadline reference minute')
+    elif crosses_hour:
+        reference = 'mark stop trigger with adverse-gap rule' if px <= stop else 'mark target trigger'
     if px <= 0:
         raise ValueError('Invalid reference price')
+    funding_method = 'zero incremental funding assumed'
+    if crosses_hour:
+        if not funding_schedule.proves_zero(row['symbol'], closed, funding_end):
+            raise ValueError('Additional funding unverified across UTC hour')
+        funding_method = 'zero incremental funding verified by public funding schedule'
     px *= 1 - EXIT_COST
     size = D(str(row['filled_contracts'])) * D(str(row['contract_value']))
     entry_fee = D(row['entry_commission'])
@@ -95,11 +105,11 @@ def replay(row, marks, trades, closed, end, *, deadline_book=None):
     funding = D(row['funding'])
     return dict(status='estimated', exit_price=str(px), fees=str(fees), funding=str(funding),
                 net_pnl=str((px - D(row['entry'])) * size - fees + funding),
-                method=f'1m mark brackets / {reference}, 5bp exit slippage, actual fee rate, zero incremental funding assumed',
+                method=f'1m mark brackets / {reference}, 5bp exit slippage, actual fee rate, {funding_method}',
                 **source)
 
 
-async def estimate(call, row, closed, end, *, deadline_book=None):
+async def estimate(call, row, closed, end, *, deadline_book=None, funding_schedule=None):
     args = dict(resolution='1m', start=minute(closed), end=minute(end))
     try:
         marks, trades = await asyncio.gather(*(
@@ -110,7 +120,7 @@ async def estimate(call, row, closed, end, *, deadline_book=None):
                 raise ValueError('Duplicate candle')
             return result
         return replay(row, index(marks['result']), index(trades['result']), closed, end,
-                      deadline_book=deadline_book)
+                      deadline_book=deadline_book, funding_schedule=funding_schedule)
     except (KeyError, TypeError, ValueError, ArithmeticError) as err:
         return dict(status='unavailable', reason='Incomplete or ambiguous price/cost history: ' + str(err))
     except (OSError, RuntimeError, TimeoutError):

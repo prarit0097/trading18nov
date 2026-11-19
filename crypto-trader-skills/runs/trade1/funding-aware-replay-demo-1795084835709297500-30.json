@@ -1,0 +1,1524 @@
+{
+  "environment": "india_testnet",
+  "batch_id": "demo-1795084835709297500",
+  "minutes": 30,
+  "status": "research_only",
+  "source_funding_sha256": "96d2ecd6c56bdd304a2bb05d6671294474c36538137e71f365569badccfd7dd4",
+  "positive_control": {
+    "minutes": 15,
+    "matched_prior_artifact": true,
+    "trades": 3
+  },
+  "summary": {
+    "eligible": 3,
+    "recovered_matches": 3,
+    "actual_matched_net": "-0.04650716",
+    "modeled_matched_net": "-0.7177283021435130241704255713",
+    "actual_matched_wins": 1,
+    "modeled_matched_wins": 0
+  },
+  "comparisons": [
+    {
+      "symbol": "BTCUSD",
+      "realized_net_usd": "-0.03234648",
+      "baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "funding_supported_candle": {
+        "status": "estimated",
+        "exit_price": "63677.14550",
+        "fees": "0.2030655472414530135388036678",
+        "funding": "0",
+        "net_pnl": "-0.5611290472414530135388036678",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule"
+      },
+      "funding_supported_depth": {
+        "status": "estimated",
+        "exit_price": "63677.14550",
+        "fees": "0.2030655472414530135388036678",
+        "funding": "0",
+        "net_pnl": "-0.5611290472414530135388036678",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule"
+      },
+      "paired_delta_net_usd": "-0.5287825672414530135388036678"
+    },
+    {
+      "symbol": "ETHUSD",
+      "realized_net_usd": "-0.01553122",
+      "baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "funding_supported_candle": {
+        "status": "estimated",
+        "exit_price": "1801.948575",
+        "fees": "0.05745951227109358133355476210",
+        "funding": "0",
+        "net_pnl": "-0.1505022622710935813335547621",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule"
+      },
+      "funding_supported_depth": {
+        "status": "estimated",
+        "exit_price": "1801.948575",
+        "fees": "0.05745951227109358133355476210",
+        "funding": "0",
+        "net_pnl": "-0.1505022622710935813335547621",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule"
+      },
+      "paired_delta_net_usd": "-0.1349710422710935813335547621"
+    },
+    {
+      "symbol": "XRPUSD",
+      "realized_net_usd": "0.00137054",
+      "baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "funding_supported_candle": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute"
+      },
+      "funding_supported_depth": {
+        "status": "estimated",
+        "exit_price": "0.98050950",
+        "fees": "0.003125492630966429298067141404",
+        "funding": "0",
+        "net_pnl": "-0.006096992630966429298067141404",
+        "method": "1m mark brackets / captured displayed bid depth, 5bp exit slippage, actual fee rate, zero incremental funding verified by public funding schedule",
+        "reference_exchange_us": 1795086642450000
+      },
+      "paired_delta_net_usd": "-0.007467532630966429298067141404"
+    }
+  ],
+  "public_candle_frames": [
+    {
+      "request": {
+        "symbol": "MARK:BTCUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795085700
+      },
+      "candles": [
+        {
+          "close": 63843.05792522,
+          "high": 63864.67099709,
+          "low": 63840.20536211,
+          "open": 63856.92400859,
+          "time": 1795085700,
+          "volume": null
+        },
+        {
+          "close": 63856.92400859,
+          "high": 63856.92400859,
+          "low": 63834.02381125,
+          "open": 63838.26857826,
+          "time": 1795085640,
+          "volume": null
+        },
+        {
+          "close": 63838.26857826,
+          "high": 63857.94522579,
+          "low": 63827.00920075,
+          "open": 63830.17235519,
+          "time": 1795085580,
+          "volume": null
+        },
+        {
+          "close": 63830.17235519,
+          "high": 63944.54981238,
+          "low": 63822.13106294,
+          "open": 63944.54981238,
+          "time": 1795085520,
+          "volume": null
+        },
+        {
+          "close": 63944.54981238,
+          "high": 63954.46349467,
+          "low": 63834.25273933,
+          "open": 63843.89345563,
+          "time": 1795085460,
+          "volume": null
+        },
+        {
+          "close": 63843.89345563,
+          "high": 63885.37995924,
+          "low": 63843.89345563,
+          "open": 63885.28000511,
+          "time": 1795085400,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "BTCUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795085700
+      },
+      "candles": [
+        {
+          "close": 63842.5,
+          "high": 63861.0,
+          "low": 63842.5,
+          "open": 63861.0,
+          "time": 1795085700,
+          "volume": 379.0
+        },
+        {
+          "close": 63848.0,
+          "high": 63853.0,
+          "low": 63838.5,
+          "open": 63840.0,
+          "time": 1795085640,
+          "volume": 369.0
+        },
+        {
+          "close": 63839.5,
+          "high": 63850.0,
+          "low": 63830.5,
+          "open": 63831.0,
+          "time": 1795085580,
+          "volume": 1306.0
+        },
+        {
+          "close": 63830.5,
+          "high": 63944.5,
+          "low": 63824.5,
+          "open": 63944.5,
+          "time": 1795085520,
+          "volume": 3332.0
+        },
+        {
+          "close": 63944.5,
+          "high": 63951.0,
+          "low": 63840.5,
+          "open": 63843.5,
+          "time": 1795085460,
+          "volume": 22973.0
+        },
+        {
+          "close": 63845.5,
+          "high": 63877.0,
+          "low": 63845.5,
+          "open": 63877.0,
+          "time": 1795085400,
+          "volume": 1397.0
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "MARK:ETHUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795085700
+      },
+      "candles": [
+        {
+          "close": 1804.95261888,
+          "high": 1805.07792466,
+          "low": 1804.60955785,
+          "open": 1804.68023482,
+          "time": 1795085700,
+          "volume": null
+        },
+        {
+          "close": 1804.68023482,
+          "high": 1805.13147697,
+          "low": 1804.31871844,
+          "open": 1804.82721669,
+          "time": 1795085640,
+          "volume": null
+        },
+        {
+          "close": 1804.82721669,
+          "high": 1805.30853441,
+          "low": 1804.30577463,
+          "open": 1804.6213824,
+          "time": 1795085580,
+          "volume": null
+        },
+        {
+          "close": 1804.6213824,
+          "high": 1808.14305682,
+          "low": 1804.51307619,
+          "open": 1808.14305682,
+          "time": 1795085520,
+          "volume": null
+        },
+        {
+          "close": 1808.14305682,
+          "high": 1808.45210025,
+          "low": 1805.64759039,
+          "open": 1806.09576252,
+          "time": 1795085460,
+          "volume": null
+        },
+        {
+          "close": 1806.09576252,
+          "high": 1807.51842866,
+          "low": 1806.08647089,
+          "open": 1807.49843774,
+          "time": 1795085400,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "ETHUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795085700
+      },
+      "candles": [
+        {
+          "close": 1805.1,
+          "high": 1805.1,
+          "low": 1804.8,
+          "open": 1804.95,
+          "time": 1795085700,
+          "volume": 25.0
+        },
+        {
+          "close": 1804.75,
+          "high": 1805.15,
+          "low": 1804.5,
+          "open": 1804.8,
+          "time": 1795085640,
+          "volume": 796.0
+        },
+        {
+          "close": 1804.9,
+          "high": 1805.25,
+          "low": 1804.9,
+          "open": 1805.25,
+          "time": 1795085580,
+          "volume": 88.0
+        },
+        {
+          "close": 1805.2,
+          "high": 1807.65,
+          "low": 1805.2,
+          "open": 1807.65,
+          "time": 1795085520,
+          "volume": 2538.0
+        },
+        {
+          "close": 1807.25,
+          "high": 1807.25,
+          "low": 1805.75,
+          "open": 1805.95,
+          "time": 1795085460,
+          "volume": 80.0
+        },
+        {
+          "close": 1806.45,
+          "high": 1806.5,
+          "low": 1806.45,
+          "open": 1806.5,
+          "time": 1795085400,
+          "volume": 249.0
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "MARK:XRPUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795085700
+      },
+      "candles": [
+        {
+          "close": 0.98325333,
+          "high": 0.98331993,
+          "low": 0.98279993,
+          "open": 0.98279993,
+          "time": 1795085700,
+          "volume": null
+        },
+        {
+          "close": 0.98279993,
+          "high": 0.98326665,
+          "low": 0.98266346,
+          "open": 0.98316011,
+          "time": 1795085640,
+          "volume": null
+        },
+        {
+          "close": 0.98316011,
+          "high": 0.98345979,
+          "low": 0.98264491,
+          "open": 0.98271031,
+          "time": 1795085580,
+          "volume": null
+        },
+        {
+          "close": 0.98271031,
+          "high": 0.98487306,
+          "low": 0.98266599,
+          "open": 0.98487306,
+          "time": 1795085520,
+          "volume": null
+        },
+        {
+          "close": 0.98487306,
+          "high": 0.98495607,
+          "low": 0.98312366,
+          "open": 0.98328689,
+          "time": 1795085460,
+          "volume": null
+        },
+        {
+          "close": 0.98328689,
+          "high": 0.98376832,
+          "low": 0.98327025,
+          "open": 0.98375529,
+          "time": 1795085400,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "XRPUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795085700
+      },
+      "candles": [
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085700,
+          "volume": 0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085640,
+          "volume": 3673.0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085580,
+          "volume": 1000.0
+        },
+        {
+          "close": 0.9835,
+          "high": 0.9845,
+          "low": 0.9835,
+          "open": 0.9845,
+          "time": 1795085520,
+          "volume": 101.0
+        },
+        {
+          "close": 0.9845,
+          "high": 0.9845,
+          "low": 0.9835,
+          "open": 0.9835,
+          "time": 1795085460,
+          "volume": 4279.0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085400,
+          "volume": 4.0
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "MARK:BTCUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795086600
+      },
+      "candles": [
+        {
+          "close": 63669.53635034,
+          "high": 63710.93891033,
+          "low": 63669.53635034,
+          "open": 63710.80206449,
+          "time": 1795086600,
+          "volume": null
+        },
+        {
+          "close": 63710.80206449,
+          "high": 63714.70633081,
+          "low": 63697.47517558,
+          "open": 63712.69774304,
+          "time": 1795086540,
+          "volume": null
+        },
+        {
+          "close": 63712.69774304,
+          "high": 63721.3489145,
+          "low": 63692.17498964,
+          "open": 63693.8575426,
+          "time": 1795086480,
+          "volume": null
+        },
+        {
+          "close": 63693.8575426,
+          "high": 63701.63361993,
+          "low": 63673.05277997,
+          "open": 63700.83398103,
+          "time": 1795086420,
+          "volume": null
+        },
+        {
+          "close": 63700.83398103,
+          "high": 63731.97872705,
+          "low": 63700.73402617,
+          "open": 63728.38826904,
+          "time": 1795086360,
+          "volume": null
+        },
+        {
+          "close": 63728.38826904,
+          "high": 63765.28158462,
+          "low": 63728.18835879,
+          "open": 63747.78857489,
+          "time": 1795086300,
+          "volume": null
+        },
+        {
+          "close": 63747.78857489,
+          "high": 63750.23404242,
+          "low": 63742.97182022,
+          "open": 63746.85345326,
+          "time": 1795086240,
+          "volume": null
+        },
+        {
+          "close": 63746.85345326,
+          "high": 63769.84089198,
+          "low": 63743.21894709,
+          "open": 63762.97236299,
+          "time": 1795086180,
+          "volume": null
+        },
+        {
+          "close": 63762.97236299,
+          "high": 63774.0185393,
+          "low": 63750.62433425,
+          "open": 63750.62433425,
+          "time": 1795086120,
+          "volume": null
+        },
+        {
+          "close": 63750.62433425,
+          "high": 63765.95849045,
+          "low": 63749.22503829,
+          "open": 63765.95849045,
+          "time": 1795086060,
+          "volume": null
+        },
+        {
+          "close": 63765.95849045,
+          "high": 63786.74640557,
+          "low": 63762.36420022,
+          "open": 63762.57705792,
+          "time": 1795086000,
+          "volume": null
+        },
+        {
+          "close": 63762.57705792,
+          "high": 63795.46256505,
+          "low": 63762.03744012,
+          "open": 63795.34928845,
+          "time": 1795085940,
+          "volume": null
+        },
+        {
+          "close": 63795.34928845,
+          "high": 63799.48848825,
+          "low": 63788.31335261,
+          "open": 63795.25319582,
+          "time": 1795085880,
+          "volume": null
+        },
+        {
+          "close": 63795.25319582,
+          "high": 63812.37511081,
+          "low": 63792.02173208,
+          "open": 63812.17519986,
+          "time": 1795085820,
+          "volume": null
+        },
+        {
+          "close": 63812.17519986,
+          "high": 63843.05792522,
+          "low": 63812.17519986,
+          "open": 63843.05792522,
+          "time": 1795085760,
+          "volume": null
+        },
+        {
+          "close": 63843.05792522,
+          "high": 63864.67099709,
+          "low": 63840.20536211,
+          "open": 63856.92400859,
+          "time": 1795085700,
+          "volume": null
+        },
+        {
+          "close": 63856.92400859,
+          "high": 63856.92400859,
+          "low": 63834.02381125,
+          "open": 63838.26857826,
+          "time": 1795085640,
+          "volume": null
+        },
+        {
+          "close": 63838.26857826,
+          "high": 63857.94522579,
+          "low": 63827.00920075,
+          "open": 63830.17235519,
+          "time": 1795085580,
+          "volume": null
+        },
+        {
+          "close": 63830.17235519,
+          "high": 63944.54981238,
+          "low": 63822.13106294,
+          "open": 63944.54981238,
+          "time": 1795085520,
+          "volume": null
+        },
+        {
+          "close": 63944.54981238,
+          "high": 63954.46349467,
+          "low": 63834.25273933,
+          "open": 63843.89345563,
+          "time": 1795085460,
+          "volume": null
+        },
+        {
+          "close": 63843.89345563,
+          "high": 63885.37995924,
+          "low": 63843.89345563,
+          "open": 63885.28000511,
+          "time": 1795085400,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "BTCUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795086600
+      },
+      "candles": [
+        {
+          "close": 63668.5,
+          "high": 63711.0,
+          "low": 63668.5,
+          "open": 63710.0,
+          "time": 1795086600,
+          "volume": 2849.0
+        },
+        {
+          "close": 63709.0,
+          "high": 63714.0,
+          "low": 63699.5,
+          "open": 63714.0,
+          "time": 1795086540,
+          "volume": 3075.0
+        },
+        {
+          "close": 63714.0,
+          "high": 63718.5,
+          "low": 63703.0,
+          "open": 63703.0,
+          "time": 1795086480,
+          "volume": 1691.0
+        },
+        {
+          "close": 63698.5,
+          "high": 63700.0,
+          "low": 63676.0,
+          "open": 63700.0,
+          "time": 1795086420,
+          "volume": 6388.0
+        },
+        {
+          "close": 63700.5,
+          "high": 63732.0,
+          "low": 63700.0,
+          "open": 63724.5,
+          "time": 1795086360,
+          "volume": 7313.0
+        },
+        {
+          "close": 63724.5,
+          "high": 63765.5,
+          "low": 63724.5,
+          "open": 63761.5,
+          "time": 1795086300,
+          "volume": 6184.0
+        },
+        {
+          "close": 63744.0,
+          "high": 63748.0,
+          "low": 63744.0,
+          "open": 63747.5,
+          "time": 1795086240,
+          "volume": 1219.0
+        },
+        {
+          "close": 63748.0,
+          "high": 63766.5,
+          "low": 63745.0,
+          "open": 63762.5,
+          "time": 1795086180,
+          "volume": 4127.0
+        },
+        {
+          "close": 63762.5,
+          "high": 63771.5,
+          "low": 63751.5,
+          "open": 63751.5,
+          "time": 1795086120,
+          "volume": 4566.0
+        },
+        {
+          "close": 63751.0,
+          "high": 63760.0,
+          "low": 63751.0,
+          "open": 63756.5,
+          "time": 1795086060,
+          "volume": 10023.0
+        },
+        {
+          "close": 63763.5,
+          "high": 63787.0,
+          "low": 63763.5,
+          "open": 63767.5,
+          "time": 1795086000,
+          "volume": 3681.0
+        },
+        {
+          "close": 63763.0,
+          "high": 63795.5,
+          "low": 63763.0,
+          "open": 63795.0,
+          "time": 1795085940,
+          "volume": 1818.0
+        },
+        {
+          "close": 63792.5,
+          "high": 63795.5,
+          "low": 63792.5,
+          "open": 63794.5,
+          "time": 1795085880,
+          "volume": 1660.0
+        },
+        {
+          "close": 63802.5,
+          "high": 63809.0,
+          "low": 63795.5,
+          "open": 63809.0,
+          "time": 1795085820,
+          "volume": 3047.0
+        },
+        {
+          "close": 63813.5,
+          "high": 63842.5,
+          "low": 63813.5,
+          "open": 63842.5,
+          "time": 1795085760,
+          "volume": 2129.0
+        },
+        {
+          "close": 63842.5,
+          "high": 63861.0,
+          "low": 63842.5,
+          "open": 63861.0,
+          "time": 1795085700,
+          "volume": 379.0
+        },
+        {
+          "close": 63848.0,
+          "high": 63853.0,
+          "low": 63838.5,
+          "open": 63840.0,
+          "time": 1795085640,
+          "volume": 369.0
+        },
+        {
+          "close": 63839.5,
+          "high": 63850.0,
+          "low": 63830.5,
+          "open": 63831.0,
+          "time": 1795085580,
+          "volume": 1306.0
+        },
+        {
+          "close": 63830.5,
+          "high": 63944.5,
+          "low": 63824.5,
+          "open": 63944.5,
+          "time": 1795085520,
+          "volume": 3332.0
+        },
+        {
+          "close": 63944.5,
+          "high": 63951.0,
+          "low": 63840.5,
+          "open": 63843.5,
+          "time": 1795085460,
+          "volume": 22973.0
+        },
+        {
+          "close": 63845.5,
+          "high": 63877.0,
+          "low": 63845.5,
+          "open": 63877.0,
+          "time": 1795085400,
+          "volume": 1397.0
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "MARK:ETHUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795086600
+      },
+      "candles": [
+        {
+          "close": 1801.52102543,
+          "high": 1802.7049015,
+          "low": 1801.34117304,
+          "open": 1802.7049015,
+          "time": 1795086600,
+          "volume": null
+        },
+        {
+          "close": 1802.7049015,
+          "high": 1802.85888855,
+          "low": 1802.33918443,
+          "open": 1802.76101,
+          "time": 1795086540,
+          "volume": null
+        },
+        {
+          "close": 1802.76101,
+          "high": 1803.18197286,
+          "low": 1801.8459544,
+          "open": 1801.92059986,
+          "time": 1795086480,
+          "volume": null
+        },
+        {
+          "close": 1801.92059986,
+          "high": 1802.040536,
+          "low": 1800.79760583,
+          "open": 1801.91724768,
+          "time": 1795086420,
+          "volume": null
+        },
+        {
+          "close": 1801.91724768,
+          "high": 1803.05592261,
+          "low": 1801.87797024,
+          "open": 1803.0019416,
+          "time": 1795086360,
+          "volume": null
+        },
+        {
+          "close": 1803.0019416,
+          "high": 1803.96934626,
+          "low": 1802.93397716,
+          "open": 1803.43217702,
+          "time": 1795086300,
+          "volume": null
+        },
+        {
+          "close": 1803.43217702,
+          "high": 1803.50812737,
+          "low": 1802.65786108,
+          "open": 1802.94372068,
+          "time": 1795086240,
+          "volume": null
+        },
+        {
+          "close": 1802.94372068,
+          "high": 1803.50493718,
+          "low": 1802.62470566,
+          "open": 1803.12436759,
+          "time": 1795086180,
+          "volume": null
+        },
+        {
+          "close": 1803.12436759,
+          "high": 1803.1829521,
+          "low": 1802.34649723,
+          "open": 1802.39717258,
+          "time": 1795086120,
+          "volume": null
+        },
+        {
+          "close": 1802.39717258,
+          "high": 1802.90415638,
+          "low": 1802.29656589,
+          "open": 1802.61992784,
+          "time": 1795086060,
+          "volume": null
+        },
+        {
+          "close": 1802.61992784,
+          "high": 1803.34751136,
+          "low": 1802.43854883,
+          "open": 1802.62176535,
+          "time": 1795086000,
+          "volume": null
+        },
+        {
+          "close": 1802.62176535,
+          "high": 1803.36247604,
+          "low": 1802.42998268,
+          "open": 1803.36247604,
+          "time": 1795085940,
+          "volume": null
+        },
+        {
+          "close": 1803.36247604,
+          "high": 1803.61907317,
+          "low": 1803.18945243,
+          "open": 1803.60907766,
+          "time": 1795085880,
+          "volume": null
+        },
+        {
+          "close": 1803.60907766,
+          "high": 1804.04015098,
+          "low": 1803.32979497,
+          "open": 1804.02015929,
+          "time": 1795085820,
+          "volume": null
+        },
+        {
+          "close": 1804.02015929,
+          "high": 1804.95261888,
+          "low": 1803.93592896,
+          "open": 1804.95261888,
+          "time": 1795085760,
+          "volume": null
+        },
+        {
+          "close": 1804.95261888,
+          "high": 1805.07792466,
+          "low": 1804.60955785,
+          "open": 1804.68023482,
+          "time": 1795085700,
+          "volume": null
+        },
+        {
+          "close": 1804.68023482,
+          "high": 1805.13147697,
+          "low": 1804.31871844,
+          "open": 1804.82721669,
+          "time": 1795085640,
+          "volume": null
+        },
+        {
+          "close": 1804.82721669,
+          "high": 1805.30853441,
+          "low": 1804.30577463,
+          "open": 1804.6213824,
+          "time": 1795085580,
+          "volume": null
+        },
+        {
+          "close": 1804.6213824,
+          "high": 1808.14305682,
+          "low": 1804.51307619,
+          "open": 1808.14305682,
+          "time": 1795085520,
+          "volume": null
+        },
+        {
+          "close": 1808.14305682,
+          "high": 1808.45210025,
+          "low": 1805.64759039,
+          "open": 1806.09576252,
+          "time": 1795085460,
+          "volume": null
+        },
+        {
+          "close": 1806.09576252,
+          "high": 1807.51842866,
+          "low": 1806.08647089,
+          "open": 1807.49843774,
+          "time": 1795085400,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "ETHUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795086600
+      },
+      "candles": [
+        {
+          "close": 1801.7,
+          "high": 1801.7,
+          "low": 1801.7,
+          "open": 1801.7,
+          "time": 1795086600,
+          "volume": 20.0
+        },
+        {
+          "close": 1802.85,
+          "high": 1802.85,
+          "low": 1802.85,
+          "open": 1802.85,
+          "time": 1795086540,
+          "volume": 10.0
+        },
+        {
+          "close": 1802.2,
+          "high": 1802.2,
+          "low": 1802.1,
+          "open": 1802.1,
+          "time": 1795086480,
+          "volume": 167.0
+        },
+        {
+          "close": 1801.95,
+          "high": 1801.95,
+          "low": 1800.8,
+          "open": 1801.85,
+          "time": 1795086420,
+          "volume": 7736.0
+        },
+        {
+          "close": 1801.95,
+          "high": 1802.25,
+          "low": 1801.95,
+          "open": 1802.2,
+          "time": 1795086360,
+          "volume": 4039.0
+        },
+        {
+          "close": 1803.05,
+          "high": 1804.0,
+          "low": 1803.05,
+          "open": 1803.55,
+          "time": 1795086300,
+          "volume": 3318.0
+        },
+        {
+          "close": 1802.9,
+          "high": 1802.95,
+          "low": 1802.8,
+          "open": 1802.95,
+          "time": 1795086240,
+          "volume": 197.0
+        },
+        {
+          "close": 1803.0,
+          "high": 1803.0,
+          "low": 1803.0,
+          "open": 1803.0,
+          "time": 1795086180,
+          "volume": 0
+        },
+        {
+          "close": 1803.0,
+          "high": 1803.0,
+          "low": 1802.45,
+          "open": 1802.45,
+          "time": 1795086120,
+          "volume": 120.0
+        },
+        {
+          "close": 1802.55,
+          "high": 1802.75,
+          "low": 1802.3,
+          "open": 1802.3,
+          "time": 1795086060,
+          "volume": 137.0
+        },
+        {
+          "close": 1803.2,
+          "high": 1803.2,
+          "low": 1803.2,
+          "open": 1803.2,
+          "time": 1795086000,
+          "volume": 229.0
+        },
+        {
+          "close": 1802.4,
+          "high": 1803.05,
+          "low": 1802.4,
+          "open": 1803.05,
+          "time": 1795085940,
+          "volume": 344.0
+        },
+        {
+          "close": 1803.45,
+          "high": 1803.55,
+          "low": 1803.45,
+          "open": 1803.55,
+          "time": 1795085880,
+          "volume": 916.0
+        },
+        {
+          "close": 1803.3,
+          "high": 1803.85,
+          "low": 1803.3,
+          "open": 1803.85,
+          "time": 1795085820,
+          "volume": 1192.0
+        },
+        {
+          "close": 1804.2,
+          "high": 1804.4,
+          "low": 1804.2,
+          "open": 1804.4,
+          "time": 1795085760,
+          "volume": 60.0
+        },
+        {
+          "close": 1805.1,
+          "high": 1805.1,
+          "low": 1804.8,
+          "open": 1804.95,
+          "time": 1795085700,
+          "volume": 25.0
+        },
+        {
+          "close": 1804.75,
+          "high": 1805.15,
+          "low": 1804.5,
+          "open": 1804.8,
+          "time": 1795085640,
+          "volume": 796.0
+        },
+        {
+          "close": 1804.9,
+          "high": 1805.25,
+          "low": 1804.9,
+          "open": 1805.25,
+          "time": 1795085580,
+          "volume": 88.0
+        },
+        {
+          "close": 1805.2,
+          "high": 1807.65,
+          "low": 1805.2,
+          "open": 1807.65,
+          "time": 1795085520,
+          "volume": 2538.0
+        },
+        {
+          "close": 1807.25,
+          "high": 1807.25,
+          "low": 1805.75,
+          "open": 1805.95,
+          "time": 1795085460,
+          "volume": 80.0
+        },
+        {
+          "close": 1806.45,
+          "high": 1806.5,
+          "low": 1806.45,
+          "open": 1806.5,
+          "time": 1795085400,
+          "volume": 249.0
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "MARK:XRPUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795086600
+      },
+      "candles": [
+        {
+          "close": 0.98113014,
+          "high": 0.98183664,
+          "low": 0.98111349,
+          "open": 0.98183664,
+          "time": 1795086600,
+          "volume": null
+        },
+        {
+          "close": 0.98183664,
+          "high": 0.98219245,
+          "low": 0.9816935,
+          "open": 0.98213356,
+          "time": 1795086540,
+          "volume": null
+        },
+        {
+          "close": 0.98213356,
+          "high": 0.9824459,
+          "low": 0.98188235,
+          "open": 0.98188235,
+          "time": 1795086480,
+          "volume": null
+        },
+        {
+          "close": 0.98188235,
+          "high": 0.98188235,
+          "low": 0.9812587,
+          "open": 0.98166678,
+          "time": 1795086420,
+          "volume": null
+        },
+        {
+          "close": 0.98166678,
+          "high": 0.98266528,
+          "low": 0.98166012,
+          "open": 0.98262132,
+          "time": 1795086360,
+          "volume": null
+        },
+        {
+          "close": 0.98262132,
+          "high": 0.98265492,
+          "low": 0.98183659,
+          "open": 0.98183659,
+          "time": 1795086300,
+          "volume": null
+        },
+        {
+          "close": 0.98183659,
+          "high": 0.98212898,
+          "low": 0.98171538,
+          "open": 0.98199311,
+          "time": 1795086240,
+          "volume": null
+        },
+        {
+          "close": 0.98199311,
+          "high": 0.9821768,
+          "low": 0.98169341,
+          "open": 0.9821768,
+          "time": 1795086180,
+          "volume": null
+        },
+        {
+          "close": 0.9821768,
+          "high": 0.9826493,
+          "low": 0.98168336,
+          "open": 0.98170997,
+          "time": 1795086120,
+          "volume": null
+        },
+        {
+          "close": 0.98170997,
+          "high": 0.98170997,
+          "low": 0.98138004,
+          "open": 0.98161117,
+          "time": 1795086060,
+          "volume": null
+        },
+        {
+          "close": 0.98161117,
+          "high": 0.9819671,
+          "low": 0.98155657,
+          "open": 0.98188592,
+          "time": 1795086000,
+          "volume": null
+        },
+        {
+          "close": 0.98188592,
+          "high": 0.98223369,
+          "low": 0.98125723,
+          "open": 0.98217576,
+          "time": 1795085940,
+          "volume": null
+        },
+        {
+          "close": 0.98217576,
+          "high": 0.98243664,
+          "low": 0.98203694,
+          "open": 0.9822835,
+          "time": 1795085880,
+          "volume": null
+        },
+        {
+          "close": 0.9822835,
+          "high": 0.98309226,
+          "low": 0.9822835,
+          "open": 0.98274334,
+          "time": 1795085820,
+          "volume": null
+        },
+        {
+          "close": 0.98274334,
+          "high": 0.98325333,
+          "low": 0.98265347,
+          "open": 0.98325333,
+          "time": 1795085760,
+          "volume": null
+        },
+        {
+          "close": 0.98325333,
+          "high": 0.98331993,
+          "low": 0.98279993,
+          "open": 0.98279993,
+          "time": 1795085700,
+          "volume": null
+        },
+        {
+          "close": 0.98279993,
+          "high": 0.98326665,
+          "low": 0.98266346,
+          "open": 0.98316011,
+          "time": 1795085640,
+          "volume": null
+        },
+        {
+          "close": 0.98316011,
+          "high": 0.98345979,
+          "low": 0.98264491,
+          "open": 0.98271031,
+          "time": 1795085580,
+          "volume": null
+        },
+        {
+          "close": 0.98271031,
+          "high": 0.98487306,
+          "low": 0.98266599,
+          "open": 0.98487306,
+          "time": 1795085520,
+          "volume": null
+        },
+        {
+          "close": 0.98487306,
+          "high": 0.98495607,
+          "low": 0.98312366,
+          "open": 0.98328689,
+          "time": 1795085460,
+          "volume": null
+        },
+        {
+          "close": 0.98328689,
+          "high": 0.98376832,
+          "low": 0.98327025,
+          "open": 0.98375529,
+          "time": 1795085400,
+          "volume": null
+        }
+      ]
+    },
+    {
+      "request": {
+        "symbol": "XRPUSD",
+        "resolution": "1m",
+        "start": 1795085400,
+        "end": 1795086600
+      },
+      "candles": [
+        {
+          "close": 0.982,
+          "high": 0.982,
+          "low": 0.982,
+          "open": 0.982,
+          "time": 1795086600,
+          "volume": 0
+        },
+        {
+          "close": 0.982,
+          "high": 0.982,
+          "low": 0.982,
+          "open": 0.982,
+          "time": 1795086540,
+          "volume": 0
+        },
+        {
+          "close": 0.982,
+          "high": 0.983,
+          "low": 0.982,
+          "open": 0.9825,
+          "time": 1795086480,
+          "volume": 4.0
+        },
+        {
+          "close": 0.9815,
+          "high": 0.982,
+          "low": 0.9815,
+          "open": 0.982,
+          "time": 1795086420,
+          "volume": 4.0
+        },
+        {
+          "close": 0.982,
+          "high": 0.982,
+          "low": 0.982,
+          "open": 0.982,
+          "time": 1795086360,
+          "volume": 0
+        },
+        {
+          "close": 0.982,
+          "high": 0.982,
+          "low": 0.982,
+          "open": 0.982,
+          "time": 1795086300,
+          "volume": 1.0
+        },
+        {
+          "close": 0.982,
+          "high": 0.982,
+          "low": 0.982,
+          "open": 0.982,
+          "time": 1795086240,
+          "volume": 3.0
+        },
+        {
+          "close": 0.9815,
+          "high": 0.9815,
+          "low": 0.9815,
+          "open": 0.9815,
+          "time": 1795086180,
+          "volume": 1.0
+        },
+        {
+          "close": 0.982,
+          "high": 0.982,
+          "low": 0.982,
+          "open": 0.982,
+          "time": 1795086120,
+          "volume": 0
+        },
+        {
+          "close": 0.982,
+          "high": 0.982,
+          "low": 0.981,
+          "open": 0.981,
+          "time": 1795086060,
+          "volume": 6.0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795086000,
+          "volume": 0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085940,
+          "volume": 0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085880,
+          "volume": 0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085820,
+          "volume": 0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085760,
+          "volume": 0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085700,
+          "volume": 0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085640,
+          "volume": 3673.0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085580,
+          "volume": 1000.0
+        },
+        {
+          "close": 0.9835,
+          "high": 0.9845,
+          "low": 0.9835,
+          "open": 0.9845,
+          "time": 1795085520,
+          "volume": 101.0
+        },
+        {
+          "close": 0.9845,
+          "high": 0.9845,
+          "low": 0.9835,
+          "open": 0.9835,
+          "time": 1795085460,
+          "volume": 4279.0
+        },
+        {
+          "close": 0.983,
+          "high": 0.983,
+          "low": 0.983,
+          "open": 0.983,
+          "time": 1795085400,
+          "volume": 4.0
+        }
+      ]
+    }
+  ],
+  "funding_capture_identity": {
+    "environment": "india_testnet",
+    "study": "trade1_shadow_incremental_funding_probe",
+    "batch": "demo-1795084835709297500",
+    "start": "2026-11-19T10:47:10Z",
+    "end": "2026-11-19T11:12:00Z"
+  },
+  "verified_through_depth_quote_us": {
+    "XRPUSD": 1795086642450000
+  },
+  "negative_control": "Removing XRP schedule observations leaves only XRP unavailable.",
+  "replay_inputs": "Archived deadline books and frozen public one-minute trade and mark candles."
+}

@@ -68,7 +68,8 @@ def capture_batch(run, batch_id, minutes):
     return path, artifact
 
 
-async def evaluate_capture(rows, artifact, now, *, fetch=public_result):
+async def evaluate_capture(rows, artifact, now, *, fetch=public_result, funding_schedule=None):
+    """Evaluate owned exits with an optional, caller-verified public testnet funding schedule."""
     minutes = artifact['minutes']
     if (artifact['status'], artifact['environment'], artifact['campaign_id']) != (
             'depth_research_only', 'india_testnet', 'trade1') or minutes not in CAPS:
@@ -101,8 +102,9 @@ async def evaluate_capture(rows, artifact, now, *, fetch=public_result):
                     cache[key] = dict(result=await asyncio.to_thread(fetch, '/history/candles', **args))
                 return cache[key]
 
-            baseline = await estimate(read_history, row, closed, end)
-            fallback = await estimate(read_history, row, closed, end, deadline_book=item['capture'])
+            baseline = await estimate(read_history, row, closed, end, funding_schedule=funding_schedule)
+            fallback = await estimate(read_history, row, closed, end, deadline_book=item['capture'],
+                                      funding_schedule=funding_schedule)
         output.append(dict(item, candle_baseline=baseline, depth_fallback=fallback,
                            realized_net_usd=row['net_pnl']))
     return output

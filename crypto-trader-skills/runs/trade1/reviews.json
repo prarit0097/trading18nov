@@ -12848,8 +12848,8 @@
       "cff25354df5b18dbb2fef2d233ead2e992acb903591d62faacfec9898ec7ee72": {
         "status": "awaiting_manager",
         "settlement_verified": true,
-        "evidence_sha256": "6ee669811f4f13afd32add25dc2881665f4022ebe4f9e40fd107a67956efff9f",
-        "queued_at": "2026-11-19T11:17:23.232421+00:00",
+        "evidence_sha256": "ac3b8f40cd2630ad9d495869acdcab40a727cd9bb373ebd5ff079add78baf071",
+        "queued_at": "2026-11-19T11:22:10.317903+00:00",
         "evidence": [
           {
             "order_id": "2178801704",
@@ -13285,8 +13285,14 @@
                 "observed_at": "2026-11-19T11:12:04.361694+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "1801.89860",
+                "fees": "0.05747223569777728458081340509",
+                "funding": "0",
+                "net_pnl": "-0.1775142356977772845808134051",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T11:22:10.317903+00:00"
               }
             ]
           },
@@ -13346,8 +13352,14 @@
                 "observed_at": "2026-11-19T11:12:04.361694+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "0.9805095",
+                "fees": "0.003128688630000000000000000000",
+                "funding": "0",
+                "net_pnl": "-0.01210018863000000000000000000",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T11:22:10.317903+00:00"
               }
             ]
           },
@@ -13407,8 +13419,14 @@
                 "observed_at": "2026-11-19T11:12:04.361694+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "75.3453085",
+                "fees": "0.2401436644512711977034713731",
+                "funding": "0",
+                "net_pnl": "-0.4162181644512711977034713731",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T11:22:10.317903+00:00"
               }
             ]
           },
@@ -13494,12 +13512,12 @@
               "mean_paired_change_usd": "-0.01986697627723789051140587375"
             },
             "30": {
-              "pairs": 2,
-              "pending": 4,
+              "pairs": 5,
+              "pending": 1,
               "unavailable": 4,
               "actual_win_rate": 0.0,
               "modeled_win_rate": 0.0,
-              "mean_paired_change_usd": "-0.271642181348692880973956027"
+              "mean_paired_change_usd": "-0.0506053142952868488464393664"
             }
           }
         },
