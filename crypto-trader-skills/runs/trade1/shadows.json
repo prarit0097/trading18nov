@@ -7254,8 +7254,10 @@
         "observed_at": "2026-11-19T12:59:12.821278+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T13:10:37.439590+00:00"
       }
     ]
   },
@@ -7289,8 +7291,10 @@
         "observed_at": "2026-11-19T12:59:12.821278+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T13:10:37.439590+00:00"
       }
     ]
   },
@@ -7314,8 +7318,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T13:10:37.439590+00:00"
       },
       {
         "status": "pending",
@@ -7343,8 +7349,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T13:10:37.439590+00:00"
       },
       {
         "status": "pending",
@@ -7369,6 +7377,66 @@
       "0",
       "-0.02798060",
       "DOGEUSD"
+    ],
+    "results": [
+      {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T13:10:37.439590+00:00"
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178818732": {
+    "signature": [
+      "2026-11-19T13:00:20.954455Z",
+      "2026-11-19T13:10:30.053076Z",
+      "ten_minute",
+      "63869.5",
+      "63846",
+      3,
+      "0.001",
+      "long",
+      "63215.4",
+      "65131.2",
+      "0.20345080",
+      "0.10170668",
+      "0",
+      "-0.13295080",
+      "BTCUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178818741": {
+    "signature": [
+      "2026-11-19T13:00:22.854155Z",
+      "2026-11-19T13:10:31.021639Z",
+      "ten_minute",
+      "1809.25",
+      "1806.15",
+      3,
+      "0.01",
+      "long",
+      "1788.60",
+      "1842.90",
+      "0.05759334",
+      "0.02877198",
+      "0",
+      "0.03540666",
+      "ETHUSD"
     ],
     "results": [
       {
