@@ -13,7 +13,7 @@ import math
 import os
 from pathlib import Path
 import tempfile
-from .core import Workspace
+from .core import Workspace, replace_with_windows_retry
 from .delta_plan import (LEGACY_CONTRACTS, MIN_BATCH_COINS, TRADE1_CONTRACTS,
                          campaign_state, eligible_completed_trade)
 from .delta_quota import entry_hold_reason, quota_allows_entry, read_weekly_quota
@@ -147,15 +147,7 @@ def atomic_json(path,data):
     path.parent.mkdir(parents=True,exist_ok=True)
     temporary=path.with_suffix('.tmp')
     temporary.write_text(json.dumps(data,indent=2),encoding='utf-8')
-    for delay in (.025, .05, .10, .20, .40, None):
-        try:
-            temporary.replace(path)
-            return
-        except PermissionError as error:
-            # Windows readers can temporarily deny atomic replacement.
-            if delay is None or getattr(error, 'winerror', None) not in (5, 32, 33):
-                raise
-            time.sleep(delay)
+    replace_with_windows_retry(temporary, path)
 
 
 def _wallet_proves_flat_funding(transactions, wallet, first_fill, closing_fill, *, gross):

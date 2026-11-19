@@ -4,6 +4,7 @@ from contextlib import contextmanager
 from decimal import Decimal, InvalidOperation
 from datetime import datetime, timezone
 import hashlib,json,os,re,tempfile
+import time
 
 class SkillError(ValueError):
     pass
@@ -62,6 +63,19 @@ def read_envelope(path,kind):
     actual=digest({k:v for k,v in obj.items() if k!='digest'})
     require(obj.get('digest')==actual,"Artifact digest mismatch")
     return obj
+
+
+def replace_with_windows_retry(temporary, path):
+    """Publish an already-written file with bounded retries for Windows sharing errors."""
+    for delay in (.025, .05, .10, .20, .40, None):
+        try:
+            temporary.replace(path)
+            return
+        except PermissionError as error:
+            # Windows readers can temporarily deny atomic replacement.
+            if delay is None or getattr(error, 'winerror', None) not in (5, 32, 33):
+                raise
+            time.sleep(delay)
 
 
 class Workspace:

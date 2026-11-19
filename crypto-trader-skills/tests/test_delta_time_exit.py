@@ -1,6 +1,8 @@
+import os
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
+from unittest.mock import patch
 
 from crypto_skills.core import utc
 from crypto_skills.delta_time_exit import manage_time_exits
@@ -73,6 +75,36 @@ class TimeExitTests(unittest.IsolatedAsyncioTestCase):
                          ('sell', 6, 'market_order', True))
         await self.tick('12:10:04')
         self.assertEqual(len(self.submitted), 1)
+
+    async def test_transient_windows_replace_denial_preserves_one_timed_exit(self):
+        self.row.update(contracts=3, remaining_contracts=3, fill_ids=['A'])
+        self.obs['fills'] = [dict(fill, size='3') for fill in self.obs['fills'] if fill['id']=='A']
+        self.live = 3
+        await self.tick('12:10:00')
+        journal = self.run_dir / 'time-exits.json'
+        original = journal.read_bytes()
+        replace = os.replace
+        interrupted = False
+
+        def temporarily_denied(source, target):
+            nonlocal interrupted
+            if Path(target) == journal and not interrupted:
+                interrupted = True
+                self.assertEqual(journal.read_bytes(), original)
+                self.assertEqual(self.submitted, [])
+                error = PermissionError('Windows sharing denied')
+                error.winerror = 5
+                raise error
+            return replace(source, target)
+
+        with patch.object(os, 'replace', side_effect=temporarily_denied):
+            await self.tick('12:10:03')
+        await self.tick('12:10:04')
+        self.assertTrue(interrupted)
+        self.assertEqual(len(self.submitted), 1)
+        self.assertEqual(self.row['deadline_at'], '2026-01-01T12:10:01Z')
+        self.assertEqual(self.submitted[0]['size'], 3)
+        self.assertTrue(self.submitted[0]['reduce_only'])
 
     async def test_three_contract_timed_exit_rejects_more_than_the_owned_size(self):
         self.row.update(contracts=3, remaining_contracts=4, fill_ids=['A'])

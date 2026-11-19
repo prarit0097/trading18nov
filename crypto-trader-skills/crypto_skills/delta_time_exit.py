@@ -6,7 +6,7 @@ import json
 import os
 from pathlib import Path
 
-from .core import decimal, iso, read_json, utc
+from .core import decimal, iso, read_json, replace_with_windows_retry, utc
 from .delta_execution import OrderJournal
 from .delta_plan import CRYPTO_DEMO_SYMBOLS, LEGACY_CONTRACTS
 
@@ -23,7 +23,7 @@ def _commit(path, records):
         json.dump(records, stream, indent=2, allow_nan=False)
         stream.flush()
         os.fsync(stream.fileno())
-    os.replace(tmp, path)
+    replace_with_windows_retry(tmp, path)
 
 
 def _accept(attempt, order):
