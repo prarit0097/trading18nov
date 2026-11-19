@@ -8286,10 +8286,10 @@
         }
       },
       "a77b25c41eb121d7602625e23ded18a6eefc7d0d0e7ff29b2ca878782f06ecf9": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "90c5fe78fa58354f4cb3412f75782842266830361de95caf5d0375adb08b8ca4",
-        "queued_at": "2026-11-19T05:59:02.801478+00:00",
+        "evidence_sha256": "690e314e60555337db472644a1547a89ee8a67ba953616471732dedc5a08d0ce",
+        "queued_at": "2026-11-19T06:14:24.823717+00:00",
         "evidence": [
           {
             "order_id": "2178778457",
@@ -8666,8 +8666,10 @@
                 "observed_at": "2026-11-19T05:53:25.411053+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:03:24.194188+00:00"
               }
             ]
           },
@@ -8727,8 +8729,10 @@
                 "observed_at": "2026-11-19T05:53:25.411053+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:03:24.194188+00:00"
               }
             ]
           },
@@ -8784,8 +8788,10 @@
                 "observed_at": "2026-11-19T05:53:25.411053+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:03:24.194188+00:00"
               }
             ]
           },
@@ -8841,8 +8847,10 @@
                 "observed_at": "2026-11-19T05:53:25.411053+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:03:24.194188+00:00"
               }
             ]
           },
@@ -8902,8 +8910,10 @@
                 "observed_at": "2026-11-19T05:59:02.801478+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:14:24.823717+00:00"
               }
             ]
           }
@@ -8929,8 +8939,8 @@
             },
             "30": {
               "pairs": 2,
-              "pending": 5,
-              "unavailable": 3,
+              "pending": 0,
+              "unavailable": 8,
               "actual_win_rate": 0.0,
               "modeled_win_rate": 0.0,
               "mean_paired_change_usd": "-0.2175812779435873800657159615"
@@ -8946,7 +8956,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T06:15:40.909789+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "All ten recorded entries were WAIT. Closed five-minute public replay found zero READY signals across five coins at each of the four decision times. Each reviewed leg had relative volume between 0.106 and 0.757 of the preceding 20-bar mean. XRP in the final basket was 2.192 times that mean and belongs to the next review. Preserve continuous relative volume and breakout breadth at the basket decision.",
+            "entry_exit": "All ten lots closed on the ten-minute timer. At the preliminary six official 15-minute pairs, two modeled wins came from one basket. SOL added $0.43537919, more than the combined paired improvement of $0.42607064. The preliminary 30-minute model worsened both paired net results in aggregate. The final reviewed BTC boundary bars become available at 11:29 and 11:44 IST. Use only like-for-like entries and track missing funding or executable prices. The depth extension covered all ten at 15 minutes, with zero to two wins and modeled net of -$1.61464722. At 30 minutes it matched five, with no wins and mean net decline of $0.15622675. Five incremental funding observations were unverified. Candle-only and displayed-depth estimates are reported with separate coverage. 15-minute estimate: 7/10 matched, 3 unavailable, actual matched win rate 0.0%, modeled 28.6%, +$0.0531 mean net change per matched trade. 30-minute estimate: 2/10 matched, 8 unavailable, actual matched win rate 0.0%, modeled 0.0%, -$0.2176 mean net change per matched trade. Matched subsets remain small. Keep the ten-minute timer while independent evidence is collected.",
+            "risk_costs": "Gross loss of $0.48750000 plus $1.44722867 in commissions gave a $1.93472867 net loss. Funding was zero. Five gross winners became net losers. The highest lot planned loss was $3.226088 and day loss plus full batch reserve peaked at $21.22461307. Recorded margin ranged from 76.65 to 77.54 percent. Total executed entry cost was $0.0405 below the recorded preflight ask cost for the same quantities. Exit quotes are unavailable for measuring exact round-trip slippage.",
+            "execution": "Ten lots opened and closed exactly three contracts. Entries stayed within the IOC cap and both brackets were confirmed. All four represented baskets completely filled. No observed partial, zero, abandoned or early protective exit affected the group. Timed submissions lagged by 0.965 to 5.446 seconds. Exchange fills followed within 0.595 seconds.",
+            "reconciliation_validation": "The signed Delta India testnet read matched twenty fills, twenty commissions and ten cashflows. Excel matched exact group membership, fees and wallet net. All ten lost and there were no breakevens. The four execution baskets contributed one, four, four and one position. The first and last baskets are shared with the neighboring reviews. Closes 121 through 123 belong to review 13. The first 120 verified trades have 30 net winners and -$13.73385343 aggregate net."
+          },
+          "manager": {
+            "findings": "The group average was -$0.193472867 per trade. On $1,362.9825 entry notional, gross lost 3.58 basis points and fees cost 10.62 basis points. Fees represented 74.80 percent of the net loss, while the underlying gross outcome was also negative. The apparent 15-minute recovery is concentrated in one SOL position. Recent turnover and fees support testing a cost hurdle on independent data. Across the first 120 closes, official 15-minute results matched 69 entries with wins declining from 19 to 18 and mean modeled net falling by $0.04687677. At 30 minutes 49 pairs went from 13 to 17 wins with mean net change of +$0.00322067. Both modeled totals lost money on their pairs. These incomplete correlated samples do not establish an improvement. 15-minute estimate: 7/10 matched, 3 unavailable, actual matched win rate 0.0%, modeled 28.6%, +$0.0531 mean net change per matched trade. 30-minute estimate: 2/10 matched, 8 unavailable, actual matched win rate 0.0%, modeled 0.0%, -$0.2176 mean net change per matched trade. Comparisons use matched entries only and are excluded from accounting.",
+            "recommendation": "Retain three contracts, 10-minute exits and the registered four-READY test. Record continuous closed-bar relative volume, recent price movement, quoted spread and pre-entry round-trip fee and slippage assumptions. In separate research, test whether low-volume and high-cost observations cover costs less often, using future whole baskets and matched days. Account for gains forgone, losses avoided, and idle or unfilled opportunities. Keep the frozen criteria intact and validate a proposed filter before deployment."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "The results justify testing a pre-entry cost and relative-volume hypothesis using new data. Four related baskets and limited paired exit coverage do not justify changing the active strategy, risk limits, or frozen comparison."
+          }
+        }
       }
     },
     "candidate_registry": {
