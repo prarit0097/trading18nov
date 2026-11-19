@@ -6995,8 +6995,10 @@
         "observed_at": "2026-11-19T12:09:47.264530+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:19:28.117796+00:00"
       }
     ]
   },
@@ -7026,8 +7028,10 @@
         "observed_at": "2026-11-19T12:09:47.264530+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:19:28.117796+00:00"
       }
     ]
   },
@@ -7057,8 +7061,10 @@
         "observed_at": "2026-11-19T12:09:47.264530+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T12:19:28.117796+00:00"
       }
     ]
   },

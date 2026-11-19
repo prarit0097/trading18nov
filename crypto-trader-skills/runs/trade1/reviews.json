@@ -13612,8 +13612,8 @@
       "bf94be5569d8d6ba1ace046c6935f3af0476fe52e08601382d18a4036d945bec": {
         "status": "awaiting_manager",
         "settlement_verified": true,
-        "evidence_sha256": "a5737ea98f9035be6a40343df1043d4e0bbcdb5fdc93532b016d2dfdbcf757fc",
-        "queued_at": "2026-11-19T12:15:02.567748+00:00",
+        "evidence_sha256": "832eae52e4bf21490beb9884120c1905fc265be0f0b6fc6f295067538460fe7a",
+        "queued_at": "2026-11-19T12:19:28.117796+00:00",
         "evidence": [
           {
             "order_id": "2178805741",
@@ -14049,8 +14049,10 @@
                 "observed_at": "2026-11-19T12:09:47.264530+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T12:19:28.117796+00:00"
               }
             ]
           },
@@ -14106,8 +14108,10 @@
                 "observed_at": "2026-11-19T12:09:47.264530+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T12:19:28.117796+00:00"
               }
             ]
           },
@@ -14163,8 +14167,10 @@
                 "observed_at": "2026-11-19T12:09:47.264530+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T12:19:28.117796+00:00"
               }
             ]
           },
@@ -14251,8 +14257,8 @@
             },
             "30": {
               "pairs": 3,
-              "pending": 4,
-              "unavailable": 3,
+              "pending": 1,
+              "unavailable": 6,
               "actual_win_rate": 0.0,
               "modeled_win_rate": 1.0,
               "mean_paired_change_usd": "0.390424074656777413043112082"
