@@ -5389,8 +5389,14 @@
         "observed_at": "2026-11-19T08:28:45.358110+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "63650.65875",
+        "fees": "0.2028345708646191472849987066",
+        "funding": "0",
+        "net_pnl": "-0.2848583208646191472849987066",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T08:38:08.467873+00:00"
       }
     ]
   },
@@ -5424,8 +5430,14 @@
         "observed_at": "2026-11-19T08:28:45.358110+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "1803.79765",
+        "fees": "0.05746266956266773782481023880",
+        "funding": "0",
+        "net_pnl": "-0.04553316956266773782481023880",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T08:38:08.467873+00:00"
       }
     ]
   },
@@ -5459,8 +5471,10 @@
         "observed_at": "2026-11-19T08:28:45.358110+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 30,
+        "observed_at": "2026-11-19T08:38:08.467873+00:00"
       }
     ]
   },
@@ -5494,8 +5508,14 @@
         "observed_at": "2026-11-19T08:28:45.358110+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "75.3632995",
+        "fees": "0.2405084380978712157298613316",
+        "funding": "0",
+        "net_pnl": "-0.9956099380978712157298613316",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T08:38:08.467873+00:00"
       }
     ]
   },
@@ -5529,8 +5549,14 @@
         "observed_at": "2026-11-19T08:34:25.283814+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "63525.72125",
+        "fees": "0.2028091834299459308763360217",
+        "funding": "0",
+        "net_pnl": "-0.9866454334299459308763360217",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T08:49:20.532972+00:00"
       }
     ]
   },
@@ -5564,8 +5590,14 @@
         "observed_at": "2026-11-19T08:34:25.283814+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "1796.90110",
+        "fees": "0.05738626200074074074074074074",
+        "funding": "0",
+        "net_pnl": "-0.3153532620007407407407407407",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T08:49:20.532972+00:00"
       }
     ]
   },
@@ -5595,8 +5627,10 @@
         "observed_at": "2026-11-19T08:34:25.283814+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 30,
+        "observed_at": "2026-11-19T08:49:20.532972+00:00"
       }
     ]
   }
