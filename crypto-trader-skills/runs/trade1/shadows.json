@@ -6882,8 +6882,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "63992.98750",
+        "fees": "0.2038609835805895491499215132",
+        "funding": "0",
+        "net_pnl": "-0.1648984835805895491499215132",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T11:59:01.623802+00:00"
       },
       {
         "status": "pending",
@@ -6911,8 +6917,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "1809.39485",
+        "fees": "0.05764821895401281272436074446",
+        "funding": "0",
+        "net_pnl": "-0.05930271895401281272436074446",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T11:59:01.623802+00:00"
       },
       {
         "status": "pending",
@@ -6937,6 +6949,95 @@
       "0",
       "0.00884743",
       "XRPUSD"
+    ],
+    "results": [
+      {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 15,
+        "observed_at": "2026-11-19T11:59:01.623802+00:00"
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178810477": {
+    "signature": [
+      "2026-11-19T11:48:39.101287Z",
+      "2026-11-19T11:58:40.913531Z",
+      "ten_minute",
+      "1806.55",
+      "1811.15",
+      3,
+      "0.01",
+      "long",
+      "1793.10",
+      "1847.55",
+      "0.05762998",
+      "0.02885163",
+      "0",
+      "-0.19562998",
+      "ETHUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178810484": {
+    "signature": [
+      "2026-11-19T11:48:40.943601Z",
+      "2026-11-19T11:58:41.971209Z",
+      "ten_minute",
+      "0.9885",
+      "0.9925",
+      3,
+      "1",
+      "long",
+      "0.9835",
+      "1.0135",
+      "0.00315575",
+      "0.00158106",
+      "0",
+      "-0.01515575",
+      "XRPUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178810490": {
+    "signature": [
+      "2026-11-19T11:48:43.193362Z",
+      "2026-11-19T11:58:52.242603Z",
+      "ten_minute",
+      "0.05955",
+      "0.05981",
+      3,
+      "100",
+      "long",
+      "0.059211",
+      "0.061008",
+      "0.01901406",
+      "0.00952774",
+      "0",
+      "-0.09701406",
+      "DOGEUSD"
     ],
     "results": [
       {
