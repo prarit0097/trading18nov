@@ -907,3 +907,15 @@ The 15-minute research comparison for `demo-1795074991923931100` paired BTC and 
 The signed Delta India testnet endpoint matched eight fills, each three contracts per side, for `demo-1795075665522060600`. Twelve wallet postings establish +$0.24900000 gross, $0.50449997 commissions, zero funding and −$0.25549997 net. One trade won and three lost. All four closed on their original timers. Excel and the ledger match at 148 verified trades, fourteen finalized reviews and −$18.82725691 cumulative net. Two more closes will complete review 15 membership.
 
 The subsequent batch `demo-1795076296560259600` filled BTC, ETH and XRP at three contracts each and verified both protection orders on all three. The SOL leg stopped before submission on the quote guard. Combined planned risk including fees is $4.4886954 and the individual deadlines are 13:58:18.022–13:58:21.743 IST. The 15- and 30-minute public depth captures were started.
+
+### Trades 149–151 and review 15 — 19 November, 14:01 IST
+
+The three filled positions in `demo-1795076296560259600` closed on their timers. Six fills and nine wallet postings match −$0.45900000 gross, $0.26363357 commissions, zero funding and −$0.72263357 net. Delta India testnet confirmed no open positions. Ledger and workbook match at 151 verified closes, fourteen finalized reviews and −$19.54989048 cumulative net.
+
+Review 15 covers closes 141–150, one winner and nine losses across four related baskets. The signed audit matched twenty fills, twenty commissions, ten cashflows and three funding postings. Gross loss was $1.25400000, commissions were $1.26956539 and funding paid was $0.02482762. Exact net loss was $2.54839301. All ten entries were WAIT. Close 151 is XRP at −$0.00912547 and belongs to review 16. The first 150 verified trades have 33 winners across 47 source baskets and −$19.54076501 net.
+
+In the final basket, ETH close 150 was submitted 13.299637 seconds after its deadline and filled 0.327602 seconds later. XRP close 151 was submitted 12.404680 seconds after its deadline and filled 0.557065 seconds later. BTC's fill preceded ETH's deadline by 82 milliseconds. This is consistent with staggered deadlines across two observer passes. The journal has no row-level check timestamps to confirm the sequence or quantify the P&L effect. All three closes were first attempts.
+
+Final 15- and 30-minute review references mature at 14:04 and 14:19 IST. The observer remains live at the review gate.
+
+At 14:04 IST, five specialists, the manager and CEO draft were validated against the exact order list in `runs/trade1/review15-team-draft.json`. Nine official 15-minute pairs went from one winner to zero and mean net fell $0.04252866. One more price reference was unavailable. A fake-venue replay using staggered first-fill timestamps confirmed that an observer pass can close the first due position and leave two upcoming deadlines for a later pass. It does not recreate the live network sequence. These were the only two send delays above ten seconds across 151 timer exits. Six official 30-minute observations remain pending, with the final reviewed reference due at 14:19 IST.

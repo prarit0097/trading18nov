@@ -1,0 +1,35 @@
+{
+  "review_id": "2e3c024b3566dd73c806f217af7bb69fdb219c9be9abcb82fc686598f9a0477b",
+  "order_ids": [
+    "2178789862",
+    "2178792153",
+    "2178792158",
+    "2178792163",
+    "2178792947",
+    "2178792950",
+    "2178792955",
+    "2178792959",
+    "2178793810",
+    "2178793819"
+  ],
+  "status": "awaiting_terminal_exit_comparisons",
+  "specialists": {
+    "market_data": "All ten entries were WAIT. Public five-minute replay at four decision times found no READY across the five tracked coins. Four reviewed entries at or above average relative volume lost $1.77526680 and had zero winners. Six below average lost $0.77312621 with one winner. The largest loss was SOL despite 5.83 times its average volume. BTC and SOL IOCs could both receive zero fills with the checked ask inside their cap. Measure within-limit executable size from plan to pre-submit check, with symbol, quote age and headroom recorded.",
+    "entry_exit": "Every included trade used the ten-minute exit. The first seven 15-minute candle pairs went from one winner to zero and mean net change was -$0.04767296. Four preliminary 30-minute pairs had zero wins in both arms and a positive mean change from concentrated SOL recovery. The last eligible ETH reference bars complete at 14:04 and 14:19 IST. The late ETH timer is recorded in the executed outcome.",
+    "risk_costs": "Gross loss was $1.25400000 and commissions were $1.26956539. Three positions crossing the 08:00 UTC funding boundary paid $0.02482762. All three debits were independently verified. The net loss was $2.54839301. Peak planned lot risk was $3.2343878. Daily settled loss plus basket reserve peaked at $26.54205831, with initial margin up to 79.76 percent of available. Funding accounts for less than one percent of the loss.",
+    "execution": "All ten entries and exits filled exactly three contracts, with both brackets verified. Timer orders filled on first attempt. ETH close 150 sent 13.299637 seconds after deadline and filled 0.327602 seconds after send. Adjacent XRP close 151 sent 12.404680 seconds after deadline and is outside this review. A fake-venue replay confirmed that a pass between staggered deadlines can send the earliest lot and defer two positions to another pass. The live journal lacks per-row check timestamps. Across the 151 verified exits, only these two had more than ten seconds of send delay. Record per-pass timing before ascribing loss to delay.",
+    "reconciliation_validation": "The exact closes 141 through 150 matched twenty signed fills, twenty commission debits, ten cashflows and three funding postings. Excel and wallet amounts agree. The first 150 closed trades have 33 winners and -$19.54076501 net across 47 basket decisions. Review 15 shares one execution basket with each neighboring review. XRP close 151 belongs to review 16 and brings all 151 to -$19.54989048 net."
+  },
+  "manager": {
+    "findings": "One winner and nine losses produced -$2.54839301 after costs. Gross lost 10.48 basis points and commissions cost approximately 10.61 basis points on $1,196.0745 entry notional. Every represented basket contribution was net negative. The early modeled 30-minute change was mainly one SOL recovery and the matched total remained a loss. The observed execution tail warrants measuring phase latency.",
+    "recommendation": "Retain the frozen entry protocol and ten-minute timers. Measure observer cycle start, account session readiness and reconciliation duration, eligible timer checks, guarded send and fill timing. Test staggered deadlines offline, then compare tail latency and executable bid prices across independent baskets. Study within-limit depth retention and include no-fills and abandoned attempts when comparing net returns and opportunity costs."
+  },
+  "ceo": {
+    "decision": "retain_current",
+    "rationale": "Keep the three-contract size, ten-minute schedule and frozen four-READY study. Gather timestamped evidence on delayed submissions and depth before changing execution behavior or strategy eligibility."
+  },
+  "comparison_eligible_at_ist": {
+    "15": "2026-11-19T14:04:00+05:30",
+    "30": "2026-11-19T14:19:00+05:30"
+  }
+}
