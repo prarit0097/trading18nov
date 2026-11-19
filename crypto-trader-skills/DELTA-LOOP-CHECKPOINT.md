@@ -937,3 +937,9 @@ Batch `demo-1795078956834119400` then filled BTC, ETH, XRP and SOL at three cont
 ### Trades 152-155 supplemental depth comparison - 19 November, 14:40 IST
 
 The public 15-minute order book report matched all four Trade 1 demo entries from batch `demo-1795078327011995800`. Estimated net was +$1.40632260 versus +$0.58557690 realized on those entries. Both groups had four winners. The executed hold was ten minutes.
+
+### Trades 156–159 — 19 November, 14:44 IST
+
+Delta India testnet confirmed all eight fills in batch `demo-1795078956834119400`. Each of BTC, ETH, XRP and SOL opened and closed three contracts. Twelve matched wallet postings established −$0.19650000 gross, $0.50402446 in commissions, zero funding and −$0.70052446 net. All four closed via their ten-minute timers and ended at a net loss. Close submission delays ranged from 0.868 to 3.766 seconds. The ledger and Excel match at 159 verified closes, 15 finalized reviews and −$19.66483804 cumulative net. Review 16 has nine verified closes.
+
+In batch `demo-1795079582885832200`, the BTC IOC went unfilled and SOL moved outside the saved quote or mark bounds. ETH and XRP filled three contracts each with verified stop and target pairs. Their combined planned risk including fees is $1.6865014 and their respective deadlines are 14:53:05.363 and 14:53:07.485 IST. Both public order book capture workers started for the 15- and 30-minute comparisons. The observer is waiting for that exposure to settle. Weekly quota was 79% remaining and the five-hour reading was unavailable.
