@@ -7775,8 +7775,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "1810.244425",
+        "fees": "0.05767289968509852080803620709",
+        "funding": "0",
+        "net_pnl": "-0.05484014968509852080803620709",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T14:12:29.601237+00:00"
       },
       {
         "status": "pending",
