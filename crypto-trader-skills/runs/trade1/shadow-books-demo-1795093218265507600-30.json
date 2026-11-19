@@ -1,0 +1,179 @@
+{
+  "status": "depth_research_only",
+  "environment": "india_testnet",
+  "campaign_id": "trade1",
+  "batch_id": "demo-1795093218265507600",
+  "minutes": 30,
+  "comparisons": [
+    {
+      "symbol": "BTCUSD",
+      "order_id": "2178818732",
+      "first_fill_at": "2026-11-19T13:00:20.954455Z",
+      "deadline_at": 1795095020.954455,
+      "capture": {
+        "status": "valid",
+        "book_observed_at": 1795095023.333365,
+        "book": {
+          "symbol": "BTCUSD",
+          "buy": [
+            {
+              "size": 16474,
+              "depth": "16474",
+              "price": "63736.0"
+            },
+            {
+              "size": 20870,
+              "depth": "37344",
+              "price": "63735.5"
+            },
+            {
+              "size": 26498,
+              "depth": "63842",
+              "price": "63735.0"
+            },
+            {
+              "size": 33703,
+              "depth": "97545",
+              "price": "63734.5"
+            },
+            {
+              "size": 42927,
+              "depth": "140472",
+              "price": "63734.0"
+            }
+          ],
+          "sell": [
+            {
+              "size": 1228,
+              "depth": "1228",
+              "price": "63737.0"
+            },
+            {
+              "size": 1572,
+              "depth": "2.8E+3",
+              "price": "63737.5"
+            },
+            {
+              "size": 2012,
+              "depth": "4812",
+              "price": "63738.0"
+            },
+            {
+              "size": 2576,
+              "depth": "7388",
+              "price": "63738.5"
+            },
+            {
+              "size": 3298,
+              "depth": "10686",
+              "price": "63739.0"
+            }
+          ],
+          "last_updated_at": 1795095023762000
+        }
+      },
+      "candle_baseline": {
+        "status": "estimated",
+        "exit_price": "63649.15950",
+        "fees": "0.2030997975610759439168930397",
+        "funding": "0",
+        "net_pnl": "-0.7936212975610759439168930397",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "depth_fallback": {
+        "status": "estimated",
+        "exit_price": "63649.15950",
+        "fees": "0.2030997975610759439168930397",
+        "funding": "0",
+        "net_pnl": "-0.7936212975610759439168930397",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "realized_net_usd": "-0.13295080"
+    },
+    {
+      "symbol": "ETHUSD",
+      "order_id": "2178818741",
+      "first_fill_at": "2026-11-19T13:00:22.854155Z",
+      "deadline_at": 1795095022.854155,
+      "capture": {
+        "status": "valid",
+        "book_observed_at": 1795095025.0740685,
+        "book": {
+          "symbol": "ETHUSD",
+          "buy": [
+            {
+              "size": 898,
+              "depth": "898",
+              "price": "1805.30"
+            },
+            {
+              "size": 1100,
+              "depth": "1998",
+              "price": "1805.25"
+            },
+            {
+              "size": 1299,
+              "depth": "3297",
+              "price": "1805.20"
+            },
+            {
+              "size": 1497,
+              "depth": "4794",
+              "price": "1805.15"
+            },
+            {
+              "size": 1691,
+              "depth": "6485",
+              "price": "1805.10"
+            }
+          ],
+          "sell": [
+            {
+              "size": 2078,
+              "depth": "2078",
+              "price": "1805.35"
+            },
+            {
+              "size": 2550,
+              "depth": "4628",
+              "price": "1805.40"
+            },
+            {
+              "size": 3019,
+              "depth": "7647",
+              "price": "1805.45"
+            },
+            {
+              "size": 3482,
+              "depth": "11129",
+              "price": "1805.50"
+            },
+            {
+              "size": 3938,
+              "depth": "15067",
+              "price": "1805.55"
+            }
+          ],
+          "last_updated_at": 1795095024009000
+        }
+      },
+      "candle_baseline": {
+        "status": "estimated",
+        "exit_price": "1802.748175",
+        "fees": "0.05748976590079756805306066049",
+        "funding": "0",
+        "net_pnl": "-0.1595445159007975680530606605",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "depth_fallback": {
+        "status": "estimated",
+        "exit_price": "1802.748175",
+        "fees": "0.05748976590079756805306066049",
+        "funding": "0",
+        "net_pnl": "-0.1595445159007975680530606605",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed"
+      },
+      "realized_net_usd": "0.03540666"
+    }
+  ]
+}

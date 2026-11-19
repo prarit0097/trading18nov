@@ -14354,10 +14354,10 @@
         }
       },
       "5683f1688e0d131a6d7960c292f557e280790acd0a706511f033dd3dfb8016b6": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "ceb231ea02be3c5c4c7bcb9093a31c5b78cd83084f9d37f402e583b222711bd6",
-        "queued_at": "2026-11-19T13:20:18.581461+00:00",
+        "evidence_sha256": "46116f2efdd02a8d58d9b1a155140f09d02b4481e14edcedcb65f5b79816014c",
+        "queued_at": "2026-11-19T13:31:15.694544+00:00",
         "evidence": [
           {
             "order_id": "2178811434",
@@ -14911,8 +14911,14 @@
                 "observed_at": "2026-11-19T13:16:26.809217+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "63649.15950",
+                "fees": "0.2030997975610759439168930397",
+                "funding": "0",
+                "net_pnl": "-0.7936212975610759439168930397",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T13:31:15.694544+00:00"
               }
             ]
           },
@@ -14972,8 +14978,14 @@
                 "observed_at": "2026-11-19T13:16:26.809217+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "1802.748175",
+                "fees": "0.05748976590079756805306066049",
+                "funding": "0",
+                "net_pnl": "-0.1595445159007975680530606605",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T13:31:15.694544+00:00"
               }
             ]
           }
@@ -14998,12 +15010,12 @@
               "mean_paired_change_usd": "-0.08441765040996209740159502453"
             },
             "30": {
-              "pairs": 2,
-              "pending": 2,
+              "pairs": 4,
+              "pending": 0,
               "unavailable": 6,
-              "actual_win_rate": 0.0,
+              "actual_win_rate": 0.25,
               "modeled_win_rate": 0.0,
-              "mean_paired_change_usd": "-0.1070053499297513338512773284"
+              "mean_paired_change_usd": "-0.2674080933303440449181270895"
             }
           }
         },
@@ -15016,7 +15028,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T13:32:47.842297+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "All ten entries were WAIT. A five-coin candle replay at the relevant decision windows found zero READY coins. The four reviewed basket slices contributed 3, 2, 3 and 2 closes. In a separate preregistered order-book repeat, four of four signed IOC quantities matched displayed size within the saved cap. Two were zero and two were full. The comparison used the venue creation time which arrives after submission. The two filled lots earned -$0.09754414 net. The independent forward protocol will use local receipt before intent and measure fill accuracy separately from after-cost trade performance.",
+            "entry_exit": "At 15 minutes the six official pairs fell from three to two winners, with average net change -$0.08441765. Four results were unavailable. The nine funding-and-depth-supported comparisons fell from four to three winners and averaged -$0.05461998. At 30 minutes the four official pairs fell from one win to zero with average net change -$0.26740809. Six were unavailable. The six supplemental pairs fell from two wins to one, net -$0.30433443 actual versus -$1.36655474 modeled and average net change -$0.17703672. The added funding-backed ETH and XRP cases match settled trades and the frozen tape. DOGE crosses its funding settlement. Both horizons have zero pending.",
+            "risk_costs": "Gross +$0.15900000, commissions $0.48081530 and a DOGE funding credit of $0.00113597 produced -$0.32067933 net. Six trades had positive gross P&L and four had positive net P&L. Peak planned leg risk was $2.8027556, peak daily settled loss plus proposed reserve was $29.22779955 and peak planned combined margin was 76.78%. At the verified flat checkpoint the day's settled loss was $24.07739938, leaving $5.92260062 of risk capacity before a fresh check.",
+            "execution": "All ten entries and exits matched the owned three-contract lots. Initial exchange protection was verified, and the signed venue confirmed one fully filled reduce-only market exit for each trade. Same-venue first-fill-to-exit timestamps gave 602.232 to 614.253 seconds. The venue order creation-to-fill interval was 3.4 to 48.6 milliseconds. Public message timestamps led their local receipt clocks by a median 1.45 to 1.48 seconds during the recent probes. Cross-clock differences from local journal intent cannot establish physical API latency. Preserve fail-closed price guards and track local elapsed and venue intervals separately.",
+            "reconciliation_validation": "Review 20 contains ten unique settled trades 191 through 200, disjoint from the prior 190. Independent signed evidence matched 20 fills and 31 wallet postings. All 200 verified trade P&L entries match Excel. Group realized drawdown was $0.35608599. Excluding its largest winner leaves -$0.41327398. Excluding its largest losing basket leaves -$0.04871703. Through trade 200 the same policy recorded 45 wins (22.5%), -$24.07739938 net and $24.11280604 realized drawdown in 62 baskets within one IST day. The samples are related and descriptive."
+          },
+          "manager": {
+            "findings": "After-cost Review 20 settled at four wins, six losses and -$0.32067933. Commissions exceeded gross P&L and the funding credit. Both longer exits reduced wins and mean after-cost P&L on the matched samples. Through close 200 the official 15-minute mean difference was -$0.05068537 across 125 pairs and the 30-minute difference was -$0.04468884 across 95 pairs. Missing comparison coverage and correlated baskets limit inference.",
+            "recommendation": "Retain the ten-minute demo exit, current IOC and risk limits, and frozen four-READY study. Carry forward the published passive IOC test on books received before local intent. Compare signed contract counts against the saved ticker and always-full baselines. Track realized after-cost P&L separately by basket, and qualify strategy improvements using the independent outcome measures."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "The paired duration evidence supports the current timed exit while the frozen four-READY forward study collects independent observations. All 200 closes used the same policy over one IST day. Promotion requires evidence of both better after-cost win probability and higher net expectancy within the agreed limits. The passive prospective book test measures fill agreement under the saved limits."
+          }
+        }
       }
     },
     "candidate_registry": {

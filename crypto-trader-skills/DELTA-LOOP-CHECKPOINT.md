@@ -1201,3 +1201,17 @@ The forward test in `runs/trade1/ioc-pre-intent-protocol-20261119.json` freezes 
 ### Funding-backed 30-minute supplement — 19 November, 18:50 IST
 
 All three 30-minute books for trades 196–198 passed capture checks. The frozen 134-observation tape verified no incremental funding for ETH or XRP from the actual close through their modeled deadline. Their paired net changed from −$0.02165350 actual to −$0.01424144 modeled, with one winner each. DOGE crossed its scheduled hourly funding and remained unavailable. The replay used six frozen price frames and reproduced exactly offline. The group now has two official 30-minute pairs and four with supplemental funding proof. The latter went from one winner to one and averaged −$0.05164966. The two BTC and ETH references pending for 19:01 IST are outside those totals.
+
+### Review 20 finalized — 19 November, 19:02 IST
+
+Terminal evidence digest `46116f2efdd02a8d58d9b1a155140f09d02b4481e14edcedcb65f5b79816014c` covers the signed closes 191–200. The five specialists, profitability manager and CEO recorded retain-current at 19:02:47.842 IST. The campaign was flat at the signed inventory check. Review 20 recorded four wins, six losses, +$0.15900000 gross, $0.48081530 in fees, +$0.00113597 funding and −$0.32067933 net.
+
+The final two official 30-minute estimates were BTC −$0.79362130 against −$0.13295080 realized and ETH −$0.15954452 against +$0.03540666 realized. The six official 15-minute pairs moved from three to two winners and averaged −$0.08441765. Four official 30-minute pairs moved from one winner to zero and averaged −$0.26740809. The funding and depth-supported comparisons had nine and six eligible positions. Average changes were −$0.05461998 at 15 minutes and −$0.17703672 at 30 minutes, with one fewer winner on each matched set. All reference statuses were terminal. Through close 200, the official 15-minute mean change was −$0.05068537 over 125 pairs and the official 30-minute mean change was −$0.04468884 over 95 pairs.
+
+The 10-minute rule and frozen four-READY study remain in effect. The registered pre-intent IOC recorder was live before review release. Weekly quota was 67% remaining and the five-hour reading was unavailable.
+
+### Protected four-coin batch after Review 20 — 19 November, 19:05 IST
+
+The first observer cycle following review release discarded a changed plan. A subsequent fresh cycle filled three contracts each on BTC, ETH, XRP and DOGE in batch `demo-1795095248645280700`. Signed India testnet evidence matched all four buys and eight pending reduce-only stop and target orders. Planned loss including fees is $5.1984620. Daily settled loss plus reserved risk is $29.27586138 against the $30 limit. First-fill deadlines are 19:14:11.313 through 19:14:17.212 IST.
+
+Both public deadline captures started. A bounded funding tape began before the expected closes and runs through 19:35:30 IST. The preregistered pre-intent order-book window was collecting before the four submissions. Excel shows 200 verified closes, 20 finalized reviews and −$24.07739938 cumulative net.
