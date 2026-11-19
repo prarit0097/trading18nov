@@ -7324,8 +7324,10 @@
         "observed_at": "2026-11-19T13:10:37.439590+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T13:19:00.981974+00:00"
       }
     ]
   },
@@ -7355,8 +7357,10 @@
         "observed_at": "2026-11-19T13:10:37.439590+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T13:19:00.981974+00:00"
       }
     ]
   },
@@ -7386,8 +7390,10 @@
         "observed_at": "2026-11-19T13:10:37.439590+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T13:20:18.581461+00:00"
       }
     ]
   },
@@ -7411,8 +7417,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "63727.12050",
+        "fees": "0.2032239894420100360892131612",
+        "funding": "0",
+        "net_pnl": "-0.5598624894420100360892131612",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T13:16:26.809217+00:00"
       },
       {
         "status": "pending",
@@ -7440,8 +7452,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "1805.746675",
+        "fees": "0.05753753201822744231034959237",
+        "funding": "0",
+        "net_pnl": "-0.06963728201822744231034959237",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T13:16:26.809217+00:00"
       },
       {
         "status": "pending",

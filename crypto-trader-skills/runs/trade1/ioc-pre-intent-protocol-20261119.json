@@ -1,0 +1,32 @@
+{
+  "environment": "india_testnet",
+  "study": "trade1_ioc_pre_intent_displayed_depth",
+  "review_sequence": 20,
+  "sample_window_utc": {
+    "start": "2026-11-19T13:29:30Z",
+    "end": "2026-11-19T13:39:30Z"
+  },
+  "source": {
+    "url": "wss://socket-ind-pub.testnet.deltaex.org",
+    "stream": "ob_l2",
+    "symbols": [
+      "BTCUSD",
+      "ETHUSD",
+      "XRPUSD",
+      "DOGEUSD",
+      "SOLUSD"
+    ],
+    "displayed_ask_levels": 5
+  },
+  "cohort": "All owned Trade 1 three-contract buys with an IOC intent during the frozen window. Include every attributable terminal signed order, including zero and partial fills. Record guarded unsent and unresolved intents separately.",
+  "selection": "Choose the latest same-symbol receipt on the worker host strictly before its local submission_started_at timestamp and no more than 1,000 ms old. Resolve identical receipt times using tape order. Select from local receipt time and order intent only. Validate the capture clock against elapsed monotonic time and treat an ambiguous interval as unavailable.",
+  "prediction": "Sum displayed contracts at prices at or below the saved IOC limit. Cap the prediction at the requested three whole contracts.",
+  "baselines": [
+    "Predict all three contracts.",
+    "Predict all three if the saved preflight best ask is at or below the IOC cap, zero otherwise. Report missing preflight data."
+  ],
+  "scoring": "Save the predictions using only pre-submit fields before independent signed quantity reconciliation. On the same eligible attempts report exact agreement, mean absolute contract-count error and false full predictions. Report total sent, signed, eligible, unavailable and guarded unsent. Preserve per-basket results and the effective book ages.",
+  "interpretation": "The first prospective window measures fill agreement. Separately dated forward samples and basket-level uncertainty are needed before generalizing. Report after-cost N and P&L separately for later closed trades. Live caps, risk, timer and the frozen four-READY study remain in effect.",
+  "registered_utc": "2026-11-19T18:46:39.2784456+05:30",
+  "clock_validation": "Sample requires one connected stream and maximum absolute wall-to-monotonic receipt drift at or below 50 ms from recorder start. Failed clock checks leave local-book predictions unavailable. Report WS message and book update ages as diagnostics after outcome reconciliation."
+}
