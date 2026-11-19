@@ -9030,10 +9030,10 @@
         }
       },
       "30a0557f958a286d9af2a1975c49545959d2b99ac7608bf1213a4142ef683f72": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "4738629e30c70d2316e5eb932e6fbfaeab65e05da9090f13e5de77b4371bd90a",
-        "queued_at": "2026-11-19T06:44:10.971357+00:00",
+        "evidence_sha256": "7b8d41c98de7f4d026114a292fbeea88cb33578534c4bd02e87cbe2870839164",
+        "queued_at": "2026-11-19T06:59:29.356831+00:00",
         "evidence": [
           {
             "order_id": "2178782017",
@@ -9272,8 +9272,14 @@
                 "observed_at": "2026-11-19T06:38:40.793186+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "1803.847625",
+                "fees": "0.05744197717829847144006436042",
+                "funding": "0",
+                "net_pnl": "-0.00351322717829847144006436042",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:47:15.441975+00:00"
               }
             ]
           },
@@ -9329,8 +9335,10 @@
                 "observed_at": "2026-11-19T06:38:40.793186+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:47:15.441975+00:00"
               }
             ]
           },
@@ -9390,8 +9398,14 @@
                 "observed_at": "2026-11-19T06:38:40.793186+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "75.8050785",
+                "fees": "0.2414957420523241919298616246",
+                "funding": "0",
+                "net_pnl": "-0.2052602420523241919298616246",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:47:15.441975+00:00"
               }
             ]
           },
@@ -9451,8 +9465,14 @@
                 "observed_at": "2026-11-19T06:44:10.971357+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "63636.66575",
+                "fees": "0.2026028120623098354333745209",
+                "funding": "0",
+                "net_pnl": "0.0678944379376901645666254791",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:59:29.356831+00:00"
               }
             ]
           },
@@ -9512,8 +9532,14 @@
                 "observed_at": "2026-11-19T06:44:10.971357+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "1804.59725",
+                "fees": "0.05747222119831262825134490599",
+                "funding": "0",
+                "net_pnl": "-0.01555472119831262825134490599",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:59:29.356831+00:00"
               }
             ]
           },
@@ -9569,8 +9595,14 @@
                 "observed_at": "2026-11-19T06:44:10.971357+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "0.98300825",
+                "fees": "0.003126289156580020387359836901",
+                "funding": "0",
+                "net_pnl": "0.007398460843419979612640163099",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:59:29.356831+00:00"
               }
             ]
           },
@@ -9630,8 +9662,10 @@
                 "observed_at": "2026-11-19T06:44:10.971357+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+                "minutes": 30,
+                "observed_at": "2026-11-19T06:59:29.356831+00:00"
               }
             ]
           }
@@ -9656,12 +9690,12 @@
               "mean_paired_change_usd": "0.02066776958510555728203883598"
             },
             "30": {
-              "pairs": 0,
-              "pending": 7,
-              "unavailable": 3,
-              "actual_win_rate": null,
-              "modeled_win_rate": null,
-              "mean_paired_change_usd": null
+              "pairs": 5,
+              "pending": 0,
+              "unavailable": 5,
+              "actual_win_rate": 0.2,
+              "modeled_win_rate": 0.4,
+              "mean_paired_change_usd": "0.1242547356704349705115989502"
             }
           }
         },
@@ -9674,7 +9708,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T07:00:51.783670+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "All ten reviewed entries were WAIT. Public five-minute replay across five coins showed zero READY signals at 11:10, 11:45 and 11:55 IST. Five reviewed legs below average volume netted -$0.69060810. The five at or above average netted -$0.35816644. Both groups had one winner and different coin and notional mixes. A BTC IOC was unfilled at a checked ask $1 below its cap. Separate attempts halted when the BTC ask exceeded the cap by $4.70 and $9.50. Test available depth inside the limit, quote age and breakout breadth on future data.",
+            "entry_exit": "All ten verified exits used the original ten-minute timers. The first three official 15-minute pairs had zero wins at either duration and +$0.04706125 mean modeled change. A $0.15917493 SOL improvement exceeded the three-pair total gain. The first three 30-minute comparisons were unavailable due to unverified hypothetical funding. The last included SOL boundary bars finish at 12:14 and 12:29 IST. A longer hold needs evidence on both matched win rate and net P&L. Displayed depth paired all ten at 15 minutes, with two winners in both arms and modeled net -$0.90001907. It paired seven at 30 minutes, with actual one winner and modeled four. Net improved from -$1.02249778 to -$0.07581748. Three trade paths had unverifiable incremental funding. 15-minute estimate: 6/10 matched, 4 unavailable, actual matched win rate 0.0%, modeled 0.0%, +$0.0207 mean net change per matched trade. 30-minute estimate: 5/10 matched, 5 unavailable, actual matched win rate 20.0%, modeled 40.0%, +$0.1243 mean net change per matched trade. Matched subsets remain small. Keep the ten-minute timer while independent evidence is collected.",
+            "risk_costs": "Gross +$0.05850000 less $1.10727454 in commissions gave -$1.04877454 net. Funding was zero. Four of six gross winners lost after fees. The maximum lot planned loss was $3.235139 and the maximum daily settled loss plus planned reserve was $21.93610296. Initial margin ranged from 77.54 to 78.24 percent. Entry fills cost $0.0735 less than the recorded preflight offers for the same quantities. No matched exit quotes support exact round-trip slippage.",
+            "execution": "Ten positions filled and closed exactly three contracts each, within IOC buy limits and with both brackets verified. Each timed close filled on its first attempt. Exit submission delay was 0.648 to 6.737 seconds and exchange fills followed within 0.593 seconds. One submitted BTC IOC found insufficient order-book size. Two additional quote checks stopped unsent baskets before the successful final retry. The aborted attempts added no trades.",
+            "reconciliation_validation": "An independent signed Delta India testnet read matched twenty fills, twenty commissions, ten cashflows and zero funding. The exact group is closes 121 through 130. The three source baskets contributed three, three and four positions. The first shared one trade with review 12. Excel and wallet net matched. Across 130 verified trades there are 32 net winners and total net -$14.78262797."
+          },
+          "manager": {
+            "findings": "Two wins and eight losses produced -$1.04877454 net, or -$0.104877454 per trade. Gross earned 0.56 basis points against 10.62 basis points in round-trip commissions on $1,042.602 entry notional. Each represented basket contribution was net negative. Three related decisions cannot establish a new volume cutoff or a longer timer. Modeled gains from a single SOL movement are sensitive to its inclusion. At full review coverage, official 30-minute matched net improved from -$0.77030897 to -$0.14903529 for five pairs. Across the first 130 verified closes, the official 15-minute comparison matched 75, going from 19 to 18 wins with mean net change of -$0.04147321. At 30 minutes 54 pairs went from 14 to 19 wins with mean net change of +$0.01442753. Both modeled totals are negative and coverage is incomplete. 15-minute estimate: 6/10 matched, 4 unavailable, actual matched win rate 0.0%, modeled 0.0%, +$0.0207 mean net change per matched trade. 30-minute estimate: 5/10 matched, 5 unavailable, actual matched win rate 20.0%, modeled 40.0%, +$0.1243 mean net change per matched trade. Comparisons use matched entries only and are excluded from accounting.",
+            "recommendation": "Retain the three-contract, ten-minute policy and frozen four-READY test. On new observations, measure continuous relative volume, executable spread, IOC headroom and available depth, then test whether the ten-minute favorable price move clears round-trip costs more often at higher relative volume and sufficient within-limit depth. Include guard blocks, no-fills, partial fills and idle opportunities at basket and day level. Score both after-cost win rate and mean net per trade and day under matched costs."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "Keep the risk limits, timer, and registered candidate while independent data accumulates. The earlier volume strata and execution results identify diagnostics to test, with three related entry decisions available in this review."
+          }
+        }
       }
     },
     "candidate_registry": {
