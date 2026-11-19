@@ -947,3 +947,11 @@ In batch `demo-1795079582885832200`, the BTC IOC went unfilled and SOL moved out
 ### Trades 156–159 supplemental depth comparison — 19 November, 14:48 IST
 
 The 15-minute replay matched all four positions in batch `demo-1795078956834119400`. The public deadline order book supplied a usable SOL reference where the candle method had none. This matched sample had zero winners at both horizons. The modeled net was −$0.63496129 versus −$0.70052446 realized at ten minutes, a $0.06556317 improvement within one correlated basket. The live exit policy remains ten minutes.
+
+### Trades 160–161 and review 16 opened — 19 November, 14:54 IST
+
+Four signed Delta India testnet fills and six matched wallet postings settled ETH and XRP in batch `demo-1795079582885832200`. Both closed three contracts on their ten-minute timers. ETH net was −$0.07994917 and XRP net was −$0.00613823. Together they realized −$0.02550000 gross, $0.06058740 commissions, zero funding and −$0.08608740 net. The account was flat on the signed perpetual-position read. Excel and the ledger match at 161 verified closes, 15 finalized reviews and −$19.75092544 cumulative net.
+
+Review 16 covers closes 151–160. XRP close 161 belongs to review 17. The signed audit matched 20 fills, 20 commission debits and ten cashflows. Review 16 earned $0.86400000 gross with $1.06802220 commissions and zero funding, for −$0.20402220 net and four wins from one of the four represented baskets. The review gate is active. The final included ETH entry's complete reference minutes become eligible at 14:59 and 15:14 IST for the 15- and 30-minute estimates.
+
+The supplemental 30-minute depth replay for trades 152–155 matched three of four entries. It added XRP and lacked a valid SOL snapshot. The three matched positions yielded +$0.35499686 modeled versus +$0.30671051 realized, with three winners at both horizons. This comparison does not add to realized results.
