@@ -1001,3 +1001,11 @@ The 15-minute supplemental replay for trades 162–165 produced zero matched est
 A second bounded public testnet probe captured 2,486 snapshots across five symbols. The four selected snapshots arrived 263–602 ms before submission started for batch `demo-1795082853511537900`. All four expected quantities matched signed three-contract fills. The matched levels, clocks and IOC limits are in `runs/trade1/ioc-probe-20261119-1535.json`.
 
 Across the two probes, all eight sent lots in two baskets were predicted and realized full fills. The sample contains no partial fills, zero fills or unsent lots. It supports collecting prospective evidence and leaves the registered candidate rules in place.
+
+### Trades 170–173 and review 17 opened — 19 November, 15:48 IST
+
+Batch `demo-1795082853511537900` settled four three-contract positions through eight verified Delta India testnet fills and twelve matched wallet postings. The batch recorded −$0.40350000 gross, $0.50475405 in commissions, zero funding and −$0.90825405 net. Each timer submission was 10.051–11.761 seconds after its first-fill deadline. The fills followed within 0.671 seconds of submission. The observer remained live and flat. The workbook shows 173 verified closes, 16 finalized reviews and −$21.18074871 cumulative net.
+
+Review 17 contains closes 161–170. The last included trade is BTC from this basket. The remaining ETH, XRP and SOL closes belong to review 18. An independent signed account read matched 20 fills, 20 commission debits and ten cashflows for review 17. The group had two winners across four represented baskets, all ten entries were WAIT, and $0.54000000 gross fell to −$0.67563914 net after $1.21563914 of commissions. Funding was zero. The latest BTC entry becomes eligible for final horizon observations at 15:53 and 16:08 IST.
+
+The 15-minute supplemental replay for trades 166–169 matched all four positions after depth supplied a usable XRP reference. It moved from two winners and +$0.09831845 realized to zero winners and −$0.94398479 modeled. The 30-minute depth replay for trades 162–165 left all four estimates unavailable due to unverified incremental funding across 10:00 UTC.
