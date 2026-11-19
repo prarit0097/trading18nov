@@ -6704,8 +6704,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "63707.63025",
+        "fees": "0.2030424114880592376333199915",
+        "funding": "0",
+        "net_pnl": "-0.3346516614880592376333199915",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T11:17:23.232421+00:00"
       },
       {
         "status": "pending",
@@ -6733,8 +6739,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "1801.848625",
+        "fees": "0.05741886959599955612273206458",
+        "funding": "0",
+        "net_pnl": "-0.07996011959599955612273206458",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T11:17:23.232421+00:00"
       },
       {
         "status": "pending",
@@ -6762,8 +6774,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "0.9815090",
+        "fees": "0.003127880840632008154943934760",
+        "funding": "0",
+        "net_pnl": "-0.004600880840632008154943934760",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T11:17:23.232421+00:00"
       },
       {
         "status": "pending",
@@ -6791,8 +6809,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 15,
+        "observed_at": "2026-11-19T11:17:23.232421+00:00"
       },
       {
         "status": "pending",
