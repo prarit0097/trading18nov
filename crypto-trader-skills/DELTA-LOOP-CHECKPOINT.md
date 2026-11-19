@@ -933,3 +933,7 @@ The first fresh attempt stopped at the BTC quote guard. Batch `demo-179507832701
 The signed Delta India testnet fills endpoint confirmed eight fills, with three contracts per side for all four positions in `demo-1795078327011995800`. Twelve wallet postings establish +$1.08900000 gross, $0.50342310 commissions, zero funding and +$0.58557690 net. All four positions won and closed on their original timers. Excel and the ledger match at 155 verified closes, fifteen finalized reviews and −$18.96431358 cumulative net. Review 16 now has five verified members.
 
 Batch `demo-1795078956834119400` then filled BTC, ETH, XRP and SOL at three contracts each. The observer verified all four stop-loss and target pairs. Combined planned risk including fees is $7.7067806. Individual first-fill deadlines are 14:42:38.086–14:42:43.719 IST. Public 15- and 30-minute depth captures were started.
+
+### Trades 152-155 supplemental depth comparison - 19 November, 14:40 IST
+
+The public 15-minute order book report matched all four Trade 1 demo entries from batch `demo-1795078327011995800`. Estimated net was +$1.40632260 versus +$0.58557690 realized on those entries. Both groups had four winners. The executed hold was ten minutes.
