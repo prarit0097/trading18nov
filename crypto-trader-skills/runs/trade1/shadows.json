@@ -6048,8 +6048,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T10:07:24.107437+00:00"
       },
       {
         "status": "pending",
@@ -6077,8 +6079,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T10:07:24.107437+00:00"
       },
       {
         "status": "pending",
@@ -6106,8 +6110,10 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T10:07:24.107437+00:00"
       },
       {
         "status": "pending",
@@ -6131,6 +6137,124 @@
       "0.12015203",
       "0",
       "-0.27328654",
+      "SOLUSD"
+    ],
+    "results": [
+      {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 15,
+        "observed_at": "2026-11-19T10:07:24.107437+00:00"
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178801041": {
+    "signature": [
+      "2026-11-19T09:57:03.724322Z",
+      "2026-11-19T10:07:06.812804Z",
+      "ten_minute",
+      "63860",
+      "63833",
+      3,
+      "0.001",
+      "long",
+      "63195.6",
+      "65110.8",
+      "0.20341495",
+      "0.10168597",
+      "0",
+      "-0.12241495",
+      "BTCUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178801044": {
+    "signature": [
+      "2026-11-19T09:57:05.519159Z",
+      "2026-11-19T10:07:07.901125Z",
+      "ten_minute",
+      "1808.3",
+      "1805.3",
+      3,
+      "0.01",
+      "long",
+      "1787.60",
+      "1841.90",
+      "0.05756465",
+      "0.02875843",
+      "0",
+      "0.03243535",
+      "ETHUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178801051": {
+    "signature": [
+      "2026-11-19T09:57:07.139208Z",
+      "2026-11-19T10:07:08.887819Z",
+      "ten_minute",
+      "0.9855",
+      "0.9865",
+      3,
+      "1",
+      "long",
+      "0.9776",
+      "1.0073",
+      "0.00314142",
+      "0.00157151",
+      "0",
+      "-0.00614142",
+      "XRPUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178801057": {
+    "signature": [
+      "2026-11-19T09:57:09.295053Z",
+      "2026-11-19T10:07:17.057005Z",
+      "ten_minute",
+      "75.578",
+      "75.433",
+      3,
+      "1",
+      "long",
+      "74.6796",
+      "76.9428",
+      "0.24056053",
+      "0.12016477",
+      "0",
+      "0.19443947",
       "SOLUSD"
     ],
     "results": [

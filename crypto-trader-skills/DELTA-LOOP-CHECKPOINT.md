@@ -987,3 +987,17 @@ The next batch `demo-1795082222536893200` filled three contracts each for BTC, E
 A bounded public testnet order-book probe captured 2,488 offer snapshots across five symbols and two connections. For the four IOC submissions in batch `demo-1795082222536893200`, the last eligible snapshots arrived 257–493 ms before the journaled submission starts. Each showed at least three displayed contracts within the saved cap. All four signed exchange fills matched those quantities. The matched levels, clocks and limits are in `runs/trade1/ioc-probe-20261119-1524.json`.
 
 This single correlated basket provides a check of the measurement method. It contains no partial, zero-fill or guarded-unsent observations. No strategy decision relies on this sample.
+
+### Trades 166–169 — 19 November, 15:38 IST
+
+Batch `demo-1795082222536893200` settled four three-contract positions on their ten-minute timers. A signed Delta India testnet read matched eight fills. Twelve wallet postings established +$0.60300000 gross, $0.50468155 commissions, zero funding and +$0.09831845 net. ETH and SOL won after costs. Exit submission delays ranged from 1.413 to 7.385 seconds. The ledger shows 169 verified closes and −$20.27249466 total net. Review 17 has nine verified closes.
+
+The next batch `demo-1795082853511537900` filled three contracts each in BTC, ETH, XRP and SOL. The signed read matched all four fills and eight reduce-only protective orders. Combined planned risk including fees is $7.7171960. Daily loss plus reserved risk amounts to $27.98969066. The 10-minute deadlines range from 15:47:34.830 to 15:47:40.442 IST. Public order-book capture workers started for both longer horizons.
+
+The 15-minute supplemental replay for trades 162–165 produced zero matched estimates. The modeled holds cross a UTC hour boundary and additional funding could not be verified. Order-book depth does not resolve the missing cost. The four actual settlements remain verified.
+
+### Second IOC depth observation — 19 November, 15:39 IST
+
+A second bounded public testnet probe captured 2,486 snapshots across five symbols. The four selected snapshots arrived 263–602 ms before submission started for batch `demo-1795082853511537900`. All four expected quantities matched signed three-contract fills. The matched levels, clocks and IOC limits are in `runs/trade1/ioc-probe-20261119-1535.json`.
+
+Across the two probes, all eight sent lots in two baskets were predicted and realized full fills. The sample contains no partial fills, zero fills or unsent lots. It supports collecting prospective evidence and leaves the registered candidate rules in place.

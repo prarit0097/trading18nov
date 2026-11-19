@@ -1,0 +1,198 @@
+{
+  "scope": "Exploratory public Delta India testnet IOC depth observation",
+  "environment": "india_testnet",
+  "source": "wss://socket-ind-pub.testnet.deltaex.org",
+  "stream": "ob_l2",
+  "sampling_method": "For each attempted entry, the latest local five-level offer snapshot had both receipt and exchange timestamps within one second before the submission journal timestamp. Visible offers were walked up to the existing limit.",
+  "independent_fill_check": "Signed India testnet matched each submitted order by symbol, buy side and three-contract fill quantity.",
+  "limitations": "This second basket has four full fills. The two correlated baskets observed so far contain no partial or zero fills or lots rejected by the price guard. The data establish feasibility of the measurement for these entries. Venue liquidity may change after the snapshot.",
+  "prior_probe": "ioc-probe-20261119-1524.json",
+  "capture": {
+    "connection_sessions": 1,
+    "invalid_asks": 0
+  },
+  "sample_start": "2026-11-19T10:05:35Z",
+  "sample_end": "2026-11-19T10:09:45Z",
+  "max_pre_submit_age_ms": 1000,
+  "capture_sha256": "e113d69d621507d52c7f93c1fb687a78c4d513de94853b42de80e157b3946cfe",
+  "quote_counts": {
+    "DOGEUSD": 499,
+    "ETHUSD": 499,
+    "XRPUSD": 499,
+    "SOLUSD": 493,
+    "BTCUSD": 496
+  },
+  "outcome_counts": {
+    "full": 4
+  },
+  "attempts": [
+    {
+      "batch": "demo-1795082853511537900",
+      "symbol": "BTCUSD",
+      "limit": "63855.5",
+      "requested": 3,
+      "journal_state": "filled",
+      "submission_started_at": "2026-11-19T10:07:34.395535+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "predicted_filled": 3,
+      "displayed_offers": [
+        [
+          "63842.5",
+          "12217"
+        ],
+        [
+          "63843.0",
+          "15640"
+        ],
+        [
+          "63843.5",
+          "20023"
+        ],
+        [
+          "63844.0",
+          "25633"
+        ],
+        [
+          "63844.5",
+          "32815"
+        ]
+      ],
+      "displayed_quantity_within_limit": 106328,
+      "displayed_best_ask": "63842.5",
+      "exchange_us": 1795082853934112,
+      "receipt_ms": 1795082853806,
+      "book_update_us": 1795082853717423,
+      "ever_in_window": true,
+      "receipt_age_ms": 589.535,
+      "exchange_age_ms": 461.423,
+      "filled_quantity_match": true
+    },
+    {
+      "batch": "demo-1795082853511537900",
+      "symbol": "ETHUSD",
+      "limit": "1809.00",
+      "requested": 3,
+      "journal_state": "filled",
+      "submission_started_at": "2026-11-19T10:07:36.049550+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "predicted_filled": 3,
+      "displayed_offers": [
+        [
+          "1808.20",
+          "2019"
+        ],
+        [
+          "1808.25",
+          "2479"
+        ],
+        [
+          "1808.30",
+          "2934"
+        ],
+        [
+          "1808.35",
+          "3385"
+        ],
+        [
+          "1808.40",
+          "3828"
+        ]
+      ],
+      "displayed_quantity_within_limit": 14645,
+      "displayed_best_ask": "1808.20",
+      "exchange_us": 1795082855929049,
+      "receipt_ms": 1795082855787,
+      "book_update_us": 1795082851391394,
+      "ever_in_window": true,
+      "receipt_age_ms": 262.55,
+      "exchange_age_ms": 120.501,
+      "filled_quantity_match": true
+    },
+    {
+      "batch": "demo-1795082853511537900",
+      "symbol": "XRPUSD",
+      "limit": "0.9870",
+      "requested": 3,
+      "journal_state": "filled",
+      "submission_started_at": "2026-11-19T10:07:37.891024+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "predicted_filled": 3,
+      "displayed_offers": [
+        [
+          "0.9855",
+          "55585"
+        ],
+        [
+          "0.9860",
+          "105652"
+        ],
+        [
+          "0.9870",
+          "153222"
+        ],
+        [
+          "0.9895",
+          "197124"
+        ],
+        [
+          "0.9935",
+          "236276"
+        ]
+      ],
+      "displayed_quantity_within_limit": 314459,
+      "displayed_best_ask": "0.9855",
+      "exchange_us": 1795082857430191,
+      "receipt_ms": 1795082857289,
+      "book_update_us": 1795082857356273,
+      "ever_in_window": true,
+      "receipt_age_ms": 602.024,
+      "exchange_age_ms": 460.833,
+      "filled_quantity_match": true
+    },
+    {
+      "batch": "demo-1795082853511537900",
+      "symbol": "SOLUSD",
+      "limit": "75.5980",
+      "requested": 3,
+      "journal_state": "filled",
+      "submission_started_at": "2026-11-19T10:07:39.666736+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "predicted_filled": 3,
+      "displayed_offers": [
+        [
+          "75.5860",
+          "1065"
+        ],
+        [
+          "75.5870",
+          "445"
+        ],
+        [
+          "75.5880",
+          "445"
+        ],
+        [
+          "75.5890",
+          "445"
+        ],
+        [
+          "75.5900",
+          "445"
+        ]
+      ],
+      "displayed_quantity_within_limit": 2845,
+      "displayed_best_ask": "75.5860",
+      "exchange_us": 1795082859436989,
+      "receipt_ms": 1795082859299,
+      "book_update_us": 1795082858279265,
+      "ever_in_window": true,
+      "receipt_age_ms": 367.736,
+      "exchange_age_ms": 229.747,
+      "filled_quantity_match": true
+    }
+  ]
+}
