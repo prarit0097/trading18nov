@@ -1,0 +1,358 @@
+{
+  "scope": "Public India testnet IOC basket observation",
+  "venue": "wss://socket-ind-pub.testnet.deltaex.org",
+  "environment": "india_testnet",
+  "stream": "ob_l2",
+  "capture": {
+    "environment": "india_testnet",
+    "venue": "wss://socket-ind-pub.testnet.deltaex.org",
+    "stream": "ob_l2",
+    "sessions": 1,
+    "invalid": 24,
+    "sample_start": "2026-11-19T12:42:07.779Z",
+    "sample_end": "2026-11-19T12:53:00.000Z",
+    "completed_at": "2026-11-19T12:53:00.070Z",
+    "counts": {
+      "BTCUSD": 1291,
+      "ETHUSD": 1301,
+      "XRPUSD": 1300,
+      "SOLUSD": 1290,
+      "DOGEUSD": 1301
+    },
+    "match_rule": "Latest same-symbol receipt and message exchange times both strictly before journaled submit and within 1000 ms. Walk displayed five offers within existing IOC limit."
+  },
+  "source_sha256": "d8b5e0b8349b85932f4a88293cc8b7069b36f63553decbbd5bbc15e66353123d",
+  "attempted_counts": {
+    "zero": 1,
+    "full": 3
+  },
+  "eligible_observations": 0,
+  "predicted_exact_matches": 0,
+  "planned_unsubmitted": 0,
+  "pending": [],
+  "attempts": [
+    {
+      "batch": "demo-1795092533294958300",
+      "symbol": "BTCUSD",
+      "product_id": 84,
+      "order_id": "2178817421",
+      "limit": "63912.5",
+      "requested": 3,
+      "submission_started_at": "2026-11-19T12:48:54.199161+00:00",
+      "actual_filled": 0,
+      "status": "zero",
+      "cancellation_reason": "order_size_not_available_in_orderbook",
+      "preflight_ask": "63911.5"
+    },
+    {
+      "batch": "demo-1795092533294958300",
+      "symbol": "ETHUSD",
+      "product_id": 1699,
+      "order_id": "2178817426",
+      "limit": "1804.85",
+      "requested": 3,
+      "submission_started_at": "2026-11-19T12:48:55.506624+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "cancellation_reason": null,
+      "preflight_ask": "1804.55"
+    },
+    {
+      "batch": "demo-1795092533294958300",
+      "symbol": "XRPUSD",
+      "product_id": 93723,
+      "order_id": "2178817433",
+      "limit": "0.9865",
+      "requested": 3,
+      "submission_started_at": "2026-11-19T12:48:57.185060+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "cancellation_reason": null,
+      "preflight_ask": "0.9855"
+    },
+    {
+      "batch": "demo-1795092533294958300",
+      "symbol": "DOGEUSD",
+      "product_id": 101555,
+      "order_id": "2178817439",
+      "limit": "0.059600",
+      "requested": 3,
+      "submission_started_at": "2026-11-19T12:48:59.039932+00:00",
+      "actual_filled": 3,
+      "status": "full",
+      "cancellation_reason": null,
+      "preflight_ask": "0.05959"
+    }
+  ],
+  "clock_diagnostics": {
+    "book_count": 6483,
+    "median_exchange_minus_receipt_ms": 1451.784,
+    "by_attempt": [
+      {
+        "symbol": "BTCUSD",
+        "near": 20,
+        "median_exchange_minus_receipt_ms": 1452.63,
+        "latest_eligible_receipt_only": {
+          "receipt_age_ms": 55.161,
+          "exchange_age_ms": -1396.518,
+          "update_age_ms": -1187.34
+        },
+        "latest_eligible_exchange_only": {
+          "receipt_age_ms": 1554.161,
+          "exchange_age_ms": 104.552,
+          "update_age_ms": 1071.368
+        }
+      },
+      {
+        "symbol": "ETHUSD",
+        "near": 20,
+        "median_exchange_minus_receipt_ms": 1456.652,
+        "latest_eligible_receipt_only": {
+          "receipt_age_ms": 154.624,
+          "exchange_age_ms": -1301.109,
+          "update_age_ms": 1930.254
+        },
+        "latest_eligible_exchange_only": {
+          "receipt_age_ms": 1662.624,
+          "exchange_age_ms": 201.972,
+          "update_age_ms": 1930.254
+        }
+      },
+      {
+        "symbol": "XRPUSD",
+        "near": 20,
+        "median_exchange_minus_receipt_ms": 1456.625,
+        "latest_eligible_receipt_only": {
+          "receipt_age_ms": 340.06,
+          "exchange_age_ms": -1124.677,
+          "update_age_ms": -1025.257
+        },
+        "latest_eligible_exchange_only": {
+          "receipt_age_ms": 1833.06,
+          "exchange_age_ms": 377.327,
+          "update_age_ms": 982.722
+        }
+      },
+      {
+        "symbol": "DOGEUSD",
+        "near": 20,
+        "median_exchange_minus_receipt_ms": 1456.626,
+        "latest_eligible_receipt_only": {
+          "receipt_age_ms": 183.932,
+          "exchange_age_ms": -1272.715,
+          "update_age_ms": 124.599
+        },
+        "latest_eligible_exchange_only": {
+          "receipt_age_ms": 1694.932,
+          "exchange_age_ms": 229.261,
+          "update_age_ms": 5125.587
+        }
+      }
+    ],
+    "windows_time_status": {
+      "synchronized": false,
+      "source": "Local CMOS Clock",
+      "last_successful_sync": null
+    },
+    "scope": "Differences between incoming message timestamps and Windows receipts. Physical network latency and server clock offsets are unresolved."
+  },
+  "signed_venue_orders": [
+    {
+      "symbol": "BTCUSD",
+      "order_id": "2178817421",
+      "filled": 0,
+      "state": "cancelled",
+      "created_at": "2026-11-19T12:48:55.884351Z",
+      "venue_created_minus_local_intent_ms": 1685
+    },
+    {
+      "symbol": "ETHUSD",
+      "order_id": "2178817426",
+      "filled": 3,
+      "state": "closed",
+      "created_at": "2026-11-19T12:48:57.181322Z",
+      "venue_created_minus_local_intent_ms": 1675
+    },
+    {
+      "symbol": "XRPUSD",
+      "order_id": "2178817433",
+      "filled": 3,
+      "state": "closed",
+      "created_at": "2026-11-19T12:48:58.861086Z",
+      "venue_created_minus_local_intent_ms": 1676
+    },
+    {
+      "symbol": "DOGEUSD",
+      "order_id": "2178817439",
+      "filled": 3,
+      "state": "closed",
+      "created_at": "2026-11-19T12:49:01.063303Z",
+      "venue_created_minus_local_intent_ms": 2024
+    }
+  ],
+  "venue_clock_sensitivity": {
+    "method": "Exploratory sensitivity. Local receipt strictly before local intent and venue message strictly before signed venue order creation. Both age limits 1000 ms. Message age is measured independently from underlying book update age.",
+    "eligible": 4,
+    "exact": 4,
+    "rows": [
+      {
+        "symbol": "BTCUSD",
+        "order_id": "2178817421",
+        "quote": {
+          "symbol": "BTCUSD",
+          "exchange_us": 1795092535595679,
+          "receipt_ms": 1795092534144,
+          "book_update_us": 1795092535386501,
+          "asks": [
+            [
+              "63916.5",
+              "2431"
+            ],
+            [
+              "63917.0",
+              "3112"
+            ],
+            [
+              "63917.5",
+              "3984"
+            ],
+            [
+              "63918.0",
+              "5101"
+            ],
+            [
+              "63918.5",
+              "6530"
+            ]
+          ]
+        },
+        "local_receipt_to_intent_ms": 55.161,
+        "venue_message_to_order_ms": 288.672,
+        "venue_book_update_to_order_ms": 497.85,
+        "displayed_quantity_within_cap": "0",
+        "indicated_fill_quantity": 0,
+        "signed_fill_quantity": 0,
+        "exact": true
+      },
+      {
+        "symbol": "ETHUSD",
+        "order_id": "2178817426",
+        "quote": {
+          "symbol": "ETHUSD",
+          "exchange_us": 1795092536807733,
+          "receipt_ms": 1795092535352,
+          "book_update_us": 1795092533576370,
+          "asks": [
+            [
+              "1804.55",
+              "2186"
+            ],
+            [
+              "1804.60",
+              "2683"
+            ],
+            [
+              "1804.65",
+              "3177"
+            ],
+            [
+              "1804.70",
+              "3664"
+            ],
+            [
+              "1804.75",
+              "4144"
+            ]
+          ]
+        },
+        "local_receipt_to_intent_ms": 154.624,
+        "venue_message_to_order_ms": 373.589,
+        "venue_book_update_to_order_ms": 3604.952,
+        "displayed_quantity_within_cap": "15854",
+        "indicated_fill_quantity": 3,
+        "signed_fill_quantity": 3,
+        "exact": true
+      },
+      {
+        "symbol": "XRPUSD",
+        "order_id": "2178817433",
+        "quote": {
+          "symbol": "XRPUSD",
+          "exchange_us": 1795092538309737,
+          "receipt_ms": 1795092536845,
+          "book_update_us": 1795092538210317,
+          "asks": [
+            [
+              "0.9855",
+              "55654"
+            ],
+            [
+              "0.9860",
+              "105782"
+            ],
+            [
+              "0.9870",
+              "153411"
+            ],
+            [
+              "0.9895",
+              "197367"
+            ],
+            [
+              "0.9935",
+              "236568"
+            ]
+          ]
+        },
+        "local_receipt_to_intent_ms": 340.06,
+        "venue_message_to_order_ms": 551.349,
+        "venue_book_update_to_order_ms": 650.769,
+        "displayed_quantity_within_cap": "161436",
+        "indicated_fill_quantity": 3,
+        "signed_fill_quantity": 3,
+        "exact": true
+      },
+      {
+        "symbol": "DOGEUSD",
+        "order_id": "2178817439",
+        "quote": {
+          "symbol": "DOGEUSD",
+          "exchange_us": 1795092540312647,
+          "receipt_ms": 1795092538856,
+          "book_update_us": 1795092538915333,
+          "asks": [
+            [
+              "0.059590",
+              "37461"
+            ],
+            [
+              "0.059600",
+              "2239"
+            ],
+            [
+              "0.059610",
+              "2823"
+            ],
+            [
+              "0.059620",
+              "3401"
+            ],
+            [
+              "0.059630",
+              "3969"
+            ]
+          ]
+        },
+        "local_receipt_to_intent_ms": 183.932,
+        "venue_message_to_order_ms": 750.656,
+        "venue_book_update_to_order_ms": 2147.97,
+        "displayed_quantity_within_cap": "39700",
+        "indicated_fill_quantity": 3,
+        "signed_fill_quantity": 3,
+        "exact": true
+      }
+    ],
+    "selection": "Exploratory, added after the original one-second filter found no eligible quotes. The venue order creation time is known only after submission.",
+    "validation": "Repeat the dual-clock comparison on new independent baskets. Record both message age and underlying book update age."
+  }
+}
