@@ -1,7 +1,8 @@
 import sqlite3
 import unittest
+from unittest.mock import patch
 
-from crypto_skills.delta_candidate_capture import capture, init_store, project_coin, record, validation_window
+from crypto_skills.delta_candidate_capture import capture, init_store, main, project_coin, record, validation_window
 from crypto_skills.delta_signal import INTERVAL, LOOKBACK
 
 
@@ -34,6 +35,18 @@ class CandidateCaptureTests(unittest.TestCase):
         self.assertEqual(sample['coins']['BTCUSD']['status'], 'unavailable')
         self.assertEqual(sample['coins']['ETHUSD']['status'], 'unavailable')
         self.assertFalse(sample['complete'])
+
+    def test_smoke_fails_if_any_required_coin_is_unavailable(self):
+        observation = dict(complete=False, coins={
+            'BTCUSD': {'status': 'valid'},
+            'ETHUSD': {'status': 'unavailable', 'reason': 'Capture finished after the decision window'},
+        })
+        with (patch('sys.argv', ['capture', '--smoke']),
+              patch('crypto_skills.delta_candidate_capture.capture', return_value=observation),
+              patch('builtins.print')):
+            with self.assertRaises(SystemExit) as failure:
+                main()
+        self.assertEqual(failure.exception.code, 1)
 
     def test_slot_records_are_idempotent_and_candidate_identity_is_fixed(self):
         connection=sqlite3.connect(':memory:')

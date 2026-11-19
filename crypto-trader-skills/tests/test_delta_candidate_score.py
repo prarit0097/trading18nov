@@ -46,6 +46,21 @@ class CandidateScoreTests(unittest.TestCase):
         self.assertEqual(result['candidate']['active_days'],0)
         self.assertEqual(result['candidate']['net_per_day'],0.0)
 
+    def test_positive_daily_cash_cannot_pass_with_negative_full_trade_expectancy(self):
+        rows=sample()
+        for row in rows:
+            row.update(
+                baseline=['-4', '-1'],
+                candidate=['-1.25', '.25'],
+                candidate_settled_net_usd=['-1.25', '.25', '2'],
+            )
+        result=evaluate(rows, START)
+        self.assertEqual(result['candidate']['mean_net_pnl_usd'], '-0.50')
+        self.assertEqual(result['candidate']['net_per_day'], 1.0)
+        self.assertGreater(result['win_rate_delta_lower_95'], 0)
+        self.assertGreater(result['net_per_trade_delta_lower_95'], 0)
+        self.assertEqual(result['status'], 'fails_metrics')
+
     def test_partial_fill_losses_count_toward_cash_and_drawdown(self):
         rows=sample()
         for row in rows:

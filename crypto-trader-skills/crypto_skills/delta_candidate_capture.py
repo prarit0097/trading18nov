@@ -181,6 +181,8 @@ def main():
         print(json.dumps({symbol:dict(candles=len(row.get('candles',[])),ticker='ticker' in row,book='book' in row,
                                      signal=row.get('signal',{}).get('status'), status=row['status'],
                                      reason=row.get('reason')) for symbol,row in result['coins'].items()}))
+        if not result['complete']:
+            raise SystemExit(1)
     else:
         run_capture(run)
 

@@ -85,7 +85,8 @@ def evaluate(rows, start_ist):
                      and Decimal(stress_cand['mean_net_pnl_usd'])>max(
                          Decimal(stress_base['mean_net_pnl_usd']),Decimal(0))
                      and stress_cand['net_per_day']>0)
-    if (low_win>0 and low_pnl>0 and cand['net_per_day']>0 and stable_stress
+    if (low_win>0 and low_pnl>0 and Decimal(cand['mean_net_pnl_usd'])>0
+            and cand['net_per_day']>0 and stable_stress
             and Decimal(cand['max_drawdown_usd'])<=Decimal(base['max_drawdown_usd'])):
         result['status']='passes_metrics'
     else:
