@@ -81,16 +81,18 @@ class PricedSeries(Series):
 class SnapshotExpressions:
     """Precalculate static series. Bind position-dependent arithmetic at each close."""
 
+    series_type = PricedSeries
+
     def __init__(self, bars, variables, tick):
         normalized = {
             name: ast.unparse(TickSyntax().visit(expression(text)))
             for name, text in variables.items()
             if self.can_parse(text)
         }
-        self.series = PricedSeries(bars, normalized)
+        self.series = self.series_type(bars, normalized)
         self.series.cache["_fmz_tick"] = tick
         self.variables = normalized
-        self.scalars = PricedSeries(bars[:1], {})
+        self.scalars = self.series_type(bars[:1], {})
         self.sources = []
 
     @staticmethod

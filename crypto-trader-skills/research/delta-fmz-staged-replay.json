@@ -1,0 +1,3398 @@
+{
+  "results": [
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "44-SMA和9-EMA交叉策略结合RSI过滤及止盈止损-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 0.0,
+      "realized_after_fees": -0.5900000000000001,
+      "realized_net": -0.8899999999999999,
+      "events": {
+        "stop-limit activated": 1,
+        "stop-limit fill": 1
+      },
+      "id": 26,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/44-SMA%E5%92%8C9-EMA%E4%BA%A4%E5%8F%89%E7%AD%96%E7%95%A5%E7%BB%93%E5%90%88RSI%E8%BF%87%E6%BB%A4%E5%8F%8A%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL.md",
+      "archive_interval": "1m",
+      "source_sha256": "f8169cf270c84de17f5a87d6aa9bc198fbfb05e6474ea56e5c848e5aaffa856d",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "44-SMA和9-EMA交叉策略结合RSI过滤及止盈止损-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 0.0,
+      "realized_after_fees": -0.5900000000000001,
+      "realized_net": -0.8899999999999999,
+      "events": {
+        "stop-limit activated": 1,
+        "stop-limit fill": 1
+      },
+      "id": 26,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/44-SMA%E5%92%8C9-EMA%E4%BA%A4%E5%8F%89%E7%AD%96%E7%95%A5%E7%BB%93%E5%90%88RSI%E8%BF%87%E6%BB%A4%E5%8F%8A%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL.md",
+      "archive_interval": "1m",
+      "source_sha256": "f8169cf270c84de17f5a87d6aa9bc198fbfb05e6474ea56e5c848e5aaffa856d",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "44-SMA和9-EMA交叉策略结合RSI过滤及止盈止损-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 1.180000000000291,
+      "net_dd": 1.7799999999988358,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0001180000000000291,
+      "net_dd_pct": 0.00017799999999988357,
+      "realized_gross": 0.0,
+      "realized_after_fees": -1.1800000000000002,
+      "realized_net": -1.7799999999999998,
+      "events": {
+        "stop-limit activated": 2,
+        "stop-limit fill": 2
+      },
+      "id": 26,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/44-SMA%E5%92%8C9-EMA%E4%BA%A4%E5%8F%89%E7%AD%96%E7%95%A5%E7%BB%93%E5%90%88RSI%E8%BF%87%E6%BB%A4%E5%8F%8A%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL.md",
+      "archive_interval": "1m",
+      "source_sha256": "f8169cf270c84de17f5a87d6aa9bc198fbfb05e6474ea56e5c848e5aaffa856d",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "44-SMA和9-EMA交叉策略结合RSI过滤及止盈止损-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 0.0,
+      "realized_after_fees": -0.5900000000000001,
+      "realized_net": -0.8899999999999999,
+      "events": {
+        "stop-limit activated": 1,
+        "stop-limit fill": 1
+      },
+      "id": 26,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/44-SMA%E5%92%8C9-EMA%E4%BA%A4%E5%8F%89%E7%AD%96%E7%95%A5%E7%BB%93%E5%90%88RSI%E8%BF%87%E6%BB%A4%E5%8F%8A%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL.md",
+      "archive_interval": "1m",
+      "source_sha256": "f8169cf270c84de17f5a87d6aa9bc198fbfb05e6474ea56e5c848e5aaffa856d",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "44-SMA和9-EMA交叉策略结合RSI过滤及止盈止损-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 0.0,
+      "realized_after_fees": -0.5900000000000001,
+      "realized_net": -0.8899999999999999,
+      "events": {
+        "stop-limit activated": 1,
+        "stop-limit fill": 1
+      },
+      "id": 26,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/44-SMA%E5%92%8C9-EMA%E4%BA%A4%E5%8F%89%E7%AD%96%E7%95%A5%E7%BB%93%E5%90%88RSI%E8%BF%87%E6%BB%A4%E5%8F%8A%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL.md",
+      "archive_interval": "1m",
+      "source_sha256": "f8169cf270c84de17f5a87d6aa9bc198fbfb05e6474ea56e5c848e5aaffa856d",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "44-SMA和9-EMA交叉策略结合RSI过滤及止盈止损-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 1.180000000000291,
+      "net_dd": 1.7799999999988358,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0001180000000000291,
+      "net_dd_pct": 0.00017799999999988357,
+      "realized_gross": 0.0,
+      "realized_after_fees": -1.1800000000000002,
+      "realized_net": -1.7799999999999998,
+      "events": {
+        "stop-limit activated": 2,
+        "stop-limit fill": 2
+      },
+      "id": 26,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/44-SMA%E5%92%8C9-EMA%E4%BA%A4%E5%8F%89%E7%AD%96%E7%95%A5%E7%BB%93%E5%90%88RSI%E8%BF%87%E6%BB%A4%E5%8F%8A%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F-44-SMA-and-9-EMA-Crossover-Strategy-with-RSI-Filter-and-TP-SL.md",
+      "archive_interval": "1m",
+      "source_sha256": "f8169cf270c84de17f5a87d6aa9bc198fbfb05e6474ea56e5c848e5aaffa856d",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "Wavetrend-大幅指标超跌反弹网格交易策略-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 24.4649597729549,
+      "fee_dd": 26.22052544662256,
+      "net_dd": 27.113185958654867,
+      "gross_dd_pct": 0.0024464959772954897,
+      "fee_dd_pct": 0.002622052544662256,
+      "net_dd_pct": 0.0027113185958654866,
+      "realized_gross": -8.608061573945491,
+      "realized_after_fees": -10.962982817479716,
+      "realized_net": -12.160400398937794,
+      "events": {
+        "market entry": 2,
+        "partial exit fill": 38
+      },
+      "id": 1076,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Wavetrend-%E5%A4%A7%E5%B9%85%E6%8C%87%E6%A0%87%E8%B6%85%E8%B7%8C%E5%8F%8D%E5%BC%B9%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy.md",
+      "archive_interval": "1h",
+      "source_sha256": "bb7a714c9caa7e50fa670c83f384caf39ff3d66b43c9b2d9333747d77831d049",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "Wavetrend-大幅指标超跌反弹网格交易策略-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 18.24463293341796,
+      "fee_dd": 20.00386859991886,
+      "net_dd": 20.898395210000672,
+      "gross_dd_pct": 0.001824463293341796,
+      "fee_dd_pct": 0.002000386859991886,
+      "net_dd_pct": 0.0020898395210000673,
+      "realized_gross": 1.5424837676505705,
+      "realized_after_fees": -0.8184262976351983,
+      "realized_net": -2.018889042695757,
+      "events": {
+        "market entry": 2,
+        "partial exit fill": 38
+      },
+      "id": 1076,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Wavetrend-%E5%A4%A7%E5%B9%85%E6%8C%87%E6%A0%87%E8%B6%85%E8%B7%8C%E5%8F%8D%E5%BC%B9%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy.md",
+      "archive_interval": "1h",
+      "source_sha256": "bb7a714c9caa7e50fa670c83f384caf39ff3d66b43c9b2d9333747d77831d049",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "Wavetrend-大幅指标超跌反弹网格交易策略-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 4,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 42.70959270637468,
+      "fee_dd": 46.22439404654142,
+      "net_dd": 48.01158116865736,
+      "gross_dd_pct": 0.004270959270637468,
+      "fee_dd_pct": 0.004622439404654142,
+      "net_dd_pct": 0.004801158116865736,
+      "realized_gross": -7.065577806294921,
+      "realized_after_fees": -11.781409115114913,
+      "realized_net": -14.179289441633552,
+      "events": {
+        "market entry": 4,
+        "partial exit fill": 76
+      },
+      "id": 1076,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Wavetrend-%E5%A4%A7%E5%B9%85%E6%8C%87%E6%A0%87%E8%B6%85%E8%B7%8C%E5%8F%8D%E5%BC%B9%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy.md",
+      "archive_interval": "1h",
+      "source_sha256": "bb7a714c9caa7e50fa670c83f384caf39ff3d66b43c9b2d9333747d77831d049",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "Wavetrend-大幅指标超跌反弹网格交易策略-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 11.89312693372267,
+      "fee_dd": 13.066109988765675,
+      "net_dd": 13.662542050644333,
+      "gross_dd_pct": 0.001189312693372267,
+      "fee_dd_pct": 0.0013066109988765675,
+      "net_dd_pct": 0.0013662542050644334,
+      "realized_gross": -11.893126933720366,
+      "realized_after_fees": -13.066109988760896,
+      "realized_net": -13.66254205064591,
+      "events": {
+        "market entry": 1,
+        "partial exit fill": 19
+      },
+      "id": 1076,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Wavetrend-%E5%A4%A7%E5%B9%85%E6%8C%87%E6%A0%87%E8%B6%85%E8%B7%8C%E5%8F%8D%E5%BC%B9%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy.md",
+      "archive_interval": "1h",
+      "source_sha256": "bb7a714c9caa7e50fa670c83f384caf39ff3d66b43c9b2d9333747d77831d049",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "Wavetrend-大幅指标超跌反弹网格交易策略-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 4.6143431327460736,
+      "realized_after_fees": 3.431620670366327,
+      "realized_net": 2.830236367461371,
+      "events": {
+        "market entry": 1,
+        "partial exit fill": 19
+      },
+      "id": 1076,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Wavetrend-%E5%A4%A7%E5%B9%85%E6%8C%87%E6%A0%87%E8%B6%85%E8%B7%8C%E5%8F%8D%E5%BC%B9%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy.md",
+      "archive_interval": "1h",
+      "source_sha256": "bb7a714c9caa7e50fa670c83f384caf39ff3d66b43c9b2d9333747d77831d049",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "Wavetrend-大幅指标超跌反弹网格交易策略-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 11.89312693372267,
+      "fee_dd": 13.066109988765675,
+      "net_dd": 13.662542050644333,
+      "gross_dd_pct": 0.0011887641567999289,
+      "fee_dd_pct": 0.0013061627733593753,
+      "net_dd_pct": 0.0013658676322398434,
+      "realized_gross": -7.278783800974292,
+      "realized_after_fees": -9.63448931839457,
+      "realized_net": -10.83230568318454,
+      "events": {
+        "market entry": 2,
+        "partial exit fill": 38
+      },
+      "id": 1076,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Wavetrend-%E5%A4%A7%E5%B9%85%E6%8C%87%E6%A0%87%E8%B6%85%E8%B7%8C%E5%8F%8D%E5%BC%B9%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Wavetrend-Large-Amplitude-Oversold-Rebound-Grid-Trading-Strategy.md",
+      "archive_interval": "1h",
+      "source_sha256": "bb7a714c9caa7e50fa670c83f384caf39ff3d66b43c9b2d9333747d77831d049",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "动态风险管理的均线交叉与布林带策略-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 257,
+      "unsettled": 2,
+      "gross_wins": 172,
+      "fee_wins": 121,
+      "net_wins": 95,
+      "gross": 280.9446570337924,
+      "after_fees": -22.289319383897904,
+      "net": -176.47608705390988,
+      "fees": 303.2339764176903,
+      "execution": 154.186767670012,
+      "gross_dd": 66.02041577754608,
+      "fee_dd": 112.15474655929393,
+      "net_dd": 205.99049249677955,
+      "gross_dd_pct": 0.006524439308497283,
+      "fee_dd_pct": 0.011189653319965484,
+      "net_dd_pct": 0.020584433854316134,
+      "realized_gross": 280.9446570337924,
+      "realized_after_fees": -23.469319383897922,
+      "realized_net": -178.25608705390988,
+      "events": {
+        "stop-limit activated": 259,
+        "stop-limit fill": 259
+      },
+      "id": 1658,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8A%A8%E6%80%81%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E4%B8%8E%E5%B8%83%E6%9E%97%E5%B8%A6%E7%AD%96%E7%95%A5-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a3aacd3cc6c9acb0e68714fce8d500e8cbd14b7febf24206a0b2ef7c7494a4d5",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "动态风险管理的均线交叉与布林带策略-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 235,
+      "unsettled": 2,
+      "gross_wins": 158,
+      "fee_wins": 119,
+      "net_wins": 95,
+      "gross": 56.23444535255611,
+      "after_fees": -220.99968839700904,
+      "net": -361.96619708322856,
+      "fees": 277.23413374956516,
+      "execution": 140.96650868621953,
+      "gross_dd": 94.38134901547164,
+      "fee_dd": 240.61737634313795,
+      "net_dd": 370.08903576073135,
+      "gross_dd_pct": 0.00938282491221703,
+      "fee_dd_pct": 0.024037115851869136,
+      "net_dd_pct": 0.03698544430540862,
+      "realized_gross": 56.23444535255611,
+      "realized_after_fees": -222.17968839700904,
+      "realized_net": -363.74619708322854,
+      "events": {
+        "stop-limit activated": 237,
+        "stop-limit fill": 237
+      },
+      "id": 1658,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8A%A8%E6%80%81%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E4%B8%8E%E5%B8%83%E6%9E%97%E5%B8%A6%E7%AD%96%E7%95%A5-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a3aacd3cc6c9acb0e68714fce8d500e8cbd14b7febf24206a0b2ef7c7494a4d5",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "动态风险管理的均线交叉与布林带策略-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 492,
+      "unsettled": 4,
+      "gross_wins": 330,
+      "fee_wins": 240,
+      "net_wins": 190,
+      "gross": 337.1791023863485,
+      "after_fees": -243.28900778090696,
+      "net": -538.4422841371385,
+      "fees": 580.4681101672554,
+      "execution": 295.1532763562315,
+      "gross_dd": 61.285910485721615,
+      "fee_dd": 291.3378125362851,
+      "net_dd": 551.1907715543803,
+      "gross_dd_pct": 0.006014231896576074,
+      "fee_dd_pct": 0.029076373184739178,
+      "net_dd_pct": 0.05509000981345231,
+      "realized_gross": 337.1791023863485,
+      "realized_after_fees": -245.64900778090697,
+      "realized_net": -542.0022841371384,
+      "events": {
+        "stop-limit activated": 496,
+        "stop-limit fill": 496
+      },
+      "id": 1658,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8A%A8%E6%80%81%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E4%B8%8E%E5%B8%83%E6%9E%97%E5%B8%A6%E7%AD%96%E7%95%A5-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a3aacd3cc6c9acb0e68714fce8d500e8cbd14b7febf24206a0b2ef7c7494a4d5",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "动态风险管理的均线交叉与布林带策略-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 127,
+      "unsettled": 1,
+      "gross_wins": 80,
+      "fee_wins": 50,
+      "net_wins": 37,
+      "gross": -42.455018714930475,
+      "after_fees": -192.2751090941123,
+      "net": -268.4548160665776,
+      "fees": 149.82009037918183,
+      "execution": 76.17970697246531,
+      "gross_dd": 65.25307170876476,
+      "fee_dd": 199.80442896363274,
+      "net_dd": 273.16452697046225,
+      "gross_dd_pct": 0.006519583646496907,
+      "fee_dd_pct": 0.019980442896363273,
+      "net_dd_pct": 0.027316452697046224,
+      "realized_gross": -42.455018714930475,
+      "realized_after_fees": -192.8651090941123,
+      "realized_net": -269.3448160665776,
+      "events": {
+        "stop-limit activated": 128,
+        "stop-limit fill": 128
+      },
+      "id": 1658,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8A%A8%E6%80%81%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E4%B8%8E%E5%B8%83%E6%9E%97%E5%B8%A6%E7%AD%96%E7%95%A5-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a3aacd3cc6c9acb0e68714fce8d500e8cbd14b7febf24206a0b2ef7c7494a4d5",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "动态风险管理的均线交叉与布林带策略-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 130,
+      "unsettled": 1,
+      "gross_wins": 79,
+      "fee_wins": 59,
+      "net_wins": 49,
+      "gross": 31.50203623227104,
+      "after_fees": -121.861595937833,
+      "net": -199.84310382093673,
+      "fees": 153.36363217010404,
+      "execution": 77.98150788310373,
+      "gross_dd": 93.19956577176345,
+      "fee_dd": 162.76495696166057,
+      "net_dd": 213.783950591318,
+      "gross_dd_pct": 0.009294656383950465,
+      "fee_dd_pct": 0.016254332143728893,
+      "net_dd_pct": 0.02136402131952387,
+      "realized_gross": 31.50203623227104,
+      "realized_after_fees": -122.451595937833,
+      "realized_net": -200.73310382093672,
+      "events": {
+        "stop-limit activated": 131,
+        "stop-limit fill": 131
+      },
+      "id": 1658,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8A%A8%E6%80%81%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E4%B8%8E%E5%B8%83%E6%9E%97%E5%B8%A6%E7%AD%96%E7%95%A5-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a3aacd3cc6c9acb0e68714fce8d500e8cbd14b7febf24206a0b2ef7c7494a4d5",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "动态风险管理的均线交叉与布林带策略-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 257,
+      "unsettled": 2,
+      "gross_wins": 159,
+      "fee_wins": 109,
+      "net_wins": 86,
+      "gross": -10.952982482659438,
+      "after_fees": -314.1367050319453,
+      "net": -468.29791988751435,
+      "fees": 303.1837225492859,
+      "execution": 154.16121485556903,
+      "gross_dd": 110.52168440365676,
+      "fee_dd": 327.7008532620257,
+      "net_dd": 476.61061185456674,
+      "gross_dd_pct": 0.01103313912209997,
+      "fee_dd_pct": 0.03277008532620257,
+      "net_dd_pct": 0.047661061185456675,
+      "realized_gross": -10.952982482659438,
+      "realized_after_fees": -315.31670503194533,
+      "realized_net": -470.0779198875143,
+      "events": {
+        "stop-limit activated": 259,
+        "stop-limit fill": 259
+      },
+      "id": 1658,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8A%A8%E6%80%81%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E4%B8%8E%E5%B8%83%E6%9E%97%E5%B8%A6%E7%AD%96%E7%95%A5-Dynamic-Risk-Managed-EMA-Crossover-with-Bollinger-Bands-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a3aacd3cc6c9acb0e68714fce8d500e8cbd14b7febf24206a0b2ef7c7494a4d5",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "双均线交叉止盈止损自适应策略-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 1.180000000000291,
+      "net_dd": 1.7799999999988358,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0001180000000000291,
+      "net_dd_pct": 0.00017799999999988357,
+      "realized_gross": 0.0,
+      "realized_after_fees": -1.1800000000000002,
+      "realized_net": -1.7799999999999998,
+      "events": {
+        "stop-limit activated": 9,
+        "stop-limit fill": 2,
+        "armed stop-limit replaced": 7
+      },
+      "id": 2018,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F%E8%87%AA%E9%80%82%E5%BA%94%E7%AD%96%E7%95%A5-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit.md",
+      "archive_interval": "1h",
+      "source_sha256": "e01ad213031299cc6643a266b7841b7ae2538e2ab46f8445d6f24969b58f4942",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "双均线交叉止盈止损自适应策略-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 1.180000000000291,
+      "net_dd": 1.7799999999988358,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0001180000000000291,
+      "net_dd_pct": 0.00017799999999988357,
+      "realized_gross": 0.0,
+      "realized_after_fees": -1.1800000000000002,
+      "realized_net": -1.7799999999999998,
+      "events": {
+        "stop-limit activated": 13,
+        "stop-limit fill": 2,
+        "armed stop-limit replaced": 11
+      },
+      "id": 2018,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F%E8%87%AA%E9%80%82%E5%BA%94%E7%AD%96%E7%95%A5-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit.md",
+      "archive_interval": "1h",
+      "source_sha256": "e01ad213031299cc6643a266b7841b7ae2538e2ab46f8445d6f24969b58f4942",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "双均线交叉止盈止损自适应策略-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 4,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 2.360000000000582,
+      "net_dd": 3.5599999999976717,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0002360000000000582,
+      "net_dd_pct": 0.00035599999999976715,
+      "realized_gross": 0.0,
+      "realized_after_fees": -2.3600000000000003,
+      "realized_net": -3.5599999999999996,
+      "events": {
+        "stop-limit activated": 22,
+        "stop-limit fill": 4,
+        "armed stop-limit replaced": 18
+      },
+      "id": 2018,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F%E8%87%AA%E9%80%82%E5%BA%94%E7%AD%96%E7%95%A5-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit.md",
+      "archive_interval": "1h",
+      "source_sha256": "e01ad213031299cc6643a266b7841b7ae2538e2ab46f8445d6f24969b58f4942",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "双均线交叉止盈止损自适应策略-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 2,
+      "unsettled": 1,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross": 58.15027645117265,
+      "after_fees": 55.78966781427158,
+      "net": 54.5893583378812,
+      "fees": 2.3606086369010697,
+      "execution": 1.2003094763903803,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 58.15027645117265,
+      "realized_after_fees": 55.19966781427158,
+      "realized_net": 53.6993583378812,
+      "events": {
+        "stop-limit activated": 4,
+        "stop-limit fill": 3,
+        "armed stop-limit replaced": 1
+      },
+      "id": 2018,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F%E8%87%AA%E9%80%82%E5%BA%94%E7%AD%96%E7%95%A5-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit.md",
+      "archive_interval": "1h",
+      "source_sha256": "e01ad213031299cc6643a266b7841b7ae2538e2ab46f8445d6f24969b58f4942",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "双均线交叉止盈止损自适应策略-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 0.0,
+      "realized_after_fees": -0.5900000000000001,
+      "realized_net": -0.8899999999999999,
+      "events": {
+        "stop-limit activated": 6,
+        "stop-limit fill": 1,
+        "armed stop-limit replaced": 5
+      },
+      "id": 2018,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F%E8%87%AA%E9%80%82%E5%BA%94%E7%AD%96%E7%95%A5-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit.md",
+      "archive_interval": "1h",
+      "source_sha256": "e01ad213031299cc6643a266b7841b7ae2538e2ab46f8445d6f24969b58f4942",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "双均线交叉止盈止损自适应策略-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 2,
+      "unsettled": 2,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross": 58.15027645117265,
+      "after_fees": 55.78966781427158,
+      "net": 54.5893583378812,
+      "fees": 2.3606086369010697,
+      "execution": 1.2003094763903803,
+      "gross_dd": 0,
+      "fee_dd": 1.180000000000291,
+      "net_dd": 1.7799999999988358,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0001180000000000291,
+      "net_dd_pct": 0.00017799999999988357,
+      "realized_gross": 58.15027645117265,
+      "realized_after_fees": 54.609667814271575,
+      "realized_net": 52.8093583378812,
+      "events": {
+        "stop-limit activated": 10,
+        "stop-limit fill": 4,
+        "armed stop-limit replaced": 6
+      },
+      "id": 2018,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F%E8%87%AA%E9%80%82%E5%BA%94%E7%AD%96%E7%95%A5-Dual-Moving-Average-Crossover-Strategy-with-Adaptive-Stop-Loss-and-Take-Profit.md",
+      "archive_interval": "1h",
+      "source_sha256": "e01ad213031299cc6643a266b7841b7ae2538e2ab46f8445d6f24969b58f4942",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多层次机构订单流动量化策略与动态分仓优化系统-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 202,
+      "unsettled": 2,
+      "gross_wins": 90,
+      "fee_wins": 85,
+      "net_wins": 78,
+      "gross": -4.308313936325484,
+      "after_fees": -242.697528425152,
+      "net": -363.91238324997903,
+      "fees": 238.38921448882652,
+      "execution": 121.21485482482703,
+      "gross_dd": 134.9301924561205,
+      "fee_dd": 270.015384750006,
+      "net_dd": 381.8110912349057,
+      "gross_dd_pct": 0.013369972021722484,
+      "fee_dd_pct": 0.026981429525293133,
+      "net_dd_pct": 0.03816068834303219,
+      "realized_gross": -1.8083139363254384,
+      "realized_after_fees": -241.674003425152,
+      "realized_net": -363.63960824997895,
+      "events": {
+        "market entry": 204,
+        "protective limit": 169,
+        "partial exit fill": 140
+      },
+      "id": 3873,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E5%B1%82%E6%AC%A1%E6%9C%BA%E6%9E%84%E8%AE%A2%E5%8D%95%E6%B5%81%E5%8A%A8%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E4%B8%8E%E5%8A%A8%E6%80%81%E5%88%86%E4%BB%93%E4%BC%98%E5%8C%96%E7%B3%BB%E7%BB%9F-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System.md",
+      "archive_interval": "1d",
+      "source_sha256": "66250978e6625e175ffd2c269f141ecd0e52e06f10efeb7b71808034156f6c96",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多层次机构订单流动量化策略与动态分仓优化系统-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 260,
+      "unsettled": 2,
+      "gross_wins": 117,
+      "fee_wins": 97,
+      "net_wins": 86,
+      "gross": -36.335157680451964,
+      "after_fees": -343.10449365808614,
+      "net": -499.08890178230683,
+      "fees": 306.76933597763417,
+      "execution": 155.9844081242207,
+      "gross_dd": 121.63488470798802,
+      "fee_dd": 384.9451921710406,
+      "net_dd": 526.0471559937323,
+      "gross_dd_pct": 0.012126765307683961,
+      "fee_dd_pct": 0.038429542059545733,
+      "net_dd_pct": 0.05254344718429183,
+      "realized_gross": -30.835157680451925,
+      "realized_after_fees": -339.25324865808614,
+      "realized_net": -496.0760067823068,
+      "events": {
+        "market entry": 262,
+        "protective limit": 190,
+        "partial exit fill": 155
+      },
+      "id": 3873,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E5%B1%82%E6%AC%A1%E6%9C%BA%E6%9E%84%E8%AE%A2%E5%8D%95%E6%B5%81%E5%8A%A8%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E4%B8%8E%E5%8A%A8%E6%80%81%E5%88%86%E4%BB%93%E4%BC%98%E5%8C%96%E7%B3%BB%E7%BB%9F-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System.md",
+      "archive_interval": "1d",
+      "source_sha256": "66250978e6625e175ffd2c269f141ecd0e52e06f10efeb7b71808034156f6c96",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多层次机构订单流动量化策略与动态分仓优化系统-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 462,
+      "unsettled": 4,
+      "gross_wins": 207,
+      "fee_wins": 182,
+      "net_wins": 164,
+      "gross": -40.64347161677745,
+      "after_fees": -585.8020220832382,
+      "net": -863.0012850322859,
+      "fees": 545.1585504664607,
+      "execution": 277.1992629490477,
+      "gross_dd": 217.9427754580047,
+      "fee_dd": 641.5449770465038,
+      "net_dd": 899.2424617207907,
+      "gross_dd_pct": 0.021613388707232374,
+      "fee_dd_pct": 0.06403432042903247,
+      "net_dd_pct": 0.089832545289226,
+      "realized_gross": -32.64347161677736,
+      "realized_after_fees": -580.9272520832382,
+      "realized_net": -859.7156150322858,
+      "events": {
+        "market entry": 466,
+        "protective limit": 359,
+        "partial exit fill": 295
+      },
+      "id": 3873,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E5%B1%82%E6%AC%A1%E6%9C%BA%E6%9E%84%E8%AE%A2%E5%8D%95%E6%B5%81%E5%8A%A8%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E4%B8%8E%E5%8A%A8%E6%80%81%E5%88%86%E4%BB%93%E4%BC%98%E5%8C%96%E7%B3%BB%E7%BB%9F-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System.md",
+      "archive_interval": "1d",
+      "source_sha256": "66250978e6625e175ffd2c269f141ecd0e52e06f10efeb7b71808034156f6c96",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多层次机构订单流动量化策略与动态分仓优化系统-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 103,
+      "unsettled": 1,
+      "gross_wins": 39,
+      "fee_wins": 33,
+      "net_wins": 30,
+      "gross": -5.696379465261382,
+      "after_fees": -127.21541651912361,
+      "net": -189.0047573939688,
+      "fees": 121.51903705386222,
+      "execution": 61.78934087484518,
+      "gross_dd": 59.726583258305254,
+      "fee_dd": 138.65986386281293,
+      "net_dd": 195.3486519812286,
+      "gross_dd_pct": 0.005959859209664216,
+      "fee_dd_pct": 0.013850951943428272,
+      "net_dd_pct": 0.01952421689603783,
+      "realized_gross": -0.19637946526137773,
+      "realized_after_fees": -122.78066151912363,
+      "realized_net": -185.1116523939688,
+      "events": {
+        "market entry": 104,
+        "protective limit": 72,
+        "partial exit fill": 57
+      },
+      "id": 3873,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E5%B1%82%E6%AC%A1%E6%9C%BA%E6%9E%84%E8%AE%A2%E5%8D%95%E6%B5%81%E5%8A%A8%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E4%B8%8E%E5%8A%A8%E6%80%81%E5%88%86%E4%BB%93%E4%BC%98%E5%8C%96%E7%B3%BB%E7%BB%9F-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System.md",
+      "archive_interval": "1d",
+      "source_sha256": "66250978e6625e175ffd2c269f141ecd0e52e06f10efeb7b71808034156f6c96",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多层次机构订单流动量化策略与动态分仓优化系统-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 107,
+      "unsettled": 1,
+      "gross_wins": 48,
+      "fee_wins": 45,
+      "net_wins": 37,
+      "gross": -40.8468026007294,
+      "after_fees": -167.11821783172581,
+      "net": -231.32402218646973,
+      "fees": 126.27141523099641,
+      "execution": 64.20580435474392,
+      "gross_dd": 73.32430530159945,
+      "fee_dd": 177.44739250988277,
+      "net_dd": 240.09368218643976,
+      "gross_dd_pct": 0.0073277997684904955,
+      "fee_dd_pct": 0.017740438632166428,
+      "net_dd_pct": 0.02400656611223094,
+      "realized_gross": -40.8468026007294,
+      "realized_after_fees": -167.70821783172585,
+      "realized_net": -232.21402218646972,
+      "events": {
+        "market entry": 108,
+        "protective limit": 96,
+        "partial exit fill": 77
+      },
+      "id": 3873,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E5%B1%82%E6%AC%A1%E6%9C%BA%E6%9E%84%E8%AE%A2%E5%8D%95%E6%B5%81%E5%8A%A8%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E4%B8%8E%E5%8A%A8%E6%80%81%E5%88%86%E4%BB%93%E4%BC%98%E5%8C%96%E7%B3%BB%E7%BB%9F-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System.md",
+      "archive_interval": "1d",
+      "source_sha256": "66250978e6625e175ffd2c269f141ecd0e52e06f10efeb7b71808034156f6c96",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多层次机构订单流动量化策略与动态分仓优化系统-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 210,
+      "unsettled": 2,
+      "gross_wins": 87,
+      "fee_wins": 78,
+      "net_wins": 67,
+      "gross": -46.54318206599078,
+      "after_fees": -294.3336343508494,
+      "net": -420.32877958043855,
+      "fees": 247.79045228485865,
+      "execution": 125.99514522958913,
+      "gross_dd": 121.36061081106163,
+      "fee_dd": 304.468437251513,
+      "net_dd": 429.0984395803898,
+      "gross_dd_pct": 0.012102422424672294,
+      "fee_dd_pct": 0.030441851815797526,
+      "net_dd_pct": 0.042908654422866746,
+      "realized_gross": -41.04318206599078,
+      "realized_after_fees": -290.48887935084946,
+      "realized_net": -417.32567458043854,
+      "events": {
+        "market entry": 212,
+        "protective limit": 168,
+        "partial exit fill": 134
+      },
+      "id": 3873,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E5%B1%82%E6%AC%A1%E6%9C%BA%E6%9E%84%E8%AE%A2%E5%8D%95%E6%B5%81%E5%8A%A8%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E4%B8%8E%E5%8A%A8%E6%80%81%E5%88%86%E4%BB%93%E4%BC%98%E5%8C%96%E7%B3%BB%E7%BB%9F-Multi-Level-Institutional-Order-Flow-Quantitative-Strategy-with-Dynamic-Position-Scaling-System.md",
+      "archive_interval": "1d",
+      "source_sha256": "66250978e6625e175ffd2c269f141ecd0e52e06f10efeb7b71808034156f6c96",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多重技术指标配合的趋势追踪型量化策略Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 14.896092528098961,
+      "fee_dd": 17.210428798340217,
+      "net_dd": 18.387209952701596,
+      "gross_dd_pct": 0.001489609252809896,
+      "fee_dd_pct": 0.0017210428798340217,
+      "net_dd_pct": 0.0018387209952701595,
+      "realized_gross": -14.896092528101425,
+      "realized_after_fees": -17.210428798343106,
+      "realized_net": -18.38720995270328,
+      "events": {
+        "market entry": 2,
+        "partial exit fill": 28
+      },
+      "id": 4248,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E9%87%8D%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E9%85%8D%E5%90%88%E7%9A%84%E8%B6%8B%E5%8A%BF%E8%BF%BD%E8%B8%AA%E5%9E%8B%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators.md",
+      "archive_interval": "1m",
+      "source_sha256": "700e14795a0ecc4fab2f0e60d4526947f325d3c474c961bed870fc9e281d6b01",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多重技术指标配合的趋势追踪型量化策略Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 23.145524001482045,
+      "fee_dd": 25.418118071991557,
+      "net_dd": 26.573674379022123,
+      "gross_dd_pct": 0.0023145524001482046,
+      "fee_dd_pct": 0.0025418118071991558,
+      "net_dd_pct": 0.002657367437902212,
+      "realized_gross": -22.602326231045204,
+      "realized_after_fees": -24.912115788235408,
+      "realized_net": -26.086585054603304,
+      "events": {
+        "market entry": 2,
+        "partial exit fill": 27
+      },
+      "id": 4248,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E9%87%8D%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E9%85%8D%E5%90%88%E7%9A%84%E8%B6%8B%E5%8A%BF%E8%BF%BD%E8%B8%AA%E5%9E%8B%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators.md",
+      "archive_interval": "1m",
+      "source_sha256": "700e14795a0ecc4fab2f0e60d4526947f325d3c474c961bed870fc9e281d6b01",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多重技术指标配合的趋势追踪型量化策略Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 4,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 38.041616529581006,
+      "fee_dd": 42.62854687032814,
+      "net_dd": 44.96088433172008,
+      "gross_dd_pct": 0.0038041616529581007,
+      "fee_dd_pct": 0.004262854687032813,
+      "net_dd_pct": 0.004496088433172008,
+      "realized_gross": -37.49841875914663,
+      "realized_after_fees": -42.12254458657851,
+      "realized_net": -44.473795007306585,
+      "events": {
+        "market entry": 4,
+        "partial exit fill": 55
+      },
+      "id": 4248,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E9%87%8D%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E9%85%8D%E5%90%88%E7%9A%84%E8%B6%8B%E5%8A%BF%E8%BF%BD%E8%B8%AA%E5%9E%8B%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators.md",
+      "archive_interval": "1m",
+      "source_sha256": "700e14795a0ecc4fab2f0e60d4526947f325d3c474c961bed870fc9e281d6b01",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多重技术指标配合的趋势追踪型量化策略Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 21.733471876523254,
+      "fee_dd": 22.900505085150144,
+      "net_dd": 23.49391180139719,
+      "gross_dd_pct": 0.0021733471876523255,
+      "fee_dd_pct": 0.0022900505085150145,
+      "net_dd_pct": 0.002349391180139719,
+      "realized_gross": -21.73347187652527,
+      "realized_after_fees": -22.900505085149373,
+      "realized_net": -23.493911801398912,
+      "events": {
+        "market entry": 1,
+        "partial exit fill": 12
+      },
+      "id": 4248,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E9%87%8D%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E9%85%8D%E5%90%88%E7%9A%84%E8%B6%8B%E5%8A%BF%E8%BF%BD%E8%B8%AA%E5%9E%8B%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators.md",
+      "archive_interval": "1m",
+      "source_sha256": "700e14795a0ecc4fab2f0e60d4526947f325d3c474c961bed870fc9e281d6b01",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多重技术指标配合的趋势追踪型量化策略Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 42.41856689918859,
+      "fee_dd": 43.57325185877926,
+      "net_dd": 44.1603798043343,
+      "gross_dd_pct": 0.0042418566899188595,
+      "fee_dd_pct": 0.0043573251858779255,
+      "net_dd_pct": 0.00441603798043343,
+      "realized_gross": -42.41856689918955,
+      "realized_after_fees": -43.573251858781525,
+      "realized_net": -44.16037980433678,
+      "events": {
+        "market entry": 1,
+        "partial exit fill": 11
+      },
+      "id": 4248,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E9%87%8D%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E9%85%8D%E5%90%88%E7%9A%84%E8%B6%8B%E5%8A%BF%E8%BF%BD%E8%B8%AA%E5%9E%8B%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators.md",
+      "archive_interval": "1m",
+      "source_sha256": "700e14795a0ecc4fab2f0e60d4526947f325d3c474c961bed870fc9e281d6b01",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "多重技术指标配合的趋势追踪型量化策略Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 64.15203877571184,
+      "fee_dd": 66.4737569439294,
+      "net_dd": 67.6542916057333,
+      "gross_dd_pct": 0.0064152038775711845,
+      "fee_dd_pct": 0.00664737569439294,
+      "net_dd_pct": 0.0067654291605733306,
+      "realized_gross": -64.15203877571483,
+      "realized_after_fees": -66.4737569439309,
+      "realized_net": -67.6542916057357,
+      "events": {
+        "market entry": 2,
+        "partial exit fill": 23
+      },
+      "id": 4248,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E9%87%8D%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E9%85%8D%E5%90%88%E7%9A%84%E8%B6%8B%E5%8A%BF%E8%BF%BD%E8%B8%AA%E5%9E%8B%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5Quantitative-Trend-Tracking-Strategy-Based-on-Multiple-Technical-Indicators.md",
+      "archive_interval": "1m",
+      "source_sha256": "700e14795a0ecc4fab2f0e60d4526947f325d3c474c961bed870fc9e281d6b01",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "比特币快速反转突破策略Bitcoin-Rapid-Reversal-Breakout-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "realized_gross": 0,
+      "realized_after_fees": 0,
+      "realized_net": 0,
+      "events": {},
+      "id": 4804,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%AF%94%E7%89%B9%E5%B8%81%E5%BF%AB%E9%80%9F%E5%8F%8D%E8%BD%AC%E7%AA%81%E7%A0%B4%E7%AD%96%E7%95%A5Bitcoin-Rapid-Reversal-Breakout-Strategy.md",
+      "archive_interval": "10m",
+      "source_sha256": "2f20b6f0c18e9ae1f26b09fbe7e61eaa7f40f9ad7dbb1acad848a109a566207e",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "比特币快速反转突破策略Bitcoin-Rapid-Reversal-Breakout-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "realized_gross": 0,
+      "realized_after_fees": 0,
+      "realized_net": 0,
+      "events": {},
+      "id": 4804,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%AF%94%E7%89%B9%E5%B8%81%E5%BF%AB%E9%80%9F%E5%8F%8D%E8%BD%AC%E7%AA%81%E7%A0%B4%E7%AD%96%E7%95%A5Bitcoin-Rapid-Reversal-Breakout-Strategy.md",
+      "archive_interval": "10m",
+      "source_sha256": "2f20b6f0c18e9ae1f26b09fbe7e61eaa7f40f9ad7dbb1acad848a109a566207e",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "比特币快速反转突破策略Bitcoin-Rapid-Reversal-Breakout-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "realized_gross": 0,
+      "realized_after_fees": 0,
+      "realized_net": 0,
+      "events": {},
+      "id": 4804,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%AF%94%E7%89%B9%E5%B8%81%E5%BF%AB%E9%80%9F%E5%8F%8D%E8%BD%AC%E7%AA%81%E7%A0%B4%E7%AD%96%E7%95%A5Bitcoin-Rapid-Reversal-Breakout-Strategy.md",
+      "archive_interval": "10m",
+      "source_sha256": "2f20b6f0c18e9ae1f26b09fbe7e61eaa7f40f9ad7dbb1acad848a109a566207e",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "比特币快速反转突破策略Bitcoin-Rapid-Reversal-Breakout-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "realized_gross": 0,
+      "realized_after_fees": 0,
+      "realized_net": 0,
+      "events": {},
+      "id": 4804,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%AF%94%E7%89%B9%E5%B8%81%E5%BF%AB%E9%80%9F%E5%8F%8D%E8%BD%AC%E7%AA%81%E7%A0%B4%E7%AD%96%E7%95%A5Bitcoin-Rapid-Reversal-Breakout-Strategy.md",
+      "archive_interval": "10m",
+      "source_sha256": "2f20b6f0c18e9ae1f26b09fbe7e61eaa7f40f9ad7dbb1acad848a109a566207e",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "比特币快速反转突破策略Bitcoin-Rapid-Reversal-Breakout-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "realized_gross": 0,
+      "realized_after_fees": 0,
+      "realized_net": 0,
+      "events": {},
+      "id": 4804,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%AF%94%E7%89%B9%E5%B8%81%E5%BF%AB%E9%80%9F%E5%8F%8D%E8%BD%AC%E7%AA%81%E7%A0%B4%E7%AD%96%E7%95%A5Bitcoin-Rapid-Reversal-Breakout-Strategy.md",
+      "archive_interval": "10m",
+      "source_sha256": "2f20b6f0c18e9ae1f26b09fbe7e61eaa7f40f9ad7dbb1acad848a109a566207e",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "比特币快速反转突破策略Bitcoin-Rapid-Reversal-Breakout-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "realized_gross": 0,
+      "realized_after_fees": 0,
+      "realized_net": 0,
+      "events": {},
+      "id": 4804,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%AF%94%E7%89%B9%E5%B8%81%E5%BF%AB%E9%80%9F%E5%8F%8D%E8%BD%AC%E7%AA%81%E7%A0%B4%E7%AD%96%E7%95%A5Bitcoin-Rapid-Reversal-Breakout-Strategy.md",
+      "archive_interval": "10m",
+      "source_sha256": "2f20b6f0c18e9ae1f26b09fbe7e61eaa7f40f9ad7dbb1acad848a109a566207e",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "确认型均线交叉动量策略-Confirmed-SMA-Crossover-Momentum-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 1.180000000000291,
+      "net_dd": 1.7799999999988358,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0001180000000000291,
+      "net_dd_pct": 0.00017799999999988357,
+      "realized_gross": 0.0,
+      "realized_after_fees": -1.1800000000000002,
+      "realized_net": -1.7799999999999998,
+      "events": {
+        "stop-limit activated": 30,
+        "stop-limit fill": 2,
+        "armed stop-limit replaced": 28
+      },
+      "id": 4981,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A1%AE%E8%AE%A4%E5%9E%8B%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%8A%A8%E9%87%8F%E7%AD%96%E7%95%A5-Confirmed-SMA-Crossover-Momentum-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "e3104642128d5bdeefdd3c5e6021e6411aec8a39382223e03367ca38cacb8b42",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "确认型均线交叉动量策略-Confirmed-SMA-Crossover-Momentum-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 1.180000000000291,
+      "net_dd": 1.7799999999988358,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0001180000000000291,
+      "net_dd_pct": 0.00017799999999988357,
+      "realized_gross": 0.0,
+      "realized_after_fees": -1.1800000000000002,
+      "realized_net": -1.7799999999999998,
+      "events": {
+        "stop-limit activated": 28,
+        "stop-limit fill": 2,
+        "armed stop-limit replaced": 26
+      },
+      "id": 4981,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A1%AE%E8%AE%A4%E5%9E%8B%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%8A%A8%E9%87%8F%E7%AD%96%E7%95%A5-Confirmed-SMA-Crossover-Momentum-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "e3104642128d5bdeefdd3c5e6021e6411aec8a39382223e03367ca38cacb8b42",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "确认型均线交叉动量策略-Confirmed-SMA-Crossover-Momentum-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 4,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 2.360000000000582,
+      "net_dd": 3.5599999999976717,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0002360000000000582,
+      "net_dd_pct": 0.00035599999999976715,
+      "realized_gross": 0.0,
+      "realized_after_fees": -2.3600000000000003,
+      "realized_net": -3.5599999999999996,
+      "events": {
+        "stop-limit activated": 58,
+        "stop-limit fill": 4,
+        "armed stop-limit replaced": 54
+      },
+      "id": 4981,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A1%AE%E8%AE%A4%E5%9E%8B%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%8A%A8%E9%87%8F%E7%AD%96%E7%95%A5-Confirmed-SMA-Crossover-Momentum-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "e3104642128d5bdeefdd3c5e6021e6411aec8a39382223e03367ca38cacb8b42",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "确认型均线交叉动量策略-Confirmed-SMA-Crossover-Momentum-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 2,
+      "unsettled": 1,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross": 171.56851128930788,
+      "after_fees": 169.20406785243483,
+      "net": 168.0018084777536,
+      "fees": 2.364443436873046,
+      "execution": 1.2022593746812333,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 171.56851128930788,
+      "realized_after_fees": 168.61406785243483,
+      "realized_net": 167.1118084777536,
+      "events": {
+        "stop-limit activated": 15,
+        "stop-limit fill": 3,
+        "armed stop-limit replaced": 12
+      },
+      "id": 4981,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A1%AE%E8%AE%A4%E5%9E%8B%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%8A%A8%E9%87%8F%E7%AD%96%E7%95%A5-Confirmed-SMA-Crossover-Momentum-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "e3104642128d5bdeefdd3c5e6021e6411aec8a39382223e03367ca38cacb8b42",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "确认型均线交叉动量策略-Confirmed-SMA-Crossover-Momentum-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0.5900000000001455,
+      "net_dd": 0.8899999999994179,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 5.900000000001455e-05,
+      "net_dd_pct": 8.899999999994179e-05,
+      "realized_gross": 0.0,
+      "realized_after_fees": -0.5900000000000001,
+      "realized_net": -0.8899999999999999,
+      "events": {
+        "stop-limit activated": 16,
+        "stop-limit fill": 1,
+        "armed stop-limit replaced": 15
+      },
+      "id": 4981,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A1%AE%E8%AE%A4%E5%9E%8B%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%8A%A8%E9%87%8F%E7%AD%96%E7%95%A5-Confirmed-SMA-Crossover-Momentum-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "e3104642128d5bdeefdd3c5e6021e6411aec8a39382223e03367ca38cacb8b42",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "确认型均线交叉动量策略-Confirmed-SMA-Crossover-Momentum-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 2,
+      "unsettled": 2,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross": 171.56851128930788,
+      "after_fees": 169.20406785243483,
+      "net": 168.0018084777536,
+      "fees": 2.364443436873046,
+      "execution": 1.2022593746812333,
+      "gross_dd": 0,
+      "fee_dd": 1.180000000000291,
+      "net_dd": 1.7799999999988358,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0001180000000000291,
+      "net_dd_pct": 0.00017799999999988357,
+      "realized_gross": 171.56851128930788,
+      "realized_after_fees": 168.02406785243483,
+      "realized_net": 166.2218084777536,
+      "events": {
+        "stop-limit activated": 31,
+        "stop-limit fill": 4,
+        "armed stop-limit replaced": 27
+      },
+      "id": 4981,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A1%AE%E8%AE%A4%E5%9E%8B%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%8A%A8%E9%87%8F%E7%AD%96%E7%95%A5-Confirmed-SMA-Crossover-Momentum-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "e3104642128d5bdeefdd3c5e6021e6411aec8a39382223e03367ca38cacb8b42",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "移动平均线交叉多层获利策略-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 349,
+      "unsettled": 2,
+      "gross_wins": 123,
+      "fee_wins": 80,
+      "net_wins": 72,
+      "gross": -480.40135022221534,
+      "after_fees": -892.2055235429347,
+      "net": -1101.5974760788936,
+      "fees": 411.8041733207193,
+      "execution": 209.39195253595892,
+      "gross_dd": 510.59622068809404,
+      "fee_dd": 901.474917217316,
+      "net_dd": 1106.3133346112136,
+      "gross_dd_pct": 0.05099488806963148,
+      "fee_dd_pct": 0.09009155560727863,
+      "net_dd_pct": 0.11059913646221642,
+      "realized_gross": -480.40135022221534,
+      "realized_after_fees": -893.3855235429346,
+      "realized_net": -1103.3774760788936,
+      "events": {
+        "market entry": 351
+      },
+      "id": 5036,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%A4%9A%E5%B1%82%E8%8E%B7%E5%88%A9%E7%AD%96%E7%95%A5-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a49a33f8e7dbaa00d6541bbd01afa640cba9b88aafe039389e879da1669485db",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "移动平均线交叉多层获利策略-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 305,
+      "unsettled": 2,
+      "gross_wins": 111,
+      "fee_wins": 77,
+      "net_wins": 66,
+      "gross": -397.7030132049,
+      "after_fees": -757.7382454728997,
+      "net": -940.8070076430689,
+      "fees": 360.03523226799973,
+      "execution": 183.06876217016918,
+      "gross_dd": 1087.9626783480817,
+      "fee_dd": 1213.1243021877926,
+      "net_dd": 1282.6097425128282,
+      "gross_dd_pct": 0.10378785258323352,
+      "fee_dd_pct": 0.11749429980156895,
+      "net_dd_pct": 0.12512446041353242,
+      "realized_gross": -397.7030132049,
+      "realized_after_fees": -758.9182454728997,
+      "realized_net": -942.587007643069,
+      "events": {
+        "market entry": 307,
+        "protective limit": 7,
+        "partial exit fill": 7
+      },
+      "id": 5036,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%A4%9A%E5%B1%82%E8%8E%B7%E5%88%A9%E7%AD%96%E7%95%A5-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a49a33f8e7dbaa00d6541bbd01afa640cba9b88aafe039389e879da1669485db",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "移动平均线交叉多层获利策略-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 654,
+      "unsettled": 4,
+      "gross_wins": 234,
+      "fee_wins": 157,
+      "net_wins": 138,
+      "gross": -878.1043634271153,
+      "after_fees": -1649.9437690158343,
+      "net": -2042.4044837219626,
+      "fees": 771.8394055887189,
+      "execution": 392.46071470612833,
+      "gross_dd": 1208.2912475100457,
+      "fee_dd": 1669.8270474118417,
+      "net_dd": 2055.824217145444,
+      "gross_dd_pct": 0.11804038154098365,
+      "fee_dd_pct": 0.16698270474118418,
+      "net_dd_pct": 0.2055824217145444,
+      "realized_gross": -878.1043634271153,
+      "realized_after_fees": -1652.3037690158344,
+      "realized_net": -2045.9644837219626,
+      "events": {
+        "market entry": 658,
+        "protective limit": 7,
+        "partial exit fill": 7
+      },
+      "id": 5036,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%A4%9A%E5%B1%82%E8%8E%B7%E5%88%A9%E7%AD%96%E7%95%A5-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a49a33f8e7dbaa00d6541bbd01afa640cba9b88aafe039389e879da1669485db",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "移动平均线交叉多层获利策略-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 151,
+      "unsettled": 1,
+      "gross_wins": 55,
+      "fee_wins": 33,
+      "net_wins": 29,
+      "gross": 1063.6682634036042,
+      "after_fees": 885.3724404764276,
+      "net": 794.713547462609,
+      "fees": 178.29582292717657,
+      "execution": 90.65889301381867,
+      "gross_dd": 51.21177806767264,
+      "fee_dd": 126.13030094826536,
+      "net_dd": 196.91599972309814,
+      "gross_dd_pct": 0.004633741622119778,
+      "fee_dd_pct": 0.011455026836580437,
+      "net_dd_pct": 0.017916537725026927,
+      "realized_gross": 1063.6682634036044,
+      "realized_after_fees": 884.7824404764276,
+      "realized_net": 793.823547462609,
+      "events": {
+        "market entry": 152,
+        "protective limit": 10,
+        "partial exit fill": 10
+      },
+      "id": 5036,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%A4%9A%E5%B1%82%E8%8E%B7%E5%88%A9%E7%AD%96%E7%95%A5-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a49a33f8e7dbaa00d6541bbd01afa640cba9b88aafe039389e879da1669485db",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "移动平均线交叉多层获利策略-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 159,
+      "unsettled": 1,
+      "gross_wins": 60,
+      "fee_wins": 34,
+      "net_wins": 30,
+      "gross": -4.339387618622878,
+      "after_fees": -191.92588369885524,
+      "net": -287.30884780744793,
+      "fees": 187.58649608023237,
+      "execution": 95.38296410859269,
+      "gross_dd": 109.56937714302876,
+      "fee_dd": 200.65305557631655,
+      "net_dd": 295.1310561057562,
+      "gross_dd_pct": 0.010854124133553281,
+      "fee_dd_pct": 0.020065305557631655,
+      "net_dd_pct": 0.029513105610575623,
+      "realized_gross": -4.339387618622878,
+      "realized_after_fees": -192.51588369885525,
+      "realized_net": -288.1988478074479,
+      "events": {
+        "market entry": 160
+      },
+      "id": 5036,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%A4%9A%E5%B1%82%E8%8E%B7%E5%88%A9%E7%AD%96%E7%95%A5-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a49a33f8e7dbaa00d6541bbd01afa640cba9b88aafe039389e879da1669485db",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "移动平均线交叉多层获利策略-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 310,
+      "unsettled": 2,
+      "gross_wins": 115,
+      "fee_wins": 67,
+      "net_wins": 59,
+      "gross": 1059.3288757849814,
+      "after_fees": 693.4465567775724,
+      "net": 507.4046996551611,
+      "fees": 365.882319007409,
+      "execution": 186.04185712241127,
+      "gross_dd": 135.15518995195998,
+      "fee_dd": 273.4908376907006,
+      "net_dd": 418.0565566195037,
+      "gross_dd_pct": 0.012084991998661873,
+      "fee_dd_pct": 0.02495415920582723,
+      "net_dd_pct": 0.03828335436705902,
+      "realized_gross": 1059.3288757849814,
+      "realized_after_fees": 692.2665567775724,
+      "realized_net": 505.624699655161,
+      "events": {
+        "market entry": 312,
+        "protective limit": 10,
+        "partial exit fill": 10
+      },
+      "id": 5036,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%9D%87%E7%BA%BF%E4%BA%A4%E5%8F%89%E5%A4%9A%E5%B1%82%E8%8E%B7%E5%88%A9%E7%AD%96%E7%95%A5-Moving-Average-Crossover-with-Multiple-Take-Profits-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "a49a33f8e7dbaa00d6541bbd01afa640cba9b88aafe039389e879da1669485db",
+      "order_family": "Partial exit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "高级动量EMA趋势跟踪结合RSI超买超卖的交易策略-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 61,
+      "unsettled": 1,
+      "gross_wins": 49,
+      "fee_wins": 42,
+      "net_wins": 37,
+      "gross": 55.87294424329419,
+      "after_fees": -16.140020793809356,
+      "net": -52.75678267708233,
+      "fees": 72.01296503710356,
+      "execution": 36.61676188327297,
+      "gross_dd": 92.30542666899782,
+      "fee_dd": 102.17588189599337,
+      "net_dd": 111.45070127484541,
+      "gross_dd_pct": 0.009153929335460245,
+      "fee_dd_pct": 0.010167466123889642,
+      "net_dd_pct": 0.011107003247251196,
+      "realized_gross": 55.87294424329419,
+      "realized_after_fees": -16.730020793809356,
+      "realized_net": -53.64678267708233,
+      "events": {
+        "stop-limit activated": 62,
+        "stop-limit fill": 62
+      },
+      "id": 5722,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%AB%98%E7%BA%A7%E5%8A%A8%E9%87%8FEMA%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%BB%93%E5%90%88RSI%E8%B6%85%E4%B9%B0%E8%B6%85%E5%8D%96%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "96f8d0f8bd046f01b4b91e3e2a5467c2a15aa15ea75bb7dd7bc6a79678aebf89",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "高级动量EMA趋势跟踪结合RSI超买超卖的交易策略-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 57,
+      "unsettled": 1,
+      "gross_wins": 41,
+      "fee_wins": 33,
+      "net_wins": 29,
+      "gross": 622.7594596953844,
+      "after_fees": 555.1320316141641,
+      "net": 520.7452037762556,
+      "fees": 67.62742808122027,
+      "execution": 34.38682783790853,
+      "gross_dd": 86.73404614652281,
+      "fee_dd": 92.5047753374347,
+      "net_dd": 98.79240384303193,
+      "gross_dd_pct": 0.008166920516483238,
+      "fee_dd_pct": 0.00873638385698532,
+      "net_dd_pct": 0.009343073006744688,
+      "realized_gross": 622.7594596953844,
+      "realized_after_fees": 554.5420316141641,
+      "realized_net": 519.8552037762556,
+      "events": {
+        "stop-limit activated": 58,
+        "stop-limit fill": 58
+      },
+      "id": 5722,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%AB%98%E7%BA%A7%E5%8A%A8%E9%87%8FEMA%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%BB%93%E5%90%88RSI%E8%B6%85%E4%B9%B0%E8%B6%85%E5%8D%96%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "96f8d0f8bd046f01b4b91e3e2a5467c2a15aa15ea75bb7dd7bc6a79678aebf89",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "高级动量EMA趋势跟踪结合RSI超买超卖的交易策略-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Reference",
+      "trades": 118,
+      "unsettled": 2,
+      "gross_wins": 90,
+      "fee_wins": 75,
+      "net_wins": 66,
+      "gross": 678.6324039386786,
+      "after_fees": 538.9920108203547,
+      "net": 467.98842109917325,
+      "fees": 139.6403931183239,
+      "execution": 71.00358972118147,
+      "gross_dd": 160.59988123838593,
+      "fee_dd": 172.9832978759805,
+      "net_dd": 179.94853151650204,
+      "gross_dd_pct": 0.015029814268249432,
+      "fee_dd_pct": 0.016290848353551355,
+      "net_dd_pct": 0.017000448162264627,
+      "realized_gross": 678.6324039386786,
+      "realized_after_fees": 537.8120108203548,
+      "realized_net": 466.2084210991733,
+      "events": {
+        "stop-limit activated": 120,
+        "stop-limit fill": 120
+      },
+      "id": 5722,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%AB%98%E7%BA%A7%E5%8A%A8%E9%87%8FEMA%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%BB%93%E5%90%88RSI%E8%B6%85%E4%B9%B0%E8%B6%85%E5%8D%96%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "96f8d0f8bd046f01b4b91e3e2a5467c2a15aa15ea75bb7dd7bc6a79678aebf89",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "高级动量EMA趋势跟踪结合RSI超买超卖的交易策略-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy",
+      "market": "BTCUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 28,
+      "unsettled": 0,
+      "gross_wins": 18,
+      "fee_wins": 16,
+      "net_wins": 15,
+      "gross": 17.697494447117844,
+      "after_fees": -15.352947074605959,
+      "net": -32.15825632294009,
+      "fees": 33.050441521723805,
+      "execution": 16.805309248334133,
+      "gross_dd": 33.82140647556116,
+      "fee_dd": 41.93428219230009,
+      "net_dd": 48.90479924438296,
+      "gross_dd_pct": 0.0033749288739806475,
+      "fee_dd_pct": 0.004186463592935388,
+      "net_dd_pct": 0.0048835308308831015,
+      "realized_gross": 17.697494447117844,
+      "realized_after_fees": -15.35294707460596,
+      "realized_net": -32.15825632294008,
+      "events": {
+        "stop-limit activated": 28,
+        "stop-limit fill": 28
+      },
+      "id": 5722,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%AB%98%E7%BA%A7%E5%8A%A8%E9%87%8FEMA%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%BB%93%E5%90%88RSI%E8%B6%85%E4%B9%B0%E8%B6%85%E5%8D%96%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "96f8d0f8bd046f01b4b91e3e2a5467c2a15aa15ea75bb7dd7bc6a79678aebf89",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "高级动量EMA趋势跟踪结合RSI超买超卖的交易策略-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy",
+      "market": "ETHUSD",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 27,
+      "unsettled": 1,
+      "gross_wins": 18,
+      "fee_wins": 17,
+      "net_wins": 16,
+      "gross": -8.65599508220052,
+      "after_fees": -40.51088804510202,
+      "net": -56.70829124657735,
+      "fees": 31.854892962901502,
+      "execution": 16.197403201475332,
+      "gross_dd": 82.89611244124535,
+      "fee_dd": 88.15720373490512,
+      "net_dd": 90.83233490116982,
+      "gross_dd_pct": 0.008274835039084693,
+      "fee_dd_pct": 0.008803126390588018,
+      "net_dd_pct": 0.009071892803506391,
+      "realized_gross": -8.65599508220052,
+      "realized_after_fees": -41.10088804510202,
+      "realized_net": -57.598291246577354,
+      "events": {
+        "stop-limit activated": 28,
+        "stop-limit fill": 28
+      },
+      "id": 5722,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%AB%98%E7%BA%A7%E5%8A%A8%E9%87%8FEMA%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%BB%93%E5%90%88RSI%E8%B6%85%E4%B9%B0%E8%B6%85%E5%8D%96%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "96f8d0f8bd046f01b4b91e3e2a5467c2a15aa15ea75bb7dd7bc6a79678aebf89",
+      "order_family": "Stop-limit"
+    },
+    {
+      "group": "FMZ partial & stop-limit",
+      "name": "高级动量EMA趋势跟踪结合RSI超买超卖的交易策略-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy",
+      "market": "BTC + ETH",
+      "exit": "Source partial / staged",
+      "period": "Later",
+      "trades": 55,
+      "unsettled": 1,
+      "gross_wins": 36,
+      "fee_wins": 33,
+      "net_wins": 31,
+      "gross": 9.041499364917325,
+      "after_fees": -55.86383511970798,
+      "net": -88.86654756951744,
+      "fees": 64.9053344846253,
+      "execution": 33.00271244980946,
+      "gross_dd": 115.88776447073724,
+      "fee_dd": 128.79939068970452,
+      "net_dd": 135.36462436035617,
+      "gross_dd_pct": 0.011543496544595725,
+      "fee_dd_pct": 0.01284020848189622,
+      "net_dd_pct": 0.013500375184198622,
+      "realized_gross": 9.041499364917325,
+      "realized_after_fees": -56.45383511970798,
+      "realized_net": -89.75654756951744,
+      "events": {
+        "stop-limit activated": 56,
+        "stop-limit fill": 56
+      },
+      "id": 5722,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%AB%98%E7%BA%A7%E5%8A%A8%E9%87%8FEMA%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%BB%93%E5%90%88RSI%E8%B6%85%E4%B9%B0%E8%B6%85%E5%8D%96%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-Advanced-Momentum-EMA-Trend-Following-with-RSI-Overbought-Oversold-Trading-Strategy.md",
+      "archive_interval": "1d",
+      "source_sha256": "96f8d0f8bd046f01b4b91e3e2a5467c2a15aa15ea75bb7dd7bc6a79678aebf89",
+      "order_family": "Stop-limit"
+    }
+  ],
+  "coverage": [
+    [
+      1,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      7,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      26,
+      "Tested · FMZ staged, no closes",
+      "Stop-limit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      35,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      60,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      67,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      73,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      85,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      93,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      111,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      162,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      164,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      319,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      344,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      414,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      471,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      490,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      530,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      553,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      562,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      564,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      616,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      617,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      623,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      682,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      700,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      711,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      724,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      735,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      770,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      772,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      887,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      913,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      919,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      933,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      970,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      971,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      979,
+      "FMZ partial / staged pending",
+      "Partial exit: Source default exits the full position"
+    ],
+    [
+      981,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1015,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1051,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1068,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      1076,
+      "Tested · FMZ staged, no closes",
+      "Partial exit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      1078,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1082,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1154,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1230,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1232,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1235,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1259,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1306,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1349,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1360,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      1415,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      1422,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1424,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1440,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1456,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1512,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1524,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1551,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1588,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1590,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1598,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      1600,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      1624,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1628,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1631,
+      "FMZ partial / staged pending",
+      "Partial exit: Missing bracket price"
+    ],
+    [
+      1640,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1648,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1658,
+      "Tested · FMZ partial / staged",
+      "Stop-limit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      1691,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1696,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1708,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      1710,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1734,
+      "FMZ partial / staged pending",
+      "Partial exit: Input type outside subset"
+    ],
+    [
+      1774,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1777,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1805,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      1815,
+      "FMZ partial / staged pending",
+      "Partial exit: unsupported input (TypeError)"
+    ],
+    [
+      1867,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      1911,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      1922,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      1929,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1952,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      1956,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      1963,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      2018,
+      "Tested · FMZ partial / staged",
+      "Stop-limit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      2044,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2064,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2085,
+      "FMZ partial / staged pending",
+      "Partial exit: Source default exits the full position"
+    ],
+    [
+      2087,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      2100,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2175,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2182,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2184,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2215,
+      "FMZ partial / staged pending",
+      "Partial exit: Source default exits the full position"
+    ],
+    [
+      2258,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2316,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      2319,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2371,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2383,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2517,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      2546,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2548,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2591,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      2605,
+      "FMZ partial / staged pending",
+      "Partial exit: Function outside supported subset"
+    ],
+    [
+      2611,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2619,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      2667,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2709,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2711,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2719,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2740,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2789,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2800,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2808,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2823,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2844,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      2853,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      2888,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      2907,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2932,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      2958,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      2982,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3032,
+      "FMZ partial / staged pending",
+      "Partial exit: Source default exits the full position"
+    ],
+    [
+      3049,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3114,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3147,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3250,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3271,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3282,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      3326,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3347,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      3368,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3377,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      3393,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3395,
+      "FMZ partial / staged pending",
+      "Partial exit: External or unsupported function"
+    ],
+    [
+      3410,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3423,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      3449,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3481,
+      "FMZ partial / staged pending",
+      "Partial exit: Missing bracket price"
+    ],
+    [
+      3490,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3493,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      3532,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, cancel or other order model"
+    ],
+    [
+      3550,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3551,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3561,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3581,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      3589,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      3593,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      3612,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      3619,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3632,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3650,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      3662,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3671,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3675,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      3708,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3743,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3749,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3782,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3793,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3808,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3815,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      3850,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      3873,
+      "Tested · FMZ partial / staged",
+      "Partial exit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      3876,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3899,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3908,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      3912,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      3947,
+      "FMZ partial / staged pending",
+      "Partial exit: Nonstandard Pine execution configuration"
+    ],
+    [
+      3988,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4020,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4037,
+      "FMZ partial / staged pending",
+      "Both: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4046,
+      "FMZ partial / staged pending",
+      "Stop-limit: External or unsupported function"
+    ],
+    [
+      4048,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      4052,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4058,
+      "FMZ partial / staged pending",
+      "Stop-limit: External or unsupported function"
+    ],
+    [
+      4073,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4074,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4093,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      4095,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4100,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      4123,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4137,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4155,
+      "FMZ partial / staged pending",
+      "Both: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4186,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      4224,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4234,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4235,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4236,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4237,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4244,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4248,
+      "Tested · FMZ staged, no closes",
+      "Partial exit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      4263,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4269,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4283,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4284,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4303,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4314,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4315,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4346,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4465,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4473,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      4557,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4566,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4581,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      4652,
+      "FMZ partial / staged pending",
+      "Stop-limit: Order uses a computed identifier or parameter"
+    ],
+    [
+      4693,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4694,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      4731,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4734,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4738,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4785,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4804,
+      "Tested · FMZ staged, no closes",
+      "Stop-limit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      4851,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4879,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4884,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      4981,
+      "Tested · FMZ partial / staged",
+      "Stop-limit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      5036,
+      "Tested · FMZ partial / staged",
+      "Partial exit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      5041,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5050,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5057,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5063,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5083,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      5097,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5119,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      5181,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5211,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5224,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5237,
+      "FMZ partial / staged pending",
+      "Partial exit: Stop, limit, sizing or fill parameter"
+    ],
+    [
+      5247,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      5362,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5364,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5387,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5394,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5407,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5420,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5421,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5445,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5455,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5540,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      5666,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5668,
+      "FMZ partial / staged pending",
+      "Partial exit: Order uses a computed identifier or parameter"
+    ],
+    [
+      5698,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5701,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5718,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5722,
+      "Tested · FMZ partial / staged",
+      "Stop-limit: 5m source order replay with staged activation and cash drawdown"
+    ],
+    [
+      5762,
+      "FMZ partial / staged pending",
+      "Stop-limit: Stateful, nested, multiline or unsupported source syntax"
+    ],
+    [
+      5781,
+      "FMZ partial / staged pending",
+      "Partial exit: Stateful, nested, multiline or unsupported source syntax"
+    ]
+  ],
+  "candidate_modes": {
+    "Partial exit": 191,
+    "Stop-limit": 59,
+    "Both": 2
+  },
+  "pinned_fmz_ref": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "candle_sha256": {
+    "Reference": {
+      "BTCUSD": "70c54eccc87ee154c7fb9dc1579fa672466cb863531241c8b9245a1e425c50be",
+      "ETHUSD": "ef90d7f64437e8498fc3f88449894cfcec7fa9ae624a29b8eacf682fa09a2f25",
+      "SOLUSD": "dcc9cef265ff7ae51e14d14282e891b4a08e129741618161f4ab32715344b9cb",
+      "XRPUSD": "8388db521287e68e45c7ed8368fff3f9e743046aa11bbeeafc4fec3f88f5a4c1",
+      "DOGEUSD": "2ae7b3a236ad0c2338c9bb854c56b9f0da48a8cd7954ee530efed9ac27f8922b"
+    },
+    "Later": {
+      "BTCUSD": "5e30360387523d28a2e29b911dd48430b1740e452c4f09add78798c85e49975c",
+      "ETHUSD": "d1cede1516064398b6503916ec96c09168d8a5288aacdca23f9e0996180b6c38",
+      "SOLUSD": "fc42afbc9a428f01024aafcb6cab87623542f10d05ce3f94a848194eed65fa1b",
+      "XRPUSD": "3ba6fb5d1cf7c64f4626bfeeb8465779b113d996018e33658a7209e70ab49bb1",
+      "DOGEUSD": "cdecc455a544d89ac68d27aec5d55664085fd7c89c3ccd9d1af14633a4c029be"
+    }
+  },
+  "delta_tick_size": {
+    "BTCUSD": 0.1,
+    "ETHUSD": 0.05
+  },
+  "libraries": {
+    "talib": "0.6.8",
+    "numpy": "2.5.5"
+  }
+}

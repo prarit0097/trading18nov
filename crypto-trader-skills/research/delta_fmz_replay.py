@@ -125,7 +125,7 @@ def literal(node):
         raise Unsupported("Order uses a computed identifier or parameter") from exc
 
 
-def parse(code, interval, *, priced_orders=False):
+def source_lines(code, *, multiline=False):
     # Captures ordinary quote-delimited string literals and removes comments without touching them.
     comment = re.compile(r"""("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')|//.*""")
     code = re.sub(r"/\*.*?\*/", "", code, flags=re.S)
@@ -134,6 +134,26 @@ def parse(code, interval, *, priced_orders=False):
         for raw in code.splitlines()
         if (line := comment.sub(lambda m: m[1] or "", raw).rstrip()).strip()
     ]
+    if not multiline:
+        return lines
+    combined = []
+    depths = 0
+    for indent, line in lines:
+        skeleton = re.sub(r"""("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')""", "", line)
+        change = sum(skeleton.count(c) for c in "([") - sum(
+            skeleton.count(c) for c in ")]"
+        )
+        if depths and combined:
+            previous_indent, statement = combined[-1]
+            combined[-1] = (previous_indent, statement + " " + line)
+        else:
+            combined.append((indent, line))
+        depths += change
+    return combined
+
+
+def parse(code, interval, *, priced_orders=False, extended_orders=False):
+    lines = source_lines(code, multiline=extended_orders)
     variables, orders = {}, []
     stack = []
     previous_if = {}
@@ -175,6 +195,13 @@ def parse(code, interval, *, priced_orders=False):
             previous_if[indent] = condition
         elif priced_orders and line == "else" and prior_if is not None:
             stack.append((indent, ast.UnaryOp(op=ast.Not(), operand=prior_if)))
+        elif extended_orders and line.startswith("else if ") and prior_if is not None:
+            condition = expression(line[8:])
+            remaining = ast.UnaryOp(op=ast.Not(), operand=prior_if)
+            stack.append(
+                (indent, ast.BoolOp(op=ast.And(), values=[remaining, condition]))
+            )
+            previous_if[indent] = ast.BoolOp(op=ast.Or(), values=[prior_if, condition])
         elif match := re.match(r"strategy\.(\w+)\s*\(", line):
             kind = match[1]
             args, kw = call_parts(line)
@@ -198,6 +225,8 @@ def parse(code, interval, *, priced_orders=False):
                     allowed.update(("stop", "limit", "oca_name", "oca_type"))
             if kind in {"close", "cancel"}:
                 allowed.add("id")
+            if extended_orders and kind in {"exit", "close"}:
+                allowed.update(("qty", "qty_percent"))
             if kind == "exit":
                 allowed.update(
                     (
@@ -214,13 +243,22 @@ def parse(code, interval, *, priced_orders=False):
                         "alert_loss",
                     )
                 )
-                if "qty_percent" in kw and literal(kw["qty_percent"]) != 100:
+                if (
+                    not extended_orders
+                    and "qty_percent" in kw
+                    and literal(kw["qty_percent"]) != 100
+                ):
                     raise Unsupported(
                         "Partial protective exit requires a quantity model"
                     )
                 if not (set(kw) & {"stop", "limit", "profit", "loss"}):
                     raise Unsupported("Missing bracket price")
-            if priced_orders and kind == "entry" and {"stop", "limit"} <= set(kw):
+            if (
+                priced_orders
+                and not extended_orders
+                and kind == "entry"
+                and {"stop", "limit"} <= set(kw)
+            ):
                 raise Unsupported("Stop-limit entry requires a two-stage fill model")
             if set(kw) - allowed or len(args) > maximum[kind]:
                 raise Unsupported("Stop, limit, sizing or fill parameter")
@@ -256,6 +294,8 @@ def parse(code, interval, *, priced_orders=False):
                 if mode.endswith(".cancel") and "oca_name" in kw:
                     group = literal(kw["oca_name"])
             prices = {k: kw[k] for k in ("stop", "limit", "loss", "profit") if k in kw}
+            if extended_orders and kind in {"exit", "close"}:
+                prices.update({k: kw[k] for k in ("qty", "qty_percent") if k in kw})
             orders.append(
                 Order(
                     kind, identity, direction, tuple(conditions), prices, linked, group
