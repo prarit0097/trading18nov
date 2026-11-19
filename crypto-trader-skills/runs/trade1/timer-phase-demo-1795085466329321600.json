@@ -1,0 +1,47 @@
+{
+  "study": "Passive observer phase timing",
+  "environment": "india_testnet",
+  "scope": "Three journaled ten-minute exits in one batch",
+  "method": "Sample the ledger and reconciliation lock once every 200 ms. Ledger as_of is taken before timer calls. Join the first matching submit event to the same ledger cycle. Use exchange first-fill deadlines and local submit timestamps.",
+  "limitation": "The lock-to-timer span combines startup, account reads and reconciliation. Timing inside those phases was not recorded.",
+  "batch": "demo-1795085466329321600",
+  "observed_ledger_cycles": 5,
+  "samples": [
+    {
+      "symbol": "ETHUSD",
+      "deadline": "2026-11-19T11:01:08.965252Z",
+      "before_timer": "2026-11-19T11:01:21.893423+00:00",
+      "submitted": "2026-11-19T11:01:22.485700Z",
+      "last_pre_timer": "2026-11-19T11:01:08.239282+00:00",
+      "lock_start_s_relative_to_deadline": 0.615,
+      "reconcile_lock_to_timer_s": 12.313,
+      "timer_start_s_relative_to_deadline": 12.928,
+      "timer_to_submission_s": 0.592,
+      "due_to_submit_s": 13.52
+    },
+    {
+      "symbol": "XRPUSD",
+      "deadline": "2026-11-19T11:01:10.687668Z",
+      "before_timer": "2026-11-19T11:01:21.893423+00:00",
+      "submitted": "2026-11-19T11:01:23.460136Z",
+      "last_pre_timer": "2026-11-19T11:01:08.239282+00:00",
+      "lock_start_s_relative_to_deadline": -1.107,
+      "reconcile_lock_to_timer_s": 12.313,
+      "timer_start_s_relative_to_deadline": 11.206,
+      "timer_to_submission_s": 1.567,
+      "due_to_submit_s": 12.772
+    },
+    {
+      "symbol": "SOLUSD",
+      "deadline": "2026-11-19T11:01:12.806345Z",
+      "before_timer": "2026-11-19T11:01:21.893423+00:00",
+      "submitted": "2026-11-19T11:01:24.413005Z",
+      "last_pre_timer": "2026-11-19T11:01:08.239282+00:00",
+      "lock_start_s_relative_to_deadline": -3.226,
+      "reconcile_lock_to_timer_s": 12.313,
+      "timer_start_s_relative_to_deadline": 9.087,
+      "timer_to_submission_s": 2.52,
+      "due_to_submit_s": 11.607
+    }
+  ]
+}
