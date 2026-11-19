@@ -2,6 +2,8 @@
 
 Start on the owner's explicit **start** instruction. Use the existing Delta India testnet account and the connected `crypto-trader-skills` workflow. Start the campaign at **0 of 10,000 verified trades and 0 of 1,000 reviews**. Each verified trade must open and close exactly three contracts. The aim is to improve both the probability of a profitable close and the average net USD profit per trade, after commissions and funding, within the agreed risk limits. Report the measured outcome and its uncertainty even when the starting strategy performs best.
 
+The [pause and diagnosis handoff](TRADE1-DIAGNOSIS.md) records the latest frozen cohort, workbook, outstanding evidence and resume criteria.
+
 ## Fresh start and ownership
 
 Use campaign ID `trade1`, its dedicated order journal and review history under `runs/trade1`, and the workbook `outputs/01a1df70-6789-76b0-9431-f0c905a7987a/trade1.xlsx`. Each resume continues from the persisted state. Keep the original `trade.xlsx` as historical evidence. Only positions opened by this campaign's journal can earn a new trade number. Earlier trades and manual, external or hypothetical activity earn zero credit toward either target. Include earlier same-day losses and any account exposure in preflight risk. The historic XRP exit is settled.

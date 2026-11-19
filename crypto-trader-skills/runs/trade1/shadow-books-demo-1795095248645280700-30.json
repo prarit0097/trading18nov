@@ -1,0 +1,317 @@
+{
+  "status": "depth_research_only",
+  "environment": "india_testnet",
+  "campaign_id": "trade1",
+  "batch_id": "demo-1795095248645280700",
+  "minutes": 30,
+  "comparisons": [
+    {
+      "symbol": "BTCUSD",
+      "order_id": "2178822453",
+      "first_fill_at": "2026-11-19T13:34:11.313181Z",
+      "deadline_at": 1795097051.313181,
+      "capture": {
+        "status": "valid",
+        "book_observed_at": 1795097053.7465231,
+        "book": {
+          "symbol": "BTCUSD",
+          "buy": [
+            {
+              "size": 16406,
+              "depth": "16406",
+              "price": "63998.0"
+            },
+            {
+              "size": 20785,
+              "depth": "37191",
+              "price": "63997.5"
+            },
+            {
+              "size": 26389,
+              "depth": "6.358E+4",
+              "price": "63997.0"
+            },
+            {
+              "size": 33565,
+              "depth": "97145",
+              "price": "63996.5"
+            },
+            {
+              "size": 42751,
+              "depth": "139896",
+              "price": "63996.0"
+            }
+          ],
+          "sell": [
+            {
+              "size": 5568,
+              "depth": "5568",
+              "price": "63999.0"
+            },
+            {
+              "size": 7128,
+              "depth": "12696",
+              "price": "63999.5"
+            },
+            {
+              "size": 9125,
+              "depth": "21821",
+              "price": "64000.0"
+            },
+            {
+              "size": 11682,
+              "depth": "33503",
+              "price": "64000.5"
+            },
+            {
+              "size": 14955,
+              "depth": "48458",
+              "price": "64001.0"
+            }
+          ],
+          "last_updated_at": 1795097054130000
+        }
+      },
+      "candle_baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "depth_fallback": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "realized_net_usd": "-0.10549362"
+    },
+    {
+      "symbol": "ETHUSD",
+      "order_id": "2178822463",
+      "first_fill_at": "2026-11-19T13:34:13.132181Z",
+      "deadline_at": 1795097053.132181,
+      "capture": {
+        "status": "valid",
+        "book_observed_at": 1795097055.6590438,
+        "book": {
+          "symbol": "ETHUSD",
+          "buy": [
+            {
+              "size": 3275,
+              "depth": "3275",
+              "price": "1812.20"
+            },
+            {
+              "size": 4009,
+              "depth": "7284",
+              "price": "1812.15"
+            },
+            {
+              "size": 4737,
+              "depth": "12021",
+              "price": "1812.10"
+            },
+            {
+              "size": 5456,
+              "depth": "17477",
+              "price": "1812.05"
+            },
+            {
+              "size": 6164,
+              "depth": "23641",
+              "price": "1812.00"
+            }
+          ],
+          "sell": [
+            {
+              "size": 1768,
+              "depth": "1768",
+              "price": "1812.25"
+            },
+            {
+              "size": 2170,
+              "depth": "3938",
+              "price": "1812.30"
+            },
+            {
+              "size": 2569,
+              "depth": "6507",
+              "price": "1812.35"
+            },
+            {
+              "size": 2964,
+              "depth": "9471",
+              "price": "1812.40"
+            },
+            {
+              "size": 3352,
+              "depth": "12823",
+              "price": "1812.45"
+            }
+          ],
+          "last_updated_at": 1795097054536000
+        }
+      },
+      "candle_baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "depth_fallback": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "realized_net_usd": "0.00998871"
+    },
+    {
+      "symbol": "XRPUSD",
+      "order_id": "2178822470",
+      "first_fill_at": "2026-11-19T13:34:14.974483Z",
+      "deadline_at": 1795097054.974483,
+      "capture": {
+        "status": "valid",
+        "book_observed_at": 1795097057.228373,
+        "book": {
+          "symbol": "XRPUSD",
+          "buy": [
+            {
+              "size": 208994,
+              "depth": "208994",
+              "price": "0.9930"
+            },
+            {
+              "size": 315625,
+              "depth": "524619",
+              "price": "0.9925"
+            },
+            {
+              "size": 416939,
+              "depth": "941558",
+              "price": "0.9920"
+            },
+            {
+              "size": 510441,
+              "depth": "1451999",
+              "price": "0.9900"
+            },
+            {
+              "size": 593829,
+              "depth": "2045828",
+              "price": "0.9865"
+            }
+          ],
+          "sell": [
+            {
+              "size": 54705,
+              "depth": "54705",
+              "price": "0.9935"
+            },
+            {
+              "size": 103979,
+              "depth": "158684",
+              "price": "0.9940"
+            },
+            {
+              "size": 150796,
+              "depth": "3.0948E+5",
+              "price": "0.9950"
+            },
+            {
+              "size": 194115,
+              "depth": "503595",
+              "price": "0.9975"
+            },
+            {
+              "size": 50000,
+              "depth": "553595",
+              "price": "0.9985"
+            }
+          ],
+          "last_updated_at": 1795097056246000
+        }
+      },
+      "candle_baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "depth_fallback": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "realized_net_usd": "0.00134824"
+    },
+    {
+      "symbol": "DOGEUSD",
+      "order_id": "2178822476",
+      "first_fill_at": "2026-11-19T13:34:17.212159Z",
+      "deadline_at": 1795097057.212159,
+      "capture": {
+        "status": "valid",
+        "book_observed_at": 1795097059.4823947,
+        "book": {
+          "symbol": "DOGEUSD",
+          "buy": [
+            {
+              "size": 1477,
+              "depth": "1477",
+              "price": "0.059620"
+            },
+            {
+              "size": 2005,
+              "depth": "3482",
+              "price": "0.059610"
+            },
+            {
+              "size": 2528,
+              "depth": "6.01E+3",
+              "price": "0.059600"
+            },
+            {
+              "size": 3045,
+              "depth": "9055",
+              "price": "0.059590"
+            },
+            {
+              "size": 3554,
+              "depth": "12609",
+              "price": "0.059580"
+            }
+          ],
+          "sell": [
+            {
+              "size": 37832,
+              "depth": "37832",
+              "price": "0.059700"
+            },
+            {
+              "size": 2234,
+              "depth": "40066",
+              "price": "0.059710"
+            },
+            {
+              "size": 2818,
+              "depth": "42884",
+              "price": "0.059720"
+            },
+            {
+              "size": 3394,
+              "depth": "46278",
+              "price": "0.059730"
+            },
+            {
+              "size": 3961,
+              "depth": "50239",
+              "price": "0.059740"
+            }
+          ],
+          "last_updated_at": 1795097059820000
+        }
+      },
+      "candle_baseline": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "depth_fallback": {
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour"
+      },
+      "realized_net_usd": "-0.03697901"
+    }
+  ]
+}
