@@ -6190,8 +6190,14 @@
         "observed_at": "2026-11-19T10:18:02.169418+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "63772.59775",
+        "fees": "0.20327571821575",
+        "funding": "0",
+        "net_pnl": "-0.38448246821575",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T10:28:33.429701+00:00"
       }
     ]
   },
@@ -6225,8 +6231,14 @@
         "observed_at": "2026-11-19T10:18:02.169418+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "1804.547275",
+        "fees": "0.05750486908867472211469335840",
+        "funding": "0",
+        "net_pnl": "-0.08008661908867472211469335840",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T10:28:33.429701+00:00"
       }
     ]
   },
@@ -6256,8 +6268,14 @@
         "observed_at": "2026-11-19T10:18:02.169418+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "0.9815090",
+        "fees": "0.003135062302577371892440385591",
+        "funding": "0",
+        "net_pnl": "-0.01810806230257737189244038559",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T10:28:33.429701+00:00"
       }
     ]
   },
@@ -6291,8 +6309,10 @@
         "observed_at": "2026-11-19T10:18:02.169418+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 30,
+        "observed_at": "2026-11-19T10:28:33.429701+00:00"
       }
     ]
   },
