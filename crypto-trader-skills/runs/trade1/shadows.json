@@ -3840,8 +3840,10 @@
         "observed_at": "2026-11-19T05:00:15.142519+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T05:10:26.612753+00:00"
       }
     ]
   },
@@ -3875,8 +3877,10 @@
         "observed_at": "2026-11-19T05:00:15.142519+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T05:10:26.612753+00:00"
       }
     ]
   },
@@ -3906,8 +3910,10 @@
         "observed_at": "2026-11-19T05:00:15.142519+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T05:10:26.612753+00:00"
       }
     ]
   },
@@ -3941,8 +3947,10 @@
         "observed_at": "2026-11-19T05:00:15.142519+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T05:10:26.612753+00:00"
       }
     ]
   },
@@ -3972,8 +3980,10 @@
         "observed_at": "2026-11-19T05:05:37.772325+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T05:20:13.758283+00:00"
       }
     ]
   },
@@ -4007,8 +4017,14 @@
         "observed_at": "2026-11-19T05:05:37.772325+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "1795.951575",
+        "fees": "0.05729228757599794295880358036",
+        "funding": "0",
+        "net_pnl": "-0.1952450375759979429588035804",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T05:20:13.758283+00:00"
       }
     ]
   },
@@ -4038,8 +4054,14 @@
         "observed_at": "2026-11-19T05:05:37.772325+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "0.9725135",
+        "fees": "0.003104802479477191184008200922",
+        "funding": "0",
+        "net_pnl": "-0.01506430247947719118400820092",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T05:20:13.758283+00:00"
       }
     ]
   },
@@ -4073,8 +4095,10 @@
         "observed_at": "2026-11-19T05:06:19.100986+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+        "minutes": 30,
+        "observed_at": "2026-11-19T05:21:30.797007+00:00"
       }
     ]
   }

@@ -7538,10 +7538,10 @@
         }
       },
       "c96bda30c74a79627bf71cf663954dd3e3bf512bffb38efd82f45b2c9a28491b": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "dd8882e9f399287def29cb16be43ed64ae76c1a9122b7afef555e788e5991f4f",
-        "queued_at": "2026-11-19T05:05:37.772325+00:00",
+        "evidence_sha256": "fc5200b263f66207a2cfd35a464aa76e65b6b1edd0977a2d13811c6903f17a96",
+        "queued_at": "2026-11-19T05:20:13.758283+00:00",
         "evidence": [
           {
             "order_id": "2178775096",
@@ -7792,8 +7792,10 @@
                 "observed_at": "2026-11-19T05:00:15.142519+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T05:10:26.612753+00:00"
               }
             ]
           },
@@ -7853,8 +7855,10 @@
                 "observed_at": "2026-11-19T05:00:15.142519+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T05:10:26.612753+00:00"
               }
             ]
           },
@@ -7910,8 +7914,10 @@
                 "observed_at": "2026-11-19T05:00:15.142519+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T05:10:26.612753+00:00"
               }
             ]
           },
@@ -7971,8 +7977,10 @@
                 "observed_at": "2026-11-19T05:00:15.142519+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T05:10:26.612753+00:00"
               }
             ]
           },
@@ -8028,8 +8036,10 @@
                 "observed_at": "2026-11-19T05:05:37.772325+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+                "minutes": 30,
+                "observed_at": "2026-11-19T05:20:13.758283+00:00"
               }
             ]
           },
@@ -8089,8 +8099,14 @@
                 "observed_at": "2026-11-19T05:05:37.772325+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "1795.951575",
+                "fees": "0.05729228757599794295880358036",
+                "funding": "0",
+                "net_pnl": "-0.1952450375759979429588035804",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T05:20:13.758283+00:00"
               }
             ]
           },
@@ -8146,8 +8162,14 @@
                 "observed_at": "2026-11-19T05:05:37.772325+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "0.9725135",
+                "fees": "0.003104802479477191184008200922",
+                "funding": "0",
+                "net_pnl": "-0.01506430247947719118400820092",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T05:20:13.758283+00:00"
               }
             ]
           }
@@ -8172,12 +8194,12 @@
               "mean_paired_change_usd": "-0.103016769030328458292119984"
             },
             "30": {
-              "pairs": 2,
-              "pending": 7,
-              "unavailable": 1,
+              "pairs": 4,
+              "pending": 0,
+              "unavailable": 6,
               "actual_win_rate": 0.0,
-              "modeled_win_rate": 0.5,
-              "mean_paired_change_usd": "0.5475709603397176887358487565"
+              "modeled_win_rate": 0.25,
+              "mean_paired_change_usd": "0.250944552655990060832221433"
             }
           }
         },
@@ -8190,7 +8212,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T05:21:41.564993+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "Closed five-minute public replay had READY breadth of five, one and zero across the three basket decisions. The first broad breakout is one execution episode shared with review 10. The sole READY leg in the mixed basket was SOL, with a close of $75.603 above the preceding high of $75.503 and volume at 0.189 times its prior mean. It lost $0.54696993. All four READY closes in this group lost $1.78619312 in total. The six WAIT closes netted +$0.03051917. The evidence predates the frozen sample. Evaluate breadth, observed signal age, coin mix and execution costs at the source-basket level.",
+            "entry_exit": "All ten included exits followed their first-fill timers. Last eligible boundary minutes close at 10:35 and 10:50 IST. The first two official 30-minute pairs came from one basket and SOL supplied $1.06211822 of a $1.09514192 paired improvement. That comparison remained negative in total. Supplemental public bid-depth is modeled evidence with separate coverage. Compare matched trades and keep actual and alternative outcomes distinct. Supplemental depth produced eight 15-minute pairs, with wins changing from three to two and net change of -$0.07725274 per pair. At 30 minutes it produced five pairs, with wins changing from zero to one. Net was -$0.35134948 compared with -$1.35816882 realized on those same entries. Five hypothetical incremental funding amounts remained unverified. 15-minute estimate: 6/10 matched, 4 unavailable, actual matched win rate 33.3%, modeled 16.7%, -$0.1030 mean net change per matched trade. 30-minute estimate: 4/10 matched, 6 unavailable, actual matched win rate 0.0%, modeled 25.0%, +$0.2509 mean net change per matched trade. Matched subsets remain small. Keep the ten-minute timer while independent evidence is collected.",
+            "risk_costs": "Gross loss was $0.68850000, commissions were $1.06717395 and funding was zero. The gross loss would persist at zero fees. Peak lot planned loss was $3.2300786. Peak day loss plus batch reserve was $19.07360425. Planned margin ranged from 75.43 to 76.65 percent. Entry fills cost $0.0615 less than the recorded preflight offers for the same quantities. Quote age and unavailable exit-time prices limit any causal slippage conclusion. Keep the three-contract size and agreed risk limits.",
+            "execution": "All ten positions opened and closed exactly three contracts within the entry caps and had both protective brackets verified. One successful timed exit per lot. Submission lag was 0.833 to 7.845 seconds and exchange fills followed within 0.599 seconds. The three source baskets each filled all four positions. No partial, zero, abandoned or protective early exit occurred within those attempts. Record deadline-to-send delay separately from trade execution prices in research.",
+            "reconciliation_validation": "Independent authenticated Delta India testnet read matched twenty fills, twenty commissions and ten wallet cashflows. Only closes 101 through 110 belong to the group. The SOL loss of $0.54947132 is close 111. Excel matched the review and campaign totals. The first 110 verified trades have 30 net winners and a net loss of $11.79912476. The three source baskets include one shared with each neighboring review, which limits inference from a single group."
+          },
+          "manager": {
+            "findings": "Three wins and seven losses yielded -$1.75567395 net, or -$0.175567395 per trade. On $1,005.2160 entry notional the gross loss was 6.85 basis points and commissions were a further 10.62 basis points. The three baskets remained within the recorded risk gates. The current sample supports evaluating market movement and costs separately. Stronger long-hold results on a single SOL trade do not establish a repeatable basket effect. Across the first 110 closes, the official 15-minute comparison matched 62, with wins falling from 19 to 16 and mean modeled net falling by $0.05816322. The 30-minute comparison matched 47, with wins rising from 13 to 17 and mean modeled net rising by $0.01261650. Both modeled totals lost money on their available pairs. Coverage and common market episodes limit inference. 15-minute estimate: 6/10 matched, 4 unavailable, actual matched win rate 33.3%, modeled 16.7%, -$0.1030 mean net change per matched trade. 30-minute estimate: 4/10 matched, 6 unavailable, actual matched win rate 0.0%, modeled 25.0%, +$0.2509 mean net change per matched trade. Comparisons use matched entries only and are excluded from accounting.",
+            "recommendation": "Retain the three-contract, ten-minute demo baseline and frozen four-READY test. Collect contemporaneous executable bid/depth at the 10-, 15- and 30-minute reference deadlines to partition movement, order latency and fees. Compare after-cost basket-level win rate and mean net by READY breadth, including no-fill opportunities and matching on coin mix and signal age. Cluster by episode and day, test stronger friction and leave out the top contributor as a sensitivity check. Use subsequent independent evidence before changing a rule."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "The negative close group includes three correlated baskets and the apparent long-hold rebound is concentrated in one coin. Preserve the registered rules, timer and risk controls while independent evidence accumulates."
+          }
+        }
       }
     },
     "candidate_registry": {
