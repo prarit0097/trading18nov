@@ -955,3 +955,9 @@ Four signed Delta India testnet fills and six matched wallet postings settled ET
 Review 16 covers closes 151–160. XRP close 161 belongs to review 17. The signed audit matched 20 fills, 20 commission debits and ten cashflows. Review 16 earned $0.86400000 gross with $1.06802220 commissions and zero funding, for −$0.20402220 net and four wins from one of the four represented baskets. The review gate is active. The final included ETH entry's complete reference minutes become eligible at 14:59 and 15:14 IST for the 15- and 30-minute estimates.
 
 The supplemental 30-minute depth replay for trades 152–155 matched three of four entries. It added XRP and lacked a valid SOL snapshot. The three matched positions yielded +$0.35499686 modeled versus +$0.30671051 realized, with three winners at both horizons. This comparison does not add to realized results.
+
+### Review 16 team findings — 19 November, 15:00 IST
+
+The five specialists and profitability manager completed the draft for closes 151–160. Gross profit of $0.86400000 fell short of $1.06802220 in fees. All four winners came from one basket. The manager's next research test measures displayed quantity inside each existing IOC cap and compares expected fill size with actual outcomes. The CEO retained the ten-minute rule, IOC guards and frozen four-READY protocol.
+
+Eight official 15-minute pairs stayed at four winners and gained $0.08257828 on average. Supplemental depth raised coverage to all ten with four winners at both horizons and a $0.07592137 mean change. Across the first 160 closes, 101 official 15-minute pairs changed mean net by −$0.04248484 and reduced wins from 24 to 22. The observer is flat at 161 verified closes while five 30-minute outcomes remain pending. The last complete reference minute becomes eligible at 15:14 IST.

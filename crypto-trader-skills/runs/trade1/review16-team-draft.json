@@ -1,0 +1,36 @@
+{
+  "review_id": "19877955c736906bc6eb7ebb0367643a6acd35501c26f1fb0fcb1d7d466cace0",
+  "order_ids": [
+    "2178793826",
+    "2178795888",
+    "2178795893",
+    "2178795899",
+    "2178795906",
+    "2178796747",
+    "2178796751",
+    "2178796754",
+    "2178796758",
+    "2178797831"
+  ],
+  "status": "awaiting_terminal_exit_comparisons",
+  "specialists": {
+    "market_data": "Nine trades entered on WAIT. The only READY was XRP, which lost $0.00463743 after entry at $0.985. A replay of public five-minute candles put READY breadth at 0, 0, 1 and 1 across the four decision times. All four wins came from one WAIT basket. The last BTC IOC filled zero despite a checked ask $1 inside its buy limit. The journal did not capture executable size. The SOL ask exceeded its cap and the lot was stopped before submission. Test whether contemporaneous available quantity within the cap predicts complete three-contract fills, while recording quote age, symbol and pre-submit stops separately.",
+    "entry_exit": "All ten used their ten-minute timers. The settled official 15-minute comparison had eight matches, four winners at both horizons and a mean modeled change of +$0.08257828. Supplemental depth covered all ten, with four winners at both horizons and +$0.07592137 mean change. The 30-minute comparison remained preliminary. Its two official matches showed +$0.02338233 mean change and two winners at both horizons. Four depth-assisted matches showed +$0.01132967, with three winners at both horizons. Five official 30-minute outcomes remained pending.",
+    "risk_costs": "Gross gain was $0.86400000. Commissions were $1.06802220, funding was zero and total net was -$0.20402220. All twenty commissions matched wallet debits. At the observed prices a commission reduction of about 19.1 percent would have been needed to break even, with achievable fees and fill rates unverified. Peak planned lot risk including fees was $3.2217908. Same-day loss plus basket reserve reached $27.36795264. Planned margin usage reached 79.87 percent and leverage stayed within five times.",
+    "execution": "All ten entries and exits filled all three contracts. Stops and targets were verified. Every exit filled on the first timed attempt. XRP close 151 was the 12.405-second submission delay in the same execution wave as the previous review's ETH outlier. The subsequent nine closes had no new delay above ten seconds. Their maximum submission delay was 6.766 seconds. All ten venue fills followed submission within 0.665 seconds. Check cycle phase timestamps and quote depth before assigning the delay to reconciliation or estimating its cost.",
+    "reconciliation_validation": "The signed audit matched ten distinct closed positions, twenty fills, twenty commissions, ten wallet cashflows and zero funding. The first 160 closes produced 37 wins and -$19.74478721 net across 50 source baskets. Close 161 is excluded and brings the workbook to -$19.75092544. The review groups ten closes from four baskets on one day, with a single basket providing every winner. These dependencies and uneven replay coverage limit generalization."
+  },
+  "ceo": {
+    "decision": "retain_current",
+    "rationale": "Keep the three-contract size, the ten-minute live exit and the frozen four-READY comparison. Neither the observed review nor its partially matched longer-hold estimates show independently validated improvement in both after-cost win probability and expected net profit."
+  },
+  "comparison_eligible_at_ist": {
+    "15": "2026-11-19T14:59:00+05:30",
+    "30": "2026-11-19T15:14:00+05:30"
+  },
+  "evidence_sha256_at_draft": "30613d00e184394d499395f315e40a44d1a37df5e7d56ebcd1ec1a0e45135edc",
+  "manager": {
+    "findings": "Gross return of 8.59 basis points on $1,005.2385 entry notional did not cover the 10.62 basis point commission bill. Net was -$0.20402220, with four wins and six losses. All winners came from one WAIT basket. The first 160 trades averaged -$0.12340492 net, with 37 wins across 50 source baskets. The broader 15-minute comparison has 101 official pairs, 24 actual winners versus 22 modeled and mean change of -$0.04248484. The preliminary 30-minute comparison has 72 pairs, 17 actual versus 21 modeled winners and mean change of -$0.03749264. Different missing subsets and basket dependence limit the inference.",
+    "recommendation": "Retain the current exit, IOC limits and frozen four-READY study. Prospectively measure timestamped displayed ask quantity inside each existing IOC limit, quote age and sent quantity just before submission. Compare predicted fill quantity with actual full, partial and zero fills, keeping guarded unsent lots distinct. Report fill-rate calibration and after-fee net USD per planned basket, with unknown depth recorded as unknown. Evaluate across later independent baskets and days before considering any execution or strategy change."
+  }
+}

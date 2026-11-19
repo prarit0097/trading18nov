@@ -5946,8 +5946,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "1798.60025",
+        "fees": "0.05738226796852257599289993344",
+        "funding": "0",
+        "net_pnl": "-0.2058747679685225759928999334",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T09:29:33.995557+00:00"
       },
       {
         "status": "pending",
@@ -5975,8 +5981,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "0.98300825",
+        "fees": "0.003135853624824784154393092941",
+        "funding": "0",
+        "net_pnl": "-0.01061110362482478415439309294",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T09:29:33.995557+00:00"
       },
       {
         "status": "pending",
