@@ -1047,3 +1047,13 @@ The second passive trace covered five ledger snapshots. All three exits first su
 Batch `demo-1795086108390385100` then filled three contracts each in BTC, ETH, XRP and SOL with all eight reduce-only protections confirmed by the signed read. Combined planned risk including fees is $7.6997732, leaving $0.17688055 of the IST-day cap after loss plus reservation. The deadlines are 16:41:49.768–16:41:55.479 IST. Both public depth captures started and a third passive trace was scheduled. Weekly quota was 77% remaining and the five-hour reading was unavailable.
 
 The 15-minute supplemental replay for trades 174–176 matched all three positions. It moved from one winner and −$0.04650716 realized at ten minutes to zero winners and −$0.23822305 modeled.
+
+### Trades 180–183 and review 18 opened — 19 November, 16:43 IST
+
+Batch `demo-1795086108390385100` settled four three-contract positions. Eight signed Delta India testnet fills and twelve matched wallet postings established −$0.03900000 gross, $0.50343583 commissions, zero funding and −$0.54243583 net. The account is flat. Excel shows 183 verified closes, 17 finalized reviews and −$22.66578208 cumulative net. Review 18 covers closes 171–180 and review 19 starts with ETH, XRP and SOL closes 181–183.
+
+The third passive trace recorded seven ledger snapshots. All four timed exits submitted in the same cycle after a 5.956-second lock-to-timer interval. Their due-to-send delays were 0.941–3.795 seconds. The pre-timer stamp was 3.229 seconds after BTC's deadline and 2.481 seconds before SOL's deadline. This shows how staggered deadlines landed within a measured observer cycle. The trace does not isolate the earlier slow account-read or startup component.
+
+The review 18 signed read matched 20 fills, 20 commissions and ten cashflows. The group had one winner from four represented baskets. Gross was −$0.96300000, commissions were $1.06896529, funding was zero and net loss was $2.03196529. The last included BTC references become eligible at 16:47 and 17:02 IST.
+
+The 15-minute replay for trades 177–179 matched three, with zero winners at either horizon and −$0.79613623 modeled versus −$0.89609038 realized. The official 30-minute replay for trades 174–176 still marks the UTC hour as an unverified funding interval. A separate public funding capture supplied 50 observations each for BTC, ETH and XRP. The existing schedule validator verified zero additional funding from each actual close through its modeled 30-minute deadline. The public tape and its proof are stored with this checkpoint. The first test covered these three positions only and left official pair counts unchanged.

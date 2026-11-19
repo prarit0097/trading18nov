@@ -1,0 +1,59 @@
+{
+  "study": "Passive observer phase timing",
+  "environment": "india_testnet",
+  "scope": "Four journaled ten-minute exits in one batch",
+  "method": "Sample the ledger and reconciliation lock every 200 ms. Ledger as_of precedes timer calls. Join each first submit event to the same ledger cycle.",
+  "limitation": "The lock-to-timer span aggregates startup, account reads and reconciliation.",
+  "batch": "demo-1795086108390385100",
+  "observed_ledger_cycles": 7,
+  "samples": [
+    {
+      "symbol": "BTCUSD",
+      "deadline": "2026-11-19T11:11:49.768356Z",
+      "before_timer": "2026-11-19T11:11:52.997528+00:00",
+      "submitted": "2026-11-19T11:11:53.563045Z",
+      "last_pre_timer": "2026-11-19T11:11:45.787954+00:00",
+      "lock_start_s_relative_to_deadline": -2.727,
+      "reconcile_lock_to_timer_s": 5.956,
+      "timer_start_s_relative_to_deadline": 3.229,
+      "timer_to_submission_s": 0.566,
+      "due_to_submit_s": 3.795
+    },
+    {
+      "symbol": "ETHUSD",
+      "deadline": "2026-11-19T11:11:51.558205Z",
+      "before_timer": "2026-11-19T11:11:52.997528+00:00",
+      "submitted": "2026-11-19T11:11:54.552213Z",
+      "last_pre_timer": "2026-11-19T11:11:45.787954+00:00",
+      "lock_start_s_relative_to_deadline": -4.517,
+      "reconcile_lock_to_timer_s": 5.956,
+      "timer_start_s_relative_to_deadline": 1.439,
+      "timer_to_submission_s": 1.555,
+      "due_to_submit_s": 2.994
+    },
+    {
+      "symbol": "XRPUSD",
+      "deadline": "2026-11-19T11:11:53.393035Z",
+      "before_timer": "2026-11-19T11:11:52.997528+00:00",
+      "submitted": "2026-11-19T11:11:55.502730Z",
+      "last_pre_timer": "2026-11-19T11:11:45.787954+00:00",
+      "lock_start_s_relative_to_deadline": -6.352,
+      "reconcile_lock_to_timer_s": 5.956,
+      "timer_start_s_relative_to_deadline": -0.396,
+      "timer_to_submission_s": 2.505,
+      "due_to_submit_s": 2.11
+    },
+    {
+      "symbol": "SOLUSD",
+      "deadline": "2026-11-19T11:11:55.478633Z",
+      "before_timer": "2026-11-19T11:11:52.997528+00:00",
+      "submitted": "2026-11-19T11:11:56.419966Z",
+      "last_pre_timer": "2026-11-19T11:11:45.787954+00:00",
+      "lock_start_s_relative_to_deadline": -8.437,
+      "reconcile_lock_to_timer_s": 5.956,
+      "timer_start_s_relative_to_deadline": -2.481,
+      "timer_to_submission_s": 3.422,
+      "due_to_submit_s": 0.941
+    }
+  ]
+}
