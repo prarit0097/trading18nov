@@ -11336,8 +11336,8 @@
       "19877955c736906bc6eb7ebb0367643a6acd35501c26f1fb0fcb1d7d466cace0": {
         "status": "awaiting_manager",
         "settlement_verified": true,
-        "evidence_sha256": "30613d00e184394d499395f315e40a44d1a37df5e7d56ebcd1ec1a0e45135edc",
-        "queued_at": "2026-11-19T09:29:33.995557+00:00",
+        "evidence_sha256": "4ea7e11219f57698b8bcee97c2ca3eb90a8c1bf8d9d5d291dec92aa6618f4d81",
+        "queued_at": "2026-11-19T09:33:16.935147+00:00",
         "evidence": [
           {
             "order_id": "2178793826",
@@ -11714,8 +11714,14 @@
                 "observed_at": "2026-11-19T09:23:17.622686+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "63704.13200",
+                "fees": "0.2029986097703098702011685816",
+                "funding": "0",
+                "net_pnl": "-0.2731026097703098702011685816",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T09:33:16.935147+00:00"
               }
             ]
           },
@@ -11775,8 +11781,14 @@
                 "observed_at": "2026-11-19T09:23:17.622686+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "1800.99905",
+                "fees": "0.05743402185446815586719139737",
+                "funding": "0",
+                "net_pnl": "-0.1594625218544681558671913974",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T09:33:16.935147+00:00"
               }
             ]
           },
@@ -11836,8 +11848,14 @@
                 "observed_at": "2026-11-19T09:23:17.622686+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "0.9835080",
+                "fees": "0.003135849732412392077196546470",
+                "funding": "0",
+                "net_pnl": "-0.007611849732412392077196546470",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T09:33:16.935147+00:00"
               }
             ]
           },
@@ -11893,8 +11911,14 @@
                 "observed_at": "2026-11-19T09:23:17.622686+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "75.16240",
+                "fees": "0.2399669761909827693695366698",
+                "funding": "0",
+                "net_pnl": "-1.180766976190982769369536670",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T09:33:16.935147+00:00"
               }
             ]
           },
@@ -11980,12 +12004,12 @@
               "mean_paired_change_usd": "0.08257828388023896400643596045"
             },
             "30": {
-              "pairs": 2,
-              "pending": 5,
+              "pairs": 6,
+              "pending": 1,
               "unavailable": 3,
-              "actual_win_rate": 1.0,
-              "modeled_win_rate": 1.0,
-              "mean_paired_change_usd": "0.0233823273959866238463457221"
+              "actual_win_rate": 0.3333333333333333,
+              "modeled_win_rate": 0.3333333333333333,
+              "mean_paired_change_usd": "-0.1456091404593666566370669585"
             }
           }
         },

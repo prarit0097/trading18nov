@@ -961,3 +961,9 @@ The supplemental 30-minute depth replay for trades 152–155 matched three of fo
 The five specialists and profitability manager completed the draft for closes 151–160. Gross profit of $0.86400000 fell short of $1.06802220 in fees. All four winners came from one basket. The manager's next research test measures displayed quantity inside each existing IOC cap and compares expected fill size with actual outcomes. The CEO retained the ten-minute rule, IOC guards and frozen four-READY protocol.
 
 Eight official 15-minute pairs stayed at four winners and gained $0.08257828 on average. Supplemental depth raised coverage to all ten with four winners at both horizons and a $0.07592137 mean change. Across the first 160 closes, 101 official 15-minute pairs changed mean net by −$0.04248484 and reduced wins from 24 to 22. The observer is flat at 161 verified closes while five 30-minute outcomes remain pending. The last complete reference minute becomes eligible at 15:14 IST.
+
+### Trades 156–159 supplemental 30-minute comparison — 19 November, 15:03 IST
+
+The 30-minute replay matched BTC, ETH, XRP and SOL from batch `demo-1795078956834119400`. The candle model supplied all four estimates. The SOL deadline order book was unavailable. This basket had zero winners at both horizons and modeled net of −$1.62094396 versus −$0.70052446 realized at ten minutes.
+
+At this snapshot Review 16 had six official 30-minute pairs, two wins at each horizon and mean net change of −$0.14560914. Supplemental depth supplied eight pairs with three wins at each horizon and mean net change of −$0.10938760. One official outcome remained pending. The observer remained flat at 161 verified closes and 15 finalized reviews.
