@@ -9782,10 +9782,10 @@
         }
       },
       "8c148d291ba9b231af4614283458ee3d97d22fe40b336898e935667e04929ce1": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "9ddf03544411ef1665b554cefeafdf0a553367287282f871717011d0c660d292",
-        "queued_at": "2026-11-19T07:39:04.505097+00:00",
+        "evidence_sha256": "ae41b417d581879efda3c56e522d6c87acc498e8bd0a29cf105b7e2a008b12b5",
+        "queued_at": "2026-11-19T07:54:18.548997+00:00",
         "evidence": [
           {
             "order_id": "2178788093",
@@ -10103,8 +10103,14 @@
                 "observed_at": "2026-11-19T07:33:22.380814+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "1800.249425",
+                "fees": "0.05740854680434641699675909254",
+                "funding": "0",
+                "net_pnl": "-0.1564257968043464169967590925",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T07:43:29.635495+00:00"
               }
             ]
           },
@@ -10164,8 +10170,14 @@
                 "observed_at": "2026-11-19T07:33:22.380814+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "0.97801075",
+                "fees": "0.003122308103419979612640163099",
+                "funding": "0",
+                "net_pnl": "-0.01509005810341997961264016310",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T07:43:29.635495+00:00"
               }
             ]
           },
@@ -10225,8 +10237,14 @@
                 "observed_at": "2026-11-19T07:33:22.380814+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "75.542210",
+                "fees": "0.2412633715265596348429481683",
+                "funding": "0",
+                "net_pnl": "-1.344633371526559634842948168",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T07:43:29.635495+00:00"
               }
             ]
           },
@@ -10286,8 +10304,14 @@
                 "observed_at": "2026-11-19T07:39:04.505097+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "63641.16350",
+                "fees": "0.2027206714689936884187993830",
+                "funding": "0",
+                "net_pnl": "-0.1272301714689936884187993830",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T07:54:18.548997+00:00"
               }
             ]
           },
@@ -10347,8 +10371,10 @@
                 "observed_at": "2026-11-19T07:39:04.505097+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "unavailable",
+                "reason": "Incomplete or ambiguous price/cost history: No traded volume in deadline reference minute",
+                "minutes": 30,
+                "observed_at": "2026-11-19T07:54:18.548997+00:00"
               }
             ]
           },
@@ -10404,8 +10430,14 @@
                 "observed_at": "2026-11-19T07:39:04.505097+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "0.9805095",
+                "fees": "0.003125501153009708737864077670",
+                "funding": "0",
+                "net_pnl": "-0.006097001153009708737864077670",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T07:54:18.548997+00:00"
               }
             ]
           }
@@ -10430,12 +10462,12 @@
               "mean_paired_change_usd": "-0.1620384951708197222700165613"
             },
             "30": {
-              "pairs": 2,
-              "pending": 6,
-              "unavailable": 2,
+              "pairs": 7,
+              "pending": 0,
+              "unavailable": 3,
               "actual_win_rate": 0.0,
               "modeled_win_rate": 0.0,
-              "mean_paired_change_usd": "-0.841173099766631290943628744"
+              "mean_paired_change_usd": "-0.3271227769413702872137526246"
             }
           }
         },
@@ -10448,7 +10480,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T07:55:15.741633+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "Public five-minute replay found READY breadth of two, one and zero at the three decision times. The sole middle READY was DOGE outside the selected basket. The two reviewed READY entries came from one basket and lost $0.83813838. SOL closed 1.446 basis points above its preceding high, against 2.368 basis points of spread at the pre-submit check. The later fill was below the high. BTC's larger excess also preceded a loss. Measure how much breakout excess remains at the executable quote.",
+            "entry_exit": "All ten exits used their original ten-minute timers. The first seven official 15-minute pairs individually worsened and mean modeled net fell $0.22897431. Two early 30-minute pairs came from a single basket and lost an additional $0.84117310 per pair. Independent displayed-depth prices covered both empty reference candles in that basket and total modeled net was -$2.79712881 vs -$0.99333888 actual. Final reviewed XRP boundary bars finish at 13:09 and 13:24 IST. Depth estimates paired all ten at 15 minutes and nine at 30. There were zero winners in either arm, with mean net changes of -$0.14583150 and -$0.26792257. One 30-minute estimate could not be scored because neither the reference candle nor timely depth provided an executable price. 15-minute estimate: 9/10 matched, 1 unavailable, actual matched win rate 0.0%, modeled 0.0%, -$0.1620 mean net change per matched trade. 30-minute estimate: 7/10 matched, 3 unavailable, actual matched win rate 0.0%, modeled 0.0%, -$0.3271 mean net change per matched trade. Matched subsets remain small. Keep the ten-minute timer while independent evidence is collected.",
+            "risk_costs": "Gross loss was $1.13850000, commissions were $1.07124403 and funding was zero. The one positive gross trade lost after fees. Maximum planned position loss was $3.244124. Same-day loss plus maximum reserve peaked at $24.07382615. Planned margin ranged from 78.82 to 79.43 percent of available margin. Entry fills cost $0.1695 less than using the recorded preflight asks for the same quantities. The record lacks matched executable exit quotes for measuring round-trip slippage.",
+            "execution": "Ten owned lots opened and closed three contracts within their IOC limits, with both protective brackets verified and 10-minute exits filled on the first attempt. Submit delays were 0.640 to 7.564 seconds. Exchange fills followed within 0.344 seconds. One separate attempt stopped at a BTC quote guard before sending. In the next attempt the BTC IOC received zero fills due to insufficient order-book quantity. Neither produced a verified lot.",
+            "reconciliation_validation": "The signed Delta India testnet re-read matched all twenty fills, twenty commissions and ten cashflows for closes 131 through 140. Excel and wallet match. Three correlated baskets contributed four, three and three trades. Close 141 was a SOL loss of $1.06013401 and belongs to the next group. The first 140 verified closes show 32 wins and -$16.99237200 net."
+          },
+          "manager": {
+            "findings": "This ten-trade group lost $2.20974403 after costs, with zero winners. Gross was down 11.28 basis points and commissions cost another 10.61 basis points of entry notional. Two READY and eight WAIT trades lost money. The recorded gross price loss persisted across the coin mix. The first 140 positions cover 44 source baskets. Current review evidence supports prospectively testing whether a breakout remains above its reference high at the time of the executable quote. Official 30-minute matched net was -$4.16996098 vs -$1.88010154 realized for seven entries. Across the first 140 closes the 84 official 15-minute pairs went from 19 to 18 wins and fell by $0.05439092 net per pair. The 61 official 30-minute pairs went from 14 to 19 wins and fell by $0.02476677 net per pair. Both modeled aggregates were negative. 15-minute estimate: 9/10 matched, 1 unavailable, actual matched win rate 0.0%, modeled 0.0%, -$0.1620 mean net change per matched trade. 30-minute estimate: 7/10 matched, 3 unavailable, actual matched win rate 0.0%, modeled 0.0%, -$0.3271 mean net change per matched trade. Comparisons use matched entries only and are excluded from accounting.",
+            "recommendation": "Retain three contracts, the ten-minute hold and the frozen four-READY test. In separate prospective research, record closed-bar excess over the prior high, quote spread and age, and the pre-submit midpoint relative to that high. Evaluate after-cost continuation using signals available before order submission, and measure fill retention, guarded entries and no-fills as outcomes. Compare matched baskets and days and include opportunities skipped by a proposed rule."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "The measured longer holds worsened on their available pairs and the reviewed entry signals came from three related baskets. Keep the frozen protocol and agreed limits while gathering independent evidence on executable breakout continuation."
+          }
+        }
       }
     },
     "candidate_registry": {
