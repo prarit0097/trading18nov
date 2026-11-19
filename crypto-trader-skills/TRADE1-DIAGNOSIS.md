@@ -45,9 +45,22 @@ The first 200 verified closes supplied 125 official 15-minute comparisons with a
 
 For trades 201–204, public funding observations supported three 30-minute pairs. Actual net was −$0.09415667 and modeled net was +$0.76022516 on those three entries. DOGE remained unavailable because its modeled window crossed a scheduled funding settlement. The replay used 242 frozen funding observations and reproduced offline.
 
+For trades 205–208, public funding observations supported three 30-minute pairs. On the matched entries, actual net was +$0.33751517 and modeled net was +$0.44840151, a +$0.11088634 change. Both had two winners. BTC and ETH used the last completed traded-minute close. XRP used the captured bid for three contracts because its reference minute had no traded volume. DOGE crossed the 19:30 IST funding settlement and remains unavailable under the replay method. The saved replay reproduces offline from 246 public funding observations, eight candle frames and four deadline books. [Frozen replay](runs/trade1/funding-aware-replay-demo-1795095884198295200-30.json) · [Deadline books](runs/trade1/shadow-books-demo-1795095884198295200-30.json)
+
 The first pre-intent order-book test observed four full fills in one basket. The public depth rule and both baselines each matched all four, and the basket realized −$0.13113568 after costs. Test collection and exchange timestamps use different clocks. Use venue-to-venue intervals for exchange timing and comparable local receipts for pre-intent feature selection.
 
-For the last ETH trade, the 15-minute reference is verified at −$0.05484015 modeled against −$0.00819768 realized. The 30-minute reference becomes eligible at 19:57 IST on 19 November. The public 30-minute replay for trades 205–208 also depends on funding evidence through its own deadline. Estimated P&L remains outside realized trade totals. Review 21 requires one more verified trade in a future authorized run.
+The last ETH trade's 30-minute estimate was −$0.17022110, compared with −$0.00819768 realized and a 15-minute estimate of −$0.05484015. The 30-minute replay used the $1,807.30 traded-minute close, 5 basis points of modeled exit slippage, the entry commission and the actual exit commission rate. The modeled extension falls within one UTC hour and assumes zero incremental funding. The deadline book passed validation. [Final ETH deadline book and replay](runs/trade1/shadow-books-demo-1795096568677222600-30.json)
+
+| Entry order | Coin | Realized net USD | 30-minute modeled net USD | Modeled less realized |
+| --- | --- | ---: | ---: | ---: |
+| 2178823706 | BTCUSD | +$0.31723238 | +$0.37879043 | +$0.06155805 |
+| 2178823712 | ETHUSD | +$0.02043853 | +$0.07424944 | +$0.05381091 |
+| 2178823719 | XRPUSD | −$0.00015574 | −$0.00463836 | −$0.00448262 |
+| 2178823728 | DOGEUSD | −$0.02198061 | Unavailable | — |
+| 2178824849 | ETHUSD | −$0.00819768 | −$0.17022110 | −$0.16202342 |
+| **Four matched entries** | | **+$0.32931749** | **+$0.27818041** | **−$0.05113708** |
+
+The last two batches have four matched estimates and one unavailable reference. Both horizons had two net winners on the four matched entries. This same-day, two-basket comparison supports further testing of duration and execution costs. It is too small to qualify a new holding rule. The workbook's default Exit research sheet records 131 estimated 15-minute and 96 estimated 30-minute comparisons, with zero pending. The supplemental funding replay supplies the three cross-hour estimates linked above. Realized P&L is based on settled fills and wallet postings. Review 21 has nine verified trades.
 
 ## Data sources
 

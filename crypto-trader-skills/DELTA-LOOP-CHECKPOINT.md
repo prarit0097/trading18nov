@@ -1244,4 +1244,10 @@ Trades 205–208 previously reconciled with eight signed fills and 12 wallet pos
 
 The pause cohort is 209 verified trades with 49 net winners, −$23.90119818 net and 20 finalized reviews. Review 21 has nine verified members. [The diagnosis handoff](TRADE1-DIAGNOSIS.md) records coin and signal breakdowns, evidence sources and remaining reference windows. The local workbook path reported a sharing error, and the same builder exported an isolated snapshot. Once the lock cleared, the canonical workbook refreshed successfully at 19:39:03 IST and matched the verified pause cohort. The observer remains active under the entry hold. Weekly quota was 66% remaining and the five-hour reading was unavailable.
 
-The final ETH lot's 15-minute book passed capture checks. The candle-based estimate was −$0.05484015 versus the signed actual −$0.00819768. Its 30-minute reference remains pending until 19:57 IST.
+The final ETH lot's 15-minute book passed capture checks. The candle-based estimate was −$0.05484015 versus the signed actual −$0.00819768.
+
+### Trade 1 paused research closeout — 19 November, 19:57 IST
+
+The 30-minute deadline books passed validation for all five positions across the last two batches. In trades 205–208, the cross-hour funding replay matched BTC, ETH and XRP with +$0.33751517 actual and +$0.44840151 modeled net. DOGE's modeled position crossed its scheduled funding settlement and remained unavailable. The three-pair result reproduced offline from frozen market inputs.
+
+The final ETH lot's 30-minute estimate was −$0.17022110 against −$0.00819768 realized. Across four matched entries from the two batches, 30 minutes modeled +$0.27818041 versus +$0.32931749 realized, a reduction of $0.05113708 with two wins in each case. The [diagnosis handoff](TRADE1-DIAGNOSIS.md#duration-and-execution-evidence) lists each comparison. The workbook records 96 default 30-minute estimates and zero pending references. The goal is paused with zero new entries after the hold and 209 verified closes.

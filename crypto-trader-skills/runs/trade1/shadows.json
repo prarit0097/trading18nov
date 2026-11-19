@@ -7653,8 +7653,10 @@
         "observed_at": "2026-11-19T14:06:29.340341+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T14:15:05.727003+00:00"
       }
     ]
   },
@@ -7688,8 +7690,10 @@
         "observed_at": "2026-11-19T14:06:29.340341+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T14:15:05.727003+00:00"
       }
     ]
   },
@@ -7719,8 +7723,10 @@
         "observed_at": "2026-11-19T14:06:29.340341+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T14:15:05.727003+00:00"
       }
     ]
   },
@@ -7750,8 +7756,10 @@
         "observed_at": "2026-11-19T14:06:29.340341+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "unavailable",
+        "reason": "Incomplete or ambiguous price/cost history: Additional funding unverified across UTC hour",
+        "minutes": 30,
+        "observed_at": "2026-11-19T14:15:05.727003+00:00"
       }
     ]
   },
@@ -7785,8 +7793,14 @@
         "observed_at": "2026-11-19T14:12:29.601237+00:00"
       },
       {
-        "status": "pending",
-        "minutes": 30
+        "status": "estimated",
+        "exit_price": "1806.39635",
+        "fees": "0.05761159983760514405563527983",
+        "funding": "0",
+        "net_pnl": "-0.1702210998376051440556352798",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 30,
+        "observed_at": "2026-11-19T14:27:28.494998+00:00"
       }
     ]
   }
