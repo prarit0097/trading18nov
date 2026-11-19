@@ -4825,8 +4825,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "63571.19850",
+        "fees": "0.2028744586930028969123154102",
+        "funding": "0",
+        "net_pnl": "-0.8367789586930028969123154102",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T07:22:53.324142+00:00"
       },
       {
         "status": "pending",
@@ -4854,8 +4860,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "1801.69870",
+        "fees": "0.05750888827459898083527196189",
+        "funding": "0",
+        "net_pnl": "-0.2585478882745989808352719619",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T07:22:53.324142+00:00"
       },
       {
         "status": "pending",
@@ -4883,8 +4895,14 @@
     ],
     "results": [
       {
-        "status": "pending",
-        "minutes": 15
+        "status": "estimated",
+        "exit_price": "0.98100925",
+        "fees": "0.003130275223870229007633587786",
+        "funding": "0",
+        "net_pnl": "-0.01210252522387022900763358779",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T07:22:53.324142+00:00"
       },
       {
         "status": "pending",
@@ -4908,6 +4926,99 @@
       "0.121068",
       "0",
       "-0.35307706",
+      "SOLUSD"
+    ],
+    "results": [
+      {
+        "status": "estimated",
+        "exit_price": "75.8000810",
+        "fees": "0.2418175300308552848097099904",
+        "funding": "0",
+        "net_pnl": "-0.8415745300308552848097099904",
+        "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+        "minutes": 15,
+        "observed_at": "2026-11-19T07:22:53.324142+00:00"
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178789079": {
+    "signature": [
+      "2026-11-19T07:12:42.511822Z",
+      "2026-11-19T07:22:45.452776Z",
+      "ten_minute",
+      "1805.05",
+      "1803.55",
+      3,
+      "0.01",
+      "long",
+      "1786.10",
+      "1840.25",
+      "0.05748502",
+      "0.02873056",
+      "0",
+      "-0.01248502",
+      "ETHUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178789084": {
+    "signature": [
+      "2026-11-19T07:12:44.214880Z",
+      "2026-11-19T07:22:46.410609Z",
+      "ten_minute",
+      "0.981",
+      "0.982",
+      3,
+      "1",
+      "long",
+      "0.9731",
+      "1.0028",
+      "0.00312707",
+      "0.00156433",
+      "0",
+      "-0.00612707",
+      "XRPUSD"
+    ],
+    "results": [
+      {
+        "status": "pending",
+        "minutes": 15
+      },
+      {
+        "status": "pending",
+        "minutes": 30
+      }
+    ]
+  },
+  "2178789090": {
+    "signature": [
+      "2026-11-19T07:12:46.327987Z",
+      "2026-11-19T07:22:47.263820Z",
+      "ten_minute",
+      "75.803",
+      "75.91",
+      3,
+      "1",
+      "long",
+      "75.1518",
+      "77.4294",
+      "0.24167881",
+      "0.12092463",
+      "0",
+      "-0.56267881",
       "SOLUSD"
     ],
     "results": [

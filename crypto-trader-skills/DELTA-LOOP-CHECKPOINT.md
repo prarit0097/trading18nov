@@ -867,3 +867,11 @@ Batch `demo-1795071688161949600` filled BTC, ETH, XRP and SOL at three contracts
 The signed Delta India testnet fills endpoint confirmed eight fills at three contracts per side in `demo-1795071688161949600`. Twelve wallet postings match −$0.48750000 gross, $0.50583888 commissions, zero funding and −$0.99333888 net. BTC, ETH, XRP and SOL all closed on their original timers. Workbook and ledger match at 134 confirmed closes, thirteen finalized reviews and −$15.77596685 cumulative net. The four closes will carry into review 14.
 
 The first next-batch attempt stopped before submission after BTC moved outside the saved quote bounds. The following attempt `demo-1795072359995157600` filled three contracts each for ETH, XRP and SOL. BTC filled zero. Stop-loss and target orders were verified for the three open positions. Fees-inclusive risk was $4.9241106 and their first-fill deadlines are 12:52:42.512–12:52:46.328 IST. The public 15- and 30-minute depth captures were started.
+
+### Trades 135–137 — 19 November, 12:54 IST
+
+The public 15-minute comparison for `demo-1795071688161949600` matched all four entries. It gave −$1.94900390 modeled net versus −$0.99333888 realized at ten minutes. There were no winners in either arm.
+
+The three filled positions in `demo-1795072359995157600` all closed on their original timers. The signed Delta India testnet read confirmed six fills, with three contracts per side for ETH, XRP and SOL. Nine wallet postings reconcile −$0.27900000 gross, $0.30229090 commissions, zero funding and −$0.58129090 net. Excel and the ledger match at 137 verified closes, thirteen finalized reviews and −$16.35725775 cumulative net. The next three verified closes will complete review 14 membership.
+
+Batch `demo-1795072981751446300` filled three contracts each for BTC, ETH, XRP and SOL. Both protection orders were verified for each position. Combined planned risk was $7.7165684 including fees. Their individual deadlines are 13:03:02.998–13:03:08.583 IST. The 15- and 30-minute public depth captures were started.
