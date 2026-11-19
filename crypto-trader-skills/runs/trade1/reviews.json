@@ -11334,10 +11334,10 @@
         }
       },
       "19877955c736906bc6eb7ebb0367643a6acd35501c26f1fb0fcb1d7d466cace0": {
-        "status": "awaiting_manager",
+        "status": "reviewed",
         "settlement_verified": true,
-        "evidence_sha256": "4ea7e11219f57698b8bcee97c2ca3eb90a8c1bf8d9d5d291dec92aa6618f4d81",
-        "queued_at": "2026-11-19T09:33:16.935147+00:00",
+        "evidence_sha256": "f370911a133ec17c2f97b6f9c3ecc684418759864de3c6131eed7bebad245c7c",
+        "queued_at": "2026-11-19T09:44:29.611998+00:00",
         "evidence": [
           {
             "order_id": "2178793826",
@@ -11978,8 +11978,14 @@
                 "observed_at": "2026-11-19T09:29:33.995557+00:00"
               },
               {
-                "status": "pending",
-                "minutes": 30
+                "status": "estimated",
+                "exit_price": "1805.79665",
+                "fees": "0.05749690664447331928111826048",
+                "funding": "0",
+                "net_pnl": "0.00990259335552668071888173952",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 30,
+                "observed_at": "2026-11-19T09:44:29.611998+00:00"
               }
             ]
           }
@@ -12004,12 +12010,12 @@
               "mean_paired_change_usd": "0.08257828388023896400643596045"
             },
             "30": {
-              "pairs": 6,
-              "pending": 1,
+              "pairs": 7,
+              "pending": 0,
               "unavailable": 3,
-              "actual_win_rate": 0.3333333333333333,
-              "modeled_win_rate": 0.3333333333333333,
-              "mean_paired_change_usd": "-0.1456091404593666566370669585"
+              "actual_win_rate": 0.2857142857142857,
+              "modeled_win_rate": 0.42857142857142855,
+              "mean_paired_change_usd": "-0.1119718684858104655862171444"
             }
           }
         },
@@ -12022,7 +12028,25 @@
           "reconciliation_validation"
         ],
         "workflow": "campaign_v1",
-        "outcome": "losing"
+        "outcome": "losing",
+        "reviewed_at": "2026-11-19T09:46:12.365100+00:00",
+        "decision": {
+          "specialists": {
+            "market_data": "Nine trades entered on WAIT. The only READY was XRP, which lost $0.00463743 after entry at $0.985. A replay of public five-minute candles put READY breadth at 0, 0, 1 and 1 across the four decision times. All four wins came from one WAIT basket. The last BTC IOC filled zero despite a checked ask $1 inside its buy limit. The journal did not capture executable size. The SOL ask exceeded its cap and the lot was stopped before submission. Test whether contemporaneous available quantity within the cap predicts complete three-contract fills, while recording quote age, symbol and pre-submit stops separately.",
+            "entry_exit": "All ten positions used their ten-minute timers. Eight official 15-minute pairs had four winners in both cases and a mean modeled improvement of $0.08257828. Supplemental depth covered all ten with the same four winners and a mean modeled improvement of $0.07592137. Seven official 30-minute comparisons increased winners from two to three, with mean net down $0.11197187. Supplemental depth gave nine 30-minute pairs, increasing winners from three to four and reducing average net $0.08724990. Three official 30-minute observations lacked usable references. Depth recovered two. Timed-price estimates use one-minute mark bars for brackets, five basis points of exit slippage, the actual fee rate and assumed zero incremental funding.",
+            "risk_costs": "Gross gain was $0.86400000. Commissions were $1.06802220, funding was zero and total net was -$0.20402220. All twenty commissions matched wallet debits. At the observed prices a commission reduction of about 19.1 percent would have been needed to break even, with achievable fees and fill rates unverified. Peak planned lot risk including fees was $3.2217908. Same-day loss plus basket reserve reached $27.36795264. Planned margin usage reached 79.87 percent and leverage stayed within five times.",
+            "execution": "All ten entries and exits filled all three contracts. Stops and targets were verified. Every exit filled on the first timed attempt. XRP close 151 was the 12.405-second submission delay in the same execution wave as the previous review's ETH outlier. The subsequent nine closes had no new delay above ten seconds. Their maximum submission delay was 6.766 seconds. All ten venue fills followed submission within 0.665 seconds. Check cycle phase timestamps and quote depth before assigning the delay to reconciliation or estimating its cost.",
+            "reconciliation_validation": "The signed audit matched ten distinct closed positions, twenty fills, twenty commissions, ten wallet cashflows and zero funding. The first 160 closes produced 37 wins and -$19.74478721 net across 50 source baskets. Close 161 is excluded and brings the workbook to -$19.75092544. The review groups ten closes from four baskets on one day, with a single basket providing every winner. These dependencies and uneven replay coverage limit generalization."
+          },
+          "manager": {
+            "findings": "The review's $0.86400000 gross profit failed to cover $1.06802220 in commissions. All four after-cost winners came from one WAIT basket. The first 160 verified trades have 37 winners over 50 source baskets, net -$19.74478721 and mean -$0.12340492. The 101 cumulative official 15-minute comparisons reduced winners from 24 to 22 and average net by $0.04248484. The 77 official 30-minute comparisons increased winners from 17 to 22 and reduced average net by $0.04584465. The matched subsets differ and the trades are correlated within baskets. Neither comparison establishes an improvement in both outcomes.",
+            "recommendation": "Retain the current exit, IOC limits and frozen four-READY study. Prospectively measure timestamped displayed ask quantity inside each existing IOC limit, quote age and sent quantity just before submission. Compare predicted fill quantity with actual full, partial and zero fills, keeping guarded unsent lots distinct. Report fill-rate calibration and after-fee net USD per planned basket, with unknown depth recorded as unknown. Evaluate across later independent baskets and days before considering any execution or strategy change."
+          },
+          "ceo": {
+            "decision": "retain_current",
+            "rationale": "Retain the three-contract size, ten-minute exit, IOC guards and frozen four-READY validation. The seven matched 30-minute estimates improved the descriptive win rate and reduced mean net. The broader 15-minute estimates reduced both measures. Require independent evidence for a promotion."
+          }
+        }
       }
     },
     "candidate_registry": {
