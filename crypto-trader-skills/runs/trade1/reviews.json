@@ -12104,8 +12104,8 @@
       "726da93f8aba7aa1c39c7735a8f88be2b58097ed6f16aae29ece1354afef548c": {
         "status": "awaiting_manager",
         "settlement_verified": true,
-        "evidence_sha256": "aec180741e5b6e71ea795bebfe06e3cbaa0a39a99b6e08732616fc9e0fa1f3cf",
-        "queued_at": "2026-11-19T10:18:02.169418+00:00",
+        "evidence_sha256": "28e5b8850ab8b1570e341c8407f1b0675f7be5582fcd01f6be7984c5be994d6f",
+        "queued_at": "2026-11-19T10:23:39.714299+00:00",
         "evidence": [
           {
             "order_id": "2178797838",
@@ -12692,8 +12692,14 @@
             "exit_reason": "ten_minute",
             "shadow_exits": [
               {
-                "status": "pending",
-                "minutes": 15
+                "status": "estimated",
+                "exit_price": "63814.57675",
+                "fees": "0.2033577377576614052395045489",
+                "funding": "0",
+                "net_pnl": "-0.2871274877576614052395045489",
+                "method": "1m mark brackets / last completed trade close, 5bp exit slippage, actual fee rate, zero incremental funding assumed",
+                "minutes": 15,
+                "observed_at": "2026-11-19T10:23:39.714299+00:00"
               },
               {
                 "status": "pending",
@@ -12714,12 +12720,12 @@
           "max_drawdown_usd": "0.74844085",
           "exit_comparison": {
             "15": {
-              "pairs": 4,
-              "pending": 1,
+              "pairs": 5,
+              "pending": 0,
               "unavailable": 5,
-              "actual_win_rate": 0.5,
+              "actual_win_rate": 0.4,
               "modeled_win_rate": 0.0,
-              "mean_paired_change_usd": "-0.2598262089742209035662418902"
+              "mean_paired_change_usd": "-0.235700126730909003900894422"
             },
             "30": {
               "pairs": 0,

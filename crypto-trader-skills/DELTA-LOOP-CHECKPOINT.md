@@ -1009,3 +1009,9 @@ Batch `demo-1795082853511537900` settled four three-contract positions through e
 Review 17 contains closes 161–170. The last included trade is BTC from this basket. The remaining ETH, XRP and SOL closes belong to review 18. An independent signed account read matched 20 fills, 20 commission debits and ten cashflows for review 17. The group had two winners across four represented baskets, all ten entries were WAIT, and $0.54000000 gross fell to −$0.67563914 net after $1.21563914 of commissions. Funding was zero. The latest BTC entry becomes eligible for final horizon observations at 15:53 and 16:08 IST.
 
 The 15-minute supplemental replay for trades 166–169 matched all four positions after depth supplied a usable XRP reference. It moved from two winners and +$0.09831845 realized to zero winners and −$0.94398479 modeled. The 30-minute depth replay for trades 162–165 left all four estimates unavailable due to unverified incremental funding across 10:00 UTC.
+
+### Review 17 team findings — 19 November, 15:54 IST
+
+The five specialists and profitability manager reviewed closes 161–170. All were WAIT, and both winners came from one basket. The five official 15-minute pairs went from two winners to zero, with mean net down $0.23570013. Depth supplied one additional XRP estimate and the six-pair mean change was −$0.19766199. Across the first 170 closes, 106 official 15-minute pairs moved from 26 to 22 winners and mean net fell by $0.05159877. Five official 30-minute estimates remain pending.
+
+The manager prioritized recording exit phases from observer wake and account reads through the journaled send and exchange fill. All four delayed exits from the last basket had exchange creation-to-fill under 5.4 ms. The available journals place the delay before the submit timestamp without identifying the slow phase. The current timer and risk rules remain in effect. The observer is flat and waiting for final 30-minute evidence.

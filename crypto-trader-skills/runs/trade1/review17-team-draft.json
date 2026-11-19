@@ -1,0 +1,36 @@
+{
+  "review_id": "726da93f8aba7aa1c39c7735a8f88be2b58097ed6f16aae29ece1354afef548c",
+  "order_ids": [
+    "2178797838",
+    "2178800458",
+    "2178800461",
+    "2178800466",
+    "2178800471",
+    "2178801041",
+    "2178801044",
+    "2178801051",
+    "2178801057",
+    "2178801700"
+  ],
+  "status": "awaiting_terminal_exit_comparisons",
+  "evidence_sha256_at_draft": "28e5b8850ab8b1570e341c8407f1b0675f7be5582fcd01f6be7984c5be994d6f",
+  "specialists": {
+    "market_data": "All ten entries were WAIT. Public closed five-minute candles put READY breadth at 1, 0, 0 and 0 in the represented decisions, with DOGE the sole READY coin and outside its basket. Both wins came from one basket. Five of the eight observable IOC fills belong to this review. All eight forecasts matched full fills, and six snapshots repeated a book last changed more than one second earlier. The earlier BTC zero-fill and SOL price-guard stop had no paired depth. Prospectively record both exchange book-change and receipt times and report full, partial, zero-fill and unsent counts by basket.",
+    "entry_exit": "The ten positions closed through the ten-minute timer. Five official 15-minute comparisons turned two winners into zero and changed mean net by -$0.23570013. Depth recovered one missing XRP estimate, giving six pairs and mean change -$0.19766199 with the same two lost winners. Four trades lacked additional funding evidence across the UTC hour at both horizons. The 30-minute comparison remained incomplete, with five pending and no official pairs. One supplemental XRP estimate remained a loss and improved by $0.00601630. The last complete 30-minute reference becomes eligible at 16:08 IST.",
+    "risk_costs": "Gross profit of $0.54000000 did not cover $1.21563914 in commissions. Funding was zero and net was -$0.67563914. Peak planned position risk was $3.2203424, peak day loss plus reserve was $28.08129031 and leverage stayed at or below five times. Planned initial margin ranged from 69.63 to 70.10 percent of available. The exit delay extended exposure and its P&L impact is unmeasured.",
+    "execution": "The exchange independently confirmed ten full three-contract reduce-only market exits. The last reviewed BTC close was submitted 11.761 seconds late. The three subsequent positions in its basket also submitted 10.051 to 11.286 seconds late. Exchange order creation to fill was under 5.4 milliseconds across that basket. Timing evidence places the delays before submission. The observer creates an MCP session and reconciles paginated history before per-lot exit checks. At this scale the observed page counts imply at least ten history reads. There are no retained phase timings to isolate the cause.",
+    "reconciliation_validation": "Independent verification matched twenty distinct fills, twenty commission debits and ten cashflows with zero funding. The group covers closes 161 through 170 across four basket slices and excludes ETH, XRP and SOL closes 171 through 173. The two winners came from one basket. The group net was -$0.67563914, drawdown was $0.74844085 and net excluding its best trade was -$0.87007861. The first 170 trades have 39 wins across 53 source baskets, with net -$20.42042635. All 173 settle to -$21.18074871."
+  },
+  "manager": {
+    "findings": "Gross performance of 4.72 basis points on $1,144.3995 in entry notional fell short of 10.62 basis points of round-trip commissions. There was no four-READY decision. The final 15-minute sample weakened win rate and mean net. Across the first 170 closes, 106 official 15-minute pairs moved from 26 to 22 winners and reduced mean net by $0.05159877. The 30-minute sample is still pending. The latest delayed basket justifies measuring pre-submit phases separately from the hold-duration decision.",
+    "recommendation": "Retain the ten-minute timer, three-contract exposure, IOC guards and frozen four-READY test. Prospectively measure observer wake and session startup, the account and history reads, each due check, pre-submit and acknowledgement, along with exchange creation and fill timestamps. Record monotonic phase durations, queue size and basket association. Compare per-basket due-to-send median, 95th percentile and fraction above ten seconds. Reproduce the observed phases offline before considering a scheduling change. For IOC research, distinguish missing depth, repeated books and guarded orders from partial or zero fills."
+  },
+  "ceo": {
+    "decision": "retain_current",
+    "rationale": "Keep current order size, timer and risk limits. The available paired evidence and two IOC probes support further measurement. Observe timer phases before changing execution and preserve the frozen later test for any performance change."
+  },
+  "comparison_eligible_at_ist": {
+    "15": "2026-11-19T15:53:00+05:30",
+    "30": "2026-11-19T16:08:00+05:30"
+  }
+}
