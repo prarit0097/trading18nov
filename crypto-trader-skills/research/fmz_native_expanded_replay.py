@@ -112,7 +112,7 @@ def summary(work):
     print(Counter(x["reason"] is None for x in stats))
 
 
-def order_metrics(record, trial):
+def order_metrics(record, trial, *, market_buy_fee_on_turnover=False):
     feed = trial["feed"]
     begin, end = (stamp(feed[k]) * 1000 for k in ("start", "end"))
     assert end - 60000 <= record["last"]["Time"] <= end
@@ -134,7 +134,9 @@ def order_metrics(record, trial):
         assert candle[5] > 0
         turnover = amount * average
         if row["Type"] == 0:
-            costs = turnover * FEE / (1 - FEE) if row["Price"] == 0 else turnover * FEE
+            costs = turnover * FEE
+            if row["Price"] == 0 and not market_buy_fee_on_turnover:
+                costs /= 1 - FEE
             lots.append((amount, average, costs / amount))
             cash -= turnover + costs
             stocks += amount
