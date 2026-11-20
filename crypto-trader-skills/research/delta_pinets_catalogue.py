@@ -111,7 +111,7 @@ def eligibility(block):
     return None
 
 
-def datasets(reference, later, archive_reports, interval):
+def datasets(reference, later, archive_reports, interval, *, align_epoch=False):
     manifest = read(REFERENCES)
     windows, meta = {}, {}
     for label, start, end, path in [
@@ -125,9 +125,11 @@ def datasets(reference, later, archive_reports, interval):
     ]:
         candles, hashes = load(path)
         assert all(x["candle_sha256"][label] == hashes for x in archive_reports)
-        windows[label] = {
-            s: aggregate(candles[s], stamp(start), stamp(end), interval) for s in COINS
-        }
+        first, stop = stamp(start), stamp(end)
+        if align_epoch:
+            first = ((first + interval - 1) // interval) * interval
+            stop = (stop // interval) * interval
+        windows[label] = {s: aggregate(candles[s], first, stop, interval) for s in COINS}
         meta[label] = {
             "start_ist": start,
             "end_ist_exclusive": end,
