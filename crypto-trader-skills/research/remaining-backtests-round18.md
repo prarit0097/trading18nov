@@ -1,0 +1,12 @@
+# Remaining strategy backtests · Round 18
+
+Five verified historical replays add 27 workbook rows. The original 785-ID queue has 346 pending and 439 resolved. The catalogue now has 5,536 tested entries.
+
+- FMZ #4703 ran the archived v4 daily pivot logic across BTC and ETH. Official hourly prices verified all 24 fills. The period ended with 11 closed lots and two open positions. [Replay and assumptions](fmz-round18-4703.md)
+- FMZ #1216 kept the archived 50,000 USDT opening capital and session and bracket rules. Its saved 2023 window generated zero fills. Two comparison windows closed 19 trades. The archived five-minute base changed six fill outcomes compared with a 15-minute-only replay. [Bracket and session checks](fmz-round18-1216.md)
+- FMZ #5745 used the author's configurable VIX symbol, set to official Cboe VIX. The literal `swap` alias remains unidentified. The prior completed Cboe session feeds each UTC crypto day. A Pine trace and separate order reconstruction agreed on all 206 closed positions. With both markets pooled, 100 positions won and settled P&L was −13,175.16 USDT after the 0.075% per-side fee overlay. [Replay and fills](fmz-round18-5745.json) · [Cboe data](https://www.cboe.com/tradable_products/vix/vix_historical_data)
+- FMZ #5457 replayed the restored moving average crossover, two partial targets and protective stop. It recorded 45 completed positions and 83 realized exit legs. Win rate uses completed positions. P&L and drawdown include the realized legs. [Pine trace and independent accounting](fmz-round19-pine-partials.json)
+- FMZ #3742 ran the restored six-indicator strategy on BTC and ETH daily charts for 2023 and 2024. The archive supplies no original chart interval or venue, so these are labelled research comparisons. Both engines and an independent reconstruction agreed on 91 closed lots. [Indicator and next-open checks](fmz-round20-pine-factors.json)
+- KuMEX #5661 remains pending. Ten isolated controls checked the timestamp gate and legacy SDK order serialization. The public chart and documentation leave the original settings, venue, event clock and limit fills unresolved. [Driver evidence](fmz-kumex-breakout-bindings-round18.json)
+
+The workbook check compared all earlier results, all 351 candidate statuses, the 27 new result rows, and the table range. Delta Demo remains paused. [Per-strategy audit](remaining-backtest-round18-coverage.json)

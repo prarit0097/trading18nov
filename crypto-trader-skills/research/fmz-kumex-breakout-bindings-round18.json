@@ -1,0 +1,460 @@
+{
+  "coverage": [
+    [
+      5661,
+      "Pending · KuMEX original settings and limit fills",
+      "The public BTC/USDT chart does not identify the venue, contract or required numeric settings. Exact offline driver and classic SDK controls reproduced the timestamp gate, a signed short-close size incompatible with the documented positive order quantity, and two same-tick GTC sell intents. Authored settings, legacy event-clock semantics and independent fill evidence are needed for performance."
+    ]
+  ],
+  "results": [],
+  "scope": "Offline source and contract investigation. No historical ledger or performance metric was produced.",
+  "source": {
+    "title": "震荡突破策略",
+    "publisher": "巴啦啦小魔仙",
+    "archive": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%9C%87%E8%8D%A1%E7%AA%81%E7%A0%B4%E7%AD%96%E7%95%A5.md",
+    "archive_document_sha256": "e307a45a73eb6d86b29c69c00161a9961068133405bb0dfacf40942184dc1559",
+    "archive_code_sha256": "d08a1886a3f7ef568d1e8a1ad575cb9bfcf8079e0846139602102fb1b484cb06",
+    "archive_zip_sha256": "a231a84e9f994446fe8a2ba89a7fda15e804b02f175c0bf608214a7f55295a9f",
+    "archive_last_modified": "2021-03-04 10:13:22",
+    "document_lines": {
+      "rules_and_symbolic_threshold": [
+        14,
+        26
+      ],
+      "public_hosts": [
+        62,
+        67
+      ],
+      "required_config": [
+        88,
+        101
+      ],
+      "timestamp_gate_and_integer_close": [
+        108,
+        116
+      ],
+      "previous_30_bar_channels": [
+        117,
+        131
+      ],
+      "position_and_limit_order_logic": [
+        133,
+        162
+      ]
+    }
+  },
+  "publisher_evidence": {
+    "publisher": {
+      "url": "https://www.fmz.com/strategy/207155",
+      "status": 200,
+      "sha256": "30dccb007335678c32dbc5eac47751efe0c51bc8c2e6bd6aa05bd8270b7b42f4",
+      "bytes": 674864
+    },
+    "image": {
+      "url": "https://www.fmz.com/upload/asset/15f35e56ef95b1f550644.png",
+      "status": 200,
+      "sha256": "9912106910583ccac61c4e2f5e9bae21a589a955374e3fc83fe2b58295f657cb",
+      "bytes": 472476
+    },
+    "profile": {
+      "url": "https://www.fmz.com/user/9bb3fd5a39586a7add39abadc31dcbdb",
+      "status": 200,
+      "sha256": "5c2b3d6856046e92f9de5728df388810de65152b9c5734fc67431e92a45da6d8",
+      "bytes": 487393
+    },
+    "figure": "The chart title says BTC/USDT oscillation breakout strategy signal plot. Labeled dates are April 9–15, 2020. The plot leaves venue, product ID, bar resolution, numeric threshold, leverage and size unspecified.",
+    "required_settings_not_found": [
+      "symbol",
+      "resolution",
+      "valve",
+      "leverage",
+      "size"
+    ],
+    "public_strategy_parameter_defaults": {},
+    "public_page_scope": "The publisher's visible strategy article, source preview, figure and profile were checked. The copy action asks for a sign-in. Neither the public preview nor profile exposed a matching config.json. The public article describes the threshold symbolically as a."
+  },
+  "venue_evidence": {
+    "notice": "https://www.kucoin.com/announcement/en-kucoin-futures-launches-usdt-perpetual-futures-contract",
+    "notice_interpretation": "KuCoin announced the USDT-settled BTC perpetual for March 30, 2020, before the dated BTC/USDT figure. That makes the linear BTC product plausible, but does not identify the author's symbolic config or chart feed. An inverse BTC/ETH replay would use a distinct contract.",
+    "contract_metadata": [
+      {
+        "requested_symbol": "XBTUSDTM",
+        "url": "https://api-futures.kucoin.com/api/v1/contracts/XBTUSDTM",
+        "sha256": "474f2e468c5d15b0ccd08959cd97b875a7e8386d6b673768f17c5d4f38f4113a",
+        "fields": {
+          "symbol": "XBTUSDTM",
+          "firstOpenDate": 1585555200000,
+          "baseCurrency": "XBT",
+          "quoteCurrency": "USDT",
+          "settleCurrency": "USDT",
+          "lotSize": 1,
+          "isInverse": false
+        }
+      },
+      {
+        "requested_symbol": "XBTUSDM",
+        "url": "https://api-futures.kucoin.com/api/v1/contracts/XBTUSDM",
+        "sha256": "5c7ab4eaf4c93ad2c9f57230b0b2b8e934ec8b27718329bd3e49801f0074b0f3",
+        "fields": {
+          "symbol": "XBTUSDM",
+          "firstOpenDate": 1552638575000,
+          "baseCurrency": "XBT",
+          "quoteCurrency": "USD",
+          "settleCurrency": "XBT",
+          "lotSize": 1,
+          "isInverse": true
+        }
+      },
+      {
+        "requested_symbol": "ETHUSDTM",
+        "url": "https://api-futures.kucoin.com/api/v1/contracts/ETHUSDTM",
+        "sha256": "d93efb2ccb3d3f23c38414119c083d1a844abfc36d4058bd1d107d5ed791cd2c",
+        "fields": {
+          "symbol": "ETHUSDTM",
+          "firstOpenDate": 1591086000000,
+          "baseCurrency": "ETH",
+          "quoteCurrency": "USDT",
+          "settleCurrency": "USDT",
+          "lotSize": 1,
+          "isInverse": false
+        }
+      },
+      {
+        "requested_symbol": "ETHUSDM",
+        "url": "https://api-futures.kucoin.com/api/v1/contracts/ETHUSDM",
+        "sha256": "d2a0c445809d318b993e5068c38735cc5dbf80b2d7080a4201bdfa4486f2c58d",
+        "fields": {
+          "symbol": "ETHUSDM",
+          "firstOpenDate": 1606737600000,
+          "baseCurrency": "ETH",
+          "quoteCurrency": "USD",
+          "settleCurrency": "ETH",
+          "lotSize": 1,
+          "isInverse": true
+        }
+      }
+    ],
+    "public_candle_probes": [
+      {
+        "day": "2020-04-09",
+        "kind": "archived public driver source",
+        "url": "https://kitchen.kumex.com/kumex-kline/history?symbol=XBTUSDTM&resolution=1&from=1586397600&to=1586397840",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      },
+      {
+        "day": "2020-04-09",
+        "kind": "current public official candle endpoint",
+        "url": "https://api-futures.kucoin.com/api/v1/kline/query?symbol=XBTUSDTM&granularity=1&from=1586397600000&to=1586397840000",
+        "http_status": 200,
+        "response": {
+          "code": "200000",
+          "data": []
+        }
+      },
+      {
+        "day": "2026-10-01",
+        "kind": "archived public driver source",
+        "url": "https://kitchen.kumex.com/kumex-kline/history?symbol=XBTUSDTM&resolution=1&from=1790820000&to=1790820240",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      },
+      {
+        "day": "2026-10-01",
+        "kind": "current public official candle endpoint",
+        "url": "https://api-futures.kucoin.com/api/v1/kline/query?symbol=XBTUSDTM&granularity=1&from=1790820000000&to=1790820240000",
+        "http_status": 200,
+        "response": {
+          "code": "200000",
+          "data": [
+            [
+              1790820000000,
+              83471.9,
+              83528.9,
+              83471.9,
+              83515.2,
+              1078,
+              90025.2933
+            ],
+            [
+              1790820060000,
+              83523.9,
+              83535.8,
+              83522.8,
+              83531.1,
+              489,
+              40847.6748
+            ],
+            [
+              1790820120000,
+              83521.3,
+              83521.3,
+              83485.8,
+              83485.8,
+              145,
+              12107.824
+            ],
+            [
+              1790820180000,
+              83485.8,
+              83492.0,
+              83481.8,
+              83487.2,
+              240,
+              20037.0761
+            ],
+            [
+              1790820240000,
+              83478.2,
+              83492.7,
+              83470.5,
+              83485.4,
+              411,
+              34312.8085
+            ]
+          ]
+        }
+      }
+    ],
+    "probe_interpretation": "The archive's production public candle hostname did not resolve in this environment at either probe. Today's official XBTUSDTM kline endpoint returned zero candles for the sampled four-minute April 2020 query and five rows for an October 2026 query. Legacy timestamp availability and response semantics are still unverified. Applying a completed candle's close at that candle's open timestamp would introduce future knowledge."
+  },
+  "classic_sdk": {
+    "api_source": "https://github.com/Kucoin/kucoin-futures-api-docs/diffs/1?commit=aaa0f168589f887f4496502ad4ad7546f9934f0c&name=main&sha1=fe17b1ff2abd03b27e2faa688828bd7d00409499&sha2=aaa0f168589f887f4496502ad4ad7546f9934f0c&short_path=732ed9a&w=false",
+    "pypi": "https://pypi.org/project/kumex-python/",
+    "archive_receipts": [
+      {
+        "url": "https://files.pythonhosted.org/packages/69/2e/32b3cc535710573c136da86b2c8398c60d1e5da9e42cbaaccfce68009e00/kumex-python-2.0.0.tar.gz",
+        "size": 14955,
+        "sha256": "fb5f80335d60ec6bc33ced4db22b09afda7c4db26ac90278b06c66abebec48b7",
+        "created": "2020-07-07T03:36:38.546977Z",
+        "version": "2.0.0",
+        "file": "kumex-python-2.0.0/kumex/trade/trade.py",
+        "module_sha256": "4249716b6856d34dde1e35d4240e19ed1926efec9a5bcd163aff2c3a892ba8f7",
+        "signature": "self, symbol",
+        "name": "get_position_details"
+      },
+      {
+        "url": "https://files.pythonhosted.org/packages/69/2e/32b3cc535710573c136da86b2c8398c60d1e5da9e42cbaaccfce68009e00/kumex-python-2.0.0.tar.gz",
+        "size": 14955,
+        "sha256": "fb5f80335d60ec6bc33ced4db22b09afda7c4db26ac90278b06c66abebec48b7",
+        "created": "2020-07-07T03:36:38.546977Z",
+        "version": "2.0.0",
+        "file": "kumex-python-2.0.0/kumex/trade/trade.py",
+        "module_sha256": "4249716b6856d34dde1e35d4240e19ed1926efec9a5bcd163aff2c3a892ba8f7",
+        "signature": "self, symbol, side, lever, size, price, clientOid='', **kwargs",
+        "name": "create_limit_order"
+      },
+      {
+        "url": "https://files.pythonhosted.org/packages/ab/9c/8bfa2e29eacb25ce31e11d78c23ca8e6d29c4652af4978c81e6a6fe42bd5/kumex-python-2.0.5.tar.gz",
+        "size": 14871,
+        "sha256": "bdf159c7c40c7e5ba417c3222acac6e76614dded96da08ade5903aaf9460ab1a",
+        "created": "2020-08-31T01:58:36.518238Z",
+        "version": "2.0.5",
+        "file": "kumex-python-2.0.5/kumex/trade/trade.py",
+        "module_sha256": "259c4992175b1a27c34fb1badb876d9cd4dc5292e1c9ce1239d47d10038819a0",
+        "signature": "self, symbol",
+        "name": "get_position_details"
+      },
+      {
+        "url": "https://files.pythonhosted.org/packages/ab/9c/8bfa2e29eacb25ce31e11d78c23ca8e6d29c4652af4978c81e6a6fe42bd5/kumex-python-2.0.5.tar.gz",
+        "size": 14871,
+        "sha256": "bdf159c7c40c7e5ba417c3222acac6e76614dded96da08ade5903aaf9460ab1a",
+        "created": "2020-08-31T01:58:36.518238Z",
+        "version": "2.0.5",
+        "file": "kumex-python-2.0.5/kumex/trade/trade.py",
+        "module_sha256": "259c4992175b1a27c34fb1badb876d9cd4dc5292e1c9ce1239d47d10038819a0",
+        "signature": "self, symbol, side, lever, size, price, clientOid='', **kwargs",
+        "name": "create_limit_order"
+      }
+    ],
+    "interface_evidence": "Both pinned releases forward user size directly to the limit-order API and pass short position currentQty through as signed. The archived venue docs specify positive integer order size, default GTC time-in-force, and default false closeOrder and reduceOnly. The emulator used the SDK 2.0.0 methods under a local API transport."
+  },
+  "offline_controls": {
+    "fixture": "r18_kumex_5661_control.py",
+    "fixture_sha256": "96c6bd4da44cea36d845282a424683d571d3aa224b47e9e3ee3726244f135349",
+    "job_sha256": "c2e983ede7f30c9f1643499086b2bda339cb36da732d617c2527540c62d00e6e",
+    "sdk_methods_sha256": "a63fbd052ba8bd9f0fd0fb0615dbf82d5fbb18ef934b9693323af02380e7a87f",
+    "raw_receipt_sha256": "747bd4ae1d843cbd018b7f184964be462f93ba31ceb69950cbd5395f8ff8c3fa",
+    "commands": "Use the pre-existing network-denied AppContainer. Read the pinned Markdown's Python fence and extract the two SDK 2.0.0 methods from kumex/trade/trade.py in get_position_details, create_limit_order order. Prepare the fixture's input JSON from the exact UTF-8 source and methods, their SHA-256 values, and the cases below. The fixture embeds the local transport and config stubs. The outputs are invocation receipts with no exchange order or fill.",
+    "cases": [
+      {
+        "name": "missing symbol",
+        "missing": "symbol"
+      },
+      {
+        "name": "missing resolution",
+        "missing": "resolution"
+      },
+      {
+        "name": "missing valve",
+        "missing": "valve"
+      },
+      {
+        "name": "missing leverage",
+        "missing": "leverage"
+      },
+      {
+        "name": "missing size",
+        "missing": "size"
+      },
+      {
+        "name": "completed candle start timestamp",
+        "timestamp": "preceding bar start",
+        "reads": 3
+      },
+      {
+        "name": "inside-range short rule with no prior crossover test",
+        "low": 90,
+        "high": 100,
+        "close": 95
+      },
+      {
+        "name": "invalid short close size",
+        "high": 100,
+        "close": 110,
+        "qty": -2
+      },
+      {
+        "name": "integer close truncation",
+        "high": 100.5,
+        "close": 100.9
+      },
+      {
+        "name": "two same-loop limit intents",
+        "high": 100,
+        "close": 89,
+        "qty": 2
+      }
+    ],
+    "controls": [
+      {
+        "name": "missing symbol",
+        "public_kline_requests": 0,
+        "position_reads": 0,
+        "order_payloads": [],
+        "ending": "KeyError: 'symbol'",
+        "clock_reads": 0
+      },
+      {
+        "name": "missing resolution",
+        "public_kline_requests": 0,
+        "position_reads": 0,
+        "order_payloads": [],
+        "ending": "KeyError: 'resolution'",
+        "clock_reads": 0
+      },
+      {
+        "name": "missing valve",
+        "public_kline_requests": 0,
+        "position_reads": 0,
+        "order_payloads": [],
+        "ending": "KeyError: 'valve'",
+        "clock_reads": 0
+      },
+      {
+        "name": "missing leverage",
+        "public_kline_requests": 0,
+        "position_reads": 0,
+        "order_payloads": [],
+        "ending": "KeyError: 'leverage'",
+        "clock_reads": 0
+      },
+      {
+        "name": "missing size",
+        "public_kline_requests": 0,
+        "position_reads": 0,
+        "order_payloads": [],
+        "ending": "KeyError: 'size'",
+        "clock_reads": 0
+      },
+      {
+        "name": "completed candle start timestamp",
+        "public_kline_requests": 3,
+        "position_reads": 0,
+        "order_payloads": [],
+        "ending": "bounded branch check",
+        "clock_reads": 3
+      },
+      {
+        "name": "inside-range short rule with no prior crossover test",
+        "public_kline_requests": 1,
+        "position_reads": 1,
+        "order_payloads": [
+          {
+            "symbol": "XBTUSDTM",
+            "size": 1,
+            "side": "sell",
+            "price": 95,
+            "leverage": 3.0,
+            "clientOid": "fixture-only"
+          }
+        ],
+        "ending": "bounded branch check",
+        "clock_reads": 1
+      },
+      {
+        "name": "invalid short close size",
+        "public_kline_requests": 1,
+        "position_reads": 1,
+        "order_payloads": [
+          {
+            "symbol": "XBTUSDTM",
+            "size": -2,
+            "side": "buy",
+            "price": 110,
+            "leverage": 3,
+            "clientOid": "fixture-only"
+          }
+        ],
+        "ending": "InvalidOrderSize: Classic KuMEX limit order size must be a positive integer",
+        "clock_reads": 1
+      },
+      {
+        "name": "integer close truncation",
+        "public_kline_requests": 1,
+        "position_reads": 1,
+        "order_payloads": [
+          {
+            "symbol": "XBTUSDTM",
+            "size": 1,
+            "side": "sell",
+            "price": 100,
+            "leverage": 3.0,
+            "clientOid": "fixture-only"
+          }
+        ],
+        "ending": "bounded branch check",
+        "clock_reads": 1
+      },
+      {
+        "name": "two same-loop limit intents",
+        "public_kline_requests": 1,
+        "position_reads": 1,
+        "order_payloads": [
+          {
+            "symbol": "XBTUSDTM",
+            "size": 2,
+            "side": "sell",
+            "price": 89,
+            "leverage": 3,
+            "clientOid": "fixture-only"
+          },
+          {
+            "symbol": "XBTUSDTM",
+            "size": 1,
+            "side": "sell",
+            "price": 89,
+            "leverage": 3.0,
+            "clientOid": "fixture-only"
+          }
+        ],
+        "ending": "bounded branch check",
+        "clock_reads": 1
+      }
+    ]
+  },
+  "replay_requirements": [
+    "Find a publisher-backed link between the author's study, an exact contract ID and explicit non-secret settings.",
+    "Establish the legacy data feed's timestamp semantics and real public candle clock. Match price availability to the submission event.",
+    "Obtain contemporaneous trade/book events and deterministic limit-order fill evidence or defensible finite queue bounds. The earlier inverse study's decision-time top-of-book packet only verifies immediate visible liquidity. It cannot resolve these persistent GTC resting fills, cancellations, or competing positions.",
+    "Preserve the integer price conversion, the signed invalid short-close case and the same-loop entry and exit order sequence when evaluating the authored logic. A repaired strategy would need a separate label."
+  ]
+}
