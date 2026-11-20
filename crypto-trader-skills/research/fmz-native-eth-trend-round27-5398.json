@@ -1,0 +1,559 @@
+{
+  "coverage": [
+    [
+      5398,
+      "Tested · archived EMA/volatility ETH quarterly benchmark",
+      "Three predeclared 23h50m Binance ETH inverse-delivery windows ran the exact source and typed published settings. October and December had no entries. November closed one losing short and kept a marked long. The publisher did not specify an exchange, so figures are for this compatible named benchmark."
+    ]
+  ],
+  "results": [
+    {
+      "gross": 0.0,
+      "after_fees": 0.0,
+      "fees": 0.0,
+      "execution": 0.0,
+      "net": 0.0,
+      "funding": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "id": 5398,
+      "market": "Binance ETHUSD_211231 inverse quarterly [ETH settlement]",
+      "period": "2021-10-01 00:05–23:55 UTC",
+      "group": "FMZ Native · Quarterly ETH trend",
+      "name": "趋势策略V10-公开",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%B6%8B%E5%8A%BF%E7%AD%96%E7%95%A5V10-%E5%85%AC%E5%BC%80.md",
+      "trades": 0,
+      "unsettled": 0,
+      "currency": "ETH",
+      "quote_currency": "ETH",
+      "currency_decimal_places": 12,
+      "interval": "1h chart · 5s poll",
+      "exit": "Archived EMA and volatility reversal",
+      "mark_to_market_net": 0.0,
+      "remaining_unrealized": 0.0,
+      "starting_equity": 0.02
+    },
+    {
+      "gross": -0.0017203643346140696,
+      "after_fees": -0.0017677995750822297,
+      "fees": 4.743524046816019e-05,
+      "execution": 9.067789143798569e-06,
+      "net": -0.0017768673642260281,
+      "funding": 0.0,
+      "gross_dd": 0.0017203643346140696,
+      "gross_dd_pct": 0.08601821673070348,
+      "gross_wins": 0,
+      "fee_dd": 0.0017677995750822297,
+      "fee_dd_pct": 0.08838997875411149,
+      "fee_wins": 0,
+      "net_dd": 0.0017768673642260281,
+      "net_dd_pct": 0.08884336821130141,
+      "net_wins": 0,
+      "id": 5398,
+      "market": "Binance ETHUSD_211231 inverse quarterly [ETH settlement]",
+      "period": "2021-11-01 00:05–23:55 UTC",
+      "group": "FMZ Native · Quarterly ETH trend",
+      "name": "趋势策略V10-公开",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%B6%8B%E5%8A%BF%E7%AD%96%E7%95%A5V10-%E5%85%AC%E5%BC%80.md",
+      "trades": 1,
+      "unsettled": 1,
+      "currency": "ETH",
+      "quote_currency": "ETH",
+      "currency_decimal_places": 12,
+      "interval": "1h chart · 5s poll",
+      "exit": "Archived EMA and volatility reversal",
+      "mark_to_market_net": -0.002439366109595504,
+      "remaining_unrealized": -0.0006381046611566622,
+      "starting_equity": 0.02
+    },
+    {
+      "gross": 0.0,
+      "after_fees": 0.0,
+      "fees": 0.0,
+      "execution": 0.0,
+      "net": 0.0,
+      "funding": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "id": 5398,
+      "market": "Binance ETHUSD_211231 inverse quarterly [ETH settlement]",
+      "period": "2021-12-01 00:05–23:55 UTC",
+      "group": "FMZ Native · Quarterly ETH trend",
+      "name": "趋势策略V10-公开",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%B6%8B%E5%8A%BF%E7%AD%96%E7%95%A5V10-%E5%85%AC%E5%BC%80.md",
+      "trades": 0,
+      "unsettled": 0,
+      "currency": "ETH",
+      "quote_currency": "ETH",
+      "currency_decimal_places": 12,
+      "interval": "1h chart · 5s poll",
+      "exit": "Archived EMA and volatility reversal",
+      "mark_to_market_net": 0.0,
+      "remaining_unrealized": 0.0,
+      "starting_equity": 0.02
+    }
+  ],
+  "diagnostics": [
+    {
+      "day": "2021-10-01",
+      "orders": [],
+      "closed_trade_ETH": [],
+      "candle_receipts": [
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-09.zip",
+          "sha256": "c5619aaf3e43f29296775e32238a71a8da9567690e5602043716195aeb118430",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-09.zip.CHECKSUM",
+          "rows": 720
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-10.zip",
+          "sha256": "c37e02979683a61e2321f1edb0b910ecf5225647d1990793953d660dd380dff7",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-10.zip.CHECKSUM",
+          "rows": 744
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-11.zip",
+          "sha256": "6b9616daba5d58fe95cde992804beb38eb8e8764df11281af362520a5e8b5fd3",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-11.zip.CHECKSUM",
+          "rows": 720
+        }
+      ],
+      "same_day_capture_check": {
+        "hourly_rows": 24,
+        "exact_ohlc": 23,
+        "exact_close": 23,
+        "in_minute_mark_bounds": 17161
+      },
+      "official_trade_hour": {
+        "url": "https://data.binance.vision/data/futures/cm/daily/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-10-01.zip",
+        "sha256": "4c14e94c6d57f9c89a3177828c56c9caca9dd9b782b04b41e4b156512fd465a7",
+        "checksum_url": "https://data.binance.vision/data/futures/cm/daily/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-10-01.zip.CHECKSUM",
+        "rows": 24
+      },
+      "official_mark_minute": {
+        "url": "https://data.binance.vision/data/futures/cm/daily/markPriceKlines/ETHUSD_211231/1m/ETHUSD_211231-1m-2021-10-01.zip",
+        "sha256": "773344d7c78e1f38a80c1bd548debe0d4351abe71dcd38a2b5f03ace4b70baa6",
+        "checksum_url": "https://data.binance.vision/data/futures/cm/daily/markPriceKlines/ETHUSD_211231/1m/ETHUSD_211231-1m-2021-10-01.zip.CHECKSUM",
+        "rows": 1440
+      },
+      "market_receipts": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/trades/2021/10/01/ETHUSD_211231.csv.gz",
+          "sha256": "eb2a19fb8e0468ea736270ec5fa93dff6ad7c9a260bad4c541ab411d313c4b85",
+          "bytes": 3595802,
+          "rows": 308229,
+          "first_us": 1633046400266414,
+          "last_us": 1633132799458614
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/quotes/2021/10/01/ETHUSD_211231.csv.gz",
+          "sha256": "3c6386aef2dc8f8f594fd9fd945c5aeb12cb6e8617486c4d390adc55456b580e",
+          "bytes": 11102055,
+          "rows": 878465,
+          "first_us": 1633046400624529,
+          "last_us": 1633132799813812
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/derivative_ticker/2021/10/01/ETHUSD_211231.csv.gz",
+          "sha256": "7ce10cdc232eb68af3c1ba4190f624408b52364ba6caaf6c8a49ac2ece00bc30",
+          "bytes": 2392263,
+          "rows": 127203,
+          "first_us": 1633046400086858,
+          "last_us": 1633132799462645,
+          "populated_funding_events": 0
+        }
+      },
+      "evaluated_hourly_signals": 24,
+      "startup_cross_seen": false,
+      "smallest_equity_excess_ETH": "0.02",
+      "smallest_remaining_top_depth_contracts": null,
+      "wallet_ETH": "0.02",
+      "terminal_position_contracts": 0,
+      "terminal_entry_fee_ETH": "0",
+      "terminal_unrealized_ETH": "0",
+      "observed_marked_net_ETH": "0.00",
+      "observed_marked_drawdown": {
+        "net": {
+          "ETH": "0",
+          "fraction": "0"
+        },
+        "gross": {
+          "ETH": "0",
+          "fraction": "0"
+        },
+        "after_fees": {
+          "ETH": "0",
+          "fraction": "0"
+        }
+      }
+    },
+    {
+      "day": "2021-11-01",
+      "orders": [
+        {
+          "at": 1635735605,
+          "direction": "sell",
+          "side": -1,
+          "amount": 21,
+          "fill": 4347.83,
+          "fee": 2.414997826501956e-05,
+          "execution": 4.1099728430437775e-06,
+          "gross": 0,
+          "cash": 0.01997585002173498,
+          "qty": -21,
+          "open": true,
+          "quote": [
+            1635735604981596,
+            1635735604973000,
+            4347.83,
+            4347.84,
+            30,
+            3964,
+            30,
+            3964,
+            true,
+            true,
+            0
+          ],
+          "ether_mark": 4348.34544125,
+          "last": 4348.2,
+          "chart": 1635735600000,
+          "ema_status": 2,
+          "remainingDepth": 9
+        },
+        {
+          "at": 1635775205,
+          "direction": "closesell",
+          "side": 1,
+          "amount": 21,
+          "fill": 4509.29,
+          "fee": 2.3285262203140627e-05,
+          "execution": 4.957816300751861e-06,
+          "gross": -0.001729432123757872,
+          "cash": 0.018223132635773968,
+          "qty": 0,
+          "open": false,
+          "quote": [
+            1635775204813548,
+            1635775204805000,
+            4509.28,
+            4509.29,
+            1321,
+            1568,
+            1321,
+            1568,
+            true,
+            true,
+            0
+          ],
+          "ether_mark": 4507.9977903,
+          "last": 4508.81,
+          "chart": 1635775200000,
+          "ema_status": 2,
+          "remainingDepth": 1547
+        },
+        {
+          "at": 1635775205,
+          "direction": "buy",
+          "side": 1,
+          "amount": 22,
+          "fill": 4509.29,
+          "fee": 2.4394084212813993e-05,
+          "execution": 5.193902791263854e-06,
+          "gross": 0,
+          "cash": 0.018198738551561153,
+          "qty": 22,
+          "open": true,
+          "quote": [
+            1635775204813548,
+            1635775204805000,
+            4509.28,
+            4509.29,
+            1321,
+            1568,
+            1321,
+            1568,
+            true,
+            true,
+            0
+          ],
+          "ether_mark": 4507.9977903,
+          "last": 4508.81,
+          "chart": 1635775200000,
+          "ema_status": 2,
+          "remainingDepth": 1525
+        }
+      ],
+      "closed_trade_ETH": [
+        {
+          "gross": "-0.0017203643346140694754086195972154855894996809",
+          "gross_at_fills": "-0.0017294321237578680443916637640522243761768758",
+          "after_fees": "-0.0017677995750822296643512130970230609566702610",
+          "fees": "0.000047435240468160188942593499807575367170580138",
+          "execution": "0.00000906778914379856898304416683673878667719490",
+          "net": "-0.0017768673642260282333342572638597997433474559",
+          "funding": "0"
+        }
+      ],
+      "candle_receipts": [
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-09.zip",
+          "sha256": "c5619aaf3e43f29296775e32238a71a8da9567690e5602043716195aeb118430",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-09.zip.CHECKSUM",
+          "rows": 720
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-10.zip",
+          "sha256": "c37e02979683a61e2321f1edb0b910ecf5225647d1990793953d660dd380dff7",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-10.zip.CHECKSUM",
+          "rows": 744
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-11.zip",
+          "sha256": "6b9616daba5d58fe95cde992804beb38eb8e8764df11281af362520a5e8b5fd3",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-11.zip.CHECKSUM",
+          "rows": 720
+        }
+      ],
+      "same_day_capture_check": {
+        "hourly_rows": 24,
+        "exact_ohlc": 24,
+        "exact_close": 24,
+        "in_minute_mark_bounds": 17161
+      },
+      "official_trade_hour": {
+        "url": "https://data.binance.vision/data/futures/cm/daily/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-11-01.zip",
+        "sha256": "9e12415b8a1e1dac12b4989d3cdc99e8c99a967f5335b9c65e7dab01319117c0",
+        "checksum_url": "https://data.binance.vision/data/futures/cm/daily/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-11-01.zip.CHECKSUM",
+        "rows": 24
+      },
+      "official_mark_minute": {
+        "url": "https://data.binance.vision/data/futures/cm/daily/markPriceKlines/ETHUSD_211231/1m/ETHUSD_211231-1m-2021-11-01.zip",
+        "sha256": "a52af962a2adbd26c533c95aa4606ee2de15231ba61aacea72df012b0d302b16",
+        "checksum_url": "https://data.binance.vision/data/futures/cm/daily/markPriceKlines/ETHUSD_211231/1m/ETHUSD_211231-1m-2021-11-01.zip.CHECKSUM",
+        "rows": 1440
+      },
+      "market_receipts": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/trades/2021/11/01/ETHUSD_211231.csv.gz",
+          "sha256": "a10bf444d611b9eac2cea41c0acd3e0f5325e155340f46997d3dc5f3e2411168",
+          "bytes": 2788697,
+          "rows": 256071,
+          "first_us": 1635724800438571,
+          "last_us": 1635811197431766
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/quotes/2021/11/01/ETHUSD_211231.csv.gz",
+          "sha256": "39051b6023b6a37d76d915f854e49daf8ebfaa206c5bff57dcab4e7662f2325b",
+          "bytes": 10241135,
+          "rows": 803733,
+          "first_us": 1635724800373108,
+          "last_us": 1635811199619004
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/derivative_ticker/2021/11/01/ETHUSD_211231.csv.gz",
+          "sha256": "c747572cccf0932def7de63bcbd8f0c3fd68eef2cdfcaa0145e0d4dd1907e675",
+          "bytes": 2299174,
+          "rows": 118783,
+          "first_us": 1635724800139081,
+          "last_us": 1635811199152036,
+          "populated_funding_events": 0
+        }
+      },
+      "evaluated_hourly_signals": 24,
+      "startup_cross_seen": true,
+      "smallest_equity_excess_ETH": "0.016565235743800203382709894469401119128094103",
+      "smallest_remaining_top_depth_contracts": 9,
+      "wallet_ETH": "0.018198738551561157775993153481512531599280763",
+      "terminal_position_contracts": 22,
+      "terminal_entry_fee_ETH": "0.000024394084212813990672589254627668657371781367",
+      "terminal_unrealized_ETH": "-0.00063810466115666217862587515147012961922194240",
+      "observed_marked_net_ETH": "-0.002439366109595504402632721669957598019941179",
+      "observed_marked_drawdown": {
+        "net": {
+          "ETH": "0.004219657706627368345488947678282521660121375",
+          "fraction": "0.20083303951393301030915061316335010655896517"
+        },
+        "gross": {
+          "ETH": "0.004171978360211413727356159589692078375258348",
+          "fraction": "0.19833578976179618185153024640554098274927685"
+        },
+        "after_fees": {
+          "ETH": "0.004219657706627368345488947678282521660121375",
+          "fraction": "0.20083303951393301030915061316335010655896517"
+        }
+      }
+    },
+    {
+      "day": "2021-12-01",
+      "orders": [],
+      "closed_trade_ETH": [],
+      "candle_receipts": [
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-09.zip",
+          "sha256": "c5619aaf3e43f29296775e32238a71a8da9567690e5602043716195aeb118430",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-09.zip.CHECKSUM",
+          "rows": 720
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-10.zip",
+          "sha256": "c37e02979683a61e2321f1edb0b910ecf5225647d1990793953d660dd380dff7",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-10.zip.CHECKSUM",
+          "rows": 744
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-11.zip",
+          "sha256": "6b9616daba5d58fe95cde992804beb38eb8e8764df11281af362520a5e8b5fd3",
+          "checksum_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-11.zip.CHECKSUM",
+          "rows": 720
+        }
+      ],
+      "same_day_capture_check": {
+        "hourly_rows": 24,
+        "exact_ohlc": 24,
+        "exact_close": 24,
+        "in_minute_mark_bounds": 17140
+      },
+      "official_trade_hour": {
+        "url": "https://data.binance.vision/data/futures/cm/daily/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-12-01.zip",
+        "sha256": "205ec180538001936f729a967109fa910a5df2f3481d033dc6fa808fb3213129",
+        "checksum_url": "https://data.binance.vision/data/futures/cm/daily/klines/ETHUSD_211231/1h/ETHUSD_211231-1h-2021-12-01.zip.CHECKSUM",
+        "rows": 24
+      },
+      "official_mark_minute": {
+        "url": "https://data.binance.vision/data/futures/cm/daily/markPriceKlines/ETHUSD_211231/1m/ETHUSD_211231-1m-2021-12-01.zip",
+        "sha256": "72ce0c3280fcd0e4eb5ddbc56f446d8fd01ab7ac5de357c77889d21bb26e5ca8",
+        "checksum_url": "https://data.binance.vision/data/futures/cm/daily/markPriceKlines/ETHUSD_211231/1m/ETHUSD_211231-1m-2021-12-01.zip.CHECKSUM",
+        "rows": 1440
+      },
+      "market_receipts": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/trades/2021/12/01/ETHUSD_211231.csv.gz",
+          "sha256": "14fa84456281dcd477644191db3083a107efda023744280083514fcfbcf3dc37",
+          "bytes": 2365479,
+          "rows": 194500,
+          "first_us": 1638316800652830,
+          "last_us": 1638403195455919
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/quotes/2021/12/01/ETHUSD_211231.csv.gz",
+          "sha256": "fbb52b19d295cb2ee2988c5772a2f5511ae8cdbaffa32b4c9d9c58fb47a6c20d",
+          "bytes": 11809604,
+          "rows": 923184,
+          "first_us": 1638316800605674,
+          "last_us": 1638403198704306
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/binance-delivery/derivative_ticker/2021/12/01/ETHUSD_211231.csv.gz",
+          "sha256": "e371bfef34fea197eb355cd27c34779b39026da6b3e09c569e2c32af3849e588",
+          "bytes": 2409532,
+          "rows": 124593,
+          "first_us": 1638316800108456,
+          "last_us": 1638403199157901,
+          "populated_funding_events": 0
+        }
+      },
+      "evaluated_hourly_signals": 24,
+      "startup_cross_seen": false,
+      "smallest_equity_excess_ETH": "0.02",
+      "smallest_remaining_top_depth_contracts": null,
+      "wallet_ETH": "0.02",
+      "terminal_position_contracts": 0,
+      "terminal_entry_fee_ETH": "0",
+      "terminal_unrealized_ETH": "0",
+      "observed_marked_net_ETH": "0.00",
+      "observed_marked_drawdown": {
+        "net": {
+          "ETH": "0",
+          "fraction": "0"
+        },
+        "gross": {
+          "ETH": "0",
+          "fraction": "0"
+        },
+        "after_fees": {
+          "ETH": "0",
+          "fraction": "0"
+        }
+      }
+    }
+  ],
+  "author": {
+    "url": "https://www.fmz.com/strategy/320782",
+    "html_sha256": "0178b9ca6462e725fe8c953e204906e60c006d2c264b2cde0b4f181c38071b09",
+    "settings": {
+      "TradeCurrency": "ETH_USD",
+      "Interval": 5000,
+      "UseQuarter": false,
+      "OnlyTrendJudgment": false,
+      "EnableMessageSend": false,
+      "RunInKLinePeriod": true,
+      "KLinePeriod": 60,
+      "EmaLength": 90,
+      "EmaCoefficient": 0.004,
+      "UseStddev": true,
+      "UseRecordsMiddleValue": true,
+      "StddevLength": 33,
+      "StddevDeviations": 1,
+      "MarginLevel": 5,
+      "OrderSize": 10,
+      "OrderByMargin": true,
+      "OrderMarginPercent": 50,
+      "PricePrecision": 2,
+      "AmountPrecision": 0,
+      "OneSizeInCurrentCoin": 1,
+      "QuarterOneSizeValue": 10,
+      "UseStopLoss": false,
+      "StopLossPercent": 1.4,
+      "UseTakeProfit": false,
+      "TakeProfitPercent": 10,
+      "UseTrackingTakeProfit": false,
+      "UsePositionRetracement": false,
+      "TakeProfitTriggerPercent": 5,
+      "CallBakcPercent": 1
+    }
+  },
+  "archive": {
+    "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%B6%8B%E5%8A%BF%E7%AD%96%E7%95%A5V10-%E5%85%AC%E5%BC%80.md",
+    "document_sha256": "ffc973c03f536251fc7ff52a53e27ac9fb724f71e5247e7602f3619ff30545df",
+    "source_sha256": "f1eeff31165a5d012bdae4b629237b191c0517d0ab1c24177d605220ffabc90d"
+  },
+  "proof": {
+    "input_sha256": "79fb14cc76fb76b738bf1c680da9b471559f115081225a290bde128d0b7df998",
+    "native_receipt_sha256": "2d3a8a0403bba6faf134eb686b932d17b3e288af3227d6f87803512a153c4c53",
+    "native_engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "stage_sha256": "98541179bb33dec7e0c4c2bad5abe856cb5f4d5e6be9b1d4f03da161cd264409",
+    "worker_sha256": "a4bbe8464cfd22ca25cdba50c97ee08e08892e8a2235b2d1603519d31122324a",
+    "verify_sha256": "8397bcba732c55507c548a30f2a7e183cef5a88d0a56bbc6d075a2557cdeac80"
+  },
+  "method": {
+    "settings": "Exact published parameters use typed public settings, including 0 whole-contract precision and STDDEV multiplier 1. The archived offline ETH_USD branch selects quarter; the article gives no venue, starting collateral, or reproducible original backtest dates. Benchmark the contemporaneous Binance ETHUSD_211231, inverse $10 face, 0.02 ETH flat startup, 5x leverage and the author’s 50% initial collateral sizing.",
+    "scope": "Predeclared first-of-month Oct/Nov/Dec 2021, 00:05–23:55 UTC each. Starts each replay cold with empty saved state, no interactive commands, and 500 preceding complete 1h bars for the EMA. Only sandboxed exact source executes orders and uses native FMZ EMA/_N and native TA-Lib STDDEV.",
+    "causality": "5-second source clock. Trade and mark observations must be available by decision time. Each new 1h candle decision uses the source’s closed-bar EMA and volatility including the real partial current hour. Public Binance and Tardis all-source aggregation agreed on 71 of 72 complete OHLC bars. The one October 23:00 mismatch is a final close after the cutoff. Mark observations matched official minute mark ranges on 51,462 of 51,483 samples. The recorded mark tape remains the equity source.",
+    "fills": "Source market orders fill only at observed stable directional top-of-book for 100ms with no more than two seconds of quote age and full displayed capacity. Same-side close and reversal share displayed depth. Executions are historically quoted simulated fills under that model. Position capacity, 5x initial margin, and modeled maintenance plus taker reserve are checked.",
+    "settlement": "Contemporaneous Binance basic taker fee of 0.05% in ETH. This dated inverse contract carries no periodic funding. Put quote impact in execution cost against the last-trade reference. Actual fill-price gross, fees, net realized, terminal unrealized, and observed five-second marked drawdown are separately available. No forced exit at data cutoff or delivery simulation."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/320782",
+    "https://www.fmz.com/bbs-topic/5447",
+    "https://www.binance.com/en/support/announcement/detail/18a3602534d744e4966673b953b55257",
+    "https://www.binance.com/en-AE/support/faq/detail/85eac2bba0b342819122dc9bd4745e9b",
+    "https://www.binance.com/en-BH/blog/futures/421499824684902618",
+    "https://www.binance.com/en/support/faq/detail/a3401595e1734084959c61491bc0dbe3"
+  ],
+  "reproduction": "Use the published R20 archive helper alongside the stage file. Stage the gzip job with --archive and --output and optionally the locally captured public --author-page. Execute the worker in the existing offline FMZ WASM AppContainer. Verify the resulting receipt with --job --receipt --stage --worker --output."
+}
