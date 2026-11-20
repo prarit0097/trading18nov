@@ -1,0 +1,662 @@
+{
+  "coverage": [
+    [
+      967,
+      "Tested · dated OKEX BTC quarter cold-start windows",
+      "Both 20h cold-start trials completed on captured BTC-USD-200327. Exact archived source closed 1 and 2 losing trades and held one position in each. The one maker fill is bounded within one mark sample by strict trade-through. The author’s preceding lookback and full August 2019–March 2020 deployment interval remain untested."
+    ]
+  ],
+  "results": [
+    {
+      "id": 967,
+      "name": "SuperTrend策略教学",
+      "group": "FMZ Native · OKEX dated inverse",
+      "market": "BTC-USD-200327 [BTC settlement]",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/SuperTrend%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+      "period": "2020-02-01 00:00–20:00 UTC",
+      "interval": "15m chart · cold-start",
+      "exit": "Archived SuperTrend flip and two-second order lifetime",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "starting_equity": 1,
+      "trades": 1,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": -6.420544477505655e-05,
+      "after_fees": -7.461001233738138e-05,
+      "net": -7.461001233738138e-05,
+      "fees": 1.0404567562324836e-05,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 6.420544477505655e-05,
+      "fee_dd": 7.461001233738138e-05,
+      "net_dd": 7.461001233738138e-05,
+      "gross_dd_pct": 6.420544477505655e-05,
+      "fee_dd_pct": 7.461001233738138e-05,
+      "net_dd_pct": 7.461001233738138e-05,
+      "mark_to_market_net": -0.00012704738761678096,
+      "remaining_unrealized": -4.72511751356381e-05
+    },
+    {
+      "id": 967,
+      "name": "SuperTrend策略教学",
+      "group": "FMZ Native · OKEX dated inverse",
+      "market": "BTC-USD-200327 [BTC settlement]",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/SuperTrend%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+      "period": "2020-03-01 00:00–20:00 UTC",
+      "interval": "15m chart · cold-start",
+      "exit": "Archived SuperTrend flip and two-second order lifetime",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "starting_equity": 1,
+      "trades": 2,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": -0.0004374665803201675,
+      "after_fees": -0.00046023471517778766,
+      "net": -0.00046023471517778766,
+      "fees": 2.2768134857620205e-05,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0.0004374665803201675,
+      "fee_dd": 0.00046023471517778766,
+      "net_dd": 0.00046023471517778766,
+      "gross_dd_pct": 0.0004374665803201675,
+      "fee_dd_pct": 0.00046023471517778766,
+      "net_dd_pct": 0.00046023471517778766,
+      "mark_to_market_net": -0.0004159856693134913,
+      "remaining_unrealized": 4.654789643900898e-05
+    }
+  ],
+  "source": {
+    "id": 967,
+    "url": "https://www.fmz.com/strategy/201837",
+    "sha256": "edecd7132558c40a00f00b4e52072de5cf2ae07bac9240c932173bffec379b31",
+    "preview_chars": 230,
+    "args": {
+      "Amount": 1,
+      "TradeInterval": 2000,
+      "PriceTick": 0.5,
+      "Symbol": "quarter",
+      "pd": 45,
+      "factor": 3
+    },
+    "still_missing": [],
+    "name": "SuperTrend策略教学",
+    "table": {
+      "Argument": "Default",
+      "Amount": "true",
+      "TradeInterval": "2000",
+      "PriceTick": "0.5",
+      "Symbol": "quarter",
+      "pd": "45",
+      "factor": "3"
+    },
+    "archive_scope": {
+      "start": "2019-08-01 00:00:00",
+      "end": "2020-03-11 00:00:00",
+      "period": "15m",
+      "basePeriod": "5m",
+      "exchanges": "[{\"eid\":\"Futures_OKCoin\",\"currency\":\"BTC_USD\"}]"
+    },
+    "archive_sha256": "bb4aa02f80e625ffa3177c2bebf7a981062280d42ce7356613e21564ea64e773",
+    "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/SuperTrend%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+    "archive_source_sha256": "5acc49416efa66926cfd1dc0fa88b625ead21337fd8e9f1dafe6aba41ec11e03"
+  },
+  "diagnostics": [
+    {
+      "day": "2020-02-01",
+      "order_counts": {
+        "cancelled_no_observed_match": 1,
+        "taker": 3
+      },
+      "hours": 20,
+      "calls": {
+        "bars": 40301,
+        "sleeps": 40308,
+        "atr": 32380,
+        "empty": 1,
+        "cancels": 4
+      },
+      "closed": [
+        {
+          "close_second": 1580576402,
+          "gross_BTC": "-0.0000642054447750565444459083000",
+          "entry_and_exit_fees_BTC": "0.00001040456756232483709473037306",
+          "after_fees_BTC": "-0.00007461001233738138154063867306"
+        }
+      ],
+      "orders": [
+        {
+          "timestamp": 1580556603,
+          "side": -1,
+          "limit": 9581.5,
+          "qty": 1,
+          "direction": "sell",
+          "prevPos": [
+            0,
+            0
+          ],
+          "sourceType": 8,
+          "quote": [
+            1580556602975664,
+            1580556602839000,
+            9576.32,
+            9576.41,
+            50,
+            8
+          ],
+          "last": 9576.79,
+          "passive": {
+            "conclusion": "no observable match in exact cancellation window",
+            "from": 1580556603,
+            "to": 1580556605,
+            "tradeCandidates": [],
+            "quoteCrossings": []
+          },
+          "cancel_at": 1580556605
+        },
+        {
+          "timestamp": 1580556608,
+          "side": -1,
+          "limit": 9577.5,
+          "qty": 1,
+          "direction": "sell",
+          "prevPos": [
+            0,
+            0
+          ],
+          "sourceType": 8,
+          "quote": [
+            1580556607941893,
+            1580556607806000,
+            9581.6,
+            9581.61,
+            431,
+            272
+          ],
+          "last": 9581.6,
+          "fill_local_us": 1580556608000000,
+          "price": 9581.6,
+          "fee": 5.218335142356183e-06,
+          "feeRate": 0.0005,
+          "gross": 0,
+          "mark": 9579.25,
+          "cash": 0.9999947816648577,
+          "pos": -1,
+          "entry": 9581.6,
+          "cancel_at": 1580556610
+        },
+        {
+          "timestamp": 1580576402,
+          "side": 1,
+          "limit": 9642,
+          "qty": 1,
+          "direction": "closesell",
+          "prevPos": [
+            9581.6,
+            1
+          ],
+          "sourceType": 4,
+          "quote": [
+            1580576401902567,
+            1580576401765000,
+            9640.9,
+            9640.91,
+            167,
+            79
+          ],
+          "last": 9641.46,
+          "fill_local_us": 1580576402000000,
+          "price": 9640.91,
+          "fee": 5.1862324199686546e-06,
+          "feeRate": 0.0005,
+          "gross": -6.420544477505599e-05,
+          "mark": 9641.95,
+          "cash": 0.9999253899876627,
+          "pos": 0,
+          "entry": 0,
+          "cancel_at": 1580576404
+        },
+        {
+          "timestamp": 1580576409,
+          "side": 1,
+          "limit": 9641,
+          "qty": 1,
+          "direction": "buy",
+          "prevPos": [
+            0,
+            0
+          ],
+          "sourceType": 7,
+          "quote": [
+            1580576408991520,
+            1580576408855000,
+            9640.96,
+            9640.97,
+            493,
+            3035
+          ],
+          "last": 9640.24,
+          "fill_local_us": 1580576409000000,
+          "price": 9640.97,
+          "fee": 5.186200143761468e-06,
+          "feeRate": 0.0005,
+          "gross": 0,
+          "mark": 9640.82,
+          "cash": 0.9999202037875189,
+          "pos": 1,
+          "entry": 9640.97,
+          "cancel_at": 1580576411
+        }
+      ],
+      "capture": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2020/02/01/BTC-USD-200327.csv.gz",
+          "sha256": "a456ea40d332670710cf14ac8fa1af80423a0550a7b48da68d26d08ea95437bf",
+          "bytes": 4419622,
+          "rows": 441033,
+          "last_local_us": 1580601595263246,
+          "funding_field_events": 0,
+          "closed_interval_count": 80,
+          "first_closed": [
+            1580515200,
+            [
+              9598.11,
+              9624.94,
+              9589.61,
+              9622.46
+            ]
+          ]
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/okex-futures/quotes/2020/02/01/BTC-USD-200327.csv.gz",
+          "sha256": "1a8aa0584185499f10236e04d7e905bbbbdaf430a904c50cd951fad0e0364bf4",
+          "bytes": 13814092,
+          "rows": 1152629,
+          "last_local_us": 1580601599394369,
+          "funding_field_events": 0
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/okex-futures/derivative_ticker/2020/02/01/BTC-USD-200327.csv.gz",
+          "sha256": "9a8282c3d6e99faa621822e4a67a996924ba21b18a46bb36b5277625592aa7e9",
+          "bytes": 5121513,
+          "rows": 403210,
+          "last_local_us": 1580601595288010,
+          "funding_field_events": 0
+        }
+      },
+      "terminal_cash_BTC": "0.9999202037875188571504742934",
+      "open_qty": 1,
+      "open_basis": "9640.97",
+      "terminal_mark": 9597.25,
+      "mark_to_market_drawdown": {
+        "gross": [
+          0.0001812396479517782,
+          0.00018122957043677142
+        ],
+        "net": [
+          0.00019161208051550834,
+          0.00019160242604953032
+        ]
+      }
+    },
+    {
+      "day": "2020-03-01",
+      "order_counts": {
+        "taker": 4,
+        "maker": 1
+      },
+      "hours": 20,
+      "calls": {
+        "bars": 40298,
+        "sleeps": 40306,
+        "atr": 32377,
+        "empty": 1,
+        "cancels": 5
+      },
+      "closed": [
+        {
+          "close_second": 1583064901,
+          "gross_BTC": "-0.0002163974842381853057496637100",
+          "entry_and_exit_fees_BTC": "0.00001138346520485377323021357582",
+          "after_fees_BTC": "-0.0002277809494430390789798772858"
+        },
+        {
+          "close_second": 1583067602,
+          "gross_BTC": "-0.0002210690960819821552700920600",
+          "entry_and_exit_fees_BTC": "0.00001138466965276643206542966737",
+          "after_fees_BTC": "-0.0002324537657347485873355217274"
+        }
+      ],
+      "orders": [
+        {
+          "timestamp": 1583062209,
+          "side": -1,
+          "limit": 8700.5,
+          "qty": 1,
+          "direction": "sell",
+          "prevPos": [
+            0,
+            0
+          ],
+          "sourceType": 8,
+          "quote": [
+            1583062208928185,
+            1583062208828000,
+            8701.96,
+            8701.97,
+            905,
+            40
+          ],
+          "last": 8701.97,
+          "fill_local_us": 1583062209000000,
+          "price": 8701.96,
+          "fee": 5.745831973486434e-06,
+          "feeRate": 0.0005,
+          "gross": 0,
+          "mark": 8701.69,
+          "cash": 0.9999942541680266,
+          "pos": -1,
+          "entry": 8701.96,
+          "cancel_at": 1583062211
+        },
+        {
+          "timestamp": 1583064901,
+          "side": 1,
+          "limit": 8869.5,
+          "qty": 1,
+          "direction": "closesell",
+          "prevPos": [
+            8701.96,
+            1
+          ],
+          "sourceType": 4,
+          "quote": [
+            1583064900999699,
+            1583064900900000,
+            8868.96,
+            8868.97,
+            61,
+            1506
+          ],
+          "last": 8868.96,
+          "fill_local_us": 1583064901000000,
+          "price": 8868.97,
+          "fee": 5.63763323136734e-06,
+          "feeRate": 0.0005,
+          "gross": -0.00021639748423818526,
+          "mark": 8867.42,
+          "cash": 0.999772219050557,
+          "pos": 0,
+          "entry": 0,
+          "cancel_at": 1583064903
+        },
+        {
+          "timestamp": 1583064908,
+          "side": 1,
+          "limit": 8871.5,
+          "qty": 1,
+          "direction": "buy",
+          "prevPos": [
+            0,
+            0
+          ],
+          "sourceType": 7,
+          "quote": [
+            1583064907919026,
+            1583064907818000,
+            8869.85,
+            8869.86,
+            192,
+            273
+          ],
+          "last": 8869.86,
+          "fill_local_us": 1583064908000000,
+          "price": 8869.86,
+          "fee": 5.63706755236272e-06,
+          "feeRate": 0.0005,
+          "gross": 0,
+          "mark": 8869.59,
+          "cash": 0.9997665819830046,
+          "pos": 1,
+          "entry": 8869.86,
+          "cancel_at": 1583064910
+        },
+        {
+          "timestamp": 1583067602,
+          "side": -1,
+          "limit": 8698,
+          "qty": 1,
+          "direction": "closebuy",
+          "prevPos": [
+            8869.86,
+            1
+          ],
+          "sourceType": 3,
+          "quote": [
+            1583067601983182,
+            1583067601879000,
+            8699.28,
+            8699.29,
+            43,
+            793
+          ],
+          "last": 8699.29,
+          "fill_local_us": 1583067602000000,
+          "price": 8699.28,
+          "fee": 5.747602100403711e-06,
+          "feeRate": 0.0005,
+          "gross": -0.0002210690960819818,
+          "mark": 8697.86,
+          "cash": 0.9995397652848222,
+          "pos": 0,
+          "entry": 0,
+          "cancel_at": 1583067604
+        },
+        {
+          "timestamp": 1583067609,
+          "side": -1,
+          "limit": 8700,
+          "qty": 1,
+          "direction": "sell",
+          "prevPos": [
+            0,
+            0
+          ],
+          "sourceType": 8,
+          "quote": [
+            1583067608960867,
+            1583067608859000,
+            8699.93,
+            8700.08,
+            160,
+            38
+          ],
+          "last": 8699.94,
+          "passive": {
+            "conclusion": "strict through price",
+            "from": 1583067609,
+            "to": 1583067611,
+            "firstTrade": {
+              "t": 1583067609081017,
+              "p": 8700.08,
+              "q": 1
+            },
+            "earliestPossible": 1583067609000001,
+            "guaranteedBy": 1583067609081017,
+            "oneSecondBound": true,
+            "tradeCandidates": [
+              {
+                "t": 1583067609081017,
+                "p": 8700.08,
+                "q": 1
+              },
+              {
+                "t": 1583067609479594,
+                "p": 8700.08,
+                "q": 4
+              },
+              {
+                "t": 1583067609765979,
+                "p": 8700.08,
+                "q": 15
+              },
+              {
+                "t": 1583067609766898,
+                "p": 8700.53,
+                "q": 22
+              },
+              {
+                "t": 1583067609884074,
+                "p": 8700.53,
+                "q": 10
+              },
+              {
+                "t": 1583067609933371,
+                "p": 8700.72,
+                "q": 10
+              },
+              {
+                "t": 1583067610072589,
+                "p": 8700.94,
+                "q": 1
+              },
+              {
+                "t": 1583067610074899,
+                "p": 8700.94,
+                "q": 10
+              }
+            ],
+            "quoteCrossings": [
+              {
+                "t": 1583067609029455,
+                "bid": 8700.07,
+                "ask": 8700.08
+              },
+              {
+                "t": 1583067609054826,
+                "bid": 8700.07,
+                "ask": 8700.08
+              },
+              {
+                "t": 1583067609087831,
+                "bid": 8700.07,
+                "ask": 8700.08
+              },
+              {
+                "t": 1583067609110821,
+                "bid": 8700.07,
+                "ask": 8700.08
+              },
+              {
+                "t": 1583067609125760,
+                "bid": 8700.07,
+                "ask": 8700.08
+              },
+              {
+                "t": 1583067609140090,
+                "bid": 8700.07,
+                "ask": 8700.08
+              },
+              {
+                "t": 1583067609152672,
+                "bid": 8700.07,
+                "ask": 8700.08
+              },
+              {
+                "t": 1583067609164977,
+                "bid": 8700.07,
+                "ask": 8700.08
+              }
+            ]
+          },
+          "fill_local_us": 1583067609081017,
+          "price": 8700,
+          "fee": 2.2988505747126437e-06,
+          "feeRate": 0.0002,
+          "gross": 0,
+          "mark": 8701.83,
+          "cash": 0.9995374664342476,
+          "pos": -1,
+          "entry": 8700,
+          "cancel_at": 1583067611
+        }
+      ],
+      "capture": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2020/03/01/BTC-USD-200327.csv.gz",
+          "sha256": "9e2aec3d62cbce11cd9bf4cfde0da59a0f33971e3509fc5cadeaa7ba94082336",
+          "bytes": 5548772,
+          "rows": 506401,
+          "last_local_us": 1583107199849623,
+          "funding_field_events": 0,
+          "closed_interval_count": 80,
+          "first_closed": [
+            1583020800,
+            [
+              8671.86,
+              8766.0,
+              8668.38,
+              8732.92
+            ]
+          ]
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/okex-futures/quotes/2020/03/01/BTC-USD-200327.csv.gz",
+          "sha256": "cf9be51c2d568c6ae4c7b43e4f47c303d03f01f710bf4dab49fa8d7edd69b8a0",
+          "bytes": 16037109,
+          "rows": 1329562,
+          "last_local_us": 1583107199862050,
+          "funding_field_events": 0
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/okex-futures/derivative_ticker/2020/03/01/BTC-USD-200327.csv.gz",
+          "sha256": "e7e037a2f3e5a71b21a9fedf3b992458d2fcd93f2a750d5a1487f7d14999230c",
+          "bytes": 5500922,
+          "rows": 462894,
+          "last_local_us": 1583107199915459,
+          "funding_field_events": 0
+        }
+      },
+      "terminal_cash_BTC": "0.9995374664342474996900064401",
+      "open_qty": -1,
+      "open_basis": "8700",
+      "terminal_mark": 8664.91,
+      "mark_to_market_drawdown": {
+        "gross": [
+          0.0005196514161357764,
+          0.000519646326790945
+        ],
+        "net": [
+          0.0005389725695946229,
+          0.000538970387825876
+        ]
+      }
+    }
+  ],
+  "receipts": {
+    "base_sha256": "afe9df608b6e3f0502d0c16b2ae60d993ae2c99b0a53f81ba085c2ff96c7639c",
+    "market_micro_sha256": "92927d920a36faa64303d6ea3bfb6ff81c199114c1ff329c413f190e14598dec",
+    "native_sha256": "f29fa4241725383d465d6f5e4587b11faf13a2f367d15b1fb2dfc3eb220efbfd"
+  },
+  "scope": "First-of-month public capture dates (February 1 and March 1, 2020) inside the authored interval with exact dated quarter 200327. Each starts flat with 1 BTC at midnight UTC, begins with no preceding bars and grows trade-derived current/closed 15-minute records causally. This measures cold startup, separate from the publisher’s original multi-month warm state and FMZ fee/broker setup.",
+  "market_proof": "The obsolete Futures_OKCoin endpoint returned HTTP 500. The available generic Futures_OKX BTC_USD.quarter endpoint emitted a February 1 first 15-minute high of 9460.3, against the exact dated contract’s 9624.94. That generic source was discarded. Direct captured trades, BBO and derivative marks share the same dated contract, with per-file SHA-256 and complete observed market updates.",
+  "fill_model": "A limit already crossing the observed top is priced at the exact visible top with proof of size >=1. The source sleeps 2 seconds then cancels. A passive intent with neither eligible aggressive trade nor crossed quote in that interval remains unfilled in the observed-market model. A strict-through trade proves execution of the single maker contract at its limit. The March fill’s precise sub-second timestamp can vary between placement and the first through trade at +81.017 ms. The wallet path, source callback and mark samples are invariant across that entire interval.",
+  "accounting": "The position price and P&L are inverse in BTC using $100 contract face. Actual gross uses modeled execution quotes including spread. Taker 0.05% and maker 0.02% are explicit benchmark rates from the published OKX tier example, separate from a verified individual 2020 fee schedule. The strategy has no exposure at the daily 08:00 UTC settlement, no expiry in the windows and no perpetual funding. No position is forced to close at the cutoff. Realized drawdown uses closed P&L, with a separate observed one-second marked drawdown.",
+  "reproduction": "The read-only staged capture and limited-order evidence scripts write compact pinned tapes into round3-native. Run the exact source worker there under the existing network-denied AppContainer and call the Decimal verifier with the two gzip tapes and receipt. Copy the Round 20 capture script into the scratch directory as stage_r20_880_bitmex_sar.py for the shared stream hasher and OHLC accumulator, and preserve the R21 stage filenames in the same directory. All dependencies are open browser or local research evidence.",
+  "references": [
+    "https://www.fmz.com/strategy/201837",
+    "https://www.fmz.com/bbs-topic/5438",
+    "https://docs.tardis.dev/historical-data-details/okex-futures",
+    "https://www.okx.com/en-us/help/expiry-futures",
+    "https://www.okx.com/en-gb/help/launch-of-futures-contract-daily-settlement-and-adjustments-of-perpetual-swap-settlement-and-funding-time",
+    "https://www.okx.com/help/how-to-calculate-the-contract-transaction-fee"
+  ]
+}
