@@ -1,0 +1,323 @@
+{
+  "coverage": [
+    [
+      2490,
+      "Pending · persistent inverse swap order fills",
+      "The dated BTC inverse swap source ran in isolation with original size100 and chart settings. A causal L2 rebuild resolved the first June 100-contract clip and reproduced one complete short lifecycle before a later resting order became ambiguous. July reached a 100-contract close limit with only four displayed at its exact limit. Both full windows remain unverified."
+    ]
+  ],
+  "results": [],
+  "source": {
+    "id": 2490,
+    "url": "https://www.fmz.com/strategy/318486",
+    "sha256": "879595c2ae590358fe5fab9bf660b8c69351ff07230676c263bd8581dbccc22e",
+    "preview_chars": 221,
+    "args": {
+      "Amount": 100
+    },
+    "still_missing": [],
+    "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF%E5%82%BB%E7%93%9C%E7%89%88.md",
+    "name": "均线傻瓜版",
+    "archive_sha256": "3265d43159dc921612216c800345ba5ab14ba036ab6d9441ce1b1c4e0481e297",
+    "archive_source_sha256": "1132dbc5279b6737f4d58d4f96984a3216bbf391d047afa5fd249544d98d5763",
+    "archive_scope": {
+      "dates": [
+        "2021-06-01",
+        "2021-09-22"
+      ],
+      "period": "5m",
+      "basePeriod": "1m",
+      "exchange": "Futures_OKCoin",
+      "currency": "BTC_USD",
+      "order_type": "swap"
+    }
+  },
+  "scope": "Two predeclared sample dates in the author's June–September 2021 BTC/USD inverse swap configuration. Each loads observed own-day five-minute candles from midnight and starts the source at 02:30 UTC, targeting 07:30 UTC. Full provider BTC-USD-SWAP trades, BBO and mark gzip streams were hashed. Source execution only used the same contract and canonical published 100-contract setting. Both studies are forensic controls, not strategy performance.",
+  "archive_code_lines": {
+    "read_cached_ticker": 20,
+    "changed_bar_gate": 41,
+    "same_tick_closes": [
+      46,
+      54
+    ],
+    "wait_before_open": 58,
+    "stale_quote_open_and_unconditional_status": [
+      62,
+      68
+    ]
+  },
+  "paired_depth_evidence": {
+    "url": "https://datasets.tardis.dev/v1/okex-swap/incremental_book_L2/2021/06/01/BTC-USD-SWAP.csv.gz",
+    "archive_size": 295230697,
+    "prefix_bytes": 39452682,
+    "prefix_sha256": "a3f49931889914d27bd2cc097a8efafab0c41ad1b57051478c995157f8ba906c",
+    "times_needing_depth": 558,
+    "causal_BBO_matches": 558,
+    "first_order_depth": {
+      "reconstructed_timestamp": [
+        1622514600983922,
+        1622514600945000
+      ],
+      "reconstructed_top": [
+        [
+          36815.3,
+          90
+        ],
+        [
+          36815.4,
+          119
+        ]
+      ],
+      "reference_top": [
+        1622514600919894,
+        1622514600883000,
+        36815.3,
+        36815.4,
+        90,
+        119
+      ]
+    },
+    "first_choice_exact": true,
+    "exclusive_bound": 1622515500
+  },
+  "native_control": {
+    "june_starting_top_only_issue": "Error: Best marketable price lacks full source size",
+    "june_crossing_depth_at_first_order": {
+      "time": 1622514601,
+      "direction": "sell",
+      "limit": 36812.1,
+      "size": 100,
+      "saved_ticker": {
+        "source_second": 1622514600,
+        "quote": [
+          1622514599914919,
+          1622514599878000,
+          36812.1,
+          36812.2,
+          12,
+          189
+        ],
+        "mark": [
+          1622514599718698,
+          1622514599674000,
+          36820.1
+        ],
+        "bar_time": 1622514300000,
+        "Last": 36815.4
+      },
+      "current_quote": [
+        1622514600919894,
+        1622514600883000,
+        36815.3,
+        36815.4,
+        90,
+        119
+      ],
+      "depthTimestamp": [
+        1622514600983922,
+        1622514600945000
+      ],
+      "levelFills": [
+        [
+          36815.3,
+          90,
+          90
+        ],
+        [
+          36812.2,
+          10,
+          1476
+        ]
+      ],
+      "remainingBeyondLimit": 0,
+      "fillPrice": 36814.989976505276,
+      "observedSize": 90
+    },
+    "june_inverse_fill_basis_recomputed": "36814.98997650526954016447126",
+    "june_next_unsupported_order": {
+      "time": 1622516403,
+      "direction": "sell",
+      "limit": 36868.9,
+      "size": 100,
+      "saved_ticker": {
+        "source_second": 1622516402,
+        "quote": [
+          1622516401994680,
+          1622516401905000,
+          36868.9,
+          36869,
+          26,
+          788
+        ],
+        "mark": [
+          1622516401803328,
+          1622516401748000,
+          36881.3
+        ],
+        "bar_time": 1622516400000,
+        "Last": 36879.1
+      },
+      "current_quote": [
+        1622516402854825,
+        1622516402816000,
+        36864.4,
+        36864.5,
+        14,
+        1656
+      ],
+      "issue": "Retained order requires passive FIFO evidence"
+    },
+    "july_unsupported_close_order": {
+      "time": 1625113203,
+      "direction": "closesell",
+      "limit": 34268.1,
+      "size": 100,
+      "saved_ticker": {
+        "source_second": 1625113203,
+        "quote": [
+          1625113202992515,
+          1625113202955000,
+          34268,
+          34268.1,
+          2905,
+          4
+        ],
+        "mark": [
+          1625113202109904,
+          1625113202058000,
+          34266.3
+        ],
+        "bar_time": 1625113200000,
+        "Last": 34268
+      },
+      "current_quote": [
+        1625113202992515,
+        1625113202955000,
+        34268,
+        34268.1,
+        2905,
+        4
+      ],
+      "issue": "Best marketable price lacks full source size and no exact deeper snapshot"
+    },
+    "provider_series": {
+      "2021-06-01": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/okex-swap/trades/2021/06/01/BTC-USD-SWAP.csv.gz",
+          "sha256": "ca8edbb3ee9bbe20a6772f30b2b329c821999671a8d1dab6fe595db9a1674693",
+          "bytes": 2583695,
+          "rows": 211336,
+          "last_local_us": 1622591998871965,
+          "funding_field_events": 0,
+          "observed_funding_timestamps_us": [],
+          "closed_interval_count": 90,
+          "first_closed": [
+            1622505600,
+            [
+              37284.6,
+              37656.2,
+              37135.3,
+              37652.1
+            ]
+          ]
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/okex-swap/quotes/2021/06/01/BTC-USD-SWAP.csv.gz",
+          "sha256": "74158049fdf50bc5f1d24108501ecd9beb6b0f7dbba3b3c4c705d2f2e9a3e7e2",
+          "bytes": 19524977,
+          "rows": 1571305,
+          "last_local_us": 1622591999961060,
+          "funding_field_events": 0,
+          "observed_funding_timestamps_us": []
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/okex-swap/derivative_ticker/2021/06/01/BTC-USD-SWAP.csv.gz",
+          "sha256": "fef27588ec9d3d16c7c095453e7185e0bdd88efb5824e625fb1c8aaef03c2a91",
+          "bytes": 1914917,
+          "rows": 136761,
+          "last_local_us": 1622591999376650,
+          "funding_field_events": 42385,
+          "observed_funding_timestamps_us": [
+            1622505600000000,
+            1622534400000000
+          ]
+        }
+      },
+      "2021-07-01": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/okex-swap/trades/2021/07/01/BTC-USD-SWAP.csv.gz",
+          "sha256": "c3e0f17a3db116931bed4b92916abbb487183ebd42c71d34bccaa34b085db01e",
+          "bytes": 2167119,
+          "rows": 180401,
+          "last_local_us": 1625183999178050,
+          "funding_field_events": 0,
+          "observed_funding_timestamps_us": [],
+          "closed_interval_count": 90,
+          "first_closed": [
+            1625097600,
+            [
+              35055.0,
+              35055.0,
+              34922.6,
+              34983.1
+            ]
+          ]
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/okex-swap/quotes/2021/07/01/BTC-USD-SWAP.csv.gz",
+          "sha256": "7db4ffc9a45ce61b97655e195e3585688e186edde7defabd17082a8882c2af8b",
+          "bytes": 15407258,
+          "rows": 1230071,
+          "last_local_us": 1625183999994335,
+          "funding_field_events": 0,
+          "observed_funding_timestamps_us": []
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/okex-swap/derivative_ticker/2021/07/01/BTC-USD-SWAP.csv.gz",
+          "sha256": "fcb693610bb904e8d1a8ff0a35eb8f65ba91d4db6e743a36eedf788271dab400",
+          "bytes": 1647186,
+          "rows": 118326,
+          "last_local_us": 1625183999318159,
+          "funding_field_events": 36240,
+          "observed_funding_timestamps_us": [
+            1625097600000000,
+            1625126400000000
+          ]
+        }
+      }
+    },
+    "decisions": [
+      [
+        "2021-06-01",
+        1622514600,
+        1622532600,
+        1622516403,
+        3,
+        "Error: Retained order requires passive FIFO evidence"
+      ],
+      [
+        "2021-07-01",
+        1625106600,
+        1625124600,
+        1625113203,
+        4,
+        "Error: Best marketable price lacks full source size and no exact deeper snapshot"
+      ]
+    ]
+  },
+  "proof_hashes": {
+    "staged_case": "515b297d67703eec970cf58a0dabe2566f36af197e3b6798e9343f507a6cc43f",
+    "depth_case": "9abb7aa2afa536387c6da3f659b13a6c17fce4d344eb351fc364ea13183e2cf1",
+    "depth_replay": "3cf4ec1a56bbb063a5a14c9fdb9eb02fe4bd5a4f60d6802eee82db73a7de3748",
+    "initial_replay": "392a74629d9ffc72c8e2060417a56cfb506a2b0891f6e109be84ba46625fe386",
+    "staged_case_script": "0f82b1cc386fac02a7dc6d3af50801b9c452762806b158a4e7d173071143b44b",
+    "depth_case_script": "e1aada10e5ff58f199abfef689eb5feea0f5638e29ba03b236ac469184aace02",
+    "depth_replay_script": "fb285fa563f8280662a81ed2e54742b052db4f8ed9e92480aacdedfd1bc523a9"
+  },
+  "limits": "The quote dataset records changes to best price or size, so newer deeper updates need not have identical message times to the last BBO. The admitted depth snapshot matched prices and amounts independently, was newer in both clocks than that matching BBO, and preceded the decision. A strictly better level in June completed the initial trade by the original limit. A later June source entry became passive because the venue moved during the source's sleep. July's close is priced at the observed best ask, leaving a possible unseen/queued remainder. The source never cancels either persistent order and updates its directional status independently of confirmation. Closing a historical ledger across these orders requires resting queue, reject and partial-fill state.",
+  "references": [
+    "https://www.fmz.com/strategy/318486",
+    "https://docs.tardis.dev/historical-data-details/okex-swap",
+    "https://docs.tardis.dev/downloadable-csv-files/data-types"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "coverage": [
+    [
+      117,
+      "Pending · archived external rule and position signal stream",
+      "The published executor consumes source-driven direction, size, target positions and timestamps from imported modules. The linked repository now resolves to BTCAlpha. Public GitHub history probes exposed neither the dated modules nor the 2021 command stream."
+    ],
+    [
+      3854,
+      "Pending · original MA template deployment and price-time fills",
+      "The pinned archive recovered the same-author strategy framework and companion plotting definitions. The caller genuinely submits open/close commands. Its original venue, candle clock, startup inventory and queue/fill inputs remain unbound."
+    ]
+  ],
+  "results": [],
+  "evidence": {
+    "117": {
+      "archived_source": {
+        "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/BTCUSDT%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E6%89%A7%E8%A1%8C%E4%BD%93.md",
+        "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/BTCUSDT量化交易执行体.md",
+        "archive_sha256": "1cb7508860ffc945ebd2c074de33a7b5772bded66bc89f10bfac553110616eba",
+        "executable_sha256": "c7394a0015e8f21a150e8df75e740fb7d549444b257cfc133f9a7af61257ed15",
+        "lang": "python"
+      },
+      "publisher": "https://www.fmz.com/strategy/321120",
+      "source_scope": {
+        "imported_modules": [
+          51,
+          58
+        ],
+        "external_decision_and_wallet": [
+          69,
+          128
+        ],
+        "command_reconciliation_and_dispatch": [
+          134,
+          201
+        ]
+      },
+      "public_origin": {
+        "linked": "https://github.com/Find-Dream/BTCUSDT",
+        "redirected": "https://github.com/btcusdt-cc/BTCAlpha",
+        "current_git_tree": "c60ee485503d4dc50f118ff14bf9b6a12db43361",
+        "archived_history_metadata_probes": [
+          [
+            "https://api.github.com/repos/Find-Dream/BTCUSDT/commits?until=2021-10-04T00%3A00%3A00Z&per_page=5",
+            []
+          ],
+          [
+            "https://api.github.com/repos/Find-Dream/BTCUSDT/commits?path=okex/api.py&per_page=5",
+            []
+          ],
+          [
+            "https://api.github.com/repos/Find-Dream/BTCUSDT/tags?per_page=25",
+            []
+          ],
+          [
+            "https://api.github.com/repos/Find-Dream/BTCUSDT/releases?per_page=15",
+            []
+          ]
+        ],
+        "method": "Read-only GitHub API queries for public commits at the publication cutoff, the old API module path, tags and releases. All four returned empty arrays. The current linked tree has a different source layout."
+      },
+      "missing": "Original timestamped remote rules and positions would be required alongside exact account-independent broker/feed behavior. The modern public implementation does not establish those historical inputs."
+    },
+    "3854": {
+      "archived_signal": {
+        "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E5%9D%87%E7%BA%BF%E7%AD%96%E7%95%A5.md",
+        "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/多均线策略.md",
+        "archive_sha256": "7734043ed85497c1a09c26d7f94f185a31cda71f4cf1727c30d695bbc0415896",
+        "executable_sha256": "acbcafe09bcb8b5a39ade8440a5fc6fcc3c01edcf7080f482e523f63bc6e428c",
+        "lang": "javascript"
+      },
+      "publisher": "https://www.fmz.com/strategy/47144",
+      "framework": {
+        "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%AD%96%E7%95%A5%E6%A1%86%E6%9E%B6%E6%A8%A1%E6%9D%BF.md",
+        "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/策略框架模板.md",
+        "archive_sha256": "8ccc90cdd81ab5936bcf0f239fd8770676406b1d3a391800a10bf79a4376e5e8",
+        "executable_sha256": "e1662fb81837ead2d420b6a43ce80e6f271f63d5ab3b0af83cc611ba9773233f",
+        "lang": "javascript"
+      },
+      "framework_publisher": "https://www.fmz.com/strategy/30861",
+      "framework_guide": "https://www.fmz.com/bbs-topic/634",
+      "plotting": {
+        "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%94%BB%E7%BA%BF%E7%B1%BB%E5%BA%93Plot-library.md",
+        "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/画线类库Plot-library.md",
+        "archive_sha256": "1bc6b33689478c7680bf205f189ffdbff263d48af2ffd08a91a1e8f21ef8e7b2",
+        "executable_sha256": "f4fdbe70eb627f5cca89ff01c13f737bc72622b6e191f4b1b9503cc115cca71a",
+        "lang": "javascript"
+      },
+      "plotting_publisher": "https://www.fmz.com/strategy/27293",
+      "archive_crosscheck": "The unique archived definition of Relation_Exchange_onTick accompanies TaskCmd, GetTaskState and Trend. The only other archived direct reference is the reviewed strategy. Both are published by the same author, and the guide explicitly documents attaching that execution framework. The separate plotting library provides GetCfg, PlotRecords and PlotLine.",
+      "source_scope": {
+        "rule": [
+          50,
+          92
+        ],
+        "attached_framework_commands": [
+          95,
+          129
+        ],
+        "framework_executor": [
+          405,
+          539
+        ]
+      },
+      "missing": "The chart period is implicit in the GetRecords host call. Day-number labels support interpreting the moving-average parameters as 60/10/5 days, but no date/venue and opening inventory tuple is pinned. The framework has crossing/resting modes, configurable size and market-specific rounding, and the sell-side mode needs inventory treatment."
+    }
+  }
+}
