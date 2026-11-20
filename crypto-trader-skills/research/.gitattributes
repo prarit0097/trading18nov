@@ -4,3 +4,6 @@ fmz_round18_pine_qqe.mjs -text diff
 fmz_round19_pine_partials.mjs -text diff
 fmz_round20_pine_factors.mjs -text diff
 fmz_round19_pine_broker.mjs -text diff
+fmz_native_round20_880_capture.py -text diff
+fmz_native_round20_880_verify.py -text diff
+fmz_native_round20_880_worker.cjs -text diff

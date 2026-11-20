@@ -1,0 +1,419 @@
+{
+  "coverage": [
+    [
+      880,
+      "Tested · archived BitMEX inverse SAR on two exact source-date scopes",
+      "The BTC-only published 10,000-contract 1x strategy ran with causal partial daily bars and native FMZ SAR. Two 8h slices each opened one long and closed zero. Independent accounting reconciled every observed mark, trading fee and selected funding mark. Realized win rate is undefined. Marked BTC P&L and drawdowns are reported separately."
+    ]
+  ],
+  "results": [
+    {
+      "id": 880,
+      "market": "XBTUSD perpetual [BTC settlement]",
+      "group": "FMZ Native · BitMEX inverse SAR",
+      "name": "SAR抛物线转向指标",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/SAR%E6%8A%9B%E7%89%A9%E7%BA%BF%E8%BD%AC%E5%90%91%E6%8C%87%E6%A0%87.md",
+      "period": "2020-02-01 02:00–10:00 UTC",
+      "exit": "Archived SAR, position carried at window end",
+      "interval": "1d chart · 5s poll",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "starting_equity": 2.0,
+      "mark_to_market_net": -0.005977251320292235,
+      "remaining_unrealized": -0.005075461967974523
+    },
+    {
+      "id": 880,
+      "market": "XBTUSD perpetual [BTC settlement]",
+      "group": "FMZ Native · BitMEX inverse SAR",
+      "name": "SAR抛物线转向指标",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/SAR%E6%8A%9B%E7%89%A9%E7%BA%BF%E8%BD%AC%E5%90%91%E6%8C%87%E6%A0%87.md",
+      "period": "2020-08-01 02:00–10:00 UTC",
+      "exit": "Archived SAR, position carried at window end",
+      "interval": "1d chart · 5s poll",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "starting_equity": 2.0,
+      "mark_to_market_net": 0.031107713455258253,
+      "remaining_unrealized": 0.03186006900578656
+    }
+  ],
+  "diagnostics": [
+    {
+      "day": "2020-02-01",
+      "daily_warmup_closed_bars": 550,
+      "closed_day_alignment": "FMZ 1d labels are right endpoints in both crosschecked dates.",
+      "observed_trigger_count": 5760,
+      "lowest_full_day_trade_price": 9287.5,
+      "highest_native_SAR": 8444.81245376,
+      "order": {
+        "at": 1580522400,
+        "side": 1,
+        "direction": "buy",
+        "qty": 10000,
+        "price": 9427,
+        "fee": 0.0007955871433117641,
+        "gross": 0,
+        "cash": 1.9992044128566882,
+        "mark": 9419.9,
+        "observed_top_size": 1392199,
+        "quote_local_us": 1580522399959778,
+        "quote_exchange_us": 1580522399959778,
+        "last": 9426.5,
+        "sar": 8444.81245376
+      },
+      "funding": {
+        "at": 1580529600,
+        "qty": 10000,
+        "mark": 9416,
+        "rate": 0.0001,
+        "amount": -0.00010620220900594733,
+        "alternative_mark": 9416.94,
+        "alternative_amount": -0.0001061916078896117,
+        "before": [
+          1580529598074295,
+          1580529597608000,
+          9416,
+          9416,
+          9422,
+          1580529600000000,
+          "0.0001"
+        ],
+        "first_rolled": [
+          1580529607039137,
+          1580529599785000,
+          9416.94,
+          9416,
+          9422,
+          1580558400000000,
+          "0.0001"
+        ]
+      },
+      "funding_mark_sensitivity_BTC": "1.0601116335623937742204268809166894104E-8",
+      "max_rounding_sensitivity_BTC": "0.00000002",
+      "wallet_change_BTC": "-0.000901789352317711405596769668351692146935279",
+      "gross_marked_pnl_BTC": "-0.00507546196797452309216178163079684774266",
+      "after_fee_marked_pnl_BTC": "-0.00587104911128628717405421824902109723879",
+      "net_marked_pnl_BTC": "-0.00597725132029223449775855129914853988960",
+      "observed_opening_execution_vs_last_BTC": "0.000056265997865009217411371249012482504720000",
+      "mark_to_market_drawdown": {
+        "gross": {
+          "BTC": "0.01183800736932640340554595794510599621216",
+          "fraction": "0.00591012398718039373205591471583117731017538"
+        },
+        "after_fees": {
+          "BTC": "0.01183800736932640340554595794510599621216",
+          "fraction": "0.00591247240230572325362934652439642160588114"
+        },
+        "net": {
+          "BTC": "0.01194420957833235072925029099523343886297",
+          "fraction": "0.00596551491277404518242033241787323293948311"
+        }
+      },
+      "lowest_equity_above_maintenance_and_exit_fee_BTC": "1.98411482226737379940549996950347921251305",
+      "ending_mark": 9382.11,
+      "capture_references": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/trades/2020/02/01/XBTUSD.csv.gz",
+          "dataset": "trades",
+          "bytes": 12345412,
+          "sha256": "81198a6d483a620248f81b4a873859f2dbc590e392e91a7a5f9023d86ab34648",
+          "rows": 416480,
+          "first_local_us": 1580515203504676,
+          "last_local_us": 1580601599817828,
+          "max_gap_us": 30139582
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/quotes/2020/02/01/XBTUSD.csv.gz",
+          "dataset": "quotes",
+          "bytes": 17609363,
+          "sha256": "e3edf1bee4234bbae68ca47f98e8d31ef444ea4147273c39c9b6a33728ed694b",
+          "rows": 1783426,
+          "first_local_us": 1580515200398111,
+          "last_local_us": 1580601599820841,
+          "max_gap_us": 8921239
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2020/02/01/XBTUSD.csv.gz",
+          "dataset": "derivative_ticker",
+          "bytes": 889924,
+          "sha256": "b3001b4ee28234778c18fbed3fce03863df0dc16cdc9be72e667138c47c7f8ed",
+          "rows": 68394,
+          "first_local_us": 1580515200761087,
+          "last_local_us": 1580601598966453,
+          "max_gap_us": 24209237
+        }
+      },
+      "fmz_history_references": [
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1580428800&to=1580601600",
+          "sha256": "5a6f45b7c36f926768b6117bfedc0cdce7a2c3ea90239bb3824b2fa9e2d9ec4c",
+          "bytes": 156,
+          "rows": 3
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=3600000&from=1580515200&to=1580598000",
+          "sha256": "38d67ced5c49929472a8918217c44cdfd6f0aa67654407756620b34464361357",
+          "bytes": 1210,
+          "rows": 24
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1494115200&to=1519948800",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "rows": 0
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1520035200&to=1545868800",
+          "sha256": "b663a1a89aacde53f5029127d828d30b86e14b7e1c83173298d1764dc5727923",
+          "bytes": 7739,
+          "rows": 149
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1545955200&to=1571788800",
+          "sha256": "81a02647ffc8cc031ab23e4783ba227859644b04ea2f7aff886fc847eacbf408",
+          "bytes": 15907,
+          "rows": 300
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1571875200&to=1580428800",
+          "sha256": "3e2ceb229bc3df326394cd58519c89c389425062045623e0f5e8eade85cb17df",
+          "bytes": 5215,
+          "rows": 100
+        }
+      ]
+    },
+    {
+      "day": "2020-08-01",
+      "daily_warmup_closed_bars": 732,
+      "closed_day_alignment": "FMZ 1d labels are right endpoints in both crosschecked dates.",
+      "observed_trigger_count": 5760,
+      "lowest_full_day_trade_price": 11246.0,
+      "highest_native_SAR": 10181.366651017022,
+      "order": {
+        "at": 1596247200,
+        "side": 1,
+        "direction": "buy",
+        "qty": 10000,
+        "price": 11288.5,
+        "fee": 0.0006643929662931301,
+        "gross": 0,
+        "cash": 1.999335607033707,
+        "mark": 11279.19,
+        "observed_top_size": 5345382,
+        "quote_local_us": 1596247199670190,
+        "quote_exchange_us": 1596247199670190,
+        "last": 11288.5,
+        "sar": 10181.366651017022
+      },
+      "funding": {
+        "at": 1596254400,
+        "qty": 10000,
+        "mark": 11368.47,
+        "rate": 0.0001,
+        "amount": -8.796258423516975e-05,
+        "alternative_mark": 11369.61,
+        "alternative_amount": -8.795376446509599e-05,
+        "before": [
+          1596254398076372,
+          1596254395152000,
+          11368.47,
+          11368.47,
+          11388,
+          1596254400000000,
+          "0.0001"
+        ],
+        "first_rolled": [
+          1596254405833200,
+          1596254395152000,
+          11369.61,
+          11368.47,
+          11388,
+          1596283200000000,
+          "0.0001"
+        ]
+      },
+      "funding_mark_sensitivity_BTC": "8.8197700737398635619892421810356534795E-9",
+      "max_rounding_sensitivity_BTC": "0.00000002",
+      "wallet_change_BTC": "-0.000752355550528299904932940005721683830979261",
+      "gross_marked_pnl_BTC": "0.03186006900578655337282816748903548858347",
+      "after_fee_marked_pnl_BTC": "0.03119567603949342319609963845506286157368",
+      "net_marked_pnl_BTC": "0.03110771345525825346789522748331380475249",
+      "observed_opening_execution_vs_last_BTC": "0E-46",
+      "mark_to_market_drawdown": {
+        "gross": {
+          "BTC": "0.01306087569768858511794292919122745991611",
+          "fraction": "0.00641547636018783012074715048078360974712814"
+        },
+        "after_fees": {
+          "BTC": "0.01306087569768858511794292919122745991611",
+          "fraction": "0.00641757072485425572237107825001413579795992"
+        },
+        "net": {
+          "BTC": "0.01306087569768858511794292919122745991611",
+          "fraction": "0.00641784811164874508088368821872163033199519"
+        }
+      },
+      "lowest_equity_above_maintenance_and_exit_fee_BTC": "1.99332703134109169387729610816443461884890",
+      "ending_mark": 11709.64,
+      "capture_references": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/trades/2020/08/01/XBTUSD.csv.gz",
+          "dataset": "trades",
+          "bytes": 16055327,
+          "sha256": "0aa417701cf5de1b83e6d224be8ab982f2cd8764508c81cb522e6d333e59cf09",
+          "rows": 529212,
+          "first_local_us": 1596240003227956,
+          "last_local_us": 1596326399237108,
+          "max_gap_us": 31646162
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/quotes/2020/08/01/XBTUSD.csv.gz",
+          "dataset": "quotes",
+          "bytes": 25597251,
+          "sha256": "e7cccb418a3288b6f5709f6d32ab09140727338a363d3946538c54a5074595f6",
+          "rows": 2593531,
+          "first_local_us": 1596240002735593,
+          "last_local_us": 1596326399990274,
+          "max_gap_us": 7619361
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2020/08/01/XBTUSD.csv.gz",
+          "dataset": "derivative_ticker",
+          "bytes": 1360044,
+          "sha256": "f9b95146388a6561fd3231d79fed06414da77d49b7b057445633dc5c3bbd0cbb",
+          "rows": 109351,
+          "first_local_us": 1596240002627184,
+          "last_local_us": 1596326399240769,
+          "max_gap_us": 20045326
+        }
+      },
+      "fmz_history_references": [
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1596153600&to=1596326400",
+          "sha256": "83784201677f3a6a66db56727a5a6ad25d833f448e211bc5dd1a5c2ebe27d9d2",
+          "bytes": 174,
+          "rows": 3
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=3600000&from=1596240000&to=1596322800",
+          "sha256": "88e0884a55a92c7920515f7b30addcec5ecc1f67daf4dde744cd30477910625f",
+          "bytes": 1321,
+          "rows": 24
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1509840000&to=1535673600",
+          "sha256": "88fbb44b0fa815b5968baa232a3e94431a93a58b25235c691aa0b6d76b8c1708",
+          "bytes": 1627,
+          "rows": 31
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1535760000&to=1561593600",
+          "sha256": "c5fb80ccec3a17732b5465a2727666f0861c089a636404f7e8b39cf252dc9bed",
+          "bytes": 15617,
+          "rows": 300
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1561680000&to=1587513600",
+          "sha256": "4e54faebe5ab242021701e1923d27b4c1ca2aa6fb01975d14f2bcc5a4d30a823",
+          "bytes": 15904,
+          "rows": 300
+        },
+        {
+          "url": "https://q.fmz.com/data/history?eid=Futures_BitMEX&symbol=XBT_USD.swap&event=feed&period=86400000&from=1587600000&to=1596153600",
+          "sha256": "61828649a8692f00cb05aa7de6658c6cb491ac9d9cd5f1066394c848ba228ff0",
+          "bytes": 5225,
+          "rows": 100
+        }
+      ]
+    }
+  ],
+  "win_rate": null,
+  "source": {
+    "id": 880,
+    "url": "https://www.fmz.com/strategy/224799",
+    "sha256": "9d7df7aabf6e5c3e24d8a167a71d1555cf3c576a53a25c998b20ca43c1854af5",
+    "preview_chars": 302,
+    "args": {},
+    "still_missing": [],
+    "name": "SAR抛物线转向指标",
+    "table": {
+      "Argument": "Default",
+      "Amount": "100",
+      "time_interval": "3600"
+    },
+    "archive_scope": {
+      "start": "2017-11-01 00:00:00",
+      "end": "2020-09-01 00:00:00",
+      "period": "1d",
+      "basePeriod": "1h",
+      "exchanges": "[{\"eid\":\"Futures_BitMEX\",\"currency\":\"XBT_USD\"}]",
+      "args": "[[\"Amount\",10000],[\"time_interval\",86400]]"
+    },
+    "archive_sha256": "2e71c015e584a25dda1479108bef0c32c916473d169669ee3713187370838349",
+    "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/SAR%E6%8A%9B%E7%89%A9%E7%BA%BF%E8%BD%AC%E5%90%91%E6%8C%87%E6%A0%87.md",
+    "archive_source_sha256": "d0a6b32e1c702ecb536ac9cb60416161186c8db7231c5829523c437355b9d6e5"
+  },
+  "inputs": {
+    "job_sha256": "370b7f8b9ccadc69b40ba6d0d85fa1fa61f771b0770cd236f51799d210436036",
+    "native_receipt_sha256": "aabd745e2f9ab567533086c66e3956236b16118b288eea29eb9a346e1d83f445",
+    "fmz_math_engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "capture_script": "fmz_native_round20_880_capture.py",
+    "capture_script_sha256": "b5ef2fd95ae03883644970071823819b3a44cc3b977dc2be235ba08c0eb6468e",
+    "worker_script": "fmz_native_round20_880_worker.cjs",
+    "worker_script_sha256": "45c2a2e4d9d2ab61c3ba1534f6202a642f976ba203d529f6f7a52917ebf68ee5"
+  },
+  "implementation": {
+    "periods": "Two free first-of-month windows inside the author's source date range were declared before replay. Each starts flat with 2 BTC virtual collateral. The original source named BitMEX XBT/USD and gave no explicit wallet starting value.",
+    "signal": "Archive quantity 10,000 inverse USD-face contracts, 1x, daily current bar and a 5s polling loop. The source uses FMZ's own WASM TA-Lib SAR implementation. Recalculate using previous closed daily FMZ bars and only market trades observable at each simulated decision time. All lookback checks from 100 through all available closed bars agree.",
+    "host_feed": "The archived XBTUSD branch used native GetCurrency XBT_USD. Public FMZ daily XBT_USD.swap finished-candle OHLC matches each Tardis day exactly when the reported FMZ timestamp is interpreted as the UTC right endpoint. Raw intraday Tardis trades supply current daily high, low and last. FMZ historical hourly bars are not used.",
+    "fills": "The rule's limit equals the current observed best ask for a buy and bid for a sell. Require displayed size to cover the whole limit and a strictly causal quote at most five seconds old. The selected scenarios execute only one taker entry each and leave no resting orders. No synthetic end-of-window liquidation.",
+    "settlement": "1 USD contract face and BTC inverse accounting. Debits use the 2020 base taker rate and the captured 04:00 UTC scheduled funding rate. The settlement calculation uses the last observed mark before the funding timestamp rolled. A second calculation with the first rolled mark quantifies mark timing sensitivity below two satoshi.",
+    "drawdown": "Zero in the closed-trade results because both windows end with open positions. The marked curves record the five-second BTC equity drawdown before fees, after fees and after applied funding. Terminal unrealized P&L uses the latest mark observable before the fixed boundary.",
+    "precision": "Independent Decimal math checks floating native receipts at 1e-14 BTC. Simulated per-event amounts use fractional satoshi precision. The receipt gives a two-satoshi envelope for two independent fee/funding rounding events."
+  },
+  "reproduction": "Place the capture script in the existing research scratch directory alongside a JSON parameter-proof array containing this report source field. The capture script reads the pinned FMZ ZIP and retrievable public records and writes a compact gzip job into round3-native. Run the worker in that existing network-denied AppContainer. Pass the job, native receipt, capture script, worker script and fresh output path to the verifier.",
+  "references": [
+    "https://www.fmz.com/strategy/224799",
+    "https://docs.tardis.dev/historical-data-details/bitmex",
+    "https://www.bitmex.com/blog/why-we-revamped-our-fee-structure",
+    "https://www.bitmex.com/blog/introducing-and-explaining-the-positive-impact-of-lower-maintenance-margins",
+    "https://support.bitmex.com/hc/en-gb/articles/5903013223837-What-are-the-Trading-Fees-and-where-can-I-see-what-I-ve-paid"
+  ]
+}

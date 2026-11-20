@@ -1,0 +1,263 @@
+{
+  "coverage": [
+    [
+      132,
+      "Excluded · API demonstration",
+      "The reusable BitMEX class takes order details from its caller. Its standalone test submits one fixed two-sided batch at startup price offsets, schedules cancellation and reads status for a few seconds. No fill-driven signal or position management is defined."
+    ],
+    [
+      206,
+      "Excluded · Protocol or data adapter",
+      "The Python source starts the CoinPark exchange adapter. A client request supplies the order side, price, amount and symbol. The archive's JavaScript main is a docstring usage example for transfers. Neither the adapter nor the example supplies market entries or exits."
+    ],
+    [
+      647,
+      "Excluded · API demonstration",
+      "The two active order sites submit initial buys for API demonstration and then log order and position state. Subsequent close calls are comments. The 30-minute midpoint is displayed, and there is no trade rule driven by a midpoint crossing or subsequent fill."
+    ],
+    [
+      650,
+      "Excluded · Protocol or data adapter",
+      "The reusable connector decodes subscription messages, stores depth and optionally invokes a caller-provided callback. The archived standalone test binds no callback and only prints market depth. No trade policy exists in either path."
+    ],
+    [
+      651,
+      "Excluded · API demonstration",
+      "The OKEX extension exposes caller-parameterized batch placement. Its main demonstrates fixed startup price multipliers, buffer management and submission. A literal close intent in this demonstration has no fill-driven pairing or stop rule."
+    ],
+    [
+      686,
+      "Excluded · API demonstration",
+      "The Python main enumerates fixed API calls including immediate market buys and liquidation. TA and chart calls are logging tests after the orders. The timeframe and Bitfinex symbol identify test inputs, and market history never determines position entry or exit."
+    ],
+    [
+      1077,
+      "Excluded · Protocol or data adapter",
+      "Both main samples read and log depth/trades. The executable template replaces GetDepth and GetTrades with WebSocket-backed reads and original-read fallback. Thread messaging subscribes to market symbols. A separate client would have to supply all order decisions."
+    ],
+    [
+      5285,
+      "Excluded · Protocol or data adapter",
+      "The helper fetches bars for the hard-coded Chinese commodity futures exchange families. Its demo entrypoint logs one account snapshot. Neither path chooses a market position or submits an order."
+    ]
+  ],
+  "results": [],
+  "method": "Pinned archive source and authoritative publisher role, including standalone entrypoint, exposed wrapper methods, commented branches, dynamic dispatch, and documentation examples. A parent strategy would need its own market-driven signal or position rules. Exclusions refer to historical strategy performance, not the utility or correctness of the components.",
+  "source_evidence": [
+    {
+      "id": 132,
+      "role": "Broker API extension with fixed smoke test",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/BitMEX-%E9%AB%98%E7%BA%A7API%E5%8A%9F%E8%83%BD-V110-%E6%9C%9F%E8%B4%A7%E6%89%B9%E9%87%8F%E4%B8%8B%E5%8D%95%E7%BC%96%E8%BE%91%E8%AE%A2%E5%8D%95%E5%86%B0%E5%B1%B1%E8%AE%A2%E5%8D%95%E4%B8%80%E9%94%AE%E6%92%A4%E5%8D%95%E5%AE%9A%E6%97%B6%E6%92%A4%E5%8D%95-Python2-3.md",
+      "publisher": "https://www.fmz.com/strategy/114148",
+      "archive_document_sha256": "41acdb79c5f94a7506b428df9263a30c0624027601f9828d3aaaf33508e6d315",
+      "executable_sha256": "706387c57e4c36b1e6dd0e28b399c4bcb5621c02a87ae25cbe3fb677625592a5",
+      "language": "python",
+      "source_scope": [
+        425,
+        444
+      ],
+      "source_markers": {
+        "BulkAdd('sell'": [
+          436
+        ],
+        "BulkAdd('buy'": [
+          437
+        ],
+        "BulkPost()": [
+          439
+        ],
+        "CancelAllAfter(5000)": [
+          441
+        ]
+      },
+      "supersedes": "External import needed: requests"
+    },
+    {
+      "id": 206,
+      "role": "Broker protocol transport",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CoinPark%E4%BA%A4%E6%98%93%E6%89%80%E9%80%9A%E7%94%A8%E5%8D%8F%E8%AE%AE-627-1600-%E6%9B%B4%E6%96%B0-%E5%85%B3%E9%97%AD%E4%BA%86SSL%E9%AA%8C%E8%AF%81.md",
+      "publisher": "https://www.fmz.com/strategy/101399",
+      "archive_document_sha256": "9edaf4b16436ea445ca1f2f1be6efe1e031bafbd7ebdba8a022fdee129a1c9ea",
+      "executable_sha256": "0e527bf2f7c17e3788c10eae990b18259cea44dd8dd077c89b22cc744ae69292",
+      "language": "python",
+      "source_scope": [
+        263,
+        340
+      ],
+      "source_markers": {
+        "data['method'] == \"trade\"": [
+          295
+        ],
+        "httpd.serve_forever()": [
+          333
+        ],
+        "if __name__ == \"__main__\"": [
+          335
+        ]
+      },
+      "supersedes": "Source has JavaScript syntax error at line 1"
+    },
+    {
+      "id": 647,
+      "role": "New-user quarter futures API demonstration",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/OKex%E6%9C%9F%E8%B4%A7%E6%B5%8B%E8%AF%95for%E6%96%B0%E6%89%8B.md",
+      "publisher": "https://www.fmz.com/strategy/170842",
+      "archive_document_sha256": "949095cab580a5524444c6a1ceac115dd6526000fdf1144ee9fcb147b5060933",
+      "executable_sha256": "c8190ebd457658e8380f4fcebb4c6732334c614b3f6c225c68f4781b6e81bc86",
+      "language": "javascript",
+      "source_scope": [
+        38,
+        140
+      ],
+      "source_markers": {
+        "exchange.SetContractType(\"quarter\")": [
+          134
+        ],
+        "if (isInit == 1)": [
+          61
+        ],
+        "}else if(isInit==2)": [
+          100
+        ],
+        "if(orders.length<2)": [
+          121
+        ]
+      },
+      "supersedes": "Requires contract type quarter"
+    },
+    {
+      "id": 650,
+      "role": "WebSocket market-feed connector",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/OkEX-Websocket-Realtime-v3.md",
+      "publisher": "https://www.fmz.com/strategy/143457",
+      "archive_document_sha256": "ede2e5ba1b2dcb3f839a029d87b70dbcc5cf1e43e94da069da080aa6777766d2",
+      "executable_sha256": "8351d96a54acbbea5285bc38c47052c8e444ca2c05ae1beb2721737d8866a936",
+      "language": "python",
+      "source_scope": [
+        111,
+        138
+      ],
+      "source_markers": {
+        "self.__callback(message)": [
+          122
+        ],
+        "ext.OkEXWS = WSSubscription": [
+          131
+        ],
+        "Log(OkEX.GetDepth())": [
+          137
+        ]
+      },
+      "supersedes": "External import needed: code, hashlib, hmac, readline, ssl, string, sys, threading, urllib, websocket, zlib"
+    },
+    {
+      "id": 651,
+      "role": "Broker API extension with fixed smoke test",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/OkEX-%E9%AB%98%E7%BA%A7API%E5%8A%9F%E8%83%BD-V110-%E6%9C%9F%E8%B4%A7%E6%89%B9%E9%87%8F%E4%B8%8B%E5%8D%95%E7%8E%B0%E8%B4%A7TBD-Python2-3.md",
+      "publisher": "https://www.fmz.com/strategy/113979",
+      "archive_document_sha256": "5fe0ba2418b093c962cdafd9fbb2f3224c76a27608eecc7e662e3e179da07811",
+      "executable_sha256": "4f6038fc37e4e2b5fdd749371aa97fc8511407689c4bbe921642817cb2763508",
+      "language": "python",
+      "source_scope": [
+        293,
+        334
+      ],
+      "source_markers": {
+        "ext.OkEXFuturePlus = OkEXFuture": [
+          293
+        ],
+        "BulkAdd(\"closesell\"": [
+          325
+        ],
+        "for item in OKEXPlus.BulkPost():": [
+          332
+        ]
+      },
+      "supersedes": "External host or stored state: ext"
+    },
+    {
+      "id": 686,
+      "role": "Python host API smoke test",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python-API-%E6%B5%8B%E8%AF%95.md",
+      "publisher": "https://www.fmz.com/strategy/21365",
+      "archive_document_sha256": "695a915b994b34b3e7b1db999cb3f409c4364b05fca5ace7efbe2c92381f2d0f",
+      "executable_sha256": "3a73f1986af86e0ed4b52a442da44d6c5cc30c6ea2012f93f62a9ba6c08575de",
+      "language": "python",
+      "source_scope": [
+        37,
+        138
+      ],
+      "source_markers": {
+        "testExchanges = [": [
+          51
+        ],
+        "getattr(exchange, item[0])": [
+          74
+        ],
+        "exchange.Sell(-1, exchange.GetAccount().Stocks)": [
+          84
+        ],
+        "for i in range(100):": [
+          133
+        ]
+      },
+      "supersedes": "External import needed: matplotlib, mpl_toolkits, numpy, sys, talib, traceback"
+    },
+    {
+      "id": 1077,
+      "role": "Multivenue market-data acceleration template",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/WebSocket-%E5%8A%A0%E9%80%9F%E9%A9%B1%E5%8A%A8WebSocket-Acceleration-Driver.md",
+      "publisher": "https://www.fmz.com/strategy/470349",
+      "archive_document_sha256": "fbe759e9a321b862f95b6f7201dc2dec4638ab4b8ea236afab9e4e54f795de54",
+      "executable_sha256": "6a6cb9e9b8e3230cdbf93f38685381dabae6917a5e58171332148aa634c379a7",
+      "language": "javascript",
+      "source_scope": [
+        787,
+        875
+      ],
+      "source_markers": {
+        "e.GetDepth = function(symbol)": [
+          829
+        ],
+        "e.GetTrades = function(symbol)": [
+          846
+        ],
+        "EventLoop(100)": [
+          873
+        ]
+      },
+      "supersedes": "Archive contains 2 distinct JavaScript entry blocks with no selected configuration."
+    },
+    {
+      "id": 5285,
+      "role": "Chinese commodity futures bar-data helper",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%8E%B7%E5%8F%96%E5%92%8C%E8%AE%AF%E6%9C%9F%E8%B4%A7%E6%95%B0%E6%8D%AEPython%E7%89%88%E6%9C%AC.md",
+      "publisher": "https://www.fmz.com/strategy/26017",
+      "archive_document_sha256": "f63b2d0bbe13f194b7cedd95743f6f187e9e1e581b50368c8ab5d1d4b0a06439",
+      "executable_sha256": "e26ee479b6cf6033e0fc67467c141a19306ed912c33105a85c9d81786d873ebf",
+      "language": "python",
+      "source_scope": [
+        19,
+        93
+      ],
+      "source_markers": {
+        "def hxRecords(": [
+          25
+        ],
+        "\"xchg\": \"SHFE\"": [
+          74
+        ],
+        "\"xchg\": \"CZCE\"": [
+          83
+        ],
+        "\"xchg\": \"DCE\"": [
+          86
+        ],
+        "Log(exchange.GetAccount())": [
+          91
+        ]
+      },
+      "supersedes": "Cannot parse Python 3 source: Missing parentheses in call to 'print'. Did you mean print(...)? (<unknown>, line 34)"
+    }
+  ]
+}
