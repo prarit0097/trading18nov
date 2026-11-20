@@ -1,0 +1,100 @@
+{
+  "coverage": [
+    [
+      682,
+      "Excluded · Incomplete strategy or execution example",
+      "Both entry calls are commented out in the full archived source. The remaining two exit calls refer to those entry names. There is no independently opened position for a historical performance replay."
+    ],
+    [
+      1106,
+      "Excluded · Incomplete strategy or execution example",
+      "The fixed sample contract is used to demonstrate resting-order cancellation and prescribed long and short entries and exits. No condition selects a trade from historical market data."
+    ],
+    [
+      4759,
+      "Excluded · Incomplete strategy or execution example",
+      "The operator-provided threshold qualifies a single pair of openings. RealTrade is false by default, and the published source returns after the placement attempt with no spread-management or closure rule."
+    ],
+    [
+      4760,
+      "Excluded · Incomplete strategy or execution example",
+      "The author specifies one-click manual operation. It submits caller-configured volumes, cancels outstanding placement attempts and returns position details. No recurring decision or close rule exists."
+    ],
+    [
+      4772,
+      "Excluded · Incomplete strategy or execution example",
+      "The complete Pine block labels and colors qualifying candles. Its strategy declaration is followed by no active order, entry, close or exit call."
+    ]
+  ],
+  "results": [],
+  "evidence": [
+    {
+      "id": 682,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Price-Action%E7%AD%96%E7%95%A5Price-Action-Strategy.md",
+      "role": "Unbound exit rule",
+      "pinned_document_sha256": "ce75bba9dced6cb0eb4384b4b5ab1a11d2e5301b046bdc2006b0779805cdcd2a",
+      "source_block_sha256": "7a0529be3070e207f2f051fe81b4fce94e4f363453a34bf9c63382d0760e465d",
+      "language": "pinescript",
+      "markers": [
+        "strategy.exit(\"ExitBuy\", \"Buy\"",
+        "strategy.exit(\"ExitSell\", \"Sell\"",
+        "//    strategy.entry(\"Buy\""
+      ]
+    },
+    {
+      "id": 1106,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/derbit-%E6%9C%9F%E6%9D%83%E5%9B%9E%E6%B5%8B%E6%B5%8B%E8%AF%95.md",
+      "role": "Deribit order API example",
+      "pinned_document_sha256": "6460afbbd1481f1edcd2ec0bb4f4b16d7b73147436fe68d65acfb6369ae03e3c",
+      "source_block_sha256": "6abc6afd94786f74bb7d10496ad5dc9632c4afe455d14cb61586e0efb8332421",
+      "language": "javascript",
+      "markers": [
+        "exchange.SetContractType('BTC-7AUG20-12750-C')",
+        "exchange.CancelOrder(orderId)",
+        "exchange.SetDirection(\"closesell\")",
+        "exchange.SetDirection(\"closebuy\")"
+      ]
+    },
+    {
+      "id": 4759,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%9C%9F%E7%8E%B0%E6%88%90%E5%AF%B9%E4%B8%8B%E5%8D%95_Public.md",
+      "role": "One-shot trade-pair plugin",
+      "pinned_document_sha256": "59a1244c4695e8e5e5641145a9b71de8e0c1271d2589cb37ade1db3d63b4b77b",
+      "source_block_sha256": "384e85d47a4a2ab2ab31c0c883e06565a2672932be4b2e0418f6f46171a3a68d",
+      "language": "python",
+      "markers": [
+        "if Diff <= DiffMin:",
+        "if not RealTrade:",
+        "BuyOrderId = exchange.Buy",
+        "return TradeMsg"
+      ]
+    },
+    {
+      "id": 4760,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%9C%9F%E8%B4%A7%E4%B8%80%E9%94%AE%E5%AF%B9%E5%86%B2%E6%8F%92%E4%BB%B6Hedge-on-two-contracts.md",
+      "role": "Manually launched hedge plugin",
+      "pinned_document_sha256": "a3627b6345ba3c19041ef0b2ac3f433ff8b678d6044010093c4cfe88819e887a",
+      "source_block_sha256": "ef035a28de6a8eafd276e33fea86c648201f17dd3e737493af3d704e7aaca8a4",
+      "language": "javascript",
+      "markers": [
+        "exchange.SetDirection('buy')",
+        "exchange.SetDirection('sell')",
+        "return 'Position: '"
+      ]
+    },
+    {
+      "id": 4772,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%9D%A1%E4%BB%B6%E5%BC%80%E4%BB%93%E9%A9%AC%E4%B8%81.md",
+      "role": "Chart marker script",
+      "pinned_document_sha256": "3ca92a700393abaf4254c8cadc0b044eec8a2a2e96e6474ae49db17ec1ac381a",
+      "source_block_sha256": "35e9b9018e7b22e072a91f318e06396125c5d5cf4444ea54ca1e1b3e01455a86",
+      "language": "pinescript",
+      "markers": [
+        "strategy(\"Big candle\"",
+        "barcolor(",
+        "label.new(",
+        "//BACKTESTING inputs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "coverage": [
+    [
+      4632,
+      "Excluded · Archived index balance cannot emit orders",
+      "Update resets the base-wallet value to a primitive and reads its undefined value into totalValue. With normal distinct asset and quote symbols the total becomes NaN and neither order condition is reachable. Author preview and isolated source control reproduce the fault."
+    ],
+    [
+      4628,
+      "Pending · FMZ multi-asset shared quote balance",
+      "The author requires multiple exchange objects, one per instrument. Archived defaults include three allocations with BTC quoted balances. Exact basket selection, shared account quote model and reconciled multi-asset executions remain unverified."
+    ]
+  ],
+  "results": [],
+  "baseline_sha256": "6edf01609ce0f1784d2becf238c34e491f04bb86ac07d19bd72981192c6e8586",
+  "sources": [
+    {
+      "id": 4632,
+      "archive": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8C%87%E6%95%B0%E5%B9%B3%E8%A1%A1%E7%AD%96%E7%95%A5Index-Balance-Bot.md",
+      "raw_sha256": "1f412d85dc855b33a4dae337c73bfbdf63fcfc17c51916d8ea77a7a9e92b739b",
+      "body_sha256": "64a8fb027b901d38a657eae98c173d7bae71561c2fc2e944b5ba64a730afef25",
+      "lines": [
+        {
+          "source_line": 7,
+          "text": "coinValue[BaseAsset] = 0;"
+        },
+        {
+          "source_line": 12,
+          "text": "coinValue[BaseAsset] += {amount:account.Balance + account.FrozenBalance, value:account.Balance + account.FrozenBalance};"
+        },
+        {
+          "source_line": 23,
+          "text": "totalValue += coinValue[BaseAsset].value;"
+        },
+        {
+          "source_line": 50,
+          "text": "if(coinValue[symbol].value > (1+coinValue[symbol].sellPercent)*totalValue*coinValue[symbol].keepPercent){"
+        },
+        {
+          "source_line": 55,
+          "text": "else if(coinValue[symbol].value < (1-coinValue[symbol].buyPercent)*totalValue*coinValue[symbol].keepPercent){"
+        }
+      ],
+      "publisher": "https://www.fmz.com/strategy/116012"
+    },
+    {
+      "id": 4628,
+      "archive": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8C%87%E6%95%B0%E5%9D%87%E8%A1%A1%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "raw_sha256": "711eef97a8e814174cf4fee69be4b89e17d502ffdb7de061cedeb587ba752b96",
+      "body_sha256": "382d750881c6c24acd05ced74c72d21560c0b283cfb85be21ac03ce4e47d8366",
+      "lines": [
+        {
+          "source_line": 6,
+          "text": "coinValue[BaseAsset] = {amount:account.Balance + account.FrozenBalance, value:account.Balance + account.FrozenBalance};  // amount , value 属性 初始化 均为 总计价币数。BaseAsset 为 基准货币"
+        },
+        {
+          "source_line": 11,
+          "text": "coinValue[BaseAsset] = {amount:account.Balance + account.FrozenBalance, value:account.Balance + account.FrozenBalance};  // amount , value 属性 初始化 均为 总计价币数。BaseAsset 为 基准货币"
+        },
+        {
+          "source_line": 7,
+          "text": "totalValue = coinValue[BaseAsset].value;    // 更新  总价值"
+        },
+        {
+          "source_line": 13,
+          "text": "var symbol = exchanges[i].GetCurrency().split('_')[0];                  // 获取操作币 名称"
+        },
+        {
+          "source_line": 31,
+          "text": "var symbol = exchanges[i].GetCurrency().split('_')[0];                      // 获取 交易对 中 交易币的 名称，赋值给 symbol"
+        },
+        {
+          "source_line": 47,
+          "text": "var symbol = exchanges[i].GetCurrency().split('_')[0];                        // 获取当前交易所对象的 操作币名称"
+        }
+      ],
+      "publisher": "https://www.fmz.com/strategy/120581"
+    }
+  ],
+  "source_dependency_review": "The publisher preview matches the broken initialization and conditional accumulation in #4632. Its published numeric allocation instructions do not define an alternate executable wallet updater. Related #4628 is a separately published author and implementation, retained independently.",
+  "control_fixture": {
+    "type": "Isolated arithmetic and reachability control with the complete pinned JavaScript source; uses mock callbacks and three deterministic quote/asset arrangements, without historical performance metrics.",
+    "raw_receipt_sha256": "3e359a323b31632c890dbaac564d3d22b265e70818472acacc406cb5de9ceb8e",
+    "sourceSha256": "64a8fb027b901d38a657eae98c173d7bae71561c2fc2e944b5ba64a730afef25",
+    "cases": [
+      {
+        "name": "single hedge",
+        "symbols": [
+          "ETH"
+        ],
+        "separateLabels": false,
+        "completedIterations": 3,
+        "quoteValueType": "number",
+        "aggregate": "NaN",
+        "orders": 0
+      },
+      {
+        "name": "shared exchange label function",
+        "symbols": [
+          "ETH",
+          "SOL",
+          "XRP"
+        ],
+        "separateLabels": false,
+        "completedIterations": 3,
+        "quoteValueType": "number",
+        "aggregate": "NaN",
+        "orders": 0
+      },
+      {
+        "name": "distinct exchange label functions",
+        "symbols": [
+          "ETH",
+          "SOL",
+          "XRP"
+        ],
+        "separateLabels": true,
+        "completedIterations": 3,
+        "quoteValueType": "string",
+        "aggregate": "NaN",
+        "orders": 0
+      }
+    ],
+    "workerSha256": "7267db1b4e82d41c701f1f5b0f8176b5f8b227411aeeadc29288f7d870d8c022"
+  }
+}
