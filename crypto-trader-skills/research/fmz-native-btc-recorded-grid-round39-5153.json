@@ -1,0 +1,3028 @@
+{
+  "coverage": [
+    [
+      5153,
+      "Tested · original BTC grid on recorded quotes and strict trade-through",
+      "Both exact archived-settings market windows completed. Separate stricter 2x signed volume produced identical metrics. All signed maker witnesses matched checksummed Binance aggregate-trade IDs, while queue outcomes remain modeled."
+    ]
+  ],
+  "results": [
+    {
+      "gross": -0.7594181818181818,
+      "fees": 0.06748711272727273,
+      "funding": -0.010848991090909092,
+      "after_fees": -0.8269052945454546,
+      "net": -0.8377542856363637,
+      "gross_dd": 0.7594181818181818,
+      "gross_dd_pct": 0.0003037672727272727,
+      "gross_wins": 0,
+      "fee_dd": 0.8269052945454546,
+      "fee_dd_pct": 0.0003307621178181818,
+      "fee_wins": 0,
+      "net_dd": 0.8377542856363637,
+      "net_dd_pct": 0.00033510171425454546,
+      "net_wins": 0,
+      "trades": 2,
+      "unsettled": 1,
+      "starting_equity": 2500.0,
+      "execution": 0,
+      "mark_to_market_net": -18.62743048196,
+      "remaining_unrealized": -16.92188258714182,
+      "id": 5153,
+      "name": "Simple arithmetic BTC futures grid",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%AE%80%E6%98%93%E7%AD%89%E5%B7%AE%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC.md",
+      "group": "FMZ archived source / recorded strict trade-through 1x",
+      "period": "2021-05-01 06:00-10:00 UTC",
+      "interval": "1m original chart and base; 200ms calls",
+      "exit": "Archived grid partial reductions and mark of remaining inventory",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8
+    },
+    {
+      "gross": 0.0,
+      "fees": 0.0,
+      "funding": 0.0,
+      "after_fees": 0.0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "trades": 0,
+      "unsettled": 1,
+      "starting_equity": 2500.0,
+      "execution": 0,
+      "mark_to_market_net": -31.783916699821727,
+      "remaining_unrealized": -31.19003429894,
+      "id": 5153,
+      "name": "Simple arithmetic BTC futures grid",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%AE%80%E6%98%93%E7%AD%89%E5%B7%AE%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC.md",
+      "group": "FMZ archived source / recorded strict trade-through 1x",
+      "period": "2021-06-01 06:00-10:00 UTC",
+      "interval": "1m original chart and base; 200ms calls",
+      "exit": "Archived grid partial reductions and mark of remaining inventory",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8
+    }
+  ],
+  "strict_double_volume_sensitivity": [
+    {
+      "gross": -0.7594181818181818,
+      "fees": 0.06748711272727273,
+      "funding": -0.010848991090909092,
+      "after_fees": -0.8269052945454546,
+      "net": -0.8377542856363637,
+      "gross_dd": 0.7594181818181818,
+      "gross_dd_pct": 0.0003037672727272727,
+      "gross_wins": 0,
+      "fee_dd": 0.8269052945454546,
+      "fee_dd_pct": 0.0003307621178181818,
+      "fee_wins": 0,
+      "net_dd": 0.8377542856363637,
+      "net_dd_pct": 0.00033510171425454546,
+      "net_wins": 0,
+      "trades": 2,
+      "unsettled": 1,
+      "starting_equity": 2500.0,
+      "execution": 0,
+      "mark_to_market_net": -18.62743048196,
+      "remaining_unrealized": -16.92188258714182,
+      "id": 5153,
+      "name": "Simple arithmetic BTC futures grid",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%AE%80%E6%98%93%E7%AD%89%E5%B7%AE%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC.md",
+      "group": "FMZ archived source / recorded strict trade-through 2x",
+      "period": "2021-05-01 06:00-10:00 UTC",
+      "interval": "1m original chart and base; 200ms calls",
+      "exit": "Archived grid partial reductions and mark of remaining inventory",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8
+    },
+    {
+      "gross": 0.0,
+      "fees": 0.0,
+      "funding": 0.0,
+      "after_fees": 0.0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "trades": 0,
+      "unsettled": 1,
+      "starting_equity": 2500.0,
+      "execution": 0,
+      "mark_to_market_net": -31.783916699821727,
+      "remaining_unrealized": -31.19003429894,
+      "id": 5153,
+      "name": "Simple arithmetic BTC futures grid",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%AE%80%E6%98%93%E7%AD%89%E5%B7%AE%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC.md",
+      "group": "FMZ archived source / recorded strict trade-through 2x",
+      "period": "2021-06-01 06:00-10:00 UTC",
+      "interval": "1m original chart and base; 200ms calls",
+      "exit": "Archived grid partial reductions and mark of remaining inventory",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8
+    }
+  ],
+  "diagnostics": [
+    {
+      "mark_drawdown_USDT": "33.1972039344",
+      "mark_drawdown_fraction": "0.01326605901066263827797151057797613878",
+      "min_initial_margin_buffer_USDT": "2374.830011887",
+      "cash_USDT": "2498.294452105181818181818181818181818",
+      "marked_equity_USDT": "2481.372569518040000000000000000000000",
+      "sum_execution_fees_USDT": "0.76712136",
+      "funding_total_USDT": "-0.179008353",
+      "remaining_position_BTC": [
+        "0.032",
+        "0"
+      ],
+      "pending_order_ids": [
+        14,
+        15
+      ],
+      "all_cutoff_carry_USDT": [
+        "-0.1681593619090909090909090909090909090",
+        "0.000000"
+      ],
+      "all_cutoff_entry_fee_USDT": [
+        "0.6996342472727272727272727272727272728",
+        "0"
+      ],
+      "closed_leg_evidence": [
+        {
+          "gross": "-0.52970909090909090909090909090909091",
+          "fees": "0.03371355636363636363636363636363636364",
+          "funding": "-0.005424495545454545454545454545454545454",
+          "after_fees": "-0.5634226472727272727272727272727272736",
+          "net": "-0.5688471428181818181818181818181818191"
+        },
+        {
+          "gross": "-0.22970909090909090909090909090909091",
+          "fees": "0.03377355636363636363636363636363636364",
+          "funding": "-0.005424495545454545454545454545454545453",
+          "after_fees": "-0.2634826472727272727272727272727272736",
+          "net": "-0.2689071428181818181818181818181818191"
+        }
+      ],
+      "day": "2021-05-01",
+      "witness_multiple": 1,
+      "authored_poll_counts": {
+        "ticker": 14396,
+        "account": 14395,
+        "position": 14395,
+        "orders": 28793,
+        "submit": 15,
+        "cancel": 6
+      },
+      "modeled_taker_fills": 1,
+      "modeled_maker_fills": 6,
+      "confirmed_cancels": 6,
+      "raw_unique_witnesses": [
+        746667440,
+        746830841,
+        746895280,
+        746952528,
+        746978644,
+        747010398
+      ],
+      "order_trace_sha256": "035375a2cb77256951993e99bc6c3b979ab6ae4660a0ba6d0b31173c0f06373b",
+      "order_lifecycle": [
+        {
+          "kind": "key",
+          "t": 1619848800000,
+          "key": "buyp",
+          "write": false,
+          "value": null
+        },
+        {
+          "kind": "key",
+          "t": 1619848800200,
+          "key": "buyp",
+          "write": true,
+          "value": 57881.01
+        },
+        {
+          "kind": "key",
+          "t": 1619848800200,
+          "key": "sellp",
+          "write": true,
+          "value": 58481.01
+        },
+        {
+          "kind": "placement",
+          "t": 1619848801200,
+          "id": 1,
+          "direction": "buy",
+          "q": 30,
+          "limit_cent": 0,
+          "raw_limit": -1,
+          "requested_qty": 0.03,
+          "marketable": true,
+          "placed_position": [
+            0,
+            0
+          ],
+          "source_tick": [
+            1619848800600,
+            5816800
+          ],
+          "source_positions": [
+            1619848800800,
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619848801200,
+          "event_us": 1619848801200000,
+          "order_id": 1,
+          "liquidity": "taker",
+          "avg": "58163.6800",
+          "value": "1744.9104",
+          "fee": "0.69796416",
+          "pnl": "0",
+          "proof": {
+            "snapshot_us": 1619848801173255,
+            "venue_us": 1619848801168000,
+            "side": [
+              [
+                5816368,
+                30
+              ]
+            ]
+          },
+          "qty": [
+            30,
+            0
+          ],
+          "basis": [
+            "1744.9104",
+            "0"
+          ],
+          "wallet": "2499.30203584"
+        },
+        {
+          "kind": "placement",
+          "t": 1619848802400,
+          "id": 2,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5788100,
+          "raw_limit": 57881.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            30,
+            0
+          ],
+          "source_tick": [
+            1619848801600,
+            5816134
+          ],
+          "source_positions": [
+            1619848801800,
+            [
+              30,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619848802600,
+          "id": 3,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5848100,
+          "raw_limit": 58481.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            30,
+            0
+          ],
+          "source_tick": [
+            1619848801600,
+            5816134
+          ],
+          "source_positions": [
+            1619848801800,
+            [
+              30,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619851565200,
+          "event_us": 1619851565198136,
+          "order_id": 2,
+          "liquidity": "maker",
+          "avg": "57881.000",
+          "value": "57.881",
+          "fee": "0.0115762",
+          "pnl": "0",
+          "proof": [
+            [
+              746667440,
+              1619851565198136,
+              5788076,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            31,
+            0
+          ],
+          "basis": [
+            "1802.7914",
+            "0"
+          ],
+          "wallet": "2499.29045964"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619851566000,
+          "order_id": 3,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619851567200,
+          "id": 4,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5758100,
+          "raw_limit": 57581.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1619851566400,
+            5787653
+          ],
+          "source_positions": [
+            1619851566600,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619851567400,
+          "id": 5,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5818100,
+          "raw_limit": 58181.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1619851566400,
+            5787653
+          ],
+          "source_positions": [
+            1619851566600,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1619856000200,
+          "event_us": 1619856000006000,
+          "qty": [
+            31,
+            0
+          ],
+          "mark": "57744.63",
+          "rate": "0.0001",
+          "cash_flows": [
+            "-0.179008353",
+            "0.000000"
+          ],
+          "wallet": "2499.111451287"
+        },
+        {
+          "kind": "fill",
+          "t": 1619858361400,
+          "event_us": 1619858361210892,
+          "order_id": 4,
+          "liquidity": "maker",
+          "avg": "57581.000",
+          "value": "57.581",
+          "fee": "0.0115162",
+          "pnl": "0",
+          "proof": [
+            [
+              746830841,
+              1619858361210892,
+              5758042,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            32,
+            0
+          ],
+          "basis": [
+            "1860.3724",
+            "0"
+          ],
+          "wallet": "2499.099935087"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619858361800,
+          "order_id": 5,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619858363000,
+          "id": 6,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5728100,
+          "raw_limit": 57281.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619858362200,
+            5755662
+          ],
+          "source_positions": [
+            1619858362400,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619858363200,
+          "id": 7,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5788100,
+          "raw_limit": 57881.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619858362200,
+            5755662
+          ],
+          "source_positions": [
+            1619858362400,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619859881800,
+          "event_us": 1619859881606372,
+          "order_id": 6,
+          "liquidity": "maker",
+          "avg": "57281.000",
+          "value": "57.281",
+          "fee": "0.0114562",
+          "pnl": "0",
+          "proof": [
+            [
+              746895280,
+              1619859881606372,
+              5728096,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            33,
+            0
+          ],
+          "basis": [
+            "1917.6534",
+            "0"
+          ],
+          "wallet": "2499.088478887"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619859882600,
+          "order_id": 7,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619859883800,
+          "id": 8,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5698100,
+          "raw_limit": 56981.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            33,
+            0
+          ],
+          "source_tick": [
+            1619859883000,
+            5731146
+          ],
+          "source_positions": [
+            1619859883200,
+            [
+              33,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619859884000,
+          "id": 9,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5758100,
+          "raw_limit": 57581.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            33,
+            0
+          ],
+          "source_tick": [
+            1619859883000,
+            5731146
+          ],
+          "source_positions": [
+            1619859883200,
+            [
+              33,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619861070400,
+          "event_us": 1619861070372505,
+          "order_id": 9,
+          "liquidity": "maker",
+          "avg": "57581.000",
+          "value": "57.581",
+          "fee": "0.0115162",
+          "pnl": "-0.52970909090909090909090909090909091",
+          "proof": [
+            [
+              746952528,
+              1619861070372505,
+              5758102,
+              1,
+              1
+            ]
+          ],
+          "qty": [
+            32,
+            0
+          ],
+          "basis": [
+            "1859.542690909090909090909090909090909",
+            "0"
+          ],
+          "wallet": "2498.547253596090909090909090909090909"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619861071400,
+          "order_id": 8,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619861072600,
+          "id": 10,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5728100,
+          "raw_limit": 57281.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619861071800,
+            5758063
+          ],
+          "source_positions": [
+            1619861072000,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619861072800,
+          "id": 11,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5788100,
+          "raw_limit": 57881.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619861071800,
+            5758063
+          ],
+          "source_positions": [
+            1619861072000,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619861648200,
+          "event_us": 1619861648076580,
+          "order_id": 11,
+          "liquidity": "maker",
+          "avg": "57881.000",
+          "value": "57.881",
+          "fee": "0.0115762",
+          "pnl": "-0.22970909090909090909090909090909091",
+          "proof": [
+            [
+              746978644,
+              1619861648076580,
+              5788118,
+              1,
+              1
+            ]
+          ],
+          "qty": [
+            31,
+            0
+          ],
+          "basis": [
+            "1801.431981818181818181818181818181818",
+            "0"
+          ],
+          "wallet": "2498.305968305181818181818181818181818"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619861649200,
+          "order_id": 10,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619861650400,
+          "id": 12,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5758100,
+          "raw_limit": 57581.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1619861649600,
+            5787677
+          ],
+          "source_positions": [
+            1619861649800,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619861650600,
+          "id": 13,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5818100,
+          "raw_limit": 58181.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1619861649600,
+            5787677
+          ],
+          "source_positions": [
+            1619861649800,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619862628200,
+          "event_us": 1619862628122148,
+          "order_id": 12,
+          "liquidity": "maker",
+          "avg": "57581.000",
+          "value": "57.581",
+          "fee": "0.0115162",
+          "pnl": "0",
+          "proof": [
+            [
+              747010398,
+              1619862628122148,
+              5758078,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            32,
+            0
+          ],
+          "basis": [
+            "1859.012981818181818181818181818181818",
+            "0"
+          ],
+          "wallet": "2498.294452105181818181818181818181818"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619862629000,
+          "order_id": 13,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619862630200,
+          "id": 14,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5728100,
+          "raw_limit": 57281.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619862629400,
+            5759708
+          ],
+          "source_positions": [
+            1619862629600,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619862630400,
+          "id": 15,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5788100,
+          "raw_limit": 57881.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619862629400,
+            5759708
+          ],
+          "source_positions": [
+            1619862629600,
+            [
+              32,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "mark_drawdown_USDT": "33.1972039344",
+      "mark_drawdown_fraction": "0.01326605901066263827797151057797613878",
+      "min_initial_margin_buffer_USDT": "2374.830011887",
+      "cash_USDT": "2498.294452105181818181818181818181818",
+      "marked_equity_USDT": "2481.372569518040000000000000000000000",
+      "sum_execution_fees_USDT": "0.76712136",
+      "funding_total_USDT": "-0.179008353",
+      "remaining_position_BTC": [
+        "0.032",
+        "0"
+      ],
+      "pending_order_ids": [
+        14,
+        15
+      ],
+      "all_cutoff_carry_USDT": [
+        "-0.1681593619090909090909090909090909090",
+        "0.000000"
+      ],
+      "all_cutoff_entry_fee_USDT": [
+        "0.6996342472727272727272727272727272728",
+        "0"
+      ],
+      "closed_leg_evidence": [
+        {
+          "gross": "-0.52970909090909090909090909090909091",
+          "fees": "0.03371355636363636363636363636363636364",
+          "funding": "-0.005424495545454545454545454545454545454",
+          "after_fees": "-0.5634226472727272727272727272727272736",
+          "net": "-0.5688471428181818181818181818181818191"
+        },
+        {
+          "gross": "-0.22970909090909090909090909090909091",
+          "fees": "0.03377355636363636363636363636363636364",
+          "funding": "-0.005424495545454545454545454545454545453",
+          "after_fees": "-0.2634826472727272727272727272727272736",
+          "net": "-0.2689071428181818181818181818181818191"
+        }
+      ],
+      "day": "2021-05-01",
+      "witness_multiple": 2,
+      "authored_poll_counts": {
+        "ticker": 14396,
+        "account": 14395,
+        "position": 14395,
+        "orders": 28793,
+        "submit": 15,
+        "cancel": 6
+      },
+      "modeled_taker_fills": 1,
+      "modeled_maker_fills": 6,
+      "confirmed_cancels": 6,
+      "raw_unique_witnesses": [
+        746667440,
+        746830841,
+        746830842,
+        746895280,
+        746952528,
+        746952529,
+        746978644,
+        747010398
+      ],
+      "order_trace_sha256": "80b0949beadaf5a21cb9a9995f962e60c02a8b42a330b83abdf447df05896612",
+      "order_lifecycle": [
+        {
+          "kind": "key",
+          "t": 1619848800000,
+          "key": "buyp",
+          "write": false,
+          "value": null
+        },
+        {
+          "kind": "key",
+          "t": 1619848800200,
+          "key": "buyp",
+          "write": true,
+          "value": 57881.01
+        },
+        {
+          "kind": "key",
+          "t": 1619848800200,
+          "key": "sellp",
+          "write": true,
+          "value": 58481.01
+        },
+        {
+          "kind": "placement",
+          "t": 1619848801200,
+          "id": 1,
+          "direction": "buy",
+          "q": 30,
+          "limit_cent": 0,
+          "raw_limit": -1,
+          "requested_qty": 0.03,
+          "marketable": true,
+          "placed_position": [
+            0,
+            0
+          ],
+          "source_tick": [
+            1619848800600,
+            5816800
+          ],
+          "source_positions": [
+            1619848800800,
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619848801200,
+          "event_us": 1619848801200000,
+          "order_id": 1,
+          "liquidity": "taker",
+          "avg": "58163.6800",
+          "value": "1744.9104",
+          "fee": "0.69796416",
+          "pnl": "0",
+          "proof": {
+            "snapshot_us": 1619848801173255,
+            "venue_us": 1619848801168000,
+            "side": [
+              [
+                5816368,
+                30
+              ]
+            ]
+          },
+          "qty": [
+            30,
+            0
+          ],
+          "basis": [
+            "1744.9104",
+            "0"
+          ],
+          "wallet": "2499.30203584"
+        },
+        {
+          "kind": "placement",
+          "t": 1619848802400,
+          "id": 2,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5788100,
+          "raw_limit": 57881.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            30,
+            0
+          ],
+          "source_tick": [
+            1619848801600,
+            5816134
+          ],
+          "source_positions": [
+            1619848801800,
+            [
+              30,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619848802600,
+          "id": 3,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5848100,
+          "raw_limit": 58481.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            30,
+            0
+          ],
+          "source_tick": [
+            1619848801600,
+            5816134
+          ],
+          "source_positions": [
+            1619848801800,
+            [
+              30,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619851565200,
+          "event_us": 1619851565198136,
+          "order_id": 2,
+          "liquidity": "maker",
+          "avg": "57881.000",
+          "value": "57.881",
+          "fee": "0.0115762",
+          "pnl": "0",
+          "proof": [
+            [
+              746667440,
+              1619851565198136,
+              5788076,
+              2,
+              0
+            ]
+          ],
+          "qty": [
+            31,
+            0
+          ],
+          "basis": [
+            "1802.7914",
+            "0"
+          ],
+          "wallet": "2499.29045964"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619851566000,
+          "order_id": 3,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619851567200,
+          "id": 4,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5758100,
+          "raw_limit": 57581.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1619851566400,
+            5787653
+          ],
+          "source_positions": [
+            1619851566600,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619851567400,
+          "id": 5,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5818100,
+          "raw_limit": 58181.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1619851566400,
+            5787653
+          ],
+          "source_positions": [
+            1619851566600,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1619856000200,
+          "event_us": 1619856000006000,
+          "qty": [
+            31,
+            0
+          ],
+          "mark": "57744.63",
+          "rate": "0.0001",
+          "cash_flows": [
+            "-0.179008353",
+            "0.000000"
+          ],
+          "wallet": "2499.111451287"
+        },
+        {
+          "kind": "fill",
+          "t": 1619858361400,
+          "event_us": 1619858361210894,
+          "order_id": 4,
+          "liquidity": "maker",
+          "avg": "57581.000",
+          "value": "57.581",
+          "fee": "0.0115162",
+          "pnl": "0",
+          "proof": [
+            [
+              746830841,
+              1619858361210892,
+              5758042,
+              1,
+              0
+            ],
+            [
+              746830842,
+              1619858361210894,
+              5758022,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            32,
+            0
+          ],
+          "basis": [
+            "1860.3724",
+            "0"
+          ],
+          "wallet": "2499.099935087"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619858361800,
+          "order_id": 5,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619858363000,
+          "id": 6,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5728100,
+          "raw_limit": 57281.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619858362200,
+            5755662
+          ],
+          "source_positions": [
+            1619858362400,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619858363200,
+          "id": 7,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5788100,
+          "raw_limit": 57881.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619858362200,
+            5755662
+          ],
+          "source_positions": [
+            1619858362400,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619859881800,
+          "event_us": 1619859881606372,
+          "order_id": 6,
+          "liquidity": "maker",
+          "avg": "57281.000",
+          "value": "57.281",
+          "fee": "0.0114562",
+          "pnl": "0",
+          "proof": [
+            [
+              746895280,
+              1619859881606372,
+              5728096,
+              2,
+              0
+            ]
+          ],
+          "qty": [
+            33,
+            0
+          ],
+          "basis": [
+            "1917.6534",
+            "0"
+          ],
+          "wallet": "2499.088478887"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619859882600,
+          "order_id": 7,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619859883800,
+          "id": 8,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5698100,
+          "raw_limit": 56981.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            33,
+            0
+          ],
+          "source_tick": [
+            1619859883000,
+            5731146
+          ],
+          "source_positions": [
+            1619859883200,
+            [
+              33,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619859884000,
+          "id": 9,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5758100,
+          "raw_limit": 57581.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            33,
+            0
+          ],
+          "source_tick": [
+            1619859883000,
+            5731146
+          ],
+          "source_positions": [
+            1619859883200,
+            [
+              33,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619861070400,
+          "event_us": 1619861070372783,
+          "order_id": 9,
+          "liquidity": "maker",
+          "avg": "57581.000",
+          "value": "57.581",
+          "fee": "0.0115162",
+          "pnl": "-0.52970909090909090909090909090909091",
+          "proof": [
+            [
+              746952528,
+              1619861070372505,
+              5758102,
+              1,
+              1
+            ],
+            [
+              746952529,
+              1619861070372783,
+              5758102,
+              1,
+              1
+            ]
+          ],
+          "qty": [
+            32,
+            0
+          ],
+          "basis": [
+            "1859.542690909090909090909090909090909",
+            "0"
+          ],
+          "wallet": "2498.547253596090909090909090909090909"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619861071400,
+          "order_id": 8,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619861072600,
+          "id": 10,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5728100,
+          "raw_limit": 57281.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619861071800,
+            5758063
+          ],
+          "source_positions": [
+            1619861072000,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619861072800,
+          "id": 11,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5788100,
+          "raw_limit": 57881.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619861071800,
+            5758063
+          ],
+          "source_positions": [
+            1619861072000,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619861648200,
+          "event_us": 1619861648076580,
+          "order_id": 11,
+          "liquidity": "maker",
+          "avg": "57881.000",
+          "value": "57.881",
+          "fee": "0.0115762",
+          "pnl": "-0.22970909090909090909090909090909091",
+          "proof": [
+            [
+              746978644,
+              1619861648076580,
+              5788118,
+              2,
+              1
+            ]
+          ],
+          "qty": [
+            31,
+            0
+          ],
+          "basis": [
+            "1801.431981818181818181818181818181818",
+            "0"
+          ],
+          "wallet": "2498.305968305181818181818181818181818"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619861649200,
+          "order_id": 10,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619861650400,
+          "id": 12,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5758100,
+          "raw_limit": 57581.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1619861649600,
+            5787677
+          ],
+          "source_positions": [
+            1619861649800,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619861650600,
+          "id": 13,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5818100,
+          "raw_limit": 58181.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1619861649600,
+            5787677
+          ],
+          "source_positions": [
+            1619861649800,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1619862628200,
+          "event_us": 1619862628122148,
+          "order_id": 12,
+          "liquidity": "maker",
+          "avg": "57581.000",
+          "value": "57.581",
+          "fee": "0.0115162",
+          "pnl": "0",
+          "proof": [
+            [
+              747010398,
+              1619862628122148,
+              5758078,
+              2,
+              0
+            ]
+          ],
+          "qty": [
+            32,
+            0
+          ],
+          "basis": [
+            "1859.012981818181818181818181818181818",
+            "0"
+          ],
+          "wallet": "2498.294452105181818181818181818181818"
+        },
+        {
+          "kind": "cancel",
+          "t": 1619862629000,
+          "order_id": 13,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1619862630200,
+          "id": 14,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 5728100,
+          "raw_limit": 57281.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619862629400,
+            5759708
+          ],
+          "source_positions": [
+            1619862629600,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1619862630400,
+          "id": 15,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 5788100,
+          "raw_limit": 57881.01,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1619862629400,
+            5759708
+          ],
+          "source_positions": [
+            1619862629600,
+            [
+              32,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "mark_drawdown_USDT": "48.032734467381728",
+      "mark_drawdown_fraction": "0.01917325903683132396962261845328155044",
+      "min_initial_margin_buffer_USDT": "2396.116146091943272",
+      "cash_USDT": "2499.406117599118272",
+      "marked_equity_USDT": "2468.216083300178272",
+      "sum_execution_fees_USDT": "0.47605440",
+      "funding_total_USDT": "-0.117828000881728",
+      "remaining_position_BTC": [
+        "0.034",
+        "0"
+      ],
+      "pending_order_ids": [
+        10,
+        11
+      ],
+      "all_cutoff_carry_USDT": [
+        "-0.117828000881728",
+        "0E-12"
+      ],
+      "all_cutoff_entry_fee_USDT": [
+        "0.47605440",
+        "0"
+      ],
+      "closed_leg_evidence": [],
+      "day": "2021-06-01",
+      "witness_multiple": 1,
+      "authored_poll_counts": {
+        "ticker": 14397,
+        "account": 14397,
+        "position": 14396,
+        "orders": 28795,
+        "submit": 11,
+        "cancel": 4
+      },
+      "modeled_taker_fills": 1,
+      "modeled_maker_fills": 4,
+      "confirmed_cancels": 4,
+      "raw_unique_witnesses": [
+        923599135,
+        923812017,
+        923952764,
+        924018512
+      ],
+      "order_trace_sha256": "7c26c0ef4ce4114cb7790a612702fcc3256d9be38e02ae301a37e1ade61cc7b9",
+      "order_lifecycle": [
+        {
+          "kind": "key",
+          "t": 1622527200000,
+          "key": "buyp",
+          "write": false,
+          "value": null
+        },
+        {
+          "kind": "key",
+          "t": 1622527200200,
+          "key": "buyp",
+          "write": true,
+          "value": 36956.12
+        },
+        {
+          "kind": "key",
+          "t": 1622527200200,
+          "key": "sellp",
+          "write": true,
+          "value": 37556.12
+        },
+        {
+          "kind": "placement",
+          "t": 1622527201200,
+          "id": 1,
+          "direction": "buy",
+          "q": 30,
+          "limit_cent": 0,
+          "raw_limit": -1,
+          "requested_qty": 0.03,
+          "marketable": true,
+          "placed_position": [
+            0,
+            0
+          ],
+          "source_tick": [
+            1622527200600,
+            3724577
+          ],
+          "source_positions": [
+            1622527200800,
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1622527201200,
+          "event_us": 1622527201200000,
+          "order_id": 1,
+          "liquidity": "taker",
+          "avg": "37237.4600",
+          "value": "1117.1238",
+          "fee": "0.44684952",
+          "pnl": "0",
+          "proof": {
+            "snapshot_us": 1622527201191508,
+            "venue_us": 1622527201185000,
+            "side": [
+              [
+                3723746,
+                30
+              ]
+            ]
+          },
+          "qty": [
+            30,
+            0
+          ],
+          "basis": [
+            "1117.1238",
+            "0"
+          ],
+          "wallet": "2499.55315048"
+        },
+        {
+          "kind": "placement",
+          "t": 1622527202400,
+          "id": 2,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3695610,
+          "raw_limit": 36956.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            30,
+            0
+          ],
+          "source_tick": [
+            1622527201600,
+            3723326
+          ],
+          "source_positions": [
+            1622527201800,
+            [
+              30,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622527202600,
+          "id": 3,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3755610,
+          "raw_limit": 37556.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            30,
+            0
+          ],
+          "source_tick": [
+            1622527201600,
+            3723326
+          ],
+          "source_positions": [
+            1622527201800,
+            [
+              30,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1622529068400,
+          "event_us": 1622529068275132,
+          "order_id": 2,
+          "liquidity": "maker",
+          "avg": "36956.1000",
+          "value": "36.9561",
+          "fee": "0.00739122",
+          "pnl": "0",
+          "proof": [
+            [
+              923599135,
+              1622529068275132,
+              3695583,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            31,
+            0
+          ],
+          "basis": [
+            "1154.0799",
+            "0"
+          ],
+          "wallet": "2499.54575926"
+        },
+        {
+          "kind": "cancel",
+          "t": 1622529069000,
+          "order_id": 3,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1622529070200,
+          "id": 4,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3665610,
+          "raw_limit": 36656.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1622529069400,
+            3695009
+          ],
+          "source_positions": [
+            1622529069600,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622529070400,
+          "id": 5,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3725610,
+          "raw_limit": 37256.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1622529069400,
+            3695009
+          ],
+          "source_positions": [
+            1622529069600,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1622532880000,
+          "event_us": 1622532879998538,
+          "order_id": 4,
+          "liquidity": "maker",
+          "avg": "36656.1000",
+          "value": "36.6561",
+          "fee": "0.00733122",
+          "pnl": "0",
+          "proof": [
+            [
+              923812017,
+              1622532879998538,
+              3665601,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            32,
+            0
+          ],
+          "basis": [
+            "1190.7360",
+            "0"
+          ],
+          "wallet": "2499.53842804"
+        },
+        {
+          "kind": "cancel",
+          "t": 1622532880800,
+          "order_id": 5,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1622532882000,
+          "id": 6,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3635610,
+          "raw_limit": 36356.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1622532881200,
+            3665207
+          ],
+          "source_positions": [
+            1622532881400,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622532882200,
+          "id": 7,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3695610,
+          "raw_limit": 36956.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1622532881200,
+            3665207
+          ],
+          "source_positions": [
+            1622532881400,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1622534400200,
+          "event_us": 1622534400010000,
+          "qty": [
+            32,
+            0
+          ],
+          "mark": "36821.25027554",
+          "rate": "0.0001",
+          "cash_flows": [
+            "-0.117828000881728",
+            "0E-12"
+          ],
+          "wallet": "2499.420600039118272"
+        },
+        {
+          "kind": "fill",
+          "t": 1622535114000,
+          "event_us": 1622535113969320,
+          "order_id": 6,
+          "liquidity": "maker",
+          "avg": "36356.1000",
+          "value": "36.3561",
+          "fee": "0.00727122",
+          "pnl": "0",
+          "proof": [
+            [
+              923952764,
+              1622535113969320,
+              3635602,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            33,
+            0
+          ],
+          "basis": [
+            "1227.0921",
+            "0"
+          ],
+          "wallet": "2499.413328819118272"
+        },
+        {
+          "kind": "cancel",
+          "t": 1622535114600,
+          "order_id": 7,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1622535115800,
+          "id": 8,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3605610,
+          "raw_limit": 36056.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            33,
+            0
+          ],
+          "source_tick": [
+            1622535115000,
+            3633505
+          ],
+          "source_positions": [
+            1622535115200,
+            [
+              33,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622535116000,
+          "id": 9,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3665610,
+          "raw_limit": 36656.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            33,
+            0
+          ],
+          "source_tick": [
+            1622535115000,
+            3633505
+          ],
+          "source_positions": [
+            1622535115200,
+            [
+              33,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1622535444000,
+          "event_us": 1622535443834774,
+          "order_id": 8,
+          "liquidity": "maker",
+          "avg": "36056.1000",
+          "value": "36.0561",
+          "fee": "0.00721122",
+          "pnl": "0",
+          "proof": [
+            [
+              924018512,
+              1622535443834774,
+              3605604,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            34,
+            0
+          ],
+          "basis": [
+            "1263.1482",
+            "0"
+          ],
+          "wallet": "2499.406117599118272"
+        },
+        {
+          "kind": "cancel",
+          "t": 1622535444400,
+          "order_id": 9,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1622535445600,
+          "id": 10,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3575610,
+          "raw_limit": 35756.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            34,
+            0
+          ],
+          "source_tick": [
+            1622535444800,
+            3605207
+          ],
+          "source_positions": [
+            1622535445000,
+            [
+              34,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622535445800,
+          "id": 11,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3635610,
+          "raw_limit": 36356.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            34,
+            0
+          ],
+          "source_tick": [
+            1622535444800,
+            3605207
+          ],
+          "source_positions": [
+            1622535445000,
+            [
+              34,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "mark_drawdown_USDT": "48.032734467381728",
+      "mark_drawdown_fraction": "0.01917325903683132396962261845328155044",
+      "min_initial_margin_buffer_USDT": "2396.116146091943272",
+      "cash_USDT": "2499.406117599118272",
+      "marked_equity_USDT": "2468.216083300178272",
+      "sum_execution_fees_USDT": "0.47605440",
+      "funding_total_USDT": "-0.117828000881728",
+      "remaining_position_BTC": [
+        "0.034",
+        "0"
+      ],
+      "pending_order_ids": [
+        10,
+        11
+      ],
+      "all_cutoff_carry_USDT": [
+        "-0.117828000881728",
+        "0E-12"
+      ],
+      "all_cutoff_entry_fee_USDT": [
+        "0.47605440",
+        "0"
+      ],
+      "closed_leg_evidence": [],
+      "day": "2021-06-01",
+      "witness_multiple": 2,
+      "authored_poll_counts": {
+        "ticker": 14397,
+        "account": 14397,
+        "position": 14396,
+        "orders": 28795,
+        "submit": 11,
+        "cancel": 4
+      },
+      "modeled_taker_fills": 1,
+      "modeled_maker_fills": 4,
+      "confirmed_cancels": 4,
+      "raw_unique_witnesses": [
+        923599135,
+        923599136,
+        923812017,
+        923952764,
+        924018512
+      ],
+      "order_trace_sha256": "5c05fd937e42e427b9143d93a3fede1b575c8d87da5c318afbbf70e984e15113",
+      "order_lifecycle": [
+        {
+          "kind": "key",
+          "t": 1622527200000,
+          "key": "buyp",
+          "write": false,
+          "value": null
+        },
+        {
+          "kind": "key",
+          "t": 1622527200200,
+          "key": "buyp",
+          "write": true,
+          "value": 36956.12
+        },
+        {
+          "kind": "key",
+          "t": 1622527200200,
+          "key": "sellp",
+          "write": true,
+          "value": 37556.12
+        },
+        {
+          "kind": "placement",
+          "t": 1622527201200,
+          "id": 1,
+          "direction": "buy",
+          "q": 30,
+          "limit_cent": 0,
+          "raw_limit": -1,
+          "requested_qty": 0.03,
+          "marketable": true,
+          "placed_position": [
+            0,
+            0
+          ],
+          "source_tick": [
+            1622527200600,
+            3724577
+          ],
+          "source_positions": [
+            1622527200800,
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1622527201200,
+          "event_us": 1622527201200000,
+          "order_id": 1,
+          "liquidity": "taker",
+          "avg": "37237.4600",
+          "value": "1117.1238",
+          "fee": "0.44684952",
+          "pnl": "0",
+          "proof": {
+            "snapshot_us": 1622527201191508,
+            "venue_us": 1622527201185000,
+            "side": [
+              [
+                3723746,
+                30
+              ]
+            ]
+          },
+          "qty": [
+            30,
+            0
+          ],
+          "basis": [
+            "1117.1238",
+            "0"
+          ],
+          "wallet": "2499.55315048"
+        },
+        {
+          "kind": "placement",
+          "t": 1622527202400,
+          "id": 2,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3695610,
+          "raw_limit": 36956.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            30,
+            0
+          ],
+          "source_tick": [
+            1622527201600,
+            3723326
+          ],
+          "source_positions": [
+            1622527201800,
+            [
+              30,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622527202600,
+          "id": 3,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3755610,
+          "raw_limit": 37556.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            30,
+            0
+          ],
+          "source_tick": [
+            1622527201600,
+            3723326
+          ],
+          "source_positions": [
+            1622527201800,
+            [
+              30,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1622529068400,
+          "event_us": 1622529068275739,
+          "order_id": 2,
+          "liquidity": "maker",
+          "avg": "36956.1000",
+          "value": "36.9561",
+          "fee": "0.00739122",
+          "pnl": "0",
+          "proof": [
+            [
+              923599135,
+              1622529068275132,
+              3695583,
+              1,
+              0
+            ],
+            [
+              923599136,
+              1622529068275739,
+              3695582,
+              1,
+              0
+            ]
+          ],
+          "qty": [
+            31,
+            0
+          ],
+          "basis": [
+            "1154.0799",
+            "0"
+          ],
+          "wallet": "2499.54575926"
+        },
+        {
+          "kind": "cancel",
+          "t": 1622529069000,
+          "order_id": 3,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1622529070200,
+          "id": 4,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3665610,
+          "raw_limit": 36656.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1622529069400,
+            3695009
+          ],
+          "source_positions": [
+            1622529069600,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622529070400,
+          "id": 5,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3725610,
+          "raw_limit": 37256.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            31,
+            0
+          ],
+          "source_tick": [
+            1622529069400,
+            3695009
+          ],
+          "source_positions": [
+            1622529069600,
+            [
+              31,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1622532880000,
+          "event_us": 1622532879998538,
+          "order_id": 4,
+          "liquidity": "maker",
+          "avg": "36656.1000",
+          "value": "36.6561",
+          "fee": "0.00733122",
+          "pnl": "0",
+          "proof": [
+            [
+              923812017,
+              1622532879998538,
+              3665601,
+              2,
+              0
+            ]
+          ],
+          "qty": [
+            32,
+            0
+          ],
+          "basis": [
+            "1190.7360",
+            "0"
+          ],
+          "wallet": "2499.53842804"
+        },
+        {
+          "kind": "cancel",
+          "t": 1622532880800,
+          "order_id": 5,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1622532882000,
+          "id": 6,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3635610,
+          "raw_limit": 36356.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1622532881200,
+            3665207
+          ],
+          "source_positions": [
+            1622532881400,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622532882200,
+          "id": 7,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3695610,
+          "raw_limit": 36956.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            32,
+            0
+          ],
+          "source_tick": [
+            1622532881200,
+            3665207
+          ],
+          "source_positions": [
+            1622532881400,
+            [
+              32,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1622534400200,
+          "event_us": 1622534400010000,
+          "qty": [
+            32,
+            0
+          ],
+          "mark": "36821.25027554",
+          "rate": "0.0001",
+          "cash_flows": [
+            "-0.117828000881728",
+            "0E-12"
+          ],
+          "wallet": "2499.420600039118272"
+        },
+        {
+          "kind": "fill",
+          "t": 1622535114000,
+          "event_us": 1622535113969320,
+          "order_id": 6,
+          "liquidity": "maker",
+          "avg": "36356.1000",
+          "value": "36.3561",
+          "fee": "0.00727122",
+          "pnl": "0",
+          "proof": [
+            [
+              923952764,
+              1622535113969320,
+              3635602,
+              2,
+              0
+            ]
+          ],
+          "qty": [
+            33,
+            0
+          ],
+          "basis": [
+            "1227.0921",
+            "0"
+          ],
+          "wallet": "2499.413328819118272"
+        },
+        {
+          "kind": "cancel",
+          "t": 1622535114600,
+          "order_id": 7,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1622535115800,
+          "id": 8,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3605610,
+          "raw_limit": 36056.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            33,
+            0
+          ],
+          "source_tick": [
+            1622535115000,
+            3633505
+          ],
+          "source_positions": [
+            1622535115200,
+            [
+              33,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622535116000,
+          "id": 9,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3665610,
+          "raw_limit": 36656.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            33,
+            0
+          ],
+          "source_tick": [
+            1622535115000,
+            3633505
+          ],
+          "source_positions": [
+            1622535115200,
+            [
+              33,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1622535444000,
+          "event_us": 1622535443834774,
+          "order_id": 8,
+          "liquidity": "maker",
+          "avg": "36056.1000",
+          "value": "36.0561",
+          "fee": "0.00721122",
+          "pnl": "0",
+          "proof": [
+            [
+              924018512,
+              1622535443834774,
+              3605604,
+              2,
+              0
+            ]
+          ],
+          "qty": [
+            34,
+            0
+          ],
+          "basis": [
+            "1263.1482",
+            "0"
+          ],
+          "wallet": "2499.406117599118272"
+        },
+        {
+          "kind": "cancel",
+          "t": 1622535444400,
+          "order_id": 9,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1622535445600,
+          "id": 10,
+          "direction": "buy",
+          "q": 1,
+          "limit_cent": 3575610,
+          "raw_limit": 35756.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            34,
+            0
+          ],
+          "source_tick": [
+            1622535444800,
+            3605207
+          ],
+          "source_positions": [
+            1622535445000,
+            [
+              34,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1622535445800,
+          "id": 11,
+          "direction": "closebuy",
+          "q": 1,
+          "limit_cent": 3635610,
+          "raw_limit": 36356.12,
+          "requested_qty": 0.001,
+          "marketable": false,
+          "placed_position": [
+            34,
+            0
+          ],
+          "source_tick": [
+            1622535444800,
+            3605207
+          ],
+          "source_positions": [
+            1622535445000,
+            [
+              34,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%AE%80%E6%98%93%E7%AD%89%E5%B7%AE%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC.md",
+    "source_sha256": "c4b09857e2911ae6b10116899bc4c6a21f2840358575c2456b20ec72d7572e44",
+    "archive_sha256": "2dccde87d48792ee43f797d0ea35f45784d733d865217b0f6dba19308ba24192",
+    "publisher": "https://www.fmz.com/strategy/330440",
+    "archived_parameters": {
+      "H": 30,
+      "n1": 0.001,
+      "grid": 300,
+      "xia": 50000,
+      "M": 20,
+      "shang": 60000
+    }
+  },
+  "data": {
+    "2021-05-01": {
+      "trades": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/trades/2021/05/01/BTCUSDT.csv.gz",
+        "sha256": "25e49d99b4fa104ec8863e2b37a5f11c52d0a2d1eb0336b56ea33886b095f53d",
+        "raw_rows": 2169177,
+        "raw_bytes": 25624317,
+        "scoped_rows": 417073,
+        "exchange_clock_later_than_local_rows": 0,
+        "first_eligible_us": 1619848800031484,
+        "last_eligible_us": 1619863199798600
+      },
+      "book": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_25/2021/05/01/BTCUSDT.csv.gz",
+        "sha256": "901fec5e2641c4dde994126ca49354cecd35be5145fd26907db0f206346a94ce",
+        "bytes": 192827698,
+        "rows": 2436776,
+        "first_local_us": 1619827200892967,
+        "last_local_us": 1619913599946953,
+        "matched_top5_replay_grid_rows": 72001,
+        "max_book_age_us": 1582369
+      },
+      "settlement": {
+        "boundary_ms": 1619856000000,
+        "exchange_settlement_ms": 1619856000006,
+        "rate": 0.0001,
+        "prior_mark": [
+          1619855999538931,
+          1619855999506000,
+          5775908,
+          57744.63,
+          57711.37701702,
+          1619856000000000,
+          "0.0001"
+        ],
+        "next_mark": [
+          1619856001017454,
+          1619856001002000,
+          5777233,
+          57765.7243424,
+          57719.15428974,
+          1619884800000000,
+          "0.0001"
+        ],
+        "official_two_minute_mark_price_bounds_USDT": [
+          57702.5,
+          57802.58
+        ]
+      },
+      "official_binance_trade_binding": {
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-05-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-05-01.zip.CHECKSUM",
+        "archive_sha256": "8f9ea17e6e81a58a831fd2ae53bca4e50055c9f4bf688485215bd87a8dcace22",
+        "aggregate_rows": 1154628,
+        "all_witnesses": [
+          {
+            "raw_id": 746667440,
+            "raw_venue_us": 1619851565116000,
+            "aggressor_buy": 0,
+            "raw_cents": 5788076,
+            "raw_units": 4,
+            "aggregate_id": 460429348,
+            "aggregate_ms": 1619851565116,
+            "aggregate_units": 4,
+            "aggregate_first_id": 746667440,
+            "aggregate_last_id": 746667440
+          },
+          {
+            "raw_id": 746830841,
+            "raw_venue_us": 1619858361087000,
+            "aggressor_buy": 0,
+            "raw_cents": 5758042,
+            "raw_units": 1,
+            "aggregate_id": 460516756,
+            "aggregate_ms": 1619858361087,
+            "aggregate_units": 1,
+            "aggregate_first_id": 746830841,
+            "aggregate_last_id": 746830841
+          },
+          {
+            "raw_id": 746830842,
+            "raw_venue_us": 1619858361087000,
+            "aggressor_buy": 0,
+            "raw_cents": 5758022,
+            "raw_units": 28,
+            "aggregate_id": 460516757,
+            "aggregate_ms": 1619858361087,
+            "aggregate_units": 800,
+            "aggregate_first_id": 746830842,
+            "aggregate_last_id": 746830844
+          },
+          {
+            "raw_id": 746895280,
+            "raw_venue_us": 1619859881540000,
+            "aggressor_buy": 0,
+            "raw_cents": 5728096,
+            "raw_units": 4,
+            "aggregate_id": 460550646,
+            "aggregate_ms": 1619859881540,
+            "aggregate_units": 4,
+            "aggregate_first_id": 746895280,
+            "aggregate_last_id": 746895280
+          },
+          {
+            "raw_id": 746952528,
+            "raw_venue_us": 1619861070325000,
+            "aggressor_buy": 1,
+            "raw_cents": 5758102,
+            "raw_units": 1,
+            "aggregate_id": 460582044,
+            "aggregate_ms": 1619861070325,
+            "aggregate_units": 12,
+            "aggregate_first_id": 746952528,
+            "aggregate_last_id": 746952534
+          },
+          {
+            "raw_id": 746952529,
+            "raw_venue_us": 1619861070325000,
+            "aggressor_buy": 1,
+            "raw_cents": 5758102,
+            "raw_units": 5,
+            "aggregate_id": 460582044,
+            "aggregate_ms": 1619861070325,
+            "aggregate_units": 12,
+            "aggregate_first_id": 746952528,
+            "aggregate_last_id": 746952534
+          },
+          {
+            "raw_id": 746978644,
+            "raw_venue_us": 1619861648061000,
+            "aggressor_buy": 1,
+            "raw_cents": 5788118,
+            "raw_units": 9,
+            "aggregate_id": 460596085,
+            "aggregate_ms": 1619861648061,
+            "aggregate_units": 9,
+            "aggregate_first_id": 746978644,
+            "aggregate_last_id": 746978644
+          },
+          {
+            "raw_id": 747010398,
+            "raw_venue_us": 1619862628085000,
+            "aggressor_buy": 0,
+            "raw_cents": 5758078,
+            "raw_units": 150,
+            "aggregate_id": 460613220,
+            "aggregate_ms": 1619862628085,
+            "aggregate_units": 150,
+            "aggregate_first_id": 747010398,
+            "aggregate_last_id": 747010398
+          }
+        ]
+      }
+    },
+    "2021-06-01": {
+      "trades": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/trades/2021/06/01/BTCUSDT.csv.gz",
+        "sha256": "93e191dc42d1d847074d18ed197a6ffcd0701fce1f45b447258aa9ff34bfa3be",
+        "raw_rows": 5297321,
+        "raw_bytes": 62933600,
+        "scoped_rows": 951450,
+        "exchange_clock_later_than_local_rows": 0,
+        "first_eligible_us": 1622527200007905,
+        "last_eligible_us": 1622541599861395
+      },
+      "book": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_25/2021/06/01/BTCUSDT.csv.gz",
+        "sha256": "c6bec89ed37e35d1cab238aa66c4ccfe8d262e3ba14437dd70c3164f8ba955ef",
+        "bytes": 258493590,
+        "rows": 2608495,
+        "first_local_us": 1622505600877501,
+        "last_local_us": 1622591999978218,
+        "matched_top5_replay_grid_rows": 72001,
+        "max_book_age_us": 3454887
+      },
+      "settlement": {
+        "boundary_ms": 1622534400000,
+        "exchange_settlement_ms": 1622534400010,
+        "rate": 0.0001,
+        "prior_mark": [
+          1622534399619814,
+          1622534399590000,
+          3681887,
+          36821.25027554,
+          36832.1005105,
+          1622534400000000,
+          "0.0001"
+        ],
+        "next_mark": [
+          1622534401019649,
+          1622534401001000,
+          3681744,
+          36817.69996266,
+          36828.55019763,
+          1622563200000000,
+          "0.0001"
+        ],
+        "official_two_minute_mark_price_bounds_USDT": [
+          36789.85298282,
+          36851.96
+        ]
+      },
+      "official_binance_trade_binding": {
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-06-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-06-01.zip.CHECKSUM",
+        "archive_sha256": "a17dfed685b0b124ece5a53ba4312156a6a2a8f879885e9a3b2e1853737b7b83",
+        "aggregate_rows": 2959522,
+        "all_witnesses": [
+          {
+            "raw_id": 923599135,
+            "raw_venue_us": 1622529068265000,
+            "aggressor_buy": 0,
+            "raw_cents": 3695583,
+            "raw_units": 1,
+            "aggregate_id": 559249310,
+            "aggregate_ms": 1622529068265,
+            "aggregate_units": 1,
+            "aggregate_first_id": 923599135,
+            "aggregate_last_id": 923599135
+          },
+          {
+            "raw_id": 923599136,
+            "raw_venue_us": 1622529068265000,
+            "aggressor_buy": 0,
+            "raw_cents": 3695582,
+            "raw_units": 2,
+            "aggregate_id": 559249311,
+            "aggregate_ms": 1622529068265,
+            "aggregate_units": 2,
+            "aggregate_first_id": 923599136,
+            "aggregate_last_id": 923599136
+          },
+          {
+            "raw_id": 923812017,
+            "raw_venue_us": 1622532879978000,
+            "aggressor_buy": 0,
+            "raw_cents": 3665601,
+            "raw_units": 2,
+            "aggregate_id": 559368388,
+            "aggregate_ms": 1622532879978,
+            "aggregate_units": 2,
+            "aggregate_first_id": 923812017,
+            "aggregate_last_id": 923812017
+          },
+          {
+            "raw_id": 923952764,
+            "raw_venue_us": 1622535113936000,
+            "aggressor_buy": 0,
+            "raw_cents": 3635602,
+            "raw_units": 2,
+            "aggregate_id": 559444397,
+            "aggregate_ms": 1622535113936,
+            "aggregate_units": 2,
+            "aggregate_first_id": 923952764,
+            "aggregate_last_id": 923952764
+          },
+          {
+            "raw_id": 924018512,
+            "raw_venue_us": 1622535443803000,
+            "aggressor_buy": 0,
+            "raw_cents": 3605604,
+            "raw_units": 84,
+            "aggregate_id": 559480117,
+            "aggregate_ms": 1622535443803,
+            "aggregate_units": 84,
+            "aggregate_first_id": 924018512,
+            "aggregate_last_id": 924018512
+          }
+        ]
+      }
+    }
+  },
+  "proof": {
+    "input_sha256": "adf4d9149ca528b843b192fe6b0b42ce3ab9ec3729c2502338a532375473db43",
+    "book_sha256": "b015d1141748c74b28500f4b93539b3d309b278a97c56bf98993c6b66f404593",
+    "receipt_sha256": "c13b2bffd14790e8c79509b2d728370af255feb49d1ebc08aec14078625d7623",
+    "native_python_fixture_sha256": "2206470bb6c0469ec208eb9d9c49b3fd167505f1977c71e8b8c7f1884aa32187",
+    "independent_exchange_crosswalk_sha256": "d0c883a38cfc7881bcc25243dec9cd1b68d33f990b8db51b6a6e6c9ba42187eb",
+    "worker_sha256": "0fb249bafd8fd911057c765bca52597260f480ac67882e8d69c3a891ca34b72f",
+    "stage_sha256": "a6ac9565cbd2dec36321b180f227d9d9ef0b9631acee0fa0ba4feef926c945fd",
+    "fixture_code_sha256": "cb450a402dbacb14b96573e359a110781bc740610ca290a2c1973b6db698a2a5",
+    "cross_code_sha256": "fc00d9005fe0d30461ee0a0af412cdc7c2cbab3cd3352b2471dba3abdb21e676",
+    "independent_verifier_sha256": "35d65e47ddc2e195cad282b7b26c41c0f17103595dc331b9263c6e4502903e99"
+  },
+  "method": {
+    "archive_scope": "Original active Python and unchanged saved BTCUSDT market, 2,500 USDT, 20x, 30 initial units of 0.001 BTC, 300-USDT grid, 50,000 lower and 60,000 upper side bands. Two prescribed four-hour UTC cold starts use empty native storage. Prices stayed below 60,000 in both scopes and exercised the long side.",
+    "timing_and_quotes": "Native Python fixture proves 200ms account, ticker, position, order and cancel calls, 0.001 lot and nearest 0.1 limit tick. Use recorded BTC last-trade prints when available, and observed order-book levels at marketable placement. Every source poll, grid re-anchoring and cancel is independently reconstructed.",
+    "maker_model": "A resting order is eligible only after posting. Require same-aggressor signed executed quantity strictly beyond its price while open and before any cancel completes. Each maker order executes in full once the modeled threshold is met, at its own limit. Distinct evidence prices and times are checked against the venue archive by exact raw trade ID, price, size capacity and aggressor side. The primary threshold is one posted quantity. The stricter sensitivity requires twice that executed quantity. Both are counterfactual fills using recorded prints; historical account queue position is outside the evidence.",
+    "costs_and_exposure": "Historical 0.02% maker and 0.04% taker apply to their separate legs. Account cash, weighted partial-reduction basis, allocated opening fees, positive collateral, and signed funding at the actual settlement are independently reconciled. Use recorded derivative marks to value open inventory. A no-close window has no closed win-rate estimate.",
+    "model_limits": "Observed trades and quotes are fixed. Real exchange queue, response delays, market impact and the source short-side branch are outside these windows. The sensitivity reruns the full source under stricter volume and shares the same market sample."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/330440",
+    "https://docs.tardis.dev/downloadable-csv-files/data-types",
+    "https://github.com/binance/binance-public-data",
+    "https://www.binance.com/en/blog/futures/421499824684900660"
+  ]
+}
