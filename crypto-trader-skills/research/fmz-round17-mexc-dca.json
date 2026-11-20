@@ -1,0 +1,595 @@
+{
+  "coverage": [
+    [
+      4795,
+      "Tested · MEXC one-USDT daily accumulation variant",
+      "Recovered true numeric author default of one USDT. MEXC permits that market-order amount on BTC and ETH. Four historical opening samples reconcile purchases and ending holdings."
+    ]
+  ],
+  "results": [
+    {
+      "id": 4795,
+      "period": "2026-10-23 to 2026-11-06 UTC",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "group": "FMZ daily investment · MEXC daily-open variant",
+      "archive_interval": "60s UTC date poll",
+      "interval": "1d opening sample",
+      "exit": "Open inventory with marked evidence",
+      "order_family": "One-USDT spot market purchase",
+      "trades": 0,
+      "unsettled": 14,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 4795,
+      "period": "2026-11-06 to 2026-11-20 UTC",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "group": "FMZ daily investment · MEXC daily-open variant",
+      "archive_interval": "60s UTC date poll",
+      "interval": "1d opening sample",
+      "exit": "Open inventory with marked evidence",
+      "order_family": "One-USDT spot market purchase",
+      "trades": 0,
+      "unsettled": 14,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 4795,
+      "period": "2026-10-23 to 2026-11-06 UTC",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "group": "FMZ daily investment · MEXC daily-open variant",
+      "archive_interval": "60s UTC date poll",
+      "interval": "1d opening sample",
+      "exit": "Open inventory with marked evidence",
+      "order_family": "One-USDT spot market purchase",
+      "trades": 0,
+      "unsettled": 14,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 4795,
+      "period": "2026-11-06 to 2026-11-20 UTC",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "group": "FMZ daily investment · MEXC daily-open variant",
+      "archive_interval": "60s UTC date poll",
+      "interval": "1d opening sample",
+      "exit": "Open inventory with marked evidence",
+      "order_family": "One-USDT spot market purchase",
+      "trades": 0,
+      "unsettled": 14,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0
+    }
+  ],
+  "receipts": {
+    "BTCUSDT/2026-10-23": {
+      "purchases": [
+        [
+          1792713600000,
+          "81418.3",
+          "0.000012",
+          "0.0000119940",
+          "0.9770196"
+        ],
+        [
+          1792800000000,
+          "81191.74",
+          "0.000012",
+          "0.0000119940",
+          "0.97430088"
+        ],
+        [
+          1792886400000,
+          "80878.79",
+          "0.000012",
+          "0.0000119940",
+          "0.97054548"
+        ],
+        [
+          1792972800000,
+          "80160.51",
+          "0.000012",
+          "0.0000119940",
+          "0.96192612"
+        ],
+        [
+          1793059200000,
+          "80138.51",
+          "0.000012",
+          "0.0000119940",
+          "0.96166212"
+        ],
+        [
+          1793145600000,
+          "80899.98",
+          "0.000012",
+          "0.0000119940",
+          "0.97079976"
+        ],
+        [
+          1793232000000,
+          "81341.51",
+          "0.000012",
+          "0.0000119940",
+          "0.97609812"
+        ],
+        [
+          1793318400000,
+          "77994.19",
+          "0.000012",
+          "0.0000119940",
+          "0.93593028"
+        ],
+        [
+          1793404800000,
+          "77305",
+          "0.000012",
+          "0.0000119940",
+          "0.927660"
+        ],
+        [
+          1793491200000,
+          "77519.93",
+          "0.000012",
+          "0.0000119940",
+          "0.93023916"
+        ],
+        [
+          1793577600000,
+          "78351.9",
+          "0.000012",
+          "0.0000119940",
+          "0.9402228"
+        ],
+        [
+          1793664000000,
+          "76820.39",
+          "0.000013",
+          "0.0000129935",
+          "0.99866507"
+        ],
+        [
+          1793750400000,
+          "77458.82",
+          "0.000012",
+          "0.0000119940",
+          "0.92950584"
+        ],
+        [
+          1793836800000,
+          "80498.63",
+          "0.000012",
+          "0.0000119940",
+          "0.96598356"
+        ]
+      ],
+      "ending_cash": "986.575415042363",
+      "ending_base": "0.0001689155",
+      "ending_mark": "76087.64",
+      "total_base_fees": "8.45E-8",
+      "marked_pnl_gross": "-0.561747630000",
+      "marked_pnl_after_fees": "-0.568177035580",
+      "marked_pnl_after_costs": "-0.572203203217",
+      "marked_daily_drawdown_after_costs": "0.0007457278694425326254503087897"
+    },
+    "BTCUSDT/2026-11-06": {
+      "purchases": [
+        [
+          1793923200000,
+          "76087.64",
+          "0.000013",
+          "0.0000129935",
+          "0.98913932"
+        ],
+        [
+          1794009600000,
+          "75840.58",
+          "0.000013",
+          "0.0000129935",
+          "0.98592754"
+        ],
+        [
+          1794096000000,
+          "75865.47",
+          "0.000013",
+          "0.0000129935",
+          "0.98625111"
+        ],
+        [
+          1794182400000,
+          "74842.71",
+          "0.000013",
+          "0.0000129935",
+          "0.97295523"
+        ],
+        [
+          1794268800000,
+          "75346.36",
+          "0.000013",
+          "0.0000129935",
+          "0.97950268"
+        ],
+        [
+          1794355200000,
+          "73788.38",
+          "0.000013",
+          "0.0000129935",
+          "0.95924894"
+        ],
+        [
+          1794441600000,
+          "74007.14",
+          "0.000013",
+          "0.0000129935",
+          "0.96209282"
+        ],
+        [
+          1794528000000,
+          "71466.21",
+          "0.000013",
+          "0.0000129935",
+          "0.92906073"
+        ],
+        [
+          1794614400000,
+          "68315.62",
+          "0.000014",
+          "0.0000139930",
+          "0.95641868"
+        ],
+        [
+          1794700800000,
+          "64142.08",
+          "0.000015",
+          "0.0000149925",
+          "0.96213120"
+        ],
+        [
+          1794787200000,
+          "65351.87",
+          "0.000015",
+          "0.0000149925",
+          "0.98027805"
+        ],
+        [
+          1794873600000,
+          "64875.64",
+          "0.000015",
+          "0.0000149925",
+          "0.97313460"
+        ],
+        [
+          1794960000000,
+          "64941.69",
+          "0.000015",
+          "0.0000149925",
+          "0.97412535"
+        ],
+        [
+          1795046400000,
+          "63071.49",
+          "0.000015",
+          "0.0000149925",
+          "0.94607235"
+        ]
+      ],
+      "ending_cash": "986.439594498420",
+      "ending_base": "0.0001929035",
+      "ending_mark": "61980.45",
+      "total_base_fees": "9.65E-8",
+      "marked_pnl_gross": "-1.594111750000",
+      "marked_pnl_after_fees": "-1.600092863425",
+      "marked_pnl_after_costs": "-1.604159765005",
+      "marked_daily_drawdown_after_costs": "0.001604159765005"
+    },
+    "ETHUSDT/2026-10-23": {
+      "purchases": [
+        [
+          1792713600000,
+          "2389",
+          "0.0004",
+          "0.00039980",
+          "0.9556"
+        ],
+        [
+          1792800000000,
+          "2387.74",
+          "0.0004",
+          "0.00039980",
+          "0.955096"
+        ],
+        [
+          1792886400000,
+          "2358.89",
+          "0.0004",
+          "0.00039980",
+          "0.943556"
+        ],
+        [
+          1792972800000,
+          "2330.25",
+          "0.0004",
+          "0.00039980",
+          "0.932100"
+        ],
+        [
+          1793059200000,
+          "2324.49",
+          "0.0004",
+          "0.00039980",
+          "0.929796"
+        ],
+        [
+          1793145600000,
+          "2350.16",
+          "0.0004",
+          "0.00039980",
+          "0.940064"
+        ],
+        [
+          1793232000000,
+          "2359.83",
+          "0.0004",
+          "0.00039980",
+          "0.943932"
+        ],
+        [
+          1793318400000,
+          "2253.21",
+          "0.0004",
+          "0.00039980",
+          "0.901284"
+        ],
+        [
+          1793404800000,
+          "2244.2",
+          "0.0004",
+          "0.00039980",
+          "0.89768"
+        ],
+        [
+          1793491200000,
+          "2255.27",
+          "0.0004",
+          "0.00039980",
+          "0.902108"
+        ],
+        [
+          1793577600000,
+          "2275.36",
+          "0.0004",
+          "0.00039980",
+          "0.910144"
+        ],
+        [
+          1793664000000,
+          "2253.36",
+          "0.0004",
+          "0.00039980",
+          "0.901344"
+        ],
+        [
+          1793750400000,
+          "2274.84",
+          "0.0004",
+          "0.00039980",
+          "0.909936"
+        ],
+        [
+          1793836800000,
+          "2424.42",
+          "0.0004",
+          "0.00039980",
+          "0.969768"
+        ]
+      ],
+      "ending_cash": "987.0036942776",
+      "ending_base": "0.00559720",
+      "ending_mark": "2237.79",
+      "total_base_fees": "0.00000280",
+      "marked_pnl_gross": "-0.4607840000",
+      "marked_pnl_after_fees": "-0.4670498120",
+      "marked_pnl_after_costs": "-0.4709475344",
+      "marked_daily_drawdown_after_costs": "0.001044781092914390645311737940"
+    },
+    "ETHUSDT/2026-11-06": {
+      "purchases": [
+        [
+          1793923200000,
+          "2237.79",
+          "0.0004",
+          "0.00039980",
+          "0.895116"
+        ],
+        [
+          1794009600000,
+          "2238.81",
+          "0.0004",
+          "0.00039980",
+          "0.895524"
+        ],
+        [
+          1794096000000,
+          "2240.28",
+          "0.0004",
+          "0.00039980",
+          "0.896112"
+        ],
+        [
+          1794182400000,
+          "2127.5",
+          "0.0004",
+          "0.00039980",
+          "0.85100"
+        ],
+        [
+          1794268800000,
+          "2135.23",
+          "0.0004",
+          "0.00039980",
+          "0.854092"
+        ],
+        [
+          1794355200000,
+          "2053.52",
+          "0.0004",
+          "0.00039980",
+          "0.821408"
+        ],
+        [
+          1794441600000,
+          "2056.18",
+          "0.0004",
+          "0.00039980",
+          "0.822472"
+        ],
+        [
+          1794528000000,
+          "2019.81",
+          "0.0004",
+          "0.00039980",
+          "0.807924"
+        ],
+        [
+          1794614400000,
+          "1930.02",
+          "0.0005",
+          "0.00049975",
+          "0.965010"
+        ],
+        [
+          1794700800000,
+          "1769.2",
+          "0.0005",
+          "0.00049975",
+          "0.88460"
+        ],
+        [
+          1794787200000,
+          "1835.59",
+          "0.0005",
+          "0.00049975",
+          "0.917795"
+        ],
+        [
+          1794873600000,
+          "1821",
+          "0.0005",
+          "0.00049975",
+          "0.9105"
+        ],
+        [
+          1794960000000,
+          "1824.97",
+          "0.0005",
+          "0.00049975",
+          "0.912485"
+        ],
+        [
+          1795046400000,
+          "1777.19",
+          "0.0005",
+          "0.00049975",
+          "0.888595"
+        ]
+      ],
+      "ending_cash": "987.6736702101",
+      "ending_base": "0.00619690",
+      "ending_mark": "1757.55",
+      "total_base_fees": "0.00000310",
+      "marked_pnl_gross": "-1.4258230000",
+      "marked_pnl_after_fees": "-1.4312714050",
+      "marked_pnl_after_costs": "-1.4349681949",
+      "marked_daily_drawdown_after_costs": "0.001435118674633356207451752962"
+    }
+  },
+  "exchange_config": {
+    "BTCUSDT": {
+      "baseSizePrecision": "0.000001",
+      "quoteAmountPrecisionMarket": "1",
+      "takerCommission": "0.0005"
+    },
+    "ETHUSDT": {
+      "baseSizePrecision": "0.0001",
+      "quoteAmountPrecisionMarket": "1",
+      "takerCommission": "0.0005"
+    }
+  },
+  "archives": {
+    "BTCUSDT-daily.json": {
+      "url": "https://api.mexc.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=35",
+      "sha256": "4c126809840175a362a8e31988c6719e8ce19bcc3bf4cf82bb4122e21c1dcdbc"
+    },
+    "BTCUSDT-metadata.json": {
+      "url": "https://api.mexc.com/api/v3/exchangeInfo?symbol=BTCUSDT",
+      "sha256": "536eb13c55a8ed4e062a8c8f5c46d78abeb727315ec66c3eb04e8994e31b579d"
+    },
+    "ETHUSDT-daily.json": {
+      "url": "https://api.mexc.com/api/v3/klines?symbol=ETHUSDT&interval=1d&limit=35",
+      "sha256": "83dadab8265a3109b9e6f0895f6eaef7de457383774798b19101380aa6c02c77"
+    },
+    "ETHUSDT-metadata.json": {
+      "url": "https://api.mexc.com/api/v3/exchangeInfo?symbol=ETHUSDT",
+      "sha256": "3d439762f1b70677d85032287ca11b668533a18133b8cac106c2b7376f05b633"
+    }
+  },
+  "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%AF%8F%E6%97%A5%E5%B8%82%E4%BB%B7%E5%AE%9A%E6%8A%95.md",
+  "source_sha256": "7b5968b2fa83b67e60e2ef7e248f43414f5d747d9c43a92c08c6fb0b14d8fa1f",
+  "publisher": "https://www.fmz.com/strategy/151259",
+  "publisher_sha256": "c445c9ef8d844a2603168c97a898490343f029f24e6f8163e9788bccb676c529",
+  "verified_preview_chars": 131,
+  "minimum_order_reference": "https://www.mexc.com/announcements/article/announcement-on-the-adjustment-to-the-minimum-order-amount-for-spot-trading-pairs-17827791517449",
+  "assumptions": [
+    "The archive omits venue and starting cash. The independent MEXC spot sleeves start at 1,000 USDT. The publisher's form gives a numeric one-USDT amount.",
+    "The source triggers once each UTC date. The model uses the observed opening trade of each day as the execution-price sample. This is a daily-open variant of the polling source.",
+    "The venue validates one USDT at submission. Estimated fill quantity is cut down to the observed product size step. Remainder stays in cash. The archived capture's product taker rate is charged in base, plus a separate 3 bp friction allowance.",
+    "Source has no sale rule. All 56 modeled purchases remain open. The report marks holdings at observed end closes and gives daily mark-to-market drawdown separately from zero realized closes."
+  ]
+}

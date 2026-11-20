@@ -45,6 +45,21 @@ class PineCompatibilityTests(unittest.TestCase):
             == "\n//@version=4\ncode\n"
         )
 
+    def test_banner_comments_do_not_remove_executable_pine(self):
+        code = (
+            "//@version=5\n"
+            "//*********************\n"
+            "rsiLength = input.int(14)\n"
+            "strategy.entry('Long', strategy.long)\n"
+            "//*********************/\n"
+            "plot(ta.rsi(close, rsiLength))\n"
+        )
+        assert plain_pine(code) == code
+
+    def test_block_markers_in_quoted_text_are_preserved(self):
+        code = "strategy('A /* literal */')\nmessage = \"A \\\"/* literal */\\\"\"\n"
+        assert plain_pine("/*backtest*/\n" + code) == "\n" + code
+
     def test_session_day_migration_uses_chart_timeframe_only(self):
         code = '//@version=4\nstrategy("x")\nopen_now = time(timeframe.period, "0900-1700")\n'
         adapted, count = session_calls(code)

@@ -39,11 +39,17 @@ TIMEFRAME_SCOPE = {"timeframe.period", '""', "''"}
 SESSION_VALUE = re.compile(r"[0-9]{4}-[0-9]{4}(?:,[0-9]{4}-[0-9]{4})*(?::[1-7]+)?")
 DECIMAL_LITERAL = re.compile(r"[+-]?(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)")
 LEGACY_VARIABLES = {"accdist", "iii", "nvi", "obv", "pvi", "pvt", "vwap", "wad", "wvad"}
+PINE_COMMENTS_AND_STRINGS = re.compile(
+    r"""//[^\n]*|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|(?P<block>/\*.*?\*/)""",
+    re.DOTALL,
+)
 
 
 def plain_pine(block):
     block = block.replace("\r\n", "\n").replace("\r", "\n").lstrip("\ufeff")
-    return re.sub(r"/\*.*?\*/", "", block, flags=re.DOTALL)
+    return PINE_COMMENTS_AND_STRINGS.sub(
+        lambda token: "" if token["block"] else token[0], block
+    )
 
 
 def shell(code):
