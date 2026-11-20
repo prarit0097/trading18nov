@@ -1,0 +1,260 @@
+{
+  "coverage": [
+    [
+      691,
+      "Excluded · Execution-only utility",
+      "The only order side is a buy. The initial quote budget caps randomized slices and the dispatcher stops when that total is reached or remaining size is too small. Average acquisition price logging and cancellation branches supply no disposal signal."
+    ],
+    [
+      692,
+      "Excluded · Execution-only utility",
+      "The initial wallet must contain TotalSellStocks. A minimum price and remaining quantity control randomized sell slices. Completion reports one parent liquidation against existing holdings."
+    ],
+    [
+      1380,
+      "Excluded · Execution-only utility",
+      "The dispatcher starts from spot inventory, explicitly rejects futures and feeds randomized sell slices until the requested parent quantity is satisfied. Polling and replacement express no entry rule."
+    ],
+    [
+      1381,
+      "Excluded · Execution-only utility",
+      "The source checks a buyer budget, splits the user-selected amount into buy-only pieces and logs averaged acquisition cost. The author's ETH/USDT replay suggestion concerns this parent request. The source supplies no sale or independent closing rule."
+    ],
+    [
+      4418,
+      "Excluded · Execution-only utility",
+      "Trad iterates user-selected pairs, cancels existing orders and sells the wallet quantity when its value meets a floor. main keeps polling and onexit and onerror only cancel. The publisher describes disposing of inventory left by another strategy."
+    ],
+    [
+      4902,
+      "Excluded · Execution-only utility",
+      "An announcement names externally held delisting coins. The utility cancels prior orders and sells free balances against BTC. Its recurring trigger supplies no acquisition rule or strategy-owned cost basis. BTC is the sales' quotation asset."
+    ],
+    [
+      5305,
+      "Excluded · Execution-only utility",
+      "onTick triggers once when price crosses a user-provided threshold relative to startup. The two branches implement the same buy request via depth-based slices or a fixed limit. main returns after one trigger, with no sell or exit."
+    ],
+    [
+      5306,
+      "Excluded · Execution-only utility",
+      "main requires prior inventory, waits for a single crossing of a user-provided price, then sells as depth-based slices or a fixed limit. The trigger loop ends after this request. The source has no strategy-defined cost basis or acquisition."
+    ]
+  ],
+  "results": [],
+  "policy": "The assessment applies to standalone historical strategy win-rate, P&L and drawdown. These eight programs execute a user-selected one-way parent order or dispose of inventory originating outside the program. An execution-quality study could measure the parent action's implementation shortfall. Any opposite order or acquisition cost would require a separately authored rule.",
+  "verification": "Read each complete executable block, including trigger branches, order placements, imports, cancellation handlers and termination. Match archived document and executable hashes. Cross-check order-call sites and inspect the one read-only raw order query. The two-sided CoinEx #4697 was retained because variable dispatch resolves both e.Buy and e.Sell.",
+  "source_evidence": [
+    {
+      "id": 691,
+      "role": "Iceberg buy execution utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python%E7%89%88%E5%86%B0%E5%B1%B1%E5%A7%94%E6%89%98-%E4%B9%B0%E5%85%A5.md",
+      "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/Python版冰山委托-买入.md",
+      "archive_document_sha256": "cf3c3c1eb0ebaa144931b61bd970e235b8e0a7106071f7f59bccd328744caf86",
+      "source_block_sha256": "951c8a6fab6d09059d06c808b0c9641d01e41959d63b04e8d024faef8b0e55c6",
+      "source_language": "python",
+      "order_and_control_lines": [
+        35,
+        96
+      ],
+      "publisher": "https://www.fmz.com/strategy/188435",
+      "order_calls": [
+        {
+          "line": 83,
+          "call": "exchange.Buy(BuyPrice, BuyAmount, \"花费：￥\", _N(UsedMoney), \"上次成交价\", ticker[\"Last\"])"
+        }
+      ],
+      "source_order_sides": [
+        "BUY"
+      ],
+      "prior_status": "FMZ native offline replay pending",
+      "prior_reason": "External import needed: random"
+    },
+    {
+      "id": 692,
+      "role": "Iceberg sell execution utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python%E7%89%88%E5%86%B0%E5%B1%B1%E5%A7%94%E6%89%98-%E5%8D%96%E5%87%BA.md",
+      "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/Python版冰山委托-卖出.md",
+      "archive_document_sha256": "0eff953e9c4c726be9e8a4ac9f6ca2d21b7d3a70fa8845d2429109c40099bd86",
+      "source_block_sha256": "f2f3a0b86aac21b3fd404a6d2a40198ede8aee746a840cdc5d53ecaaa336ae8c",
+      "source_language": "python",
+      "order_and_control_lines": [
+        35,
+        95
+      ],
+      "publisher": "https://www.fmz.com/strategy/188754",
+      "order_calls": [
+        {
+          "line": 82,
+          "call": "exchange.Sell(SellPrice, SellAmount, \"上次成交价\", ticker[\"Last\"])"
+        }
+      ],
+      "source_order_sides": [
+        "SELL"
+      ],
+      "prior_status": "FMZ native offline replay pending",
+      "prior_reason": "External import needed: random"
+    },
+    {
+      "id": 1380,
+      "role": "Spot iceberg sell execution utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%86%B0%E5%B1%B1%E5%A7%94%E6%89%98-%E5%8D%96%E5%87%BA.md",
+      "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/冰山委托-卖出.md",
+      "archive_document_sha256": "7fbabd87c0e7e783e701917b54482cd1609962e7596019d0b263afcc96ecb4fb",
+      "source_block_sha256": "246a0e6a3188f61c91587da90f108721fd6e23dc2990a6bcfb084a898d6fe294",
+      "source_language": "javascript",
+      "order_and_control_lines": [
+        38,
+        116
+      ],
+      "publisher": "https://www.fmz.com/strategy/241",
+      "order_calls": [
+        {
+          "line": 97,
+          "call": "exchange.Sell(SellPrice, SellAmount, '上次成交价', ticker.Last);"
+        }
+      ],
+      "source_order_sides": [
+        "SELL"
+      ],
+      "prior_status": "FMZ native offline replay pending",
+      "prior_reason": "Source uses unseeded Math.random()"
+    },
+    {
+      "id": 1381,
+      "role": "Iceberg buy execution tutorial",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%86%B0%E5%B1%B1%E5%A7%94%E6%89%98%E4%B9%B0%E5%85%A5-Jason.md",
+      "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/冰山委托买入-Jason.md",
+      "archive_document_sha256": "b36fa601b6c4c37dc831c8bb385c0b9170a336549e9f54ff5dd2e19d447f2017",
+      "source_block_sha256": "ff7de0c9aff796655200aa5bcff1451d309b4aa24b1fac4d698041814b730402",
+      "source_language": "python",
+      "order_and_control_lines": [
+        91,
+        165
+      ],
+      "publisher": "https://www.fmz.com/strategy/271475",
+      "order_calls": [
+        {
+          "line": 162,
+          "call": "exchange.Buy(entrustPrice,orderBuyNum)"
+        }
+      ],
+      "source_order_sides": [
+        "BUY"
+      ],
+      "prior_status": "FMZ native offline replay pending",
+      "prior_reason": "External import needed: random"
+    },
+    {
+      "id": 4418,
+      "role": "Multi-pair spot liquidation utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%A4%9A%E4%BA%A4%E6%98%93%E5%AF%B9-%E7%8E%B0%E8%B4%A7-%E7%94%A8%E6%9D%A5%E5%B8%82%E4%BB%B7%E6%B8%85%E4%BB%93%E7%94%A8%E7%9A%84.md",
+      "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/币安多交易对-现货-用来市价清仓用的.md",
+      "archive_document_sha256": "9265f4b0b1b6d710fb92995e022e3d78113eee84b990f225fc635ef726b05e36",
+      "source_block_sha256": "aa962562aeab3031a2ce5e4ab117fb15bb486f3187f0e781e44aed2f6b50de49",
+      "source_language": "javascript",
+      "order_and_control_lines": [
+        77,
+        143
+      ],
+      "publisher": "https://www.fmz.com/strategy/360782",
+      "order_calls": [
+        {
+          "line": 96,
+          "call": "var clearsell = exchange.Sell(-1, holdAmount) //清仓"
+        }
+      ],
+      "source_order_sides": [
+        "SELL"
+      ],
+      "prior_status": "FMZ native offline replay pending",
+      "prior_reason": "Original external-market inputs required by GetDepth, SetCurrency"
+    },
+    {
+      "id": 4902,
+      "role": "Announcement-driven inventory liquidation utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%88%AC%E5%8F%96%E5%B8%81%E5%AE%89%E5%85%AC%E5%91%8A%E8%87%AA%E5%8A%A8%E5%87%BA%E5%94%AE%E5%B0%86%E8%A6%81%E4%B8%8B%E6%9E%B6%E5%B8%81crawl-Binance-announcements-and-sell-Delist-coin.md",
+      "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/爬取币安公告自动出售将要下架币crawl-Binance-announcements-and-sell-Delist-coin.md",
+      "archive_document_sha256": "3023f4c723fd7e1511867c8546fadca0431c04a6d987b377429e0f8819b07dc0",
+      "source_block_sha256": "fc00c30fff718162c8c5f744aeeef0e988b3c2d94c61a8d77a77d6fb42348d1b",
+      "source_language": "javascript",
+      "order_and_control_lines": [
+        34,
+        95
+      ],
+      "publisher": "https://www.fmz.com/strategy/137450",
+      "order_calls": [
+        {
+          "line": 41,
+          "call": "var id = exchange.Sell(sellPrice, sellAmount, symbol)"
+        }
+      ],
+      "source_order_sides": [
+        "SELL"
+      ],
+      "prior_status": "FMZ native offline replay pending",
+      "prior_reason": "Deployment or host API references HttpQuery"
+    },
+    {
+      "id": 5305,
+      "role": "One-trigger buy execution utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%AE%A1%E5%88%92%E5%A7%94%E6%89%98%E4%B9%B0%E5%85%A5.md",
+      "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/计划委托买入.md",
+      "archive_document_sha256": "2472d97e221974d038425daf62a090fa3a23ab90cc2935d8033f0e7112825087",
+      "source_block_sha256": "f68f8ec5723aa94952eb65546a5baacb5c5b81e6da088c249076b5a91577eab6",
+      "source_language": "javascript",
+      "order_and_control_lines": [
+        110,
+        189
+      ],
+      "publisher": "https://www.fmz.com/strategy/638",
+      "order_calls": [
+        {
+          "line": 130,
+          "call": "exchange.Buy(price, amount);"
+        },
+        {
+          "line": 144,
+          "call": "if (exchange.Buy(BuyPrice, BuyAmount) > 0) {"
+        }
+      ],
+      "source_order_sides": [
+        "BUY"
+      ],
+      "prior_status": "FMZ native offline replay pending",
+      "prior_reason": "Original external-market inputs required by GetDepth"
+    },
+    {
+      "id": 5306,
+      "role": "One-trigger sell execution utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%AE%A1%E5%88%92%E5%A7%94%E6%89%98%E5%8D%96%E5%87%BA.md",
+      "archive_member": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/计划委托卖出.md",
+      "archive_document_sha256": "875feeb0f2be89e07944f500fd2b4c08d250ca8a81876855ababa3aa96c1c89c",
+      "source_block_sha256": "95d63aecbbefad50c58d1a82e08014bdc1a6a8a067478031b7a86e4936132ec3",
+      "source_language": "javascript",
+      "order_and_control_lines": [
+        109,
+        186
+      ],
+      "publisher": "https://www.fmz.com/strategy/747",
+      "order_calls": [
+        {
+          "line": 128,
+          "call": "exchange.Sell(price, amount);"
+        },
+        {
+          "line": 141,
+          "call": "if (exchange.Sell(SellPrice, SellAmount) > 0) {"
+        }
+      ],
+      "source_order_sides": [
+        "SELL"
+      ],
+      "prior_status": "FMZ native offline replay pending",
+      "prior_reason": "Original external-market inputs required by GetDepth"
+    }
+  ],
+  "publisher_background": [
+    "https://www.fmz.com/bbs-topic/5080"
+  ]
+}

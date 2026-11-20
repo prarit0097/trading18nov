@@ -22,7 +22,7 @@ for (const [rawId, periods] of Object.entries(read("./three-entries-feeds.json")
     assert.equal(plan.metadata.securityDependencies.length,0);
     assert.deepEqual(plan.diagnostics,[]);
     const cases = [];
-
+    
     for (const [period, markets] of Object.entries(periods)) {
       for (const [market, sample] of Object.entries(markets)) {
         const symbol = "BINANCE:" + market + ".P";

@@ -1,0 +1,279 @@
+{
+  "coverage": [
+    [
+      698,
+      "Tested · FMZ authored BTC perpetual opening-day slice",
+      "The exact archived rule with a documented virtual-host bool alias stayed flat across 172,680 causal 500 ms observations. Captured trades matched every minute high and low in the Binance checksum archive. The whole day spanned less than the strict 5% trigger in either direction. No orders, closed trades or defined win rate. Published multiweek performance remains unmeasured."
+    ]
+  ],
+  "results": [
+    {
+      "group": "FMZ Native · Binance USD-M",
+      "name": "Python版追涨杀跌策略教学币安USDT永续合约",
+      "market": "BTCUSDT perpetual",
+      "exit": "Archived signal rules, no order triggered",
+      "period": "2021-05-01 00:01 UTC to 2021-05-02 00:00 UTC",
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "id": 698,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python%E7%89%88%E8%BF%BD%E6%B6%A8%E6%9D%80%E8%B7%8C%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6%E5%B8%81%E5%AE%89USDT%E6%B0%B8%E7%BB%AD%E5%90%88%E7%BA%A6.md",
+      "interval": "1m chart · 500ms poll",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 10000
+    }
+  ],
+  "published_source": {
+    "id": 698,
+    "url": "https://www.fmz.com/strategy/286091",
+    "sha256": "87d65c5e0b43798c3a3ff830884627aa9e1efda5fd3dd9de89853da8bc2a5374",
+    "preview_chars": 2778,
+    "args": {
+      "leverage": 1,
+      "StopGain": 0.05,
+      "StopLoss": 0.05
+    },
+    "still_missing": [],
+    "name": "Python版追涨杀跌策略教学币安USDT永续合约",
+    "table": {
+      "Argument": "Default",
+      "leverage": "true",
+      "StopGain": "0.05",
+      "StopLoss": "0.05"
+    },
+    "archive_scope": {
+      "start": "2021-05-01 00:00:00",
+      "end": "2021-05-29 00:00:00",
+      "period": "1m",
+      "basePeriod": "1m",
+      "exchanges": "[{\"eid\":\"Futures_Binance\",\"currency\":\"BTC_USDT\"}]"
+    },
+    "archive_sha256": "f31008848cafc466ad746cf729354997b7b8e5d617e13483e95fa7317c533d50",
+    "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python%E7%89%88%E8%BF%BD%E6%B6%A8%E6%9D%80%E8%B7%8C%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6%E5%B8%81%E5%AE%89USDT%E6%B0%B8%E7%BB%AD%E5%90%88%E7%BA%A6.md",
+    "archive_source_sha256": "ea41efddd7f3863da5653bfe94b9eb06e40c74b9e36b1ebb7b6ada70bfe0519b"
+  },
+  "market_evidence": {
+    "official_candles": {
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-05-01.zip",
+      "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-05-01.zip.CHECKSUM",
+      "sha256": "5136c56729df6a35b1ade3530c88ec52e62b9227f622ac41fe96efc5fc831353",
+      "bars": 1440
+    },
+    "captured_trades": {
+      "url": "https://datasets.tardis.dev/v1/binance-futures/trades/2021/05/01/BTCUSDT.csv.gz",
+      "raw_file_sha256": "25e49d99b4fa104ec8863e2b37a5f11c52d0a2d1eb0336b56ea33886b095f53d",
+      "compressed_bytes": 25624317,
+      "trade_events": 2169177,
+      "first": [
+        1619827200000225,
+        1619827199991000,
+        5768382,
+        745987803
+      ],
+      "last": [
+        1619913599839200,
+        1619913599831000,
+        5783634,
+        748156997
+      ],
+      "max_local_interarrival_us": 4933170,
+      "max_local_minus_exchange_us": 2657737,
+      "nonconsecutive_stream_trade_ids": 18
+    },
+    "exact_per_minute_extrema_matches": 1440,
+    "extrema_mismatch_minute_indices": [],
+    "trade_extrema_outside_official_candle_minute_indices": [],
+    "official_low_cents": 5705123,
+    "official_high_cents": 5848817,
+    "minimum_range_to_any_price": -0.024568045127758342,
+    "maximum_range_to_any_price": 0.025186836462596895
+  },
+  "isolated_execution": {
+    "job_sha256": "028eb9af2e61be05d17c21c0029ae78867af20660ee2e61c8d922b5889deb7ba",
+    "worker_sha256": "8122b41c97a3d27e3b1ee91bf4c4cfe49154553d209741165b05b20fc78e5f10",
+    "source_sha256": "ea41efddd7f3863da5653bfe94b9eb06e40c74b9e36b1ebb7b6ada70bfe0519b",
+    "source_settings": {
+      "leverage": 1,
+      "StopGain": 0.05,
+      "StopLoss": 0.05
+    },
+    "observed_prices": {
+      "first_cents": 5753198,
+      "min_cents": 5705814,
+      "max_cents": 5848811
+    },
+    "observed_run": {
+      "ending": "complete",
+      "clock_ms": 1619913600000,
+      "calls": {
+        "account": 1,
+        "position": 2,
+        "ticker": 172680,
+        "sleep": 172680
+      },
+      "base_price": 57531.98,
+      "directions": [],
+      "intents": [],
+      "ending_cash": 10000,
+      "ending_asset": 0,
+      "setup": {
+        "contract_type": "swap",
+        "leverage": 1,
+        "precision": [
+          2,
+          3
+        ]
+      }
+    },
+    "exact_bound_controls": [
+      {
+        "ending": "complete",
+        "clock_ms": 1619827261000,
+        "calls": {
+          "account": 1,
+          "position": 2,
+          "ticker": 2,
+          "sleep": 2
+        },
+        "base_price": 100.0,
+        "directions": [],
+        "intents": [],
+        "ending_cash": 10000,
+        "ending_asset": 0,
+        "setup": {
+          "contract_type": "swap",
+          "leverage": 1,
+          "precision": [
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "ending": "bounded synthetic branch control",
+        "clock_ms": 1619827260500,
+        "calls": {
+          "account": 2,
+          "position": 2,
+          "ticker": 2,
+          "sleep": 1
+        },
+        "base_price": 100.0,
+        "directions": [
+          "buy"
+        ],
+        "intents": [
+          {
+            "side": "buy",
+            "limit": 105.01,
+            "amount": 4.761,
+            "time_ms": 1619827260500
+          }
+        ],
+        "ending_cash": 10000,
+        "ending_asset": 0,
+        "setup": {
+          "contract_type": "swap",
+          "leverage": 1,
+          "precision": [
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "ending": "complete",
+        "clock_ms": 1619827261000,
+        "calls": {
+          "account": 1,
+          "position": 2,
+          "ticker": 2,
+          "sleep": 2
+        },
+        "base_price": 100.0,
+        "directions": [],
+        "intents": [],
+        "ending_cash": 10000,
+        "ending_asset": 0,
+        "setup": {
+          "contract_type": "swap",
+          "leverage": 1,
+          "precision": [
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "ending": "bounded synthetic branch control",
+        "clock_ms": 1619827260500,
+        "calls": {
+          "account": 2,
+          "position": 3,
+          "ticker": 2,
+          "sleep": 1
+        },
+        "base_price": 100.0,
+        "directions": [
+          "sell"
+        ],
+        "intents": [
+          {
+            "side": "sell",
+            "limit": 94.99,
+            "amount": 5.264,
+            "time_ms": 1619827260500
+          }
+        ],
+        "ending_cash": 10000,
+        "ending_asset": 0,
+        "setup": {
+          "contract_type": "swap",
+          "leverage": 1,
+          "precision": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "assumptions": {
+      "flat_start_cash_USDT": 10000,
+      "virtual_fmz_host_compatibility": "Expose the lowercase false alias as the Python boolean False. The branch for a nonvirtual instance stays inactive. No source line was rewritten.",
+      "clock": "Recorded event-availability time is compared to a 500 ms virtual poll timer. The initial poll is one minute into the first complete UTC day to seed last trade causally."
+    }
+  },
+  "evidence_receipts": {
+    "isolated_receipt_sha256": "e51b90984b2e07e92f36e811513b79c5ac0e6d0e38845e0a3e2aa27a1514bef7",
+    "capture_script": "fmz_native_round19_698_capture.py",
+    "capture_script_sha256": "23bae02eb10f2e5b17c6eb5620092ec7444f441b04419b4f123bce3d19dc4ab1",
+    "worker_script": "fmz_native_round19_698_worker.py",
+    "worker_script_sha256": "8122b41c97a3d27e3b1ee91bf4c4cfe49154553d209741165b05b20fc78e5f10"
+  },
+  "reproduction": "Recover the pinned Markdown and its current matching public parameter form. Prepare a one-element JSON array containing published_source in the capture script's r19-native-public-parameter-proofs.json location. Run capture with the scratch/archive parent and the existing sandbox root. It streams and hashes the first free day's complete trade archive in memory, independently checks the Binance candle archive, and writes the compact job. Run the worker under the existing no-network AppContainer.",
+  "scope": "This independent BTCUSDT time slice starts 60 seconds into the first UTC date named by the published backtest. It lets the captured feed supply the initial last trade causally. Virtual balance is an explicit 10,000 USDT research initialization. No transaction occurred, so fees, slippage and funding are zero with any schedule and drawdown is zero on unchanged cash.",
+  "compatibility": "The original lowercase false identifier receives the conventional Python False value from the virtual host. The AST, strict threshold expressions and polling interval all come directly from the archived source. The four boundary controls use synthetic prices solely to check strict trigger behavior.",
+  "capture_limitations": "The capture contains 18 nonconsecutive trade-ID transitions and uses recorder availability timestamps. The official full minute high/low crosscheck covers every minute with exact agreement. The official whole-day high and low bound the deviation from any in-day initial price below the trigger. This no-entry conclusion survives record gaps, timing jitter and alternative causal in-day last prices.",
+  "win_rate": null,
+  "further_scope": "An exact May 1–29 replay with active orders also requires historical bid/ask and order fill/cancel evidence. The May 12 public Binance trades and funding archives were discoverable. The sampled free May 12 bookTicker/bookDepth checksum URLs did not expose a tape.",
+  "references": [
+    "https://www.fmz.com/strategy/286091",
+    "https://github.com/binance/binance-public-data",
+    "https://docs.tardis.dev/historical-data-details/binance-futures"
+  ]
+}
