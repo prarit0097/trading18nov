@@ -1,0 +1,594 @@
+{
+  "coverage": [
+    [
+      6005,
+      "Tested \u00b7 OctoBot DailyTrading synchronized bar replay",
+      "Published Binance BTC profile and separate ETH substitution. Executed pinned evaluator logic and source order sizing with historical minute fills and seeded inventory."
+    ]
+  ],
+  "results": [
+    {
+      "id": 6005,
+      "period": "2026-09-23 to 2026-10-21 UTC",
+      "group": "OctoBot DailyTrading \u00b7 synchronized bar replay",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "archive_interval": "1h, 4h, 1d",
+      "interval": "1h/4h/1d + 1m",
+      "exit": "Source state transitions and Sell OCO",
+      "order_family": "Market, limit, and paired stop",
+      "trades": 4,
+      "unsettled": 4,
+      "gross": -16079.327817500052,
+      "after_fees": -16814.744974000852,
+      "net": -17035.37012095109,
+      "fees": 735.4171565008,
+      "execution": 220.62514695023998,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross_dd": 16079.327817500052,
+      "fee_dd": 16814.744974000852,
+      "net_dd": 17035.37012095109,
+      "net_dd_pct": 0.019737750400627894
+    },
+    {
+      "id": 6005,
+      "period": "2026-10-21 to 2026-11-05 UTC",
+      "group": "OctoBot DailyTrading \u00b7 synchronized bar replay",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "archive_interval": "1h, 4h, 1d",
+      "interval": "1h/4h/1d + 1m",
+      "exit": "Source state transitions and Sell OCO",
+      "order_family": "Market, limit, and paired stop",
+      "trades": 1,
+      "unsettled": 6,
+      "gross": 6686.185880000012,
+      "after_fees": 6347.586401656012,
+      "net": 6246.0065581528115,
+      "fees": 338.59947834400003,
+      "execution": 101.57984350320001,
+      "gross_wins": 1,
+      "fee_wins": 1,
+      "net_wins": 1,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0
+    },
+    {
+      "id": 6005,
+      "period": "2026-09-23 to 2026-10-21 UTC",
+      "group": "OctoBot DailyTrading \u00b7 synchronized bar replay",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "archive_interval": "1h, 4h, 1d",
+      "interval": "1h/4h/1d + 1m",
+      "exit": "Source state transitions and Sell OCO",
+      "order_family": "Market, limit, and paired stop",
+      "trades": 2,
+      "unsettled": 6,
+      "gross": -386.87954800000114,
+      "after_fees": -405.76752772600116,
+      "net": -411.4339216438011,
+      "fees": 18.887979726,
+      "execution": 5.666393917799999,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross_dd": 386.8795480000008,
+      "fee_dd": 405.7675277260005,
+      "net_dd": 411.433921643802,
+      "net_dd_pct": 0.014417914082897993
+    },
+    {
+      "id": 6005,
+      "period": "2026-10-21 to 2026-11-05 UTC",
+      "group": "OctoBot DailyTrading \u00b7 synchronized bar replay",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "archive_interval": "1h, 4h, 1d",
+      "interval": "1h/4h/1d + 1m",
+      "exit": "Source state transitions and Sell OCO",
+      "order_family": "Market, limit, and paired stop",
+      "trades": 2,
+      "unsettled": 5,
+      "gross": 185.840921999999,
+      "after_fees": 168.700318383999,
+      "net": 163.558137299199,
+      "fees": 17.140603616,
+      "execution": 5.1421810848,
+      "gross_wins": 1,
+      "fee_wins": 1,
+      "net_wins": 1,
+      "gross_dd": 21.019164000001183,
+      "fee_dd": 29.092472866999742,
+      "net_dd": 31.514465527099674,
+      "net_dd_pct": 0.0012268656962569494
+    }
+  ],
+  "evidence": {
+    "BTCUSDT": {
+      "market_archives": {
+        "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08.zip": "acab442e02745177063031d402929703ae983715010064b40cf811c4beb843d4",
+        "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-09.zip": "7a021fb5981cfdb1a56457d68fa81360ab27350c981ddfe63112b2322df44b56",
+        "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-10.zip": "17168f260306752e39177a6c038bb8952f52bf08ff20e36d8da6068732621f1c",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-01.zip": "166e586106dda5083a32dbcf68108a80465bea04a60ba05ca3327fab7768a208",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-02.zip": "0e75a73c1642747e22159cfb6a9059dd0556086fa74fabffe4f7f4166a3e7c65",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-03.zip": "52d48d43d5fe174481b09d7f81eee932739e8b6de41de0b905322dd62ea148fe",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-04.zip": "44c7dfc10dff28bd3050f0129c201872994f3f09e2b2d00a76bd44fb419e509d"
+      },
+      "minute_bars": 138240
+    },
+    "ETHUSDT": {
+      "market_archives": {
+        "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08.zip": "f2f2fe8da85467fb8ec8185e07f16f3af9f4ebcb266633ba494e76ac73c40c0c",
+        "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-09.zip": "827b46043bdc877d542edf8ff178dc0411cfa166a56fa73f2f850ad06c951b50",
+        "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-10.zip": "bcbfb8f896ba57167f297e6529ce5bb73761500e3affcd47b9045bb0d5d6c833",
+        "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-01.zip": "2a00c3a92769a164d7ecffeffca895bd5d3a06c8ff7059ff6bca0c3ad12e66d8",
+        "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-02.zip": "4d8839d68abb79c1b644b9a337a24d666404ac7cbf88f0d51a1d34eb278c37fe",
+        "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-03.zip": "7468568b38dbf795b0415dbba743351f10a41cf9ba817b10b1470dbc32d8bfb4",
+        "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-04.zip": "424d1b522fb215beddcb6a77b3b17aa9c04033816ac1f1fe8afc0c45606cb5d1"
+      },
+      "minute_bars": 138240
+    }
+  },
+  "observations": {
+    "BTCUSDT/2026-09-23": {
+      "fills": [
+        {
+          "at": 1790179320,
+          "price": 83622.3,
+          "quantity": 4.83072,
+          "buy": false,
+          "reason": "stop"
+        },
+        {
+          "at": 1790910060,
+          "price": 85433.09,
+          "quantity": 1.8691600000000002,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1791151320,
+          "price": 86141.92,
+          "quantity": 1.21245,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1791338460,
+          "price": 83654.74,
+          "quantity": 0.80486,
+          "buy": false,
+          "reason": "stop"
+        },
+        {
+          "at": 1791380820,
+          "price": 82889.15000000001,
+          "quantity": 1.84047,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791849960,
+          "price": 81534.51,
+          "quantity": 1.6603,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792031040,
+          "price": 80737.49,
+          "quantity": 1.10006,
+          "buy": true,
+          "reason": "limit"
+        }
+      ],
+      "receipts": [
+        [
+          1790179320,
+          -12493.546214400021,
+          403.9559170560001,
+          121.18677511679999
+        ],
+        [
+          1790910060,
+          -1449.4961968000198,
+          159.6881145044,
+          47.90643435132
+        ],
+        [
+          1791151320,
+          -80.80979250001059,
+          104.442770904,
+          31.332831271199996
+        ],
+        [
+          1791338460,
+          -2055.4756138000016,
+          67.33035403640001,
+          20.19910621092
+        ]
+      ],
+      "pending": {
+        "buy": true,
+        "quantity": 0.8806100000000001,
+        "limit": 81181.06,
+        "stop": null,
+        "stopped": false
+      },
+      "seed": 86208.57,
+      "remaining_base": 5.87903917,
+      "remaining_cash": 358605.2672472181,
+      "inventory": [
+        [
+          1.2828099999999996,
+          86208.57,
+          1.0
+        ],
+        [
+          1.83862953,
+          82889.15000000001,
+          0.999
+        ],
+        [
+          1.6586397000000002,
+          81534.51,
+          0.999
+        ],
+        [
+          1.09895994,
+          80737.49,
+          0.999
+        ]
+      ],
+      "state_hours": {
+        "short": 167,
+        "neutral": 267,
+        "long": 238
+      }
+    },
+    "BTCUSDT/2026-10-21": {
+      "fills": [
+        {
+          "at": 1792594320,
+          "price": 84700.69,
+          "quantity": 3.9976000000000003,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1792660320,
+          "price": 81689.94,
+          "quantity": 0.8895000000000001,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793306580,
+          "price": 78860.03,
+          "quantity": 0.7787000000000001,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793322000,
+          "price": 77252.14,
+          "quantity": 1.5930700000000002,
+          "buy": true,
+          "reason": "market"
+        },
+        {
+          "at": 1793386260,
+          "price": 76607.02,
+          "quantity": 0.46076000000000006,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793641260,
+          "price": 77013.02,
+          "quantity": 0.13043000000000002,
+          "buy": true,
+          "reason": "limit"
+        }
+      ],
+      "receipts": [
+        [
+          1792594320,
+          6686.185880000012,
+          338.59947834400003,
+          101.57984350320001
+        ]
+      ],
+      "pending": {
+        "buy": true,
+        "quantity": 0.09995000000000001,
+        "limit": 77199.44,
+        "stop": null,
+        "stopped": false
+      },
+      "seed": 83028.14,
+      "remaining_base": 9.85100754,
+      "remaining_cash": 36586.72207783436,
+      "inventory": [
+        [
+          6.0024,
+          83028.14,
+          1.0
+        ],
+        [
+          0.8886105000000001,
+          81689.94,
+          0.999
+        ],
+        [
+          0.7779213,
+          78860.03,
+          0.999
+        ],
+        [
+          1.5914769300000002,
+          77252.14,
+          0.999
+        ],
+        [
+          0.46029924000000005,
+          76607.02,
+          0.999
+        ],
+        [
+          0.13029957000000003,
+          77013.02,
+          0.999
+        ]
+      ],
+      "state_hours": {
+        "neutral": 49,
+        "long": 297,
+        "short": 12,
+        "very_long": 2
+      }
+    },
+    "ETHUSDT/2026-09-23": {
+      "fills": [
+        {
+          "at": 1790172720,
+          "price": 2671.02,
+          "quantity": 4.46,
+          "buy": false,
+          "reason": "stop"
+        },
+        {
+          "at": 1790242320,
+          "price": 2640.48,
+          "quantity": 1.1575,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1790915400,
+          "price": 2746.37,
+          "quantity": 2.5398,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1791338400,
+          "price": 2654.82,
+          "quantity": 1.2484,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791826980,
+          "price": 2504.34,
+          "quantity": 1.1472,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792170300,
+          "price": 2422.35,
+          "quantity": 0.9257000000000001,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792418520,
+          "price": 2390.67,
+          "quantity": 0.7834,
+          "buy": true,
+          "reason": "limit"
+        }
+      ],
+      "receipts": [
+        [
+          1790172720,
+          -368.4406000000006,
+          11.9127492,
+          3.5738247599999995
+        ],
+        [
+          1790915400,
+          -18.438948000000554,
+          6.975230526,
+          2.0925691578
+        ]
+      ],
+      "pending": null,
+      "seed": 2753.63,
+      "remaining_base": 8.2571378,
+      "remaining_cash": 6500.585693753503,
+      "inventory": [
+        [
+          3.0002,
+          2753.63,
+          1.0
+        ],
+        [
+          1.1563425,
+          2640.48,
+          0.999
+        ],
+        [
+          1.2471516,
+          2654.82,
+          0.999
+        ],
+        [
+          1.1460528,
+          2504.34,
+          0.999
+        ],
+        [
+          0.9247743,
+          2422.35,
+          0.999
+        ],
+        [
+          0.7826166,
+          2390.67,
+          0.999
+        ]
+      ],
+      "state_hours": {
+        "short": 72,
+        "neutral": 190,
+        "long": 410
+      }
+    },
+    "ETHUSDT/2026-10-21": {
+      "fills": [
+        {
+          "at": 1792595040,
+          "price": 2506.37,
+          "quantity": 3.6177,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1792656600,
+          "price": 2415.4900000000002,
+          "quantity": 0.8861,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793239500,
+          "price": 2304.92,
+          "quantity": 0.7009000000000001,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793648400,
+          "price": 2239.4700000000003,
+          "quantity": 0.5835,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793761200,
+          "price": 2243.75,
+          "quantity": 0.6131,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793831700,
+          "price": 2442.83,
+          "quantity": 3.3049,
+          "buy": false,
+          "reason": "limit"
+        }
+      ],
+      "receipts": [
+        [
+          1792595040,
+          206.86008599999943,
+          9.067294749,
+          2.7201884247
+        ],
+        [
+          1793831700,
+          -21.01916400000042,
+          8.073308867,
+          2.4219926601
+        ]
+      ],
+      "pending": {
+        "buy": false,
+        "quantity": 2.1537,
+        "limit": 2472.76,
+        "stop": 2363.18,
+        "stopped": false
+      },
+      "seed": 2449.19,
+      "remaining_base": 5.8582164,
+      "remaining_cash": 11678.1313669031,
+      "inventory": [
+        [
+          3.0774,
+          2449.19,
+          1.0
+        ],
+        [
+          0.8852139,
+          2415.4900000000002,
+          0.999
+        ],
+        [
+          0.7001991000000001,
+          2304.92,
+          0.999
+        ],
+        [
+          0.5829165000000001,
+          2239.4700000000003,
+          0.999
+        ],
+        [
+          0.6124869,
+          2243.75,
+          0.999
+        ]
+      ],
+      "state_hours": {
+        "neutral": 47,
+        "long": 301,
+        "short": 12
+      }
+    }
+  },
+  "source_sha256": {
+    "trend": "59d47b5ffc6007b49b28218d014473d9987c5e8a2e1a6a01c1b79212a0ebc4e0",
+    "ema": "d0567d033c895e7716b53a0dfe117fa6c83851485d8e98d2ef99028ef524f735",
+    "rsi": "2a6e6e76d75a3d8159542659b69f15eee8b0597e843db6e60cca8fc3095c9f4f",
+    "signal": "e8195ee3dca893112750be2c9ab64c7f958c67b29090a8e4122aa41cd6ce751d",
+    "orders": "70994fa827044b97450d62edeb25a82abc9fbf8ee4358b887f060f6f260d8438",
+    "profile": "14869cfacb0bc5c6d0f3b8a3d7fe54a3fab63aa8b5ebfd736f363bd3496229e5",
+    "settings": "1bc8216b9247fbaf1e1393fd6ca44887fcb13a275d332c6d0122299b3c41aee5",
+    "strategy": "4f834fc2c84bcd2f31aa8fe537edab55ac31d5f464c036f873193a019494f5a7",
+    "activation": "593bbd9615c919d0b537067e16d7909f48badf089562a94f3b71c1d3ec1f3def",
+    "data_util.py": "a184cc9ce351ff4cc388df8da2ea0ca10524837c88b48eadf05c08fb341feced",
+    "abstract_evaluator.py": "b042d7aa7e1aebac3f56c4fd3a218787ccc1869f48ad4a200508d6d83f6591f8"
+  },
+  "source": "https://github.com/Drakkar-Software/OctoBot-Tentacles/tree/f0ebe0c14db0928e50c2e39ea68e2ff9f427f765/profiles/daily_trading",
+  "source_archive_sha256": "5341dd9c9c014d4385173545080f6c54c24183ca8a9f7f04d9d299ecaa98172f",
+  "source_dependencies": {
+    "OctoBot-Commons": "fa72a8cff8ed816797acbbd881d528c4e3bb31c7",
+    "OctoBot-Evaluators": "f3e855944ca41f3e21b7c63a4437354ce200f7b1"
+  },
+  "assumptions": [
+    "Simultaneous closed timeframe updates are batched before the hourly decision. Exchange callback order and simulator queue priority are unavailable.",
+    "Warmup starts 2026-08-01 UTC with a cap of 500 closed candles per indicator. Each window resets the trading wallet and resting order independently.",
+    "BTC starts with the published 10 BTC and 1,000 USDT, with basis at first observed open. ETH uses 10 ETH and 1,000 USDT as a hypothetical separate deployment.",
+    "Resting limits require strict trade-through and one minute of sufficient reported base volume. A paired stop wins ambiguity and becomes marketable at the next feasible open after an insufficient-volume trigger.",
+    "Realized P&L counts FIFO inventory allocations. Initial holdings contribute their historical market movement after the starting valuation. Existing open inventory stays unsettled. Drawdown uses seed wallet value.",
+    "Fills charge published 10 bp per side and a separate 3 bp modeled execution buffer. Order adaptation uses a 5 USDT minimum and price/size steps, with no venue queue or dust inference."
+  ]
+}

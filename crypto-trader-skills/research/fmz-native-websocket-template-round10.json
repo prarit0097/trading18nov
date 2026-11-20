@@ -1,0 +1,101 @@
+{
+  "baseline_sha256": "f45755ae5e879aa0f78e92862769ab43bbf6d58ba358ddc0d9ce0642163a96f4",
+  "source_revision": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "coverage": [
+    [
+      644,
+      "Excluded - WebSocket execution framework",
+      "The author publishes a multi-exchange WebSocket execution template. Both archived blocks contain the same demonstration launcher: main subscribes to feeds and onTick logs market observations. The reusable order methods and timeout management require a separate strategy caller to supply order decisions."
+    ]
+  ],
+  "results": [],
+  "evidence": [
+    {
+      "document_sha256": "adaf43521275782b8e5e83c73ee5d2ae8c6a6557c4c39d7c109e4ff2a3f200f4",
+      "evidence": [
+        {
+          "index": 0,
+          "lang": "",
+          "digest": "0d42a028349370452ee8f4bd63913e6295619a4ac88da52c9fe8dfe7aa162e99",
+          "checks": [
+            {
+              "function": "onTick",
+              "line": 2,
+              "callTargets": [
+                "Log",
+                "UUID",
+                "event.depth.asks.[computed].price.toFixed"
+              ],
+              "outboundMethods": []
+            },
+            {
+              "function": "main",
+              "line": 53,
+              "callTargets": [
+                "$.NewWSS",
+                "<CallExpression>.replace",
+                "<CallExpression>.toLowerCase",
+                "EventLoop",
+                "JSON.stringify",
+                "Log",
+                "LogStatus",
+                "ctx.poll",
+                "exchange.GetCurrency",
+                "exchange.GetName",
+                "exchange.SetContractType",
+                "ws.write"
+              ],
+              "outboundMethods": [
+                "SUBSCRIBE"
+              ]
+            }
+          ],
+          "topLevelIifeCalls": []
+        },
+        {
+          "index": 1,
+          "lang": "javascript",
+          "digest": "497bb31a7a8ba480a393d7bc0d13037c6a5852835ef047958d97b6ae88d9de2b",
+          "checks": [
+            {
+              "function": "onTick",
+              "line": 1315,
+              "callTargets": [
+                "Log",
+                "UUID",
+                "event.depth.asks.[computed].price.toFixed"
+              ],
+              "outboundMethods": []
+            },
+            {
+              "function": "main",
+              "line": 1366,
+              "callTargets": [
+                "$.NewWSS",
+                "<CallExpression>.replace",
+                "<CallExpression>.toLowerCase",
+                "EventLoop",
+                "JSON.stringify",
+                "Log",
+                "LogStatus",
+                "ctx.poll",
+                "exchange.GetCurrency",
+                "exchange.GetName",
+                "exchange.SetContractType",
+                "ws.write"
+              ],
+              "outboundMethods": [
+                "SUBSCRIBE"
+              ]
+            }
+          ],
+          "topLevelIifeCalls": []
+        }
+      ],
+      "id": 644,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/OKXBinance-Websocket%E9%AB%98%E9%A2%91%E4%BA%A4%E6%98%93%E6%A8%A1%E6%9D%BF-%E5%A4%9A%E5%93%81%E7%A7%8DOKEX-Binance-Websocket-High-Frequency-Multi-Symbols-Trading-Template.md",
+      "publisher_page": "https://www.fmz.com/strategy/395045",
+      "publisher_profile": "https://www.fmz.com/user/3b1cb13f2d25352b3ccc85f5157c6afc"
+    }
+  ]
+}
