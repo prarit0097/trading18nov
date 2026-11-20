@@ -1,0 +1,337 @@
+{
+  "baseline_sha256": "f45755ae5e879aa0f78e92862769ab43bbf6d58ba358ddc0d9ce0642163a96f4",
+  "source_revision": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "coverage": [
+    [
+      115,
+      "Pending - Historical external event stream",
+      "The old Python syntax is repairable. The strategy receives decision-driving events through its UDP receive calls. A candle-only replay lacks the original timestamped event stream."
+    ],
+    [
+      706,
+      "Pending - Archived spot template and chart period",
+      "The strategy calls the unspecified external ext.Buy and ext.Sell template and mixes configurable default records with a fixed 30-minute filter. A correctly bound template revision and original default chart period are required for exact replay."
+    ],
+    [
+      961,
+      "Pending - OKCoin quarterly futures",
+      "The source explicitly selects the archived OKCoin BTC/USD quarterly expiry and uses direction/position lifecycle calls. An accepted replay must bind dated quarterly contracts, contract quantity conversion, expiry and margin settlement."
+    ],
+    [
+      985,
+      "Pending - OKCoin quarterly futures",
+      "The source explicitly selects the archived OKCoin BTC/USD quarterly expiry, then applies DeMark signals through open/close direction and position calls. An accepted replay must bind dated quarterly contracts, contract quantity conversion, expiry and margin settlement."
+    ],
+    [
+      1389,
+      "Pending - Huobi derivatives adapter",
+      "The executable top-level loop binds huobip/btc_usdt through SetContractType and submits position-based long/short orders. The correct Huobi contract, lot units and position accounting remain unbound."
+    ],
+    [
+      1391,
+      "Pending - Huobi derivatives adapter",
+      "The executable top-level loop binds huobip/btc_usdt through SetContractType and places both buys and sells. The correct Huobi contract, lot units and position accounting remain unbound."
+    ],
+    [
+      4383,
+      "Pending - KuMEX API position and execution",
+      "The DCA driver obtains existing position state with the KuMEX SDK and submits market orders through that same adapter. A verified historical simulator must preserve the original inverse contract sizing and position responses."
+    ],
+    [
+      5661,
+      "Pending - KuMEX API position and execution",
+      "The breakout driver obtains existing position state with the KuMEX SDK and uses limit orders. A verified historical simulator must preserve the original inverse contract sizing, position responses and limit-order lifecycle."
+    ]
+  ],
+  "evidence": [
+    {
+      "id": 115,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/BTC-V%E5%8F%8D%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "2c37cfb5a50ddecb80c78a6ef4358f483a8b7c9e9ed78301da08a441a9bede07",
+      "code_sha256": "db3ac8393adda86204809dd1fc09b6b1c78eb482b47313db1966efeeeff025f3",
+      "line_basis": "Extracted archive Python source block, one-based",
+      "call_sites": [
+        [
+          31,
+          "exchange.Buy"
+        ],
+        [
+          38,
+          "exchange.Sell"
+        ],
+        [
+          58,
+          "c.recvfrom"
+        ],
+        [
+          114,
+          "c.recvfrom"
+        ]
+      ]
+    },
+    {
+      "id": 706,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/R-Breaker11-%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "5e5b2a13067adc1098d403bcdf8d76111a7130099a50397b107d60f4aef62c9b",
+      "code_sha256": "7714b8cdcd6507df43e1b488c8b907f37c06419203a52006abf4b435689c41cf",
+      "line_basis": "Extracted archive Python source block, one-based",
+      "call_sites": [
+        [
+          57,
+          "ext.Buy"
+        ],
+        [
+          83,
+          "ext.Sell"
+        ],
+        [
+          203,
+          "exchange.GetRecords"
+        ],
+        [
+          214,
+          "exchange.GetRecords"
+        ]
+      ]
+    },
+    {
+      "id": 961,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/SuperTrend-V1.md",
+      "document_sha256": "a8f8d44d4ddf06b83599b884fb971e7ac6936d2f13893b0529000388e0e0f6f3",
+      "code_sha256": "9070bf6ad88575ee4d89721628019048eb23f94e3f46f62c1a60d59bdb2ea708",
+      "line_basis": "Extracted archive Python source block, one-based",
+      "call_sites": [
+        [
+          12,
+          "exchange.SetContractType"
+        ],
+        [
+          16,
+          "exchange.GetRecords"
+        ],
+        [
+          80,
+          "exchange.GetPosition"
+        ],
+        [
+          83,
+          "exchange.SetDirection"
+        ],
+        [
+          84,
+          "exchange.Buy"
+        ],
+        [
+          86,
+          "exchange.SetDirection"
+        ],
+        [
+          87,
+          "exchange.Buy"
+        ],
+        [
+          92,
+          "exchange.GetPosition"
+        ],
+        [
+          95,
+          "exchange.SetDirection"
+        ],
+        [
+          96,
+          "exchange.Sell"
+        ],
+        [
+          97,
+          "exchange.SetDirection"
+        ],
+        [
+          98,
+          "exchange.Sell"
+        ]
+      ]
+    },
+    {
+      "id": 985,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TD%E7%8B%84%E9%A9%AC%E5%85%8B%E5%BA%8F%E5%88%97.md",
+      "document_sha256": "a6b591bc2d0c95549c4076de8296df73cba4900ff83bb4c467d9d687ed25062a",
+      "code_sha256": "0a2896b26f7cd1e1c1e7878a0a54dfa5a737125b954af8c8c90c962e4412c322",
+      "line_basis": "Extracted archive Python source block, one-based",
+      "call_sites": [
+        [
+          13,
+          "exchange.SetContractType"
+        ],
+        [
+          16,
+          "exchange.GetRecords"
+        ],
+        [
+          46,
+          "exchange.GetPosition"
+        ],
+        [
+          51,
+          "exchange.SetDirection"
+        ],
+        [
+          52,
+          "exchange.Sell"
+        ],
+        [
+          56,
+          "exchange.SetDirection"
+        ],
+        [
+          57,
+          "exchange.Buy"
+        ],
+        [
+          62,
+          "exchange.SetDirection"
+        ],
+        [
+          63,
+          "exchange.Sell"
+        ],
+        [
+          68,
+          "exchange.SetDirection"
+        ],
+        [
+          69,
+          "exchange.Buy"
+        ]
+      ]
+    },
+    {
+      "id": 1389,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%88%86%E4%BA%AB-%E8%B5%8C%E5%BE%92%E7%AD%96%E7%95%A5-%E9%A9%AC%E4%B8%81%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "3ee3ab19003fe2f9b6484b2366887f516e420a8e5818c38621c33607156116e0",
+      "code_sha256": "c381108c0269df5a90862145c96d93c2634ca11cf1e508178965c609cdbfe9ee",
+      "line_basis": "Extracted archive Python source block, one-based",
+      "call_sites": [
+        [
+          16,
+          "exchange.SetContractType"
+        ],
+        [
+          22,
+          "exchange.GetRecords"
+        ],
+        [
+          33,
+          "exchange.GetPosition"
+        ],
+        [
+          34,
+          "exchange.Sell"
+        ],
+        [
+          41,
+          "exchange.GetPosition"
+        ],
+        [
+          42,
+          "exchange.Sell"
+        ],
+        [
+          50,
+          "exchange.Buy"
+        ],
+        [
+          58,
+          "exchange.Buy"
+        ]
+      ]
+    },
+    {
+      "id": 1391,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%88%86%E4%BA%ABRSI%E8%B6%85%E4%B9%B0%E8%B6%85%E5%8D%96%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "d295efbab79a9fe668d96b64f0b1146ce03432c7ecc6138033780afcdd771d26",
+      "code_sha256": "4b22bae9fffd0e23864079af6182174ae48917febd6847c34a5afc074130d509",
+      "line_basis": "Extracted archive Python source block, one-based",
+      "call_sites": [
+        [
+          16,
+          "exchange.SetContractType"
+        ],
+        [
+          22,
+          "exchange.GetRecords"
+        ],
+        [
+          38,
+          "exchange.Buy"
+        ],
+        [
+          45,
+          "exchange.Sell"
+        ]
+      ]
+    },
+    {
+      "id": 4383,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%AE%9A%E6%8A%95%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "df07c826ee9cb18945317092d7a70a17bcc81ccb46882a05f0c10d42d7af5cee",
+      "code_sha256": "472a8ce7d211f7907fe71be552d2912b6e7d234cc7892a941bbfc43e0b9f84be",
+      "line_basis": "Extracted archive Python source block, one-based",
+      "call_sites": [
+        [
+          26,
+          "Trade"
+        ],
+        [
+          33,
+          "self.trade.get_position_details"
+        ],
+        [
+          39,
+          "aip.trade.create_market_order"
+        ],
+        [
+          45,
+          "aip.trade.create_market_order"
+        ],
+        [
+          49,
+          "aip.trade.create_market_order"
+        ]
+      ]
+    },
+    {
+      "id": 5661,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%9C%87%E8%8D%A1%E7%AA%81%E7%A0%B4%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "e307a45a73eb6d86b29c69c00161a9961068133405bb0dfacf40942184dc1559",
+      "code_sha256": "d08a1886a3f7ef568d1e8a1ad575cb9bfcf8079e0846139602102fb1b484cb06",
+      "line_basis": "Extracted archive Python source block, one-based",
+      "call_sites": [
+        [
+          67,
+          "Trade"
+        ],
+        [
+          101,
+          "shock.trade.get_position_details"
+        ],
+        [
+          110,
+          "shock.trade.create_limit_order"
+        ],
+        [
+          115,
+          "shock.trade.create_limit_order"
+        ],
+        [
+          122,
+          "shock.trade.create_limit_order"
+        ],
+        [
+          126,
+          "shock.trade.create_limit_order"
+        ]
+      ]
+    }
+  ],
+  "results": []
+}
