@@ -1,0 +1,90 @@
+{
+  "source_revision": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "baseline_sha256": "f45755ae5e879aa0f78e92862769ab43bbf6d58ba358ddc0d9ce0642163a96f4",
+  "coverage": [
+    [
+      699,
+      "Excluded · FMZ API demonstration",
+      "The complete Python main routine demonstrates ticker, account, persistence, chart and existing-order cancellation APIs. Its only order operation cancels an existing order. The source never creates an entry or exit and has no round-trip lifecycle."
+    ]
+  ],
+  "evidence": [
+    {
+      "id": 699,
+      "archive": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E7%AD%96%E7%95%A5.md",
+      "publisher_page": "https://www.fmz.com/strategy/20761",
+      "document_sha256": "8bf95a898e2c75697df2dcb712143032257fa3522de52ebb3c6aa47655d993fa",
+      "code_sha256": "b5871c8c08a2becb2c8f60bb13731cc3956df1fced8f855fc50c3f18ff6a33db",
+      "imports": [
+        "time",
+        "talib"
+      ],
+      "resolved_retry_callbacks": [
+        "e.GetOrders",
+        "exchange.GetRecords",
+        "exchange.GetTicker"
+      ],
+      "complete_call_targets": [
+        "Chart",
+        "EnableLog",
+        "GetCommand",
+        "GetLastError",
+        "GetPid",
+        "Log",
+        "LogProfitReset",
+        "LogReset",
+        "LogStatus",
+        "SetErrorFilter",
+        "Sleep",
+        "TA.ATR",
+        "TA.EMA",
+        "_C",
+        "_G",
+        "e.CancelOrder",
+        "e.GetAccount",
+        "e.GetCurrency",
+        "e.GetDepth",
+        "e.GetName",
+        "e.GetOrder",
+        "e.GetRate",
+        "e.GetRecords",
+        "e.GetTicker",
+        "e.GetUSDCNY",
+        "exchange.GetTicker",
+        "int",
+        "len",
+        "range",
+        "str",
+        "talib.EMA",
+        "time.localtime",
+        "time.strftime",
+        "time.time",
+        "x.add",
+        "x.reset"
+      ],
+      "source_fragments": [
+        {
+          "line": 20,
+          "code": "ticker = exchange.GetTicker()"
+        },
+        {
+          "line": 33,
+          "code": "Log(e.GetOrder(10))"
+        },
+        {
+          "line": 34,
+          "code": "Log(e.CancelOrder(10000))"
+        },
+        {
+          "line": 56,
+          "code": "x.add(0, [ts, ticker.Buy])"
+        },
+        {
+          "line": 57,
+          "code": "x.add(1, [ts, ticker.Sell])"
+        }
+      ]
+    }
+  ],
+  "results": []
+}

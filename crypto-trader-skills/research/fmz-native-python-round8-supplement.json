@@ -1,0 +1,1077 @@
+{
+  "source_revision": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "coverage": [
+    [
+      2465,
+      "Tested · FMZ historical Python native",
+      "Use the exact archived Python spot template, source-matched defaults and a syntax-only Python 3 migration."
+    ],
+    [
+      2519,
+      "Tested · FMZ historical Python native",
+      "Use the exact archived Python spot template and source-matched defaults on a 15-minute replay scenario. Seed half the study equity in base inventory to give the original sizing function its starting holdings."
+    ]
+  ],
+  "results": [
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Moving-average trend strategy for crypto v02",
+      "market": "BTCUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 18,
+      "unsettled": 1,
+      "gross_wins": 17,
+      "fee_wins": 6,
+      "net_wins": 5,
+      "gross": 268.83245999999855,
+      "after_fees": 56.794907400518575,
+      "net": -51.02079731108141,
+      "fees": 212.03755259947997,
+      "execution": 107.81570471159998,
+      "gross_dd": 1.2970539999987523,
+      "fee_dd": 34.93031011757557,
+      "net_dd": 105.78958264579887,
+      "gross_dd_pct": 0.0001293429129810529,
+      "fee_dd_pct": 0.0034930310117575573,
+      "net_dd_pct": 0.010578958264579887,
+      "id": 2465,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF-%E8%B6%8B%E5%8A%BF_%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%AD%96%E7%95%A5V02.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Moving-average trend strategy for crypto v02",
+      "market": "ETHUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 20,
+      "unsettled": 5,
+      "gross_wins": 20,
+      "fee_wins": 15,
+      "net_wins": 14,
+      "gross": 87.5258589999993,
+      "after_fees": 40.2937991616893,
+      "net": 16.2774975489893,
+      "fees": 47.23205983831,
+      "execution": 24.0163016127,
+      "gross_dd": 0.0,
+      "fee_dd": 4.03629178436131,
+      "net_dd": 8.708794725558619,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0.0004034809936565274,
+      "net_dd_pct": 0.0008706747804812546,
+      "id": 2465,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF-%E8%B6%8B%E5%8A%BF_%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%AD%96%E7%95%A5V02.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Moving-average trend strategy for crypto v02",
+      "market": "BTCUSDT + ETHUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 38,
+      "unsettled": 6,
+      "gross_wins": 37,
+      "fee_wins": 21,
+      "net_wins": 19,
+      "gross": 356.3583189999979,
+      "after_fees": 97.08870656220788,
+      "net": -34.74329976209211,
+      "fees": 259.26961243779,
+      "execution": 131.83200632429998,
+      "gross_dd": 1.2970539999987523,
+      "fee_dd": 16.599921536377224,
+      "net_dd": 91.86304413680409,
+      "gross_dd_pct": 6.44801622195848e-05,
+      "fee_dd_pct": 0.0008290855994475094,
+      "net_dd_pct": 0.004592612354663584,
+      "id": 2465,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF-%E8%B6%8B%E5%8A%BF_%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%AD%96%E7%95%A5V02.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 20000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Moving-average trend strategy for crypto v02",
+      "market": "BTCUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 3,
+      "unsettled": 1,
+      "gross_wins": 3,
+      "fee_wins": 3,
+      "net_wins": 3,
+      "gross": 278.33509000000277,
+      "after_fees": 242.63590868770274,
+      "net": 224.48378259670272,
+      "fees": 35.69918131230003,
+      "execution": 18.152126091000014,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "id": 2465,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF-%E8%B6%8B%E5%8A%BF_%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%AD%96%E7%95%A5V02.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Moving-average trend strategy for crypto v02",
+      "market": "ETHUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 24,
+      "unsettled": 6,
+      "gross_wins": 23,
+      "fee_wins": 19,
+      "net_wins": 17,
+      "gross": 243.4339619999998,
+      "after_fees": 195.9604910952798,
+      "net": 171.8214380928798,
+      "fees": 47.47347090472002,
+      "execution": 24.139053002400004,
+      "gross_dd": 0.0319999999992433,
+      "fee_dd": 5.120128312850284,
+      "net_dd": 9.966029997349324,
+      "gross_dd_pct": 3.1700792107804664e-06,
+      "fee_dd_pct": 0.0005086388409710318,
+      "net_dd_pct": 0.00099133783507589,
+      "id": 2465,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF-%E8%B6%8B%E5%8A%BF_%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%AD%96%E7%95%A5V02.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Moving-average trend strategy for crypto v02",
+      "market": "BTCUSDT + ETHUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 27,
+      "unsettled": 7,
+      "gross_wins": 26,
+      "fee_wins": 22,
+      "net_wins": 20,
+      "gross": 521.7690520000025,
+      "after_fees": 438.59639978298253,
+      "net": 396.30522068958254,
+      "fees": 83.17265221701996,
+      "execution": 42.29117909339999,
+      "gross_dd": 0.0319999999992433,
+      "fee_dd": 5.120128312846646,
+      "net_dd": 9.966029997347505,
+      "gross_dd_pct": 1.5825543755891803e-06,
+      "fee_dd_pct": 0.0002538648628219894,
+      "net_dd_pct": 0.0004947531413232848,
+      "id": 2465,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF-%E8%B6%8B%E5%8A%BF_%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%AD%96%E7%95%A5V02.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 20000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "均线策略python版",
+      "market": "BTCUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 1513,
+      "unsettled": 2,
+      "gross_wins": 415,
+      "fee_wins": 212,
+      "net_wins": 176,
+      "gross": -1011.9709529999811,
+      "after_fees": -4003.5235875613434,
+      "net": -5526.1519365070435,
+      "fees": 2991.5526345613625,
+      "execution": 1522.6283489457,
+      "gross_dd": 1062.186597399981,
+      "fee_dd": 4024.8466931248768,
+      "net_dd": 5531.593120284284,
+      "gross_dd_pct": 0.10616351989405443,
+      "fee_dd_pct": 0.4023700385837974,
+      "net_dd_pct": 0.5531335509708997,
+      "id": 2519,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF%E7%AD%96%E7%95%A5python%E7%89%88.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "均线策略python版",
+      "market": "ETHUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 2998,
+      "unsettled": 5,
+      "gross_wins": 769,
+      "fee_wins": 422,
+      "net_wins": 336,
+      "gross": -1505.1585680000096,
+      "after_fees": -4587.24692909258,
+      "net": -6155.91047288198,
+      "fees": 3082.0883610925703,
+      "execution": 1568.6635437894001,
+      "gross_dd": 1642.5686289999776,
+      "fee_dd": 4675.456027140852,
+      "net_dd": 6239.623148706029,
+      "gross_dd_pct": 0.16417118499571542,
+      "fee_dd_pct": 0.4674689758652185,
+      "net_dd_pct": 0.6239623148706028,
+      "id": 2519,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF%E7%AD%96%E7%95%A5python%E7%89%88.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "均线策略python版",
+      "market": "BTCUSDT + ETHUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 4511,
+      "unsettled": 7,
+      "gross_wins": 1184,
+      "fee_wins": 634,
+      "net_wins": 512,
+      "gross": -2517.1295209999907,
+      "after_fees": -8590.770516653924,
+      "net": -11682.062409389024,
+      "fees": 6073.640995653933,
+      "execution": 3091.2918927351,
+      "gross_dd": 2659.9514994000274,
+      "fee_dd": 8698.663534505315,
+      "net_dd": 11771.216268990236,
+      "gross_dd_pct": 0.13296304539785286,
+      "fee_dd_pct": 0.434871231747507,
+      "net_dd_pct": 0.5885471082639487,
+      "id": 2519,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF%E7%AD%96%E7%95%A5python%E7%89%88.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 20000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "均线策略python版",
+      "market": "BTCUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 745,
+      "unsettled": 3,
+      "gross_wins": 221,
+      "fee_wins": 123,
+      "net_wins": 96,
+      "gross": -419.49365309998467,
+      "after_fees": -2089.6151615534686,
+      "net": -2940.3294630509986,
+      "fees": 1670.121508453484,
+      "execution": 850.71430149753,
+      "gross_dd": 627.8272325999969,
+      "fee_dd": 2137.4643789368256,
+      "net_dd": 2940.3294630509918,
+      "gross_dd_pct": 0.06186487250838162,
+      "fee_dd_pct": 0.21273016225162852,
+      "net_dd_pct": 0.2940329463050992,
+      "id": 2519,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF%E7%AD%96%E7%95%A5python%E7%89%88.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "均线策略python版",
+      "market": "ETHUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 2091,
+      "unsettled": 6,
+      "gross_wins": 556,
+      "fee_wins": 315,
+      "net_wins": 252,
+      "gross": -875.528962000009,
+      "after_fees": -2560.182119231109,
+      "net": -3418.2854075781092,
+      "fees": 1684.6531572311,
+      "execution": 858.1032883470002,
+      "gross_dd": 944.4944980000018,
+      "fee_dd": 2575.3832954446725,
+      "net_dd": 3418.285407578085,
+      "gross_dd_pct": 0.09425992175237231,
+      "fee_dd_pct": 0.25753832954446726,
+      "net_dd_pct": 0.3418285407578085,
+      "id": 2519,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF%E7%AD%96%E7%95%A5python%E7%89%88.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USDT"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "均线策略python版",
+      "market": "BTCUSDT + ETHUSDT spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 2836,
+      "unsettled": 9,
+      "gross_wins": 777,
+      "fee_wins": 438,
+      "net_wins": 348,
+      "gross": -1295.0226150999936,
+      "after_fees": -4649.797280784578,
+      "net": -6358.614870629108,
+      "fees": 3354.7746656845848,
+      "execution": 1708.8175898445297,
+      "gross_dd": 1518.447830900026,
+      "fee_dd": 4649.87350578654,
+      "net_dd": 6358.6148706291115,
+      "gross_dd_pct": 0.0753516499928117,
+      "fee_dd_pct": 0.232493675289327,
+      "net_dd_pct": 0.31793074353145556,
+      "id": 2519,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9D%87%E7%BA%BF%E7%AD%96%E7%95%A5python%E7%89%88.md",
+      "interval": "15m",
+      "archive_interval": "Legacy API",
+      "starting_equity": 20000.0,
+      "quote_currency": "USDT"
+    }
+  ],
+  "isolation": {
+    "file_error": [
+      "PermissionError",
+      null
+    ],
+    "network_error": [
+      "PermissionError",
+      10013
+    ]
+  },
+  "worker_sha256": "e794bdcf63177dae4608b3c8201da1f415643a0f7eb93b021317e03b2a9f81cf",
+  "retry_worker_sha256": {
+    "2519": "6ccff95c515f8522c679affc1d33cb0fa4934037c1beee41a5ea6fdf8e8cb2b4",
+    "2465": "5f72f3d3f35bbe584ffc281d8a5fafb60b0b7309cdf7f4db9c5e2f0ceb890e70"
+  },
+  "broker_sha256": "504c312b9b4b410e84c9812298964becc7ae669f253fa0790480330661b212c0",
+  "evidence": [
+    {
+      "id": 2465,
+      "feed": {
+        "file": "BTC-1789201800-1792521000.json",
+        "sha256": "bf1837b0381a3620d552c617d1ad6784c7a4f5cbbd2f16100e4d8cb49766bee4",
+        "providers": [
+          {
+            "coin": "BTC",
+            "start": "2026-09-23",
+            "end": "2026-10-21",
+            "file": "BTC-1789201800-1792521000.json",
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=0&custom=0&period=300000&symbol=BTC_USDT&from=1789201800&to=1792521000",
+            "sha256": "bf1837b0381a3620d552c617d1ad6784c7a4f5cbbd2f16100e4d8cb49766bee4",
+            "eid": "Binance",
+            "symbol": "BTC_USDT",
+            "period": "15m",
+            "base": "5m",
+            "base_seconds": 300,
+            "from_epoch": 1789201800,
+            "to_epoch": 1792521300
+          }
+        ],
+        "coin": "BTC",
+        "start": "2026-09-23",
+        "end": "2026-10-21",
+        "period": "15m",
+        "base": "5m",
+        "base_seconds": 300,
+        "symbol": "BTC_USDT"
+      },
+      "source_sha256": "1b613c8b4958b7341bb12bc80c5b02d40f35b18860fc48675f50f6100571ae58",
+      "initial_inventory": {
+        "price": 86289.88,
+        "base": 0,
+        "cash": 10000,
+        "timestamp": 1790101500000
+      },
+      "public_settings": {
+        "preview_chars": 5024,
+        "sha256": "ec70465bf4f2321e28867cc89c6e335e75548811a2d8f290afca886bc83e4f92",
+        "args": {
+          "FastPeriod": 2,
+          "SlowPeriod": 4,
+          "EnterPeriod": 1,
+          "ExitFastPeriod": 2,
+          "ExitSlowPeriod": 4,
+          "ExitPeriod": 2,
+          "PositionRatio": 0.5,
+          "Interval": 10,
+          "MAType": 0
+        }
+      },
+      "worker_code_sha256": "9ecae65d68a4b76de9a9290b960400cef0de79db00fd7606439d22cd13f62ae3",
+      "raw_receipt_sha256": "b724bb2500d5d051c104c5252c08d3ce414a6f69333f12e3793aa0aceb3a00b4",
+      "template": {
+        "document_sha256": "3ba8fa4ce6539a1b9d7e821d1ec3482237629f8d6196b67e2cd045395cd53b58",
+        "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python%E7%89%88%E7%8E%B0%E8%B4%A7%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E4%BA%A4%E6%98%93%E7%B1%BB%E5%BA%93Python-Version-Spot-Cryptocurrency-Trading-Class-Library.md",
+        "page": "https://www.fmz.com/strategy/21104",
+        "page_sha256": "e6c1ee631023c4fc79ed78b48e4c04b73cdd327f784c0263884c33c3871f832f",
+        "runtime_sha256": "340640819c5e24ef768d142d3eac3bc377bf77c69797c6782ef6e5462e749cd6",
+        "args": {
+          "MaxSpace": 0.5,
+          "SlidePrice": 0.1,
+          "MaxAmount": 0.8,
+          "RetryDelay": 500,
+          "_GetMinStocks": 0.01,
+          "OpMode": 0,
+          "MAType": 0
+        }
+      },
+      "order_count": 37,
+      "closing_account": {
+        "Balance": 4.59063098645,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.1173,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 1.4551915228366852e-11,
+        "asset_error": 0.0
+      },
+      "close_count": 18,
+      "open_count": 1,
+      "scheduled_sleeps": 83630
+    },
+    {
+      "id": 2465,
+      "feed": {
+        "file": "BTC-1791621000-1793730600.json",
+        "sha256": "428d01b3340b63ba6fcd6fb9308b78b44f15838219c135e947559dee74c94d8a",
+        "providers": [
+          {
+            "coin": "BTC",
+            "start": "2026-10-21",
+            "end": "2026-11-04",
+            "file": "BTC-1791621000-1793730600.json",
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=0&custom=0&period=300000&symbol=BTC_USDT&from=1791621000&to=1793730600",
+            "sha256": "428d01b3340b63ba6fcd6fb9308b78b44f15838219c135e947559dee74c94d8a",
+            "eid": "Binance",
+            "symbol": "BTC_USDT",
+            "period": "15m",
+            "base": "5m",
+            "base_seconds": 300,
+            "from_epoch": 1791621000,
+            "to_epoch": 1793730900
+          }
+        ],
+        "coin": "BTC",
+        "start": "2026-10-21",
+        "end": "2026-11-04",
+        "period": "15m",
+        "base": "5m",
+        "base_seconds": 300,
+        "symbol": "BTC_USDT"
+      },
+      "source_sha256": "1b613c8b4958b7341bb12bc80c5b02d40f35b18860fc48675f50f6100571ae58",
+      "initial_inventory": {
+        "price": 82547.75,
+        "base": 0,
+        "cash": 10000,
+        "timestamp": 1792520700000
+      },
+      "public_settings": {
+        "preview_chars": 5024,
+        "sha256": "ec70465bf4f2321e28867cc89c6e335e75548811a2d8f290afca886bc83e4f92",
+        "args": {
+          "FastPeriod": 2,
+          "SlowPeriod": 4,
+          "EnterPeriod": 1,
+          "ExitFastPeriod": 2,
+          "ExitSlowPeriod": 4,
+          "ExitPeriod": 2,
+          "PositionRatio": 0.5,
+          "Interval": 10,
+          "MAType": 0
+        }
+      },
+      "worker_code_sha256": "9ecae65d68a4b76de9a9290b960400cef0de79db00fd7606439d22cd13f62ae3",
+      "raw_receipt_sha256": "68205aaf872b6ac17ee99f5bd47b21e01acc36e28287d9d43516a45f8476b4da",
+      "template": {
+        "document_sha256": "3ba8fa4ce6539a1b9d7e821d1ec3482237629f8d6196b67e2cd045395cd53b58",
+        "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python%E7%89%88%E7%8E%B0%E8%B4%A7%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E4%BA%A4%E6%98%93%E7%B1%BB%E5%BA%93Python-Version-Spot-Cryptocurrency-Trading-Class-Library.md",
+        "page": "https://www.fmz.com/strategy/21104",
+        "page_sha256": "e6c1ee631023c4fc79ed78b48e4c04b73cdd327f784c0263884c33c3871f832f",
+        "runtime_sha256": "340640819c5e24ef768d142d3eac3bc377bf77c69797c6782ef6e5462e749cd6",
+        "args": {
+          "MaxSpace": 0.5,
+          "SlidePrice": 0.1,
+          "MaxAmount": 0.8,
+          "RetryDelay": 500,
+          "_GetMinStocks": 0.01,
+          "OpMode": 0,
+          "MAType": 0
+        }
+      },
+      "order_count": 7,
+      "closing_account": {
+        "Balance": 5.05769213957,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.1211,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 5.4569682106375694e-12,
+        "asset_error": 0.0
+      },
+      "close_count": 3,
+      "open_count": 1,
+      "scheduled_sleeps": 42182
+    },
+    {
+      "id": 2465,
+      "feed": {
+        "file": "ETH-1789201800-1792521000.json",
+        "sha256": "6dbd7c74f4afe18377796dfa013779de0efd93423afef5a4420285a45fc1e66b",
+        "providers": [
+          {
+            "coin": "ETH",
+            "start": "2026-09-23",
+            "end": "2026-10-21",
+            "file": "ETH-1789201800-1792521000.json",
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=0&custom=0&period=300000&symbol=ETH_USDT&from=1789201800&to=1792521000",
+            "sha256": "6dbd7c74f4afe18377796dfa013779de0efd93423afef5a4420285a45fc1e66b",
+            "eid": "Binance",
+            "symbol": "ETH_USDT",
+            "period": "15m",
+            "base": "5m",
+            "base_seconds": 300,
+            "from_epoch": 1789201800,
+            "to_epoch": 1792521300
+          }
+        ],
+        "coin": "ETH",
+        "start": "2026-09-23",
+        "end": "2026-10-21",
+        "period": "15m",
+        "base": "5m",
+        "base_seconds": 300,
+        "symbol": "ETH_USDT"
+      },
+      "source_sha256": "1b613c8b4958b7341bb12bc80c5b02d40f35b18860fc48675f50f6100571ae58",
+      "initial_inventory": {
+        "price": 2743.43,
+        "base": 0,
+        "cash": 10000,
+        "timestamp": 1790101500000
+      },
+      "public_settings": {
+        "preview_chars": 5024,
+        "sha256": "ec70465bf4f2321e28867cc89c6e335e75548811a2d8f290afca886bc83e4f92",
+        "args": {
+          "FastPeriod": 2,
+          "SlowPeriod": 4,
+          "EnterPeriod": 1,
+          "ExitFastPeriod": 2,
+          "ExitSlowPeriod": 4,
+          "ExitPeriod": 2,
+          "PositionRatio": 0.5,
+          "Interval": 10,
+          "MAType": 0
+        }
+      },
+      "worker_code_sha256": "9ecae65d68a4b76de9a9290b960400cef0de79db00fd7606439d22cd13f62ae3",
+      "raw_receipt_sha256": "1029c5cf414cc6e7edec58a81fe6beee70df2f45e042f776e4cc86e867b78467",
+      "template": {
+        "document_sha256": "3ba8fa4ce6539a1b9d7e821d1ec3482237629f8d6196b67e2cd045395cd53b58",
+        "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python%E7%89%88%E7%8E%B0%E8%B4%A7%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E4%BA%A4%E6%98%93%E7%B1%BB%E5%BA%93Python-Version-Spot-Cryptocurrency-Trading-Class-Library.md",
+        "page": "https://www.fmz.com/strategy/21104",
+        "page_sha256": "e6c1ee631023c4fc79ed78b48e4c04b73cdd327f784c0263884c33c3871f832f",
+        "runtime_sha256": "340640819c5e24ef768d142d3eac3bc377bf77c69797c6782ef6e5462e749cd6",
+        "args": {
+          "MaxSpace": 0.5,
+          "SlidePrice": 0.1,
+          "MaxAmount": 0.8,
+          "RetryDelay": 500,
+          "_GetMinStocks": 0.01,
+          "OpMode": 0,
+          "MAType": 0
+        }
+      },
+      "order_count": 45,
+      "closing_account": {
+        "Balance": 9.51162533551,
+        "FrozenBalance": 0.0,
+        "Stocks": 3.6453,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": -6.821210263296962e-13,
+        "asset_error": 0.0
+      },
+      "close_count": 20,
+      "open_count": 5,
+      "scheduled_sleeps": 88509
+    },
+    {
+      "id": 2465,
+      "feed": {
+        "file": "ETH-1791621000-1793730600.json",
+        "sha256": "078e1199a5be263a162ae3a1d42f7a54b856efd2e09dd41ba7f8ed619043fe69",
+        "providers": [
+          {
+            "coin": "ETH",
+            "start": "2026-10-21",
+            "end": "2026-11-04",
+            "file": "ETH-1791621000-1793730600.json",
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=0&custom=0&period=300000&symbol=ETH_USDT&from=1791621000&to=1793730600",
+            "sha256": "078e1199a5be263a162ae3a1d42f7a54b856efd2e09dd41ba7f8ed619043fe69",
+            "eid": "Binance",
+            "symbol": "ETH_USDT",
+            "period": "15m",
+            "base": "5m",
+            "base_seconds": 300,
+            "from_epoch": 1791621000,
+            "to_epoch": 1793730900
+          }
+        ],
+        "coin": "ETH",
+        "start": "2026-10-21",
+        "end": "2026-11-04",
+        "period": "15m",
+        "base": "5m",
+        "base_seconds": 300,
+        "symbol": "ETH_USDT"
+      },
+      "source_sha256": "1b613c8b4958b7341bb12bc80c5b02d40f35b18860fc48675f50f6100571ae58",
+      "initial_inventory": {
+        "price": 2439.6,
+        "base": 0,
+        "cash": 10000,
+        "timestamp": 1792520700000
+      },
+      "public_settings": {
+        "preview_chars": 5024,
+        "sha256": "ec70465bf4f2321e28867cc89c6e335e75548811a2d8f290afca886bc83e4f92",
+        "args": {
+          "FastPeriod": 2,
+          "SlowPeriod": 4,
+          "EnterPeriod": 1,
+          "ExitFastPeriod": 2,
+          "ExitSlowPeriod": 4,
+          "ExitPeriod": 2,
+          "PositionRatio": 0.5,
+          "Interval": 10,
+          "MAType": 0
+        }
+      },
+      "worker_code_sha256": "9ecae65d68a4b76de9a9290b960400cef0de79db00fd7606439d22cd13f62ae3",
+      "raw_receipt_sha256": "cd085e7854138ca4a40ed5427292028bce09c18e8468d06e944d04bc134bb783",
+      "template": {
+        "document_sha256": "3ba8fa4ce6539a1b9d7e821d1ec3482237629f8d6196b67e2cd045395cd53b58",
+        "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python%E7%89%88%E7%8E%B0%E8%B4%A7%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E4%BA%A4%E6%98%93%E7%B1%BB%E5%BA%93Python-Version-Spot-Cryptocurrency-Trading-Class-Library.md",
+        "page": "https://www.fmz.com/strategy/21104",
+        "page_sha256": "e6c1ee631023c4fc79ed78b48e4c04b73cdd327f784c0263884c33c3871f832f",
+        "runtime_sha256": "340640819c5e24ef768d142d3eac3bc377bf77c69797c6782ef6e5462e749cd6",
+        "args": {
+          "MaxSpace": 0.5,
+          "SlidePrice": 0.1,
+          "MaxAmount": 0.8,
+          "RetryDelay": 500,
+          "_GetMinStocks": 0.01,
+          "OpMode": 0,
+          "MAType": 0
+        }
+      },
+      "order_count": 54,
+      "closing_account": {
+        "Balance": 9.91418044395,
+        "FrozenBalance": 0.0,
+        "Stocks": 4.0833,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 1.9610979506978765e-12,
+        "asset_error": 0.0
+      },
+      "close_count": 24,
+      "open_count": 6,
+      "scheduled_sleeps": 44307
+    },
+    {
+      "id": 2519,
+      "feed": {
+        "file": "BTC-1789201800-1792521000.json",
+        "sha256": "bf1837b0381a3620d552c617d1ad6784c7a4f5cbbd2f16100e4d8cb49766bee4",
+        "providers": [
+          {
+            "coin": "BTC",
+            "start": "2026-09-23",
+            "end": "2026-10-21",
+            "file": "BTC-1789201800-1792521000.json",
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=0&custom=0&period=300000&symbol=BTC_USDT&from=1789201800&to=1792521000",
+            "sha256": "bf1837b0381a3620d552c617d1ad6784c7a4f5cbbd2f16100e4d8cb49766bee4",
+            "eid": "Binance",
+            "symbol": "BTC_USDT",
+            "period": "15m",
+            "base": "5m",
+            "base_seconds": 300,
+            "from_epoch": 1789201800,
+            "to_epoch": 1792521300
+          }
+        ],
+        "coin": "BTC",
+        "start": "2026-09-23",
+        "end": "2026-10-21",
+        "period": "15m",
+        "base": "5m",
+        "base_seconds": 300,
+        "symbol": "BTC_USDT"
+      },
+      "source_sha256": "4d0f2886ea055f154b4a7bf812c51ab6021f277f65584d8f38b3e462505cf7da",
+      "initial_inventory": {
+        "price": 86289.88,
+        "base": 0.05794,
+        "cash": 5000.3643528,
+        "timestamp": 1790101500000
+      },
+      "public_settings": {
+        "preview_chars": 920,
+        "sha256": "a71aa84516b6120712d3a7d44b61cdeaeda43e146f58d915c700671b0910d275",
+        "args": {
+          "FastPeriod": 3,
+          "SlowPeriod": 7,
+          "EnterPeriod": 3,
+          "ExitFastPeriod": 3,
+          "ExitSlowPeriod": 7,
+          "ExitPeriod": 1,
+          "PositionRatio": 0.8,
+          "Interval": 10
+        }
+      },
+      "worker_code_sha256": "1fd239bb129c89cfed8d5532b39775aab47e96d986ae73d20929afc543ff2736",
+      "raw_receipt_sha256": "e8fbc1d14b250f96959069adc593c0f61b6416a6625c600a791861f17ade55b9",
+      "template": {
+        "document_sha256": "3ba8fa4ce6539a1b9d7e821d1ec3482237629f8d6196b67e2cd045395cd53b58",
+        "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python%E7%89%88%E7%8E%B0%E8%B4%A7%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E4%BA%A4%E6%98%93%E7%B1%BB%E5%BA%93Python-Version-Spot-Cryptocurrency-Trading-Class-Library.md",
+        "page": "https://www.fmz.com/strategy/21104",
+        "page_sha256": "e6c1ee631023c4fc79ed78b48e4c04b73cdd327f784c0263884c33c3871f832f",
+        "runtime_sha256": "340640819c5e24ef768d142d3eac3bc377bf77c69797c6782ef6e5462e749cd6",
+        "args": {
+          "MaxSpace": 0.5,
+          "SlidePrice": 0.1,
+          "MaxAmount": 0.8,
+          "RetryDelay": 500,
+          "_GetMinStocks": 0.01,
+          "OpMode": 0,
+          "MAType": 0
+        }
+      },
+      "order_count": 1514,
+      "closing_account": {
+        "Balance": 1202.77916656564,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.05794,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 6.775735528208315e-11,
+        "asset_error": -7.632783294297951e-17
+      },
+      "close_count": 1513,
+      "open_count": 2,
+      "scheduled_sleeps": 84330
+    },
+    {
+      "id": 2519,
+      "feed": {
+        "file": "BTC-1791621000-1793730600.json",
+        "sha256": "428d01b3340b63ba6fcd6fb9308b78b44f15838219c135e947559dee74c94d8a",
+        "providers": [
+          {
+            "coin": "BTC",
+            "start": "2026-10-21",
+            "end": "2026-11-04",
+            "file": "BTC-1791621000-1793730600.json",
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=0&custom=0&period=300000&symbol=BTC_USDT&from=1791621000&to=1793730600",
+            "sha256": "428d01b3340b63ba6fcd6fb9308b78b44f15838219c135e947559dee74c94d8a",
+            "eid": "Binance",
+            "symbol": "BTC_USDT",
+            "period": "15m",
+            "base": "5m",
+            "base_seconds": 300,
+            "from_epoch": 1791621000,
+            "to_epoch": 1793730900
+          }
+        ],
+        "coin": "BTC",
+        "start": "2026-10-21",
+        "end": "2026-11-04",
+        "period": "15m",
+        "base": "5m",
+        "base_seconds": 300,
+        "symbol": "BTC_USDT"
+      },
+      "source_sha256": "4d0f2886ea055f154b4a7bf812c51ab6021f277f65584d8f38b3e462505cf7da",
+      "initial_inventory": {
+        "price": 82547.75,
+        "base": 0.06057,
+        "cash": 5000.0827825,
+        "timestamp": 1792520700000
+      },
+      "public_settings": {
+        "preview_chars": 920,
+        "sha256": "a71aa84516b6120712d3a7d44b61cdeaeda43e146f58d915c700671b0910d275",
+        "args": {
+          "FastPeriod": 3,
+          "SlowPeriod": 7,
+          "EnterPeriod": 3,
+          "ExitFastPeriod": 3,
+          "ExitSlowPeriod": 7,
+          "ExitPeriod": 1,
+          "PositionRatio": 0.8,
+          "Interval": 10
+        }
+      },
+      "worker_code_sha256": "1fd239bb129c89cfed8d5532b39775aab47e96d986ae73d20929afc543ff2736",
+      "raw_receipt_sha256": "0c787a9d300b71ad36702e5123b4ac2b6142b323f38a549d48fbe8c16c49bb81",
+      "template": {
+        "document_sha256": "3ba8fa4ce6539a1b9d7e821d1ec3482237629f8d6196b67e2cd045395cd53b58",
+        "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python%E7%89%88%E7%8E%B0%E8%B4%A7%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E4%BA%A4%E6%98%93%E7%B1%BB%E5%BA%93Python-Version-Spot-Cryptocurrency-Trading-Class-Library.md",
+        "page": "https://www.fmz.com/strategy/21104",
+        "page_sha256": "e6c1ee631023c4fc79ed78b48e4c04b73cdd327f784c0263884c33c3871f832f",
+        "runtime_sha256": "340640819c5e24ef768d142d3eac3bc377bf77c69797c6782ef6e5462e749cd6",
+        "args": {
+          "MaxSpace": 0.5,
+          "SlidePrice": 0.1,
+          "MaxAmount": 0.8,
+          "RetryDelay": 500,
+          "_GetMinStocks": 0.01,
+          "OpMode": 0,
+          "MAType": 0
+        }
+      },
+      "order_count": 747,
+      "closing_account": {
+        "Balance": 9.60369681317,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.10197,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 4.75388617360295e-11,
+        "asset_error": -1.3877787807814457e-17
+      },
+      "close_count": 745,
+      "open_count": 3,
+      "scheduled_sleeps": 42523
+    },
+    {
+      "id": 2519,
+      "feed": {
+        "file": "ETH-1789201800-1792521000.json",
+        "sha256": "6dbd7c74f4afe18377796dfa013779de0efd93423afef5a4420285a45fc1e66b",
+        "providers": [
+          {
+            "coin": "ETH",
+            "start": "2026-09-23",
+            "end": "2026-10-21",
+            "file": "ETH-1789201800-1792521000.json",
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=0&custom=0&period=300000&symbol=ETH_USDT&from=1789201800&to=1792521000",
+            "sha256": "6dbd7c74f4afe18377796dfa013779de0efd93423afef5a4420285a45fc1e66b",
+            "eid": "Binance",
+            "symbol": "ETH_USDT",
+            "period": "15m",
+            "base": "5m",
+            "base_seconds": 300,
+            "from_epoch": 1789201800,
+            "to_epoch": 1792521300
+          }
+        ],
+        "coin": "ETH",
+        "start": "2026-09-23",
+        "end": "2026-10-21",
+        "period": "15m",
+        "base": "5m",
+        "base_seconds": 300,
+        "symbol": "ETH_USDT"
+      },
+      "source_sha256": "4d0f2886ea055f154b4a7bf812c51ab6021f277f65584d8f38b3e462505cf7da",
+      "initial_inventory": {
+        "price": 2743.43,
+        "base": 1.8225,
+        "cash": 5000.098825,
+        "timestamp": 1790101500000
+      },
+      "public_settings": {
+        "preview_chars": 920,
+        "sha256": "a71aa84516b6120712d3a7d44b61cdeaeda43e146f58d915c700671b0910d275",
+        "args": {
+          "FastPeriod": 3,
+          "SlowPeriod": 7,
+          "EnterPeriod": 3,
+          "ExitFastPeriod": 3,
+          "ExitSlowPeriod": 7,
+          "ExitPeriod": 1,
+          "PositionRatio": 0.8,
+          "Interval": 10
+        }
+      },
+      "worker_code_sha256": "1fd239bb129c89cfed8d5532b39775aab47e96d986ae73d20929afc543ff2736",
+      "raw_receipt_sha256": "d3e94c34f5e7456a1158733c88d8c4553a6a6425e795c6e6fce3a540c3c6e4b8",
+      "template": {
+        "document_sha256": "3ba8fa4ce6539a1b9d7e821d1ec3482237629f8d6196b67e2cd045395cd53b58",
+        "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python%E7%89%88%E7%8E%B0%E8%B4%A7%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E4%BA%A4%E6%98%93%E7%B1%BB%E5%BA%93Python-Version-Spot-Cryptocurrency-Trading-Class-Library.md",
+        "page": "https://www.fmz.com/strategy/21104",
+        "page_sha256": "e6c1ee631023c4fc79ed78b48e4c04b73cdd327f784c0263884c33c3871f832f",
+        "runtime_sha256": "340640819c5e24ef768d142d3eac3bc377bf77c69797c6782ef6e5462e749cd6",
+        "args": {
+          "MaxSpace": 0.5,
+          "SlidePrice": 0.1,
+          "MaxAmount": 0.8,
+          "RetryDelay": 500,
+          "_GetMinStocks": 0.01,
+          "OpMode": 0,
+          "MAType": 0
+        }
+      },
+      "order_count": 3002,
+      "closing_account": {
+        "Balance": 965.86802978109,
+        "FrozenBalance": 0.0,
+        "Stocks": 1.8225,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 3.89945853385143e-11,
+        "asset_error": 1.1102230246251565e-15
+      },
+      "close_count": 2998,
+      "open_count": 5,
+      "scheduled_sleeps": 89382
+    },
+    {
+      "id": 2519,
+      "feed": {
+        "file": "ETH-1791621000-1793730600.json",
+        "sha256": "078e1199a5be263a162ae3a1d42f7a54b856efd2e09dd41ba7f8ed619043fe69",
+        "providers": [
+          {
+            "coin": "ETH",
+            "start": "2026-10-21",
+            "end": "2026-11-04",
+            "file": "ETH-1791621000-1793730600.json",
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=0&custom=0&period=300000&symbol=ETH_USDT&from=1791621000&to=1793730600",
+            "sha256": "078e1199a5be263a162ae3a1d42f7a54b856efd2e09dd41ba7f8ed619043fe69",
+            "eid": "Binance",
+            "symbol": "ETH_USDT",
+            "period": "15m",
+            "base": "5m",
+            "base_seconds": 300,
+            "from_epoch": 1791621000,
+            "to_epoch": 1793730900
+          }
+        ],
+        "coin": "ETH",
+        "start": "2026-10-21",
+        "end": "2026-11-04",
+        "period": "15m",
+        "base": "5m",
+        "base_seconds": 300,
+        "symbol": "ETH_USDT"
+      },
+      "source_sha256": "4d0f2886ea055f154b4a7bf812c51ab6021f277f65584d8f38b3e462505cf7da",
+      "initial_inventory": {
+        "price": 2439.6,
+        "base": 2.0495,
+        "cash": 5000.0398,
+        "timestamp": 1792520700000
+      },
+      "public_settings": {
+        "preview_chars": 920,
+        "sha256": "a71aa84516b6120712d3a7d44b61cdeaeda43e146f58d915c700671b0910d275",
+        "args": {
+          "FastPeriod": 3,
+          "SlowPeriod": 7,
+          "EnterPeriod": 3,
+          "ExitFastPeriod": 3,
+          "ExitSlowPeriod": 7,
+          "ExitPeriod": 1,
+          "PositionRatio": 0.8,
+          "Interval": 10
+        }
+      },
+      "worker_code_sha256": "1fd239bb129c89cfed8d5532b39775aab47e96d986ae73d20929afc543ff2736",
+      "raw_receipt_sha256": "0d7e4eed3d165ba8b25af438543db19c0d5deb80c7e23e35c4330b03dd442dac",
+      "template": {
+        "document_sha256": "3ba8fa4ce6539a1b9d7e821d1ec3482237629f8d6196b67e2cd045395cd53b58",
+        "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python%E7%89%88%E7%8E%B0%E8%B4%A7%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E4%BA%A4%E6%98%93%E7%B1%BB%E5%BA%93Python-Version-Spot-Cryptocurrency-Trading-Class-Library.md",
+        "page": "https://www.fmz.com/strategy/21104",
+        "page_sha256": "e6c1ee631023c4fc79ed78b48e4c04b73cdd327f784c0263884c33c3871f832f",
+        "runtime_sha256": "340640819c5e24ef768d142d3eac3bc377bf77c69797c6782ef6e5462e749cd6",
+        "args": {
+          "MaxSpace": 0.5,
+          "SlidePrice": 0.1,
+          "MaxAmount": 0.8,
+          "RetryDelay": 500,
+          "_GetMinStocks": 0.01,
+          "OpMode": 0,
+          "MAType": 0
+        }
+      },
+      "order_count": 2096,
+      "closing_account": {
+        "Balance": 9.55335865081,
+        "FrozenBalance": 0.0,
+        "Stocks": 3.2408,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 2.1227464230832993e-11,
+        "asset_error": 2.220446049250313e-14
+      },
+      "close_count": 2091,
+      "open_count": 6,
+      "scheduled_sleeps": 44673
+    }
+  ],
+  "base_report_sha256": "2268ee37150c5a67927e4cda1e2df5ba3f97e8f9f5a638fcc6dabe8ff84cd5d8",
+  "supplement_reason": "Final missing ETH receipts completed after the frozen Round 7 release."
+}
