@@ -1,0 +1,2546 @@
+{
+  "coverage": [
+    [
+      197,
+      "Tested · original BTC futures strategy on recorded top-25 depth",
+      "All twelve primary and twelve delayed BTCUSDT historical paths completed. Every market order was fully covered by contemporaneous observed order-book levels. Source predicates, settings, fees, funding, cash, risk and marks were independently reconciled."
+    ]
+  ],
+  "results": [
+    {
+      "gross": 115.14217,
+      "fees": 528.0628767,
+      "after_fees": -412.9207067,
+      "funding": -0.086616945,
+      "net": -413.007323645,
+      "gross_dd": 3.64717,
+      "gross_dd_pct": 0.0003642268573684513,
+      "gross_wins": 73,
+      "fee_dd": 414.4471002,
+      "fee_dd_pct": 0.04144471002,
+      "fee_wins": 32,
+      "net_dd": 414.533717145,
+      "net_dd_pct": 0.0414533717145,
+      "net_wins": 32,
+      "trades": 76,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.30577276455,
+      "mark_to_market_net": -413.65836618155,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 1",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 110.52799,
+      "fees": 591.303816068,
+      "after_fees": -480.775826068,
+      "funding": -0.086616945,
+      "net": -480.862443013,
+      "gross_dd": 14.99194,
+      "gross_dd_pct": 0.001497392502054703,
+      "gross_wins": 72,
+      "fee_dd": 483.016034068,
+      "fee_dd_pct": 0.04829254417975155,
+      "fee_wins": 39,
+      "net_dd": 483.102651013,
+      "net_dd_pct": 0.04830120424970388,
+      "net_wins": 39,
+      "trades": 77,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.39349723545,
+      "mark_to_market_net": -481.60148972845,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 1 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 139.93523,
+      "fees": 874.051010692,
+      "after_fees": -734.115780692,
+      "funding": 0.086616945,
+      "net": -734.029163747,
+      "gross_dd": 17.27933,
+      "gross_dd_pct": 0.0017065808171610277,
+      "gross_wins": 70,
+      "fee_dd": 734.115780692,
+      "fee_dd_pct": 0.0734115780692,
+      "fee_wins": 35,
+      "net_dd": 734.029163747,
+      "net_dd_pct": 0.0734029163747,
+      "net_wins": 35,
+      "trades": 73,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.01705276455,
+      "mark_to_market_net": -734.35749624245,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 42",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 168.40798,
+      "fees": 621.808146568,
+      "after_fees": -453.400166568,
+      "funding": 0.086616945,
+      "net": -453.313549623,
+      "gross_dd": 4.65081,
+      "gross_dd_pct": 0.00046282788811907624,
+      "gross_wins": 79,
+      "fee_dd": 456.853330944,
+      "fee_dd_pct": 0.04568318300954421,
+      "fee_wins": 47,
+      "net_dd": 456.766713999,
+      "net_dd_pct": 0.04567452172268878,
+      "net_wins": 47,
+      "trades": 83,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.26320276455,
+      "mark_to_market_net": -453.39563365845,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 42 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 124.94954,
+      "fees": 511.464296528,
+      "after_fees": -386.514756528,
+      "funding": -0.086616945,
+      "net": -386.601373473,
+      "gross_dd": 3.04111,
+      "gross_dd_pct": 0.00030095425828182207,
+      "gross_wins": 71,
+      "fee_dd": 387.052628976,
+      "fee_dd_pct": 0.0387052628976,
+      "fee_wins": 36,
+      "net_dd": 387.139245921,
+      "net_dd_pct": 0.0387139245921,
+      "net_wins": 36,
+      "trades": 75,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.26335276455,
+      "mark_to_market_net": -387.21001297755,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 20201120",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 103.23676,
+      "fees": 681.998648248,
+      "after_fees": -578.761888248,
+      "funding": -0.086616945,
+      "net": -578.848505193,
+      "gross_dd": 7.17322,
+      "gross_dd_pct": 0.0007097501476584798,
+      "gross_wins": 67,
+      "fee_dd": 579.589044708,
+      "fee_dd_pct": 0.057956176755922593,
+      "fee_wins": 28,
+      "net_dd": 579.675661653,
+      "net_dd_pct": 0.057964838042778015,
+      "net_wins": 28,
+      "trades": 71,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.42709723545,
+      "mark_to_market_net": -578.76697087755,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 20201120 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 163.20192,
+      "fees": 403.415491224,
+      "after_fees": -240.213571224,
+      "funding": -0.05523187541331,
+      "net": -240.2688030994133,
+      "gross_dd": 8.06856,
+      "gross_dd_pct": 0.0008018656142078117,
+      "gross_wins": 76,
+      "fee_dd": 241.998265284,
+      "fee_dd_pct": 0.024198941979924407,
+      "fee_wins": 42,
+      "net_dd": 242.0534971594133,
+      "net_dd_pct": 0.024204464965583004,
+      "net_wins": 42,
+      "trades": 80,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.34610545635,
+      "mark_to_market_net": -240.8321744957633,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 1",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 169.06267,
+      "fees": 340.056584924,
+      "after_fees": -170.993914924,
+      "funding": 0.05523187541331,
+      "net": -170.93868304858668,
+      "gross_dd": 3.1538,
+      "gross_dd_pct": 0.00031097809296592175,
+      "gross_wins": 83,
+      "fee_dd": 173.763621804,
+      "fee_dd_pct": 0.01737534596014756,
+      "fee_wins": 51,
+      "net_dd": 173.70838992858668,
+      "net_dd_pct": 0.01736982309561832,
+      "net_wins": 51,
+      "trades": 86,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.51545545635,
+      "mark_to_market_net": -171.6713367049367,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 1 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 148.78733,
+      "fees": 356.622714052,
+      "after_fees": -207.835384052,
+      "funding": 0.05523187541331,
+      "net": -207.78015217658668,
+      "gross_dd": 10.76944,
+      "gross_dd_pct": 0.001071011220098175,
+      "gross_wins": 82,
+      "fee_dd": 208.497933472,
+      "fee_dd_pct": 0.0208497933472,
+      "fee_wins": 55,
+      "net_dd": 208.4427015965867,
+      "net_dd_pct": 0.02084427015965867,
+      "net_wins": 55,
+      "trades": 86,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.11990545635,
+      "mark_to_market_net": -207.8776031402367,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 42",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 141.97361,
+      "fees": 307.411045004,
+      "after_fees": -165.437435004,
+      "funding": -0.05523187541331,
+      "net": -165.49266687941332,
+      "gross_dd": 1.09869,
+      "gross_dd_pct": 0.00010918251168232205,
+      "gross_wins": 77,
+      "fee_dd": 169.21985872,
+      "fee_dd_pct": 0.01691970977396365,
+      "fee_wins": 44,
+      "net_dd": 169.2750905954133,
+      "net_dd_pct": 0.01692523221860658,
+      "net_wins": 44,
+      "trades": 80,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.78110545635,
+      "mark_to_market_net": -166.4908642757633,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 42 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 170.86952,
+      "fees": 309.541835808,
+      "after_fees": -138.672315808,
+      "funding": -0.05523187541331,
+      "net": -138.72754768341332,
+      "gross_dd": 1.56501,
+      "gross_dd_pct": 0.00015647556646142735,
+      "gross_wins": 80,
+      "fee_dd": 139.354003348,
+      "fee_dd_pct": 0.0139354003348,
+      "fee_wins": 50,
+      "net_dd": 139.4092352234133,
+      "net_dd_pct": 0.01394092352234133,
+      "net_wins": 50,
+      "trades": 81,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.08919454365,
+      "mark_to_market_net": -139.03418228706332,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 20201120",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 167.1781,
+      "fees": 332.083614376,
+      "after_fees": -164.905514376,
+      "funding": -0.05523187541331,
+      "net": -164.9607462514133,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 86,
+      "fee_dd": 166.701056244,
+      "fee_dd_pct": 0.016668036697344367,
+      "fee_wins": 50,
+      "net_dd": 166.7562881194133,
+      "net_dd_pct": 0.01667355919940281,
+      "net_wins": 50,
+      "trades": 86,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.25685545635,
+      "mark_to_market_net": -165.4349033477633,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +0ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 20201120 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    }
+  ],
+  "delayed_market_fill_sensitivity": [
+    {
+      "gross": 133.25632,
+      "fees": 455.806832296,
+      "after_fees": -322.550512296,
+      "funding": 0.086616945,
+      "net": -322.463895351,
+      "gross_dd": 2.1812,
+      "gross_dd_pct": 0.0002178096806670922,
+      "gross_wins": 74,
+      "fee_dd": 322.550512296,
+      "fee_dd_pct": 0.0322550512296,
+      "fee_wins": 39,
+      "net_dd": 322.463895351,
+      "net_dd_pct": 0.0322463895351,
+      "net_wins": 39,
+      "trades": 75,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.01705276455,
+      "mark_to_market_net": -322.79222784645,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 1",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 102.43515,
+      "fees": 455.570722492,
+      "after_fees": -353.135572492,
+      "funding": -0.086616945,
+      "net": -353.222189437,
+      "gross_dd": 7.35114,
+      "gross_dd_pct": 0.0007296558582393828,
+      "gross_wins": 67,
+      "fee_dd": 355.128579292,
+      "fee_dd_pct": 0.03550853917379294,
+      "fee_wins": 41,
+      "net_dd": 355.215196237,
+      "net_dd_pct": 0.0355171998149353,
+      "net_wins": 41,
+      "trades": 70,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.27355276455,
+      "mark_to_market_net": -353.29391933245,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 1 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 168.04329,
+      "fees": 604.092764284,
+      "after_fees": -436.049474284,
+      "funding": -0.086616945,
+      "net": -436.136091229,
+      "gross_dd": 8.05665,
+      "gross_dd_pct": 0.0008053555509884438,
+      "gross_wins": 71,
+      "fee_dd": 436.590511504,
+      "fee_dd_pct": 0.0436590511504,
+      "fee_wins": 35,
+      "net_dd": 436.677128449,
+      "net_dd_pct": 0.0436677128449,
+      "net_wins": 35,
+      "trades": 76,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.23020276455,
+      "mark_to_market_net": -436.25118846445,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 42",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 112.06984,
+      "fees": 463.813101816,
+      "after_fees": -351.743261816,
+      "funding": -0.086616945,
+      "net": -351.829878761,
+      "gross_dd": 0.06406,
+      "gross_dd_pct": 6.383860026516418e-06,
+      "gross_wins": 69,
+      "fee_dd": 353.166230076,
+      "fee_dd_pct": 0.03531520254567965,
+      "fee_wins": 39,
+      "net_dd": 353.252847021,
+      "net_dd_pct": 0.03532386389179959,
+      "net_wins": 39,
+      "trades": 72,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.26320276455,
+      "mark_to_market_net": -351.91196279645,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 42 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 130.72482,
+      "fees": 524.836031728,
+      "after_fees": -394.111211728,
+      "funding": 0.086616945,
+      "net": -394.024594783,
+      "gross_dd": 3.08215,
+      "gross_dd_pct": 0.0003079658371597875,
+      "gross_wins": 74,
+      "fee_dd": 394.569977796,
+      "fee_dd_pct": 0.0394569977796,
+      "fee_wins": 35,
+      "net_dd": 394.483360851,
+      "net_dd_pct": 0.0394483360851,
+      "net_wins": 35,
+      "trades": 78,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": 0.38122723545,
+      "mark_to_market_net": -393.98891211955,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 20201120",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 150.43368,
+      "fees": 561.454208304,
+      "after_fees": -411.020528304,
+      "funding": -0.086616945,
+      "net": -411.107145249,
+      "gross_dd": 0.59168,
+      "gross_dd_pct": 5.9098829370831306e-05,
+      "gross_wins": 73,
+      "fee_dd": 411.422752224,
+      "fee_dd_pct": 0.04114062044823721,
+      "fee_wins": 43,
+      "net_dd": 411.509369169,
+      "net_dd_pct": 0.04114928179435715,
+      "net_wins": 43,
+      "trades": 74,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.01720276455,
+      "mark_to_market_net": -411.46973321355,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-05-01 06:00-10:00 UTC / seed 20201120 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 165.71969,
+      "fees": 434.755143804,
+      "after_fees": -269.035453804,
+      "funding": 0.05523187541331,
+      "net": -268.9802219285867,
+      "gross_dd": 7.45307,
+      "gross_dd_pct": 0.0007382391785724182,
+      "gross_wins": 86,
+      "fee_dd": 269.911157044,
+      "fee_dd_pct": 0.026990471102314662,
+      "fee_wins": 52,
+      "net_dd": 269.8559251685867,
+      "net_dd_pct": 0.02698494804667815,
+      "net_wins": 52,
+      "trades": 88,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.12639454365,
+      "mark_to_market_net": -269.32407141223666,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 1",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 137.76286,
+      "fees": 287.820381816,
+      "after_fees": -150.057521816,
+      "funding": -0.05523187541331,
+      "net": -150.1127536914133,
+      "gross_dd": 5.37261,
+      "gross_dd_pct": 0.0005372132712869126,
+      "gross_wins": 83,
+      "fee_dd": 153.579039656,
+      "fee_dd_pct": 0.015357225382977041,
+      "fee_wins": 57,
+      "net_dd": 153.6342715314133,
+      "net_dd_pct": 0.01536274832647862,
+      "net_wins": 57,
+      "trades": 86,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.67715545635,
+      "mark_to_market_net": -151.0070426677633,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 1 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 150.89285,
+      "fees": 295.299453092,
+      "after_fees": -144.406603092,
+      "funding": 0.05523187541331,
+      "net": -144.3513712165867,
+      "gross_dd": 2.69754,
+      "gross_dd_pct": 0.0002691460206709859,
+      "gross_wins": 82,
+      "fee_dd": 144.406603092,
+      "fee_dd_pct": 0.0144406603092,
+      "fee_wins": 47,
+      "net_dd": 144.3513712165867,
+      "net_dd_pct": 0.014435137121658668,
+      "net_wins": 47,
+      "trades": 83,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.24080545635,
+      "mark_to_market_net": -144.80948473293668,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 42",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 181.7615,
+      "fees": 498.930431168,
+      "after_fees": -317.168931168,
+      "funding": 0.05523187541331,
+      "net": -317.1136992925867,
+      "gross_dd": 7.45307,
+      "gross_dd_pct": 0.000736276398420966,
+      "gross_wins": 79,
+      "fee_dd": 322.468162076,
+      "fee_dd_pct": 0.03223657611014958,
+      "fee_wins": 42,
+      "net_dd": 322.4129302005867,
+      "net_dd_pct": 0.03223105467651717,
+      "net_wins": 42,
+      "trades": 84,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.23375545635,
+      "mark_to_market_net": -317.5647656289367,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 42 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 156.6762,
+      "fees": 388.99602552,
+      "after_fees": -232.31982552,
+      "funding": 0.05523187541331,
+      "net": -232.26459364458668,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 87,
+      "fee_dd": 234.75745458,
+      "fee_dd_pct": 0.023475745458,
+      "fee_wins": 46,
+      "net_dd": 234.7022227045867,
+      "net_dd_pct": 0.02347022227045867,
+      "net_wins": 46,
+      "trades": 87,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.25280545635,
+      "mark_to_market_net": -232.7347023609367,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 20201120",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    },
+    {
+      "gross": 166.1343,
+      "fees": 362.3922444,
+      "after_fees": -196.2579444,
+      "funding": 0.05523187541331,
+      "net": -196.2027125245867,
+      "gross_dd": 2.15484,
+      "gross_dd_pct": 0.00021303092967204276,
+      "gross_wins": 79,
+      "fee_dd": 197.32985466,
+      "fee_dd_pct": 0.0197308704937479,
+      "fee_wins": 42,
+      "net_dd": 197.27462278458668,
+      "net_dd_pct": 0.019725347898179257,
+      "net_wins": 42,
+      "trades": 80,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "execution": 0,
+      "remaining_unrealized": -0.17480545635,
+      "mark_to_market_net": -196.59485244093668,
+      "id": 197,
+      "name": "Commodity martingale tutorial, archived BTC futures configuration",
+      "group": "FMZ archived source / Binance recorded depth +200ms",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+      "period": "2021-06-01 06:00-10:00 UTC / seed 20201120 mirror",
+      "interval": "1d archived chart and base; 200ms causal host",
+      "exit": "Source P&L close thresholds and book-level sweeps"
+    }
+  ],
+  "path_checks": [
+    {
+      "day": "2021-05-01",
+      "seed": 1,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 838,
+      "multi_level_orders": 92,
+      "levels_in_largest_sweep": 14,
+      "max_book_age_us": 210455,
+      "decision_steps": 10166,
+      "rng_draws": 77,
+      "receipt_order_and_draw_path_sha256": "65b3852e7cb96fd1d66b4501dbb9c38443cba41e104b5d619a836ad92b885c6a",
+      "marked_drawdown_USDT": "430.871235593500000000000000000000002",
+      "marked_drawdown_fraction": "0.0430871235593500000000000000000000002",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "-0.086616945",
+      "fee_total_USDT": "528.408146472",
+      "minimum_pre_order_initial_margin_buffer_USDT": "6652.172518667000000000000000000000003",
+      "verified_closes": 76,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 1,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 733,
+      "multi_level_orders": 84,
+      "levels_in_largest_sweep": 7,
+      "max_book_age_us": 215856,
+      "decision_steps": 10076,
+      "rng_draws": 76,
+      "receipt_order_and_draw_path_sha256": "cf8cb5b8647aac7e99eeeebcfa224e13bf642530f0f8bc3e2f0698a84577805f",
+      "marked_drawdown_USDT": "323.38431760830",
+      "marked_drawdown_fraction": "0.03233843176083",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "0.086616945",
+      "fee_total_USDT": "456.152217556",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5382.676447739987500000000000000000001",
+      "verified_closes": 75,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 1,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 931,
+      "multi_level_orders": 76,
+      "levels_in_largest_sweep": 17,
+      "max_book_age_us": 239946,
+      "decision_steps": 10153,
+      "rng_draws": 78,
+      "receipt_order_and_draw_path_sha256": "fc43591b06a43afc87c2ae3767bb8e0fde24b2c800239a60deb55a7e12ca5a64",
+      "marked_drawdown_USDT": "483.83825722570",
+      "marked_drawdown_fraction": "0.04837411914242533813481558066578175703",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "-0.086616945",
+      "fee_total_USDT": "591.649365548",
+      "minimum_pre_order_initial_margin_buffer_USDT": "1631.959040922900000000000000000000010",
+      "verified_closes": 77,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 1,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 729,
+      "multi_level_orders": 57,
+      "levels_in_largest_sweep": 16,
+      "max_book_age_us": 214539,
+      "decision_steps": 10078,
+      "rng_draws": 71,
+      "receipt_order_and_draw_path_sha256": "d2741d06c14ba8017b8d6c288e4612a31109d4844d64e74fb180a148101fca45",
+      "marked_drawdown_USDT": "356.78594585935",
+      "marked_drawdown_fraction": "0.03567223638635525946936570452179336726",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "-0.086616945",
+      "fee_total_USDT": "455.916005152",
+      "minimum_pre_order_initial_margin_buffer_USDT": "4623.766431834999999999999999999999992",
+      "verified_closes": 70,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 42,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 1334,
+      "multi_level_orders": 110,
+      "levels_in_largest_sweep": 14,
+      "max_book_age_us": 1375539,
+      "decision_steps": 10095,
+      "rng_draws": 74,
+      "receipt_order_and_draw_path_sha256": "7688b14a488cea9e1792bab9691dab60170857bb4e442242597ef53ac186dd68",
+      "marked_drawdown_USDT": "735.08778289900",
+      "marked_drawdown_fraction": "0.0735087782899",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "0.086616945",
+      "fee_total_USDT": "874.396395952",
+      "minimum_pre_order_initial_margin_buffer_USDT": "3861.723233154295000000000000000000006",
+      "verified_closes": 73,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 42,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 947,
+      "multi_level_orders": 93,
+      "levels_in_largest_sweep": 14,
+      "max_book_age_us": 375539,
+      "decision_steps": 10015,
+      "rng_draws": 77,
+      "receipt_order_and_draw_path_sha256": "4ccd0e1b44d6babc5f7e6d274fc755d3a76bf321037367f63f13a5f765233deb",
+      "marked_drawdown_USDT": "449.933185217000000000000000000000002",
+      "marked_drawdown_fraction": "0.0449933185217000000000000000000000002",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "-0.086616945",
+      "fee_total_USDT": "604.438064284",
+      "minimum_pre_order_initial_margin_buffer_USDT": "4751.328281887999999999999999999999995",
+      "verified_closes": 76,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 42,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 980,
+      "multi_level_orders": 84,
+      "levels_in_largest_sweep": 12,
+      "max_book_age_us": 230296,
+      "decision_steps": 10146,
+      "rng_draws": 84,
+      "receipt_order_and_draw_path_sha256": "7e14add98dca44dccdbbaae4d2722a7df056f8b77f3136c6b0bd7bfd7fe83107",
+      "marked_drawdown_USDT": "480.940167049000000000000000000000001",
+      "marked_drawdown_fraction": "0.04809130343203340742078004552645543391",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "0.086616945",
+      "fee_total_USDT": "622.153433368",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5093.421729815999999999999999999999995",
+      "verified_closes": 83,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 42,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 742,
+      "multi_level_orders": 69,
+      "levels_in_largest_sweep": 9,
+      "max_book_age_us": 217173,
+      "decision_steps": 10074,
+      "rng_draws": 73,
+      "receipt_order_and_draw_path_sha256": "442438424e29724b8541d3e870b25a8957fa404cc4d36dd8a6913b5ccc3bf650",
+      "marked_drawdown_USDT": "354.39432946335",
+      "marked_drawdown_fraction": "0.03543662887424148437073493124147880678",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "-0.086616945",
+      "fee_total_USDT": "464.158388616",
+      "minimum_pre_order_initial_margin_buffer_USDT": "6813.750835689565000000000000000000004",
+      "verified_closes": 72,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 20201120,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 814,
+      "multi_level_orders": 76,
+      "levels_in_largest_sweep": 8,
+      "max_book_age_us": 226850,
+      "decision_steps": 10170,
+      "rng_draws": 76,
+      "receipt_order_and_draw_path_sha256": "f8ad6d6eeb174d79faec8af8a931944a38a72e2593027fc05eb007aa4350eb94",
+      "marked_drawdown_USDT": "389.666884188000000000000000000000000",
+      "marked_drawdown_fraction": "0.038966688418800000000000000000000",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "-0.086616945",
+      "fee_total_USDT": "511.809583268",
+      "minimum_pre_order_initial_margin_buffer_USDT": "7342.111404707000000000000000000000000",
+      "verified_closes": 75,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 20201120,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 836,
+      "multi_level_orders": 77,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 230296,
+      "decision_steps": 10047,
+      "rng_draws": 79,
+      "receipt_order_and_draw_path_sha256": "9330edf417be5f4014f15cab11c11cbc65cc24cb572707204789c0341bc87dd9",
+      "marked_drawdown_USDT": "394.839612943000000000000000000000000",
+      "marked_drawdown_fraction": "0.039483961294300000000000000000000",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "0.086616945",
+      "fee_total_USDT": "525.181576300",
+      "minimum_pre_order_initial_margin_buffer_USDT": "7139.893211608999999999999999999999998",
+      "verified_closes": 78,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 20201120,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 1055,
+      "multi_level_orders": 92,
+      "levels_in_largest_sweep": 17,
+      "max_book_age_us": 575539,
+      "decision_steps": 10135,
+      "rng_draws": 72,
+      "receipt_order_and_draw_path_sha256": "a242e3091b8505bccdff35d0bac52045c6782d8b863a22f7655df1776b9d7fe9",
+      "marked_drawdown_USDT": "580.227715353",
+      "marked_drawdown_fraction": "0.05801949812163157604378487049263470194",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "-0.086616945",
+      "fee_total_USDT": "682.344211168",
+      "minimum_pre_order_initial_margin_buffer_USDT": "2822.384163723999999999999999999999993",
+      "verified_closes": 71,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 20201120,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 884,
+      "multi_level_orders": 88,
+      "levels_in_largest_sweep": 13,
+      "max_book_age_us": 1175539,
+      "decision_steps": 10033,
+      "rng_draws": 75,
+      "receipt_order_and_draw_path_sha256": "5e3836aeac9763b3a099657d78a575ffa37fe557c204d75c9bc94d951178ef6c",
+      "marked_drawdown_USDT": "412.949494443600000000000000000000000",
+      "marked_drawdown_fraction": "0.04129168206659141627450333157097545397",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "-0.086616945",
+      "fee_total_USDT": "561.799593504",
+      "minimum_pre_order_initial_margin_buffer_USDT": "3619.793562735999999999999999999999990",
+      "verified_closes": 74,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 1,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 1000,
+      "multi_level_orders": 120,
+      "levels_in_largest_sweep": 10,
+      "max_book_age_us": 75550,
+      "decision_steps": 10143,
+      "rng_draws": 81,
+      "receipt_order_and_draw_path_sha256": "02c6985814650cb465c5d384591da7cde424d56f22d44b3b3bc0645790207af2",
+      "marked_drawdown_USDT": "269.889347707013309999999999999999994",
+      "marked_drawdown_fraction": "0.02698793172235923802095365512500711173",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "-0.055231875413310",
+      "fee_total_USDT": "403.632757164",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5202.130157756586690000000000000000005",
+      "verified_closes": 80,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 1,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 1078,
+      "multi_level_orders": 121,
+      "levels_in_largest_sweep": 8,
+      "max_book_age_us": 102020,
+      "decision_steps": 9978,
+      "rng_draws": 89,
+      "receipt_order_and_draw_path_sha256": "21033d21a3904f2bf43f6259f60670b3761386854517138ded332c3a4d9da33e",
+      "marked_drawdown_USDT": "324.560857508186690000000000000000002",
+      "marked_drawdown_fraction": "0.03245490159615472728560338758367670331",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "0.055231875413310",
+      "fee_total_USDT": "434.972598744",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5649.719293219713310000000000000000006",
+      "verified_closes": 88,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 1,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 861,
+      "multi_level_orders": 85,
+      "levels_in_largest_sweep": 7,
+      "max_book_age_us": 151104,
+      "decision_steps": 10163,
+      "rng_draws": 87,
+      "receipt_order_and_draw_path_sha256": "d4e315758d80a283af30bce27594ddec02fe8ffd5f50e416fba4b7079e248f33",
+      "marked_drawdown_USDT": "209.792921433436689999999999999999998",
+      "marked_drawdown_fraction": "0.02097784642624004192101719871305896856",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "0.055231875413310",
+      "fee_total_USDT": "340.273783124",
+      "minimum_pre_order_initial_margin_buffer_USDT": "7186.904031050087500000000000000000002",
+      "verified_closes": 86,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 1,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 742,
+      "multi_level_orders": 104,
+      "levels_in_largest_sweep": 7,
+      "max_book_age_us": 74259,
+      "decision_steps": 10074,
+      "rng_draws": 87,
+      "receipt_order_and_draw_path_sha256": "d366f9c8e19dd96d9d30e52842cd0a619750140246b224d266d94b6c335f4b11",
+      "marked_drawdown_USDT": "163.625899155013310000000000000000001",
+      "marked_drawdown_fraction": "0.01636148123149839537947363996003344473",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "-0.055231875413310",
+      "fee_total_USDT": "288.037515336",
+      "minimum_pre_order_initial_margin_buffer_USDT": "7498.837971517779999999999999999999998",
+      "verified_closes": 86,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 42,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 900,
+      "multi_level_orders": 104,
+      "levels_in_largest_sweep": 10,
+      "max_book_age_us": 107649,
+      "decision_steps": 10157,
+      "rng_draws": 87,
+      "receipt_order_and_draw_path_sha256": "ecf387fb82c1da189701a3b679f721530204693a5b7c0efdad6b15a02ebedc61",
+      "marked_drawdown_USDT": "255.940206353586689999999999999999998",
+      "marked_drawdown_fraction": "0.0255940206353586689999999999999999998",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "0.055231875413310",
+      "fee_total_USDT": "356.840070472",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5184.935763211413310000000000000000010",
+      "verified_closes": 86,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 42,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 758,
+      "multi_level_orders": 85,
+      "levels_in_largest_sweep": 7,
+      "max_book_age_us": 351104,
+      "decision_steps": 10069,
+      "rng_draws": 84,
+      "receipt_order_and_draw_path_sha256": "d48c101d5d8bda95b74366404551dd9110f91ed80c61752c3c436add1c07eb15",
+      "marked_drawdown_USDT": "146.221793516586690",
+      "marked_drawdown_fraction": "0.014622179351658669",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "0.055231875413310",
+      "fee_total_USDT": "295.516761152",
+      "minimum_pre_order_initial_margin_buffer_USDT": "7700.621027531162500000000000000000000",
+      "verified_closes": 83,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 42,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 783,
+      "multi_level_orders": 106,
+      "levels_in_largest_sweep": 12,
+      "max_book_age_us": 123618,
+      "decision_steps": 10174,
+      "rng_draws": 81,
+      "receipt_order_and_draw_path_sha256": "5002a91241a8ee40210736f1e7c86a37901212f73bad98fd763e801a5d7c931d",
+      "marked_drawdown_USDT": "173.316698679413310000000000000000001",
+      "marked_drawdown_fraction": "0.01732859128081153679086065777005696644",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "-0.055231875413310",
+      "fee_total_USDT": "307.628136944",
+      "minimum_pre_order_initial_margin_buffer_USDT": "8492.835410074496690000000000000000003",
+      "verified_closes": 80,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 42,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 1221,
+      "multi_level_orders": 152,
+      "levels_in_largest_sweep": 8,
+      "max_book_age_us": 99339,
+      "decision_steps": 9937,
+      "rng_draws": 85,
+      "receipt_order_and_draw_path_sha256": "729c043a973f0ef33f84e6fe7a9cb1e96d3f3b7c7bca1893b2e391cc83c7ebf4",
+      "marked_drawdown_USDT": "357.727158542686689999999999999999998",
+      "marked_drawdown_fraction": "0.03575914926830200398585000632396484202",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "0.055231875413310",
+      "fee_total_USDT": "499.147742048",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5639.297534175713310000000000000000010",
+      "verified_closes": 84,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 20201120,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 788,
+      "multi_level_orders": 83,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 73232,
+      "decision_steps": 10173,
+      "rng_draws": 82,
+      "receipt_order_and_draw_path_sha256": "677c38781ec5345b61515de46355aa7cd2756124ef025cd44d02068fa949b32a",
+      "marked_drawdown_USDT": "140.615176183413310000000000000000001",
+      "marked_drawdown_fraction": "0.0140615176183413310000000000000000001",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "-0.055231875413310",
+      "fee_total_USDT": "309.759275868",
+      "minimum_pre_order_initial_margin_buffer_USDT": "8326.830578873600000000000000000000002",
+      "verified_closes": 81,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 20201120,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 973,
+      "multi_level_orders": 111,
+      "levels_in_largest_sweep": 10,
+      "max_book_age_us": 260368,
+      "decision_steps": 10008,
+      "rng_draws": 88,
+      "receipt_order_and_draw_path_sha256": "410d03f248453c79946c59dd905d55aa9622c18e8eeab0a16c436fd7aaf3f28d",
+      "marked_drawdown_USDT": "269.651023761086689999999999999999994",
+      "marked_drawdown_fraction": "0.0269651023761086689999999999999999994",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "0.055231875413310",
+      "fee_total_USDT": "389.213328780",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5667.708976991713310000000000000000006",
+      "verified_closes": 87,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 20201120,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 844,
+      "multi_level_orders": 100,
+      "levels_in_largest_sweep": 10,
+      "max_book_age_us": 151104,
+      "decision_steps": 10165,
+      "rng_draws": 87,
+      "receipt_order_and_draw_path_sha256": "3cc57ed040498c222d4123624555ba93468028653534139aa4b4b6c187469cc8",
+      "marked_drawdown_USDT": "217.392967293163309999999999999999995",
+      "marked_drawdown_fraction": "0.02173659866487768161852047486627862322",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "-0.055231875413310",
+      "fee_total_USDT": "332.300916016",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5239.946812965711690000000000000000008",
+      "verified_closes": 86,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 20201120,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 906,
+      "multi_level_orders": 111,
+      "levels_in_largest_sweep": 6,
+      "max_book_age_us": 109609,
+      "decision_steps": 10027,
+      "rng_draws": 81,
+      "receipt_order_and_draw_path_sha256": "92d8a73239f100aba1171fa164c54ffb00a0433905870e834dcc64501a5d6cc3",
+      "marked_drawdown_USDT": "236.252162738586690",
+      "marked_drawdown_fraction": "0.02362249816842339164480315796985115403",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "0.055231875413310",
+      "fee_total_USDT": "362.609578860",
+      "minimum_pre_order_initial_margin_buffer_USDT": "5702.228028507713310000000000000000000",
+      "verified_closes": 80,
+      "completed": true,
+      "stop": null
+    }
+  ],
+  "top_five_control": [
+    {
+      "day": "2021-05-01",
+      "seed": 1,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 140,
+      "multi_level_orders": 7,
+      "levels_in_largest_sweep": 2,
+      "max_book_age_us": 185716,
+      "decision_steps": 1891,
+      "rng_draws": 8,
+      "receipt_order_and_draw_path_sha256": "9fcbf2c3d1e73812239187b945f0066f4a6022355106303b63b52b3ba5bd2f0f",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619851474600,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 840,
+        "availableUnits": 772,
+        "levels": [
+          [
+            5804461,
+            80
+          ],
+          [
+            5804312,
+            330
+          ],
+          [
+            5804274,
+            64
+          ],
+          [
+            5804001,
+            258
+          ],
+          [
+            5803869,
+            40
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 1,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 149,
+      "multi_level_orders": 17,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 139814,
+      "decision_steps": 2252,
+      "rng_draws": 13,
+      "receipt_order_and_draw_path_sha256": "b2813ca14c13529529a6f677ce281ac3389de17aef73ac294c0cdc207e675c52",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619852011800,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 1575,
+        "availableUnits": 898,
+        "levels": [
+          [
+            5805009,
+            442
+          ],
+          [
+            5805016,
+            30
+          ],
+          [
+            5805105,
+            1
+          ],
+          [
+            5805326,
+            3
+          ],
+          [
+            5805327,
+            422
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 1,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 232,
+      "multi_level_orders": 16,
+      "levels_in_largest_sweep": 3,
+      "max_book_age_us": 175539,
+      "decision_steps": 2021,
+      "rng_draws": 11,
+      "receipt_order_and_draw_path_sha256": "ae5f7267abfe3dfeec48a66ef232c34c69d399c0e8d6c84c6f1b1ec5a91c7215",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619851675000,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 2850,
+        "availableUnits": 620,
+        "levels": [
+          [
+            5798352,
+            91
+          ],
+          [
+            5798347,
+            4
+          ],
+          [
+            5798344,
+            160
+          ],
+          [
+            5798340,
+            173
+          ],
+          [
+            5798339,
+            192
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 1,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 501,
+      "multi_level_orders": 43,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 360633,
+      "decision_steps": 8059,
+      "rng_draws": 58,
+      "receipt_order_and_draw_path_sha256": "479eea8fc0dfb4eb3c9be71dab0d1731d9282079d292f5fb6d6ff2f8fbc86632",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619860282400,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 1800,
+        "availableUnits": 750,
+        "levels": [
+          [
+            5742450,
+            140
+          ],
+          [
+            5742733,
+            59
+          ],
+          [
+            5742801,
+            503
+          ],
+          [
+            5742904,
+            4
+          ],
+          [
+            5743037,
+            44
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 42,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 298,
+      "multi_level_orders": 18,
+      "levels_in_largest_sweep": 4,
+      "max_book_age_us": 1375539,
+      "decision_steps": 2267,
+      "rng_draws": 11,
+      "receipt_order_and_draw_path_sha256": "c90a1a09b294063e3e785c39aab61077a04acabd07a6aa62164189cf67f338cb",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619852032600,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 1920,
+        "availableUnits": 697,
+        "levels": [
+          [
+            5802385,
+            149
+          ],
+          [
+            5802496,
+            155
+          ],
+          [
+            5802507,
+            1
+          ],
+          [
+            5802570,
+            192
+          ],
+          [
+            5802626,
+            200
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 42,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 133,
+      "multi_level_orders": 14,
+      "levels_in_largest_sweep": 3,
+      "max_book_age_us": 375539,
+      "decision_steps": 1234,
+      "rng_draws": 4,
+      "receipt_order_and_draw_path_sha256": "3ea1aee1c904f8b6e840a5d0a446417908fb11d1d69b07a1098d1448cb22e3f4",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619850580200,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 1785,
+        "availableUnits": 667,
+        "levels": [
+          [
+            5822910,
+            206
+          ],
+          [
+            5823277,
+            30
+          ],
+          [
+            5823327,
+            114
+          ],
+          [
+            5823328,
+            257
+          ],
+          [
+            5823336,
+            60
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 42,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 363,
+      "multi_level_orders": 34,
+      "levels_in_largest_sweep": 4,
+      "max_book_age_us": 354326,
+      "decision_steps": 3662,
+      "rng_draws": 18,
+      "receipt_order_and_draw_path_sha256": "690d7ddf54756ad968708aabbb831e3ed5d3719ec2a4f4a43fba43de638687c5",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619853998600,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 1635,
+        "availableUnits": 307,
+        "levels": [
+          [
+            5801493,
+            88
+          ],
+          [
+            5801495,
+            49
+          ],
+          [
+            5801496,
+            52
+          ],
+          [
+            5801648,
+            23
+          ],
+          [
+            5801709,
+            95
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 42,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 94,
+      "multi_level_orders": 6,
+      "levels_in_largest_sweep": 2,
+      "max_book_age_us": 181270,
+      "decision_steps": 1598,
+      "rng_draws": 8,
+      "receipt_order_and_draw_path_sha256": "f4c98249ec5587c0d3a53624322e9438d97e19378555ff7643ce4e488c6b95de",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619851074200,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 360,
+        "availableUnits": 240,
+        "levels": [
+          [
+            5811849,
+            4
+          ],
+          [
+            5811736,
+            73
+          ],
+          [
+            5811683,
+            4
+          ],
+          [
+            5811497,
+            59
+          ],
+          [
+            5811496,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 20201120,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 126,
+      "multi_level_orders": 10,
+      "levels_in_largest_sweep": 2,
+      "max_book_age_us": 133694,
+      "decision_steps": 1893,
+      "rng_draws": 8,
+      "receipt_order_and_draw_path_sha256": "38ed486b2a80a883d45b1d986cdcc2f40efb7ab88745415c2dc9172268000c10",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619851474600,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 870,
+        "availableUnits": 772,
+        "levels": [
+          [
+            5804461,
+            80
+          ],
+          [
+            5804312,
+            330
+          ],
+          [
+            5804274,
+            64
+          ],
+          [
+            5804001,
+            258
+          ],
+          [
+            5803869,
+            40
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 20201120,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 836,
+      "multi_level_orders": 77,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 251544,
+      "decision_steps": 10047,
+      "rng_draws": 79,
+      "receipt_order_and_draw_path_sha256": "572ee0d572868d9360529d05147012476167c4d27d22aa46dd0ee3fd03bee9bd",
+      "marked_drawdown_USDT": "394.839612943000000000000000000000000",
+      "marked_drawdown_fraction": "0.039483961294300000000000000000000",
+      "ending_open_BTC": "-0.015",
+      "funding_cash_total_USDT": "0.086616945",
+      "fee_total_USDT": "525.181576300",
+      "minimum_pre_order_initial_margin_buffer_USDT": "7139.893211608999999999999999999999998",
+      "verified_closes": 78,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 20201120,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 235,
+      "multi_level_orders": 17,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 575539,
+      "decision_steps": 1249,
+      "rng_draws": 4,
+      "receipt_order_and_draw_path_sha256": "38f878654795ac5238366a7a228958528ea5a75b2cfacc973daffefd181b359c",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619850594800,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 2430,
+        "availableUnits": 905,
+        "levels": [
+          [
+            5822141,
+            513
+          ],
+          [
+            5822201,
+            185
+          ],
+          [
+            5822345,
+            57
+          ],
+          [
+            5822422,
+            60
+          ],
+          [
+            5822531,
+            90
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-05-01",
+      "seed": 20201120,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 206,
+      "multi_level_orders": 11,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 1175539,
+      "decision_steps": 1224,
+      "rng_draws": 4,
+      "receipt_order_and_draw_path_sha256": "da5ebc0e1a46c8a0ce8fcf36defc3dd17f09002acd8cdda931897ebb226009b9",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1619850595400,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 2160,
+        "availableUnits": 1228,
+        "levels": [
+          [
+            5822141,
+            857
+          ],
+          [
+            5822201,
+            185
+          ],
+          [
+            5822345,
+            57
+          ],
+          [
+            5822486,
+            60
+          ],
+          [
+            5822544,
+            69
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 1,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 221,
+      "multi_level_orders": 25,
+      "levels_in_largest_sweep": 4,
+      "max_book_age_us": 76307,
+      "decision_steps": 2284,
+      "rng_draws": 18,
+      "receipt_order_and_draw_path_sha256": "ddfde19308bcd24879f60a44a14c53d2085969b4469deb5c460185dbed01e276",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622530441000,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 750,
+        "availableUnits": 164,
+        "levels": [
+          [
+            3690242,
+            32
+          ],
+          [
+            3690311,
+            21
+          ],
+          [
+            3690354,
+            30
+          ],
+          [
+            3690355,
+            80
+          ],
+          [
+            3690357,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 1,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 19,
+      "multi_level_orders": 1,
+      "levels_in_largest_sweep": 2,
+      "max_book_age_us": 50202,
+      "decision_steps": 177,
+      "rng_draws": 3,
+      "receipt_order_and_draw_path_sha256": "3a7d53156122cb3f9f15333e9670704f7f48099e514869997e37be795efaf509",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622527454800,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 165,
+        "availableUnits": 157,
+        "levels": [
+          [
+            3732107,
+            50
+          ],
+          [
+            3732115,
+            50
+          ],
+          [
+            3732208,
+            50
+          ],
+          [
+            3732294,
+            1
+          ],
+          [
+            3732342,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 1,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 739,
+      "multi_level_orders": 74,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 151104,
+      "decision_steps": 7162,
+      "rng_draws": 65,
+      "receipt_order_and_draw_path_sha256": "2f740e6d1d7cd25ef6ac5de5d3599c7cc84447eedf201aa9ea6a4b0605f225e2",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622537373800,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 495,
+        "availableUnits": 386,
+        "levels": [
+          [
+            3607468,
+            1
+          ],
+          [
+            3607557,
+            84
+          ],
+          [
+            3607655,
+            115
+          ],
+          [
+            3607662,
+            136
+          ],
+          [
+            3607772,
+            50
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 1,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 130,
+      "multi_level_orders": 17,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 92713,
+      "decision_steps": 1337,
+      "rng_draws": 11,
+      "receipt_order_and_draw_path_sha256": "23255962a7363650574b10dece3e5234e69d2e145e5e4329161bb5329f7d5a8d",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622529123200,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 270,
+        "availableUnits": 145,
+        "levels": [
+          [
+            3688443,
+            62
+          ],
+          [
+            3688418,
+            54
+          ],
+          [
+            3688369,
+            1
+          ],
+          [
+            3688368,
+            25
+          ],
+          [
+            3688302,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 42,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 250,
+      "multi_level_orders": 24,
+      "levels_in_largest_sweep": 4,
+      "max_book_age_us": 94881,
+      "decision_steps": 3054,
+      "rng_draws": 25,
+      "receipt_order_and_draw_path_sha256": "5f64dc74f1af66384cb72b2df03f3529465ff48117ad29118dc671e0ee763d86",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622531524800,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 705,
+        "availableUnits": 364,
+        "levels": [
+          [
+            3685420,
+            5
+          ],
+          [
+            3685406,
+            27
+          ],
+          [
+            3685244,
+            199
+          ],
+          [
+            3685201,
+            1
+          ],
+          [
+            3685103,
+            132
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 42,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 554,
+      "multi_level_orders": 60,
+      "levels_in_largest_sweep": 4,
+      "max_book_age_us": 351104,
+      "decision_steps": 7036,
+      "rng_draws": 60,
+      "receipt_order_and_draw_path_sha256": "fffa75289d55226a237661d0c529d0c47e9320f97bf3a4b5b6adce9c561f5632",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622537271400,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 480,
+        "availableUnits": 340,
+        "levels": [
+          [
+            3598651,
+            194
+          ],
+          [
+            3598619,
+            56
+          ],
+          [
+            3598533,
+            64
+          ],
+          [
+            3598466,
+            1
+          ],
+          [
+            3598208,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 42,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 231,
+      "multi_level_orders": 31,
+      "levels_in_largest_sweep": 4,
+      "max_book_age_us": 75550,
+      "decision_steps": 3057,
+      "rng_draws": 24,
+      "receipt_order_and_draw_path_sha256": "c99aa78b81a14765e826880d53482734851df347b18d072ef282eea5bfc0da2a",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622531525200,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 720,
+        "availableUnits": 335,
+        "levels": [
+          [
+            3685244,
+            53
+          ],
+          [
+            3685114,
+            136
+          ],
+          [
+            3685110,
+            1
+          ],
+          [
+            3685000,
+            95
+          ],
+          [
+            3684982,
+            50
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 42,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 164,
+      "multi_level_orders": 18,
+      "levels_in_largest_sweep": 4,
+      "max_book_age_us": 168410,
+      "decision_steps": 1329,
+      "rng_draws": 12,
+      "receipt_order_and_draw_path_sha256": "e99b509157f96719ae13d6791538272c945718fe7dfcf84422ae1aa38b798ef1",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622529125600,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 390,
+        "availableUnits": 357,
+        "levels": [
+          [
+            3689693,
+            9
+          ],
+          [
+            3689688,
+            29
+          ],
+          [
+            3689684,
+            203
+          ],
+          [
+            3689683,
+            48
+          ],
+          [
+            3689678,
+            68
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 20201120,
+      "mirrored": false,
+      "extra_delay_ms": 0,
+      "orders": 788,
+      "multi_level_orders": 83,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 117869,
+      "decision_steps": 10173,
+      "rng_draws": 82,
+      "receipt_order_and_draw_path_sha256": "b154bab85d18afe9200beef41f2b96740da5ed028d41d11ff5e7ddc6619f71fe",
+      "marked_drawdown_USDT": "140.615176183413310000000000000000001",
+      "marked_drawdown_fraction": "0.0140615176183413310000000000000000001",
+      "ending_open_BTC": "0.015",
+      "funding_cash_total_USDT": "-0.055231875413310",
+      "fee_total_USDT": "309.759275868",
+      "minimum_pre_order_initial_margin_buffer_USDT": "8326.830578873600000000000000000000002",
+      "verified_closes": 81,
+      "completed": true,
+      "stop": null
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 20201120,
+      "mirrored": false,
+      "extra_delay_ms": 200,
+      "orders": 208,
+      "multi_level_orders": 21,
+      "levels_in_largest_sweep": 4,
+      "max_book_age_us": 160083,
+      "decision_steps": 2256,
+      "rng_draws": 18,
+      "receipt_order_and_draw_path_sha256": "378709ab57d6b6d8e1d80c85e5d7abac0d81dace6ebb03814738a434e266f9c8",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622530441000,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 660,
+        "availableUnits": 164,
+        "levels": [
+          [
+            3690242,
+            32
+          ],
+          [
+            3690311,
+            21
+          ],
+          [
+            3690354,
+            30
+          ],
+          [
+            3690355,
+            80
+          ],
+          [
+            3690357,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 20201120,
+      "mirrored": true,
+      "extra_delay_ms": 0,
+      "orders": 474,
+      "multi_level_orders": 52,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 154103,
+      "decision_steps": 5441,
+      "rng_draws": 40,
+      "receipt_order_and_draw_path_sha256": "d8b88cb51b55b0cad75c07bff16ada8f7b5074f3f0d961b391489f6c32808c42",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622534911400,
+        "api": "Sell",
+        "direction": "closebuy",
+        "units": 2550,
+        "availableUnits": 1132,
+        "levels": [
+          [
+            3664682,
+            160
+          ],
+          [
+            3664510,
+            1
+          ],
+          [
+            3664502,
+            70
+          ],
+          [
+            3664484,
+            634
+          ],
+          [
+            3664462,
+            267
+          ]
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "seed": 20201120,
+      "mirrored": true,
+      "extra_delay_ms": 200,
+      "orders": 904,
+      "multi_level_orders": 110,
+      "levels_in_largest_sweep": 5,
+      "max_book_age_us": 147665,
+      "decision_steps": 9996,
+      "rng_draws": 80,
+      "receipt_order_and_draw_path_sha256": "995c0d38ec6a177d06f3b50b29aa0715210e72d55ce59d5507cd83769e224265",
+      "completed": false,
+      "stop": {
+        "reason": "market order exceeds the observed levels",
+        "clock": 1622541555400,
+        "api": "Buy",
+        "direction": "closesell",
+        "units": 255,
+        "availableUnits": 179,
+        "levels": [
+          [
+            3621752,
+            122
+          ],
+          [
+            3621753,
+            20
+          ],
+          [
+            3621831,
+            1
+          ],
+          [
+            3621843,
+            12
+          ],
+          [
+            3621892,
+            24
+          ]
+        ]
+      }
+    }
+  ],
+  "source": {
+    "document_sha256": "5e7218bb7929b479e0430d56cff101defbfc1a71729a49722533926c13f6823f",
+    "source_sha256": "89330eca30590ad3372c0f7319fccdeacbfa21ee13c1b44184626c419a5a5c78",
+    "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/CTA%E7%AD%96%E7%95%A5%E4%B9%8B%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E7%AE%80%E6%98%93%E9%A9%AC%E4%B8%81%E6%A0%BC%E5%B0%94.md",
+    "author_url": "https://www.fmz.com/strategy/275287"
+  },
+  "market": {
+    "2021-05-01": {
+      "begin_ms": 1619848800000,
+      "end_ms": 1619863200000,
+      "depth_proof": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_5/2021/05/01/BTCUSDT.csv.gz",
+        "bytes": 48018256,
+        "sha256": "5dc024b4b43ad734a4ae5bea383d8f116fa6e7faed7c3073cda68dad95b902d4",
+        "raw_rows": 2019701,
+        "first_local_us": 1619827200892967,
+        "last_local_us": 1619913599913041,
+        "replay_grid_rows": 72001,
+        "BBO_match_rows": 72001,
+        "BBO_difference_examples": [],
+        "worst_snapshot_age_us": 2221663
+      },
+      "top25_proof": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_25/2021/05/01/BTCUSDT.csv.gz",
+        "sha256": "901fec5e2641c4dde994126ca49354cecd35be5145fd26907db0f206346a94ce",
+        "bytes": 192827698,
+        "rows": 2436776,
+        "first_local_us": 1619827200892967,
+        "last_local_us": 1619913599946953,
+        "matched_top5_replay_grid_rows": 72001,
+        "max_book_age_us": 1582369
+      },
+      "quote_ref": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/quotes/2021/05/01/BTCUSDT.csv.gz",
+        "sha256": "6e4077ff30ae3385f82550524f74da7f2198f508bed76ae10a078d2a8d1af55a",
+        "rows": 1562846,
+        "bytes": 21699783,
+        "first_local_us": 1619827200892967,
+        "last_local_us": 1619913599843710
+      },
+      "mark_ref": {
+        "ticks": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/derivative_ticker/2021/05/01/BTCUSDT.csv.gz",
+          "sha256": "96106ba5e1b604c0236c7c1f1c749edf7d3e8472de037b6a8f7e57dddeac4c3a",
+          "rows": 206273,
+          "bytes": 3256706,
+          "first_local_us": 1619827200117584,
+          "last_local_us": 1619913599514438
+        },
+        "rate": {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-05.zip",
+          "sha256": "ed934afb9cf84df6ecae742e755147333a84244836a66b51523abc66dd5f63af",
+          "rows": 93,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-05.zip.CHECKSUM"
+        },
+        "mark_1m": {
+          "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-05-01.zip",
+          "sha256": "0bc350663c65445b73434fd53399f06054fd538dbf0c6e3eb2617e539a5c9028"
+        }
+      },
+      "funding": {
+        "boundary_ms": 1619856000000,
+        "exchange_settlement_ms": 1619856000006,
+        "rate": 0.0001,
+        "prior_mark": [
+          1619855999538931,
+          1619855999506000,
+          5775908,
+          57744.63,
+          57711.37701702,
+          1619856000000000,
+          "0.0001"
+        ],
+        "next_mark": [
+          1619856001017454,
+          1619856001002000,
+          5777233,
+          57765.7243424,
+          57719.15428974,
+          1619884800000000,
+          "0.0001"
+        ],
+        "official_two_minute_mark_price_bounds_USDT": [
+          57702.5,
+          57802.58
+        ]
+      }
+    },
+    "2021-06-01": {
+      "begin_ms": 1622527200000,
+      "end_ms": 1622541600000,
+      "depth_proof": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_5/2021/06/01/BTCUSDT.csv.gz",
+        "bytes": 69557500,
+        "sha256": "a2be6a3e839a706f6f535336891e2d9e4ee4881998326212869be1a2df2ffb0c",
+        "raw_rows": 2392246,
+        "first_local_us": 1622505600877501,
+        "last_local_us": 1622591999978218,
+        "replay_grid_rows": 72001,
+        "BBO_match_rows": 72001,
+        "BBO_difference_examples": [],
+        "worst_snapshot_age_us": 3454887
+      },
+      "top25_proof": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_25/2021/06/01/BTCUSDT.csv.gz",
+        "sha256": "c6bec89ed37e35d1cab238aa66c4ccfe8d262e3ba14437dd70c3164f8ba955ef",
+        "bytes": 258493590,
+        "rows": 2608495,
+        "first_local_us": 1622505600877501,
+        "last_local_us": 1622591999978218,
+        "matched_top5_replay_grid_rows": 72001,
+        "max_book_age_us": 3454887
+      },
+      "quote_ref": {
+        "url": "https://datasets.tardis.dev/v1/binance-futures/quotes/2021/06/01/BTCUSDT.csv.gz",
+        "sha256": "2d4038383071e0598d432430a4baef14fd8bcb6b45a30257e8a0dc9f74b5ad9b",
+        "rows": 2082891,
+        "bytes": 31081464,
+        "first_local_us": 1622505600877501,
+        "last_local_us": 1622591999978218
+      },
+      "mark_ref": {
+        "ticks": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/derivative_ticker/2021/06/01/BTCUSDT.csv.gz",
+          "sha256": "941e8841aaddbb000fb24b41ee991ad402edfd7610d5db153fcf189a1c3d7728",
+          "rows": 235095,
+          "bytes": 3750395,
+          "first_local_us": 1622505600139784,
+          "last_local_us": 1622591999514810
+        },
+        "rate": {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-06.zip",
+          "sha256": "7b8d9bfb8816636b800764dafb2aa2307d19166c695bfa245adbf7d01d61f766",
+          "rows": 90,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-06.zip.CHECKSUM"
+        },
+        "mark_1m": {
+          "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-06-01.zip",
+          "sha256": "299a09eacaaba849f585ba58ca268d7e1bd73846e2df9cf050de0c5e5bfeab15"
+        }
+      },
+      "funding": {
+        "boundary_ms": 1622534400000,
+        "exchange_settlement_ms": 1622534400010,
+        "rate": 0.0001,
+        "prior_mark": [
+          1622534399619814,
+          1622534399590000,
+          3681887,
+          36821.25027554,
+          36832.1005105,
+          1622534400000000,
+          "0.0001"
+        ],
+        "next_mark": [
+          1622534401019649,
+          1622534401001000,
+          3681744,
+          36817.69996266,
+          36828.55019763,
+          1622563200000000,
+          "0.0001"
+        ],
+        "official_two_minute_mark_price_bounds_USDT": [
+          36789.85298282,
+          36851.96
+        ]
+      }
+    }
+  },
+  "proof": {
+    "top25_input_sha256": "b015d1141748c74b28500f4b93539b3d309b278a97c56bf98993c6b66f404593",
+    "top5_input_sha256": "46b1e4572d7696e949cb4c87ce99cf4d59904ae6556cda2a473e70bc6bc0ddc8",
+    "previous_source_and_market_r34_sha256": "c6c145c88f2bf50c1948ffc265e6967b0ecdfbe89327579fe0937694e65da1ff",
+    "runner_sha256": "7c15a33c3165612ae988f142780a7c241599184e17c43d4525a4a4838752b931",
+    "top25_repeat_receipt_sha256": "2c58d2c74def79e49c0de16fa49d18aef291d43c47bd0f683df15442bd5ff7d4",
+    "top5_receipt_sha256": "0c59b22032b45fa4c34f22e2b8a43109154387c5f04647a9810c50acc6151731",
+    "native_control_receipt_sha256": "f6c47c3f3bea091e418b9232e21e01f30e8d5aff56984b8c7dc9845369a6100b",
+    "control_code_sha256": "418e408d685c9e94013ebeb7ea568d4d54ab69fd6f4e3c8a217e4b1d6823a3b1",
+    "top5_stage_sha256": "929583dc6c26fc08e3f34a13bfbb11c4269266a0fc44121dad88c921d4b450d1",
+    "top25_stage_sha256": "69a5b2d3694c0bde797baa0c619ed5fe1cf010912352c97df941a691e5218b9c",
+    "verifier_sha256": "f8ee6dbc50cbe4ca07ce6e3e74f799595cfa2d7d7662e32f636fcb62dfcdcc78"
+  },
+  "method": {
+    "source": "The document discusses a commodity example. Its embedded executable configuration explicitly names Binance BTC futures with 1d chart and base periods. Both recorded BTC dates are inside that saved historical range. The exercised code reads depth and positions without consuming chart bars, enters at 0.015 BTC and retains the source 20x leverage setting. The native fixture confirms 10,000 USDT default capital and 200ms operation on GetDepth, GetPosition and market orders.",
+    "randomness": "Independent four-hour cold starts at 06:00 UTC on 2021-05-01 and 2021-06-01. Preserve the three externally specified seed streams and their antithetic complements for both initial directions. The original Math.random seeds are unspecified and these are explicit stochastic benchmarks.",
+    "book": "Use the price-ordered Binance futures snapshots published by Tardis. Every permitted market order matches full requested base size by sweeping known visible ask or bid volume at a snapshot with capture-local time no later than completion. Prices use integer cents and quantity uses thousandths of BTC. All 144,002 recorded grid rows match the prior five-level snapshots and separately captured best quotes. Displayed size and price are the execution bounds.",
+    "timing": "Primary calls take 200ms as observed in the FMZ native fixture. A full parallel sensitivity adds 200ms to each market order, and re-evaluates every changed future order and account state. Delayed rows are separate. The five-level control preserves 22 early stops and 2 complete paths. These repeat exactly under top-25. Report performance only for complete runs.",
+    "economics": "Current-position profit uses captured last trades, while marked performance and drawdown use recorded derivatives marks. Financing is applied at the first replay clock at or after the exact recorded venue settlement. Use the historical 0.04% taker fee, exact weighted average of observed accepted market sweep prices, signed official funding and allocated entry fees. Independent Decimal reconciliation verifies each order and ending cash. Test requires positive equity beyond initial margin throughout.",
+    "limits": "All fills are modeled market sweeps of observed quantities. The benchmark assumes fixed observed books and the stated call delays. Venue impact, hidden liquidity and other market dates are outside the evidence. The 12 primary and 12 delayed benchmarks share data and are statistically dependent."
+  },
+  "references": [
+    "https://docs.tardis.dev/downloadable-csv-files/data-types",
+    "https://docs.tardis.dev/historical-data-details/binance-futures",
+    "https://github.com/binance/binance-public-data",
+    "https://www.binance.com/en/blog/futures/421499824684900660"
+  ]
+}
