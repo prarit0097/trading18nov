@@ -1,0 +1,10 @@
+# Remaining strategy backtests · Round 25
+
+Six measured strategies add 26 workbook rows. The original 785-ID queue has 291 pending and 494 resolved. The catalogue has 5,570 tested entries.
+
+- FMZ #2170 used the documented legacy ticker identifier to compile the archived Pine v2 rules. Independently decoded neural weights and previously completed day and hour observations reproduced all predictions and orders. Binance's first 15-minute price reconciled each market execution. The tests closed 116 positions, with two held at the cutoff. [Source, causal inputs and fees](fmz-round25-2170.json)
+- FMZ #2121 replayed the two SuperTrend state sequences. Twenty-four one-hour candles reached both bracket levels. The official minute prices resolved every first touch and changed 11 outcomes compared with the hourly assumption. Both markets ended flat after 86 closes. [Bracket replay](fmz-round25-2121.md)
+- FMZ #5510 generated 653 one-USDT spot purchase attempts in four preselected trials. The verified Binance market minimum rejected every attempt. FMZ #595's original stopping rule ended all four trials. Its evolving quantities submitted 514 buys and 28 sales, with every buy below the verified market minimum and each sale rejected for absent inventory. Neither case produced a fee or a closure. [Fixed purchase attempts](fmz-native-binance-5510-round25.json) · [Source recurrence](fmz-native-martingale-595-round25.json)
+- FMZ #1586 used the original one-minute trend and momentum inputs on the hourly chart. The source-compatible broker sizes using equity at the fill's open and includes the entry fee. Independent checks matched 357 settled lots and rejected sizing based on the fill candle's later close. FMZ #2751 verified 12 close events in the forward BTC comparison under the original full-margin model. Its other tested scopes closed zero. [Minute input and account checks](fmz-round25-pine-minute-reference.json)
+
+The repository suite passed 342 tests and 89 subtests. The workbook preserves all prior rows. Delta Demo remains paused. [Per-strategy audit](remaining-backtest-round25-coverage.json)

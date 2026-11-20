@@ -1,0 +1,497 @@
+{
+  "coverage": [
+    [
+      5510,
+      "Tested · authored ticker breakout on four Binance spot scopes",
+      "The pinned Python source with public 60-second/1440-sample defaults completed four BTC/ETH windows. At 100,000 USDT each source buy branch was exercised. All 653 one-USDT market sizes failed the 5-USDT minimum. Independent signals and previous 10,000-USDT cash controls reconcile. Zero fills, fees and drawdown."
+    ]
+  ],
+  "results": [
+    {
+      "id": 5510,
+      "group": "FMZ Native · Binance Spot",
+      "name": "Buying strength and selling weakness",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%BF%BD%E6%B6%A8%E6%9D%80%E8%B7%8C.md",
+      "market": "BTCUSDT spot",
+      "period": "2026-09-23 to 2026-10-21 UTC+05:30",
+      "interval": "1m poll · 1440-tick history",
+      "exit": "No executable spot buys at source size",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 100000,
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 5510,
+      "group": "FMZ Native · Binance Spot",
+      "name": "Buying strength and selling weakness",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%BF%BD%E6%B6%A8%E6%9D%80%E8%B7%8C.md",
+      "market": "BTCUSDT spot",
+      "period": "2026-10-21 to 2026-11-04 UTC+05:30",
+      "interval": "1m poll · 1440-tick history",
+      "exit": "No executable spot buys at source size",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 100000,
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 5510,
+      "group": "FMZ Native · Binance Spot",
+      "name": "Buying strength and selling weakness",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%BF%BD%E6%B6%A8%E6%9D%80%E8%B7%8C.md",
+      "market": "ETHUSDT spot",
+      "period": "2026-09-23 to 2026-10-21 UTC+05:30",
+      "interval": "1m poll · 1440-tick history",
+      "exit": "No executable spot buys at source size",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 100000,
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 5510,
+      "group": "FMZ Native · Binance Spot",
+      "name": "Buying strength and selling weakness",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%BF%BD%E6%B6%A8%E6%9D%80%E8%B7%8C.md",
+      "market": "ETHUSDT spot",
+      "period": "2026-10-21 to 2026-11-04 UTC+05:30",
+      "interval": "1m poll · 1440-tick history",
+      "exit": "No executable spot buys at source size",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 100000,
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0
+    }
+  ],
+  "diagnostics": [
+    {
+      "symbol": "BTCUSDT",
+      "from_ist": "2026-09-23",
+      "to_ist": "2026-10-21",
+      "trials": [
+        {
+          "balance": 10000,
+          "ticker": 40320,
+          "account": 1234,
+          "buy_signal": 325,
+          "sell_signal": 292,
+          "rejected_buy": 0,
+          "min_market_notional": "5.00000000",
+          "rounded_notional_upper_bound": "1.093716040100250626566416040",
+          "fills": 0,
+          "fees": 0,
+          "terminal_quote": 10000,
+          "terminal_base": 0,
+          "first_rejection": null,
+          "last_rejection": null
+        },
+        {
+          "balance": 100000,
+          "ticker": 40320,
+          "account": 1234,
+          "buy_signal": 325,
+          "sell_signal": 292,
+          "rejected_buy": 325,
+          "min_market_notional": "5.00000000",
+          "rounded_notional_upper_bound": "1.093716040100250626566416040",
+          "fills": 0,
+          "fees": 0,
+          "terminal_quote": 100000,
+          "terminal_base": 0,
+          "first_rejection": {
+            "time": 1790260140000,
+            "last": 84860.8,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          },
+          "last_rejection": {
+            "time": 1792508280000,
+            "last": 83343.97,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          }
+        }
+      ],
+      "source_intervals": 40325,
+      "previous_cash_reconciliation": {
+        "cash_error": 0.0,
+        "asset_error": 0.0
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "from_ist": "2026-10-21",
+      "to_ist": "2026-11-04",
+      "trials": [
+        {
+          "balance": 10000,
+          "ticker": 20160,
+          "account": 516,
+          "buy_signal": 74,
+          "sell_signal": 184,
+          "rejected_buy": 0,
+          "min_market_notional": "5.00000000",
+          "rounded_notional_upper_bound": "1.112308024083018652364502886",
+          "fills": 0,
+          "fees": 0,
+          "terminal_quote": 10000,
+          "terminal_base": 0,
+          "first_rejection": null,
+          "last_rejection": null
+        },
+        {
+          "balance": 100000,
+          "ticker": 20160,
+          "account": 516,
+          "buy_signal": 74,
+          "sell_signal": 184,
+          "rejected_buy": 74,
+          "min_market_notional": "5.00000000",
+          "rounded_notional_upper_bound": "1.112308024083018652364502886",
+          "fills": 0,
+          "fees": 0,
+          "terminal_quote": 100000,
+          "terminal_base": 0,
+          "first_rejection": {
+            "time": 1793116200000,
+            "last": 80678.73,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          },
+          "last_rejection": {
+            "time": 1793591280000,
+            "last": 78812.02,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          }
+        }
+      ],
+      "source_intervals": 20165,
+      "previous_cash_reconciliation": {
+        "cash_error": 0.0,
+        "asset_error": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "from_ist": "2026-09-23",
+      "to_ist": "2026-10-21",
+      "trials": [
+        {
+          "balance": 10000,
+          "ticker": 40320,
+          "account": 958,
+          "buy_signal": 196,
+          "sell_signal": 283,
+          "rejected_buy": 196,
+          "min_market_notional": "5.00000000",
+          "rounded_notional_upper_bound": "1.203192407247627264883520276",
+          "fills": 0,
+          "fees": 0,
+          "terminal_quote": 10000,
+          "terminal_base": 0,
+          "first_rejection": {
+            "time": 1790268180000,
+            "last": 2702.8,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          },
+          "last_rejection": {
+            "time": 1792508280000,
+            "last": 2475.29,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          }
+        },
+        {
+          "balance": 100000,
+          "ticker": 40320,
+          "account": 958,
+          "buy_signal": 196,
+          "sell_signal": 283,
+          "rejected_buy": 196,
+          "min_market_notional": "5.00000000",
+          "rounded_notional_upper_bound": "1.203192407247627264883520276",
+          "fills": 0,
+          "fees": 0,
+          "terminal_quote": 100000,
+          "terminal_base": 0,
+          "first_rejection": {
+            "time": 1790268180000,
+            "last": 2702.8,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          },
+          "last_rejection": {
+            "time": 1792508280000,
+            "last": 2475.29,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          }
+        }
+      ],
+      "source_intervals": 40325,
+      "previous_cash_reconciliation": {
+        "cash_error": 0.0,
+        "asset_error": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "from_ist": "2026-10-21",
+      "to_ist": "2026-11-04",
+      "trials": [
+        {
+          "balance": 10000,
+          "ticker": 20160,
+          "account": 356,
+          "buy_signal": 58,
+          "sell_signal": 120,
+          "rejected_buy": 58,
+          "min_market_notional": "5.00000000",
+          "rounded_notional_upper_bound": "1.162155946423314689431851634",
+          "fills": 0,
+          "fees": 0,
+          "terminal_quote": 10000,
+          "terminal_base": 0,
+          "first_rejection": {
+            "time": 1793114460000,
+            "last": 2343.48,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          },
+          "last_rejection": {
+            "time": 1793712840000,
+            "last": 2306.56,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          }
+        },
+        {
+          "balance": 100000,
+          "ticker": 20160,
+          "account": 356,
+          "buy_signal": 58,
+          "sell_signal": 120,
+          "rejected_buy": 58,
+          "min_market_notional": "5.00000000",
+          "rounded_notional_upper_bound": "1.162155946423314689431851634",
+          "fills": 0,
+          "fees": 0,
+          "terminal_quote": 100000,
+          "terminal_base": 0,
+          "first_rejection": {
+            "time": 1793114460000,
+            "last": 2343.48,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          },
+          "last_rejection": {
+            "time": 1793712840000,
+            "last": 2306.56,
+            "quote_order_qty": 1,
+            "error": "Binance model NOTIONAL size guard rejects the quote amount"
+          }
+        }
+      ],
+      "source_intervals": 20165,
+      "previous_cash_reconciliation": {
+        "cash_error": 0.0,
+        "asset_error": 0.0
+      }
+    }
+  ],
+  "win_rate": null,
+  "source": {
+    "publisher": "https://www.fmz.com/strategy/96634",
+    "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%BF%BD%E6%B6%A8%E6%9D%80%E8%B7%8C.md",
+    "archive_sha256": "3f73ed3e345e468c47499d22776ea6486b03d9223e6cecbcd30cb43547d986d1",
+    "source_sha256": "be44e1fc60b138cd1ae07a4150361e1692685852e8860470a76f13cac3a378ab",
+    "parameters": {
+      "PERIOD": 60,
+      "LENGTH": 1440
+    },
+    "parameter_origin": "Pinned archive public table"
+  },
+  "data": {
+    "order_filter_receipts": [
+      {
+        "url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%5D",
+        "response_sha256": "49d89f5ff2ba9a65c484f27b7b5c3ba4e3e9f53e09c7e816c7ff4eee674e630b",
+        "filter": {
+          "BTCUSDT": {
+            "min_notional": "5.00000000",
+            "avg_price_minutes": 5,
+            "markets_allowed": true,
+            "quote_asset": "USDT",
+            "apply_min_to_market": true
+          },
+          "ETHUSDT": {
+            "min_notional": "5.00000000",
+            "avg_price_minutes": 5,
+            "markets_allowed": true,
+            "quote_asset": "USDT",
+            "apply_min_to_market": true
+          }
+        },
+        "server_time": 1795206863706
+      },
+      {
+        "url": "https://api.binance.com/api/v3/exchangeInfo?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%5D",
+        "response_sha256": "d86b049515f8eba21e256e1092d98624b3b41881bdccd1f91b482b3f7c7f5041",
+        "filter": {
+          "BTCUSDT": {
+            "min_notional": "5.00000000",
+            "avg_price_minutes": 5,
+            "markets_allowed": true,
+            "quote_asset": "USDT",
+            "apply_min_to_market": true
+          },
+          "ETHUSDT": {
+            "min_notional": "5.00000000",
+            "avg_price_minutes": 5,
+            "markets_allowed": true,
+            "quote_asset": "USDT",
+            "apply_min_to_market": true
+          }
+        },
+        "server_time": 1795206864938
+      }
+    ],
+    "historical_binance_zips": {
+      "BTC": [
+        {
+          "sha256_or_error": "7a021fb5981cfdb1a56457d68fa81360ab27350c981ddfe63112b2322df44b56",
+          "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-09.zip"
+        },
+        {
+          "sha256_or_error": "17168f260306752e39177a6c038bb8952f52bf08ff20e36d8da6068732621f1c",
+          "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-10.zip"
+        },
+        {
+          "sha256_or_error": "166e586106dda5083a32dbcf68108a80465bea04a60ba05ca3327fab7768a208",
+          "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-01.zip"
+        },
+        {
+          "sha256_or_error": "0e75a73c1642747e22159cfb6a9059dd0556086fa74fabffe4f7f4166a3e7c65",
+          "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-02.zip"
+        },
+        {
+          "sha256_or_error": "52d48d43d5fe174481b09d7f81eee932739e8b6de41de0b905322dd62ea148fe",
+          "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-03.zip"
+        },
+        {
+          "sha256_or_error": "44c7dfc10dff28bd3050f0129c201872994f3f09e2b2d00a76bd44fb419e509d",
+          "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-04.zip"
+        }
+      ],
+      "ETH": [
+        {
+          "sha256_or_error": "827b46043bdc877d542edf8ff178dc0411cfa166a56fa73f2f850ad06c951b50",
+          "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-09.zip"
+        },
+        {
+          "sha256_or_error": "bcbfb8f896ba57167f297e6529ce5bb73761500e3affcd47b9045bb0d5d6c833",
+          "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-10.zip"
+        },
+        {
+          "sha256_or_error": "2a00c3a92769a164d7ecffeffca895bd5d3a06c8ff7059ff6bca0c3ad12e66d8",
+          "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-01.zip"
+        },
+        {
+          "sha256_or_error": "4d8839d68abb79c1b644b9a337a24d666404ac7cbf88f0d51a1d34eb278c37fe",
+          "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-02.zip"
+        },
+        {
+          "sha256_or_error": "7468568b38dbf795b0415dbba743351f10a41cf9ba817b10b1470dbc32d8bfb4",
+          "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-03.zip"
+        },
+        {
+          "sha256_or_error": "424d1b522fb215beddcb6a77b3b17aa9c04033816ac1f1fe8afc0c45606cb5d1",
+          "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-04.zip"
+        }
+      ]
+    },
+    "primary_notional": "The spot market buy specifies exactly 1 USDT. The public filter applies a 5-USDT minimum to market orders on both pairs. Even an alternate quantity conversion and valuation across the proven observed price envelope cannot reach the minimum."
+  },
+  "proof_hashes": {
+    "job": "ed3fe0d2e2755576cc20772d7da5a63eb36919cf4cb289cd5791250c4e59bfc6",
+    "isolated_receipt": "f99c7a61ae2a2a12551d4a2015d31658d9aa95eb9afa6684d49a658ef6e41ad0",
+    "worker": "c2a85ce904c9f22d69fccbad50782fec0437e406895edb2acb7d8484e263b47c",
+    "staging": "aa0dda8d3bab07b761b6d8e28fb37e2c39834d51ecb19327bce077213be550d1",
+    "previous_report": "ac2f6658780d397b42684109f44e99fa818967d1b29831a0dce341ffc237f566"
+  },
+  "assumptions": "The source supplied no venue/date/wallet configuration. The study chooses Binance spot and repeats the prior September/October 2026 windows with 10,000 and 100,000 USDT starting cash, flat inventories and no borrowing. The 100,000-USDT variant supplies all result rows. The current official market-size filter is used as the disclosed replay model. Each ticker value comes from the close of the immediately preceding complete checksum-matched minute, observed strictly before the poll. The lowercase true host alias maps to Python True. The unchanged source sends no sell from zero inventory. Fee differences have no effect because there is no accepted order or execution.",
+  "references": [
+    "https://www.fmz.com/strategy/96634",
+    "https://www.fmz.com/syntax-guide/fun/trade/exchange.buy",
+    "https://developers.binance.com/en/docs/products/spot/filters",
+    "https://developers.binance.com/en/docs/catalog/core-trading-spot-trading/api/rest-api/trade",
+    "https://www.binance.com/en/support/announcement/detail/c4706c73b805423a8d36be948e297603"
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "coverage": [
+    [
+      595,
+      "Tested · authored Martingale spot size and inventory gates",
+      "4 preselected historical Binance BTC/ETH scopes completed with the archived variable-size source. Every observed buy remained below the captured size minimum and every sell lacked inventory. The exact signal/count recurrence and flat cash reconciled. Any scope reaching an execution-eligible buy is listed separately without performance."
+    ]
+  ],
+  "results": [
+    {
+      "id": 595,
+      "name": "MartinGale-Strategy1",
+      "group": "FMZ Native · Binance Spot",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/MartinGale-Strategy1.md",
+      "market": "BTCUSDT spot",
+      "period": "2026-10-01 02:00:00–02:02:05 UTC",
+      "interval": "1m active bar · 1s polling",
+      "exit": "Source loss counter or fixed hour boundary",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 1000000,
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 595,
+      "name": "MartinGale-Strategy1",
+      "group": "FMZ Native · Binance Spot",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/MartinGale-Strategy1.md",
+      "market": "BTCUSDT spot",
+      "period": "2026-11-01 02:00:00–02:05:05 UTC",
+      "interval": "1m active bar · 1s polling",
+      "exit": "Source loss counter or fixed hour boundary",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 1000000,
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 595,
+      "name": "MartinGale-Strategy1",
+      "group": "FMZ Native · Binance Spot",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/MartinGale-Strategy1.md",
+      "market": "ETHUSDT spot",
+      "period": "2026-10-01 02:00:00–02:01:52 UTC",
+      "interval": "1m active bar · 1s polling",
+      "exit": "Source loss counter or fixed hour boundary",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 1000000,
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0
+    },
+    {
+      "id": 595,
+      "name": "MartinGale-Strategy1",
+      "group": "FMZ Native · Binance Spot",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/MartinGale-Strategy1.md",
+      "market": "ETHUSDT spot",
+      "period": "2026-11-01 02:00:00–02:00:49 UTC",
+      "interval": "1m active bar · 1s polling",
+      "exit": "Source loss counter or fixed hour boundary",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 1000000,
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0
+    }
+  ],
+  "diagnostics": [
+    {
+      "coin": "BTC",
+      "day": "2026-10-01",
+      "classification": "Completed",
+      "captures": {
+        "url": "https://datasets.tardis.dev/v1/binance/trades/2026/10/01/BTCUSDT.csv.gz",
+        "compressed_prefix_sha256": "063af1ab5f9cdd1d9a81627cb843a6b4334a5eb4b25e4ab8c64430e8afe5542e",
+        "archive_bytes": 18560179,
+        "read_prefix_bytes": 1310730,
+        "trade_updates": 189027,
+        "max_price_ratio": 1.0033761980971436
+      },
+      "official_crosscheck": {
+        "source_zip": {
+          "sha256_or_error": "17168f260306752e39177a6c038bb8952f52bf08ff20e36d8da6068732621f1c",
+          "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-10.zip"
+        },
+        "bars": 61,
+        "matched_active_opens": 3600,
+        "closes_inside_official_bounds": 3600
+      },
+      "scope_end": 1790820125,
+      "reason": "source returned",
+      "account_checks": 125,
+      "actions": {
+        "sell": 10,
+        "buy": 107
+      },
+      "biggest_buy_budget": "0.008353125",
+      "ending_cash_USDT": 1000000,
+      "ending_base": 0,
+      "fees_USDT": 0
+    },
+    {
+      "coin": "BTC",
+      "day": "2026-11-01",
+      "classification": "Completed",
+      "captures": {
+        "url": "https://datasets.tardis.dev/v1/binance/trades/2026/11/01/BTCUSDT.csv.gz",
+        "compressed_prefix_sha256": "b9850b15bf813eb9d82a5117c25d47747d2346d358de350cca4d2e4c3a2974ab",
+        "archive_bytes": 8601999,
+        "read_prefix_bytes": 917514,
+        "trade_updates": 117460,
+        "max_price_ratio": 1.0048999447864475
+      },
+      "official_crosscheck": {
+        "source_zip": {
+          "sha256_or_error": "166e586106dda5083a32dbcf68108a80465bea04a60ba05ca3327fab7768a208",
+          "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-01.zip"
+        },
+        "bars": 61,
+        "matched_active_opens": 3600,
+        "closes_inside_official_bounds": 3600
+      },
+      "scope_end": 1793498705,
+      "reason": "source returned",
+      "account_checks": 305,
+      "actions": {
+        "buy": 266,
+        "sell": 7
+      },
+      "biggest_buy_budget": "0.003375",
+      "ending_cash_USDT": 1000000,
+      "ending_base": 0,
+      "fees_USDT": 0
+    },
+    {
+      "coin": "ETH",
+      "day": "2026-10-01",
+      "classification": "Completed",
+      "captures": {
+        "url": "https://datasets.tardis.dev/v1/binance/trades/2026/10/01/ETHUSDT.csv.gz",
+        "compressed_prefix_sha256": "5d78bf8ca449fa658d042b74726658483a1cacad6a58312c4ac8584243b1973a",
+        "archive_bytes": 16456909,
+        "read_prefix_bytes": 1048586,
+        "trade_updates": 160030,
+        "max_price_ratio": 1.005999537061235
+      },
+      "official_crosscheck": {
+        "source_zip": {
+          "sha256_or_error": "bcbfb8f896ba57167f297e6529ce5bb73761500e3affcd47b9045bb0d5d6c833",
+          "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-10.zip"
+        },
+        "bars": 61,
+        "matched_active_opens": 3600,
+        "closes_inside_official_bounds": 3600
+      },
+      "scope_end": 1790820112,
+      "reason": "source returned",
+      "account_checks": 112,
+      "actions": {
+        "sell": 6,
+        "buy": 97
+      },
+      "biggest_buy_budget": "0.00165",
+      "ending_cash_USDT": 1000000,
+      "ending_base": 0,
+      "fees_USDT": 0
+    },
+    {
+      "coin": "ETH",
+      "day": "2026-11-01",
+      "classification": "Completed",
+      "captures": {
+        "url": "https://datasets.tardis.dev/v1/binance/trades/2026/11/01/ETHUSDT.csv.gz",
+        "compressed_prefix_sha256": "907197069977b6c67c0e6b59432c89147eccfaf345bbc9b083ab7bf3270c611a",
+        "archive_bytes": 5643304,
+        "read_prefix_bytes": 786442,
+        "trade_updates": 103357,
+        "max_price_ratio": 1.009629202519294
+      },
+      "official_crosscheck": {
+        "source_zip": {
+          "sha256_or_error": "2a00c3a92769a164d7ecffeffca895bd5d3a06c8ff7059ff6bca0c3ad12e66d8",
+          "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-01.zip"
+        },
+        "bars": 61,
+        "matched_active_opens": 3600,
+        "closes_inside_official_bounds": 3600
+      },
+      "scope_end": 1793498449,
+      "reason": "source returned",
+      "account_checks": 49,
+      "actions": {
+        "buy": 44,
+        "sell": 5
+      },
+      "biggest_buy_budget": "0.0015",
+      "ending_cash_USDT": 1000000,
+      "ending_base": 0,
+      "fees_USDT": 0
+    }
+  ],
+  "win_rate": null,
+  "source": {
+    "archive": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/MartinGale-Strategy1.md",
+    "archive_sha256": "8e9aa037c55342214a296da86931a4866083e122a8867c22e9e5adff4e2822ef",
+    "source_code_sha256": "7a7471ae23a3f881ddfa5a23286dd8cdb78409b8301aac7c960957f19b0fe7ba",
+    "publisher": "https://www.fmz.com/strategy/416875"
+  },
+  "filter_receipts": [
+    {
+      "url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%5D",
+      "response_sha256": "49d89f5ff2ba9a65c484f27b7b5c3ba4e3e9f53e09c7e816c7ff4eee674e630b",
+      "filter": {
+        "BTCUSDT": {
+          "min_notional": "5.00000000",
+          "avg_price_minutes": 5,
+          "markets_allowed": true,
+          "quote_asset": "USDT",
+          "apply_min_to_market": true
+        },
+        "ETHUSDT": {
+          "min_notional": "5.00000000",
+          "avg_price_minutes": 5,
+          "markets_allowed": true,
+          "quote_asset": "USDT",
+          "apply_min_to_market": true
+        }
+      },
+      "server_time": 1795206863706
+    },
+    {
+      "url": "https://api.binance.com/api/v3/exchangeInfo?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%5D",
+      "response_sha256": "d86b049515f8eba21e256e1092d98624b3b41881bdccd1f91b482b3f7c7f5041",
+      "filter": {
+        "BTCUSDT": {
+          "min_notional": "5.00000000",
+          "avg_price_minutes": 5,
+          "markets_allowed": true,
+          "quote_asset": "USDT",
+          "apply_min_to_market": true
+        },
+        "ETHUSDT": {
+          "min_notional": "5.00000000",
+          "avg_price_minutes": 5,
+          "markets_allowed": true,
+          "quote_asset": "USDT",
+          "apply_min_to_market": true
+        }
+      },
+      "server_time": 1795206864938
+    }
+  ],
+  "proof_hashes": {
+    "job": "7df89e0a4a88b318c35065895dcbab7664b63f2d8f3f54b25d2b9ca01abc18ac",
+    "native_receipt": "e5b89bd9fdb8fc672d62a64663a7cfb56ceb7d201d692ccf05bc41f7ddc0c4da",
+    "worker": "8715646bb30de53df7280e21c306486a098466904ecc49b69571e081748c7445",
+    "stage": "dfc3baa6195cdf13908e0702d59f61151b49c2aac3149a60a735ed6705cc3cb9"
+  },
+  "scope": "The source supplies no exact saved venue/date/timeframe. This study applies its original one-million cash anchor and dynamic decisions to benign Binance spot history. Four first-of-month BTC/ETH windows were fixed before outcome inspection. One-second polls use the captured current one-minute open and latest observed close. Start flat in base inventory, with no borrowing or order resizing. Program-driven termination by its unchanged counter remains a complete scope.",
+  "fee_evidence": "The current public Binance exchange filter is used as the scoped model. A one-second price path can change the proposed size above its initial value, so the study independently checks every attempted buy. Market buys use quote currency. Sources with no accepted orders incur no cost, regardless of fee tier. No market-filling path was inferred.",
+  "references": [
+    "https://www.fmz.com/syntax-guide/fun/trade/exchange.buy",
+    "https://developers.binance.com/en/docs/products/spot/filters",
+    "https://docs.tardis.dev/historical-data-details/binance"
+  ]
+}
