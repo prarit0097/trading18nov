@@ -1,0 +1,33 @@
+{
+  "coverage": [
+    [
+      6085,
+      "Deribit expiry model pending",
+      "Earlier Deribit atomic Jelly Roll history contained no qualifying prints. Public options-chain and quote archive probes returned HTTP 404. A leg-by-leg proxy still requires synchronized two-sided historical quotes and available size at all four exact contracts."
+    ]
+  ],
+  "results": [],
+  "probes": [
+    {
+      "status": 404,
+      "url": "https://datasets.tardis.dev/v1/deribit/options_chain/2020/03/01/OPTIONS.csv.gz"
+    },
+    {
+      "status": 404,
+      "url": "https://datasets.tardis.dev/v1/deribit/options_chain/2025/09/01/OPTIONS.csv.gz"
+    },
+    {
+      "status": 404,
+      "url": "https://datasets.tardis.dev/v1/deribit/options_chain/2026/03/01/OPTIONS.csv.gz"
+    },
+    {
+      "status": 404,
+      "url": "https://datasets.tardis.dev/v1/deribit/options_chain/2026/09/01/OPTIONS.csv.gz"
+    },
+    {
+      "status": 404,
+      "url": "https://datasets.tardis.dev/v1/deribit/quotes/2026/03/01/OPTIONS.csv.gz"
+    }
+  ],
+  "source": "https://support.deribit.com/hc/en-us/articles/31424954956061-Combo-Books"
+}
