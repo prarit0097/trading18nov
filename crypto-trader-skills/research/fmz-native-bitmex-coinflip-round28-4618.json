@@ -1,0 +1,1036 @@
+{
+  "coverage": [
+    [
+      4618,
+      "Tested · archived BitMEX coin-flip strategy, six prespecified 0 ms bench scopes",
+      "Exact XBTUSD source, settings and fee override ran on two captured 8-hour dates with three seeded paths per date. All 5,772 orders met the observed full-quantity instantaneous quote gate. The study counts 2,884 simulated closes. The independent 100 ms bound is separately documented."
+    ]
+  ],
+  "results": [
+    {
+      "gross": 3.614625228135105e-06,
+      "fees": 0.0004049695858748118,
+      "after_fees": -0.0004013549606466767,
+      "execution": 1.074638865978066e-05,
+      "funding": 5.3101104502973663e-08,
+      "net": -0.0004120482482019544,
+      "gross_dd": 2.276767223845477e-06,
+      "gross_dd_pct": 0.002274519759331831,
+      "gross_wins": 168,
+      "fee_dd": 0.0004013549606466767,
+      "fee_dd_pct": 0.4013549606466767,
+      "fee_wins": 0,
+      "net_dd": 0.0004120482482019544,
+      "net_dd_pct": 0.4120482482019544,
+      "net_wins": 0,
+      "id": 4618,
+      "market": "BitMEX XBTUSD perpetual [BTC settlement]",
+      "period": "2020-02-01 02:00–10:00 UTC · seed 1",
+      "group": "FMZ Native · Seeded coin-flip, 0 ms replay",
+      "name": "抛硬币策略",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8A%9B%E7%A1%AC%E5%B8%81%E7%AD%96%E7%95%A5.md",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 481,
+      "unsettled": 0,
+      "interval": "15m chart · 5s quote grid",
+      "exit": "Archived random exits and trailing / stop predicates",
+      "starting_equity": 0.001,
+      "remaining_unrealized": 0.0,
+      "mark_to_market_net": -0.0004120482482019544
+    },
+    {
+      "gross": 2.0026507733909544e-06,
+      "fees": 0.0003965929056290334,
+      "after_fees": -0.00039459025485564245,
+      "execution": 1.0074407645029603e-05,
+      "funding": -5.3101104502973663e-08,
+      "net": -0.000404717763605175,
+      "gross_dd": 2.689846654021513e-06,
+      "gross_dd_pct": 0.0026839692101885203,
+      "gross_wins": 151,
+      "fee_dd": 0.00039459025485564245,
+      "fee_dd_pct": 0.3945902548556424,
+      "fee_wins": 1,
+      "net_dd": 0.000404717763605175,
+      "net_dd_pct": 0.40471776360517503,
+      "net_wins": 1,
+      "id": 4618,
+      "market": "BitMEX XBTUSD perpetual [BTC settlement]",
+      "period": "2020-02-01 02:00–10:00 UTC · seed 42",
+      "group": "FMZ Native · Seeded coin-flip, 0 ms replay",
+      "name": "抛硬币策略",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8A%9B%E7%A1%AC%E5%B8%81%E7%AD%96%E7%95%A5.md",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 468,
+      "unsettled": 1,
+      "interval": "15m chart · 5s quote grid",
+      "exit": "Archived random exits and trailing / stop predicates",
+      "starting_equity": 0.001,
+      "remaining_unrealized": -1.1549495617198681e-07,
+      "mark_to_market_net": -0.0004051529005623059
+    },
+    {
+      "gross": 1.7680699662762384e-06,
+      "fees": 0.00041173210551356533,
+      "after_fees": -0.0004099640355472891,
+      "execution": 1.1270912312128252e-05,
+      "funding": 0.0,
+      "net": -0.00042123494785941735,
+      "gross_dd": 2.3353975398769796e-06,
+      "gross_dd_pct": 0.00233539753987698,
+      "gross_wins": 166,
+      "fee_dd": 0.0004099640355472891,
+      "fee_dd_pct": 0.4099640355472891,
+      "fee_wins": 1,
+      "net_dd": 0.00042123494785941735,
+      "net_dd_pct": 0.42123494785941734,
+      "net_wins": 1,
+      "id": 4618,
+      "market": "BitMEX XBTUSD perpetual [BTC settlement]",
+      "period": "2020-02-01 02:00–10:00 UTC · seed 20201120",
+      "group": "FMZ Native · Seeded coin-flip, 0 ms replay",
+      "name": "抛硬币策略",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8A%9B%E7%A1%AC%E5%B8%81%E7%AD%96%E7%95%A5.md",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 493,
+      "unsettled": 1,
+      "interval": "15m chart · 5s quote grid",
+      "exit": "Archived random exits and trailing / stop predicates",
+      "starting_equity": 0.001,
+      "remaining_unrealized": 9.846554749010477e-08,
+      "mark_to_market_net": -0.00042145614134229487
+    },
+    {
+      "gross": -5.199658234061442e-06,
+      "fees": 0.00041104244665798574,
+      "after_fees": -0.0004162421048920472,
+      "execution": 8.935634360403132e-06,
+      "funding": 5.277755054110184e-08,
+      "net": -0.0004251249617019092,
+      "gross_dd": 7.744095743717056e-06,
+      "gross_dd_pct": 0.00774373106872129,
+      "gross_wins": 173,
+      "fee_dd": 0.0004162421048920472,
+      "fee_dd_pct": 0.41624210489204716,
+      "fee_wins": 5,
+      "net_dd": 0.0004251249617019092,
+      "net_dd_pct": 0.4251249617019092,
+      "net_wins": 5,
+      "id": 4618,
+      "market": "BitMEX XBTUSD perpetual [BTC settlement]",
+      "period": "2020-08-01 02:00–10:00 UTC · seed 1",
+      "group": "FMZ Native · Seeded coin-flip, 0 ms replay",
+      "name": "抛硬币策略",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8A%9B%E7%A1%AC%E5%B8%81%E7%AD%96%E7%95%A5.md",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 481,
+      "unsettled": 0,
+      "interval": "15m chart · 5s quote grid",
+      "exit": "Archived random exits and trailing / stop predicates",
+      "starting_equity": 0.001,
+      "remaining_unrealized": 0.0,
+      "mark_to_market_net": -0.0004251249617019092
+    },
+    {
+      "gross": -5.131155188956804e-06,
+      "fees": 0.00040255004221256575,
+      "after_fees": -0.00040768119740152255,
+      "execution": 8.973123560688816e-06,
+      "funding": -5.277755054110184e-08,
+      "net": -0.0004167070985127525,
+      "gross_dd": 9.020660786363249e-06,
+      "gross_dd_pct": 0.009020235997008502,
+      "gross_wins": 185,
+      "fee_dd": 0.00040768119740152255,
+      "fee_dd_pct": 0.4076811974015226,
+      "fee_wins": 4,
+      "net_dd": 0.0004167070985127525,
+      "net_dd_pct": 0.4167070985127525,
+      "net_wins": 3,
+      "id": 4618,
+      "market": "BitMEX XBTUSD perpetual [BTC settlement]",
+      "period": "2020-08-01 02:00–10:00 UTC · seed 42",
+      "group": "FMZ Native · Seeded coin-flip, 0 ms replay",
+      "name": "抛硬币策略",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8A%9B%E7%A1%AC%E5%B8%81%E7%AD%96%E7%95%A5.md",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 468,
+      "unsettled": 1,
+      "interval": "15m chart · 5s quote grid",
+      "exit": "Archived random exits and trailing / stop predicates",
+      "starting_equity": 0.001,
+      "remaining_unrealized": -2.2914164777013942e-07,
+      "mark_to_market_net": -0.00041727760990662886
+    },
+    {
+      "gross": 5.028355585711167e-06,
+      "fees": 0.0004213733220602748,
+      "after_fees": -0.0004163449664745636,
+      "execution": 8.755798475414783e-06,
+      "funding": 0.0,
+      "net": -0.0004251007649499784,
+      "gross_dd": 5.443022138238416e-06,
+      "gross_dd_pct": 0.005440334848662915,
+      "gross_wins": 186,
+      "fee_dd": 0.0004163449664745636,
+      "fee_dd_pct": 0.4163449664745636,
+      "fee_wins": 8,
+      "net_dd": 0.0004251007649499784,
+      "net_dd_pct": 0.4251007649499784,
+      "net_wins": 8,
+      "id": 4618,
+      "market": "BitMEX XBTUSD perpetual [BTC settlement]",
+      "period": "2020-08-01 02:00–10:00 UTC · seed 20201120",
+      "group": "FMZ Native · Seeded coin-flip, 0 ms replay",
+      "name": "抛硬币策略",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8A%9B%E7%A1%AC%E5%B8%81%E7%AD%96%E7%95%A5.md",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 493,
+      "unsettled": 1,
+      "interval": "15m chart · 5s quote grid",
+      "exit": "Archived random exits and trailing / stop predicates",
+      "starting_equity": 0.001,
+      "remaining_unrealized": 2.2914164777013942e-07,
+      "mark_to_market_net": -0.0004252129930483145
+    }
+  ],
+  "diagnostics": [
+    {
+      "day": "2020-02-01",
+      "seed": 1,
+      "rng_draw_count": 5278,
+      "engine_entry_and_close_counts": {
+        "closes": 481,
+        "wins": 0,
+        "losses": 481,
+        "entries": 481
+      },
+      "ordered_fills": 962,
+      "closed_count": 481,
+      "net_wins": 0,
+      "archived_fee_btc": "0.000404969585874811817702836030738208131078630587",
+      "closed_gross_at_fills_btc": "-0.000007131763431645555102338857813842413685667587",
+      "minimum_quote_size_after_fill_contracts": "1048.0",
+      "maximum_source_quote_age_us": 2825640,
+      "funding_settlement_mark_observations": {
+        "at": 1580529600,
+        "position": -5,
+        "rate": 0.0001,
+        "amount": 5.3101104502973663e-08,
+        "mark": 9416,
+        "alternateMark": 9416.94,
+        "balance": 0.0008743963593366382
+      },
+      "terminal_position": 0,
+      "terminal_fee_btc": "0",
+      "terminal_funding_btc": "0",
+      "terminal_unrealized_btc": "0",
+      "closed_actual_fee_net_btc": "-0.000310805851733251444717613714342434790669236932",
+      "quote_horizon_failed_bound_count": 1,
+      "failed_100ms_quote_bound_observations": [
+        {
+          "timestamp": 1580526065,
+          "direction": "sell",
+          "requested_contracts": 5,
+          "price_USD": "9446.5",
+          "visible_capacity_at_t": "2151462.0",
+          "minimum_capacity_for_first_100ms": 20077,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 5
+        }
+      ],
+      "five_second_equity_drawdown": {
+        "net": {
+          "BTC": "0.000412048248201954399143322722026986823438894614",
+          "fraction": "0.412048248201954399143322722026986823438894614"
+        },
+        "after_fees": {
+          "BTC": "0.000412101349306457372805174888552050544764298182",
+          "fraction": "0.412101349306457372805174888552050544764298182"
+        },
+        "gross": {
+          "BTC": "0.000008941562068857072306844921048518665490884298",
+          "fraction": "0.00893074196808615338006031995992226900363128538"
+        }
+      }
+    },
+    {
+      "day": "2020-02-01",
+      "seed": 42,
+      "rng_draw_count": 5291,
+      "engine_entry_and_close_counts": {
+        "closes": 468,
+        "wins": 1,
+        "losses": 467,
+        "entries": 469
+      },
+      "ordered_fills": 937,
+      "closed_count": 468,
+      "net_wins": 1,
+      "archived_fee_btc": "0.000396592905629033392940558183328789584373530184",
+      "closed_gross_at_fills_btc": "-0.000008071756871638648960755825527476089903230200",
+      "minimum_quote_size_after_fill_contracts": "1355.0",
+      "maximum_source_quote_age_us": 2187479,
+      "funding_settlement_mark_observations": {
+        "at": 1580529600,
+        "position": 5,
+        "rate": 0.0001,
+        "amount": -5.3101104502973663e-08,
+        "mark": 9416,
+        "alternateMark": 9416.94,
+        "balance": 0.000871900245012905
+      },
+      "terminal_position": 3,
+      "terminal_fee_btc": "3.19642000958926002876778008630334025891002078E-7",
+      "terminal_funding_btc": "0",
+      "terminal_unrealized_btc": "-1.15494956171986807845173148604826883054078E-7",
+      "closed_actual_fee_net_btc": "-0.000305569537197916667328026629549131999508781389",
+      "quote_horizon_failed_bound_count": 0,
+      "failed_100ms_quote_bound_observations": [],
+      "five_second_equity_drawdown": {
+        "net": {
+          "BTC": "0.000405571855534212525409766266448972369425764903",
+          "fraction": "0.405416928460720316409867768306756349672789319"
+        },
+        "after_fees": {
+          "BTC": "0.000405518754429709551747914099923908648100361335",
+          "fraction": "0.405363847640659193412105347830279978306072172"
+        },
+        "gross": {
+          "BTC": "0.000010090362646923607264248099553029572144156502",
+          "fraction": "0.0100731239775519448983698069845019145123434438"
+        }
+      }
+    },
+    {
+      "day": "2020-02-01",
+      "seed": 20201120,
+      "rng_draw_count": 5266,
+      "engine_entry_and_close_counts": {
+        "closes": 493,
+        "wins": 1,
+        "losses": 492,
+        "entries": 494
+      },
+      "ordered_fills": 987,
+      "closed_count": 493,
+      "net_wins": 1,
+      "archived_fee_btc": "0.000411732105513565328124564443158962255896834212",
+      "closed_gross_at_fills_btc": "-0.000009502842345852013619978557812305933768076074",
+      "minimum_quote_size_after_fill_contracts": "2937.0",
+      "maximum_source_quote_age_us": 3433041,
+      "funding_settlement_mark_observations": {
+        "at": 1580529600,
+        "position": 0,
+        "rate": 0.0001,
+        "amount": 0,
+        "mark": 9416,
+        "alternateMark": 9416.94,
+        "balance": 0.0008680754847683371
+      },
+      "terminal_position": -3,
+      "terminal_fee_btc": "3.19659030367607884922749067661161427810335642E-7",
+      "terminal_funding_btc": "0",
+      "terminal_unrealized_btc": "9.8465547490104761874114117777424963720512E-8",
+      "closed_actual_fee_net_btc": "-0.000318301921481026009713401890181527625690701708",
+      "quote_horizon_failed_bound_count": 3,
+      "failed_100ms_quote_bound_observations": [
+        {
+          "timestamp": 1580540580,
+          "direction": "closebuy",
+          "requested_contracts": 4,
+          "price_USD": "9409.5",
+          "visible_capacity_at_t": "2796354.0",
+          "minimum_capacity_for_first_100ms": 80917,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 2
+        },
+        {
+          "timestamp": 1580540890,
+          "direction": "sell",
+          "requested_contracts": 4,
+          "price_USD": "9424.5",
+          "visible_capacity_at_t": "30027.0",
+          "minimum_capacity_for_first_100ms": 30027,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 1
+        },
+        {
+          "timestamp": 1580546185,
+          "direction": "sell",
+          "requested_contracts": 3,
+          "price_USD": "9389.5",
+          "visible_capacity_at_t": "4301872.0",
+          "minimum_capacity_for_first_100ms": 20036,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 4
+        }
+      ],
+      "five_second_equity_drawdown": {
+        "net": {
+          "BTC": "0.000421456141342294844867591635921151926129000103",
+          "fraction": "0.421456141342294844867591635921151926129000103"
+        },
+        "after_fees": {
+          "BTC": "0.000421456141342294844867591635921151926129000103",
+          "fraction": "0.421456141342294844867591635921151926129000103"
+        },
+        "gross": {
+          "BTC": "0.000010272055894567998689828039087835080211569838",
+          "fraction": "0.0102679043831073319319484842653794565706287850"
+        }
+      }
+    },
+    {
+      "day": "2020-08-01",
+      "seed": 1,
+      "rng_draw_count": 5278,
+      "engine_entry_and_close_counts": {
+        "closes": 481,
+        "wins": 5,
+        "losses": 476,
+        "entries": 481
+      },
+      "ordered_fills": 962,
+      "closed_count": 481,
+      "net_wins": 5,
+      "archived_fee_btc": "0.000411042446657985726252582808301132850024971374",
+      "closed_gross_at_fills_btc": "-0.0000141352925944645737195905970654683104123948123",
+      "minimum_quote_size_after_fill_contracts": "150.0",
+      "maximum_source_quote_age_us": 2705337,
+      "funding_settlement_mark_observations": {
+        "at": 1596254400,
+        "position": -6,
+        "rate": 0.0001,
+        "amount": 5.2777550541101845e-08,
+        "mark": 11368.47,
+        "alternateMark": 11369.61,
+        "balance": 0.0008703044691826853
+      },
+      "terminal_position": 0,
+      "terminal_fee_btc": "0",
+      "terminal_funding_btc": "0",
+      "terminal_unrealized_btc": "0",
+      "closed_actual_fee_net_btc": "-0.000322364350037412766572105056708268513838409010",
+      "quote_horizon_failed_bound_count": 12,
+      "failed_100ms_quote_bound_observations": [
+        {
+          "timestamp": 1596251980,
+          "direction": "buy",
+          "requested_contracts": 6,
+          "price_USD": "11373",
+          "visible_capacity_at_t": "17723.0",
+          "minimum_capacity_for_first_100ms": 5345,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 8
+        },
+        {
+          "timestamp": 1596253580,
+          "direction": "buy",
+          "requested_contracts": 6,
+          "price_USD": "11410.5",
+          "visible_capacity_at_t": "2343962.0",
+          "minimum_capacity_for_first_100ms": 268,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 7
+        },
+        {
+          "timestamp": 1596254200,
+          "direction": "closebuy",
+          "requested_contracts": 6,
+          "price_USD": "11397",
+          "visible_capacity_at_t": "10874.0",
+          "minimum_capacity_for_first_100ms": 10874,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 13
+        },
+        {
+          "timestamp": 1596261275,
+          "direction": "sell",
+          "requested_contracts": 5,
+          "price_USD": "11664",
+          "visible_capacity_at_t": "513705.0",
+          "minimum_capacity_for_first_100ms": 34673,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 6
+        },
+        {
+          "timestamp": 1596262800,
+          "direction": "closebuy",
+          "requested_contracts": 5,
+          "price_USD": "11730.5",
+          "visible_capacity_at_t": "2169.0",
+          "minimum_capacity_for_first_100ms": 1795,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 16
+        },
+        {
+          "timestamp": 1596265660,
+          "direction": "sell",
+          "requested_contracts": 5,
+          "price_USD": "11645.5",
+          "visible_capacity_at_t": "2716983.0",
+          "minimum_capacity_for_first_100ms": 3945,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 9
+        },
+        {
+          "timestamp": 1596266650,
+          "direction": "closesell",
+          "requested_contracts": 4,
+          "price_USD": "11609",
+          "visible_capacity_at_t": "2359973.0",
+          "minimum_capacity_for_first_100ms": 10000,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 3
+        },
+        {
+          "timestamp": 1596269655,
+          "direction": "buy",
+          "requested_contracts": 4,
+          "price_USD": "11738.5",
+          "visible_capacity_at_t": "2802201.0",
+          "minimum_capacity_for_first_100ms": 10006,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 16
+        },
+        {
+          "timestamp": 1596271700,
+          "direction": "closebuy",
+          "requested_contracts": 4,
+          "price_USD": "11700",
+          "visible_capacity_at_t": "26925.0",
+          "minimum_capacity_for_first_100ms": 165,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 19
+        },
+        {
+          "timestamp": 1596272070,
+          "direction": "buy",
+          "requested_contracts": 4,
+          "price_USD": "11706.5",
+          "visible_capacity_at_t": "1075294.0",
+          "minimum_capacity_for_first_100ms": 673,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 15
+        },
+        {
+          "timestamp": 1596273215,
+          "direction": "sell",
+          "requested_contracts": 4,
+          "price_USD": "11668.5",
+          "visible_capacity_at_t": "1776799.0",
+          "minimum_capacity_for_first_100ms": 3256,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 8
+        },
+        {
+          "timestamp": 1596274955,
+          "direction": "closebuy",
+          "requested_contracts": 4,
+          "price_USD": "11704.5",
+          "visible_capacity_at_t": "1149781.0",
+          "minimum_capacity_for_first_100ms": 47201,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 20
+        }
+      ],
+      "five_second_equity_drawdown": {
+        "net": {
+          "BTC": "0.000425124961701909198135250758783551726344651828",
+          "fraction": "0.425124961701909198135250758783551726344651828"
+        },
+        "after_fees": {
+          "BTC": "0.000425177739252450299972173405366601160437366151",
+          "fraction": "0.425177739252450299972173405366601160437366151"
+        },
+        "gross": {
+          "BTC": "0.000014892557699951089008788502951565505719368572",
+          "fraction": "0.0148847840308862451388920524095975661636503085"
+        }
+      }
+    },
+    {
+      "day": "2020-08-01",
+      "seed": 42,
+      "rng_draw_count": 5291,
+      "engine_entry_and_close_counts": {
+        "closes": 468,
+        "wins": 3,
+        "losses": 465,
+        "entries": 469
+      },
+      "ordered_fills": 937,
+      "closed_count": 468,
+      "net_wins": 3,
+      "archived_fee_btc": "0.000402550042212565761603260737000157383958684690",
+      "closed_gross_at_fills_btc": "-0.0000141042787496456190149707496769830017590211902",
+      "minimum_quote_size_after_fill_contracts": "244.0",
+      "maximum_source_quote_age_us": 2115638,
+      "funding_settlement_mark_observations": {
+        "at": 1596254400,
+        "position": 6,
+        "rate": 0.0001,
+        "amount": -5.2777550541101845e-08,
+        "mark": 11368.47,
+        "alternateMark": 11369.61,
+        "balance": 0.0008693797384725196
+      },
+      "terminal_position": 4,
+      "terminal_fee_btc": "3.41369746106251333475570727544271388948154470E-7",
+      "terminal_funding_btc": "0",
+      "terminal_unrealized_btc": "-2.291416477701394305134902455154875057757960E-7",
+      "closed_actual_fee_net_btc": "-0.000316069587959611042054338949010150473820749045",
+      "quote_horizon_failed_bound_count": 15,
+      "failed_100ms_quote_bound_observations": [
+        {
+          "timestamp": 1596251965,
+          "direction": "closebuy",
+          "requested_contracts": 6,
+          "price_USD": "11368",
+          "visible_capacity_at_t": "3469606.0",
+          "minimum_capacity_for_first_100ms": 20000,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 3
+        },
+        {
+          "timestamp": 1596255070,
+          "direction": "sell",
+          "requested_contracts": 6,
+          "price_USD": "11373.5",
+          "visible_capacity_at_t": "1363315.0",
+          "minimum_capacity_for_first_100ms": 5249,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 17
+        },
+        {
+          "timestamp": 1596258040,
+          "direction": "buy",
+          "requested_contracts": 5,
+          "price_USD": "11409.5",
+          "visible_capacity_at_t": "60242.0",
+          "minimum_capacity_for_first_100ms": 1737,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 16
+        },
+        {
+          "timestamp": 1596259640,
+          "direction": "sell",
+          "requested_contracts": 5,
+          "price_USD": "11504.5",
+          "visible_capacity_at_t": "164332.0",
+          "minimum_capacity_for_first_100ms": 10000,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 13
+        },
+        {
+          "timestamp": 1596260685,
+          "direction": "buy",
+          "requested_contracts": 5,
+          "price_USD": "11572",
+          "visible_capacity_at_t": "1369961.0",
+          "minimum_capacity_for_first_100ms": 2000,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 4
+        },
+        {
+          "timestamp": 1596261085,
+          "direction": "sell",
+          "requested_contracts": 5,
+          "price_USD": "11582",
+          "visible_capacity_at_t": "3350445.0",
+          "minimum_capacity_for_first_100ms": 1029,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 8
+        },
+        {
+          "timestamp": 1596261180,
+          "direction": "closebuy",
+          "requested_contracts": 5,
+          "price_USD": "11611.5",
+          "visible_capacity_at_t": "3060.0",
+          "minimum_capacity_for_first_100ms": 3050,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 4
+        },
+        {
+          "timestamp": 1596261345,
+          "direction": "closesell",
+          "requested_contracts": 5,
+          "price_USD": "11650.5",
+          "visible_capacity_at_t": "3266860.0",
+          "minimum_capacity_for_first_100ms": 7185,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 10
+        },
+        {
+          "timestamp": 1596261630,
+          "direction": "closebuy",
+          "requested_contracts": 5,
+          "price_USD": "11632",
+          "visible_capacity_at_t": "425473.0",
+          "minimum_capacity_for_first_100ms": 33371,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 5
+        },
+        {
+          "timestamp": 1596264760,
+          "direction": "closesell",
+          "requested_contracts": 5,
+          "price_USD": "11685.5",
+          "visible_capacity_at_t": "2058.0",
+          "minimum_capacity_for_first_100ms": 2058,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 20
+        },
+        {
+          "timestamp": 1596269615,
+          "direction": "buy",
+          "requested_contracts": 4,
+          "price_USD": "11734.5",
+          "visible_capacity_at_t": "24908.0",
+          "minimum_capacity_for_first_100ms": 7224,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 10
+        },
+        {
+          "timestamp": 1596270690,
+          "direction": "closebuy",
+          "requested_contracts": 4,
+          "price_USD": "11681",
+          "visible_capacity_at_t": "258877.0",
+          "minimum_capacity_for_first_100ms": 100,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 6
+        },
+        {
+          "timestamp": 1596272070,
+          "direction": "closesell",
+          "requested_contracts": 4,
+          "price_USD": "11706.5",
+          "visible_capacity_at_t": "1075294.0",
+          "minimum_capacity_for_first_100ms": 673,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 15
+        },
+        {
+          "timestamp": 1596272595,
+          "direction": "buy",
+          "requested_contracts": 4,
+          "price_USD": "11692.5",
+          "visible_capacity_at_t": "3182509.0",
+          "minimum_capacity_for_first_100ms": 10605,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 33
+        },
+        {
+          "timestamp": 1596273215,
+          "direction": "sell",
+          "requested_contracts": 4,
+          "price_USD": "11668.5",
+          "visible_capacity_at_t": "1776799.0",
+          "minimum_capacity_for_first_100ms": 3256,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 8
+        }
+      ],
+      "five_second_equity_drawdown": {
+        "net": {
+          "BTC": "0.000417318164426217888643936776285454460199669033",
+          "fraction": "0.417318164426217888643936776285454460199669033"
+        },
+        "after_fees": {
+          "BTC": "0.000417265386875676786807014129702405026106954710",
+          "fraction": "0.417265386875676786807014129702405026106954710"
+        },
+        "gross": {
+          "BTC": "0.000015489140025683944031199250859858208318458978",
+          "fraction": "0.0154810549505017884697547851032742735679611638"
+        }
+      }
+    },
+    {
+      "day": "2020-08-01",
+      "seed": 20201120,
+      "rng_draw_count": 5266,
+      "engine_entry_and_close_counts": {
+        "closes": 493,
+        "wins": 8,
+        "losses": 485,
+        "entries": 494
+      },
+      "ordered_fills": 987,
+      "closed_count": 493,
+      "net_wins": 8,
+      "archived_fee_btc": "0.000421373322060274756171674411889221701885169580",
+      "closed_gross_at_fills_btc": "-0.0000037274428897036157574054833108799189084537939",
+      "minimum_quote_size_after_fill_contracts": "136.0",
+      "maximum_source_quote_age_us": 1542184,
+      "funding_settlement_mark_observations": {
+        "at": 1596254400,
+        "position": 0,
+        "rate": 0.0001,
+        "amount": 0,
+        "mark": 11368.47,
+        "alternateMark": 11369.61,
+        "balance": 0.0008684670019828122
+      },
+      "terminal_position": -4,
+      "terminal_fee_btc": "3.41369746106251333475570727544271388948154470E-7",
+      "terminal_funding_btc": "0",
+      "terminal_unrealized_btc": "2.291416477701394305134902455154875057757960E-7",
+      "closed_actual_fee_net_btc": "-0.000319757434434909682886161292227796195322330993",
+      "quote_horizon_failed_bound_count": 10,
+      "failed_100ms_quote_bound_observations": [
+        {
+          "timestamp": 1596251965,
+          "direction": "closesell",
+          "requested_contracts": 6,
+          "price_USD": "11368.5",
+          "visible_capacity_at_t": "7263.0",
+          "minimum_capacity_for_first_100ms": 703,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 3
+        },
+        {
+          "timestamp": 1596251980,
+          "direction": "closebuy",
+          "requested_contracts": 6,
+          "price_USD": "11372.5",
+          "visible_capacity_at_t": "2800440.0",
+          "minimum_capacity_for_first_100ms": 26225,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 8
+        },
+        {
+          "timestamp": 1596252305,
+          "direction": "buy",
+          "requested_contracts": 6,
+          "price_USD": "11385.5",
+          "visible_capacity_at_t": "1752646.0",
+          "minimum_capacity_for_first_100ms": 16000,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 22
+        },
+        {
+          "timestamp": 1596253580,
+          "direction": "closesell",
+          "requested_contracts": 6,
+          "price_USD": "11410.5",
+          "visible_capacity_at_t": "2343962.0",
+          "minimum_capacity_for_first_100ms": 268,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 7
+        },
+        {
+          "timestamp": 1596260360,
+          "direction": "closebuy",
+          "requested_contracts": 5,
+          "price_USD": "11519.5",
+          "visible_capacity_at_t": "2902887.0",
+          "minimum_capacity_for_first_100ms": 879,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 20
+        },
+        {
+          "timestamp": 1596261260,
+          "direction": "buy",
+          "requested_contracts": 5,
+          "price_USD": "11675.5",
+          "visible_capacity_at_t": "63072.0",
+          "minimum_capacity_for_first_100ms": 538,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 11
+        },
+        {
+          "timestamp": 1596261345,
+          "direction": "buy",
+          "requested_contracts": 5,
+          "price_USD": "11650.5",
+          "visible_capacity_at_t": "3266860.0",
+          "minimum_capacity_for_first_100ms": 7185,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 10
+        },
+        {
+          "timestamp": 1596262870,
+          "direction": "closebuy",
+          "requested_contracts": 5,
+          "price_USD": "11755.5",
+          "visible_capacity_at_t": "3504528.0",
+          "minimum_capacity_for_first_100ms": 17195,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 7
+        },
+        {
+          "timestamp": 1596263345,
+          "direction": "closesell",
+          "requested_contracts": 5,
+          "price_USD": "11722.5",
+          "visible_capacity_at_t": "22973.0",
+          "minimum_capacity_for_first_100ms": 22973,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 27
+        },
+        {
+          "timestamp": 1596272560,
+          "direction": "sell",
+          "requested_contracts": 4,
+          "price_USD": "11701.5",
+          "visible_capacity_at_t": "29462.0",
+          "minimum_capacity_for_first_100ms": 353,
+          "same_price_for_first_100ms": false,
+          "observed_next_updates": 2
+        }
+      ],
+      "five_second_equity_drawdown": {
+        "net": {
+          "BTC": "0.000425212993048314483832041975682130404676795740",
+          "fraction": "0.425212993048314483832041975682130404676795740"
+        },
+        "after_fees": {
+          "BTC": "0.000425212993048314483832041975682130404676795740",
+          "fraction": "0.425212993048314483832041975682130404676795740"
+        },
+        "gross": {
+          "BTC": "0.000010027400900526465563752043607201307090837179",
+          "fraction": "0.0100200187607685296618101849131038355237004736"
+        }
+      }
+    }
+  ],
+  "source": {
+    "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%8A%9B%E7%A1%AC%E5%B8%81%E7%AD%96%E7%95%A5.md",
+    "publisher": "https://www.fmz.com/strategy/201007",
+    "archive_sha256": "c8201a549921c32577eb6ffe35b9ed789e3a3e883e58a05aad3cb15d285d70b4",
+    "source_sha256": "e5423abddbd71628bf8306eb97e2ad53d88148a31a6e2b671a198f8fbd18aaef",
+    "parameters": {
+      "tp_first": 0.03,
+      "trailing_tp": 0.01,
+      "st": 0.1
+    },
+    "fees_pct": [
+      0.008,
+      0.1
+    ]
+  },
+  "capture": {
+    "2020-02-01": {
+      "receipts": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/trades/2020/02/01/XBTUSD.csv.gz",
+          "dataset": "trades",
+          "bytes": 12345412,
+          "sha256": "81198a6d483a620248f81b4a873859f2dbc590e392e91a7a5f9023d86ab34648",
+          "rows": 416480,
+          "first_local_us": 1580515203504676,
+          "last_local_us": 1580601599817828,
+          "max_gap_us": 30139582
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/quotes/2020/02/01/XBTUSD.csv.gz",
+          "dataset": "quotes",
+          "bytes": 17609363,
+          "sha256": "e3edf1bee4234bbae68ca47f98e8d31ef444ea4147273c39c9b6a33728ed694b",
+          "rows": 1783426,
+          "first_local_us": 1580515200398111,
+          "last_local_us": 1580601599820841,
+          "max_gap_us": 8921239
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2020/02/01/XBTUSD.csv.gz",
+          "dataset": "derivative_ticker",
+          "bytes": 889924,
+          "sha256": "b3001b4ee28234778c18fbed3fce03863df0dc16cdc9be72e667138c47c7f8ed",
+          "rows": 68394,
+          "first_local_us": 1580515200761087,
+          "last_local_us": 1580601598966453,
+          "max_gap_us": 24209237
+        }
+      },
+      "full_day_market_ohlc": [
+        9339.5,
+        9464.0,
+        9287.5,
+        9382.0
+      ]
+    },
+    "2020-08-01": {
+      "receipts": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/trades/2020/08/01/XBTUSD.csv.gz",
+          "dataset": "trades",
+          "bytes": 16055327,
+          "sha256": "0aa417701cf5de1b83e6d224be8ab982f2cd8764508c81cb522e6d333e59cf09",
+          "rows": 529212,
+          "first_local_us": 1596240003227956,
+          "last_local_us": 1596326399237108,
+          "max_gap_us": 31646162
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/quotes/2020/08/01/XBTUSD.csv.gz",
+          "dataset": "quotes",
+          "bytes": 25597251,
+          "sha256": "e7cccb418a3288b6f5709f6d32ab09140727338a363d3946538c54a5074595f6",
+          "rows": 2593531,
+          "first_local_us": 1596240002735593,
+          "last_local_us": 1596326399990274,
+          "max_gap_us": 7619361
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2020/08/01/XBTUSD.csv.gz",
+          "dataset": "derivative_ticker",
+          "bytes": 1360044,
+          "sha256": "f9b95146388a6561fd3231d79fed06414da77d49b7b057445633dc5c3bbd0cbb",
+          "rows": 109351,
+          "first_local_us": 1596240002627184,
+          "last_local_us": 1596326399240769,
+          "max_gap_us": 20045326
+        }
+      },
+      "full_day_market_ohlc": [
+        11361.0,
+        11908.5,
+        11246.0,
+        11827.5
+      ]
+    }
+  },
+  "proof": {
+    "stage_sha256": "35f7983625c95c41d9591a516f9a8c4131870746d330da48f6b711c72cab20d4",
+    "worker_sha256": "0a8e82ea3852571f9ac25f9636fcb35148bd01a6da9d768e28a42ef9eec1f2bd",
+    "verification_sha256": "f968bdb020fbf0ce54df864f000f6a252ef7a494d2d34767bfde9c58d3aeeaa9",
+    "input_sha256": "0ee722a0f6c54121b436390f7fba89e7e959dbf931b6ad7d234fd63849368a74",
+    "execution_receipt_sha256": "488c9788668c0130cfe6a94f172e61ac794086440dd1f7d3e5c2543564cb2878",
+    "native_engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "r20_capture_sha256": "370b7f8b9ccadc69b40ba6d0d85fa1fa61f771b0770cd236f51799d210436036"
+  },
+  "method": {
+    "scope": "Two direct BitMEX XBTUSD February 1 and August 1 2020 02:00–10:00 UTC slices inside the authored range. Three prespecified xorshift32 seeds (1, 42, 20201120) replace only the randomness source. Independent flat starting wallet 0.001 BTC and 1x, which the publisher did not specify. The original source has 15m chart/5m base and unseeded draws. Benchmark 5s observed quote grid samples are chosen in advance, distinct from the original author FMZ synthetic-tick path.",
+    "clock": "Exact JavaScript runs under approved offline isolation. Each market getter can read the current captured time once. Repeated reads advance by one market snapshot, in line with the published FMZ real-tick mechanism. The review uses zero extra request delay as an explicit simulation setting. GetRecords resamples the observed trade path for chart output only. Seeded source math and market-access clock jointly specify the replay; dashboard counters were checked but metrics come from the order ledger.",
+    "fills": "The archived strategy submits crossing limits at the current observed bid or ask. Each 0 ms order must fit the full displayed quantity at that time and use only a causal quote that is at most five seconds old. This is a historical model and no orders are externally transmitted. Relative to observed last-trade samples, separate execution cost includes the full direction-dependent quote difference.",
+    "delay_sensitivity": "Independently re-stream each full quote capture. Compare the 100 ms minimum available quantity at the same crossing price for each winning gate, with exact timestamps. Only February seed 42 kept the same full-capacity crossing bound for every order. A lost bound leaves the delayed outcome unknown. Keep all six predetermined zero-delay benchmarks as reported, and never infer delayed P&L from a failed observation.",
+    "exits": "Independent decision verification matches all seeded digits, order types, amounts and the skipped market tick introduced by each account refresh after a close. Neither the trailing activation nor stop branch triggered on the observed retained paths. Open positions at the fixed boundary are marked without forcing a close.",
+    "accounting": "The author sets 0.008% maker and 0.100% taker. All instantaneous simulated executions use the authored taker rate. Market funding at 04:00 UTC uses captured XBTUSD funding, proportional to the signed open position and last observable settlement mark. All values use BTC. A same-fill 0.075% historical fee diagnostic changes only accounting, since it cannot reconstruct new quantities that depend on cash. The independently reconciled marked equity drawdown includes still-open exposure and all debits."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/201007",
+    "https://www.fmz.com/user-guide/backtesting-system/backtest-modes-and-order-matching",
+    "https://www.fmz.com/user-guide/backtesting-system/overview-and-starting-a-backtest",
+    "https://docs.tardis.dev/historical-data-details/bitmex",
+    "https://www.bitmex.com/blog/why-we-revamped-our-fee-structure"
+  ],
+  "reproduction": "Stage with the pinned source ZIP and R20 BitMEX SAR capture produced by fmz_native_round20_880_capture.py. Keep the R26 quote-horizon helper beside the stage. Run the worker in the existing network-denied AppContainer, and use this verifier to independently rebuild the report."
+}
