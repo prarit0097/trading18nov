@@ -362,19 +362,32 @@ def safe_input(parts, opening):
     return variant, patches
 
 
-def migrate(source, *, allow_read_only_legacy=False, resolve_shadowed=False):
+def migrate(
+    source,
+    *,
+    allow_read_only_legacy=False,
+    resolve_shadowed=False,
+    verified_requests=False,
+    isolated_literals=False,
+):
     version = VERSION.search(source)
     if not version or version[1] not in {"2", "3", "4"}:
         raise MigrationBlocked("Unversioned source or unsupported source version")
     old = int(version[1])
     code = re.sub(r"/\*.*?\*/", "", source, flags=re.DOTALL)
     code = VERSION.sub("//@version=5", code, count=1).strip()
-    problem = eligibility(code)
+    problem = eligibility(
+        code, verified_requests=verified_requests, isolated_literals=isolated_literals
+    )
     if problem:
         raise MigrationBlocked(problem)
     declaration_check = re.sub(
         r"""//[^\n]*|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'""", "", code
     )
+    if verified_requests:
+        declaration_check = declaration_check.replace(
+            "ticker.heikinashi(syminfo.tickerid)", "syminfo.tickerid"
+        )
     if re.search(
         r"\b(?:timenow|isrealtime|islastconfirmedhistory|heikinashi|renko|kagi|linebreak|pointfigure|random)\b|\[\s*-\d",
         declaration_check,
@@ -484,7 +497,9 @@ def migrate(source, *, allow_read_only_legacy=False, resolve_shadowed=False):
             raise MigrationBlocked("Overlapping legacy source conversions")
         out = out[:a] + replacement + out[b:]
         end = a
-    problem = eligibility(out)
+    problem = eligibility(
+        out, verified_requests=verified_requests, isolated_literals=isolated_literals
+    )
     if problem:
         raise MigrationBlocked(problem)
     return out, old, dict(renamed)

@@ -1,0 +1,54 @@
+const Library = require("./fmz-wasm-engine.cjs");
+const hostProcess = process;
+const fs = require("node:fs");
+const assert = require("node:assert/strict");
+const path = require("node:path");
+(async () => {
+ await new Promise(r => setTimeout(r, 500));
+ const details = {};
+ const feeds = {};
+ for (const name of ["swap", "funding"]) {
+   feeds[name] = fs.readFileSync(path.join(__dirname, name + ".json"), "utf8");
+   details[name] = JSON.parse(feeds[name]);
+ }
+ const queried = [];
+ global.__offlineProbe = (text) => {
+   const url = new URL(text), query = url.searchParams;
+   assert.equal(url.origin + url.pathname, "https://q.fmz.com/data/history");
+   assert.equal(query.get("eid"), "Futures_Binance");
+   assert.equal(query.get("event"), "feed");
+   assert.equal(query.get("period"), "300000");
+   assert.equal(query.get("from"), "1789201800");
+   assert.equal(query.get("to"), "1790109000");
+   const symbol = query.get("symbol");
+   assert.match(symbol, /^BTC_USDT\.(swap|funding)$/);
+   const feed = symbol.split(".")[1];
+   queried.push(feed);
+   return feeds[feed];
+ };
+ const ctx = Library.VCtx({start:"2026-09-23 00:00:00",end:"2026-09-23 02:00:00",period:"15m",basePeriod:"5m",exchanges:[{eid:"Futures_Binance",currency:"BTC_USDT",balance:10000,stocks:0,fee:[.059,.059]}]});
+ const first = exchange.GetTicker();
+ assert.equal(first.Symbol,"BTC_USDT.swap");
+ const firstBar=details.swap.data.find(x => x[0] === first.Time);
+ assert.equal(first.Last,firstBar[1]/10);
+ exchange.SetContractType("swap");
+ exchange.SetDirection("buy");
+ assert.ok(exchange.Buy(-1,.01));
+ Sleep(600000);
+ exchange.SetDirection("closebuy");
+ assert.ok(exchange.Sell(-1,.01));
+ Sleep(1000);
+ const orders = exchange.GetHistoryOrders();
+ assert.equal(orders.length,2);
+ assert.deepEqual(orders.map(x => x.Status),[1,1]);
+ assert.deepEqual(orders.map(x => x.DealAmount),[.01,.01]);
+ assert.deepEqual(orders.map(x => x.Offset),[0,1]);
+ const account = exchange.GetAccount(), run = JSON.parse(ctx.Join());
+ const gross = (orders[1].AvgPrice - orders[0].AvgPrice) * .01;
+ const fee = (orders[1].AvgPrice + orders[0].AvgPrice) * .01 * .00059;
+ assert.ok(Math.abs(account.Balance - (10000 + gross - fee)) < 1e-7, JSON.stringify({account,gross,fee}));
+ assert.deepEqual([...new Set(queried)].sort(),["funding","swap"]);
+ const result = {queried, first, orders, account, gross, fee, net:gross-fee, finished:run.Finished};
+ console.log(JSON.stringify(result));
+ if (hostProcess.argv.includes("--receipt")) fs.writeFileSync(path.join(__dirname,"native-fixture-receipt.json"),JSON.stringify(result,null,2)+"\n");
+})().catch(e => {fs.writeFileSync(path.join(__dirname,"sandbox-error.txt"), e.stack || String(e));hostProcess.exitCode=1});

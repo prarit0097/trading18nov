@@ -89,17 +89,27 @@ def source_block(document):
     ]
 
 
-def eligibility(block):
+def eligibility(block, *, verified_requests=False, isolated_literals=False):
     version = re.search(r"(?m)^\s*//\s*@version\s*=\s*(\d+)", block)
     if not version or version[1] not in ("5", "6"):
         return "Pine 2–4 or unversioned source needs a compatible runtime"
-    # Ignore comments when detecting APIs. Host strings are screened before quote removal.
     code = re.sub(r"/\*.*?\*/", "", block, flags=re.DOTALL)
-    executable = re.sub(r"(?m)//.*$", "", code)
+    if isolated_literals:
+        # This option is reserved for an independently verified no-network
+        # process sandbox. Preserve source strings and screen executable tokens.
+        executable = re.sub(
+            r"""//[^\n]*|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'""", " ", code
+        )
+        if '"' in executable or "'" in executable:
+            return "Source outside the isolated Pine runner's supported syntax"
+    else:
+        executable = re.sub(r"(?m)//.*$", "", code)
     if UNSAFE_HOST.search(executable) or re.search(r"[{};\\\x60]", executable):
         return "Source outside the isolated Pine runner's supported syntax"
     stripped = re.sub(r"""("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')""", "", executable)
-    if EXTERNAL.search(stripped) or re.search(r"\binput\.symbol\b", stripped):
+    if (EXTERNAL.search(stripped) and not verified_requests) or re.search(
+        r"\binput\.symbol\b", stripped
+    ):
         return "External data, visible chart range or imported library required"
     if re.search(
         r"\b(?:calc_on_every_tick|calc_on_order_fills|use_bar_magnifier)\s*=\s*(?!false\b)",
@@ -129,7 +139,9 @@ def datasets(reference, later, archive_reports, interval, *, align_epoch=False):
         if align_epoch:
             first = ((first + interval - 1) // interval) * interval
             stop = (stop // interval) * interval
-        windows[label] = {s: aggregate(candles[s], first, stop, interval) for s in COINS}
+        windows[label] = {
+            s: aggregate(candles[s], first, stop, interval) for s in COINS
+        }
         meta[label] = {
             "start_ist": start,
             "end_ist_exclusive": end,

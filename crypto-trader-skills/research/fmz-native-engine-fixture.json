@@ -1,0 +1,58 @@
+{
+  "queried": [
+    "swap",
+    "funding"
+  ],
+  "first": {
+    "Time": 1790101800000,
+    "Symbol": "BTC_USDT.swap",
+    "Open": 86235.5,
+    "High": 86235.6,
+    "Low": 86235.4,
+    "Sell": 86235.6,
+    "Buy": 86235.4,
+    "Last": 86235.5,
+    "Volume": 0,
+    "OpenInterest": 0
+  },
+  "orders": [
+    {
+      "Id": 1,
+      "Time": 1790101800400,
+      "Price": 0,
+      "Amount": 0.01,
+      "DealAmount": 0.01,
+      "AvgPrice": 86235.6,
+      "Type": 0,
+      "Offset": 0,
+      "Status": 1,
+      "Symbol": "BTC_USDT.swap",
+      "ContractType": "swap"
+    },
+    {
+      "Id": 2,
+      "Time": 1790102400600,
+      "Price": 0,
+      "Amount": 0.01,
+      "DealAmount": 0.01,
+      "AvgPrice": 86370.4,
+      "Type": 1,
+      "Offset": 1,
+      "Status": 1,
+      "Symbol": "BTC_USDT.swap",
+      "ContractType": "swap"
+    }
+  ],
+  "account": {
+    "Balance": 10000.3296246,
+    "FrozenBalance": 0,
+    "Stocks": 0,
+    "FrozenStocks": 0,
+    "Equity": 10000.3296246,
+    "UPnL": 0
+  },
+  "gross": 1.3479999999998835,
+  "fee": 1.0183754,
+  "net": 0.32962459999988347,
+  "finished": true
+}

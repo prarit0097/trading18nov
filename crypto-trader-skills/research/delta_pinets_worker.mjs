@@ -9,6 +9,10 @@ const FEE = .00059;
 const TICKS = { BTCUSD: .1, ETHUSD: .05 };
 const CLOSED_FIELDS = ["entry_price", "exit_price", "entry_time", "exit_time", "size", "commission", "profit"];
 
+function normalizedTimeframe(value) {
+  return { "1D": "D", "1W": "W" }[value] ?? value;
+}
+
 function drawdown(trades, offset) {
   const byTime = new Map();
   for (const row of trades) byTime.set(row[0], (byTime.get(row[0]) ?? 0) + row[offset]);
@@ -52,7 +56,10 @@ async function runWorker() {
   for (const method of ["log", "info", "warn", "error", "debug"]) console[method] = () => {};
   const { Indicator, PineTS } = await import(pathToFileURL(workerData.engine).href);
   const windows = JSON.parse(fs.readFileSync(workerData.candles, "utf8"));
-  const firstBar = Object.values(windows)[0].BTCUSD[0][0];
+  const firstWindow = Object.values(windows)[0];
+  const coins = firstWindow.market ? Object.keys(firstWindow.market.symbols) : ["BTCUSD", "ETHUSD"];
+  const pooled = firstWindow.market ? coins.join(" + ") : "BTC + ETH";
+  const firstBar = firstWindow[coins[0]][0][0];
   const interval = String((firstBar.closeTime - firstBar.openTime) / 60_000);
   const configs = {
     default_qty_type: "cash", default_qty_value: 1000, initial_capital: EQUITY,
@@ -65,18 +72,34 @@ async function runWorker() {
     let unresolved = 0;
     for (const candles of windowsByCoin[symbol]) {
       const available = new Map(candles.map((row) => [row.openTime, row.volume > 0]));
-      const tick = TICKS[symbol];
+      const extra = windowsByCoin.market;
+      const tick = extra?.symbols[symbol].tick ?? TICKS[symbol];
+      const firstTime = candles[0].openTime;
+      const lastTime = candles.at(-1).closeTime;
+      let missing;
       const provider = {
         configure() {},
         async getMarketData(ticker, timeframe) {
-          if (ticker !== symbol || timeframe !== interval) throw Error("Unavailable market-data dependency");
-          return candles;
+          const key = normalizedTimeframe(timeframe);
+          const synthetic = typeof ticker === "string" && ticker.endsWith(";heikinashi");
+          const requested = synthetic ? ticker.slice(0, -";heikinashi".length) : ticker;
+          if (requested === symbol || (extra && requested === extra.prefix + ":" + symbol)) {
+            if (!synthetic && key === interval) return candles;
+            const feeds = synthetic ? extra?.heikinAshi : extra?.references;
+            const secondary = feeds?.[symbol]?.[key]?.filter(
+              row => row.openTime >= firstTime && row.closeTime <= lastTime
+            );
+            if (secondary?.length) return secondary;
+          }
+          missing = Error("Unavailable market-data dependency: " + String(ticker) + " " + String(timeframe));
+          throw missing;
         },
         async getSymbolInfo() {
-          return { ticker: symbol, tickerid: symbol, currency: "USD", basecurrency: symbol.slice(0, 3),
+          return { ticker: symbol, tickerid: symbol, currency: extra?.currency ?? "USD", basecurrency: symbol.slice(0, 3),
                    type: "crypto", timezone: "UTC", mintick: tick, pointvalue: 1,
-                   mincontract: 0.00000001, pricescale: Math.round(1 / tick), minmove: 1,
-                   session: "24x7", prefix: "DELTA" };
+                   mincontract: extra?.symbols[symbol].step ?? 0.00000001,
+                   pricescale: Math.round(1 / tick), minmove: 1,
+                   session: "24x7", prefix: extra?.prefix ?? "DELTA" };
         }
       };
       const engine = new PineTS(provider, symbol, interval, candles.length);
@@ -84,6 +107,7 @@ async function runWorker() {
       engine.setMaxLoops(500);
       engine.setImportResolver(null);
       const context = await engine.run(indicator);
+      if (missing) throw missing;
       if (context.warnings?.length) throw Error("PineTS emitted runtime warnings");
       if (!context.strategy) throw Error("PineTS did not return a strategy ledger");
       const state = context.strategy;
@@ -118,11 +142,11 @@ async function runWorker() {
       for (const [key, value] of Object.entries(configs)) indicator.prop[key] = value;
       const results = [];
       for (const [period, candles] of Object.entries(windows)) {
-        const btc = await replay(indicator, candles, "BTCUSD");
-        const eth = await replay(indicator, candles, "ETHUSD");
-        results.push(summarize(item, period, "BTCUSD", btc.sample, btc.unresolved, interval),
-                     summarize(item, period, "ETHUSD", eth.sample, eth.unresolved, interval),
-                     summarize(item, period, "BTC + ETH", [...btc.sample, ...eth.sample],
+        const btc = await replay(indicator, candles, coins[0]);
+        const eth = await replay(indicator, candles, coins[1]);
+        results.push(summarize(item, period, coins[0], btc.sample, btc.unresolved, interval),
+                     summarize(item, period, coins[1], eth.sample, eth.unresolved, interval),
+                     summarize(item, period, pooled, [...btc.sample, ...eth.sample],
                                btc.unresolved + eth.unresolved, interval));
       }
       parentPort.postMessage({ id: item.id, results });

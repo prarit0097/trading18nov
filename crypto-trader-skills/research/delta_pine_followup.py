@@ -213,7 +213,7 @@ def eager_iff(code):
     return patch(code, changes), len(changes)
 
 
-def followup(source):
+def followup(source, *, verified_requests=False, isolated_literals=False):
     clean = re.sub(r"/\*.*?\*/", "", source, flags=re.DOTALL)
     executable = NO_QUOTED.sub("", clean)
     if not re.search(r"(?m)^strategy\s*\(", executable):
@@ -236,7 +236,11 @@ def followup(source):
         if count:
             labels[key] = count
     final, old, transforms = migrate(
-        fixed, allow_read_only_legacy=True, resolve_shadowed=True
+        fixed,
+        allow_read_only_legacy=True,
+        resolve_shadowed=True,
+        verified_requests=verified_requests,
+        isolated_literals=isolated_literals,
     )
     return final, old, transforms, dict(labels)
 
