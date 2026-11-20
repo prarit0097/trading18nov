@@ -1,0 +1,4111 @@
+{
+  "coverage": [
+    [
+      4834,
+      "Tested · exact archived Binance BTCUSDT source in native simulated ticks",
+      "Full authored date range. Native broker matched 41 closed cycles, one marked open long, reconciled execution, fees and funding, and deterministically repeated."
+    ],
+    [
+      4835,
+      "Tested · exact archived Binance BTCUSDT source in native simulated ticks",
+      "Full authored date range. Native broker matched 13 closed cycles, one marked open long, reconciled execution, fees and funding, and deterministically repeated."
+    ]
+  ],
+  "results": [
+    {
+      "gross": 307.2394,
+      "after_fees": 288.74822688,
+      "net": 278.669174561272,
+      "fees": 18.49117312,
+      "execution": 0.074,
+      "funding": -10.005052318728,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 41,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 41,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 41,
+      "id": 4834,
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "group": "FMZ Native · KDJ and martingale",
+      "name": "测试-关于使用kdj与vol量筛选可能会涨的币种",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%B5%8B%E8%AF%95-%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8kdj%E4%B8%8Evol%E9%87%8F%E7%AD%9B%E9%80%89%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%B6%A8%E7%9A%84%E5%B8%81%E7%A7%8D.md",
+      "period": "2021-05-01–2021-05-28 UTC",
+      "interval": "1h chart · native 1h simulation base",
+      "exit": "Archived profit/recovery rules · marked open tail",
+      "trades": 41,
+      "unsettled": 1,
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": 255.805311697102,
+      "remaining_unrealized": -22.3775
+    },
+    {
+      "gross": 503.8386,
+      "after_fees": 466.23118768,
+      "net": 423.653230798567,
+      "fees": 37.60741232,
+      "execution": 0.1624,
+      "funding": -42.415556881433,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 13,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 13,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 13,
+      "id": 4835,
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "group": "FMZ Native · KDJ and martingale",
+      "name": "测试-关于马丁长期效果",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%B5%8B%E8%AF%95-%E5%85%B3%E4%BA%8E%E9%A9%AC%E4%B8%81%E9%95%BF%E6%9C%9F%E6%95%88%E6%9E%9C.md",
+      "period": "2021-05-01–2021-08-28 UTC",
+      "interval": "4h chart · native 1h simulation base",
+      "exit": "Archived profit/recovery rules · marked open tail",
+      "trades": 13,
+      "unsettled": 1,
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": -1295.116464425679,
+      "remaining_unrealized": -1450.1251
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": 4834,
+      "executed_taker": 164,
+      "executed_maker": 41,
+      "canceled_unfilled": 122,
+      "opened_size_BTC_at_cutoff": "0.013",
+      "pending_reduce_only_size_BTC_at_cutoff": "0.013",
+      "marked_drawdown_USDT": "312.929283814795",
+      "marked_drawdown_fraction": "0.0312007390159022218110253078438429767267540",
+      "native_cutoff": {
+        "now": 1622160002000,
+        "ticker": {
+          "Time": 1622160000000,
+          "Symbol": "BTC_USDT.swap",
+          "Open": 38527.4,
+          "High": 38527.5,
+          "Low": 38527.3,
+          "Sell": 38527.5,
+          "Buy": 38527.3,
+          "Last": 38527.4,
+          "Volume": 0,
+          "OpenInterest": 0
+        },
+        "account": {
+          "Balance": 10252.021126697104,
+          "FrozenBalance": 0,
+          "Stocks": 0,
+          "FrozenStocks": 0,
+          "Equity": 10255.805311697102,
+          "UPnL": -22.3775
+        },
+        "position": [
+          {
+            "Price": 40248.74615384616,
+            "Amount": 0.013,
+            "FrozenAmount": 0.013,
+            "Profit": -22.3775,
+            "Margin": 26.161685,
+            "MarginLevel": 20,
+            "Type": 0,
+            "Symbol": "BTC_USDT.swap",
+            "ContractType": "swap"
+          }
+        ],
+        "pending": [
+          {
+            "Id": 328,
+            "Time": 1622025059100,
+            "Price": 40651.2,
+            "Amount": 0.013,
+            "DealAmount": 0,
+            "AvgPrice": 0,
+            "Type": 1,
+            "Offset": 1,
+            "Status": 0,
+            "Symbol": "BTC_USDT.swap",
+            "ContractType": "swap"
+          }
+        ]
+      },
+      "actual_closed_gross_at_fills_USDT": "307.1654",
+      "native_marked_wallet_USDT": "10278.182811697102",
+      "open_funding_USDT": "-0.277069384170",
+      "open_funding_bound_USDT": [
+        "-0.27992825",
+        "-0.27256087"
+      ],
+      "open_entry_fee_USDT": "0.20929348",
+      "open_entries": [
+        {
+          "id": 317,
+          "fill_ms": 1622011471400,
+          "latest_observed_fill_ms": 1622011471400,
+          "qty": "0.005",
+          "price": "40771.4",
+          "benchmark": "40771.3",
+          "fee": "0.08154280",
+          "maker": false
+        },
+        {
+          "id": 319,
+          "fill_ms": 1622015069000,
+          "latest_observed_fill_ms": 1622015069000,
+          "qty": "0.001",
+          "price": "40272.1",
+          "benchmark": "40272",
+          "fee": "0.01610884",
+          "maker": false
+        },
+        {
+          "id": 321,
+          "fill_ms": 1622017857000,
+          "latest_observed_fill_ms": 1622017857000,
+          "qty": "0.001",
+          "price": "40113.4",
+          "benchmark": "40113.3",
+          "fee": "0.01604536",
+          "maker": false
+        },
+        {
+          "id": 323,
+          "fill_ms": 1622018089000,
+          "latest_observed_fill_ms": 1622018089000,
+          "qty": "0.001",
+          "price": "40192.1",
+          "benchmark": "40192",
+          "fee": "0.01607684",
+          "maker": false
+        },
+        {
+          "id": 325,
+          "fill_ms": 1622018669000,
+          "latest_observed_fill_ms": 1622018669000,
+          "qty": "0.003",
+          "price": "39720.1",
+          "benchmark": "39720",
+          "fee": "0.04766412",
+          "maker": false
+        },
+        {
+          "id": 327,
+          "fill_ms": 1622025057000,
+          "latest_observed_fill_ms": 1622025057000,
+          "qty": "0.002",
+          "price": "39819.4",
+          "benchmark": "39819.3",
+          "fee": "0.03185552",
+          "maker": false
+        }
+      ],
+      "closed_cycles": [
+        {
+          "entries": [
+            {
+              "id": 1,
+              "fill_ms": 1619827202400,
+              "latest_observed_fill_ms": 1619827202400,
+              "qty": "0.003",
+              "price": "57688.4",
+              "benchmark": "57688.3",
+              "fee": "0.06922608",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 2,
+            "fill_ms": 1619833468000,
+            "latest_observed_fill_ms": 1619833468800,
+            "qty": "0.003",
+            "price": "58265.3",
+            "benchmark": "58265.3",
+            "fee": "0.03495918",
+            "maker": true
+          },
+          "gross": "1.7310",
+          "gross_at_fills": "1.7307",
+          "fees": "0.10418526",
+          "execution": "0.0003",
+          "after_fees": "1.62681474",
+          "funding": "0E-8",
+          "net": "1.62651474",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 3,
+              "fill_ms": 1619833471400,
+              "latest_observed_fill_ms": 1619833471400,
+              "qty": "0.003",
+              "price": "58488.3",
+              "benchmark": "58488.2",
+              "fee": "0.07018596",
+              "maker": false
+            },
+            {
+              "id": 5,
+              "fill_ms": 1619859949000,
+              "latest_observed_fill_ms": 1619859949000,
+              "qty": "0.001",
+              "price": "57284.3",
+              "benchmark": "57284.2",
+              "fee": "0.02291372",
+              "maker": false
+            },
+            {
+              "id": 7,
+              "fill_ms": 1619926257000,
+              "latest_observed_fill_ms": 1619926257000,
+              "qty": "0.002",
+              "price": "56814.4",
+              "benchmark": "56814.3",
+              "fee": "0.04545152",
+              "maker": false
+            },
+            {
+              "id": 9,
+              "fill_ms": 1619926489000,
+              "latest_observed_fill_ms": 1619926489000,
+              "qty": "0.001",
+              "price": "56907.7",
+              "benchmark": "56907.6",
+              "fee": "0.02276308",
+              "maker": false
+            },
+            {
+              "id": 11,
+              "fill_ms": 1619927069000,
+              "latest_observed_fill_ms": 1619927069000,
+              "qty": "0.003",
+              "price": "56348.3",
+              "benchmark": "56348.2",
+              "fee": "0.06761796",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 12,
+            "fill_ms": 1620005456000,
+            "latest_observed_fill_ms": 1620005456800,
+            "qty": "0.01",
+            "price": "57805.4",
+            "benchmark": "57805.4",
+            "fee": "0.1156108",
+            "maker": true
+          },
+          "gross": "5.7244",
+          "gross_at_fills": "5.7234",
+          "fees": "0.34454304",
+          "execution": "0.0010",
+          "after_fees": "5.37985696",
+          "funding": "-0.869651278147",
+          "net": "4.509205681853",
+          "official_funding_schedule_count": 6,
+          "funding_price_envelope_USDT": [
+            "-0.876309304544",
+            "-0.865269111868"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 13,
+              "fill_ms": 1620005459400,
+              "latest_observed_fill_ms": 1620005459400,
+              "qty": "0.003",
+              "price": "58056.5",
+              "benchmark": "58056.4",
+              "fee": "0.06966780",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 14,
+            "fill_ms": 1620027868000,
+            "latest_observed_fill_ms": 1620027868800,
+            "qty": "0.003",
+            "price": "58637.1",
+            "benchmark": "58637.1",
+            "fee": "0.03518226",
+            "maker": true
+          },
+          "gross": "1.7421",
+          "gross_at_fills": "1.7418",
+          "fees": "0.10485006",
+          "execution": "0.0003",
+          "after_fees": "1.63724994",
+          "funding": "1E-12",
+          "net": "1.636949940001",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 15,
+              "fill_ms": 1620027871400,
+              "latest_observed_fill_ms": 1620027871400,
+              "qty": "0.003",
+              "price": "58907.7",
+              "benchmark": "58907.6",
+              "fee": "0.07068924",
+              "maker": false
+            },
+            {
+              "id": 17,
+              "fill_ms": 1620049469000,
+              "latest_observed_fill_ms": 1620049469000,
+              "qty": "0.002",
+              "price": "57323",
+              "benchmark": "57322.9",
+              "fee": "0.0458584",
+              "maker": false
+            },
+            {
+              "id": 19,
+              "fill_ms": 1620049701000,
+              "latest_observed_fill_ms": 1620049701000,
+              "qty": "0.001",
+              "price": "57661.7",
+              "benchmark": "57661.6",
+              "fee": "0.02306468",
+              "maker": false
+            },
+            {
+              "id": 21,
+              "fill_ms": 1620049933000,
+              "latest_observed_fill_ms": 1620049933000,
+              "qty": "0.001",
+              "price": "57548.8",
+              "benchmark": "57548.7",
+              "fee": "0.02301952",
+              "maker": false
+            },
+            {
+              "id": 23,
+              "fill_ms": 1620056669000,
+              "latest_observed_fill_ms": 1620056669000,
+              "qty": "0.001",
+              "price": "57450.1",
+              "benchmark": "57450",
+              "fee": "0.02298004",
+              "maker": false
+            },
+            {
+              "id": 25,
+              "fill_ms": 1620057949000,
+              "latest_observed_fill_ms": 1620057949000,
+              "qty": "0.002",
+              "price": "57351.1",
+              "benchmark": "57351",
+              "fee": "0.04588088",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 26,
+            "fill_ms": 1620407148000,
+            "latest_observed_fill_ms": 1620407148800,
+            "qty": "0.01",
+            "price": "58451.9",
+            "benchmark": "58451.9",
+            "fee": "0.1169038",
+            "maker": true
+          },
+          "gross": "5.7881",
+          "gross_at_fills": "5.7871",
+          "fees": "0.34839656",
+          "execution": "0.0010",
+          "after_fees": "5.43970344",
+          "funding": "-3.590833360858",
+          "net": "1.847870079142",
+          "official_funding_schedule_count": 14,
+          "funding_price_envelope_USDT": [
+            "-3.623712928644",
+            "-3.55157386887"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 27,
+              "fill_ms": 1620407151400,
+              "latest_observed_fill_ms": 1620407151400,
+              "qty": "0.003",
+              "price": "58694",
+              "benchmark": "58693.9",
+              "fee": "0.0704328",
+              "maker": false
+            },
+            {
+              "id": 29,
+              "fill_ms": 1620416669000,
+              "latest_observed_fill_ms": 1620416669000,
+              "qty": "0.001",
+              "price": "57515.3",
+              "benchmark": "57515.2",
+              "fee": "0.02300612",
+              "maker": false
+            },
+            {
+              "id": 31,
+              "fill_ms": 1620423869000,
+              "latest_observed_fill_ms": 1620423869000,
+              "qty": "0.002",
+              "price": "57153.4",
+              "benchmark": "57153.3",
+              "fee": "0.04572272",
+              "maker": false
+            },
+            {
+              "id": 33,
+              "fill_ms": 1620424101000,
+              "latest_observed_fill_ms": 1620424101000,
+              "qty": "0.001",
+              "price": "57364.9",
+              "benchmark": "57364.8",
+              "fee": "0.02294596",
+              "maker": false
+            },
+            {
+              "id": 35,
+              "fill_ms": 1620424333000,
+              "latest_observed_fill_ms": 1620424333000,
+              "qty": "0.001",
+              "price": "57294.4",
+              "benchmark": "57294.3",
+              "fee": "0.02291776",
+              "maker": false
+            },
+            {
+              "id": 37,
+              "fill_ms": 1620426657000,
+              "latest_observed_fill_ms": 1620426657000,
+              "qty": "0.002",
+              "price": "57092.2",
+              "benchmark": "57092.1",
+              "fee": "0.04567376",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 38,
+            "fill_ms": 1620441868000,
+            "latest_observed_fill_ms": 1620441868800,
+            "qty": "0.01",
+            "price": "58251.5",
+            "benchmark": "58251.5",
+            "fee": "0.1165030",
+            "maker": true
+          },
+          "gross": "5.7682",
+          "gross_at_fills": "5.7672",
+          "fees": "0.34720212",
+          "execution": "0.0010",
+          "after_fees": "5.42099788",
+          "funding": "-0.340496030046",
+          "net": "5.079501849954",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.3432280629",
+            "-0.3379304778"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 39,
+              "fill_ms": 1620441871400,
+              "latest_observed_fill_ms": 1620441871400,
+              "qty": "0.003",
+              "price": "58387.5",
+              "benchmark": "58387.4",
+              "fee": "0.07006500",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 40,
+            "fill_ms": 1620463932000,
+            "latest_observed_fill_ms": 1620463932800,
+            "qty": "0.003",
+            "price": "58971.4",
+            "benchmark": "58971.4",
+            "fee": "0.03538284",
+            "maker": true
+          },
+          "gross": "1.7520",
+          "gross_at_fills": "1.7517",
+          "fees": "0.10544784",
+          "execution": "0.0003",
+          "after_fees": "1.64655216",
+          "funding": "-0.081193754768",
+          "net": "1.565058405232",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.082565669715",
+            "-0.081156196491"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 41,
+              "fill_ms": 1620463935400,
+              "latest_observed_fill_ms": 1620463935400,
+              "qty": "0.003",
+              "price": "59469.6",
+              "benchmark": "59469.5",
+              "fee": "0.07136352",
+              "maker": false
+            },
+            {
+              "id": 43,
+              "fill_ms": 1620475897000,
+              "latest_observed_fill_ms": 1620475897000,
+              "qty": "0.001",
+              "price": "58238.6",
+              "benchmark": "58238.5",
+              "fee": "0.02329544",
+              "maker": false
+            },
+            {
+              "id": 45,
+              "fill_ms": 1620488669000,
+              "latest_observed_fill_ms": 1620488669000,
+              "qty": "0.002",
+              "price": "57530",
+              "benchmark": "57529.9",
+              "fee": "0.0460240",
+              "maker": false
+            },
+            {
+              "id": 47,
+              "fill_ms": 1620488901000,
+              "latest_observed_fill_ms": 1620488901000,
+              "qty": "0.001",
+              "price": "57628.1",
+              "benchmark": "57628",
+              "fee": "0.02305124",
+              "maker": false
+            },
+            {
+              "id": 49,
+              "fill_ms": 1620489133000,
+              "latest_observed_fill_ms": 1620489133000,
+              "qty": "0.001",
+              "price": "57595.4",
+              "benchmark": "57595.3",
+              "fee": "0.02303816",
+              "maker": false
+            },
+            {
+              "id": 51,
+              "fill_ms": 1620489365000,
+              "latest_observed_fill_ms": 1620489365000,
+              "qty": "0.002",
+              "price": "57660.9",
+              "benchmark": "57660.8",
+              "fee": "0.04612872",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 52,
+            "fill_ms": 1620495056000,
+            "latest_observed_fill_ms": 1620495056800,
+            "qty": "0.01",
+            "price": "58807.5",
+            "benchmark": "58807.5",
+            "fee": "0.1176150",
+            "maker": true
+          },
+          "gross": "5.8233",
+          "gross_at_fills": "5.8223",
+          "fees": "0.35051608",
+          "execution": "0.0010",
+          "after_fees": "5.47278392",
+          "funding": "-0.267504002798",
+          "net": "5.204279917202",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.27194911594",
+            "-0.26737986902"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 53,
+              "fill_ms": 1620495870000,
+              "latest_observed_fill_ms": 1620495870000,
+              "qty": "0.003",
+              "price": "59110.4",
+              "benchmark": "59110.3",
+              "fee": "0.07093248",
+              "maker": false
+            },
+            {
+              "id": 55,
+              "fill_ms": 1620535469000,
+              "latest_observed_fill_ms": 1620535469000,
+              "qty": "0.001",
+              "price": "57820.1",
+              "benchmark": "57820",
+              "fee": "0.02312804",
+              "maker": false
+            },
+            {
+              "id": 57,
+              "fill_ms": 1620555097000,
+              "latest_observed_fill_ms": 1620555097000,
+              "qty": "0.002",
+              "price": "57600.1",
+              "benchmark": "57600",
+              "fee": "0.04608008",
+              "maker": false
+            },
+            {
+              "id": 59,
+              "fill_ms": 1620555561000,
+              "latest_observed_fill_ms": 1620555561000,
+              "qty": "0.001",
+              "price": "57771.2",
+              "benchmark": "57771.1",
+              "fee": "0.02310848",
+              "maker": false
+            },
+            {
+              "id": 61,
+              "fill_ms": 1620562761000,
+              "latest_observed_fill_ms": 1620562761000,
+              "qty": "0.001",
+              "price": "57490.2",
+              "benchmark": "57490.1",
+              "fee": "0.02299608",
+              "maker": false
+            },
+            {
+              "id": 63,
+              "fill_ms": 1620562993000,
+              "latest_observed_fill_ms": 1620562993000,
+              "qty": "0.002",
+              "price": "57607.6",
+              "benchmark": "57607.5",
+              "fee": "0.04608608",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 64,
+            "fill_ms": 1620607468000,
+            "latest_observed_fill_ms": 1620607468800,
+            "qty": "0.01",
+            "price": "58663.6",
+            "benchmark": "58663.6",
+            "fee": "0.1173272",
+            "maker": true
+          },
+          "gross": "5.8089",
+          "gross_at_fills": "5.8079",
+          "fees": "0.34965844",
+          "execution": "0.0010",
+          "after_fees": "5.45924156",
+          "funding": "-0.750212011690",
+          "net": "4.708029548310",
+          "official_funding_schedule_count": 4,
+          "funding_price_envelope_USDT": [
+            "-0.756877786992",
+            "-0.747932320494"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 65,
+              "fill_ms": 1620607471400,
+              "latest_observed_fill_ms": 1620607471400,
+              "qty": "0.003",
+              "price": "58946.8",
+              "benchmark": "58946.7",
+              "fee": "0.07073616",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 66,
+            "fill_ms": 1620618268000,
+            "latest_observed_fill_ms": 1620618268800,
+            "qty": "0.003",
+            "price": "59536.3",
+            "benchmark": "59536.3",
+            "fee": "0.03572178",
+            "maker": true
+          },
+          "gross": "1.7688",
+          "gross_at_fills": "1.7685",
+          "fees": "0.10645794",
+          "execution": "0.0003",
+          "after_fees": "1.66234206",
+          "funding": "1E-12",
+          "net": "1.662042060001",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 67,
+              "fill_ms": 1620618271400,
+              "latest_observed_fill_ms": 1620618271400,
+              "qty": "0.003",
+              "price": "59544.4",
+              "benchmark": "59544.3",
+              "fee": "0.07145328",
+              "maker": false
+            },
+            {
+              "id": 69,
+              "fill_ms": 1620633949000,
+              "latest_observed_fill_ms": 1620633949000,
+              "qty": "0.001",
+              "price": "58206.3",
+              "benchmark": "58206.2",
+              "fee": "0.02328252",
+              "maker": false
+            },
+            {
+              "id": 71,
+              "fill_ms": 1620639869000,
+              "latest_observed_fill_ms": 1620639869000,
+              "qty": "0.002",
+              "price": "57832.1",
+              "benchmark": "57832",
+              "fee": "0.04626568",
+              "maker": false
+            },
+            {
+              "id": 73,
+              "fill_ms": 1620640101000,
+              "latest_observed_fill_ms": 1620640101000,
+              "qty": "0.001",
+              "price": "57950.6",
+              "benchmark": "57950.5",
+              "fee": "0.02318024",
+              "maker": false
+            },
+            {
+              "id": 75,
+              "fill_ms": 1620640333000,
+              "latest_observed_fill_ms": 1620640333000,
+              "qty": "0.001",
+              "price": "57911.1",
+              "benchmark": "57911",
+              "fee": "0.02316444",
+              "maker": false
+            },
+            {
+              "id": 77,
+              "fill_ms": 1620642657000,
+              "latest_observed_fill_ms": 1620642657000,
+              "qty": "0.002",
+              "price": "57834.7",
+              "benchmark": "57834.6",
+              "fee": "0.04626776",
+              "maker": false
+            },
+            {
+              "id": 79,
+              "fill_ms": 1620859469000,
+              "latest_observed_fill_ms": 1620859469000,
+              "qty": "0.02",
+              "price": "51561.8",
+              "benchmark": "51561.7",
+              "fee": "0.4124944",
+              "maker": false
+            },
+            {
+              "id": 81,
+              "fill_ms": 1620864349000,
+              "latest_observed_fill_ms": 1620864349000,
+              "qty": "0.06",
+              "price": "46596.5",
+              "benchmark": "46596.4",
+              "fee": "1.1183160",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 82,
+            "fill_ms": 1620866668000,
+            "latest_observed_fill_ms": 1620866668800,
+            "qty": "0.09",
+            "price": "49501.9",
+            "benchmark": "49501.9",
+            "fee": "0.8910342",
+            "maker": true
+          },
+          "gross": "44.1192",
+          "gross_at_fills": "44.1102",
+          "fees": "2.65545852",
+          "execution": "0.0090",
+          "after_fees": "41.46374148",
+          "funding": "-2.063338000415",
+          "net": "39.391403479585",
+          "official_funding_schedule_count": 9,
+          "funding_price_envelope_USDT": [
+            "-2.077492702606",
+            "-2.029396152776"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 83,
+              "fill_ms": 1620988258000,
+              "latest_observed_fill_ms": 1620988258000,
+              "qty": "0.004",
+              "price": "50610.5",
+              "benchmark": "50610.4",
+              "fee": "0.08097680",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 84,
+            "fill_ms": 1621007532000,
+            "latest_observed_fill_ms": 1621007532800,
+            "qty": "0.004",
+            "price": "51116.6",
+            "benchmark": "51116.6",
+            "fee": "0.04089328",
+            "maker": true
+          },
+          "gross": "2.0248",
+          "gross_at_fills": "2.0244",
+          "fees": "0.12187008",
+          "execution": "0.0004",
+          "after_fees": "1.90292992",
+          "funding": "0E-11",
+          "net": "1.90252992000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 85,
+              "fill_ms": 1621007535400,
+              "latest_observed_fill_ms": 1621007535400,
+              "qty": "0.004",
+              "price": "51533.1",
+              "benchmark": "51533",
+              "fee": "0.08245296",
+              "maker": false
+            },
+            {
+              "id": 87,
+              "fill_ms": 1621017869000,
+              "latest_observed_fill_ms": 1621017869000,
+              "qty": "0.002",
+              "price": "50369.6",
+              "benchmark": "50369.5",
+              "fee": "0.04029568",
+              "maker": false
+            },
+            {
+              "id": 89,
+              "fill_ms": 1621018101000,
+              "latest_observed_fill_ms": 1621018101000,
+              "qty": "0.001",
+              "price": "50479.6",
+              "benchmark": "50479.5",
+              "fee": "0.02019184",
+              "maker": false
+            },
+            {
+              "id": 91,
+              "fill_ms": 1621018333000,
+              "latest_observed_fill_ms": 1621018333000,
+              "qty": "0.001",
+              "price": "50442.9",
+              "benchmark": "50442.8",
+              "fee": "0.02017716",
+              "maker": false
+            },
+            {
+              "id": 93,
+              "fill_ms": 1621019961000,
+              "latest_observed_fill_ms": 1621019961000,
+              "qty": "0.002",
+              "price": "50391.2",
+              "benchmark": "50391.1",
+              "fee": "0.04031296",
+              "maker": false
+            },
+            {
+              "id": 95,
+              "fill_ms": 1621190669000,
+              "latest_observed_fill_ms": 1621190669000,
+              "qty": "0.02",
+              "price": "45300.1",
+              "benchmark": "45300",
+              "fee": "0.3624008",
+              "maker": false
+            },
+            {
+              "id": 97,
+              "fill_ms": 1621224349000,
+              "latest_observed_fill_ms": 1621224349000,
+              "qty": "0.06",
+              "price": "42397.8",
+              "benchmark": "42397.7",
+              "fee": "1.0175472",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 98,
+            "fill_ms": 1621233056000,
+            "latest_observed_fill_ms": 1621233056800,
+            "qty": "0.09",
+            "price": "44422.6",
+            "benchmark": "44422.6",
+            "fee": "0.7996068",
+            "maker": true
+          },
+          "gross": "39.5965",
+          "gross_at_fills": "39.5875",
+          "fees": "2.38298540",
+          "execution": "0.0090",
+          "after_fees": "37.21351460",
+          "funding": "-0.811194223095",
+          "net": "36.393320376905",
+          "official_funding_schedule_count": 8,
+          "funding_price_envelope_USDT": [
+            "-0.818697411824",
+            "-0.799307101574"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 99,
+              "fill_ms": 1621312258000,
+              "latest_observed_fill_ms": 1621312258000,
+              "qty": "0.004",
+              "price": "45314.5",
+              "benchmark": "45314.4",
+              "fee": "0.07250320",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 100,
+            "fill_ms": 1621318296000,
+            "latest_observed_fill_ms": 1621318296800,
+            "qty": "0.004",
+            "price": "45767.6",
+            "benchmark": "45767.6",
+            "fee": "0.03661408",
+            "maker": true
+          },
+          "gross": "1.8128",
+          "gross_at_fills": "1.8124",
+          "fees": "0.10911728",
+          "execution": "0.0004",
+          "after_fees": "1.70368272",
+          "funding": "0E-12",
+          "net": "1.703282720000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 101,
+              "fill_ms": 1621318299400,
+              "latest_observed_fill_ms": 1621318299400,
+              "qty": "0.004",
+              "price": "45846.7",
+              "benchmark": "45846.6",
+              "fee": "0.07335472",
+              "maker": false
+            },
+            {
+              "id": 103,
+              "fill_ms": 1621320269000,
+              "latest_observed_fill_ms": 1621320269000,
+              "qty": "0.002",
+              "price": "44832.6",
+              "benchmark": "44832.5",
+              "fee": "0.03586608",
+              "maker": false
+            },
+            {
+              "id": 105,
+              "fill_ms": 1621320501000,
+              "latest_observed_fill_ms": 1621320501000,
+              "qty": "0.001",
+              "price": "44911.4",
+              "benchmark": "44911.3",
+              "fee": "0.01796456",
+              "maker": false
+            },
+            {
+              "id": 107,
+              "fill_ms": 1621320733000,
+              "latest_observed_fill_ms": 1621320733000,
+              "qty": "0.001",
+              "price": "44885.1",
+              "benchmark": "44885",
+              "fee": "0.01795404",
+              "maker": false
+            },
+            {
+              "id": 109,
+              "fill_ms": 1621321549000,
+              "latest_observed_fill_ms": 1621321549000,
+              "qty": "0.002",
+              "price": "44881.6",
+              "benchmark": "44881.5",
+              "fee": "0.03590528",
+              "maker": false
+            },
+            {
+              "id": 111,
+              "fill_ms": 1621328749000,
+              "latest_observed_fill_ms": 1621328749000,
+              "qty": "0.002",
+              "price": "44720.6",
+              "benchmark": "44720.5",
+              "fee": "0.03577648",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 112,
+            "fill_ms": 1621336296000,
+            "latest_observed_fill_ms": 1621336296800,
+            "qty": "0.012",
+            "price": "45622.8",
+            "benchmark": "45622.8",
+            "fee": "0.10949472",
+            "maker": true
+          },
+          "gross": "5.4219",
+          "gross_at_fills": "5.4207",
+          "fees": "0.32631588",
+          "execution": "0.0012",
+          "after_fees": "5.09558412",
+          "funding": "-0.066492378111",
+          "net": "5.027891741889",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.06690705397",
+            "-0.06604163603"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 113,
+              "fill_ms": 1621336299400,
+              "latest_observed_fill_ms": 1621336299400,
+              "qty": "0.004",
+              "price": "45692.7",
+              "benchmark": "45692.6",
+              "fee": "0.07310832",
+              "maker": false
+            },
+            {
+              "id": 115,
+              "fill_ms": 1621341057000,
+              "latest_observed_fill_ms": 1621341057000,
+              "qty": "0.002",
+              "price": "44300.8",
+              "benchmark": "44300.7",
+              "fee": "0.03544064",
+              "maker": false
+            },
+            {
+              "id": 117,
+              "fill_ms": 1621341289000,
+              "latest_observed_fill_ms": 1621341289000,
+              "qty": "0.001",
+              "price": "44410.1",
+              "benchmark": "44410",
+              "fee": "0.01776404",
+              "maker": false
+            },
+            {
+              "id": 119,
+              "fill_ms": 1621341869000,
+              "latest_observed_fill_ms": 1621341869000,
+              "qty": "0.004",
+              "price": "43754.6",
+              "benchmark": "43754.5",
+              "fee": "0.07000736",
+              "maker": false
+            },
+            {
+              "id": 121,
+              "fill_ms": 1621342101000,
+              "latest_observed_fill_ms": 1621342101000,
+              "qty": "0.002",
+              "price": "43928.1",
+              "benchmark": "43928",
+              "fee": "0.03514248",
+              "maker": false
+            },
+            {
+              "id": 123,
+              "fill_ms": 1621398657000,
+              "latest_observed_fill_ms": 1621398657000,
+              "qty": "0.026",
+              "price": "39392.3",
+              "benchmark": "39392.2",
+              "fee": "0.40967992",
+              "maker": false
+            },
+            {
+              "id": 125,
+              "fill_ms": 1621424669000,
+              "latest_observed_fill_ms": 1621424669000,
+              "qty": "0.078",
+              "price": "36100.1",
+              "benchmark": "36100",
+              "fee": "1.12632312",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 126,
+            "fill_ms": 1621425364000,
+            "latest_observed_fill_ms": 1621425364800,
+            "qty": "0.117",
+            "price": "38144",
+            "benchmark": "38144",
+            "fee": "0.8925696",
+            "maker": true
+          },
+          "gross": "44.1950",
+          "gross_at_fills": "44.1833",
+          "fees": "2.66003548",
+          "execution": "0.0117",
+          "after_fees": "41.53496452",
+          "funding": "-0.741840352330",
+          "net": "40.781424167670",
+          "official_funding_schedule_count": 3,
+          "funding_price_envelope_USDT": [
+            "-0.75118580420",
+            "-0.733064764666"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 127,
+              "fill_ms": 1621494002000,
+              "latest_observed_fill_ms": 1621494002000,
+              "qty": "0.005",
+              "price": "39687.1",
+              "benchmark": "39687",
+              "fee": "0.07937420",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 128,
+            "fill_ms": 1621495856000,
+            "latest_observed_fill_ms": 1621495856800,
+            "qty": "0.005",
+            "price": "40084",
+            "benchmark": "40084",
+            "fee": "0.0400840",
+            "maker": true
+          },
+          "gross": "1.985",
+          "gross_at_fills": "1.9845",
+          "fees": "0.11945820",
+          "execution": "0.0005",
+          "after_fees": "1.86554180",
+          "funding": "2E-12",
+          "net": "1.865041800002",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 129,
+              "fill_ms": 1621495859400,
+              "latest_observed_fill_ms": 1621495859400,
+              "qty": "0.005",
+              "price": "40419.1",
+              "benchmark": "40419",
+              "fee": "0.08083820",
+              "maker": false
+            },
+            {
+              "id": 131,
+              "fill_ms": 1621497365000,
+              "latest_observed_fill_ms": 1621497365000,
+              "qty": "0.001",
+              "price": "39947",
+              "benchmark": "39946.9",
+              "fee": "0.0159788",
+              "maker": false
+            },
+            {
+              "id": 133,
+              "fill_ms": 1621499457000,
+              "latest_observed_fill_ms": 1621499457000,
+              "qty": "0.001",
+              "price": "39641.6",
+              "benchmark": "39641.5",
+              "fee": "0.01585664",
+              "maker": false
+            },
+            {
+              "id": 135,
+              "fill_ms": 1621499689000,
+              "latest_observed_fill_ms": 1621499689000,
+              "qty": "0.001",
+              "price": "39701.4",
+              "benchmark": "39701.3",
+              "fee": "0.01588056",
+              "maker": false
+            },
+            {
+              "id": 137,
+              "fill_ms": 1621500269000,
+              "latest_observed_fill_ms": 1621500269000,
+              "qty": "0.003",
+              "price": "39343.1",
+              "benchmark": "39343",
+              "fee": "0.04721172",
+              "maker": false
+            },
+            {
+              "id": 139,
+              "fill_ms": 1621501549000,
+              "latest_observed_fill_ms": 1621501549000,
+              "qty": "0.005",
+              "price": "39010.6",
+              "benchmark": "39010.5",
+              "fee": "0.07802120",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 140,
+            "fill_ms": 1621503868000,
+            "latest_observed_fill_ms": 1621503868800,
+            "qty": "0.016",
+            "price": "40050.8",
+            "benchmark": "40050.8",
+            "fee": "0.12816256",
+            "maker": true
+          },
+          "gross": "6.3466",
+          "gross_at_fills": "6.3450",
+          "fees": "0.38194968",
+          "execution": "0.0016",
+          "after_fees": "5.96465032",
+          "funding": "-0.023977077470",
+          "net": "5.939073242530",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.02414328",
+            "-0.0236058"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 141,
+              "fill_ms": 1621503871400,
+              "latest_observed_fill_ms": 1621503871400,
+              "qty": "0.005",
+              "price": "40250.1",
+              "benchmark": "40250",
+              "fee": "0.08050020",
+              "maker": false
+            },
+            {
+              "id": 143,
+              "fill_ms": 1621505149000,
+              "latest_observed_fill_ms": 1621505149000,
+              "qty": "0.001",
+              "price": "39607.9",
+              "benchmark": "39607.8",
+              "fee": "0.01584316",
+              "maker": false
+            },
+            {
+              "id": 145,
+              "fill_ms": 1621505265000,
+              "latest_observed_fill_ms": 1621505265000,
+              "qty": "0.001",
+              "price": "39724.6",
+              "benchmark": "39724.5",
+              "fee": "0.01588984",
+              "maker": false
+            },
+            {
+              "id": 147,
+              "fill_ms": 1621505497000,
+              "latest_observed_fill_ms": 1621505497000,
+              "qty": "0.001",
+              "price": "39491.3",
+              "benchmark": "39491.2",
+              "fee": "0.01579652",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 148,
+            "fill_ms": 1621507468000,
+            "latest_observed_fill_ms": 1621507468800,
+            "qty": "0.008",
+            "price": "40409.4",
+            "benchmark": "40409.4",
+            "fee": "0.06465504",
+            "maker": true
+          },
+          "gross": "3.2017",
+          "gross_at_fills": "3.2009",
+          "fees": "0.19268476",
+          "execution": "0.0008",
+          "after_fees": "3.00901524",
+          "funding": "1E-12",
+          "net": "3.008215240001",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 149,
+              "fill_ms": 1621507471400,
+              "latest_observed_fill_ms": 1621507471400,
+              "qty": "0.005",
+              "price": "40500.1",
+              "benchmark": "40500",
+              "fee": "0.08100020",
+              "maker": false
+            },
+            {
+              "id": 151,
+              "fill_ms": 1621508749000,
+              "latest_observed_fill_ms": 1621508749000,
+              "qty": "0.001",
+              "price": "39876.8",
+              "benchmark": "39876.7",
+              "fee": "0.01595072",
+              "maker": false
+            },
+            {
+              "id": 153,
+              "fill_ms": 1621509097000,
+              "latest_observed_fill_ms": 1621509097000,
+              "qty": "0.001",
+              "price": "39702.1",
+              "benchmark": "39702",
+              "fee": "0.01588084",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 154,
+            "fill_ms": 1621513160000,
+            "latest_observed_fill_ms": 1621513160800,
+            "qty": "0.007",
+            "price": "40700",
+            "benchmark": "40700",
+            "fee": "0.0569800",
+            "maker": true
+          },
+          "gross": "2.8213",
+          "gross_at_fills": "2.8206",
+          "fees": "0.16981176",
+          "execution": "0.0007",
+          "after_fees": "2.65148824",
+          "funding": "1E-12",
+          "net": "2.650788240001",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 155,
+              "fill_ms": 1621513163400,
+              "latest_observed_fill_ms": 1621513163400,
+              "qty": "0.005",
+              "price": "40701.6",
+              "benchmark": "40701.5",
+              "fee": "0.08140320",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 156,
+            "fill_ms": 1621513856000,
+            "latest_observed_fill_ms": 1621513856800,
+            "qty": "0.005",
+            "price": "41108.6",
+            "benchmark": "41108.6",
+            "fee": "0.04110860",
+            "maker": true
+          },
+          "gross": "2.0355",
+          "gross_at_fills": "2.0350",
+          "fees": "0.12251180",
+          "execution": "0.0005",
+          "after_fees": "1.91298820",
+          "funding": "-1E-12",
+          "net": "1.912488199999",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 157,
+              "fill_ms": 1621513859400,
+              "latest_observed_fill_ms": 1621513859400,
+              "qty": "0.005",
+              "price": "41332.7",
+              "benchmark": "41332.6",
+              "fee": "0.08266540",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 158,
+            "fill_ms": 1621514668000,
+            "latest_observed_fill_ms": 1621514668800,
+            "qty": "0.005",
+            "price": "41746",
+            "benchmark": "41746",
+            "fee": "0.0417460",
+            "maker": true
+          },
+          "gross": "2.0670",
+          "gross_at_fills": "2.0665",
+          "fees": "0.12441140",
+          "execution": "0.0005",
+          "after_fees": "1.94258860",
+          "funding": "-1E-12",
+          "net": "1.942088599999",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 159,
+              "fill_ms": 1621514671400,
+              "latest_observed_fill_ms": 1621514671400,
+              "qty": "0.005",
+              "price": "41963.8",
+              "benchmark": "41963.7",
+              "fee": "0.08392760",
+              "maker": false
+            },
+            {
+              "id": 161,
+              "fill_ms": 1621515949000,
+              "latest_observed_fill_ms": 1621515949000,
+              "qty": "0.001",
+              "price": "41432",
+              "benchmark": "41431.9",
+              "fee": "0.0165728",
+              "maker": false
+            },
+            {
+              "id": 163,
+              "fill_ms": 1621516297000,
+              "latest_observed_fill_ms": 1621516297000,
+              "qty": "0.001",
+              "price": "41350.1",
+              "benchmark": "41350",
+              "fee": "0.01654004",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 164,
+            "fill_ms": 1621518268000,
+            "latest_observed_fill_ms": 1621518268800,
+            "qty": "0.007",
+            "price": "42218.2",
+            "benchmark": "42218.2",
+            "fee": "0.05910548",
+            "maker": true
+          },
+          "gross": "2.9270",
+          "gross_at_fills": "2.9263",
+          "fees": "0.17614592",
+          "execution": "0.0007",
+          "after_fees": "2.75085408",
+          "funding": "0E-12",
+          "net": "2.750154080000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 165,
+              "fill_ms": 1621518271400,
+              "latest_observed_fill_ms": 1621518271400,
+              "qty": "0.005",
+              "price": "42460.1",
+              "benchmark": "42460",
+              "fee": "0.08492020",
+              "maker": false
+            },
+            {
+              "id": 167,
+              "fill_ms": 1621518501000,
+              "latest_observed_fill_ms": 1621518501000,
+              "qty": "0.001",
+              "price": "41895.9",
+              "benchmark": "41895.8",
+              "fee": "0.01675836",
+              "maker": false
+            },
+            {
+              "id": 169,
+              "fill_ms": 1621518965000,
+              "latest_observed_fill_ms": 1621518965000,
+              "qty": "0.001",
+              "price": "41707.9",
+              "benchmark": "41707.8",
+              "fee": "0.01668316",
+              "maker": false
+            },
+            {
+              "id": 171,
+              "fill_ms": 1621519201000,
+              "latest_observed_fill_ms": 1621519201000,
+              "qty": "0.001",
+              "price": "41707.9",
+              "benchmark": "41707.8",
+              "fee": "0.01668316",
+              "maker": false
+            },
+            {
+              "id": 173,
+              "fill_ms": 1621519317000,
+              "latest_observed_fill_ms": 1621519317000,
+              "qty": "0.002",
+              "price": "41708",
+              "benchmark": "41707.9",
+              "fee": "0.0333664",
+              "maker": false
+            },
+            {
+              "id": 175,
+              "fill_ms": 1621521057000,
+              "latest_observed_fill_ms": 1621521057000,
+              "qty": "0.002",
+              "price": "41564.7",
+              "benchmark": "41564.6",
+              "fee": "0.03325176",
+              "maker": false
+            },
+            {
+              "id": 177,
+              "fill_ms": 1621608269000,
+              "latest_observed_fill_ms": 1621608269000,
+              "qty": "0.024",
+              "price": "36508.5",
+              "benchmark": "36508.4",
+              "fee": "0.35048160",
+              "maker": false
+            },
+            {
+              "id": 179,
+              "fill_ms": 1621631149000,
+              "latest_observed_fill_ms": 1621631149000,
+              "qty": "0.072",
+              "price": "33847.9",
+              "benchmark": "33847.8",
+              "fee": "0.97481952",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 180,
+            "fill_ms": 1621633468000,
+            "latest_observed_fill_ms": 1621633468800,
+            "qty": "0.108",
+            "price": "35699.9",
+            "benchmark": "35699.9",
+            "fee": "0.77111784",
+            "maker": true
+          },
+          "gross": "38.1896",
+          "gross_at_fills": "38.1788",
+          "fees": "2.29808200",
+          "execution": "0.0108",
+          "after_fees": "35.89151800",
+          "funding": "-0.193423713713",
+          "net": "35.687294286287",
+          "official_funding_schedule_count": 4,
+          "funding_price_envelope_USDT": [
+            "-0.198473268900",
+            "-0.187376644932"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 181,
+              "fill_ms": 1621685498000,
+              "latest_observed_fill_ms": 1621685498000,
+              "qty": "0.005",
+              "price": "38700.1",
+              "benchmark": "38700",
+              "fee": "0.07740020",
+              "maker": false
+            },
+            {
+              "id": 183,
+              "fill_ms": 1621686657000,
+              "latest_observed_fill_ms": 1621686657000,
+              "qty": "0.001",
+              "price": "38038.9",
+              "benchmark": "38038.8",
+              "fee": "0.01521556",
+              "maker": false
+            },
+            {
+              "id": 185,
+              "fill_ms": 1621686889000,
+              "latest_observed_fill_ms": 1621686889000,
+              "qty": "0.001",
+              "price": "38105",
+              "benchmark": "38104.9",
+              "fee": "0.0152420",
+              "maker": false
+            },
+            {
+              "id": 187,
+              "fill_ms": 1621687469000,
+              "latest_observed_fill_ms": 1621687469000,
+              "qty": "0.003",
+              "price": "37708.4",
+              "benchmark": "37708.3",
+              "fee": "0.04525008",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 188,
+            "fill_ms": 1621691068000,
+            "latest_observed_fill_ms": 1621691068800,
+            "qty": "0.01",
+            "price": "38659.7",
+            "benchmark": "38659.7",
+            "fee": "0.0773194",
+            "maker": true
+          },
+          "gross": "3.8284",
+          "gross_at_fills": "3.8274",
+          "fees": "0.23042724",
+          "execution": "0.0010",
+          "after_fees": "3.59797276",
+          "funding": "0E-12",
+          "net": "3.596972760000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 189,
+              "fill_ms": 1621691071400,
+              "latest_observed_fill_ms": 1621691071400,
+              "qty": "0.005",
+              "price": "38837.4",
+              "benchmark": "38837.3",
+              "fee": "0.07767480",
+              "maker": false
+            },
+            {
+              "id": 191,
+              "fill_ms": 1621691301000,
+              "latest_observed_fill_ms": 1621691301000,
+              "qty": "0.001",
+              "price": "38421",
+              "benchmark": "38420.9",
+              "fee": "0.0153684",
+              "maker": false
+            },
+            {
+              "id": 193,
+              "fill_ms": 1621691765000,
+              "latest_observed_fill_ms": 1621691765000,
+              "qty": "0.001",
+              "price": "38282.2",
+              "benchmark": "38282.1",
+              "fee": "0.01531288",
+              "maker": false
+            },
+            {
+              "id": 195,
+              "fill_ms": 1621692001000,
+              "latest_observed_fill_ms": 1621692001000,
+              "qty": "0.001",
+              "price": "38282.2",
+              "benchmark": "38282.1",
+              "fee": "0.01531288",
+              "maker": false
+            },
+            {
+              "id": 197,
+              "fill_ms": 1621693161000,
+              "latest_observed_fill_ms": 1621693161000,
+              "qty": "0.002",
+              "price": "38119.4",
+              "benchmark": "38119.3",
+              "fee": "0.03049552",
+              "maker": false
+            },
+            {
+              "id": 199,
+              "fill_ms": 1621693857000,
+              "latest_observed_fill_ms": 1621693857000,
+              "qty": "0.004",
+              "price": "37718.6",
+              "benchmark": "37718.5",
+              "fee": "0.06034976",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 200,
+            "fill_ms": 1621698268000,
+            "latest_observed_fill_ms": 1621698268800,
+            "qty": "0.014",
+            "price": "38689.2",
+            "benchmark": "38689.2",
+            "fee": "0.10832976",
+            "maker": true
+          },
+          "gross": "5.3646",
+          "gross_at_fills": "5.3632",
+          "fees": "0.32284400",
+          "execution": "0.0014",
+          "after_fees": "5.04175600",
+          "funding": "0E-12",
+          "net": "5.040356000000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 201,
+              "fill_ms": 1621698271400,
+              "latest_observed_fill_ms": 1621698271400,
+              "qty": "0.005",
+              "price": "38757.1",
+              "benchmark": "38757",
+              "fee": "0.07751420",
+              "maker": false
+            },
+            {
+              "id": 203,
+              "fill_ms": 1621698501000,
+              "latest_observed_fill_ms": 1621698501000,
+              "qty": "0.001",
+              "price": "38294.1",
+              "benchmark": "38294",
+              "fee": "0.01531764",
+              "maker": false
+            },
+            {
+              "id": 205,
+              "fill_ms": 1621698965000,
+              "latest_observed_fill_ms": 1621698965000,
+              "qty": "0.001",
+              "price": "38139.8",
+              "benchmark": "38139.7",
+              "fee": "0.01525592",
+              "maker": false
+            },
+            {
+              "id": 207,
+              "fill_ms": 1621699201000,
+              "latest_observed_fill_ms": 1621699201000,
+              "qty": "0.001",
+              "price": "38141.1",
+              "benchmark": "38141",
+              "fee": "0.01525644",
+              "maker": false
+            },
+            {
+              "id": 209,
+              "fill_ms": 1621699317000,
+              "latest_observed_fill_ms": 1621699317000,
+              "qty": "0.002",
+              "price": "38141.2",
+              "benchmark": "38141.1",
+              "fee": "0.03051296",
+              "maker": false
+            },
+            {
+              "id": 211,
+              "fill_ms": 1621701057000,
+              "latest_observed_fill_ms": 1621701057000,
+              "qty": "0.002",
+              "price": "37850.3",
+              "benchmark": "37850.2",
+              "fee": "0.03028024",
+              "maker": false
+            },
+            {
+              "id": 213,
+              "fill_ms": 1621701289000,
+              "latest_observed_fill_ms": 1621701289000,
+              "qty": "0.002",
+              "price": "37912.4",
+              "benchmark": "37912.3",
+              "fee": "0.03032992",
+              "maker": false
+            },
+            {
+              "id": 215,
+              "fill_ms": 1621759469000,
+              "latest_observed_fill_ms": 1621759469000,
+              "qty": "0.028",
+              "price": "33771.8",
+              "benchmark": "33771.7",
+              "fee": "0.37824416",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 216,
+            "fill_ms": 1621766668000,
+            "latest_observed_fill_ms": 1621766668800,
+            "qty": "0.042",
+            "price": "35633.2",
+            "benchmark": "35633.2",
+            "fee": "0.29931888",
+            "maker": true
+          },
+          "gross": "14.8199",
+          "gross_at_fills": "14.8157",
+          "fees": "0.89203036",
+          "execution": "0.0042",
+          "after_fees": "13.92786964",
+          "funding": "0.004875792077",
+          "net": "13.928545432077",
+          "official_funding_schedule_count": 3,
+          "funding_price_envelope_USDT": [
+            "0.003784453694",
+            "0.005889375002"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 217,
+              "fill_ms": 1621825898000,
+              "latest_observed_fill_ms": 1621825898000,
+              "qty": "0.006",
+              "price": "35921.4",
+              "benchmark": "35921.3",
+              "fee": "0.08621136",
+              "maker": false
+            },
+            {
+              "id": 219,
+              "fill_ms": 1621827057000,
+              "latest_observed_fill_ms": 1621827057000,
+              "qty": "0.001",
+              "price": "35370.3",
+              "benchmark": "35370.2",
+              "fee": "0.01414812",
+              "maker": false
+            },
+            {
+              "id": 221,
+              "fill_ms": 1621827289000,
+              "latest_observed_fill_ms": 1621827289000,
+              "qty": "0.001",
+              "price": "35425.4",
+              "benchmark": "35425.3",
+              "fee": "0.01417016",
+              "maker": false
+            },
+            {
+              "id": 223,
+              "fill_ms": 1621827869000,
+              "latest_observed_fill_ms": 1621827869000,
+              "qty": "0.002",
+              "price": "35094.8",
+              "benchmark": "35094.7",
+              "fee": "0.02807584",
+              "maker": false
+            },
+            {
+              "id": 225,
+              "fill_ms": 1621828101000,
+              "latest_observed_fill_ms": 1621828101000,
+              "qty": "0.002",
+              "price": "35189.7",
+              "benchmark": "35189.6",
+              "fee": "0.02815176",
+              "maker": false
+            },
+            {
+              "id": 227,
+              "fill_ms": 1621828333000,
+              "latest_observed_fill_ms": 1621828333000,
+              "qty": "0.002",
+              "price": "35158.1",
+              "benchmark": "35158",
+              "fee": "0.02812648",
+              "maker": false
+            },
+            {
+              "id": 229,
+              "fill_ms": 1621829961000,
+              "latest_observed_fill_ms": 1621829961000,
+              "qty": "0.003",
+              "price": "35050.9",
+              "benchmark": "35050.8",
+              "fee": "0.04206108",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 230,
+            "fill_ms": 1621837856000,
+            "latest_observed_fill_ms": 1621837856800,
+            "qty": "0.017",
+            "price": "35787.4",
+            "benchmark": "35787.4",
+            "fee": "0.12167716",
+            "maker": true
+          },
+          "gross": "6.0255",
+          "gross_at_fills": "6.0238",
+          "fees": "0.36262196",
+          "execution": "0.0017",
+          "after_fees": "5.66287804",
+          "funding": "0E-11",
+          "net": "5.66117804000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 231,
+              "fill_ms": 1621837859400,
+              "latest_observed_fill_ms": 1621837859400,
+              "qty": "0.006",
+              "price": "35830.8",
+              "benchmark": "35830.7",
+              "fee": "0.08599392",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 232,
+            "fill_ms": 1621838668000,
+            "latest_observed_fill_ms": 1621838668800,
+            "qty": "0.006",
+            "price": "36189.1",
+            "benchmark": "36189.1",
+            "fee": "0.04342692",
+            "maker": true
+          },
+          "gross": "2.1504",
+          "gross_at_fills": "2.1498",
+          "fees": "0.12942084",
+          "execution": "0.0006",
+          "after_fees": "2.02097916",
+          "funding": "2E-12",
+          "net": "2.020379160002",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 233,
+              "fill_ms": 1621838671400,
+              "latest_observed_fill_ms": 1621838671400,
+              "qty": "0.006",
+              "price": "36244.1",
+              "benchmark": "36244",
+              "fee": "0.08698584",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 234,
+            "fill_ms": 1621841456000,
+            "latest_observed_fill_ms": 1621841456800,
+            "qty": "0.006",
+            "price": "36606.5",
+            "benchmark": "36606.5",
+            "fee": "0.04392780",
+            "maker": true
+          },
+          "gross": "2.1750",
+          "gross_at_fills": "2.1744",
+          "fees": "0.13091364",
+          "execution": "0.0006",
+          "after_fees": "2.04408636",
+          "funding": "-2E-12",
+          "net": "2.043486359998",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 235,
+              "fill_ms": 1621841459400,
+              "latest_observed_fill_ms": 1621841459400,
+              "qty": "0.005",
+              "price": "36608.8",
+              "benchmark": "36608.7",
+              "fee": "0.07321760",
+              "maker": false
+            },
+            {
+              "id": 237,
+              "fill_ms": 1621845869000,
+              "latest_observed_fill_ms": 1621845869000,
+              "qty": "0.001",
+              "price": "36130.7",
+              "benchmark": "36130.6",
+              "fee": "0.01445228",
+              "maker": false
+            },
+            {
+              "id": 239,
+              "fill_ms": 1621849469000,
+              "latest_observed_fill_ms": 1621849469000,
+              "qty": "0.001",
+              "price": "36159.8",
+              "benchmark": "36159.7",
+              "fee": "0.01446392",
+              "maker": false
+            },
+            {
+              "id": 241,
+              "fill_ms": 1621850749000,
+              "latest_observed_fill_ms": 1621850749000,
+              "qty": "0.001",
+              "price": "35943.3",
+              "benchmark": "35943.2",
+              "fee": "0.01437732",
+              "maker": false
+            },
+            {
+              "id": 243,
+              "fill_ms": 1621850865000,
+              "latest_observed_fill_ms": 1621850865000,
+              "qty": "0.002",
+              "price": "36026.2",
+              "benchmark": "36026.1",
+              "fee": "0.02882096",
+              "maker": false
+            },
+            {
+              "id": 245,
+              "fill_ms": 1621851097000,
+              "latest_observed_fill_ms": 1621851097000,
+              "qty": "0.002",
+              "price": "35860.5",
+              "benchmark": "35860.4",
+              "fee": "0.02868840",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 246,
+            "fill_ms": 1621853068000,
+            "latest_observed_fill_ms": 1621853068800,
+            "qty": "0.012",
+            "price": "36616.8",
+            "benchmark": "36616.8",
+            "fee": "0.08788032",
+            "maker": true
+          },
+          "gross": "4.3516",
+          "gross_at_fills": "4.3504",
+          "fees": "0.26190080",
+          "execution": "0.0012",
+          "after_fees": "4.08969920",
+          "funding": "0.018151937298",
+          "net": "4.106651137298",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "0.01789367965",
+            "0.01824798150"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 247,
+              "fill_ms": 1621853071400,
+              "latest_observed_fill_ms": 1621853071400,
+              "qty": "0.005",
+              "price": "36699.9",
+              "benchmark": "36699.8",
+              "fee": "0.07339980",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 248,
+            "fill_ms": 1621855856000,
+            "latest_observed_fill_ms": 1621855856800,
+            "qty": "0.005",
+            "price": "37066.9",
+            "benchmark": "37066.9",
+            "fee": "0.03706690",
+            "maker": true
+          },
+          "gross": "1.8355",
+          "gross_at_fills": "1.8350",
+          "fees": "0.11046670",
+          "execution": "0.0005",
+          "after_fees": "1.72503330",
+          "funding": "1E-12",
+          "net": "1.724533300001",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 249,
+              "fill_ms": 1621855859400,
+              "latest_observed_fill_ms": 1621855859400,
+              "qty": "0.005",
+              "price": "37385.6",
+              "benchmark": "37385.5",
+              "fee": "0.07477120",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 250,
+            "fill_ms": 1621856668000,
+            "latest_observed_fill_ms": 1621856668800,
+            "qty": "0.005",
+            "price": "37759.5",
+            "benchmark": "37759.5",
+            "fee": "0.03775950",
+            "maker": true
+          },
+          "gross": "1.8700",
+          "gross_at_fills": "1.8695",
+          "fees": "0.11253070",
+          "execution": "0.0005",
+          "after_fees": "1.75746930",
+          "funding": "1E-12",
+          "net": "1.756969300001",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 251,
+              "fill_ms": 1621856671400,
+              "latest_observed_fill_ms": 1621856671400,
+              "qty": "0.005",
+              "price": "37893.3",
+              "benchmark": "37893.2",
+              "fee": "0.07578660",
+              "maker": false
+            },
+            {
+              "id": 253,
+              "fill_ms": 1621857949000,
+              "latest_observed_fill_ms": 1621857949000,
+              "qty": "0.001",
+              "price": "37388.7",
+              "benchmark": "37388.6",
+              "fee": "0.01495548",
+              "maker": false
+            },
+            {
+              "id": 255,
+              "fill_ms": 1621858297000,
+              "latest_observed_fill_ms": 1621858297000,
+              "qty": "0.001",
+              "price": "37332.2",
+              "benchmark": "37332.1",
+              "fee": "0.01493288",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 256,
+            "fill_ms": 1621859456000,
+            "latest_observed_fill_ms": 1621859456800,
+            "qty": "0.007",
+            "price": "38118.5",
+            "benchmark": "38118.5",
+            "fee": "0.05336590",
+            "maker": true
+          },
+          "gross": "2.6428",
+          "gross_at_fills": "2.6421",
+          "fees": "0.15904086",
+          "execution": "0.0007",
+          "after_fees": "2.48375914",
+          "funding": "-2E-12",
+          "net": "2.483059139998",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 257,
+              "fill_ms": 1621859459400,
+              "latest_observed_fill_ms": 1621859459400,
+              "qty": "0.005",
+              "price": "38177.4",
+              "benchmark": "38177.3",
+              "fee": "0.07635480",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 258,
+            "fill_ms": 1621860268000,
+            "latest_observed_fill_ms": 1621860268800,
+            "qty": "0.005",
+            "price": "38559.2",
+            "benchmark": "38559.2",
+            "fee": "0.03855920",
+            "maker": true
+          },
+          "gross": "1.9095",
+          "gross_at_fills": "1.9090",
+          "fees": "0.11491400",
+          "execution": "0.0005",
+          "after_fees": "1.79458600",
+          "funding": "0E-12",
+          "net": "1.794086000000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 259,
+              "fill_ms": 1621860271400,
+              "latest_observed_fill_ms": 1621860271400,
+              "qty": "0.005",
+              "price": "38600.1",
+              "benchmark": "38600",
+              "fee": "0.07720020",
+              "maker": false
+            },
+            {
+              "id": 261,
+              "fill_ms": 1621860965000,
+              "latest_observed_fill_ms": 1621860965000,
+              "qty": "0.001",
+              "price": "38185.1",
+              "benchmark": "38185",
+              "fee": "0.01527404",
+              "maker": false
+            },
+            {
+              "id": 263,
+              "fill_ms": 1621862361000,
+              "latest_observed_fill_ms": 1621862361000,
+              "qty": "0.001",
+              "price": "38052.1",
+              "benchmark": "38052",
+              "fee": "0.01522084",
+              "maker": false
+            },
+            {
+              "id": 265,
+              "fill_ms": 1621863057000,
+              "latest_observed_fill_ms": 1621863057000,
+              "qty": "0.001",
+              "price": "37718",
+              "benchmark": "37717.9",
+              "fee": "0.0150872",
+              "maker": false
+            },
+            {
+              "id": 267,
+              "fill_ms": 1621863289000,
+              "latest_observed_fill_ms": 1621863289000,
+              "qty": "0.002",
+              "price": "37784.9",
+              "benchmark": "37784.8",
+              "fee": "0.03022792",
+              "maker": false
+            },
+            {
+              "id": 269,
+              "fill_ms": 1621863869000,
+              "latest_observed_fill_ms": 1621863869000,
+              "qty": "0.005",
+              "price": "37384.1",
+              "benchmark": "37384",
+              "fee": "0.07476820",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 270,
+            "fill_ms": 1621881868000,
+            "latest_observed_fill_ms": 1621881868800,
+            "qty": "0.015",
+            "price": "38342.7",
+            "benchmark": "38342.7",
+            "fee": "0.11502810",
+            "maker": true
+          },
+          "gross": "5.6960",
+          "gross_at_fills": "5.6945",
+          "fees": "0.34280650",
+          "execution": "0.0015",
+          "after_fees": "5.35319350",
+          "funding": "-0.011761430585",
+          "net": "5.339932069415",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.011895298695",
+            "-0.011544472035"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 271,
+              "fill_ms": 1621881871400,
+              "latest_observed_fill_ms": 1621881871400,
+              "qty": "0.005",
+              "price": "38348.3",
+              "benchmark": "38348.2",
+              "fee": "0.07669660",
+              "maker": false
+            },
+            {
+              "id": 273,
+              "fill_ms": 1621882565000,
+              "latest_observed_fill_ms": 1621882565000,
+              "qty": "0.001",
+              "price": "37879.6",
+              "benchmark": "37879.5",
+              "fee": "0.01515184",
+              "maker": false
+            },
+            {
+              "id": 275,
+              "fill_ms": 1621882801000,
+              "latest_observed_fill_ms": 1621882801000,
+              "qty": "0.001",
+              "price": "37879.6",
+              "benchmark": "37879.5",
+              "fee": "0.01515184",
+              "maker": false
+            },
+            {
+              "id": 277,
+              "fill_ms": 1621883149000,
+              "latest_observed_fill_ms": 1621883149000,
+              "qty": "0.001",
+              "price": "37750.4",
+              "benchmark": "37750.3",
+              "fee": "0.01510016",
+              "maker": false
+            },
+            {
+              "id": 279,
+              "fill_ms": 1621883497000,
+              "latest_observed_fill_ms": 1621883497000,
+              "qty": "0.002",
+              "price": "37707.4",
+              "benchmark": "37707.3",
+              "fee": "0.03016592",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 280,
+            "fill_ms": 1621884656000,
+            "latest_observed_fill_ms": 1621884656800,
+            "qty": "0.01",
+            "price": "38447.3",
+            "benchmark": "38447.3",
+            "fee": "0.0768946",
+            "maker": true
+          },
+          "gross": "3.8081",
+          "gross_at_fills": "3.8071",
+          "fees": "0.22916096",
+          "execution": "0.0010",
+          "after_fees": "3.57893904",
+          "funding": "1E-12",
+          "net": "3.577939040001",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 281,
+              "fill_ms": 1621884659400,
+              "latest_observed_fill_ms": 1621884659400,
+              "qty": "0.005",
+              "price": "39088",
+              "benchmark": "39087.9",
+              "fee": "0.0781760",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 282,
+            "fill_ms": 1621885468000,
+            "latest_observed_fill_ms": 1621885468800,
+            "qty": "0.005",
+            "price": "39478.9",
+            "benchmark": "39478.9",
+            "fee": "0.03947890",
+            "maker": true
+          },
+          "gross": "1.9550",
+          "gross_at_fills": "1.9545",
+          "fees": "0.11765490",
+          "execution": "0.0005",
+          "after_fees": "1.83734510",
+          "funding": "-2E-12",
+          "net": "1.836845099998",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 283,
+              "fill_ms": 1621885471400,
+              "latest_observed_fill_ms": 1621885471400,
+              "qty": "0.005",
+              "price": "39778.4",
+              "benchmark": "39778.3",
+              "fee": "0.07955680",
+              "maker": false
+            },
+            {
+              "id": 285,
+              "fill_ms": 1621888257000,
+              "latest_observed_fill_ms": 1621888257000,
+              "qty": "0.001",
+              "price": "39110.7",
+              "benchmark": "39110.6",
+              "fee": "0.01564428",
+              "maker": false
+            },
+            {
+              "id": 287,
+              "fill_ms": 1621888489000,
+              "latest_observed_fill_ms": 1621888489000,
+              "qty": "0.001",
+              "price": "39191.4",
+              "benchmark": "39191.3",
+              "fee": "0.01567656",
+              "maker": false
+            },
+            {
+              "id": 289,
+              "fill_ms": 1621889069000,
+              "latest_observed_fill_ms": 1621889069000,
+              "qty": "0.003",
+              "price": "38707.6",
+              "benchmark": "38707.5",
+              "fee": "0.04644912",
+              "maker": false
+            },
+            {
+              "id": 291,
+              "fill_ms": 1621889301000,
+              "latest_observed_fill_ms": 1621889301000,
+              "qty": "0.002",
+              "price": "38886.6",
+              "benchmark": "38886.5",
+              "fee": "0.03110928",
+              "maker": false
+            },
+            {
+              "id": 293,
+              "fill_ms": 1621889533000,
+              "latest_observed_fill_ms": 1621889533000,
+              "qty": "0.002",
+              "price": "38826.9",
+              "benchmark": "38826.8",
+              "fee": "0.03106152",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 294,
+            "fill_ms": 1621903468000,
+            "latest_observed_fill_ms": 1621903468800,
+            "qty": "0.014",
+            "price": "39588",
+            "benchmark": "39588",
+            "fee": "0.1108464",
+            "maker": true
+          },
+          "gross": "5.4895",
+          "gross_at_fills": "5.4881",
+          "fees": "0.33034396",
+          "execution": "0.0014",
+          "after_fees": "5.15915604",
+          "funding": "-0.054329632419",
+          "net": "5.103426407581",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.05570614",
+            "-0.05387648"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 295,
+              "fill_ms": 1621903471400,
+              "latest_observed_fill_ms": 1621903471400,
+              "qty": "0.005",
+              "price": "39790.2",
+              "benchmark": "39790.1",
+              "fee": "0.07958040",
+              "maker": false
+            },
+            {
+              "id": 297,
+              "fill_ms": 1621904165000,
+              "latest_observed_fill_ms": 1621904165000,
+              "qty": "0.001",
+              "price": "39388.1",
+              "benchmark": "39388",
+              "fee": "0.01575524",
+              "maker": false
+            },
+            {
+              "id": 299,
+              "fill_ms": 1621905561000,
+              "latest_observed_fill_ms": 1621905561000,
+              "qty": "0.001",
+              "price": "39253.7",
+              "benchmark": "39253.6",
+              "fee": "0.01570148",
+              "maker": false
+            },
+            {
+              "id": 301,
+              "fill_ms": 1621906257000,
+              "latest_observed_fill_ms": 1621906257000,
+              "qty": "0.001",
+              "price": "38956.4",
+              "benchmark": "38956.3",
+              "fee": "0.01558256",
+              "maker": false
+            },
+            {
+              "id": 303,
+              "fill_ms": 1621906489000,
+              "latest_observed_fill_ms": 1621906489000,
+              "qty": "0.002",
+              "price": "39015.9",
+              "benchmark": "39015.8",
+              "fee": "0.03121272",
+              "maker": false
+            },
+            {
+              "id": 305,
+              "fill_ms": 1621907069000,
+              "latest_observed_fill_ms": 1621907069000,
+              "qty": "0.004",
+              "price": "38659.1",
+              "benchmark": "38659",
+              "fee": "0.06185456",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 306,
+            "fill_ms": 1622000668000,
+            "latest_observed_fill_ms": 1622000668800,
+            "qty": "0.014",
+            "price": "39622.1",
+            "benchmark": "39622.1",
+            "fee": "0.11094188",
+            "maker": true
+          },
+          "gross": "5.4934",
+          "gross_at_fills": "5.4920",
+          "fees": "0.33062884",
+          "execution": "0.0014",
+          "after_fees": "5.16277116",
+          "funding": "-0.161832801663",
+          "net": "4.999538358337",
+          "official_funding_schedule_count": 3,
+          "funding_price_envelope_USDT": [
+            "-0.16242604",
+            "-0.15888376"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 307,
+              "fill_ms": 1622000671400,
+              "latest_observed_fill_ms": 1622000671400,
+              "qty": "0.005",
+              "price": "39724.3",
+              "benchmark": "39724.2",
+              "fee": "0.07944860",
+              "maker": false
+            },
+            {
+              "id": 309,
+              "fill_ms": 1622003457000,
+              "latest_observed_fill_ms": 1622003457000,
+              "qty": "0.001",
+              "price": "39200",
+              "benchmark": "39199.9",
+              "fee": "0.0156800",
+              "maker": false
+            },
+            {
+              "id": 311,
+              "fill_ms": 1622003689000,
+              "latest_observed_fill_ms": 1622003689000,
+              "qty": "0.001",
+              "price": "39240.1",
+              "benchmark": "39240",
+              "fee": "0.01569604",
+              "maker": false
+            },
+            {
+              "id": 313,
+              "fill_ms": 1622004269000,
+              "latest_observed_fill_ms": 1622004269000,
+              "qty": "0.001",
+              "price": "39000.1",
+              "benchmark": "39000",
+              "fee": "0.01560004",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 314,
+            "fill_ms": 1622010656000,
+            "latest_observed_fill_ms": 1622010656800,
+            "qty": "0.008",
+            "price": "39902.8",
+            "benchmark": "39902.8",
+            "fee": "0.06384448",
+            "maker": true
+          },
+          "gross": "3.1615",
+          "gross_at_fills": "3.1607",
+          "fees": "0.19026916",
+          "execution": "0.0008",
+          "after_fees": "2.97123084",
+          "funding": "0E-11",
+          "net": "2.97043084000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 315,
+              "fill_ms": 1622010659400,
+              "latest_observed_fill_ms": 1622010659400,
+              "qty": "0.005",
+              "price": "40233.3",
+              "benchmark": "40233.2",
+              "fee": "0.08046660",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 316,
+            "fill_ms": 1622011468000,
+            "latest_observed_fill_ms": 1622011468800,
+            "qty": "0.005",
+            "price": "40635.6",
+            "benchmark": "40635.6",
+            "fee": "0.04063560",
+            "maker": true
+          },
+          "gross": "2.0120",
+          "gross_at_fills": "2.0115",
+          "fees": "0.12110220",
+          "execution": "0.0005",
+          "after_fees": "1.89089780",
+          "funding": "2E-12",
+          "net": "1.890397800002",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "warm_record_windows_independently_matched": 649,
+      "native_price_points_crosschecked": 8764,
+      "account_mark_samples": 6970
+    },
+    {
+      "id": 4835,
+      "executed_taker": 47,
+      "executed_maker": 0,
+      "canceled_unfilled": 0,
+      "opened_size_BTC_at_cutoff": "0.306",
+      "pending_reduce_only_size_BTC_at_cutoff": "0",
+      "marked_drawdown_USDT": "7848.5343301284244",
+      "marked_drawdown_fraction": "0.751242127868941097277674371705740552606286",
+      "native_cutoff": {
+        "now": 1630108801400,
+        "ticker": {
+          "Time": 1630108800000,
+          "Symbol": "BTC_USDT.swap",
+          "Open": 49082.1,
+          "High": 49082.2,
+          "Low": 49082,
+          "Sell": 49082.2,
+          "Buy": 49082,
+          "Last": 49082.1,
+          "Volume": 0,
+          "OpenInterest": 0
+        },
+        "account": {
+          "Balance": 9331.546250574322,
+          "FrozenBalance": 0,
+          "Stocks": 0,
+          "FrozenStocks": 0,
+          "Equity": 8704.883535574321,
+          "UPnL": -1450.1251
+        },
+        "position": [
+          {
+            "Price": 53821.07091503269,
+            "Amount": 0.306,
+            "FrozenAmount": 0,
+            "Profit": -1450.1251,
+            "Margin": 823.462385,
+            "MarginLevel": 20,
+            "Type": 0,
+            "Symbol": "BTC_USDT.swap",
+            "ContractType": "swap"
+          }
+        ],
+        "pending": []
+      },
+      "actual_closed_gross_at_fills_USDT": "503.6762",
+      "native_marked_wallet_USDT": "10155.008635574321",
+      "open_funding_USDT": "-262.056896144246",
+      "open_funding_bound_USDT": [
+        "-266.055237313080",
+        "-256.681955083134"
+      ],
+      "open_entry_fee_USDT": "6.58769908",
+      "open_entries": [
+        {
+          "id": 43,
+          "fill_ms": 1620619664800,
+          "latest_observed_fill_ms": 1620619664800,
+          "qty": "0.034",
+          "price": "59541.4",
+          "benchmark": "59541.3",
+          "fee": "0.80976304",
+          "maker": false
+        },
+        {
+          "id": 44,
+          "fill_ms": 1620633948800,
+          "latest_observed_fill_ms": 1620633948800,
+          "qty": "0.015",
+          "price": "58206.3",
+          "benchmark": "58206.2",
+          "fee": "0.34923780",
+          "maker": false
+        },
+        {
+          "id": 45,
+          "fill_ms": 1620639868800,
+          "latest_observed_fill_ms": 1620639868800,
+          "qty": "0.022",
+          "price": "57832.1",
+          "benchmark": "57832",
+          "fee": "0.50892248",
+          "maker": false
+        },
+        {
+          "id": 46,
+          "fill_ms": 1620645096800,
+          "latest_observed_fill_ms": 1620645096800,
+          "qty": "0.031",
+          "price": "57446.2",
+          "benchmark": "57446.1",
+          "fee": "0.71233288",
+          "maker": false
+        },
+        {
+          "id": 47,
+          "fill_ms": 1620859468800,
+          "latest_observed_fill_ms": 1620859468800,
+          "qty": "0.204",
+          "price": "51561.8",
+          "benchmark": "51561.7",
+          "fee": "4.20744288",
+          "maker": false
+        }
+      ],
+      "closed_cycles": [
+        {
+          "entries": [
+            {
+              "id": 1,
+              "fill_ms": 1619827201200,
+              "latest_observed_fill_ms": 1619827201200,
+              "qty": "0.035",
+              "price": "57688.4",
+              "benchmark": "57688.3",
+              "fee": "0.80763760",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 2,
+            "fill_ms": 1619833468800,
+            "latest_observed_fill_ms": 1619833468800,
+            "qty": "0.035",
+            "price": "58488.1",
+            "benchmark": "58488.2",
+            "fee": "0.81883340",
+            "maker": false
+          },
+          "gross": "27.9965",
+          "gross_at_fills": "27.9895",
+          "fees": "1.62647100",
+          "execution": "0.0070",
+          "after_fees": "26.37002900",
+          "funding": "0E-8",
+          "net": "26.363029",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 3,
+              "fill_ms": 1619833700800,
+              "latest_observed_fill_ms": 1619833700800,
+              "qty": "0.034",
+              "price": "58455.6",
+              "benchmark": "58455.5",
+              "fee": "0.79499616",
+              "maker": false
+            },
+            {
+              "id": 4,
+              "fill_ms": 1619859948800,
+              "latest_observed_fill_ms": 1619859948800,
+              "qty": "0.014",
+              "price": "57284.3",
+              "benchmark": "57284.2",
+              "fee": "0.32079208",
+              "maker": false
+            },
+            {
+              "id": 5,
+              "fill_ms": 1619926256800,
+              "latest_observed_fill_ms": 1619926256800,
+              "qty": "0.021",
+              "price": "56814.4",
+              "benchmark": "56814.3",
+              "fee": "0.47724096",
+              "maker": false
+            },
+            {
+              "id": 6,
+              "fill_ms": 1619927068800,
+              "latest_observed_fill_ms": 1619927068800,
+              "qty": "0.033",
+              "price": "56348.3",
+              "benchmark": "56348.2",
+              "fee": "0.74379756",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 7,
+            "fill_ms": 1620005456800,
+            "latest_observed_fill_ms": 1620005456800,
+            "qty": "0.102",
+            "price": "58056.3",
+            "benchmark": "58056.4",
+            "fee": "2.36869704",
+            "maker": false
+          },
+          "gross": "79.6961",
+          "gross_at_fills": "79.6757",
+          "fees": "4.70552380",
+          "execution": "0.0204",
+          "after_fees": "74.99057620",
+          "funding": "-9.090141282935",
+          "net": "65.880034917065",
+          "official_funding_schedule_count": 6,
+          "funding_price_envelope_USDT": [
+            "-9.159202361456",
+            "-9.044508384460"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 8,
+              "fill_ms": 1620005688800,
+              "latest_observed_fill_ms": 1620005688800,
+              "qty": "0.034",
+              "price": "57991",
+              "benchmark": "57990.9",
+              "fee": "0.7886776",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 9,
+            "fill_ms": 1620027868800,
+            "latest_observed_fill_ms": 1620027868800,
+            "qty": "0.034",
+            "price": "58907.5",
+            "benchmark": "58907.6",
+            "fee": "0.80114200",
+            "maker": false
+          },
+          "gross": "31.1678",
+          "gross_at_fills": "31.1610",
+          "fees": "1.58981960",
+          "execution": "0.0068",
+          "after_fees": "29.57798040",
+          "funding": "-1E-12",
+          "net": "29.571180399999",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 10,
+              "fill_ms": 1620028100800,
+              "latest_observed_fill_ms": 1620028100800,
+              "qty": "0.034",
+              "price": "58861.1",
+              "benchmark": "58861",
+              "fee": "0.80051096",
+              "maker": false
+            },
+            {
+              "id": 11,
+              "fill_ms": 1620049468800,
+              "latest_observed_fill_ms": 1620049468800,
+              "qty": "0.018",
+              "price": "57323",
+              "benchmark": "57322.9",
+              "fee": "0.4127256",
+              "maker": false
+            },
+            {
+              "id": 12,
+              "fill_ms": 1620075132800,
+              "latest_observed_fill_ms": 1620075132800,
+              "qty": "0.031",
+              "price": "56604.2",
+              "benchmark": "56604.1",
+              "fee": "0.70189208",
+              "maker": false
+            },
+            {
+              "id": 13,
+              "fill_ms": 1620076296800,
+              "latest_observed_fill_ms": 1620076296800,
+              "qty": "0.034",
+              "price": "56500.8",
+              "benchmark": "56500.7",
+              "fee": "0.76841088",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 14,
+            "fill_ms": 1620231096800,
+            "latest_observed_fill_ms": 1620231096800,
+            "qty": "0.117",
+            "price": "57939.9",
+            "benchmark": "57940",
+            "fee": "2.71158732",
+            "maker": false
+          },
+          "gross": "70.1429",
+          "gross_at_fills": "70.1195",
+          "fees": "5.39512684",
+          "execution": "0.0234",
+          "after_fees": "64.74777316",
+          "funding": "-17.433453920715",
+          "net": "47.290919239285",
+          "official_funding_schedule_count": 8,
+          "funding_price_envelope_USDT": [
+            "-17.629769346242",
+            "-17.168320872331"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 15,
+              "fill_ms": 1620231560800,
+              "latest_observed_fill_ms": 1620231560800,
+              "qty": "0.035",
+              "price": "57727.4",
+              "benchmark": "57727.3",
+              "fee": "0.80818360",
+              "maker": false
+            },
+            {
+              "id": 16,
+              "fill_ms": 1620283932800,
+              "latest_observed_fill_ms": 1620283932800,
+              "qty": "0.015",
+              "price": "56523.1",
+              "benchmark": "56523",
+              "fee": "0.33913860",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 17,
+            "fill_ms": 1620297056800,
+            "latest_observed_fill_ms": 1620297056800,
+            "qty": "0.05",
+            "price": "58034",
+            "benchmark": "58034.1",
+            "fee": "1.160680",
+            "maker": false
+          },
+          "gross": "33.4045",
+          "gross_at_fills": "33.3945",
+          "fees": "2.30800220",
+          "execution": "0.0100",
+          "after_fees": "31.09649780",
+          "funding": "-3.235897032101",
+          "net": "27.850600767899",
+          "official_funding_schedule_count": 2,
+          "funding_price_envelope_USDT": [
+            "-3.25413502745",
+            "-3.21052363536"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 18,
+              "fill_ms": 1620297288800,
+              "latest_observed_fill_ms": 1620297288800,
+              "qty": "0.035",
+              "price": "57951.1",
+              "benchmark": "57951",
+              "fee": "0.81131540",
+              "maker": false
+            },
+            {
+              "id": 19,
+              "fill_ms": 1620319468800,
+              "latest_observed_fill_ms": 1620319468800,
+              "qty": "0.016",
+              "price": "56632.3",
+              "benchmark": "56632.2",
+              "fee": "0.36244672",
+              "maker": false
+            },
+            {
+              "id": 20,
+              "fill_ms": 1620325856800,
+              "latest_observed_fill_ms": 1620325856800,
+              "qty": "0.027",
+              "price": "56039.7",
+              "benchmark": "56039.6",
+              "fee": "0.60522876",
+              "maker": false
+            },
+            {
+              "id": 21,
+              "fill_ms": 1620326668800,
+              "latest_observed_fill_ms": 1620326668800,
+              "qty": "0.041",
+              "price": "55529.7",
+              "benchmark": "55529.6",
+              "fee": "0.91068708",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 22,
+            "fill_ms": 1620342696800,
+            "latest_observed_fill_ms": 1620342696800,
+            "qty": "0.119",
+            "price": "56849.9",
+            "benchmark": "56850",
+            "fee": "2.70605524",
+            "maker": false
+          },
+          "gross": "40.9670",
+          "gross_at_fills": "40.9432",
+          "fees": "5.39573320",
+          "execution": "0.0238",
+          "after_fees": "35.57126680",
+          "funding": "-1.870440393900",
+          "net": "33.677026406100",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-1.8842143068",
+            "-1.8527621280"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 23,
+              "fill_ms": 1620391468800,
+              "latest_observed_fill_ms": 1620391468800,
+              "qty": "0.035",
+              "price": "57618.9",
+              "benchmark": "57618.8",
+              "fee": "0.80666460",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 24,
+            "fill_ms": 1620405868800,
+            "latest_observed_fill_ms": 1620405868800,
+            "qty": "0.035",
+            "price": "58386.2",
+            "benchmark": "58386.3",
+            "fee": "0.81740680",
+            "maker": false
+          },
+          "gross": "26.8625",
+          "gross_at_fills": "26.8555",
+          "fees": "1.62407140",
+          "execution": "0.0070",
+          "after_fees": "25.23842860",
+          "funding": "-0.345167371030",
+          "net": "24.886261228970",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.35034115452",
+            "-0.34294566152"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 25,
+              "fill_ms": 1620406100800,
+              "latest_observed_fill_ms": 1620406100800,
+              "qty": "0.034",
+              "price": "58378.3",
+              "benchmark": "58378.2",
+              "fee": "0.79394488",
+              "maker": false
+            },
+            {
+              "id": 26,
+              "fill_ms": 1620423868800,
+              "latest_observed_fill_ms": 1620423868800,
+              "qty": "0.014",
+              "price": "57153.4",
+              "benchmark": "57153.3",
+              "fee": "0.32005904",
+              "maker": false
+            },
+            {
+              "id": 27,
+              "fill_ms": 1620427468800,
+              "latest_observed_fill_ms": 1620427468800,
+              "qty": "0.02",
+              "price": "56820.1",
+              "benchmark": "56820",
+              "fee": "0.4545608",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 28,
+            "fill_ms": 1620441868800,
+            "latest_observed_fill_ms": 1620441868800,
+            "qty": "0.068",
+            "price": "58387.3",
+            "benchmark": "58387.4",
+            "fee": "1.58813456",
+            "maker": false
+          },
+          "gross": "48.9382",
+          "gross_at_fills": "48.9246",
+          "fees": "3.15669928",
+          "execution": "0.0136",
+          "after_fees": "45.78150072",
+          "funding": "-2.315373004316",
+          "net": "43.452527715684",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-2.33395082772",
+            "-2.29792724904"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 29,
+              "fill_ms": 1620442100800,
+              "latest_observed_fill_ms": 1620442100800,
+              "qty": "0.034",
+              "price": "58329.3",
+              "benchmark": "58329.2",
+              "fee": "0.79327848",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 30,
+            "fill_ms": 1620463932800,
+            "latest_observed_fill_ms": 1620463932800,
+            "qty": "0.034",
+            "price": "59469.4",
+            "benchmark": "59469.5",
+            "fee": "0.80878384",
+            "maker": false
+          },
+          "gross": "38.7702",
+          "gross_at_fills": "38.7634",
+          "fees": "1.60206232",
+          "execution": "0.0068",
+          "after_fees": "37.16813768",
+          "funding": "-0.920195887362",
+          "net": "36.241141792638",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-0.93574425677",
+            "-0.919770226898"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 31,
+              "fill_ms": 1620464280800,
+              "latest_observed_fill_ms": 1620464280800,
+              "qty": "0.034",
+              "price": "58958.1",
+              "benchmark": "58958",
+              "fee": "0.80183016",
+              "maker": false
+            },
+            {
+              "id": 32,
+              "fill_ms": 1620488668800,
+              "latest_observed_fill_ms": 1620488668800,
+              "qty": "0.016",
+              "price": "57530",
+              "benchmark": "57529.9",
+              "fee": "0.3681920",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 33,
+            "fill_ms": 1620495868800,
+            "latest_observed_fill_ms": 1620495868800,
+            "qty": "0.05",
+            "price": "59110.2",
+            "benchmark": "59110.3",
+            "fee": "1.1822040",
+            "maker": false
+          },
+          "gross": "30.4646",
+          "gross_at_fills": "30.4546",
+          "fees": "2.35222616",
+          "execution": "0.0100",
+          "after_fees": "28.11237384",
+          "funding": "-1.337520013989",
+          "net": "26.764853826011",
+          "official_funding_schedule_count": 1,
+          "funding_price_envelope_USDT": [
+            "-1.35974557970",
+            "-1.33689934510"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 34,
+              "fill_ms": 1620496100800,
+              "latest_observed_fill_ms": 1620496100800,
+              "qty": "0.034",
+              "price": "59023.7",
+              "benchmark": "59023.6",
+              "fee": "0.80272232",
+              "maker": false
+            },
+            {
+              "id": 35,
+              "fill_ms": 1620535468800,
+              "latest_observed_fill_ms": 1620535468800,
+              "qty": "0.014",
+              "price": "57820.1",
+              "benchmark": "57820",
+              "fee": "0.32379256",
+              "maker": false
+            },
+            {
+              "id": 36,
+              "fill_ms": 1620562760800,
+              "latest_observed_fill_ms": 1620562760800,
+              "qty": "0.019",
+              "price": "57490.2",
+              "benchmark": "57490.1",
+              "fee": "0.43692552",
+              "maker": false
+            },
+            {
+              "id": 37,
+              "fill_ms": 1620563456800,
+              "latest_observed_fill_ms": 1620563456800,
+              "qty": "0.033",
+              "price": "56903.1",
+              "benchmark": "56903",
+              "fee": "0.75112092",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 38,
+            "fill_ms": 1620596668800,
+            "latest_observed_fill_ms": 1620596668800,
+            "qty": "0.1",
+            "price": "58188.9",
+            "benchmark": "58189",
+            "fee": "2.327556",
+            "maker": false
+          },
+          "gross": "32.5067",
+          "gross_at_fills": "32.4867",
+          "fees": "4.64211732",
+          "execution": "0.0200",
+          "after_fees": "27.86458268",
+          "funding": "-5.867367975083",
+          "net": "21.977214704917",
+          "official_funding_schedule_count": 3,
+          "funding_price_envelope_USDT": [
+            "-5.912585772876",
+            "-5.850882951732"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 39,
+              "fill_ms": 1620605960800,
+              "latest_observed_fill_ms": 1620605960800,
+              "qty": "0.034",
+              "price": "58374.9",
+              "benchmark": "58374.8",
+              "fee": "0.79389864",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 40,
+            "fill_ms": 1620608748800,
+            "latest_observed_fill_ms": 1620608748800,
+            "qty": "0.034",
+            "price": "59032",
+            "benchmark": "59032.1",
+            "fee": "0.8028352",
+            "maker": false
+          },
+          "gross": "22.3482",
+          "gross_at_fills": "22.3414",
+          "fees": "1.59673384",
+          "execution": "0.0068",
+          "after_fees": "20.75146616",
+          "funding": "-1E-12",
+          "net": "20.744666159999",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "entries": [
+            {
+              "id": 41,
+              "fill_ms": 1620608864800,
+              "latest_observed_fill_ms": 1620608864800,
+              "qty": "0.034",
+              "price": "58992.6",
+              "benchmark": "58992.5",
+              "fee": "0.80229936",
+              "maker": false
+            }
+          ],
+          "exit": {
+            "id": 42,
+            "fill_ms": 1620619548800,
+            "latest_observed_fill_ms": 1620619548800,
+            "qty": "0.034",
+            "price": "59597.5",
+            "benchmark": "59597.6",
+            "fee": "0.81052600",
+            "maker": false
+          },
+          "gross": "20.5734",
+          "gross_at_fills": "20.5666",
+          "fees": "1.61282536",
+          "execution": "0.0068",
+          "after_fees": "18.96057464",
+          "funding": "0E-12",
+          "net": "18.953774640000",
+          "official_funding_schedule_count": 0,
+          "funding_price_envelope_USDT": [
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "warm_record_windows_independently_matched": 715,
+      "native_price_points_crosschecked": 38895,
+      "account_mark_samples": 36811
+    }
+  ],
+  "source": {
+    "4834": {
+      "slug": "%E6%B5%8B%E8%AF%95-%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8kdj%E4%B8%8Evol%E9%87%8F%E7%AD%9B%E9%80%89%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%B6%A8%E7%9A%84%E5%B8%81%E7%A7%8D",
+      "document_sha256": "0611a3144361ae3b2a261a895c14741cdd10c25d3cea9f9bb857537f2f17c3e4",
+      "code_sha256": "1628ae9e49e8e9603eb5608d3a048b7e78744a080861fdc14a0a0c2891fe7381",
+      "publisher": 313036,
+      "end": 1622160000000,
+      "bet": 10,
+      "record_hours": 1,
+      "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%B5%8B%E8%AF%95-%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8kdj%E4%B8%8Evol%E9%87%8F%E7%AD%9B%E9%80%89%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%B6%A8%E7%9A%84%E5%B8%81%E7%A7%8D.md",
+      "params": {
+        "MarginLevel": 20,
+        "amountScale": 3,
+        "priceScale": 5,
+        "bet": 10,
+        "OpType": 1
+      },
+      "current_public_form": {
+        "url": "https://www.fmz.com/strategy/313036",
+        "html_sha256": "f4dee2ad0b48f5d7cb8ba6ac24b24add3e4b34452c3eaa9a7ae63252dd0c1fda",
+        "args": {
+          "MarginLevel": 20,
+          "amountScale": 3,
+          "priceScale": 5,
+          "bet": 10,
+          "$$$__cmd__$$$已经清算的数据": "__button__",
+          "$$$__cmd__$$$清除持久数据数据": "__button__"
+        }
+      }
+    },
+    "4835": {
+      "slug": "%E6%B5%8B%E8%AF%95-%E5%85%B3%E4%BA%8E%E9%A9%AC%E4%B8%81%E9%95%BF%E6%9C%9F%E6%95%88%E6%9E%9C",
+      "document_sha256": "4fe2ea9964cd4c580b6c886597985508aca0b8b827898bb974031899de43b7f1",
+      "code_sha256": "4f83acde521eae11b08255752eaea5e4ba8d6c8f28ff132c1e72a2bbc42681a5",
+      "publisher": 313486,
+      "end": 1630108800000,
+      "bet": 100,
+      "record_hours": 4,
+      "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%B5%8B%E8%AF%95-%E5%85%B3%E4%BA%8E%E9%A9%AC%E4%B8%81%E9%95%BF%E6%9C%9F%E6%95%88%E6%9E%9C.md",
+      "params": {
+        "MarginLevel": 20,
+        "amountScale": 3,
+        "priceScale": 5,
+        "bet": 100,
+        "OpType": 1
+      }
+    }
+  },
+  "market": {
+    "swap": {
+      "fmz_overlap": {
+        "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.swap&event=feed&detail=true&round=true&period=3600000&from=1619827200&to=1620259200",
+        "sha256": "45463314222f889d617bf97a0c91cd7f9ede80a71feea2e57dc960c56699c9c0",
+        "rows": 121
+      },
+      "exact_agreement": 120,
+      "query_terminal_candle_excluded": true,
+      "exchange": [
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-10.zip",
+          "sha256": "753bc2e366777b40294690c5bbee38da8ec99e3157739ba0f16850c94ac92dc7",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-10.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-11.zip",
+          "sha256": "23694fa6fc619c159992db5325d37730a392e8ee23e9e5c375a7bfef6022fb82",
+          "rows": 720,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-11.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip",
+          "sha256": "9eca4954142f813a1ab404161b76facb56389a26fcd0b05bf93a19bf29578cb3",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-01.zip",
+          "sha256": "00de1eb2f3e3bc7f21b7ab321f1681385726fe7ba55306a7337acfd8f81fedfa",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-01.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-02.zip",
+          "sha256": "c5739d16db0aa917f9b4f196cf1dc3c9741b2889253c029571dcd2d00e83ccbb",
+          "rows": 672,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-02.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-03.zip",
+          "sha256": "518891de0fa643092cac84143c9b35a7cbcebfc75ae0846ce36c8e3adab1929f",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-03.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-04.zip",
+          "sha256": "0fdf8d01fa2eae368a63dcf709e6e6c5b0fd79bbe83b2f086aefbe2a7890924f",
+          "rows": 720,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-04.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-05.zip",
+          "sha256": "c209747915a1451a7b51d80d92e68332622c1dd1b9517dc7723f78cfa4f28ab9",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-05.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-06.zip",
+          "sha256": "5134cef4361e0819b721776da6e99f715141d122e3cfbf4be729e3dfc153ac33",
+          "rows": 720,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-06.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-07.zip",
+          "sha256": "97241c02191fd4694daf9836269e6f8ed04ef5bf858414de5a3354678552b54d",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-07.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-08.zip",
+          "sha256": "4c8290ad0baa9fcf37d45b893e8cae1a1e3b9ef77987a9d9abd64e44ab7deb09",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-08.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-09.zip",
+          "sha256": "22c55191129632daf70611af13e8f2b0f34a5e79f4876f41744a9848c43b9864",
+          "rows": 720,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2021-09.zip.CHECKSUM"
+        }
+      ]
+    },
+    "index": {
+      "fmz_overlap": {
+        "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.index&event=feed&detail=true&round=true&period=3600000&from=1619827200&to=1620259200",
+        "sha256": "dbbb3286ef4d6d4175a2d408f8d97459a0566648e24de841fbdd4440936053b5",
+        "rows": 121
+      },
+      "exact_agreement": 120,
+      "query_terminal_candle_excluded": true,
+      "exchange": [
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-10.zip",
+          "sha256": "d99dbb27fb47063c80fa9fb35340699a3ee325e531fe9106d3085b5652df9b4a",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-10.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-11.zip",
+          "sha256": "571a9932fe3275bea9375dd8eed451a814cdf023434660258a80f46b678b3264",
+          "rows": 720,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-11.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip",
+          "sha256": "cc053977298f3fddaad2c18a532e5b3b089256ff3405a3e13108be772e780811",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-01.zip",
+          "sha256": "58fa3bdc5870f4a90ba3bc7cc24fa3afdeec7fc859eeafba2a098d4314cf853c",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-01.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-02.zip",
+          "sha256": "0c49e25d9fbbfe57dcd5ba4e23c281e9762d2faf18ba9f246dede81965eedc41",
+          "rows": 672,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-02.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-03.zip",
+          "sha256": "d7455d8e7651d6895c96803c1946391a5ecb46b69a81a57ef5186ec873babcd7",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-03.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-04.zip",
+          "sha256": "bc94c685d52c73232a6a30b0ccdb03bc2d687b46ce6e6ef2d577a4e7ad4ed6a2",
+          "rows": 720,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-04.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-05.zip",
+          "sha256": "70227397ba50ff1c9c1490da04697acc23680c5703f9ef26931f307ff9488efd",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-05.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-06.zip",
+          "sha256": "b6b96fcb30a42883471d51d62a6590903599b0705ff8ce7ba4f71178117cd0a3",
+          "rows": 720,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-06.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07.zip",
+          "sha256": "c5bad72b9e9a0001bff26931dbf2d0d2c4593adacce07d376c46071c6bcb9c7f",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-08.zip",
+          "sha256": "077d9f535359efe7637e62856f67694a5de39452bae977904a77693cbb5ef0bd",
+          "rows": 744,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-08.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-09.zip",
+          "sha256": "6b1ec9a55f6cb5e85f4ef7bf2f3e6f93aef19ec181ce8def92fbd4c87944aa53",
+          "rows": 720,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-09.zip.CHECKSUM"
+        }
+      ]
+    },
+    "funding": {
+      "fmz_overlap": {
+        "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.funding&event=feed&detail=true&round=true&period=3600000&from=1619827200&to=1620259200",
+        "sha256": "24984741dbcbe17de414f3812926fb379e8eaf79a5637ae641fe6172ae6441d6",
+        "rows": 15
+      },
+      "exact_agreement": 15,
+      "query_terminal_candle_excluded": true,
+      "exchange": [
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-05.zip",
+          "sha256": "ed934afb9cf84df6ecae742e755147333a84244836a66b51523abc66dd5f63af",
+          "rows": 93,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-05.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-06.zip",
+          "sha256": "7b8d9bfb8816636b800764dafb2aa2307d19166c695bfa245adbf7d01d61f766",
+          "rows": 90,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-06.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-07.zip",
+          "sha256": "8ab3df641d3bcf40527491f8e26d046ad2b662d1950ead9555ad32975571b7fe",
+          "rows": 93,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-07.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-08.zip",
+          "sha256": "7eb681cc45b94176f4b9192a62c3a1925d79031ba001cea2d8dec6ff6e5b9c35",
+          "rows": 93,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-08.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-09.zip",
+          "sha256": "03f25a7c25eef18d5f5b5b7bb0b664cab7a210b409f37e95a54e141808a0752d",
+          "rows": 90,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-09.zip.CHECKSUM"
+        }
+      ]
+    },
+    "fill4h": {
+      "fmz_overlap": {
+        "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.swap&event=fill&detail=true&round=true&period=14400000&from=1619827200&to=1620259200",
+        "sha256": "dbd93367169297dd484d3c060c28c20c9f989b48ceb9134c0284078395180892",
+        "rows": 31
+      },
+      "exact_agreement": 30,
+      "query_terminal_candle_excluded": true,
+      "exchange": [
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2020-10.zip",
+          "sha256": "1791e2dd8b1d4dbbb588f2a851102424787037ddb3e13f4ef91b076558c83dca",
+          "rows": 186,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2020-10.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2020-11.zip",
+          "sha256": "66b146e2ece8779b8b4dd0256ea89fd46956347431535c5229161de8f7e007b0",
+          "rows": 180,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2020-11.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2020-12.zip",
+          "sha256": "e6802fc8b7a750cab7388bc3b0c3638d1649220a67810252d9ec3c02c8933671",
+          "rows": 186,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2020-12.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-01.zip",
+          "sha256": "0013f302159ee46ad4f81dbd44b595df8f4d764de88b64273b79d01b4f333e23",
+          "rows": 186,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-01.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-02.zip",
+          "sha256": "e52a119613bf8d2d7fed60f6a80ddbf0b0f9127d966e7ad1b15ffeca8ecb280a",
+          "rows": 168,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-02.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-03.zip",
+          "sha256": "ca4eacc180f975d3c7413bf868a1655dbaea006092e07ba28ea9ea43aad0403c",
+          "rows": 186,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-03.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-04.zip",
+          "sha256": "8f2f40d6d567cb2081de7edfcbb8e5c8c33759866b4f75cb178ca7292f84985b",
+          "rows": 180,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-04.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-05.zip",
+          "sha256": "529ae82f647603ef517e5de807d14d3c90f072a4543e804239b67c6b588ad8b5",
+          "rows": 186,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-05.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-06.zip",
+          "sha256": "5f4a6687e046483d22d2e0db89b6f04ad4d49987344d5a4d7665b46a1eca5b9f",
+          "rows": 180,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-06.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-07.zip",
+          "sha256": "951590c2ff4f4c69d4ad0d72f53e6a3d287ba667dcec099ac9afcb7d5635fd22",
+          "rows": 186,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-07.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-08.zip",
+          "sha256": "750efc433242daf5424b2aff49f3c3ea6fcca41eb3f2893f3cbc832fdd43cb34",
+          "rows": 186,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-08.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-09.zip",
+          "sha256": "c05ab152bd0c4b544d61a22a9ae7a3b65cbfebb3ed54511a350e7fd36bcc83a8",
+          "rows": 180,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2021-09.zip.CHECKSUM"
+        }
+      ]
+    },
+    "fill1d": {
+      "fmz_overlap": {
+        "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.swap&event=fill&detail=true&round=true&period=86400000&from=1619827200&to=1620259200",
+        "sha256": "bee82f455432b86a8ab3ff4081e95a72eefe8d12032cafcd78f78dc02d363039",
+        "rows": 6
+      },
+      "exact_agreement": 5,
+      "query_terminal_candle_excluded": true,
+      "exchange": [
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-10.zip",
+          "sha256": "22fefc0b40cec702ff683c2ef9d25c1e249677ca8055cef4d07d83839e480ad8",
+          "rows": 31,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-10.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-11.zip",
+          "sha256": "15297014b7d6ee07dd90d97e4192e0949817da3c53ed26ef467857a53f29e0c4",
+          "rows": 30,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-11.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-12.zip",
+          "sha256": "6cba4bb0135c45c8be87a88d0ea712455aa805b36faa431ebf30937b12d52c1d",
+          "rows": 31,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-12.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-01.zip",
+          "sha256": "6a4dbacb435eac93e60896bd62a2320d313e6578f295a62f77cbee0d706a9981",
+          "rows": 31,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-01.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-02.zip",
+          "sha256": "294d0696237dc225217df26103e78ac640850c34b0b6c2d44aa64a2f84a67884",
+          "rows": 28,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-02.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-03.zip",
+          "sha256": "80d5f940649faa70cf374a2a7646d032eeb22582966125db4d24cf973c7cf899",
+          "rows": 31,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-03.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-04.zip",
+          "sha256": "ec58d64320061a7a5b57238490b787e7376e72131d3d06e768120e2f5cd0c8c8",
+          "rows": 30,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-04.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-05.zip",
+          "sha256": "12f232d27edb5c507bd8686108bfbe4cb6c6959960f1ff3b39a5ac831ffaf2b1",
+          "rows": 31,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-05.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-06.zip",
+          "sha256": "10000897f2df8f86b2b6a8b218b7b5b9132fc0f25bd930c2444d458d843a00d9",
+          "rows": 30,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-06.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-07.zip",
+          "sha256": "c3a7cd0aeda605a8b5ff327a0c596c9d60d2457d8673c3607757c9837c282178",
+          "rows": 31,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-07.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-08.zip",
+          "sha256": "baf5fe9492f95a56f91bf80e17548294c992983e495017358be23b4c1174d214",
+          "rows": 31,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-08.zip.CHECKSUM"
+        },
+        {
+          "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-09.zip",
+          "sha256": "5ed176eb237c35110cd48dd219fe2d5acc59dbee1c7eb431643b1a3e14709976",
+          "rows": 30,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-09.zip.CHECKSUM"
+        }
+      ]
+    }
+  },
+  "proof": {
+    "input_sha256": "380bb43666498ceb434bd4ba2ae127fec54475f10dbfca31cdd749f4a0823f15",
+    "deterministic_native_receipt_sha256": "390c99446c453051984257bf882622d3a90513ec5bfabf6ccf2e61da76d04ab2",
+    "native_engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "worker_sha256": "ae216138ef141a23ddace9fc3e77104953dedacf95ff044995e0d9fcdc67528f",
+    "stage_sha256": "f2933ca75e159e2fbcd587b33e38f5e8bdcd3811b967485106a43d0fc614060e",
+    "verifier_sha256": "aeebdc8933ff77bf27f25369c423ceef57d71569bbcace292ca2aedaee977c24",
+    "native_requests": {
+      "4834": [
+        {
+          "event": "feed",
+          "kind": "swap",
+          "period": 3600000,
+          "from": 1583827200000,
+          "to": 1622163600000,
+          "rows": 5738,
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=BTC_USDT.swap&eid=Futures_Binance&depth=5&trades=0&custom=0&period=3600000&from=1583827200&to=1622163600"
+        },
+        {
+          "event": "feed",
+          "kind": "funding",
+          "period": 3600000,
+          "from": 1583827200000,
+          "to": 1622163600000,
+          "rows": 82,
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=BTC_USDT.funding&eid=Futures_Binance&depth=5&trades=0&custom=0&period=3600000&from=1583827200&to=1622163600"
+        },
+        {
+          "event": "feed",
+          "kind": "index",
+          "period": 3600000,
+          "from": 1583827200000,
+          "to": 1622163600000,
+          "rows": 5738,
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=BTC_USDT.index&eid=Futures_Binance&depth=5&trades=0&custom=0&period=3600000&from=1583827200&to=1622163600"
+        }
+      ],
+      "4835": [
+        {
+          "event": "feed",
+          "kind": "swap",
+          "period": 3600000,
+          "from": 1583827200000,
+          "to": 1630112400000,
+          "rows": 7946,
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=BTC_USDT.swap&eid=Futures_Binance&depth=5&trades=0&custom=0&period=3600000&from=1583827200&to=1630112400"
+        },
+        {
+          "event": "feed",
+          "kind": "funding",
+          "period": 3600000,
+          "from": 1583827200000,
+          "to": 1630112400000,
+          "rows": 358,
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=BTC_USDT.funding&eid=Futures_Binance&depth=5&trades=0&custom=0&period=3600000&from=1583827200&to=1630112400"
+        },
+        {
+          "event": "feed",
+          "kind": "index",
+          "period": 3600000,
+          "from": 1583827200000,
+          "to": 1630112400000,
+          "rows": 7946,
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=BTC_USDT.index&eid=Futures_Binance&depth=5&trades=0&custom=0&period=3600000&from=1583827200&to=1630112400"
+        }
+      ]
+    }
+  },
+  "method": {
+    "scope": "Exact original BTCUSDT perpetual, chart/backtest dates interpreted as UTC, and archived published numeric parameters. Both start flat with 10,000 USDT benchmark equity because the archive omits starting capital. Inputs set leverage to the published 20x. Each source uses its original native Sleep/candle access and initial empty offline state. #4834 exercises the published single-symbol virtual mode. #4835 uses the source in which the live scanner call is already commented out.",
+    "market_data": "Checksummed Binance USD-M historical trade and index candles and original eight-hour funding rates, with exact FMZ overlap after excluding one known partial terminal request row. FMZ uses a native 1h synthetic base tick model built from observed OHLC. All observed synthetic Last values remain inside the matching exchange candle. Native chart prior candles are checked separately. Broker output does not provide an historical maker queue or true fill guarantees.",
+    "execution": "Full-quantity native simulated broker orders. All marketable orders cross exactly one native 0.1 USDT tick relative to reference Last, with contemporaneous 0.04% taker fee. #4834 resting sell exits first cross the simulated bid after placement, with native validation of full size and 0.02% maker fee. Canceled limits remain zero-filled. The broker applies its native BTC market precision of 0.001 quantity and 0.1 price tick to the archived order requests.",
+    "settlement": "Each closed cycle is assigned independent cash changes at adjacent source-observed flat states. Observed native funding is isolated from gross realized fill P&L and both sides’ fees and independently tested against historical position size, signed rate schedules and contemporaneous contract and index price envelopes. Terminal unrealized values, open fees and open funding remain separate from closed results. No forced terminal exit.",
+    "drawdown": "Gross, after-fee and net workbook columns are realized from complete cycles. The marked drawdown separately uses all source-observed changing account equity values and terminal equity. Open inventory materially changes the apparent profitability of #4835."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/313036",
+    "https://github.com/binance/binance-public-data",
+    "https://www.fmz.com/user-guide/backtesting-system/backtest-modes-and-order-matching",
+    "https://www.binance.com/en/blog/futures/421499824684900660"
+  ],
+  "reproduction": "Stage the pinned FMZ strategy ZIP and reuse the shared R29 Binance market binding helpers. Run the worker twice in the network-denied FMZ AppContainer. Pass both equal receipts and staged input to this Decimal verifier."
+}

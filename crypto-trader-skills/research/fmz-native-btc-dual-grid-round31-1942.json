@@ -1,0 +1,1791 @@
+{
+  "coverage": [
+    [
+      1942,
+      "Tested · original dual futures grid in three native simulated-tick BTC scopes",
+      "Three prespecified first-of-month Binance BTCUSDT sessions, exact source with independent native queue transition bounds, concurrent long/short settlement and funded ledger reconciliation. 25 modeled full maker orders, 11 closed reductions. Historical aggressive tape is separately checked at the modeled deadlines."
+    ]
+  ],
+  "results": [
+    {
+      "gross": 1.6680444444444444,
+      "fees": 0.08198280888888888,
+      "after_fees": 1.5860616355555555,
+      "funding": 0.0068123066264,
+      "net": 1.5928739421819555,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 4,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 4,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 4,
+      "id": 1942,
+      "group": "FMZ Native · Two-sided grid with modeled queue",
+      "name": "Two-sided futures grid v1.0.2",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%90%91%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93v102.md",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "period": "2021-01-01 24h UTC",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1m native simulated-tick base",
+      "exit": "Archived maker limit closes · inventory marked at cutoff",
+      "trades": 4,
+      "unsettled": 1,
+      "execution": 0,
+      "starting_equity": 2000.0,
+      "remaining_unrealized": 0.14675555555555556,
+      "mark_to_market_net": 1.7475946196575
+    },
+    {
+      "gross": 1.267,
+      "fees": 0.0470378,
+      "after_fees": 1.2199622,
+      "funding": 0.0306428541189,
+      "net": 1.2506050541189,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 2,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 2,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 2,
+      "id": 1942,
+      "group": "FMZ Native · Two-sided grid with modeled queue",
+      "name": "Two-sided futures grid v1.0.2",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%90%91%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93v102.md",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "period": "2021-04-01 24h UTC",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1m native simulated-tick base",
+      "exit": "Archived maker limit closes · inventory marked at cutoff",
+      "trades": 2,
+      "unsettled": 2,
+      "execution": 0,
+      "starting_equity": 2000.0,
+      "remaining_unrealized": -0.0132,
+      "mark_to_market_net": 1.1832559599992
+    },
+    {
+      "gross": 2.8463,
+      "fees": 0.10414814,
+      "after_fees": 2.74215186,
+      "funding": 0.0,
+      "net": 2.74215186,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 5,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 5,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 5,
+      "id": 1942,
+      "group": "FMZ Native · Two-sided grid with modeled queue",
+      "name": "Two-sided futures grid v1.0.2",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%90%91%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93v102.md",
+      "market": "Binance USD-M BTCUSDT perpetual",
+      "period": "2021-06-01 24h UTC",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1m native simulated-tick base",
+      "exit": "Archived maker limit closes · inventory marked at cutoff",
+      "trades": 5,
+      "unsettled": 0,
+      "execution": 0,
+      "starting_equity": 2000.0,
+      "remaining_unrealized": 0.0,
+      "mark_to_market_net": 2.74215186
+    }
+  ],
+  "diagnostics": [
+    {
+      "day": "2021-01-01",
+      "native_limit_fills": [
+        {
+          "order_id": 1,
+          "direction": "buy",
+          "position_side": "long",
+          "posted_ms": 1609459200400,
+          "fill_ms": 1609459223200,
+          "first_observed_fill_ms": 1609459223200,
+          "last_observed_pending_ms": 1609459223000,
+          "qty": "0.001",
+          "price": "28948.2",
+          "closed": false,
+          "fee": "0.00578964",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609459200000,
+            28948.2,
+            28948.1,
+            28948.3
+          ],
+          "quote_at_fill": [
+            1609459223200,
+            28935.3,
+            28935.2,
+            28935.4
+          ]
+        },
+        {
+          "order_id": 2,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1609459223400,
+          "fill_ms": 1609459252200,
+          "first_observed_fill_ms": 1609459252200,
+          "last_observed_pending_ms": 1609459252000,
+          "qty": "0.001",
+          "price": "28948.2",
+          "closed": false,
+          "fee": "0.00578964",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609459223200,
+            28935.3,
+            28935.2,
+            28935.4
+          ],
+          "quote_at_fill": [
+            1609459252200,
+            28997.2,
+            28997.1,
+            28997.3
+          ]
+        },
+        {
+          "order_id": 3,
+          "direction": "closebuy",
+          "position_side": "long",
+          "posted_ms": 1609463586800,
+          "fill_ms": 1609463632200,
+          "first_observed_fill_ms": 1609463632200,
+          "last_observed_pending_ms": 1609463632000,
+          "qty": "0.001",
+          "price": "29285",
+          "closed": true,
+          "fee": "0.0058570",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609463580000,
+            29285,
+            29284.9,
+            29285.1
+          ],
+          "quote_at_fill": [
+            1609463632200,
+            29297.4,
+            29297.3,
+            29297.5
+          ]
+        },
+        {
+          "order_id": 4,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1609463692600,
+          "fill_ms": 1609464658000,
+          "first_observed_fill_ms": 1609464658000,
+          "last_observed_pending_ms": 1609464657800,
+          "qty": "0.002",
+          "price": "29499",
+          "closed": false,
+          "fee": "0.0117996",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609463692200,
+            29499,
+            29498.9,
+            29499.1
+          ],
+          "quote_at_fill": [
+            1609464658000,
+            29516.1,
+            29516,
+            29516.2
+          ]
+        },
+        {
+          "order_id": 5,
+          "direction": "closesell",
+          "position_side": "short",
+          "posted_ms": 1609471701600,
+          "fill_ms": 1609471703200,
+          "first_observed_fill_ms": 1609471703200,
+          "last_observed_pending_ms": 1609471703000,
+          "qty": "0.002",
+          "price": "29193.7",
+          "closed": true,
+          "fee": "0.01167748",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609471680000,
+            29193.7,
+            29193.6,
+            29193.8
+          ],
+          "quote_at_fill": [
+            1609471703200,
+            29183.2,
+            29183.1,
+            29183.3
+          ]
+        },
+        {
+          "order_id": 6,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1609504271600,
+          "fill_ms": 1609504312200,
+          "first_observed_fill_ms": 1609504312200,
+          "last_observed_pending_ms": 1609504312000,
+          "qty": "0.002",
+          "price": "29522.8",
+          "closed": false,
+          "fee": "0.01180912",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609504260000,
+            29522.8,
+            29522.7,
+            29522.9
+          ],
+          "quote_at_fill": [
+            1609504312200,
+            29640,
+            29639.9,
+            29640.1
+          ]
+        },
+        {
+          "order_id": 7,
+          "direction": "closesell",
+          "position_side": "short",
+          "posted_ms": 1609505576600,
+          "fill_ms": 1609505692200,
+          "first_observed_fill_ms": 1609505692200,
+          "last_observed_pending_ms": 1609505692000,
+          "qty": "0.002",
+          "price": "29202",
+          "closed": true,
+          "fee": "0.0116808",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609505572200,
+            29202,
+            29201.9,
+            29202.1
+          ],
+          "quote_at_fill": [
+            1609505692200,
+            29158.1,
+            29158,
+            29158.2
+          ]
+        },
+        {
+          "order_id": 8,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1609508883000,
+          "fill_ms": 1609508932200,
+          "first_observed_fill_ms": 1609508932200,
+          "last_observed_pending_ms": 1609508932000,
+          "qty": "0.002",
+          "price": "29499.1",
+          "closed": false,
+          "fee": "0.01179964",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609508880000,
+            29499.1,
+            29499,
+            29499.2
+          ],
+          "quote_at_fill": [
+            1609508932200,
+            29507.1,
+            29507,
+            29507.2
+          ]
+        },
+        {
+          "order_id": 9,
+          "direction": "closesell",
+          "position_side": "short",
+          "posted_ms": 1609515434000,
+          "fill_ms": 1609515472200,
+          "first_observed_fill_ms": 1609515472200,
+          "last_observed_pending_ms": 1609515472000,
+          "qty": "0.002",
+          "price": "29191.7",
+          "closed": true,
+          "fee": "0.01167668",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1609515420000,
+            29191.7,
+            29191.6,
+            29191.8
+          ],
+          "quote_at_fill": [
+            1609515472200,
+            29071,
+            29070.9,
+            29071.1
+          ]
+        }
+      ],
+      "closed_grid_reductions": [
+        {
+          "order_id": 3,
+          "side": "long",
+          "amount": "0.001",
+          "exit_price": "29285",
+          "gross": "0.3368",
+          "fees": "0.01164664",
+          "after_fees": "0.32515336",
+          "funding": "0",
+          "net": "0.32515336"
+        },
+        {
+          "order_id": 5,
+          "side": "short",
+          "amount": "0.002",
+          "exit_price": "29193.7",
+          "gross": "0.243400000000000000000000000000000000000000",
+          "fees": "0.023403640000000000000000000000000000000000000",
+          "after_fees": "0.21999636000000000000000000000000000000000000",
+          "funding": "0E-44",
+          "net": "0.21999636000000000000000000000000000000000000"
+        },
+        {
+          "order_id": 7,
+          "side": "short",
+          "amount": "0.002",
+          "exit_price": "29202",
+          "gross": "0.503333333333333333333333333333333333333334",
+          "fees": "0.023462266666666666666666666666666666666666667",
+          "after_fees": "0.47987106666666666666666666666666666666666733",
+          "funding": "0.0051092299698000000000000000000000000000000000",
+          "net": "0.48498029663646666666666666666666666666666733"
+        },
+        {
+          "order_id": 9,
+          "side": "short",
+          "amount": "0.002",
+          "exit_price": "29191.7",
+          "gross": "0.584511111111111111111111111111111111111111",
+          "fees": "0.023470262222222222222222222222222222222222222",
+          "after_fees": "0.56104084888888888888888888888888888888888878",
+          "funding": "0.0017030766566000000000000000000000000000000000",
+          "net": "0.56274392554548888888888888888888888888888878"
+        }
+      ],
+      "funding_checks": [
+        {
+          "settlement_ms": 1609488000000,
+          "published_rate_timestamp_ms": 1609488000006,
+          "rate": "0.00026336",
+          "native_modeled_mark_bound_USDT": [
+            "29092.6",
+            "29157.7"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.007664082041",
+          "native_short_benchmark_charge_per_001_BTC": "0.0076640820412",
+          "source_clock_short_correction_USDT": "-2.370865E-7"
+        },
+        {
+          "settlement_ms": 1609516800000,
+          "published_rate_timestamp_ms": 1609516800003,
+          "rate": "0.00034457",
+          "native_modeled_mark_bound_USDT": [
+            "29189.3",
+            "29258.9"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.010061946549",
+          "native_short_benchmark_charge_per_001_BTC": "0.0100619465486",
+          "source_clock_short_correction_USDT": "0.0000146148022"
+        },
+        {
+          "settlement_ms": 1609545600000,
+          "published_rate_timestamp_ms": 1609545600000,
+          "rate": "0.0001",
+          "native_modeled_mark_bound_USDT": [
+            "29299.5",
+            "29340"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.0029338133520",
+          "native_short_benchmark_charge_per_001_BTC": "0.002933813352",
+          "source_clock_short_correction_USDT": "0"
+        }
+      ],
+      "simultaneous_long_short_simulated_observation_count": 261,
+      "recorded_trade_flow_strictly_through": 8,
+      "physical_market_tape": {
+        "day": "2021-01-01",
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-01-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-01-01.zip.CHECKSUM",
+        "sha256": "b49f13b6a09761d8dec23b55369378479867fbdd3d343b45aec00529c695745e",
+        "compressed_bytes": 11912626,
+        "rows": 885732,
+        "orders": [
+          {
+            "order_id": 1,
+            "side": 0,
+            "begin_ms": 1609459200400,
+            "end_ms": 1609459223200,
+            "limit_price": "28948.2",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "9.662",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1609459200572,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 2,
+            "side": 1,
+            "begin_ms": 1609459223400,
+            "end_ms": 1609459252200,
+            "limit_price": "28948.2",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "88.258",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1609459223789,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 3,
+            "side": 1,
+            "begin_ms": 1609463586800,
+            "end_ms": 1609463632200,
+            "limit_price": "29285",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "25.048",
+            "exact_price_aggressive_qty": "0.020",
+            "first_strict_at_ms": 1609463587606,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 4,
+            "side": 1,
+            "begin_ms": 1609463692600,
+            "end_ms": 1609464658000,
+            "limit_price": "29499",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "158.853",
+            "exact_price_aggressive_qty": "7.887",
+            "first_strict_at_ms": 1609464644503,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 5,
+            "side": 0,
+            "begin_ms": 1609471701600,
+            "end_ms": 1609471703200,
+            "limit_price": "29193.7",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "0",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": null,
+            "has_full_size_strict_flow_at_native_fill_deadline": false
+          },
+          {
+            "order_id": 6,
+            "side": 1,
+            "begin_ms": 1609504271600,
+            "end_ms": 1609504312200,
+            "limit_price": "29522.8",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "540.210",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1609504271752,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 7,
+            "side": 0,
+            "begin_ms": 1609505576600,
+            "end_ms": 1609505692200,
+            "limit_price": "29202",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "4.333",
+            "exact_price_aggressive_qty": "0.848",
+            "first_strict_at_ms": 1609505691037,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 8,
+            "side": 1,
+            "begin_ms": 1609508883000,
+            "end_ms": 1609508932200,
+            "limit_price": "29499.1",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "40.230",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1609508883250,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 9,
+            "side": 0,
+            "begin_ms": 1609515434000,
+            "end_ms": 1609515472200,
+            "limit_price": "29191.7",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "698.232",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1609515434038,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          }
+        ]
+      },
+      "modeled_cash_wallet_USDT": "2001.6008390641019444444444444444444444444444",
+      "remaining_maker_fee_USDT": "0.005896791111111111111111111111111111111111111",
+      "remaining_funding_USDT": "0.013861913031100000000000000000000000000000000",
+      "native_account": {
+        "account": {
+          "Balance": 1998.6524435085466,
+          "FrozenBalance": 0,
+          "Stocks": 0,
+          "FrozenStocks": 0,
+          "Equity": 2001.747594620102,
+          "UPnL": 0.146755556
+        },
+        "positions": [
+          {
+            "Price": 29483.955555555556,
+            "Amount": 0.001,
+            "FrozenAmount": 0,
+            "Profit": 0.14675555555555556,
+            "Margin": 2.9483955555555554,
+            "MarginLevel": 10,
+            "Type": 1,
+            "Symbol": "BTC_USDT.swap",
+            "ContractType": "swap"
+          }
+        ],
+        "pending": [],
+        "ticker": {
+          "Time": 1609545600000,
+          "Symbol": "BTC_USDT.swap",
+          "Open": 29337.2,
+          "High": 29337.3,
+          "Low": 29337.1,
+          "Sell": 29337.3,
+          "Buy": 29337.1,
+          "Last": 29337.2,
+          "Volume": 0,
+          "OpenInterest": 0
+        },
+        "at": 1609545601000
+      },
+      "marked_drawdown_USDT": {
+        "net": [
+          "1.1432452750453000000000000000000000000000",
+          "0.00057132763631410782100486438258854448074884247"
+        ],
+        "after_fees": [
+          "1.1509091200000000000000000000000000000000",
+          "0.00057515758122498712048325243743205823877455779"
+        ],
+        "gross": [
+          "1.1391000000000000000000000000000000000000",
+          "0.00056924442959019598279643487375976575774124450"
+        ]
+      }
+    },
+    {
+      "day": "2021-04-01",
+      "native_limit_fills": [
+        {
+          "order_id": 1,
+          "direction": "buy",
+          "position_side": "long",
+          "posted_ms": 1617235200400,
+          "fill_ms": 1617235223200,
+          "first_observed_fill_ms": 1617235223200,
+          "last_observed_pending_ms": 1617235223000,
+          "qty": "0.001",
+          "price": "58811",
+          "closed": false,
+          "fee": "0.0117622",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1617235200000,
+            58811,
+            58810.9,
+            58811.1
+          ],
+          "quote_at_fill": [
+            1617235223200,
+            58799.2,
+            58799.1,
+            58799.3
+          ]
+        },
+        {
+          "order_id": 2,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1617235223400,
+          "fill_ms": 1617235252200,
+          "first_observed_fill_ms": 1617235252200,
+          "last_observed_pending_ms": 1617235252000,
+          "qty": "0.001",
+          "price": "58811",
+          "closed": false,
+          "fee": "0.0117622",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1617235223200,
+            58799.2,
+            58799.1,
+            58799.3
+          ],
+          "quote_at_fill": [
+            1617235252200,
+            58898.9,
+            58898.8,
+            58899
+          ]
+        },
+        {
+          "order_id": 3,
+          "direction": "closebuy",
+          "position_side": "long",
+          "posted_ms": 1617243560000,
+          "fill_ms": 1617265312200,
+          "first_observed_fill_ms": 1617265312200,
+          "last_observed_pending_ms": 1617265312000,
+          "qty": "0.001",
+          "price": "59417",
+          "closed": true,
+          "fee": "0.0118834",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1617243540000,
+            59417,
+            59416.9,
+            59417.1
+          ],
+          "quote_at_fill": [
+            1617265312200,
+            59500,
+            59499.9,
+            59500.1
+          ]
+        },
+        {
+          "order_id": 4,
+          "direction": "buy",
+          "position_side": "long",
+          "posted_ms": 1617267118400,
+          "fill_ms": 1617267120000,
+          "first_observed_fill_ms": 1617267120000,
+          "last_observed_pending_ms": 1617267119800,
+          "qty": "0.001",
+          "price": "58772.2",
+          "closed": false,
+          "fee": "0.01175444",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1617267118000,
+            58772.2,
+            58772.1,
+            58772.3
+          ],
+          "quote_at_fill": [
+            1617267120000,
+            58771,
+            58770.9,
+            58771.1
+          ]
+        },
+        {
+          "order_id": 5,
+          "direction": "closesell",
+          "position_side": "short",
+          "posted_ms": 1617275187000,
+          "fill_ms": 1617301192200,
+          "first_observed_fill_ms": 1617301192200,
+          "last_observed_pending_ms": 1617301192000,
+          "qty": "0.001",
+          "price": "58150",
+          "closed": true,
+          "fee": "0.0116300",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1617275183200,
+            58150,
+            58149.9,
+            58150.1
+          ],
+          "quote_at_fill": [
+            1617301192200,
+            58005.3,
+            58005.2,
+            58005.4
+          ]
+        },
+        {
+          "order_id": 6,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1617301674000,
+          "fill_ms": 1617301732200,
+          "first_observed_fill_ms": 1617301732200,
+          "last_observed_pending_ms": 1617301732000,
+          "qty": "0.001",
+          "price": "58759",
+          "closed": false,
+          "fee": "0.0117518",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1617301672200,
+            58759,
+            58758.9,
+            58759.1
+          ],
+          "quote_at_fill": [
+            1617301732200,
+            58768.7,
+            58768.6,
+            58768.8
+          ]
+        }
+      ],
+      "closed_grid_reductions": [
+        {
+          "order_id": 3,
+          "side": "long",
+          "amount": "0.001",
+          "exit_price": "59417",
+          "gross": "0.606",
+          "fees": "0.0236456",
+          "after_fees": "0.5823544",
+          "funding": "-0.0560787909040",
+          "net": "0.5262756090960"
+        },
+        {
+          "order_id": 5,
+          "side": "short",
+          "amount": "0.001",
+          "exit_price": "58150",
+          "gross": "0.661",
+          "fees": "0.0233922",
+          "after_fees": "0.6376078",
+          "funding": "0.0867216450229",
+          "net": "0.7243294450229"
+        }
+      ],
+      "funding_checks": [
+        {
+          "settlement_ms": 1617264000000,
+          "published_rate_timestamp_ms": 1617264000011,
+          "rate": "0.00095247",
+          "native_modeled_mark_bound_USDT": [
+            "58821.2",
+            "58972.5"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.0560787909040",
+          "native_short_benchmark_charge_per_001_BTC": "0.0560787909037",
+          "source_clock_short_correction_USDT": "0"
+        },
+        {
+          "settlement_ms": 1617292800000,
+          "published_rate_timestamp_ms": 1617292800004,
+          "rate": "0.00051932",
+          "native_modeled_mark_bound_USDT": [
+            "58975.1",
+            "59221.4"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.0306428541194",
+          "native_short_benchmark_charge_per_001_BTC": "0.0306428541192",
+          "source_clock_short_correction_USDT": "0"
+        },
+        {
+          "settlement_ms": 1617321600000,
+          "published_rate_timestamp_ms": 1617321600000,
+          "rate": "0.00071058",
+          "native_modeled_mark_bound_USDT": [
+            "58731",
+            "58928.5"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.041763084210",
+          "native_short_benchmark_charge_per_001_BTC": "0.0417630842097",
+          "source_clock_short_correction_USDT": "0"
+        }
+      ],
+      "simultaneous_long_short_simulated_observation_count": 5185,
+      "recorded_trade_flow_strictly_through": 6,
+      "physical_market_tape": {
+        "day": "2021-04-01",
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-04-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-04-01.zip.CHECKSUM",
+        "sha256": "1bd7d6c59eabcd32a7fd845d10223382d2b5621fe74aeddb4b52dc531899768c",
+        "compressed_bytes": 16607486,
+        "rows": 1227810,
+        "orders": [
+          {
+            "order_id": 1,
+            "side": 0,
+            "begin_ms": 1617235200400,
+            "end_ms": 1617235223200,
+            "limit_price": "58811",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "19.821",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1617235201945,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 2,
+            "side": 1,
+            "begin_ms": 1617235223400,
+            "end_ms": 1617235252200,
+            "limit_price": "58811",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "53.129",
+            "exact_price_aggressive_qty": "0.134",
+            "first_strict_at_ms": 1617235223436,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 3,
+            "side": 1,
+            "begin_ms": 1617243560000,
+            "end_ms": 1617265312200,
+            "limit_price": "59417",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "439.129",
+            "exact_price_aggressive_qty": "1.286",
+            "first_strict_at_ms": 1617265287479,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 4,
+            "side": 0,
+            "begin_ms": 1617267118400,
+            "end_ms": 1617267120000,
+            "limit_price": "58772.2",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "22.219",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1617267118429,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 5,
+            "side": 0,
+            "begin_ms": 1617275187000,
+            "end_ms": 1617301192200,
+            "limit_price": "58150",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "690.900",
+            "exact_price_aggressive_qty": "46.438",
+            "first_strict_at_ms": 1617301152043,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 6,
+            "side": 1,
+            "begin_ms": 1617301674000,
+            "end_ms": 1617301732200,
+            "limit_price": "58759",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "8.651",
+            "exact_price_aggressive_qty": "0.043",
+            "first_strict_at_ms": 1617301713927,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          }
+        ]
+      },
+      "modeled_cash_wallet_USDT": "2001.1964559599992",
+      "remaining_maker_fee_USDT": "0.02350624",
+      "remaining_funding_USDT": "-0.0306428541197",
+      "native_account": {
+        "account": {
+          "Balance": 1989.4433359600002,
+          "FrozenBalance": 0,
+          "Stocks": 0,
+          "FrozenStocks": 0,
+          "Equity": 2001.18325596,
+          "UPnL": -0.0132
+        },
+        "positions": [
+          {
+            "Price": 58772.2,
+            "Amount": 0.001,
+            "FrozenAmount": 0,
+            "Profit": 0.0254,
+            "Margin": 5.87722,
+            "MarginLevel": 10,
+            "Type": 0,
+            "Symbol": "BTC_USDT.swap",
+            "ContractType": "swap"
+          },
+          {
+            "Price": 58759,
+            "Amount": 0.001,
+            "FrozenAmount": 0,
+            "Profit": -0.0386,
+            "Margin": 5.8759,
+            "MarginLevel": 10,
+            "Type": 1,
+            "Symbol": "BTC_USDT.swap",
+            "ContractType": "swap"
+          }
+        ],
+        "pending": [],
+        "ticker": {
+          "Time": 1617321600000,
+          "Symbol": "BTC_USDT.swap",
+          "Open": 58797.6,
+          "High": 58797.7,
+          "Low": 58797.5,
+          "Sell": 58797.7,
+          "Buy": 58797.5,
+          "Last": 58797.6,
+          "Volume": 0,
+          "OpenInterest": 0
+        },
+        "at": 1617321601000
+      },
+      "marked_drawdown_USDT": {
+        "net": [
+          "0.2566000000000",
+          "0.00012829704966821614397928888810722179441022678"
+        ],
+        "after_fees": [
+          "0.2566000000000",
+          "0.00012829704966821612473517397746569680108979246"
+        ],
+        "gross": [
+          "0.2566000000000",
+          "0.00012829477840251901747598872725880056681693055"
+        ]
+      }
+    },
+    {
+      "day": "2021-06-01",
+      "native_limit_fills": [
+        {
+          "order_id": 1,
+          "direction": "buy",
+          "position_side": "long",
+          "posted_ms": 1622505600400,
+          "fill_ms": 1622505652200,
+          "first_observed_fill_ms": 1622505652200,
+          "last_observed_pending_ms": 1622505652000,
+          "qty": "0.001",
+          "price": "37244.4",
+          "closed": false,
+          "fee": "0.00744888",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622505600000,
+            37244.4,
+            37244.3,
+            37244.5
+          ],
+          "quote_at_fill": [
+            1622505652200,
+            37100,
+            37099.9,
+            37100.1
+          ]
+        },
+        {
+          "order_id": 2,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1622505652400,
+          "fill_ms": 1622505772200,
+          "first_observed_fill_ms": 1622505772200,
+          "last_observed_pending_ms": 1622505772000,
+          "qty": "0.001",
+          "price": "37244.4",
+          "closed": false,
+          "fee": "0.00744888",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622505652200,
+            37100,
+            37099.9,
+            37100.1
+          ],
+          "quote_at_fill": [
+            1622505772200,
+            37451.2,
+            37451.1,
+            37451.3
+          ]
+        },
+        {
+          "order_id": 3,
+          "direction": "closebuy",
+          "position_side": "long",
+          "posted_ms": 1622505832600,
+          "fill_ms": 1622505952200,
+          "first_observed_fill_ms": 1622505952200,
+          "last_observed_pending_ms": 1622505952000,
+          "qty": "0.001",
+          "price": "37650",
+          "closed": true,
+          "fee": "0.0075300",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622505832200,
+            37650,
+            37649.9,
+            37650.1
+          ],
+          "quote_at_fill": [
+            1622505952200,
+            37660,
+            37659.9,
+            37660.1
+          ]
+        },
+        {
+          "order_id": 4,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1622509082800,
+          "fill_ms": 1622509103200,
+          "first_observed_fill_ms": 1622509103200,
+          "last_observed_pending_ms": 1622509103000,
+          "qty": "0.002",
+          "price": "37868.1",
+          "closed": false,
+          "fee": "0.01514724",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622509080000,
+            37868.1,
+            37868,
+            37868.2
+          ],
+          "quote_at_fill": [
+            1622509103200,
+            37872.6,
+            37872.5,
+            37872.7
+          ]
+        },
+        {
+          "order_id": 5,
+          "direction": "closesell",
+          "position_side": "short",
+          "posted_ms": 1622510789000,
+          "fill_ms": 1622510812200,
+          "first_observed_fill_ms": 1622510812200,
+          "last_observed_pending_ms": 1622510812000,
+          "qty": "0.002",
+          "price": "37471",
+          "closed": true,
+          "fee": "0.0149884",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622510783200,
+            37471,
+            37470.9,
+            37471.1
+          ],
+          "quote_at_fill": [
+            1622510812200,
+            37340.4,
+            37340.3,
+            37340.5
+          ]
+        },
+        {
+          "order_id": 6,
+          "direction": "closesell",
+          "position_side": "short",
+          "posted_ms": 1622513461200,
+          "fill_ms": 1622513483200,
+          "first_observed_fill_ms": 1622513483200,
+          "last_observed_pending_ms": 1622513483000,
+          "qty": "0.001",
+          "price": "36846.6",
+          "closed": true,
+          "fee": "0.00736932",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622513460000,
+            36846.6,
+            36846.5,
+            36846.7
+          ],
+          "quote_at_fill": [
+            1622513483200,
+            36753.7,
+            36753.6,
+            36753.8
+          ]
+        },
+        {
+          "order_id": 7,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1622554178600,
+          "fill_ms": 1622554252200,
+          "first_observed_fill_ms": 1622554252200,
+          "last_observed_pending_ms": 1622554252000,
+          "qty": "0.001",
+          "price": "36562.9",
+          "closed": false,
+          "fee": "0.00731258",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622554163200,
+            36562.9,
+            36562.8,
+            36563
+          ],
+          "quote_at_fill": [
+            1622554252200,
+            37089,
+            37088.9,
+            37089.1
+          ]
+        },
+        {
+          "order_id": 8,
+          "direction": "sell",
+          "position_side": "short",
+          "posted_ms": 1622554914600,
+          "fill_ms": 1622554972200,
+          "first_observed_fill_ms": 1622554972200,
+          "last_observed_pending_ms": 1622554972000,
+          "qty": "0.002",
+          "price": "37300",
+          "closed": false,
+          "fee": "0.0149200",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622554912200,
+            37300,
+            37299.9,
+            37300.1
+          ],
+          "quote_at_fill": [
+            1622554972200,
+            37364.3,
+            37364.2,
+            37364.4
+          ]
+        },
+        {
+          "order_id": 9,
+          "direction": "closesell",
+          "position_side": "short",
+          "posted_ms": 1622555875400,
+          "fill_ms": 1622556952200,
+          "first_observed_fill_ms": 1622556952200,
+          "last_observed_pending_ms": 1622556952000,
+          "qty": "0.002",
+          "price": "36877",
+          "closed": true,
+          "fee": "0.0147508",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622555872200,
+            36877,
+            36876.9,
+            36877.1
+          ],
+          "quote_at_fill": [
+            1622556952200,
+            36815.3,
+            36815.2,
+            36815.4
+          ]
+        },
+        {
+          "order_id": 10,
+          "direction": "closesell",
+          "position_side": "short",
+          "posted_ms": 1622561768400,
+          "fill_ms": 1622561783200,
+          "first_observed_fill_ms": 1622561783200,
+          "last_observed_pending_ms": 1622561783000,
+          "qty": "0.001",
+          "price": "36160.2",
+          "closed": true,
+          "fee": "0.00723204",
+          "queue_model": "native synthetic price-taking at resting limit",
+          "quote_at_placement": [
+            1622561760000,
+            36160.2,
+            36160.1,
+            36160.3
+          ],
+          "quote_at_fill": [
+            1622561783200,
+            36019.5,
+            36019.4,
+            36019.6
+          ]
+        }
+      ],
+      "closed_grid_reductions": [
+        {
+          "order_id": 3,
+          "side": "long",
+          "amount": "0.001",
+          "exit_price": "37650",
+          "gross": "0.4056",
+          "fees": "0.01497888",
+          "after_fees": "0.39062112",
+          "funding": "0",
+          "net": "0.39062112"
+        },
+        {
+          "order_id": 5,
+          "side": "short",
+          "amount": "0.002",
+          "exit_price": "37471",
+          "gross": "0.378400000000000000000000000000000000000000",
+          "fees": "0.030052480000000000000000000000000000000000000",
+          "after_fees": "0.34834752000000000000000000000000000000000000",
+          "funding": "0E-44",
+          "net": "0.34834752000000000000000000000000000000000000"
+        },
+        {
+          "order_id": 6,
+          "side": "short",
+          "amount": "0.001",
+          "exit_price": "36846.6",
+          "gross": "0.813600000000000000000000000000000000000000",
+          "fees": "0.014901360000000000000000000000000000000000000",
+          "after_fees": "0.79869864000000000000000000000000000000000000",
+          "funding": "0E-44",
+          "net": "0.79869864000000000000000000000000000000000000"
+        },
+        {
+          "order_id": 9,
+          "side": "short",
+          "amount": "0.002",
+          "exit_price": "36877",
+          "gross": "0.354600000000000000000000000000000000000000",
+          "fees": "0.029572520000000000000000000000000000000000000",
+          "after_fees": "0.32502748000000000000000000000000000000000000",
+          "funding": "0E-88",
+          "net": "0.32502748000000000000000000000000000000000000"
+        },
+        {
+          "order_id": 10,
+          "side": "short",
+          "amount": "0.001",
+          "exit_price": "36160.2",
+          "gross": "0.894100000000000000000000000000000000000000",
+          "fees": "0.014642900000000000000000000000000000000000000",
+          "after_fees": "0.87945710000000000000000000000000000000000000",
+          "funding": "0E-88",
+          "net": "0.87945710000000000000000000000000000000000000"
+        }
+      ],
+      "funding_checks": [
+        {
+          "settlement_ms": 1622534400000,
+          "published_rate_timestamp_ms": 1622534400010,
+          "rate": "0.0001",
+          "native_modeled_mark_bound_USDT": [
+            "36779",
+            "36873.7"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.0036836683298",
+          "native_short_benchmark_charge_per_001_BTC": "0.0036836683301",
+          "source_clock_short_correction_USDT": "0"
+        },
+        {
+          "settlement_ms": 1622563200000,
+          "published_rate_timestamp_ms": 1622563200010,
+          "rate": "0.0001",
+          "native_modeled_mark_bound_USDT": [
+            "36088.2",
+            "36235.2"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.0036232422879",
+          "native_short_benchmark_charge_per_001_BTC": "0.0036232422878",
+          "source_clock_short_correction_USDT": "0"
+        },
+        {
+          "settlement_ms": 1622592000000,
+          "published_rate_timestamp_ms": 1622592000008,
+          "rate": "0.0001",
+          "native_modeled_mark_bound_USDT": [
+            "36690.5",
+            "36786.4"
+          ],
+          "native_long_benchmark_charge_per_001_BTC": "-0.0036695769211",
+          "native_short_benchmark_charge_per_001_BTC": "0.003669576921",
+          "source_clock_short_correction_USDT": "0"
+        }
+      ],
+      "simultaneous_long_short_simulated_observation_count": 12,
+      "recorded_trade_flow_strictly_through": 10,
+      "physical_market_tape": {
+        "day": "2021-06-01",
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-06-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-06-01.zip.CHECKSUM",
+        "sha256": "a17dfed685b0b124ece5a53ba4312156a6a2a8f879885e9a3b2e1853737b7b83",
+        "compressed_bytes": 39873312,
+        "rows": 2959522,
+        "orders": [
+          {
+            "order_id": 1,
+            "side": 0,
+            "begin_ms": 1622505600400,
+            "end_ms": 1622505652200,
+            "limit_price": "37244.4",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "548.768",
+            "exact_price_aggressive_qty": "0.268",
+            "first_strict_at_ms": 1622505604023,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 2,
+            "side": 1,
+            "begin_ms": 1622505652400,
+            "end_ms": 1622505772200,
+            "limit_price": "37244.4",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "527.422",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1622505725940,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 3,
+            "side": 1,
+            "begin_ms": 1622505832600,
+            "end_ms": 1622505952200,
+            "limit_price": "37650",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "263.804",
+            "exact_price_aggressive_qty": "76.346",
+            "first_strict_at_ms": 1622505938825,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 4,
+            "side": 1,
+            "begin_ms": 1622509082800,
+            "end_ms": 1622509103200,
+            "limit_price": "37868.1",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "0.160",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1622509083022,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 5,
+            "side": 0,
+            "begin_ms": 1622510789000,
+            "end_ms": 1622510812200,
+            "limit_price": "37471",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "272.071",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1622510789005,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 6,
+            "side": 0,
+            "begin_ms": 1622513461200,
+            "end_ms": 1622513483200,
+            "limit_price": "36846.6",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "458.584",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1622513467665,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 7,
+            "side": 1,
+            "begin_ms": 1622554178600,
+            "end_ms": 1622554252200,
+            "limit_price": "36562.9",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "3400.706",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1622554204047,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 8,
+            "side": 1,
+            "begin_ms": 1622554914600,
+            "end_ms": 1622554972200,
+            "limit_price": "37300",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "731.452",
+            "exact_price_aggressive_qty": "48.616",
+            "first_strict_at_ms": 1622554923359,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 9,
+            "side": 0,
+            "begin_ms": 1622555875400,
+            "end_ms": 1622556952200,
+            "limit_price": "36877",
+            "native_fill_quantity": "0.002",
+            "strict_trade_through_qty": "204.535",
+            "exact_price_aggressive_qty": "0.187",
+            "first_strict_at_ms": 1622556916029,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          },
+          {
+            "order_id": 10,
+            "side": 0,
+            "begin_ms": 1622561768400,
+            "end_ms": 1622561783200,
+            "limit_price": "36160.2",
+            "native_fill_quantity": "0.001",
+            "strict_trade_through_qty": "536.434",
+            "exact_price_aggressive_qty": "0",
+            "first_strict_at_ms": 1622561768529,
+            "has_full_size_strict_flow_at_native_fill_deadline": true
+          }
+        ]
+      },
+      "modeled_cash_wallet_USDT": "2002.7421518600000000000000000000000000000000",
+      "remaining_maker_fee_USDT": "0E-45",
+      "remaining_funding_USDT": "0E-88",
+      "native_account": {
+        "account": {
+          "Balance": 2002.74215186,
+          "FrozenBalance": 0,
+          "Stocks": 0,
+          "FrozenStocks": 0,
+          "Equity": 2002.74215186,
+          "UPnL": 0
+        },
+        "positions": [],
+        "pending": [],
+        "ticker": {
+          "Time": 1622592000000,
+          "Symbol": "BTC_USDT.swap",
+          "Open": 36694.4,
+          "High": 36694.5,
+          "Low": 36694.3,
+          "Sell": 36694.5,
+          "Buy": 36694.3,
+          "Last": 36694.4,
+          "Volume": 0,
+          "OpenInterest": 0
+        },
+        "at": 1622592001000
+      },
+      "marked_drawdown_USDT": {
+        "net": [
+          "1.2796019000000000000000000000000000000000",
+          "0.00063929924821578641925859534487081781458403917"
+        ],
+        "after_fees": [
+          "1.2796019000000000000000000000000000000000",
+          "0.00063929924821578641925859534487081781458403917"
+        ],
+        "gross": [
+          "1.2609000000000000000000000000000000000000",
+          "0.00062977944233876979486092183347780450765047915"
+        ]
+      }
+    }
+  ],
+  "source": {
+    "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%8F%8C%E5%90%91%E5%90%88%E7%BA%A6%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93v102.md",
+    "source_sha256": "a6ac7fa9f808621e318371f9dfe3b145ccb99f49c2c9c163d94835ce67086da6",
+    "archive_document_sha256": "4994eed6d4708cda932bc12921c8c7d74d1ca3ae9248e65d99f3f3ba8c056372",
+    "publisher": "https://www.fmz.com/strategy/293325"
+  },
+  "market_inputs": {
+    "2021-01-01": {
+      "swap": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.swap&event=feed&detail=true&round=true&period=60000&from=1609459200&to=1609545600",
+          "sha256": "839875392fef8097bba701e5b8304810fcdc63f7aa34171225662491267973e3",
+          "rows": 1441
+        },
+        "exact_overlap": 1440,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2020-12-31.zip",
+            "sha256": "413f1acfe268956d9ae3926fc1f7579005983b1611821352f852487757f24ed9",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2020-12-31.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-01-01.zip",
+            "sha256": "0e916d1635ff409abf54ac852e213f925f564634c6da77bdb81cb1ae4353efec",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-01-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-01-02.zip",
+            "sha256": "765f14f4a9ebecc60f7142f1ec0058b09e65b03419b32b446a6c90b4369b348d",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-01-02.zip.CHECKSUM"
+          }
+        ]
+      },
+      "index": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.index&event=feed&detail=true&round=true&period=60000&from=1609459200&to=1609545600",
+          "sha256": "e2c41f23d699c5957eacc40e252c865001cbdcfce9e7633aaf8c8b02ef508978",
+          "rows": 1441
+        },
+        "exact_overlap": 1440,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2020-12-31.zip",
+            "sha256": "3a67f55c5eaef387d16ee8af2cd9500bc9fee14db1238aa62e118e01a9fcb3be",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2020-12-31.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-01-01.zip",
+            "sha256": "4d120bcf46340472043cdb2c368762620e3b2ac97c253a0dba4ff572949b1a64",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-01-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-01-02.zip",
+            "sha256": "0688df7acb0b2c555adddbeec36e35f00c149259bd2ed965c11d98dcc647dac8",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-01-02.zip.CHECKSUM"
+          }
+        ]
+      },
+      "funding": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.funding&event=feed&detail=true&round=true&period=60000&from=1609459200&to=1609545600",
+          "sha256": "f6652a995177569b3d7a3cb7b713bf07e1190cb00ff7e4e442c017cd47e0b084",
+          "rows": 4
+        },
+        "exact_overlap": 3,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2020-12.zip",
+            "sha256": "d7390f90edf54cc4ad9bbe78e2f6b291ae06ad9539f591a2d0fce445873bbd63",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2020-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-01.zip",
+            "sha256": "cff916dc4b638ec3de97828e8911cd91cf7d7a3d0836ec0175869c374e66823d",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-01.zip.CHECKSUM"
+          }
+        ]
+      }
+    },
+    "2021-04-01": {
+      "swap": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.swap&event=feed&detail=true&round=true&period=60000&from=1617235200&to=1617321600",
+          "sha256": "20e19eb252783950fa67186b90c75f5ee45c8d863c034b15d05e88f5289322b9",
+          "rows": 1441
+        },
+        "exact_overlap": 1440,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-03-31.zip",
+            "sha256": "ef39369b86033ac93db3adf0ae6054f75cffb7da6a1e03883eac59735a975ee9",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-03-31.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-04-01.zip",
+            "sha256": "ef246ba37f34e40a236ffda80250dacbaebdac44c3a8dbb9819c98a132a566d8",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-04-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-04-02.zip",
+            "sha256": "7d1222723aee8e93fe601543ea3426b81d5a95dfbd669641efb613d6f8535aac",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-04-02.zip.CHECKSUM"
+          }
+        ]
+      },
+      "index": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.index&event=feed&detail=true&round=true&period=60000&from=1617235200&to=1617321600",
+          "sha256": "0722a1b1f32333a0fca1fcfe394c1880a5346f5f81cf45827e633d92d247b1a1",
+          "rows": 1441
+        },
+        "exact_overlap": 1440,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-03-31.zip",
+            "sha256": "1cfbe831fd4b57724b645abb012fe124a06f03e3439f912c76f845573396e30f",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-03-31.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-04-01.zip",
+            "sha256": "4716bc7e7d4d89b1d6070409ad703448712e948722b9c565fe672f94f076d47e",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-04-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-04-02.zip",
+            "sha256": "5b3897144887bd82306fe6485b15f58683d0311e5c0e5010882230a2346872c1",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-04-02.zip.CHECKSUM"
+          }
+        ]
+      },
+      "funding": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.funding&event=feed&detail=true&round=true&period=60000&from=1617235200&to=1617321600",
+          "sha256": "6a22735e0f0cb96621b2dea778b005e4b6ba2fa87e6a78e3957fdf96fa65e9eb",
+          "rows": 4
+        },
+        "exact_overlap": 3,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-03.zip",
+            "sha256": "2125fd300848938c7b992b8f7b7b5007d5b277a4ff1ebda7da083b40242729da",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-03.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-04.zip",
+            "sha256": "9cd888e3b0a1954813d0062c2e60426fdc8e34a7f258f6838371ec67f535b028",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-04.zip.CHECKSUM"
+          }
+        ]
+      }
+    },
+    "2021-06-01": {
+      "swap": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.swap&event=feed&detail=true&round=true&period=60000&from=1622505600&to=1622592000",
+          "sha256": "0d0f0b33aefc4ce03b91789265e6d451867e60ee52a7f8c1668dc5840c4cc4f6",
+          "rows": 1441
+        },
+        "exact_overlap": 1440,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-05-31.zip",
+            "sha256": "adb6d1d7d155f06b6942bf7ea6cdaa26c8af42a71bbd8b857aed9714fd659512",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-05-31.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-06-01.zip",
+            "sha256": "fc949a2cdb72753faafbed1eb93a3a1847b3ba77056b6360a3a87e93a9f37141",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-06-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-06-02.zip",
+            "sha256": "811559fee8951da2d713f3868f6fae6b255e337a05cbabb9b075d50f4b31ea3e",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2021-06-02.zip.CHECKSUM"
+          }
+        ]
+      },
+      "index": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.index&event=feed&detail=true&round=true&period=60000&from=1622505600&to=1622592000",
+          "sha256": "5a8e1c0053e97eccdb8e20927e2ce389a34e600a649d2d7b6907c3271a2e3fe0",
+          "rows": 1441
+        },
+        "exact_overlap": 1440,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-05-31.zip",
+            "sha256": "91a4cb279fe7775a43eb6fc56ab9b886458133b2324702885c301689feccd6fa",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-05-31.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-06-01.zip",
+            "sha256": "f74ba70df35d6fa31f45816e5a9c8823e122ed0882efffd103a8c99f739b5d0d",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-06-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-06-02.zip",
+            "sha256": "693b3c8694b175669821e6ebcba2cfb18fd46f41909ee8c5f3d558fe933a5b72",
+            "rows": 1440,
+            "checksum_url": "https://data.binance.vision/data/futures/um/daily/indexPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2021-06-02.zip.CHECKSUM"
+          }
+        ]
+      },
+      "funding": {
+        "public_fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=BTC_USDT.funding&event=feed&detail=true&round=true&period=60000&from=1622505600&to=1622592000",
+          "sha256": "89db0d7ce2505ee15cb4dd8c83ea4ec33afa24e86830c543b2dd1aecd9f33ade",
+          "rows": 3
+        },
+        "exact_overlap": 3,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-05.zip",
+            "sha256": "ed934afb9cf84df6ecae742e755147333a84244836a66b51523abc66dd5f63af",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-06.zip",
+            "sha256": "7b8d9bfb8816636b800764dafb2aa2307d19166c695bfa245adbf7d01d61f766",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2021-06.zip.CHECKSUM"
+          }
+        ]
+      }
+    }
+  },
+  "proof": {
+    "input_sha256": "87a1a5d9bc818c85656248891f49d74bd62dd251b12e70f0ce606e750fb2245c",
+    "native_receipt_sha256": "8ee35e0ca4e3f509147c0f412b9d577d0a571a34adc28cc5cc1fe895474002a7",
+    "native_engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "historical_trade_flow_sha256": "894aec26ba274af4f8d61b195ab9562ae3a7ce85a8e1544685293973f39682d2",
+    "independent_funding_controls_sha256": [
+      "7699c504c7cfe6ee1377ff66bca118c153c9e5b27e07a64af603e64fd36918f2",
+      "316e9ff538f65ab8262e4e6d5eb18632d2905967a02a5ec508f3628d07976052"
+    ],
+    "stage_sha256": "f2a642d056ef3112c5d6efa396a72fcfe1f91d8511699bbb4002b50cbddf7e86",
+    "worker_sha256": "f8b15b8a6f9bbe595d095e11fcf6e5cb8575388dd37c6197ccb9a9276e0ed035",
+    "flow_checker_sha256": "3eb6c46e13474fb710d4aa531b0d81ce439c048fe0192e18628bcfdc39774c18",
+    "verifier_sha256": "79e0bfece02aed02e27c1c5ae85e9e18a37a61afedfc561aa400e59f3ae14cbf"
+  },
+  "method": {
+    "scope": "Three prespecified complete first-of-month UTC days within the original Jan–Jun 2021 horizon. Each restarts flat with the archived 2,000 USDT on the exact Binance BTCUSDT 1m/1m backtest setting, 10x host default and the archived order quantity ladder. Conclusions apply to these three cold-start simulations.",
+    "queue": "The exact archived JavaScript runs in the original FMZ simulated-tick broker. A separately emitted no-strategy quote tape verifies economic crossing, first valid tick, full simulated quantity and a 200 ms source observation bracket for every order. The Binance checksum-bearing aggressive trade tape separately tests whether raw signed flow strictly through each native limit could support its full size within the same native posting and fill deadlines. 24 of 25 pass this sensitivity. Historical queue position and the later causal strategy path remain unresolved. These are modeled orders.",
+    "fees": "Every posted limit rested across at least one native order-status observation, then executed at its submitted price. Apply the historically published 0.02% maker rate. Taker schedule 0.04% is configured but unused within the archived strategy path. No fixed spread or synthetic slippage is deducted for these exact limit-price fills. Probe orders are isolated from strategy metrics.",
+    "settlement": "Track long and short separately with the native weighted basis and pro-rata fees and funding for partial reductions. A book-specific source-clock funding control adjusts two modeled January funding marks, while preserving every simulated order and quote. Independent funding schedules and price envelopes validate each debit and credit. Marked P&L and equity drawdown include open long/short positions and fees. Closed win rate counts individual closed reductions, including partial close of a side.",
+    "proof_limits": "The simulated fill price, close quantity and cash are precise to native ledger rounding. No fees or fill outcomes are inferred from physical maker queue estimates."
+  },
+  "reference_urls": [
+    "https://www.fmz.com/strategy/293325",
+    "https://github.com/binance/binance-public-data",
+    "https://www.fmz.com/user-guide/backtesting-system/backtest-modes-and-order-matching",
+    "https://www.binance.com/en/blog/futures/421499824684900660"
+  ],
+  "reproduction": "Stage the pinned FMZ and checksummed Binance inputs and run the native worker twice. Run the worker with fund-observe8 and fund-observe16 separately for timestamp controls. Run the recorded-flow checker against the unmodified strategy receipt and verify all generated files using Decimal arithmetic."
+}
