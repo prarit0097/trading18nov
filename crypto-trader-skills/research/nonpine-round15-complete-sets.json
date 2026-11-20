@@ -1,0 +1,69 @@
+{
+  "coverage": [
+    [
+      6178,
+      "Tested · Two-sided BTC complete-set quotes, no trade",
+      "Matched both historical outcome ladders at every second of a resolved BTC market. Neither complete-set side crossed collateral parity before fees."
+    ]
+  ],
+  "results": [
+    {
+      "id": 6178,
+      "period": "2026-08-13 04:50–04:55 UTC",
+      "group": "Polymarket · paired historical outcome snapshots",
+      "market": "BTC 5-minute Up/Down (USD)",
+      "currency": "USD",
+      "exit": "Complete-set merge or split parity",
+      "order_family": "Paired executable quote check",
+      "interval": "1s",
+      "archive_interval": "1s",
+      "trades": 0,
+      "unsettled": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "fees": 0,
+      "execution": 0,
+      "after_fees": 0,
+      "net": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0
+    }
+  ],
+  "source": "https://huggingface.co/datasets/polyorderbooks/polymarket-btc-5min-historical-l2/resolve/25d091ea919f44c479f6eb1871a2062d64a779ca/polymarket_btc_5min_l2.jsonl",
+  "snapshot_sha256": "d6cfc0e388f31d810b752c67f2e363150330cb422915fd107503268a5ca3e6c2",
+  "summary_source": "https://huggingface.co/datasets/polyorderbooks/polymarket-btc-5min-historical-l2/resolve/25d091ea919f44c479f6eb1871a2062d64a779ca/polymarket_btc_5min_l2_summary.csv",
+  "summary_sha256": "f0c2effe2338b2bdc16bf715ce2d1af9de59a6d2ee83e13515e92b13663cbc89",
+  "archive_attribution": "PolyOrderbooks, CC BY 4.0",
+  "position_reference": "https://docs.polymarket.com/trading/positions/manage",
+  "rows": 600,
+  "market_id": "3534492",
+  "tokens": {
+    "No": "52135358832397096479308718909125164672175739454099940051652967315278186343534",
+    "Yes": "48555740168450207951971882939700920991925499019667528274095471453411638785987"
+  },
+  "joint_quote_checks": {
+    "bids": 277,
+    "asks": 277
+  },
+  "missing_joint_quote": {
+    "asks": 23,
+    "bids": 23
+  },
+  "minimum_complete_set_ask": {
+    "value": "1.01",
+    "time": "2026-08-13T04:50:00+00:00"
+  },
+  "maximum_complete_set_bid": {
+    "value": "0.99",
+    "time": "2026-08-13T04:54:36+00:00"
+  },
+  "assumptions": [
+    "One unit of collateral corresponds to equal Yes and No quantities. Best asks provide a lower bound on acquisition price and best bids provide an upper bound on sale proceeds. Worse available ladder prices cannot improve either bound.",
+    "The sampled joint book is considered before latency, fees and settlement costs. No positive gross edge is present, so any nonnegative cost preserves the zero-trade outcome.",
+    "No decisions were inferred where either outcome lacked an executable quote. One resolved five-minute market provides a narrow historical sample, and one-second recording cannot assess events between snapshots."
+  ]
+}

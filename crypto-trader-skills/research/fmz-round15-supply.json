@@ -1,0 +1,564 @@
+{
+  "coverage": [
+    [
+      171,
+      "Tested · Historical DefiLlama supply-input variant",
+      "Preserved 2h chart and authored Donchian reversals with lagged observed DefiLlama USDT circulating supply. Exact Glassnode input remains outside this comparison."
+    ]
+  ],
+  "results": [
+    {
+      "id": 171,
+      "period": "2023-08-13 to 2023-09-12 UTC",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "group": "FMZ Brrrrr · circulating-supply input variant",
+      "interval": "2h",
+      "archive_interval": "2h chart / daily supply",
+      "exit": "Opposite circulating-supply channel breakout",
+      "order_family": "Next-open market reversal",
+      "trades": 3,
+      "unsettled": 1,
+      "gross": -17.800168995912728,
+      "after_fees": -18.34303536546668,
+      "net": -18.505895276332865,
+      "fees": 0.5428663695539517,
+      "execution": 0.1628599108661855,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross_dd": 17.800168995912827,
+      "fee_dd": 18.343035365465767,
+      "net_dd": 18.505895276332012,
+      "net_dd_pct": 0.18505895276332865
+    },
+    {
+      "id": 171,
+      "period": "2023-09-12 to 2023-10-12 UTC",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "group": "FMZ Brrrrr · circulating-supply input variant",
+      "interval": "2h",
+      "archive_interval": "2h chart / daily supply",
+      "exit": "Opposite circulating-supply channel breakout",
+      "order_family": "Next-open market reversal",
+      "trades": 3,
+      "unsettled": 1,
+      "gross": -2.5464447791248643,
+      "after_fees": -3.148629392851907,
+      "net": -3.3292847769700202,
+      "fees": 0.602184613727043,
+      "execution": 0.18065538411811288,
+      "gross_wins": 1,
+      "fee_wins": 1,
+      "net_wins": 1,
+      "gross_dd": 4.033717196631187,
+      "fee_dd": 4.434414537940029,
+      "net_dd": 4.5546237403323175,
+      "net_dd_pct": 0.04499489739402857
+    },
+    {
+      "id": 171,
+      "period": "2023-08-13 to 2023-09-12 UTC",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "group": "FMZ Brrrrr · circulating-supply input variant",
+      "interval": "2h",
+      "archive_interval": "2h chart / daily supply",
+      "exit": "Opposite circulating-supply channel breakout",
+      "order_family": "Next-open market reversal",
+      "trades": 3,
+      "unsettled": 1,
+      "gross": -15.595228103287344,
+      "after_fees": -16.142983485686052,
+      "net": -16.307310100405665,
+      "fees": 0.5477553823987122,
+      "execution": 0.16432661471961366,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross_dd": 15.595228103287809,
+      "fee_dd": 16.142983485686273,
+      "net_dd": 16.30731010040654,
+      "net_dd_pct": 0.16307310100405673
+    },
+    {
+      "id": 171,
+      "period": "2023-09-12 to 2023-10-12 UTC",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "group": "FMZ Brrrrr · circulating-supply input variant",
+      "interval": "2h",
+      "archive_interval": "2h chart / daily supply",
+      "exit": "Opposite circulating-supply channel breakout",
+      "order_family": "Next-open market reversal",
+      "trades": 3,
+      "unsettled": 1,
+      "gross": 2.9520435014366813,
+      "after_fees": 2.3466823267284456,
+      "net": 2.165073974315975,
+      "fees": 0.6053611747082356,
+      "execution": 0.18160835241247067,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross_dd": 0.934522833858864,
+      "fee_dd": 1.1368642637262383,
+      "net_dd": 1.1975666926864506,
+      "net_dd_pct": 0.011899133815106974
+    }
+  ],
+  "observations": {
+    "BTCUSDT/2023-08-13": {
+      "decisions": [
+        [
+          1692057600,
+          1691971200,
+          84594633400,
+          84594633398,
+          84592633398,
+          1
+        ],
+        [
+          1692316800,
+          1692230400,
+          84567633400,
+          84594633400,
+          84594633398,
+          -1
+        ],
+        [
+          1693353600,
+          1693267200,
+          83296767739,
+          83233553739,
+          83189553739,
+          1
+        ],
+        [
+          1694131200,
+          1694044800,
+          83274543635,
+          83324543635,
+          83324442736,
+          -1
+        ]
+      ],
+      "orders": [
+        [
+          1692057600,
+          29419.5,
+          1,
+          0.0033991060351127654,
+          100.0
+        ],
+        [
+          1692316800,
+          26609.7,
+          -1,
+          0.003391948900990151,
+          90.25874267067762
+        ],
+        [
+          1693353600,
+          27700.1,
+          1,
+          0.0031182539240874572,
+          86.37594552261497
+        ],
+        [
+          1694131200,
+          26240.7,
+          -1,
+          0.0031118439917583495,
+          81.65696463453332
+        ]
+      ],
+      "receipts": [
+        [
+          1692316800,
+          -9.550808137459846,
+          0.19044919186254014,
+          0.05713475755876204
+        ],
+        [
+          1693353600,
+          -3.698581081639653,
+          0.18421606642299493,
+          0.05526481992689847
+        ],
+        [
+          1694131200,
+          -4.550779776813228,
+          0.16820111126841672,
+          0.05046033338052501
+        ]
+      ],
+      "open_position": [
+        -1,
+        0.0031118439917583495,
+        26240.7
+      ],
+      "waiting_for_next_open": 0,
+      "closing_market_price": 25150.4,
+      "closing_equity_with_fees": 84.96815117411292
+    },
+    "BTCUSDT/2023-09-12": {
+      "decisions": [
+        [
+          1694563200,
+          1694476800,
+          83280441471,
+          83275645216,
+          83274543635,
+          1
+        ],
+        [
+          1694649600,
+          1694563200,
+          83215749471,
+          83280441471,
+          83274543635,
+          -1
+        ],
+        [
+          1695254400,
+          1695168000,
+          84096751765,
+          83146751865,
+          83096751865,
+          1
+        ],
+        [
+          1696118400,
+          1696032000,
+          84113833341,
+          84147059082,
+          84125057182,
+          -1
+        ]
+      ],
+      "orders": [
+        [
+          1694563200,
+          25825.8,
+          1,
+          0.0038720968953527093,
+          100.0
+        ],
+        [
+          1694649600,
+          26209.9,
+          -1,
+          0.003864409446243117,
+          101.28578514508749
+        ],
+        [
+          1695254400,
+          27107.7,
+          1,
+          0.0036008321365205978,
+          97.61027730715941
+        ],
+        [
+          1696118400,
+          26951.0,
+          -1,
+          0.0035936095360895,
+          96.85137060714811
+        ]
+      ],
+      "receipts": [
+        [
+          1694649600,
+          1.487272417504984,
+          0.20148727241750497,
+          0.06044618172525148
+        ],
+        [
+          1695254400,
+          -3.469466800837068,
+          0.20604103709101204,
+          0.06181231112730361
+        ],
+        [
+          1696118400,
+          -0.5642503957927802,
+          0.19465630421852603,
+          0.058396891265557804
+        ]
+      ],
+      "open_position": [
+        -1,
+        0.0035936095360895,
+        26951.0
+      ],
+      "waiting_for_next_open": 0,
+      "closing_market_price": 26864.5,
+      "closing_equity_with_fees": 97.0653664614127
+    },
+    "ETHUSDT/2023-08-13": {
+      "decisions": [
+        [
+          1692057600,
+          1691971200,
+          84594633400,
+          84594633398,
+          84592633398,
+          1
+        ],
+        [
+          1692316800,
+          1692230400,
+          84567633400,
+          84594633400,
+          84594633398,
+          -1
+        ],
+        [
+          1693353600,
+          1693267200,
+          83296767739,
+          83233553739,
+          83189553739,
+          1
+        ],
+        [
+          1694131200,
+          1694044800,
+          83274543635,
+          83324543635,
+          83324442736,
+          -1
+        ]
+      ],
+      "orders": [
+        [
+          1692057600,
+          1844.8,
+          1,
+          0.054206418039895926,
+          100.0
+        ],
+        [
+          1692316800,
+          1681.0,
+          -1,
+          0.054092723222093984,
+          90.92986773633999
+        ],
+        [
+          1693353600,
+          1728.52,
+          1,
+          0.05101182011613744,
+          88.17495130714589
+        ],
+        [
+          1694131200,
+          1647.25,
+          -1,
+          0.05090727971729485,
+          83.85701651431394
+        ]
+      ],
+      "receipts": [
+        [
+          1692316800,
+          -8.87901127493495,
+          0.19112098872506508,
+          0.05733629661751952
+        ],
+        [
+          1693353600,
+          -2.570486207513905,
+          0.18443022168019388,
+          0.05532906650405816
+        ],
+        [
+          1694131200,
+          -4.1457306208384885,
+          0.17220417199345328,
+          0.05166125159803598
+        ]
+      ],
+      "open_position": [
+        -1,
+        0.05090727971729485,
+        1647.25
+      ],
+      "waiting_for_next_open": 0,
+      "closing_market_price": 1551.03,
+      "closing_equity_with_fees": 88.67145795219774
+    },
+    "ETHUSDT/2023-09-12": {
+      "decisions": [
+        [
+          1694563200,
+          1694476800,
+          83280441471,
+          83275645216,
+          83274543635,
+          1
+        ],
+        [
+          1694649600,
+          1694563200,
+          83215749471,
+          83280441471,
+          83274543635,
+          -1
+        ],
+        [
+          1695254400,
+          1695168000,
+          84096751765,
+          83146751865,
+          83096751865,
+          1
+        ],
+        [
+          1696118400,
+          1696032000,
+          84113833341,
+          84147059082,
+          84125057182,
+          -1
+        ]
+      ],
+      "orders": [
+        [
+          1694563200,
+          1592.29,
+          1,
+          0.06280263017415169,
+          100.0
+        ],
+        [
+          1694649600,
+          1606.69,
+          -1,
+          0.06267758778397406,
+          100.70345351663329
+        ],
+        [
+          1695254400,
+          1621.6,
+          1,
+          0.06140021537549774,
+          99.56658925290712
+        ],
+        [
+          1696118400,
+          1670.17,
+          -1,
+          0.06127920051655128,
+          102.34668232672846
+        ]
+      ],
+      "receipts": [
+        [
+          1694649600,
+          0.90435787450779,
+          0.20090435787450778,
+          0.06027130736235233
+        ],
+        [
+          1695254400,
+          -0.9345228338590441,
+          0.2023414298671256,
+          0.06070242896013768
+        ],
+        [
+          1696118400,
+          2.9822084607879353,
+          0.2021153869666022,
+          0.06063461608998065
+        ]
+      ],
+      "open_position": [
+        -1,
+        0.06127920051655128,
+        1670.17
+      ],
+      "waiting_for_next_open": 0,
+      "closing_market_price": 1566.07,
+      "closing_equity_with_fees": 108.62350041817473
+    }
+  },
+  "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Brrrrr-%E7%AD%96%E7%95%A5Brrrrr-Strategy.md",
+  "source_sha256": "85d40c21de4dad8b5be646d1b69c886a1e2c4bc9694f834175a073be19504bbc",
+  "archive_data": {
+    "usdt.json": {
+      "source": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=1",
+      "sha256": "64156fefcfc69fb2222e101f5c1b674e4f9ad850e9e9a4d6814c87e80f42013c",
+      "bytes": 424460
+    },
+    "BTCUSDT-2h-2023-08.zip": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/2h/BTCUSDT-2h-2023-08.zip",
+      "sha256": "80ef703ff1ffc89d10935afd12340eecf4c27af94d71b2498bdfe35fa777ceaf",
+      "bytes": 19599
+    },
+    "BTCUSDT-2h-2023-08.zip.CHECKSUM": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/2h/BTCUSDT-2h-2023-08.zip.CHECKSUM",
+      "sha256": "9e5ca3e844078385c6d9ec62a5da26aac529274673decd005e1bb923f6af7726",
+      "bytes": 89
+    },
+    "BTCUSDT-2h-2023-09.zip": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/2h/BTCUSDT-2h-2023-09.zip",
+      "sha256": "9b89840467f37aaf050359523e907d740c21c787d5b90b687038596476d6b41c",
+      "bytes": 18847
+    },
+    "BTCUSDT-2h-2023-09.zip.CHECKSUM": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/2h/BTCUSDT-2h-2023-09.zip.CHECKSUM",
+      "sha256": "411f1f1745605d4a94c1144bd4e14eedac303e050e1de941f3e7ae742829226e",
+      "bytes": 89
+    },
+    "BTCUSDT-2h-2023-10.zip": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/2h/BTCUSDT-2h-2023-10.zip",
+      "sha256": "d706ff8c41512746074cd1738cd3a545ebcaf2cd33e28ffb730856fc26c199b2",
+      "bytes": 19733
+    },
+    "BTCUSDT-2h-2023-10.zip.CHECKSUM": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/2h/BTCUSDT-2h-2023-10.zip.CHECKSUM",
+      "sha256": "0f1be4a8d371f9a409e8ffe577dafcac3e331e78c0ebef8b6d1ddea75768beb9",
+      "bytes": 89
+    },
+    "ETHUSDT-2h-2023-08.zip": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/2h/ETHUSDT-2h-2023-08.zip",
+      "sha256": "9767a4da19ae8f3d853a4bd9ff742193e079627a279655212dbec33b3ba80900",
+      "bytes": 19670
+    },
+    "ETHUSDT-2h-2023-08.zip.CHECKSUM": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/2h/ETHUSDT-2h-2023-08.zip.CHECKSUM",
+      "sha256": "6c679665b3e1c1509071cc0a88835a4d8fe68cad1ac89863b2d5f732174f4926",
+      "bytes": 89
+    },
+    "ETHUSDT-2h-2023-09.zip": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/2h/ETHUSDT-2h-2023-09.zip",
+      "sha256": "1e53bb6eafca5b71486f0ca8353adf0615c993cc1c04cd42538e9fd8f2ec1325",
+      "bytes": 18952
+    },
+    "ETHUSDT-2h-2023-09.zip.CHECKSUM": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/2h/ETHUSDT-2h-2023-09.zip.CHECKSUM",
+      "sha256": "56c30e2523b8d2cbe42d821fe9d288c27815f3520ffda715818b367cee41c944",
+      "bytes": 89
+    },
+    "ETHUSDT-2h-2023-10.zip": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/2h/ETHUSDT-2h-2023-10.zip",
+      "sha256": "44bcbee6078575d319e2773f6cc32056ce67ea0f0edadec4833be61709209bc7",
+      "bytes": 19917
+    },
+    "ETHUSDT-2h-2023-10.zip.CHECKSUM": {
+      "source": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/2h/ETHUSDT-2h-2023-10.zip.CHECKSUM",
+      "sha256": "87759d2b8de90af7cb6c180088b38c6efca26d84db227b9f0e22f90e10acb869",
+      "bytes": 89
+    }
+  },
+  "assumptions": [
+    "This is a source-bound input comparison. The archived GLASSNODE:USDT_SUPPLY series is replaced with DefiLlama USDT circulating quantities in the peggedUSD denomination. The two vendors can differ on coverage and timing.",
+    "Archived daily labels are usable from the next UTC day. The channel uses the preceding 50 chart samples, each observing only its then-eligible daily value. Revised historical inputs may differ from received real-time records.",
+    "The publisher gives BTC/USD-M. ETH/USD-M is a comparison using the same external signal and its own fill tape.",
+    "Each market and window starts at 100 USDT. Trade sizing uses the source 100% equity behavior when the next bar opens. Commission is the source 0.1% per side and execution adds a separate 0.03% per side. Funding is outside the source Pine broker study."
+  ]
+}
