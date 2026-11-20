@@ -1,0 +1,1200 @@
+{
+  "coverage": [
+    [
+      4685,
+      "Tested · exact FMZ strategy and execution template in both published modes",
+      "Full authored dates, Binance USD-M ETH and LTC, exact host scripts and 15m simulated-tick matching. Seven ETH single-mode closes. The authored dual preset had two ETH and four LTC closes. Independent decisions, filled prices, fees, funding bounds and ending wallet reconciliation passed."
+    ]
+  ],
+  "results": [
+    {
+      "gross": -4854.0,
+      "after_fees": -5073.78152,
+      "execution": 1.4,
+      "fees": 219.78152,
+      "funding": -1506.7499967613,
+      "net": -6581.9315167613,
+      "gross_dd": 9452.3,
+      "gross_dd_pct": 0.00940903443694858,
+      "gross_wins": 2,
+      "fee_dd": 9553.06148,
+      "fee_dd_pct": 0.00951046146056932,
+      "fee_wins": 2,
+      "net_dd": 9520.1916513129,
+      "net_dd_pct": 0.009492300802280387,
+      "net_wins": 2,
+      "id": 4685,
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "group": "FMZ Native · Archived ATR and native simulated ticks",
+      "name": "数字货币期货多品种ATR策略教学",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E6%9C%9F%E8%B4%A7%E5%A4%9A%E5%93%81%E7%A7%8DATR%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+      "period": "2021-09-01–2022-01-06 UTC · ETH-only published defaults",
+      "interval": "1d FMZ chart · 15m simulation base",
+      "exit": "Archived ATR/EMA stop or reversal",
+      "trades": 7,
+      "unsettled": 0,
+      "starting_equity": 1000000.0,
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "mark_to_market_net": -6581.9315167613
+    },
+    {
+      "gross": 2435.5,
+      "after_fees": 2374.58788,
+      "execution": 0.4,
+      "fees": 60.91212,
+      "funding": -1456.172782816,
+      "net": 918.015097184,
+      "gross_dd": 1292.1,
+      "gross_dd_pct": 0.0012921,
+      "gross_wins": 1,
+      "fee_dd": 1320.23004,
+      "fee_dd_pct": 0.00132023004,
+      "fee_wins": 1,
+      "net_dd": 1710.839559769,
+      "net_dd_pct": 0.001710839559769,
+      "net_wins": 1,
+      "id": 4685,
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "group": "FMZ Native · Archived ATR and native simulated ticks",
+      "name": "数字货币期货多品种ATR策略教学",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E6%9C%9F%E8%B4%A7%E5%A4%9A%E5%93%81%E7%A7%8DATR%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+      "period": "2021-09-01–2022-01-06 UTC · Embedded ETH/LTC two-venue preset",
+      "interval": "1d FMZ chart · 15m simulation base",
+      "exit": "Archived ATR/EMA stop or reversal",
+      "trades": 2,
+      "unsettled": 0,
+      "starting_equity": 1000000.0,
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "mark_to_market_net": 918.015097184
+    },
+    {
+      "gross": -771.4,
+      "after_fees": -777.80176,
+      "execution": 0.8,
+      "fees": 6.40176,
+      "funding": -25.085090797638,
+      "net": -803.686850797638,
+      "gross_dd": 771.4,
+      "gross_dd_pct": 0.07714,
+      "gross_wins": 0,
+      "fee_dd": 777.80176,
+      "fee_dd_pct": 0.077780176,
+      "fee_wins": 0,
+      "net_dd": 803.686850797638,
+      "net_dd_pct": 0.0803686850797638,
+      "net_wins": 0,
+      "id": 4685,
+      "market": "Binance USD-M LTCUSDT perpetual",
+      "group": "FMZ Native · Archived ATR and native simulated ticks",
+      "name": "数字货币期货多品种ATR策略教学",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E6%9C%9F%E8%B4%A7%E5%A4%9A%E5%93%81%E7%A7%8DATR%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+      "period": "2021-09-01–2022-01-06 UTC · Embedded ETH/LTC two-venue preset",
+      "interval": "1d FMZ chart · 15m simulation base",
+      "exit": "Archived ATR/EMA stop or reversal",
+      "trades": 4,
+      "unsettled": 0,
+      "starting_equity": 10000.0,
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "mark_to_market_net": -803.686850797638
+    }
+  ],
+  "diagnostics": [
+    {
+      "market": "ETH",
+      "settings_mode": "single",
+      "native_number_orders": 14,
+      "closed_round_trips": 7,
+      "actual_gross_at_native_fills_USDT": "-4855.40",
+      "native_daily_marked_equity_drawdown_USDT": "12342.5750276137",
+      "native_daily_marked_equity_drawdown_fraction": "0.012271881095415442787307786963225928787061637",
+      "native_end_account": {
+        "Balance": 993418.0684832387,
+        "FrozenBalance": 0,
+        "Stocks": 0,
+        "FrozenStocks": 0,
+        "Equity": 993418.0684832387,
+        "UPnL": 0
+      },
+      "each_trade": [
+        {
+          "entry_ms": 1630512001600,
+          "exit_ms": 1631030402300,
+          "direction": "long",
+          "gross": "-1292.10",
+          "gross_at_fills": "-1292.30",
+          "after_fees": "-1320.230040",
+          "execution": "0.20",
+          "fees": "28.130040",
+          "funding": "-390.409519769",
+          "net": "-1710.839559769",
+          "official_funding_rate_count": 18,
+          "funding_model_price_envelope_USDT": [
+            "-391.523661958",
+            "-388.947897128"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-390.512808828"
+        },
+        {
+          "entry_ms": 1632153601600,
+          "exit_ms": 1633104002300,
+          "direction": "short",
+          "gross": "-1496.90",
+          "gross_at_fills": "-1497.10",
+          "after_fees": "-1522.189160",
+          "execution": "0.20",
+          "fees": "25.289160",
+          "funding": "46.537889700",
+          "net": "-1475.851270300",
+          "official_funding_rate_count": 33,
+          "funding_model_price_envelope_USDT": [
+            "46.114048132",
+            "46.858222234"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "46.527628617"
+        },
+        {
+          "entry_ms": 1633190401600,
+          "exit_ms": 1635350402300,
+          "direction": "long",
+          "gross": "6092.50",
+          "gross_at_fills": "6092.30",
+          "after_fees": "6062.972920",
+          "execution": "0.20",
+          "fees": "29.527080",
+          "funding": "-752.0608878343",
+          "net": "5310.7120321657",
+          "official_funding_rate_count": 75,
+          "funding_model_price_envelope_USDT": [
+            "-755.145604780",
+            "-747.902341709"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-752.356445914"
+        },
+        {
+          "entry_ms": 1635523201600,
+          "exit_ms": 1636732802300,
+          "direction": "long",
+          "gross": "1294.80",
+          "gross_at_fills": "1294.60",
+          "after_fees": "1258.726240",
+          "execution": "0.20",
+          "fees": "36.073760",
+          "funding": "-444.2873075451",
+          "net": "814.2389324549",
+          "official_funding_rate_count": 42,
+          "funding_model_price_envelope_USDT": [
+            "-445.677453916",
+            "-442.974267542"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-444.494391875"
+        },
+        {
+          "entry_ms": 1637078401600,
+          "exit_ms": 1637510402300,
+          "direction": "short",
+          "gross": "-837.60",
+          "gross_at_fills": "-837.80",
+          "after_fees": "-872.208160",
+          "execution": "0.20",
+          "fees": "34.608160",
+          "funding": "63.3725066170",
+          "net": "-809.0356533830",
+          "official_funding_rate_count": 15,
+          "funding_model_price_envelope_USDT": [
+            "63.16622",
+            "63.64830"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "63.37277"
+        },
+        {
+          "entry_ms": 1638288001600,
+          "exit_ms": 1638633602300,
+          "direction": "long",
+          "gross": "-5869.80",
+          "gross_at_fills": "-5870.00",
+          "after_fees": "-5904.405120",
+          "execution": "0.20",
+          "fees": "34.605120",
+          "funding": "-56.2249653778",
+          "net": "-5960.8300853778",
+          "official_funding_rate_count": 12,
+          "funding_model_price_envelope_USDT": [
+            "-56.469818708",
+            "-55.874823147"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-56.235037098"
+        },
+        {
+          "entry_ms": 1639411201600,
+          "exit_ms": 1639670402300,
+          "direction": "short",
+          "gross": "-2744.90",
+          "gross_at_fills": "-2745.10",
+          "after_fees": "-2776.448200",
+          "execution": "0.20",
+          "fees": "31.548200",
+          "funding": "26.3222874479",
+          "net": "-2750.3259125521",
+          "official_funding_rate_count": 9,
+          "funding_model_price_envelope_USDT": [
+            "26.235272851",
+            "26.462039043"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "26.307761207"
+        }
+      ]
+    },
+    {
+      "market": "ETH",
+      "settings_mode": "author-two-legs",
+      "native_number_orders": 4,
+      "closed_round_trips": 2,
+      "actual_gross_at_native_fills_USDT": "2435.10",
+      "native_daily_marked_equity_drawdown_USDT": "7074.8276335893",
+      "native_daily_marked_equity_drawdown_fraction": "0.0070481084536521830836130347166288649232614034",
+      "native_end_account": {
+        "Balance": 1000918.015097184,
+        "FrozenBalance": 0,
+        "Stocks": 0,
+        "FrozenStocks": 0,
+        "Equity": 1000918.015097184,
+        "UPnL": 0
+      },
+      "each_trade": [
+        {
+          "entry_ms": 1630512002900,
+          "exit_ms": 1631030407300,
+          "direction": "long",
+          "gross": "-1292.10",
+          "gross_at_fills": "-1292.30",
+          "after_fees": "-1320.230040",
+          "execution": "0.20",
+          "fees": "28.130040",
+          "funding": "-390.409519769",
+          "net": "-1710.839559769",
+          "official_funding_rate_count": 18,
+          "funding_model_price_envelope_USDT": [
+            "-391.523661958",
+            "-388.947897128"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-390.512808828"
+        },
+        {
+          "entry_ms": 1634400002900,
+          "exit_ms": 1637078402300,
+          "direction": "long",
+          "gross": "3727.60",
+          "gross_at_fills": "3727.40",
+          "after_fees": "3694.817920",
+          "execution": "0.20",
+          "fees": "32.782080",
+          "funding": "-1065.763263047",
+          "net": "2628.854656953",
+          "official_funding_rate_count": 93,
+          "funding_model_price_envelope_USDT": [
+            "-1070.014771867",
+            "-1061.008176731"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-1066.199540488"
+        }
+      ]
+    },
+    {
+      "market": "LTC",
+      "settings_mode": "author-two-legs",
+      "native_number_orders": 8,
+      "closed_round_trips": 4,
+      "actual_gross_at_native_fills_USDT": "-772.20",
+      "native_daily_marked_equity_drawdown_USDT": "1016.258340001554",
+      "native_daily_marked_equity_drawdown_fraction": "0.099862593538236845822131268535528506214025735",
+      "native_end_account": {
+        "Balance": 9196.313149202362,
+        "FrozenBalance": 0,
+        "Stocks": 0,
+        "FrozenStocks": 0,
+        "Equity": 9196.313149202362,
+        "UPnL": 0
+      },
+      "each_trade": [
+        {
+          "entry_ms": 1630684801600,
+          "exit_ms": 1631030402300,
+          "direction": "long",
+          "gross": "-274.50",
+          "gross_at_fills": "-274.70",
+          "after_fees": "-276.045160",
+          "execution": "0.20",
+          "fees": "1.545160",
+          "funding": "-12.497470326182",
+          "net": "-288.742630326182",
+          "official_funding_rate_count": 12,
+          "funding_model_price_envelope_USDT": [
+            "-12.556393103",
+            "-12.395990661"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-12.506457039"
+        },
+        {
+          "entry_ms": 1634745602900,
+          "exit_ms": 1635091202300,
+          "direction": "long",
+          "gross": "-150.10",
+          "gross_at_fills": "-150.30",
+          "after_fees": "-151.675000",
+          "execution": "0.20",
+          "fees": "1.575000",
+          "funding": "-8.061949802471",
+          "net": "-159.936949802471",
+          "official_funding_rate_count": 12,
+          "funding_model_price_envelope_USDT": [
+            "-8.095665067",
+            "-8.021113142"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-8.065758864"
+        },
+        {
+          "entry_ms": 1636473602900,
+          "exit_ms": 1637078407300,
+          "direction": "long",
+          "gross": "-307.70",
+          "gross_at_fills": "-307.90",
+          "after_fees": "-309.696840",
+          "execution": "0.20",
+          "fees": "1.996840",
+          "funding": "-9.766587564962",
+          "net": "-319.663427564962",
+          "official_funding_rate_count": 21,
+          "funding_model_price_envelope_USDT": [
+            "-9.840195972",
+            "-9.699138387"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "-9.771819689"
+        },
+        {
+          "entry_ms": 1638633601600,
+          "exit_ms": 1640361602300,
+          "direction": "short",
+          "gross": "-39.10",
+          "gross_at_fills": "-39.30",
+          "after_fees": "-40.384760",
+          "execution": "0.20",
+          "fees": "1.284760",
+          "funding": "5.240916895977",
+          "net": "-35.343843104023",
+          "official_funding_rate_count": 60,
+          "funding_model_price_envelope_USDT": [
+            "5.204419232",
+            "5.287492556"
+          ],
+          "funding_at_official_trade_bar_open_USDT": "5.238134703"
+        }
+      ]
+    }
+  ],
+  "dual_mode_combined_realized_net_USDT": "114.328246386362",
+  "source": {
+    "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E6%9C%9F%E8%B4%A7%E5%A4%9A%E5%93%81%E7%A7%8DATR%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+    "publisher": {
+      "url": "https://www.fmz.com/strategy/339344",
+      "html_sha256": "1eaf09ba535803d9469ac64e9e7998474b5d78eb762d20d0d2e86be5b24556d5",
+      "args": {
+        "params": "",
+        "onlyOne": true,
+        "symbol": "swap",
+        "period": 86400,
+        "stopLoss": 0.07,
+        "atrPeriod": 10,
+        "emaPeriod": 10,
+        "trackRatio": 1,
+        "openRatio": 0.1
+      }
+    },
+    "document_sha256": "2666ed12c11e594776d8f1407426450912c9fcb8a67fdcf5f36af30891571ac1",
+    "source_sha256": "730be6d7ee34991014a24d30edf00dd222122f6bb3588fa564cbf4c35ae954ea",
+    "embedded_parameters": {
+      "params": "[{         \"symbol\" : \"swap\",         \"period\" : 86400,         \"stopLoss\" : 0.07,         \"atrPeriod\" : 10,         \"emaPeriod\" : 20,         \"trackRatio\" : 2,         \"openRatio\" : 0.1     }, {         \"symbol\" : \"swap\",         \"period\" : 86400,         \"stopLoss\" : 0.07,         \"atrPeriod\" : 10,         \"emaPeriod\" : 20,         \"trackRatio\" : 2,         \"openRatio\" : 0.1     }]"
+    },
+    "trade_template": {
+      "url": "https://www.fmz.com/strategy/203258",
+      "html_sha256": "7c34a49a49183acf8b6eabfbf9d2b1d92a51f518ccc1dfe9a39430ad673a7d9b",
+      "args": {
+        "Interval": 500,
+        "MinAmount": 1,
+        "SlidePrice": 5
+      }
+    },
+    "template_document_sha256": "eeabd483ce664adb3da6ba465b6489ad6f40ccff1319d5c6fe389333c4e5c888",
+    "template_code_sha256": "87154be8bf09cad65af71bf82097fc344aa738fff9c37ca21e0bd26a63ef89a3"
+  },
+  "market_sources": {
+    "ETH": {
+      "swap": {
+        "overlap": 673,
+        "equal_ohlcv": [
+          673,
+          673,
+          673,
+          673,
+          673
+        ],
+        "fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.swap&event=feed&detail=true&round=true&period=900000&from=1630454400&to=1631059200",
+          "sha256": "832daa3b37e9a6c2d62a9ff729bc5974e9368aa843dcdecfe89c6b0900ba0784",
+          "rows": 673
+        },
+        "exchange_checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip",
+            "sha256": "77c8ca3914321c8e59c34ba7d23a3c7d63f5e83c219e55c767ce9953022dcbf2",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip",
+            "sha256": "913546ade2f9425e89989e839ca3d3d14ac29838eb83e2fc735ea2438e2eb141",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-07.zip",
+            "sha256": "c5c52ba14f8964e3669c7c147358981b2d31e0b7982b0567f1ffc24ec857831d",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-07.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-08.zip",
+            "sha256": "95981cb8a9dda8d51be3a0d323d8d89ee4410f6e4ee3ea74e41d54b8152770b0",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-09.zip",
+            "sha256": "7e9db70488fe7324c7c58a905638bf81437f11c61018238190ca6723a828e9e9",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-10.zip",
+            "sha256": "755a29a1a30d7c18f6932a5ceb16288a61968fb2e1ada5611b58c5aad46947da",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-11.zip",
+            "sha256": "016ce492025483e69485963f4d503ef0b04b7d961f2c89f2fd455d6bb15169fc",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-12.zip",
+            "sha256": "88eda6c9262c4322022ed9017232756e9ba0aca6a3d4d34c23850da6f241812d",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2022-01.zip",
+            "sha256": "f34e867abd33f17c4c9722338d1e6098da86ceb1ed7e68da704de4a1a6fc0b62",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2022-01.zip.CHECKSUM"
+          }
+        ]
+      },
+      "index": {
+        "overlap": 673,
+        "equal_ohlcv": [
+          673,
+          673,
+          673,
+          673,
+          673
+        ],
+        "fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.index&event=feed&detail=true&round=true&period=900000&from=1630454400&to=1631059200",
+          "sha256": "a692446e29b1b361dce6c720d7faa195740c4de4987e3e04a58ea90839b7b1aa",
+          "rows": 673
+        },
+        "exchange_checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip",
+            "sha256": "d5a0df0ac2ff5561c3b1bfd800e0d69c446dcf5a290484727db2d42ff7ab2d10",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip",
+            "sha256": "74637f5582baf38ce6f262aa451a609740b8ec2c9687e0489b8bbea3105285c6",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-07.zip",
+            "sha256": "b3aeb280b7e5d07cf65d84fcc055b7e7fab5369d7012351e8a0f648e8b6a3f54",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-07.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-08.zip",
+            "sha256": "28687e873dbab8f5c105ed830278c77d912d10e4ee13328ce4a2e45e6b4b8128",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-09.zip",
+            "sha256": "4a8f26a6de30c6f90f2d91d9405acc15027064eaa50824acc76f7c4849d4c6fe",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-10.zip",
+            "sha256": "fffae53aef87f462d3a5100fd3f9e12b72de1cb78f385404db55e9fafadc9974",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-11.zip",
+            "sha256": "6724ee0a117c1ea24e07be8ab0bba584ae8bcde2c4c21088897ef4fa6b2b225c",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-12.zip",
+            "sha256": "ed63bcf31f57153e656e59a761bd784f103cbe0160eb4073af9f3ce6040a30c6",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2022-01.zip",
+            "sha256": "f80681617e2c356108279552fe48084421a2e4ecb3ca9a1e315348af1937a312",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2022-01.zip.CHECKSUM"
+          }
+        ]
+      },
+      "funding": {
+        "overlap": 4,
+        "equal_ohlcv": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.funding&event=feed&detail=true&round=true&period=900000&from=1630454400&to=1631059200",
+          "sha256": "fca75b16280e4b1db5e0832c10a2f6080d471871f3b11504bb900648b64e4408",
+          "rows": 21
+        },
+        "exchange_checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-09.zip",
+            "sha256": "4b4a94cdafbb8fea7762c266aa79b183700b7c9dcf7e981f7fdbe9372f2eec66",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-10.zip",
+            "sha256": "4dfb8698f6951b2c66229e1c687977eae0778bb703d6268232da2ceb3e9b5e6d",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-11.zip",
+            "sha256": "d9a7e22a237717f23d4b0505f14613359b7ea7831b23a78653a891cbbe3d521c",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-12.zip",
+            "sha256": "788d5c57e7cbc8e6b94ed4d7672618a85311edf1d7f0888083410d0d3389d811",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2022-01.zip",
+            "sha256": "9f5bd01450b05a8c5e48cdc99fa147e85c82ecf7ee7919fa543a4e6039a2b98d",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2022-01.zip.CHECKSUM"
+          }
+        ]
+      },
+      "daily": {
+        "overlap": 449,
+        "equal_ohlcv": [
+          449,
+          449,
+          449,
+          449,
+          449
+        ],
+        "fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.swap&event=fill&detail=true&round=true&period=86400000&from=1602806400&to=1641513600",
+          "sha256": "0167bb89fbc069969a62666866cd5fbb56a85edca8db94a92f4b1e66f59b3db2",
+          "rows": 449
+        },
+        "exchange_checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-10.zip",
+            "sha256": "f140c378b5e55560ac01fc48e1d2885a8e23e7e15b258ed778c003684532953e",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-11.zip",
+            "sha256": "764d33511032c34be8b563591d7730bd09858dcde8588ffb5ef548c4c728a894",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-12.zip",
+            "sha256": "1a53353c7ad246ccccdb37df0162f0add0cd9529c974edf077b3f4aa64bcbe88",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-01.zip",
+            "sha256": "2e2ccf271a78446c410d6617c093b8b0693f5e2cb7341518c6d7567fffca4e15",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-02.zip",
+            "sha256": "f5e4db8529bc89c792a0a78e791d0e90d613be6eff4041a5a024106a88a2d0a3",
+            "rows": 28,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-02.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-03.zip",
+            "sha256": "fdf66b48c460eeb873b7c567b129c9f93fe14c50e1dbe5afb769881b01846e95",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-03.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-04.zip",
+            "sha256": "ab57d26d80cfb3e29deb5204cd04c812dd5f53a1c07b669266cf93ee74f8114f",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-05.zip",
+            "sha256": "5e438213128dd75c42a40ab6fb637c6d261ff10cf2d453177d9a13a7178b25e5",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-06.zip",
+            "sha256": "99dbca88b4fb842ed40d312ac82cbfa33e8e3e147dc02896ca6f910c77a39269",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-06.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-07.zip",
+            "sha256": "c36924e39814cdcab057c2abd9efedccb7dfd0b4ac2e5ed86346b52d8ce24489",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-07.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-08.zip",
+            "sha256": "5caa2fca456e28deff2e39cd7ee2c85946fe3d8be3d23624c67b91fd2da9257b",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-09.zip",
+            "sha256": "cdca161399a79cb2eb5958cd11a6b976f3a0fd7cadd561dd423a30a17d9af050",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-10.zip",
+            "sha256": "0c8f6b52c608751b9f56aa7663d53364d2f87d51ded005380b2fb2cb6a28c3af",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-11.zip",
+            "sha256": "dccb3f8867a5672fc18b285b963f61e43ef1a3c9c0cf2bea654d1f214ec95aa4",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-12.zip",
+            "sha256": "fb0cc2d6b5b61c303cf766274a44bc77e0851dde0492f275f557c4fbc22fa021",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-01.zip",
+            "sha256": "c41822818408e353b1dccb10eb9660f946a28c9aea5c007fa33df7b002423a5d",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-01.zip.CHECKSUM"
+          }
+        ]
+      }
+    },
+    "LTC": {
+      "swap": {
+        "overlap": 673,
+        "equal_ohlcv": [
+          673,
+          673,
+          673,
+          673,
+          673
+        ],
+        "fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=LTC_USDT.swap&event=feed&detail=true&round=true&period=900000&from=1630454400&to=1631059200",
+          "sha256": "5365f4b7650ac45d9c2558490399d14b5e9ad5d1017ddbde51f0baeedefededf",
+          "rows": 673
+        },
+        "exchange_checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-05.zip",
+            "sha256": "fa02df9425133c50151499d411ab652332e9a3662a79f0ca6962df6165748faf",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-06.zip",
+            "sha256": "fad70452d0789e153f08f320ab1532b89c1b5c3e26496ebc152773e099fb2216",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-06.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-07.zip",
+            "sha256": "f6170694721ce1eee42addc19506a24616a72301e72a951fd10e2e485ccf22df",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-07.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-08.zip",
+            "sha256": "aead95e5047f0211a7ead992763ae0a66d25ef24b46895fc8bafb9a9fe6dd72c",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-09.zip",
+            "sha256": "e7612bf6589f3175c898b6b249835ddbaf67269c3111c6ca94296f96821348e0",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-10.zip",
+            "sha256": "cf0934ef5dbe8270a1e23eb57f9979dd64e828f8f72dfabf588fcd139a1231d2",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-11.zip",
+            "sha256": "d0eedf71974904e19f7bdf8aa7168efd9286242e1986513d98baaeace379aca3",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-12.zip",
+            "sha256": "d2daf7e9badbfe86ae1b919d4f241761eae35132479bd83afb607e6c53676625",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2021-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2022-01.zip",
+            "sha256": "494f8c0e6f4a0a4951403726f2e32a82aeaaa6036230f21d1a08709cf4b54052",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/15m/LTCUSDT-15m-2022-01.zip.CHECKSUM"
+          }
+        ]
+      },
+      "index": {
+        "overlap": 673,
+        "equal_ohlcv": [
+          673,
+          673,
+          673,
+          673,
+          673
+        ],
+        "fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=LTC_USDT.index&event=feed&detail=true&round=true&period=900000&from=1630454400&to=1631059200",
+          "sha256": "69c9323ab68da9de6694d45ed67d81b9af8c969556c2f5338b216cef026cc912",
+          "rows": 673
+        },
+        "exchange_checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-05.zip",
+            "sha256": "5bc2f2b919d946cce673799a70ef2f751457a6d31a04d8f80513d52d8b9a3f25",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-06.zip",
+            "sha256": "e72afcb708072e923b4da0a42c88ea065cd2d621b14c894cd94e846627d24ae6",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-06.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-07.zip",
+            "sha256": "6e013f9abdcdb9309b9d70602556eb25b82a7819eceaa93ddc7d60c54066a434",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-07.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-08.zip",
+            "sha256": "c40927d47580fdf13d356f1af4863d76ec1d7d931e1fe1aeb76dbe773c413154",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-09.zip",
+            "sha256": "bf24605f2f44cea2abfdf2400c1af723d00721513f6b28781c319cbb19715b14",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-10.zip",
+            "sha256": "579a9789b468079ae17a80659c32c053129fa2d02587c623e3f40990074c6bbc",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-11.zip",
+            "sha256": "f6c508bab2eeec7ee6a9b2402230866af7b23e316a4355111cbfc04d684ab173",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-12.zip",
+            "sha256": "76e11fbcb635fde9b184e768f64a110ead216b7896f65959924c35d5f07c5316",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2021-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2022-01.zip",
+            "sha256": "4654b288614122b708bb867ce2edf56561b0607832d89d186e60d8778ccbacf3",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/LTCUSDT/15m/LTCUSDT-15m-2022-01.zip.CHECKSUM"
+          }
+        ]
+      },
+      "funding": {
+        "overlap": 4,
+        "equal_ohlcv": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=LTC_USDT.funding&event=feed&detail=true&round=true&period=900000&from=1630454400&to=1631059200",
+          "sha256": "a3653ef1c14b4a69fbe940e6d0657a77444a53f029da08827679c7830454c21b",
+          "rows": 21
+        },
+        "exchange_checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2021-09.zip",
+            "sha256": "42fd2efc16ec88b6d64bfa8ffa8749ca064d14a8e60a2c9159d4b586851f6892",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2021-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2021-10.zip",
+            "sha256": "7c92252d6e87a94a0a4027db30a20e9e5dc24aa6d8336f2b1e23a4c5b6523687",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2021-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2021-11.zip",
+            "sha256": "4f212556572778ee02928d5d768a47df133973e0d74858c4574db912b47eee0f",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2021-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2021-12.zip",
+            "sha256": "200e73077840291731e18eba6f4090764923268051764ea997f1f2a470cf178e",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2021-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2022-01.zip",
+            "sha256": "6bd76b0ae2f6444c0da89fef35bfb398954152c00db9be908f8b3039e73eef86",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/LTCUSDT/LTCUSDT-fundingRate-2022-01.zip.CHECKSUM"
+          }
+        ]
+      },
+      "daily": {
+        "overlap": 449,
+        "equal_ohlcv": [
+          449,
+          449,
+          449,
+          449,
+          449
+        ],
+        "fmz": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=LTC_USDT.swap&event=fill&detail=true&round=true&period=86400000&from=1602806400&to=1641513600",
+          "sha256": "89605b6e4407f2cd2712ba3b7dc9790136c6634eb9d7f85c2acc421270a410f6",
+          "rows": 449
+        },
+        "exchange_checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2020-10.zip",
+            "sha256": "f539d09661a8e124329a29919b498ff34028065cdd4019bc3d6770bd9d1f7cb1",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2020-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2020-11.zip",
+            "sha256": "acda7879c0edf2cbb1a3f53e49327d978de67c47e40bbd8e80b2fe26ce1cc1aa",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2020-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2020-12.zip",
+            "sha256": "6eb40dabdfd7e906ee0cbefc955a6617365d1fe1d68cb9d2764dbbb717647a51",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2020-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-01.zip",
+            "sha256": "5e7fa5f3ba55b39bed903e18e1ceef9bfbe880cd2865028a3c1b5f4df84bc949",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-02.zip",
+            "sha256": "9d1fab71fc8b938bdceb9066b75bb71529194264b9be0d99e4f07ee097cf4969",
+            "rows": 28,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-02.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-03.zip",
+            "sha256": "34f86f14f9bca5aa817fb17c7ada2219915eff3aebce293863b501dd932efb97",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-03.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-04.zip",
+            "sha256": "f9af9b735295d6674b5173106e0258285402995e081baee87b81490b7407cbad",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-05.zip",
+            "sha256": "41116668cbaf8899e1ffa77c27d4711b0ef22d074bf2ac21aee38b6fcc989947",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-06.zip",
+            "sha256": "9fcd2fa09dd0b1022bc544706d32ef16dfd08dccc7230b85779acdcd802ba1b6",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-06.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-07.zip",
+            "sha256": "ddeae825cef5776688b7f59b06b73bae742ad8abf9a2f7520ce66a8299328910",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-07.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-08.zip",
+            "sha256": "43a6b2019937de0d0587174c4190686c4f45dccb3128ff752b82b8c83182ebae",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-09.zip",
+            "sha256": "54aba596e2cafaa99fec69149beab37e548bcbbb09ae19c608e3ddff752df0aa",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-10.zip",
+            "sha256": "7f4b536f0d949bfd30af05f13136f292f0fcf026c01bf4914e654caa18061563",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-11.zip",
+            "sha256": "34a668bf3c56677e835bec62e3cdd7a1292147e21dafb826899d9714c7b406c9",
+            "rows": 30,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-12.zip",
+            "sha256": "2955f05f695aa5f71ef74036b4058771ba560cec87a5b526b80926e30900eada",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2021-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2022-01.zip",
+            "sha256": "82490d869c78ae4a6bd7f75b9e99692c5f766d3c5dd2d176f8d50fa96348de0f",
+            "rows": 31,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1d/LTCUSDT-1d-2022-01.zip.CHECKSUM"
+          }
+        ]
+      }
+    }
+  },
+  "proof": {
+    "input_sha256": "463fc0a47b3c119a6174d3ca93b4181c02c4d97b3426b46ab44503aaea266a8c",
+    "clock_and_ledger_receipt_sha256": "588968bfe28dd26d8fd6572af44c8b99787dbffb9dc68bbcfe4160929e34004c",
+    "native_engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "stage_sha256": "8d962543a9104dc2d2899af094dc017c87fa6d5317b82e8c7888a54e901d98ab",
+    "worker_sha256": "826b91f60b390bd552aa89633c25b8a7440b4966c8f60b429f38b2b30a21b47a",
+    "verifier_sha256": "24a7be50ca0b2c2e61b38bc6e0577e38c659a55cf69f6f2639f517ef18cd876a",
+    "repeated_native_sha256": "588968bfe28dd26d8fd6572af44c8b99787dbffb9dc68bbcfe4160929e34004c",
+    "sleep_calls": {
+      "single": 164651,
+      "author-two-legs": 314061
+    },
+    "q_requests": [
+      [
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=ETH_USDT.swap&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "ETH",
+          "section": "swap",
+          "rows": 22194
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=fill&symbol=ETH_USDT.swap&eid=Futures_Binance&depth=2&trades=0&custom=0&period=86400000&from=1544112000&to=1621612800",
+          "event": "fill",
+          "period": 86400000,
+          "from": 1544112000000,
+          "to": 1621612800000,
+          "market": "ETH",
+          "section": "swap",
+          "rows": 213
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=ETH_USDT.funding&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "ETH",
+          "section": "funding",
+          "rows": 382
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=ETH_USDT.index&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "ETH",
+          "section": "index",
+          "rows": 22194
+        }
+      ],
+      [
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=ETH_USDT.swap&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "ETH",
+          "section": "swap",
+          "rows": 22194
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=LTC_USDT.swap&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "LTC",
+          "section": "swap",
+          "rows": 22194
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=fill&symbol=ETH_USDT.swap&eid=Futures_Binance&depth=2&trades=0&custom=0&period=86400000&from=1544112000&to=1621612800",
+          "event": "fill",
+          "period": 86400000,
+          "from": 1544112000000,
+          "to": 1621612800000,
+          "market": "ETH",
+          "section": "swap",
+          "rows": 213
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=fill&symbol=LTC_USDT.swap&eid=Futures_Binance&depth=2&trades=0&custom=0&period=86400000&from=1544112000&to=1621612800",
+          "event": "fill",
+          "period": 86400000,
+          "from": 1544112000000,
+          "to": 1621612800000,
+          "market": "LTC",
+          "section": "swap",
+          "rows": 213
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=ETH_USDT.funding&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "ETH",
+          "section": "funding",
+          "rows": 382
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=ETH_USDT.index&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "ETH",
+          "section": "index",
+          "rows": 22194
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=LTC_USDT.funding&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "LTC",
+          "section": "funding",
+          "rows": 382
+        },
+        {
+          "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&symbol=LTC_USDT.index&eid=Futures_Binance&depth=5&trades=0&custom=0&period=900000&from=1621454400&to=1641428100",
+          "event": "feed",
+          "period": 900000,
+          "from": 1621454400000,
+          "to": 1641428100000,
+          "market": "LTC",
+          "section": "index",
+          "rows": 22194
+        }
+      ]
+    ]
+  },
+  "assumptions": {
+    "scope": "Full embedded 2021-09-01 to 2022-01-06 date range interpreted as UTC. The native engine aggregates its daily candles at 16:00 UTC. ETH single uses the source publication defaults EMA10 and band width ATR1. The archived two-exchange object requires onlyOne=false to activate the published JSON argument. It uses EMA20 and ATR2 for both independently traded ETH/LTC legs. Their starting balances are the archived ETH 1,000,000 USDT and a declared 10,000 USDT starting balance for LTC, whose embedded balance was omitted. The two ETH variants use overlapping dates and must be interpreted separately.",
+    "price_support": "Stage exchange-published SHA-256 Binance USD-M prices, funding and contract fingerprints, with exact direct FMZ read-only overlap for all checked rows. The native FMZ simulated-tick client takes only disk-backed, checksum-verified market responses. Original strategy and original trade wrapper run internally with their own 500ms sleeps. The native tester creates 15m intrabar tick paths and a one-tick directional spread. The tested crossing limits filled entirely at that synthetic top of book. These are model fills, with no historical depth or actual trade claim.",
+    "orders": "Exactly 10 contracts per entry or close. Original template #203258 uses 5 USDT crossing allowance, 500 ms retry and minimum one. No positions remained open. Simulated leverage is 10x. Contemporary exchange fee 0.02% maker and 0.04% taker, with each modeled fill charged taker. The published order set uses actual simulated fill prices, while gross/after-fee reference columns attribute one-tick execution differences separately.",
+    "funding": "Every position-level native funding cash flow is isolated from the actual simulated available cash plus margin before/after a closed round trip. Independent signed scheduled Binance charges are constrained by each settlement’s price interval using checksummed contract and index H/L. The native simulator’s actual funding price need not equal either feed’s fixed candle open. Drawdown on closed changes and independent native daily marked equity are both reported.",
+    "verification": "A Python shadow calculates Wilder ATR, EMA and order signals on original native seed and independently resampled checksummed closed daily bars. It matches all 384 source decisions, every simulated fill, fee, wallet and available margin movement, and both deterministic repetitions."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/339344",
+    "https://www.fmz.com/digest-topic/8726",
+    "https://www.fmz.com/strategy/203258",
+    "https://www.fmz.com/user-guide/backtesting-system/backtest-modes-and-order-matching",
+    "https://www.binance.com/en/blog/futures/421499824684900660",
+    "https://github.com/binance/binance-public-data"
+  ],
+  "reproduction": "Stage the pinned FMZ markdown archive and optional locally cached public parameter pages with stage_r29_4685_native.py. Run the worker twice in existing network-denied AppContainer, saving the second output separately. Rebuild results through the independent Python verifier with both receipts."
+}
