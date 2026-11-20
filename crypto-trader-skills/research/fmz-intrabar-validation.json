@@ -1,0 +1,15 @@
+{
+  "synthetic_fixture_only": true,
+  "engine": "PineTS 0.13.1",
+  "recalculation_stop_gross": -10,
+  "bar_close_gross": 4,
+  "unsupported_configuration_rejected": "Source requires intrabar evaluation or recalculation after fills",
+  "initial_capital_fixture_usd": 50000,
+  "capital_fixture_gross": -5,
+  "capital_fixture_gross_drawdown_fraction": 0.0001,
+  "one_minute_reference_equals_expected_chart_close": true,
+  "isolation_probe": {
+    "privateDenied": true,
+    "networkDenied": true
+  }
+}

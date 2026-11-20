@@ -369,6 +369,7 @@ def migrate(
     resolve_shadowed=False,
     verified_requests=False,
     isolated_literals=False,
+    verified_fill_recalc=False,
 ):
     version = VERSION.search(source)
     if not version or version[1] not in {"2", "3", "4"}:
@@ -377,7 +378,10 @@ def migrate(
     code = re.sub(r"/\*.*?\*/", "", source, flags=re.DOTALL)
     code = VERSION.sub("//@version=5", code, count=1).strip()
     problem = eligibility(
-        code, verified_requests=verified_requests, isolated_literals=isolated_literals
+        code,
+        verified_requests=verified_requests,
+        isolated_literals=isolated_literals,
+        verified_fill_recalc=verified_fill_recalc,
     )
     if problem:
         raise MigrationBlocked(problem)
@@ -498,7 +502,10 @@ def migrate(
         out = out[:a] + replacement + out[b:]
         end = a
     problem = eligibility(
-        out, verified_requests=verified_requests, isolated_literals=isolated_literals
+        out,
+        verified_requests=verified_requests,
+        isolated_literals=isolated_literals,
+        verified_fill_recalc=verified_fill_recalc,
     )
     if problem:
         raise MigrationBlocked(problem)

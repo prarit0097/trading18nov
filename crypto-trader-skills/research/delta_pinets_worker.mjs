@@ -13,10 +13,10 @@ function normalizedTimeframe(value) {
   return { "1D": "D", "1W": "W" }[value] ?? value;
 }
 
-function drawdown(trades, offset) {
+function drawdown(trades, offset, initialEquity) {
   const byTime = new Map();
   for (const row of trades) byTime.set(row[0], (byTime.get(row[0]) ?? 0) + row[offset]);
-  let equity = EQUITY, peak = EQUITY, max = 0, maxPct = 0;
+  let equity = initialEquity, peak = initialEquity, max = 0, maxPct = 0;
   for (const time of [...byTime.keys()].sort((a, b) => a - b)) {
     equity += byTime.get(time);
     peak = Math.max(peak, equity);
@@ -35,9 +35,10 @@ function summarize(item, period, market, sample, unresolved, interval) {
     }
   }
   const [gross, after_fees, net] = sums;
-  const [gross_dd, gross_dd_pct] = drawdown(sample, 1);
-  const [fee_dd, fee_dd_pct] = drawdown(sample, 2);
-  const [net_dd, net_dd_pct] = drawdown(sample, 3);
+  const initial = item.initialCapital ?? EQUITY;
+  const [gross_dd, gross_dd_pct] = drawdown(sample, 1, initial);
+  const [fee_dd, fee_dd_pct] = drawdown(sample, 2, initial);
+  const [net_dd, net_dd_pct] = drawdown(sample, 3, initial);
   return {
     group: GROUP, name: item.name, market, exit: "Source PineTS exits", period,
     trades: sample.length, unsettled: unresolved, gross_wins: wins[0], fee_wins: wins[1],
@@ -67,7 +68,7 @@ async function runWorker() {
     slippage: 0
   };
 
-  async function replay(indicator, windowsByCoin, symbol) {
+  async function replay(indicator, windowsByCoin, symbol, allowFillRecalculation) {
     const sample = [];
     let unresolved = 0;
     for (const candles of windowsByCoin[symbol]) {
@@ -111,8 +112,11 @@ async function runWorker() {
       if (context.warnings?.length) throw Error("PineTS emitted runtime warnings");
       if (!context.strategy) throw Error("PineTS did not return a strategy ledger");
       const state = context.strategy;
-      if (state.config.use_bar_magnifier || state.config.calc_on_order_fills || state.config.calc_on_every_tick)
+      if (state.config.use_bar_magnifier || state.config.calc_on_every_history_tick ||
+          (state.config.calc_on_order_fills && !allowFillRecalculation) || state.config.calc_on_every_tick)
         throw Error("Source requires intrabar evaluation or recalculation after fills");
+      if (allowFillRecalculation && state.config.calc_on_order_fills !== true)
+        throw Error("Source fill recalculation setting was not applied");
       for (const row of state.opentrades) {
         if (!available.get(row.entry_time)) throw Error("Broker used an untraded candle");
       }
@@ -140,10 +144,15 @@ async function runWorker() {
     try {
       const indicator = new Indicator(item.code);
       for (const [key, value] of Object.entries(configs)) indicator.prop[key] = value;
+      if (item.initialCapital !== undefined) {
+        if (!Number.isFinite(item.initialCapital) || item.initialCapital <= 0)
+          throw Error("Invalid broker initial capital");
+        indicator.prop.initial_capital = item.initialCapital;
+      }
       const results = [];
       for (const [period, candles] of Object.entries(windows)) {
-        const btc = await replay(indicator, candles, coins[0]);
-        const eth = await replay(indicator, candles, coins[1]);
+        const btc = await replay(indicator, candles, coins[0], item.allowFillRecalculation === true);
+        const eth = await replay(indicator, candles, coins[1], item.allowFillRecalculation === true);
         results.push(summarize(item, period, coins[0], btc.sample, btc.unresolved, interval),
                      summarize(item, period, coins[1], eth.sample, eth.unresolved, interval),
                      summarize(item, period, pooled, [...btc.sample, ...eth.sample],
@@ -189,7 +198,10 @@ function runBatch() {
       if (cursor >= entries.length || usage >= 30) { retire(); return; }
       work = entries[cursor++];
       usage++;
-      timer = setTimeout(() => retire("PineTS per-source time or memory budget exceeded"), timeLimit);
+      const candidateLimit = Number.isFinite(work.timeoutMs)
+        ? Math.max(timeLimit, Math.min(65_000, work.timeoutMs))
+        : timeLimit;
+      timer = setTimeout(() => retire("PineTS per-source time or memory budget exceeded"), candidateLimit);
       worker.postMessage(work);
     }
     worker.on("message", (record) => {

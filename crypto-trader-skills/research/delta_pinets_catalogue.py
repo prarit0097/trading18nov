@@ -89,7 +89,13 @@ def source_block(document):
     ]
 
 
-def eligibility(block, *, verified_requests=False, isolated_literals=False):
+def eligibility(
+    block,
+    *,
+    verified_requests=False,
+    isolated_literals=False,
+    verified_fill_recalc=False,
+):
     version = re.search(r"(?m)^\s*//\s*@version\s*=\s*(\d+)", block)
     if not version or version[1] not in ("5", "6"):
         return "Pine 2–4 or unversioned source needs a compatible runtime"
@@ -111,10 +117,10 @@ def eligibility(block, *, verified_requests=False, isolated_literals=False):
         r"\binput\.symbol\b", stripped
     ):
         return "External data, visible chart range or imported library required"
-    if re.search(
-        r"\b(?:calc_on_every_tick|calc_on_order_fills|use_bar_magnifier)\s*=\s*(?!false\b)",
-        stripped,
-    ):
+    intrabar = ["calc_on_every_tick", "use_bar_magnifier", "calc_on_every_history_tick"]
+    if not verified_fill_recalc:
+        intrabar.append("calc_on_order_fills")
+    if re.search(r"\b(?:" + "|".join(intrabar) + r")\s*=\s*(?!\s*false\b)", stripped):
         return "Source requires tick or intrabar recalculation"
     if len(code) > 85000:
         return "Source exceeds offline evaluator size limit"

@@ -213,7 +213,13 @@ def eager_iff(code):
     return patch(code, changes), len(changes)
 
 
-def followup(source, *, verified_requests=False, isolated_literals=False):
+def followup(
+    source,
+    *,
+    verified_requests=False,
+    isolated_literals=False,
+    verified_fill_recalc=False,
+):
     clean = re.sub(r"/\*.*?\*/", "", source, flags=re.DOTALL)
     executable = NO_QUOTED.sub("", clean)
     if not re.search(r"(?m)^strategy\s*\(", executable):
@@ -241,6 +247,7 @@ def followup(source, *, verified_requests=False, isolated_literals=False):
         resolve_shadowed=True,
         verified_requests=verified_requests,
         isolated_literals=isolated_literals,
+        verified_fill_recalc=verified_fill_recalc,
     )
     return final, old, transforms, dict(labels)
 

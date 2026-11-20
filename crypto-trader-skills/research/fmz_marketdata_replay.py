@@ -126,7 +126,7 @@ def request_fields(parts, spans):
     return fields
 
 
-def checked_requests(code, version, allow_heikin=False):
+def checked_requests(code, version, allow_heikin=False, chart_ticker_alias=False):
     parts = tokens(code)
     edits, handled, flags = [], [], 0
     for i, token in enumerate(parts[:-1]):
@@ -146,8 +146,11 @@ def checked_requests(code, version, allow_heikin=False):
             "heikinashi(tickerid)",
             "ticker.heikinashi(tickerid)",
         }
+        chart_symbols = {"syminfo.tickerid", "tickerid"}
+        if chart_ticker_alias:
+            chart_symbols.add("syminfo.ticker")
         if (
-            (symbol not in {"syminfo.tickerid", "tickerid"} and not heikin)
+            (symbol not in chart_symbols and not heikin)
             or not timeframe
             or not expression
         ):
@@ -161,7 +164,7 @@ def checked_requests(code, version, allow_heikin=False):
                     "ticker.heikinashi(syminfo.tickerid)",
                 )
             )
-        elif symbol == "tickerid":
+        elif symbol in {"tickerid", "syminfo.ticker"}:
             edits.append((*key_cells(parts, values["symbol"][1]), "syminfo.tickerid"))
         for key, suffix in (("gaps", "gaps"), ("lookahead", "lookahead")):
             v, span = values.get(key, ("", None))
@@ -218,7 +221,14 @@ def historical_tick_setting(code):
     return code, False
 
 
-def prepare_source(block, *, isolated_literals=False, with_heikin=False):
+def prepare_source(
+    block,
+    *,
+    isolated_literals=False,
+    with_heikin=False,
+    verified_fill_recalc=False,
+    chart_ticker_alias=False,
+):
     code = re.sub(r"/\*.*?\*/", "", block, flags=re.S)
     check = NO_QUOTED.sub("", code)
     if EXTRA_UNSUPPORTED.search(check) or (
@@ -235,7 +245,9 @@ def prepare_source(block, *, isolated_literals=False, with_heikin=False):
     if re.search(r"(?m)^\s*strategy\.initial_capital\s*(?::=|=(?!=))", check):
         raise MigrationBlocked("Source rewrites the broker wallet")
     code, ticks = historical_tick_setting(code)
-    code, n = checked_requests(code, version, allow_heikin=with_heikin)
+    code, n = checked_requests(
+        code, version, allow_heikin=with_heikin, chart_ticker_alias=chart_ticker_alias
+    )
     changes = {"historical bar-close evaluation": 1} if ticks else {}
     if n:
         changes["confirmed same-symbol timeframe data"] = n
@@ -243,15 +255,26 @@ def prepare_source(block, *, isolated_literals=False, with_heikin=False):
         changes["Heikin-Ashi reference series, real chart fills"] = 1
     if version in {2, 3, 4}:
         code, _, _, signals = followup(
-            code, verified_requests=bool(n), isolated_literals=isolated_literals
+            code,
+            verified_requests=bool(n),
+            isolated_literals=isolated_literals,
+            verified_fill_recalc=verified_fill_recalc,
         )
         changes.update(signals)
         # A second scan verifies transformed namespaces and did not introduce other requests.
-        code, after = checked_requests(code, version, allow_heikin=with_heikin)
+        code, after = checked_requests(
+            code,
+            version,
+            allow_heikin=with_heikin,
+            chart_ticker_alias=chart_ticker_alias,
+        )
         if after != n:
             raise MigrationBlocked("Migrated data requests differ from source")
     elif problem := eligibility(
-        code, verified_requests=bool(n), isolated_literals=isolated_literals
+        code,
+        verified_requests=bool(n),
+        isolated_literals=isolated_literals,
+        verified_fill_recalc=verified_fill_recalc,
     ):
         raise MigrationBlocked(problem)
     return code.strip(), version, changes

@@ -320,7 +320,7 @@ def namespace_rewrites(code):
     return patch(code, changes), len(changes)
 
 
-def recheck(block):
+def recheck(block, *, isolated_literals=False):
     code = plain_pine(block)
     original_version = VERSION.search(block)
     normalized = VERSION.search(code)
@@ -348,14 +348,16 @@ def recheck(block):
         code, count = rsi_calls(code)
         if count:
             labels["Proven classic RSI integer length"] += count
-        code, _, transforms, repairs = followup(code)
+        code, _, transforms, repairs = followup(
+            code, isolated_literals=isolated_literals
+        )
         labels.update(repairs)
         code, count = fixed_default_inputs(code)
         if count:
             labels["Fixed-default legacy integer input constraints"] += count
     elif version in {5, 6}:
         transforms = {}
-        if why := eligibility(code):
+        if why := eligibility(code, isolated_literals=isolated_literals):
             raise MigrationBlocked(why)
     else:
         raise MigrationBlocked(f"Explicit Pine v{version} needs a verified migration")
