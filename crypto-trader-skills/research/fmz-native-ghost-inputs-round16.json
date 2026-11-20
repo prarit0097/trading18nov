@@ -1,0 +1,1932 @@
+{
+  "coverage": [
+    [
+      4547,
+      "Pending · FMZ rotating futures account adapter",
+      "Official Binance checksums cover all 51 exact USD-M markets around the October 2022 source revision. The isolated native engine omits Binance Info fields and the unchanged source changes pairs without rebinding each futures contract. The 2026 benchmark also lacks three archived symbols. A verified account/contract adapter and full aligned input files remain necessary."
+    ]
+  ],
+  "results": [],
+  "publisher": "https://www.fmz.com/strategy/363409",
+  "publisher_created": "2022-05-15 21:32:44",
+  "pinned_last_modified": "2022-10-01 01:51:21",
+  "archived_backtest_configuration": null,
+  "pinned_sources": [
+    {
+      "id": 4548,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B9%BD%E7%81%B5%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%AD%96%E7%95%A5%E4%B8%9A%E5%8A%A1%E5%BA%93.md",
+      "document_sha256": "248c97ccb86be9441c36fdd2f4e34ebba41dbc83087bbc981d25173c13ade854",
+      "code_sha256": "35307c09406c0197ebf4d9ac3ae86acc1fc91cc443b6a51b6e231167ca6b964d",
+      "publisher_page": "https://www.fmz.com/strategy/363410"
+    },
+    {
+      "id": 4549,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B9%BD%E7%81%B5%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%AD%96%E7%95%A5%E6%95%B0%E6%8D%AE%E5%BA%93.md",
+      "document_sha256": "f1c7a7d16b487765b2a737091b26a4ef02875a6cd3e391936d86447b161cca6e",
+      "code_sha256": "099759f86b1ac0534f7cb062506776a631a6551234f2e36ad8d940dc60da353c",
+      "publisher_page": "https://www.fmz.com/strategy/363411"
+    },
+    {
+      "id": 4547,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B9%BD%E7%81%B5%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "5d17868faa7861c5ec2a0fc42d008b909b468d71b4ea0196a8d7267c969f49e7",
+      "code_sha256": "aca870c4c7d46c893e377f2336c642467e52739d3832bde95bc6017460eccb53",
+      "publisher_page": "https://www.fmz.com/strategy/363409"
+    }
+  ],
+  "market_archive": {
+    "docs": "https://github.com/binance/binance-public-data",
+    "interval": "1h metadata probe",
+    "matched_checksums_by_month": {
+      "2022-09": 51,
+      "2022-10": 51,
+      "2022-11": 51,
+      "2026-09": 48,
+      "2026-10": 48
+    },
+    "missing_by_month": {
+      "2026-09": [
+        "EOSUSDT",
+        "MATICUSDT",
+        "SRMUSDT"
+      ],
+      "2026-10": [
+        "EOSUSDT",
+        "MATICUSDT",
+        "SRMUSDT"
+      ]
+    },
+    "checksums": [
+      {
+        "symbol": "1INCHUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/1INCHUSDT/1h/1INCHUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "aec4f33a60c8a8ce7d06faf41bff6720f64e590e47ca5887fbaff85560e008b5"
+      },
+      {
+        "symbol": "1INCHUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/1INCHUSDT/1h/1INCHUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f1a87c3a4dc05416e397169b13053bb5a88128a42f1dade16df94518db5fda1a"
+      },
+      {
+        "symbol": "1INCHUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/1INCHUSDT/1h/1INCHUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "cbcce79d4f5886a53c0e1c831c52acb9ac8900c4150aaf1f475a029117235b80"
+      },
+      {
+        "symbol": "1INCHUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/1INCHUSDT/1h/1INCHUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ea184ef45ad8b8cfce606b74163e9fdf2464e1e2bf6a9df0b4e999f4c2083061"
+      },
+      {
+        "symbol": "1INCHUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/1INCHUSDT/1h/1INCHUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "77485a2cc349a29446a7e866b28e356f19451588f7e7602615cb9dab98293328"
+      },
+      {
+        "symbol": "ALGOUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ALGOUSDT/1h/ALGOUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "6bb020dc78a5f847fbbcdedaf35d2a3dcd233a488bb32b2124f16b39c6ee9208"
+      },
+      {
+        "symbol": "ALGOUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ALGOUSDT/1h/ALGOUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "1a698f14fe3ff2463926d0d4729106e653c05394cd83d21ad2d38688b7ce7bab"
+      },
+      {
+        "symbol": "ALGOUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ALGOUSDT/1h/ALGOUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f133c95e9a6a7ded32e0c8ff53aa7c94af812b481e08ceae556d1bd9a8017898"
+      },
+      {
+        "symbol": "ALGOUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ALGOUSDT/1h/ALGOUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2119d5fbe1d126c2a7432b5c7646c73aac8e64d27b109cc647d14e1c27dec1f8"
+      },
+      {
+        "symbol": "ALGOUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ALGOUSDT/1h/ALGOUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e06b8ba1ac1027e791836e8960f7a7a24c81a8571d0da7c45daa1001d8fcdeac"
+      },
+      {
+        "symbol": "ATOMUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ATOMUSDT/1h/ATOMUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2ca2c55675cdf50cae5122f095e075f494de396efb1e74ec8d07d6060123f419"
+      },
+      {
+        "symbol": "ATOMUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ATOMUSDT/1h/ATOMUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "8c929e0ec60e07a18976e3fa375177e5ac7245bf3b031b823b6cbd22ad3a19c6"
+      },
+      {
+        "symbol": "ATOMUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ATOMUSDT/1h/ATOMUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "1d328db1324c24202924f13374a5d22c7a489f5b49d8e43114a05eca6d9e4556"
+      },
+      {
+        "symbol": "ATOMUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ATOMUSDT/1h/ATOMUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "809277ed1499b11e1fafbefb890124e54dbdad56f2d6e0e312d0c98485e503e0"
+      },
+      {
+        "symbol": "ATOMUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ATOMUSDT/1h/ATOMUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "80c2b0e0a1d7df83ac90e46c9ed520ae1040410a6b78f27db6de250c19076738"
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "556864d134a71de56d9bdab5cb98a314d3c1738b02af1ae635fb7245a5643252"
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b529a467bb664873bb66230a08404e4c70f1f5b9d6f20d97f8c47b57ab131f86"
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "07fbe4dd8b541078f5d814d3c50b13a17c001b93ba1c40c1e447182fdcb1964d"
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "0cebff0a67f03f9f460a66305d74b0f51dd3d6115184701a57bed5c0c5a16f69"
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4fee84769ad879ddcda18de0c00fa49b7cfb8526c8091455ac92326847dbcb4b"
+      },
+      {
+        "symbol": "AAVEUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AAVEUSDT/1h/AAVEUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "66a340828e0d37479d5155faf3d5eb5d7c9db59038ea2691f28ae5900f3abe0f"
+      },
+      {
+        "symbol": "AAVEUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AAVEUSDT/1h/AAVEUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "a94af93b7774268f2671278546a36ac19cff189b59d63e990a20f1a607d53362"
+      },
+      {
+        "symbol": "AAVEUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AAVEUSDT/1h/AAVEUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "dd4333ac9e0794b0ed17ec196e3ccc60f2502d2b16a1dc977367661869510272"
+      },
+      {
+        "symbol": "AAVEUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AAVEUSDT/1h/AAVEUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4072c8842e865fe21fa0996a1b5a09ad105cce16d55da21aafa07b156a8e3783"
+      },
+      {
+        "symbol": "AAVEUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AAVEUSDT/1h/AAVEUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "fd89ef2d180b140fb511b0b7cda7109fec9557193cc9c7d3f157cd5b95d3bfac"
+      },
+      {
+        "symbol": "AXSUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AXSUSDT/1h/AXSUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "78599df9c7e3428f30363d1a4e8922f59360e59ad1ccd102cc144116aab40156"
+      },
+      {
+        "symbol": "AXSUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AXSUSDT/1h/AXSUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "9dd57ac857dbdbc5e8892b840b83c58f66db857239bb675417caba99bacbb4eb"
+      },
+      {
+        "symbol": "AXSUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AXSUSDT/1h/AXSUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "3e55e905770763f6dedbdccb84ad47ed51a049c4586b93bc5b84de565867139f"
+      },
+      {
+        "symbol": "AXSUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AXSUSDT/1h/AXSUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ce2dd546976df653179b8f3a570ea822f3d90cd8ab6e7e3dbf66c66816004f20"
+      },
+      {
+        "symbol": "AXSUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/AXSUSDT/1h/AXSUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "97772388e790cf7241559dcb076d56c19235464fe665a74911fee4e72b4a710f"
+      },
+      {
+        "symbol": "BANDUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BANDUSDT/1h/BANDUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5c05b00080773254f8e9e0975720b9ab47dc09350987819651abb831f6d0de73"
+      },
+      {
+        "symbol": "BANDUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BANDUSDT/1h/BANDUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "18af4ec1b17ecf1b1141fbdc04d31b8b6c75ff15e7cc41e5154d8434d2c9f3e1"
+      },
+      {
+        "symbol": "BANDUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BANDUSDT/1h/BANDUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "79758579e0c9d23a0ab3d04f35419745c122dcbda069de88ed5bec2d10611f3c"
+      },
+      {
+        "symbol": "BANDUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BANDUSDT/1h/BANDUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "73e1a23f6a54a3602d0b1c0fa6e4db87aa603fbc52b2a667de6ecb74bd7c6c5f"
+      },
+      {
+        "symbol": "BANDUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BANDUSDT/1h/BANDUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b7e11f792c0e0929adfeb6550cb637a28210e9fd4a9b21dd6f255fcbd2bf6b3a"
+      },
+      {
+        "symbol": "BCHUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BCHUSDT/1h/BCHUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "78fa52f9ebed9d62581002fd8af1692c068756d8f6b292a1e8f8a5a17ce5bca7"
+      },
+      {
+        "symbol": "BCHUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BCHUSDT/1h/BCHUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "fb9c3cd6502ba2b7cd93efe6b6efa989ddffcab18edcd4ca8ca068bd40130dae"
+      },
+      {
+        "symbol": "BCHUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BCHUSDT/1h/BCHUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "04d748e333fe3b792dd2bafc26acb23ab2a5e701f5fdcb2e56be221c566a6419"
+      },
+      {
+        "symbol": "BCHUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BCHUSDT/1h/BCHUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d4381f25fb496c72dcbcdc230d1c9a0b630b4977b3ae0f1d59d549a0611eab39"
+      },
+      {
+        "symbol": "BCHUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BCHUSDT/1h/BCHUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "54904daa09b8d093423fbf0e8fb4ca216b861787cca54eac6e2f12735009ffa4"
+      },
+      {
+        "symbol": "BTCUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "92753ae32ed042ab7f10b90e3b9a49ddafc695c8e60eb563713855c73e2e6e82"
+      },
+      {
+        "symbol": "BTCUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d85a5f4bdbe93df2babdecf3b37f866655fa23c3fb31eeca96c3e3f6a1e9b872"
+      },
+      {
+        "symbol": "BTCUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e9b3f3b1929e3f6f255269c2d2eb564d9d9bcacbfc16651888e95765df383888"
+      },
+      {
+        "symbol": "BTCUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "07ab960882feb6d3120673a851f2a654c4c3f31f3a74d1f3fc4b0351a8ee1483"
+      },
+      {
+        "symbol": "BTCUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "da0ec480b8857600067635308423022972e994d9dffe8b0251f0b7813018e2c8"
+      },
+      {
+        "symbol": "COMPUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/COMPUSDT/1h/COMPUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "fc3103843ba1865b42aaa6da6325b6ada422581765a3a2e6a39aabb0e6bbc137"
+      },
+      {
+        "symbol": "COMPUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/COMPUSDT/1h/COMPUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b336377d0fca880a362953278af95e17fc17b930529f43d7d987e1449c64f4d8"
+      },
+      {
+        "symbol": "COMPUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/COMPUSDT/1h/COMPUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "10d04b185e04f5205fec5e30c70c1e86fad788b660a00568b9b4fb5e24f8d376"
+      },
+      {
+        "symbol": "COMPUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/COMPUSDT/1h/COMPUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4e66ec127f5e6762e6838ce0eaf80fe91891a15ab20a0b1db0133a483f19a7f0"
+      },
+      {
+        "symbol": "COMPUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/COMPUSDT/1h/COMPUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b34bf1916bcb26d49b4b44742ec5528f54ccd90b22c594f25c145ec757bc69da"
+      },
+      {
+        "symbol": "CVCUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/CVCUSDT/1h/CVCUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ce78abfdb117a650cc4a51b4121568dd0cca14fad207f290340ab0fbe1c79971"
+      },
+      {
+        "symbol": "CVCUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/CVCUSDT/1h/CVCUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ebd5bd99e6ea83cb3a9714656c40fc5fa00a3804abc91eb39399ab00fb75f363"
+      },
+      {
+        "symbol": "CVCUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/CVCUSDT/1h/CVCUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ec5d91bdeb36a1fe826c812491e3d6bc622e64ad1a2e2384838b0d18265620ae"
+      },
+      {
+        "symbol": "CVCUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/CVCUSDT/1h/CVCUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "6a6b1cba17eba7a3ef468d4d72b440c69cce60a411d745456530e3e9fa3f1d53"
+      },
+      {
+        "symbol": "CVCUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/CVCUSDT/1h/CVCUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f266f8db5b346daa247ac875fc84a65425ab85de423f2c6413d56d03029593e9"
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2b22c8d2da2388d4e9c384c4b5da7c4daff99e2b1659003c0f9f9dfa3c4f97c8"
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d14b4ade4dd0c13c83337ffcbbe2fcfa0477a0193bc66b3d296bd7b7008fefcb"
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "51a354259d5428f943d8484410dec113f07d5843b395d23cc0ae0ae55d78246c"
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "554d03c9b5f688e25d7143791099884de8f4c582240aabe934eeca917e91f0c7"
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ea95f5acc38193e72c50ddfd0c7abbe9690b803d11d0a2b0059fe55f23602cc2"
+      },
+      {
+        "symbol": "DOTUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOTUSDT/1h/DOTUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "0cbc4f9a002e944359f449d342feb306c69a8f69aa444ae692f16570d222cf00"
+      },
+      {
+        "symbol": "DOTUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOTUSDT/1h/DOTUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "288961a1fa6b06a6e0e228ebb99411c3586a82f50367c8c754bbab89dca415c0"
+      },
+      {
+        "symbol": "DOTUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOTUSDT/1h/DOTUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "6ad04a334e4490b0ff25de2ccf71f21b84615c8d70b8365c4cdd26b3d2a87718"
+      },
+      {
+        "symbol": "DOTUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOTUSDT/1h/DOTUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2d611d4ebc16715bb7c76bc6da39e4262d460ff595a42ecf27d461b8956bca8d"
+      },
+      {
+        "symbol": "DOTUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOTUSDT/1h/DOTUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "7a4282b92035aa68193a60748e17eeb93f0597340def55cf06c8b8759fa2db28"
+      },
+      {
+        "symbol": "DYDXUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DYDXUSDT/1h/DYDXUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "66a3fb563dc888e9c8683e0d1e60ea2aec4dd437ae464045b0002cad7a55985a"
+      },
+      {
+        "symbol": "DYDXUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DYDXUSDT/1h/DYDXUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "87c2d172fd2116128e7968624ff2682dd30eaf0eadbbe2f792f74c578011e7d3"
+      },
+      {
+        "symbol": "DYDXUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DYDXUSDT/1h/DYDXUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d34d33073ecf1db383cbac94d92a1fae15f027d17cc9084d811bd1b098213afc"
+      },
+      {
+        "symbol": "DYDXUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DYDXUSDT/1h/DYDXUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ac2df9ec7d357bc9ac09e94e951945e520085a13336460dd969a96db743c0e6c"
+      },
+      {
+        "symbol": "DYDXUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DYDXUSDT/1h/DYDXUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4e23ba30025c8b9cdbbbb793b7eb9d0c907068c7d71565e540010f736cbc2958"
+      },
+      {
+        "symbol": "DASHUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1h/DASHUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d60663d6bab4b6bd611722ca7beb09ad14b393c74b9a8b0ab49c88db2dcb2798"
+      },
+      {
+        "symbol": "DASHUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1h/DASHUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "c945ea988b314daeafaf98a447464c5cdf3a8966604c775d02dc48c7cab9873f"
+      },
+      {
+        "symbol": "DASHUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1h/DASHUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "604a9fd9f7c91cf34e40402bbf04b8de0a959c5f2d7d532ed784e702b58cb2c8"
+      },
+      {
+        "symbol": "DASHUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1h/DASHUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e5889347f53788e04dc5991bc74064e5b06d6504b835711dbbc10aab4d4c27dd"
+      },
+      {
+        "symbol": "DASHUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1h/DASHUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "12565df3b6c8dacc062c20596b48eb1fa2e22d5502319993d2769c627098faf0"
+      },
+      {
+        "symbol": "EGLDUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EGLDUSDT/1h/EGLDUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "226689a693edbdfe050575b6e9553d31568d8a386b753fccd44ddfaddfd1b126"
+      },
+      {
+        "symbol": "EGLDUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EGLDUSDT/1h/EGLDUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "8f97556121e9b8d8f6c5a9697af519ef4f7719b124a4080d6591da6d86f4303d"
+      },
+      {
+        "symbol": "EGLDUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EGLDUSDT/1h/EGLDUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "673fb9be8f3ceaffb1ba6f4c68f8d486b36df215707108715479233a70dc334e"
+      },
+      {
+        "symbol": "EGLDUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EGLDUSDT/1h/EGLDUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5cd365c62425e5892de68d71cacb87b4b77a86f052f54e2a5c2225413de28398"
+      },
+      {
+        "symbol": "EGLDUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EGLDUSDT/1h/EGLDUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "9c8cf755d5c188c9da7cbc416650aee33d3258683f5f3f728f9caecd2b0c11c4"
+      },
+      {
+        "symbol": "ENJUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENJUSDT/1h/ENJUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "7d285c959031dfa0a04bf3ad7f041352792fefd5b1fbd112fb2c30490dac8d88"
+      },
+      {
+        "symbol": "ENJUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENJUSDT/1h/ENJUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "7bc001448d95d6e43bde52511fe1b48410ec3778de59b6f63bb5736ea4ca22d3"
+      },
+      {
+        "symbol": "ENJUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENJUSDT/1h/ENJUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "47ca659b522434f0a874e8a3d8cafa4f778f82c713459c937d49d69cd64147fc"
+      },
+      {
+        "symbol": "ENJUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENJUSDT/1h/ENJUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e7037de8ddfd5cbc7e5c2b5b6e8b7b9c1b24d67d61cbc4d6c2afd0303962266f"
+      },
+      {
+        "symbol": "ENJUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENJUSDT/1h/ENJUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b8f3bd398f57b70b1dbd181a30f6bc958036d1092d070797304f1e90720f36bd"
+      },
+      {
+        "symbol": "ENSUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENSUSDT/1h/ENSUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b43d770ce527f11190008fd63037dbe0d6040a9c9b490da62aa9dfaf91f7c465"
+      },
+      {
+        "symbol": "ENSUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENSUSDT/1h/ENSUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e575c2c8e38cf9d278920982e29535e3e81313206e7562a57607714fda7180e3"
+      },
+      {
+        "symbol": "ENSUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENSUSDT/1h/ENSUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4bfbedfb7f62ed07a4705a3ff641ffc205b45db3c93200527c3a08339559e6e8"
+      },
+      {
+        "symbol": "ENSUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENSUSDT/1h/ENSUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4b6b6d7f074dfe356a3c25086a4e0ddde6b4bfdabff00981c82eeef1f264ced8"
+      },
+      {
+        "symbol": "ENSUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ENSUSDT/1h/ENSUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e6074bc1cb500c15d4443e192f08ca639aa4d619810d3f773f711c76410ade24"
+      },
+      {
+        "symbol": "EOSUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EOSUSDT/1h/EOSUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b167a2af07d00f78ea17f59710eaffcca6220e296afca64ce0c71c19184708c9"
+      },
+      {
+        "symbol": "EOSUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EOSUSDT/1h/EOSUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "c17024ec8ee4b0c2c263b8b3db74add2f16676b12c8d7f088758fb46cf58326a"
+      },
+      {
+        "symbol": "EOSUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EOSUSDT/1h/EOSUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "8feec0db42f03f9a127196971cfc43035d34d48816efca64687a76e9b3ae1a11"
+      },
+      {
+        "symbol": "EOSUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EOSUSDT/1h/EOSUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 404
+      },
+      {
+        "symbol": "EOSUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/EOSUSDT/1h/EOSUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 404
+      },
+      {
+        "symbol": "ETHUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "75aa0182242ac65110a1dd1737a2062ee9815032d746a57d3191c44c15eacff2"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "04246418d55fc96753ee5b4be0718796aeb9421af40042b4e145db02e1cfaf3a"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e2e15ddc21d24ac6c3ca56ab77f065eda88252a37f2f778505a332e31fcc5b3c"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f4331baae4c38dea1c123836808f3353473cc28e6c434ef38669698ae79599fc"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ead58fea8a5e4a3f173818428b7e32f0bacfda035896b96fd13a25f0823d5ff5"
+      },
+      {
+        "symbol": "ETCUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETCUSDT/1h/ETCUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "fcd82db274d7ebf95bcdef12ac9a901f258cc6bf79321dee3e0dc7bf84981a53"
+      },
+      {
+        "symbol": "ETCUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETCUSDT/1h/ETCUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "daf1bb4f96abb667e0a3704e1b7ed009e976378b8a85a235a92e5f10af0a6f94"
+      },
+      {
+        "symbol": "ETCUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETCUSDT/1h/ETCUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "bf6921bc3c899f0277d33d4fc2b3cc2a74583196b6d96468f60bc5133bd0f2e7"
+      },
+      {
+        "symbol": "ETCUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETCUSDT/1h/ETCUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "38d364cb65152cd38ac8dd826f8ac45fae2c211c835bcd429aa268cffa3f08aa"
+      },
+      {
+        "symbol": "ETCUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETCUSDT/1h/ETCUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "04c0029a5ec0e337023e1f3be17258535671b5902dddcd368d64e77dc01d011f"
+      },
+      {
+        "symbol": "FTMUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/FTMUSDT/1h/FTMUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "8d7ffa9d0155f4a1a81788cbb4134076ffdce2e0bd9490d21817a158dc259b15"
+      },
+      {
+        "symbol": "FTMUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/FTMUSDT/1h/FTMUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "99d438b92048aafa72109e77b6e9388ee41eef0195f418393e1a148422f0ff7d"
+      },
+      {
+        "symbol": "FTMUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/FTMUSDT/1h/FTMUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "91e19ba7685a7d88a18f9af04aab85b2d635aa014fbd3d2556a68ce91db8f5f2"
+      },
+      {
+        "symbol": "FTMUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/FTMUSDT/1h/FTMUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "0c90fbd76b5c3e7f7a43b169b9fcec7f153bb55f0ee65b39836820673949f2ee"
+      },
+      {
+        "symbol": "FTMUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/FTMUSDT/1h/FTMUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2bd1caab215329b14c6529f78abd99ab935fe149959470231dce4575270e435c"
+      },
+      {
+        "symbol": "GALAUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GALAUSDT/1h/GALAUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "974638362fbbd5acd561c068d61c709630e68c40ec123bc8f99e4fc789151bce"
+      },
+      {
+        "symbol": "GALAUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GALAUSDT/1h/GALAUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5eaf5c59a1eb300f0a62b7323493a47089ae7a9c389d478dc460d531a97349c9"
+      },
+      {
+        "symbol": "GALAUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GALAUSDT/1h/GALAUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "8d6fe95017f07023d80744d52c9d1acc80bd47e21eb6feb643126dde12f0be1a"
+      },
+      {
+        "symbol": "GALAUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GALAUSDT/1h/GALAUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "8c60bcb3d9135039fb33daf6beb8d6ec7435d6db5b63da50e0eb16aa40e1dc0e"
+      },
+      {
+        "symbol": "GALAUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GALAUSDT/1h/GALAUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "9005741c3728b8079418f92075be865c45a0d91d1aa0c81ecbc4421a397b642f"
+      },
+      {
+        "symbol": "GRTUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GRTUSDT/1h/GRTUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d0c83f6967b7e9b64fb81f680dc389570f2574b1c0c1f73d10d81da42597626b"
+      },
+      {
+        "symbol": "GRTUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GRTUSDT/1h/GRTUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "bf096177ab24b81252711863775fbc80a1ff7131706b739a8a26be043b6585ed"
+      },
+      {
+        "symbol": "GRTUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GRTUSDT/1h/GRTUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "a966494eb571e4e8b608427ea0832a878d60e38e12570528da17e24325d885c1"
+      },
+      {
+        "symbol": "GRTUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GRTUSDT/1h/GRTUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "19cf24afa701887e190e6e9ea294da5be5ab3e53d364b5d9e6c211d0f58e88b6"
+      },
+      {
+        "symbol": "GRTUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/GRTUSDT/1h/GRTUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "c4576bdaf94352a66892b534a790f2844ea9772d9496c7a999c02e9565050b89"
+      },
+      {
+        "symbol": "IOTAUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1h/IOTAUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "74dfa5d2cd480c38db38f7a4c690606fe867ecbd64b25a7ff350a3bd70e0290f"
+      },
+      {
+        "symbol": "IOTAUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1h/IOTAUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "fab4ccb0fd8775540646a173afe79060ff92833b3dfd1384780eb918bc628624"
+      },
+      {
+        "symbol": "IOTAUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1h/IOTAUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "aadc172809424d7de9e6031fa7825e5b508d9d9c8e934427c909e41c9e41fd45"
+      },
+      {
+        "symbol": "IOTAUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1h/IOTAUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d38008be23affef178277e91cc2e4e23113df652f59c87a58dba973974cc3e38"
+      },
+      {
+        "symbol": "IOTAUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1h/IOTAUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "45eec924d5ad056284916f2379b15f3bd9bbf2ffc23458fed99ea9738f072e31"
+      },
+      {
+        "symbol": "KSMUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KSMUSDT/1h/KSMUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b08f3f085a99eaf401642629c0c18d9587b2ebbfa9c73309d0d20010dad7964e"
+      },
+      {
+        "symbol": "KSMUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KSMUSDT/1h/KSMUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "696110378f0fa026558ec1629d34da0fd36974c36371261b0450b7b2cb3f9219"
+      },
+      {
+        "symbol": "KSMUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KSMUSDT/1h/KSMUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2952958796d63e9acc36831c28c29959356657c5b4c44a685b9f0ba7cdad270c"
+      },
+      {
+        "symbol": "KSMUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KSMUSDT/1h/KSMUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b250658e4c4326c6ab376e13531ea2cc0d5fb023e0875a44ea488f90b403f60b"
+      },
+      {
+        "symbol": "KSMUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KSMUSDT/1h/KSMUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d5357dd22f0c3417f12d3906e94d18eeaf267366f21c2a0bf1df74dcd3ac91ef"
+      },
+      {
+        "symbol": "LINKUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LINKUSDT/1h/LINKUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f7e09e153da27059507f0408a2a726273fc8d0c4d5ce0f16f699e6fbb47839d0"
+      },
+      {
+        "symbol": "LINKUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LINKUSDT/1h/LINKUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "efdbdc6983ffab51457cb95d1aa5610b427e81a7817b9c75ed97464a77d5fb0b"
+      },
+      {
+        "symbol": "LINKUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LINKUSDT/1h/LINKUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5941bfb3f179e63898ea013e626788b798d4f93ff396ac8b7fee46d8b7cd21c1"
+      },
+      {
+        "symbol": "LINKUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LINKUSDT/1h/LINKUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d8fa671d4a22ac66ffbbc4f79c598b679bc7ac9a735bd15278b55738625f666d"
+      },
+      {
+        "symbol": "LINKUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LINKUSDT/1h/LINKUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "70250c0c68ce300e631f4f5115275822b093cd9b32716d234538de92268a9b91"
+      },
+      {
+        "symbol": "LRCUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LRCUSDT/1h/LRCUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "9a5ecb9edc0791144755380e032c7efcf8e630e37547a3c527d973757366609c"
+      },
+      {
+        "symbol": "LRCUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LRCUSDT/1h/LRCUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f5f303467a55ce881632608d1b17852661b7e8a0a9dba6febc6f2b70d14a81a4"
+      },
+      {
+        "symbol": "LRCUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LRCUSDT/1h/LRCUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "82e6b30ac6410964b67f5adf9dae074f04673b8e325044ef0266946ede0140ff"
+      },
+      {
+        "symbol": "LRCUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LRCUSDT/1h/LRCUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "00df951d7deddcc4d9f50eda2a1488375332b38e0a0a921df6732fee2f7749e9"
+      },
+      {
+        "symbol": "LRCUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LRCUSDT/1h/LRCUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5509b2a0a0ac0b170b8171ed72bed98c49ee43f4f4af6a7f71a5389bf4acc654"
+      },
+      {
+        "symbol": "LTCUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1h/LTCUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "40206a8d7bea178a3e87e85ef50b510acf8810d57fcc9a3522d845bf939e5f33"
+      },
+      {
+        "symbol": "LTCUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1h/LTCUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "90b54024fbc2408f28221d1591ce8e49fe733e4489a48a9c9a83457629229c8b"
+      },
+      {
+        "symbol": "LTCUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1h/LTCUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "002322554eee9060a61ed5895bfca9864c08b13a08570952b852769f0a747a30"
+      },
+      {
+        "symbol": "LTCUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1h/LTCUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "111901d0789ed16e5967d7cba056325fe67e5130e53cc62deb52903613ccdd35"
+      },
+      {
+        "symbol": "LTCUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1h/LTCUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b239a560454501c27c4fd2642a676de66732a8acdb61f813e087c36c8b088d56"
+      },
+      {
+        "symbol": "MANAUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MANAUSDT/1h/MANAUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "13a47d5a61e3e711024bad57f41007cabd5b0f9ba43f693a59bb70bfa55bd702"
+      },
+      {
+        "symbol": "MANAUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MANAUSDT/1h/MANAUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5cc753d16a1862e30cb371d653caace1f5c5e6b1092b5b5f269478a29392ab00"
+      },
+      {
+        "symbol": "MANAUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MANAUSDT/1h/MANAUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "7bcf80b1bdbb9c6f2c02fe49d67dd23be0449fc5c3b6822dbf7a4ac1c64cb516"
+      },
+      {
+        "symbol": "MANAUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MANAUSDT/1h/MANAUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "43edbc9fcd29ba3cd8da8eca7a12b5028d744309f22ddde877be53e1555a5724"
+      },
+      {
+        "symbol": "MANAUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MANAUSDT/1h/MANAUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "28fd176cdeaafec905c9d8616ca659d14529b3cdebd11f8f16c60f1d87b57063"
+      },
+      {
+        "symbol": "MATICUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MATICUSDT/1h/MATICUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ea7a2525b4821419001f06d949751d4f77849b257240c0d00da94ea074e483cc"
+      },
+      {
+        "symbol": "MATICUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MATICUSDT/1h/MATICUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f73a410bfad92f3eeb7a93cb600ec6ec47f39fafcf237a379e47e9eb13af6f1b"
+      },
+      {
+        "symbol": "MATICUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MATICUSDT/1h/MATICUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "048aa3b06f90cad6b6491d5cdc658176cbdd46e1622d86a511feea976076c687"
+      },
+      {
+        "symbol": "MATICUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MATICUSDT/1h/MATICUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 404
+      },
+      {
+        "symbol": "MATICUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/MATICUSDT/1h/MATICUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 404
+      },
+      {
+        "symbol": "NEARUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEARUSDT/1h/NEARUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "daaf0a182d9b68473aed6dfce33819b38246cd9c223ced44d0fbab4fe13ffd1d"
+      },
+      {
+        "symbol": "NEARUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEARUSDT/1h/NEARUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "1011acafea2e2406aa63b0d42f2aa77062a013e0c4a98b1908dd3166eb2bdd1f"
+      },
+      {
+        "symbol": "NEARUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEARUSDT/1h/NEARUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ad9d219894cae84c95caf2437edd05b0e61cc5ece67cc9d960cb59c07def6c1a"
+      },
+      {
+        "symbol": "NEARUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEARUSDT/1h/NEARUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "50ad6139e3c8cc54768b9ccffc58cce531cf0ba16333f911292876660e8776c0"
+      },
+      {
+        "symbol": "NEARUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEARUSDT/1h/NEARUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "a84860015e5eb546e34c1f0ba8f6fcf52118f72f2cfb6d514ed42512ef76fd03"
+      },
+      {
+        "symbol": "OMGUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/OMGUSDT/1h/OMGUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "c14c649dafaaf5de9e4043e17bbb06a97316f5acf01a60f0cb265bb4a4638f33"
+      },
+      {
+        "symbol": "OMGUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/OMGUSDT/1h/OMGUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5cb65d2773ad7884945124c27e926a56f5432790ede524f8447ce84b67381612"
+      },
+      {
+        "symbol": "OMGUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/OMGUSDT/1h/OMGUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "109aaf2e17464eea3c355c9bdbb8acaed3c94c4fab3abc698f150865c995bf20"
+      },
+      {
+        "symbol": "OMGUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/OMGUSDT/1h/OMGUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "84cbf08e8897eff6e3605e6fa63fa210350725a7f5308424ce2eedb71014573b"
+      },
+      {
+        "symbol": "OMGUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/OMGUSDT/1h/OMGUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "cb388df5bdcae50113effaf26a855ddbd97e70da5ce89c792dc58a56b93669f5"
+      },
+      {
+        "symbol": "SANDUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SANDUSDT/1h/SANDUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f86d5295e7d671c8ca9b46c7f14eef0e335ec76b80a4fc4f420560e00572b393"
+      },
+      {
+        "symbol": "SANDUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SANDUSDT/1h/SANDUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "909e67ad9ddb457f7a82efb65d76f3a8547b22034259b3c49d1dd42d2ae8f6e8"
+      },
+      {
+        "symbol": "SANDUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SANDUSDT/1h/SANDUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "0dbe8ea38ea9150b7960cb14df015259af7e32c4fe26763dea036b4a87121f27"
+      },
+      {
+        "symbol": "SANDUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SANDUSDT/1h/SANDUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "b62f3b946c45b885ed9e14f15a4f1f3da576c83f34831c1bbfd534f58fd3a034"
+      },
+      {
+        "symbol": "SANDUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SANDUSDT/1h/SANDUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "22eaa198ceab3a1ef86dba5c0fdac507011295ed9a5df8a0ac208620fee4eafe"
+      },
+      {
+        "symbol": "SCUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SCUSDT/1h/SCUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "62b9c893342656638931d64c34d520ea83ef3a3a05f9b93488c725f54dede193"
+      },
+      {
+        "symbol": "SCUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SCUSDT/1h/SCUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "a44b5c1e5091c53c1202ae75153d037b552b77a9a7be16d45de92bfc67de1d08"
+      },
+      {
+        "symbol": "SCUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SCUSDT/1h/SCUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "888211f39ac9b5966ab57b8e69ccbe6d14fc2869433eb924aaae3c1d7a3829d4"
+      },
+      {
+        "symbol": "SCUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SCUSDT/1h/SCUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "c293bf9d8ad2eb7b900b20b5db526b5f42f0cdb6c11dece5e25d8dd0e6a63d19"
+      },
+      {
+        "symbol": "SCUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SCUSDT/1h/SCUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d1324f833c852bed803a1245c539f62c695345d37163769c94d28f7f3a212d05"
+      },
+      {
+        "symbol": "SOLUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "41699bac620ac3f15318dd9238392fc5782d4321660e5c7986925eee3d172381"
+      },
+      {
+        "symbol": "SOLUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "bc6bb18da0f2e30171cefad3d2df55a70d12e7eafed7b566225ae67e737be6cd"
+      },
+      {
+        "symbol": "SOLUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e156bc7231bfe31e21aaf5628260062aa9d59184ef075412ab0fa546dea1fd80"
+      },
+      {
+        "symbol": "SOLUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e57f44b7df1f4269a06395c161d3618d9bc3d56e623825fc77c615d713a19263"
+      },
+      {
+        "symbol": "SOLUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "01758aa27caa6379505f3a50c0c096a3002de3b2c1ecbb516c6f155c8d31196c"
+      },
+      {
+        "symbol": "SRMUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SRMUSDT/1h/SRMUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "dad3115f9e6c1badc5b154181b6ae3bd20290248b1adc90a52a42f767d6abfce"
+      },
+      {
+        "symbol": "SRMUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SRMUSDT/1h/SRMUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5b455fc8e1983cd74dd6b4ae36edf0b500177f8fbcc0fe37431a7c8aa8051a51"
+      },
+      {
+        "symbol": "SRMUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SRMUSDT/1h/SRMUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "065eac020a8b0e089a207b32bd727e5b127305945cd043a9b47844fffbedd89c"
+      },
+      {
+        "symbol": "SRMUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SRMUSDT/1h/SRMUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 404
+      },
+      {
+        "symbol": "SRMUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SRMUSDT/1h/SRMUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 404
+      },
+      {
+        "symbol": "SUSHIUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SUSHIUSDT/1h/SUSHIUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "a9f5bc0180f954bfe0c6d1b4d214bb3c5969511cf90c629ba525f6f1b44062a2"
+      },
+      {
+        "symbol": "SUSHIUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SUSHIUSDT/1h/SUSHIUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "cbabe477fdadc2f9b36e8c3d20f7404a6aa38e25d98b44f75f4bc7e69b32bfc7"
+      },
+      {
+        "symbol": "SUSHIUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SUSHIUSDT/1h/SUSHIUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4767a44131c1505c6c30a76857d030a7c3bdd7d6f43594ba0fe47949ea8faf21"
+      },
+      {
+        "symbol": "SUSHIUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SUSHIUSDT/1h/SUSHIUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "eee2b524962a415bd1661a081d303f31f78ca628e92faf845dee25339e71a529"
+      },
+      {
+        "symbol": "SUSHIUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/SUSHIUSDT/1h/SUSHIUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ab61ff004c0a394747ebe2169c6327d101361a3d0d0afe3cd76cba7ad7393ee4"
+      },
+      {
+        "symbol": "THETAUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/THETAUSDT/1h/THETAUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ee23d0d35ec1c4c0476f79d406ff46a6114995b63377e1e82ae557dfb21728ad"
+      },
+      {
+        "symbol": "THETAUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/THETAUSDT/1h/THETAUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "268f4344a29b40469885abc78cba761248a6a7f8c86d70928907dc0d6e54921e"
+      },
+      {
+        "symbol": "THETAUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/THETAUSDT/1h/THETAUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "668a159b346f4ddcda229626c95f999ef1e3b5fd8b477c8a2f10b804f76c6a75"
+      },
+      {
+        "symbol": "THETAUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/THETAUSDT/1h/THETAUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2de4ddbb81fc7c1f1004eab87c4b163cf95a2c6b78a28e192c77d4b675cafa86"
+      },
+      {
+        "symbol": "THETAUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/THETAUSDT/1h/THETAUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "7bf0852f8e2f9fcaad660bf5c46795bbe90ae102c170fabe53c8328e13efac87"
+      },
+      {
+        "symbol": "TRXUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1h/TRXUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e22545510b645beda3fb8e8ed01cdb27441bdd0ec2451cddc102310a93d1eca0"
+      },
+      {
+        "symbol": "TRXUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1h/TRXUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "9a49b531757074ff297a98be8e35c88c2cd6b8444eb197a651ec2c90458f8826"
+      },
+      {
+        "symbol": "TRXUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1h/TRXUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "229b3cfae8e59b638c8fcfb6d4c13aa9e2722bcbd333abcdcb7e0debc70e198b"
+      },
+      {
+        "symbol": "TRXUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1h/TRXUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2dfebb564bb419b277d42b9d71159d5e8fb5c226479c4d6bbb92e6e1833b919c"
+      },
+      {
+        "symbol": "TRXUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1h/TRXUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e2ef1d64b59823ccd89b502daf07031b5eb3766b67f626baad1065a24b410499"
+      },
+      {
+        "symbol": "UNIUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/UNIUSDT/1h/UNIUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "a244a8b6a064cdc24a189dd4f8bdd16ce0a1fe8d754409f9bf4516579be60640"
+      },
+      {
+        "symbol": "UNIUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/UNIUSDT/1h/UNIUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "99ded1c60094ddae159ed133cf8f5a3e27870d77a2bb1bb1574af4d74aea5bf0"
+      },
+      {
+        "symbol": "UNIUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/UNIUSDT/1h/UNIUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2c5f07830196fe6078795e363a8d49ad1ac801a161863bcb90387a248b46a591"
+      },
+      {
+        "symbol": "UNIUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/UNIUSDT/1h/UNIUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "c4d32ef8a8667bac32a800b9c146ad47d20fc826c11bc4b0045a89339b99c11e"
+      },
+      {
+        "symbol": "UNIUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/UNIUSDT/1h/UNIUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "1b784a1c37dd1f2666bd12aebca5de9e1d8429934eae615212299618a0141fbb"
+      },
+      {
+        "symbol": "XRPUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "fc44f4e30dc99662660c6523a0d7f424d7fb4df10e4ce755d6068167be370cd7"
+      },
+      {
+        "symbol": "XRPUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "19278116198c87cdc787a27a4378da8ac50f1f290eda06708badee6fb8d65502"
+      },
+      {
+        "symbol": "XRPUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "271d5f342ddd9bd7166f00d197e6d36ae76e542a301d6f335b170bbecbe21791"
+      },
+      {
+        "symbol": "XRPUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "490701edf518fec0d78441d9bc6adcd92e62c837aca2f4e4e7d6ef37a6c9c68a"
+      },
+      {
+        "symbol": "XRPUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4bf9373e1045c019420a6b62409958bfd188e5e90b2a6beba430165036c8b3c6"
+      },
+      {
+        "symbol": "XLMUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1h/XLMUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "1be33acfbe09bafd1e6a1d8ecc7e368e7004b3c42f844be0613e50db3ea1ca9c"
+      },
+      {
+        "symbol": "XLMUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1h/XLMUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "58ece543b931a0196170dbc6164803f965c51f10dd914ac4014fdc974ce8af18"
+      },
+      {
+        "symbol": "XLMUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1h/XLMUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "89ffd292a5742a0511a942c4cf3ab2c12e6c231c69c67e4e86f4cc9989e09876"
+      },
+      {
+        "symbol": "XLMUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1h/XLMUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "a905a876581a26ed757119ab67c45c0fe82b3b3740bc4abf549f8b2fd4dbccb5"
+      },
+      {
+        "symbol": "XLMUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1h/XLMUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "454136c86b0d6e7aa5c10fbd3a3e1a43c1d282b59143e0f1949047809a080cb7"
+      },
+      {
+        "symbol": "XMRUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1h/XMRUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "dbd1846681a75d1aeded02a1b6e81153ca3fa30d4300263b1e2aef017c00220a"
+      },
+      {
+        "symbol": "XMRUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1h/XMRUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "c46db847a28d0111cfe2969bd0ac4c1fb990e82e43b4fc175c4a52481de571f0"
+      },
+      {
+        "symbol": "XMRUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1h/XMRUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d0b753289a6291e3250ac84d6b5ef656bbed95f2f3a91c791e58da788dd1be5c"
+      },
+      {
+        "symbol": "XMRUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1h/XMRUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "34aaa671fafb1f023351ac7a560c91103f01944cfafe7d8bb0f130c91d8efccc"
+      },
+      {
+        "symbol": "XMRUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1h/XMRUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "fc57089dcaaf8231a711d1b1cd1a866eb0d8e1ef9d1f74f068cd66a576da1351"
+      },
+      {
+        "symbol": "XTZUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XTZUSDT/1h/XTZUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f5eafb8f5b6bf8cc02563d2c43295a202b29b6a969ac13f282b0679a72f0f607"
+      },
+      {
+        "symbol": "XTZUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XTZUSDT/1h/XTZUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "2ce6683f9a30ab9bfe3144f03fbc3d7745a6460f5ecb193aac3fe41f757f1a98"
+      },
+      {
+        "symbol": "XTZUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XTZUSDT/1h/XTZUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4262f48c730c1d32911be120845ac9304f9f06f0aeaf3366513a29de928d5f86"
+      },
+      {
+        "symbol": "XTZUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XTZUSDT/1h/XTZUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "705ff1262ba6facc3614f303b5c04160ef701517b19639f492140a7da9f8b06b"
+      },
+      {
+        "symbol": "XTZUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/XTZUSDT/1h/XTZUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "305aa9df0fa8e0ee87b8bdf59133afa57dcb6362165c35a5465f71bc30865309"
+      },
+      {
+        "symbol": "YFIUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/YFIUSDT/1h/YFIUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "8878b81b0aa673035579bbd1cc69e61ec36552965cd3735106284fc20077ac18"
+      },
+      {
+        "symbol": "YFIUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/YFIUSDT/1h/YFIUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5292ce69c24636227f1ead615f98b5e24d38456097e20a050f2acf08ff35d1dd"
+      },
+      {
+        "symbol": "YFIUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/YFIUSDT/1h/YFIUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "6b0568751f729447a85fb6b49d7af21468af41d30ef35d6b5afad95f2f9e0187"
+      },
+      {
+        "symbol": "YFIUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/YFIUSDT/1h/YFIUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "aa9904bba079ba8c65434f2a6938ddb2a6eed5ec4f45bd7fa66d54136d7b3d56"
+      },
+      {
+        "symbol": "YFIUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/YFIUSDT/1h/YFIUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "261e715bca67af4a2ce4996cb8e821060bf5254406ff38a4bd534583f6669323"
+      },
+      {
+        "symbol": "ZECUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1h/ZECUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "6698ba99e85162df2bdc86a7fc69d00db5a8355d0e2c4aeea77c0b2d7b27fcea"
+      },
+      {
+        "symbol": "ZECUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1h/ZECUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "04ea6d07daec91dd3bb060d453496cfaed620c508f00e91ecd0805b9416fb6f6"
+      },
+      {
+        "symbol": "ZECUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1h/ZECUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "77288225888881ede83de8daca886e11c1965eebbd7c309583d41e2a2cc9ea22"
+      },
+      {
+        "symbol": "ZECUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1h/ZECUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "d0d88dcbc24f9bdded34b89a720fad58c0d4496a18f429fd61046ea273e546bf"
+      },
+      {
+        "symbol": "ZECUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1h/ZECUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4f60a30a702951de5c11e6564ce686313ccef1cfa7c0cba71e5698e3d5655468"
+      },
+      {
+        "symbol": "PEOPLEUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/PEOPLEUSDT/1h/PEOPLEUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "7c3cfa54dc432e1bc3a90adca1658b0bb440a0547bf609f0d2c54db11957dd16"
+      },
+      {
+        "symbol": "PEOPLEUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/PEOPLEUSDT/1h/PEOPLEUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "0ab59401d1faf04b1ead7d092f139f3c56fdcc86abc06833482136d52bce2a90"
+      },
+      {
+        "symbol": "PEOPLEUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/PEOPLEUSDT/1h/PEOPLEUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ecfda41539309b6ab1954f4685286c1e97a5d6d8cbda83faf94d672c2859db52"
+      },
+      {
+        "symbol": "PEOPLEUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/PEOPLEUSDT/1h/PEOPLEUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "9b2d7f64cedcb1aca3ea5024d24e22d973b35fe13ae2b21a288a5d8a1d230a9b"
+      },
+      {
+        "symbol": "PEOPLEUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/PEOPLEUSDT/1h/PEOPLEUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5583d932ee6cadf133b18ac1fdd4f3bee01dff8b67320ad914602dd8d639c013"
+      },
+      {
+        "symbol": "APEUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/APEUSDT/1h/APEUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "35672cfc87c91cf903b0209427b46ac07b27852c3c560b063b603b058cdda838"
+      },
+      {
+        "symbol": "APEUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/APEUSDT/1h/APEUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "e9b8ed0d1a491025f8bab132fa8c064e25e7e69816770e9f4d8df27a97c1ea60"
+      },
+      {
+        "symbol": "APEUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/APEUSDT/1h/APEUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "cdebf15b37256b0dd3edc2bb32c21851866a3852c9c14de1402e760b72c3dde7"
+      },
+      {
+        "symbol": "APEUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/APEUSDT/1h/APEUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "44d87ba6f6eb2d6492f5d010ca572c4c6df6986e6b39fb21bec63f7704b74219"
+      },
+      {
+        "symbol": "APEUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/APEUSDT/1h/APEUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "ff175671309019b1216bcf3b7aee2841e402a821a07e23edef0c31f93b58857e"
+      },
+      {
+        "symbol": "ZILUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZILUSDT/1h/ZILUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "03df38b4f116053a3bf77abedc9c4f6945f7d70821d2771ca2ba32feec59ba06"
+      },
+      {
+        "symbol": "ZILUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZILUSDT/1h/ZILUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "bd317b25fc9fe3fcb06f1fd16ead17b7131d146a04b18a3f6aeefb72fb85e475"
+      },
+      {
+        "symbol": "ZILUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZILUSDT/1h/ZILUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "83350f5024271f73f14a9948823beb83f0f87d7c123db29f851f5f5de308024f"
+      },
+      {
+        "symbol": "ZILUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZILUSDT/1h/ZILUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "c123baceebffdb89e25a34b0c965eb564eb8b351d0d72e1be57b98cb10f6e554"
+      },
+      {
+        "symbol": "ZILUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZILUSDT/1h/ZILUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "98a7ad2c0f659f5d7dd53cedbf4b68f9a295499166f2089c35670805fe70ed73"
+      },
+      {
+        "symbol": "KNCUSDT",
+        "month": "2022-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KNCUSDT/1h/KNCUSDT-1h-2022-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "378eb0ee1c52b750ff953e2a2c3f43556bd9781c40fac96759144fc0033d8503"
+      },
+      {
+        "symbol": "KNCUSDT",
+        "month": "2022-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KNCUSDT/1h/KNCUSDT-1h-2022-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5c9e39869a78baefb26991057ad5da82811c96c7d8482779a1d1511b9ed52381"
+      },
+      {
+        "symbol": "KNCUSDT",
+        "month": "2022-11",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KNCUSDT/1h/KNCUSDT-1h-2022-11.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "4b486de4d30b7ad8172514cce9b98bf0e75bfcbf71cd489e7a4e8c1d5eb56d9a"
+      },
+      {
+        "symbol": "KNCUSDT",
+        "month": "2026-09",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KNCUSDT/1h/KNCUSDT-1h-2026-09.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "f69404b273470f55e44d6f2f227fe75639168f5c7a18fd71bf68a57cb4dd1825"
+      },
+      {
+        "symbol": "KNCUSDT",
+        "month": "2026-10",
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/KNCUSDT/1h/KNCUSDT-1h-2026-10.zip.CHECKSUM",
+        "status": 200,
+        "checksum": "5ea6544d0c0957fa2c6d3fbd162790a87b7110df37a83fc781008d02cca2f307"
+      }
+    ],
+    "scope": "Official monthly checksum bodies verified. File-size, full bar continuity, funding and mark/index payloads were outside this metadata probe."
+  },
+  "source_dependency_proof": {
+    "native_init": "The parent initializes two exchange objects with SetContractType(swap) and reads account.Info.totalMarginBalance. The data-access library subsequently switches each scanner product through SetCurrency without resetting contract type.",
+    "rotation": "The business library computes the largest absolute lookback return from all 51 products and opens the selected perpetual. Its input lookback defaults to 168; the bar period comes from the exchange object.",
+    "raw_venue_state": "The linked data-access functions consume BUSD and USDT asset rows in account.Info and market-specific position.Info fields such as mark, margin, and liquidation data."
+  },
+  "native_control": {
+    "scope": "Isolated fixture on two public 15-minute USD-M feeds. A synthetic order exercised the sandbox only. This is an adapter capability test with no strategy metrics.",
+    "capability_documentation": [
+      "https://www.fmz.com/syntax-guide/fun/exchange/exchange.setcurrency",
+      "https://www.fmz.com/bbs-topic/9091"
+    ],
+    "raw_sha256": "6c5724075bae9a7aa01821aeb0a547c9f332cc88420a695c7ad35eca64f1a12b",
+    "queries": [
+      {
+        "symbol": "BTC_USDT.swap",
+        "start": 1789381800000,
+        "end": 1790109000000
+      },
+      {
+        "symbol": "ETH_USDT.swap",
+        "start": 1789381800000,
+        "end": 1790109000000
+      },
+      {
+        "symbol": "BTC_USDT.funding",
+        "start": 1789381800000,
+        "end": 1790109000000
+      }
+    ],
+    "fixture_sha256": "28804e38e1462774fac2ddfda19a45ce837196172c86981b6da1a458f77d2a94",
+    "fixture_tape_sha256": "6ea35ad2ab6511afa1e07a3b148cb95ada3107a3edcf0a72e56b9f6f1c343343",
+    "before": [
+      {
+        "Balance": 10000.0,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.0,
+        "FrozenStocks": 0.0,
+        "Equity": 10000.0,
+        "UPnL": 0.0
+      },
+      {
+        "Balance": 20000.0,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.0,
+        "FrozenStocks": 0.0,
+        "Equity": 20000.0,
+        "UPnL": 0.0
+      }
+    ],
+    "initial_prices": [
+      "BTC_USDT.swap",
+      "ETH_USDT.swap"
+    ],
+    "after_simulated_fill": [
+      {
+        "Balance": 9913.25560996,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.0,
+        "FrozenStocks": 0.0,
+        "Equity": 9999.49020996,
+        "UPnL": -0.001
+      },
+      {
+        "Balance": 20000.0,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.0,
+        "FrozenStocks": 0.0,
+        "Equity": 20000.0,
+        "UPnL": 0.0
+      }
+    ],
+    "initial_positions": [
+      [
+        {
+          "MarginLevel": 10.0,
+          "Amount": 0.01,
+          "FrozenAmount": 0.0,
+          "Price": 86235.6,
+          "Profit": -0.001,
+          "Margin": 86.2356,
+          "Type": 0,
+          "Symbol": "BTC_USDT.swap",
+          "ContractType": "swap"
+        }
+      ],
+      []
+    ],
+    "switch_response": null,
+    "failure": "Exception('symbol ETH_USDT not set contract on Futures_Binance')"
+  }
+}

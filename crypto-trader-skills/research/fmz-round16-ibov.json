@@ -1,0 +1,551 @@
+{
+  "coverage": [
+    [
+      5617,
+      "Tested · Official B3 close timing variant",
+      "Monthly Ibovespa input independently matches the exchange JSON and CSV. Verified the original 1h rules and a longer follow-up with a calendar-safe monthly availability policy."
+    ]
+  ],
+  "results": [
+    {
+      "id": 5617,
+      "period": "2023-08-14 to 2023-09-13 UTC",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "group": "FMZ L/S · official Ibovespa close timing variant",
+      "interval": "1h",
+      "archive_interval": "1h chart and monthly IBOV",
+      "exit": "Opposite completed-month index crossover",
+      "order_family": "Next-open market reversal",
+      "trades": 0,
+      "unsettled": 1,
+      "gross": 0.0,
+      "after_fees": 0.0,
+      "net": 0.0,
+      "fees": 0,
+      "execution": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0
+    },
+    {
+      "id": 5617,
+      "period": "2023-09-13 to 2024-03-13 UTC",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "group": "FMZ L/S · official Ibovespa close timing variant",
+      "interval": "1h",
+      "archive_interval": "1h chart and monthly IBOV",
+      "exit": "Opposite completed-month index crossover",
+      "order_family": "Next-open market reversal",
+      "trades": 4,
+      "unsettled": 1,
+      "gross": -2790.63984196044,
+      "after_fees": -2853.432720776087,
+      "net": -2885.361303224721,
+      "fees": 62.79287881564612,
+      "execution": 31.928582448633616,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross_dd": 5903.146352863273,
+      "fee_dd": 5922.101966894328,
+      "net_dd": 5931.740414706729,
+      "net_dd_pct": 0.45466564814801785
+    },
+    {
+      "id": 5617,
+      "period": "2023-08-14 to 2023-09-13 UTC",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "group": "FMZ L/S · official Ibovespa close timing variant",
+      "interval": "1h",
+      "archive_interval": "1h chart and monthly IBOV",
+      "exit": "Opposite completed-month index crossover",
+      "order_family": "Next-open market reversal",
+      "trades": 0,
+      "unsettled": 1,
+      "gross": 0.0,
+      "after_fees": 0.0,
+      "net": 0.0,
+      "fees": 0,
+      "execution": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0
+    },
+    {
+      "id": 5617,
+      "period": "2023-09-13 to 2024-03-13 UTC",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "group": "FMZ L/S · official Ibovespa close timing variant",
+      "interval": "1h",
+      "archive_interval": "1h chart and monthly IBOV",
+      "exit": "Opposite completed-month index crossover",
+      "order_family": "Next-open market reversal",
+      "trades": 4,
+      "unsettled": 1,
+      "gross": -4520.515496729757,
+      "after_fees": -4573.818691427454,
+      "net": -4600.922010765266,
+      "fees": 53.30319469769691,
+      "execution": 27.103319337811985,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross_dd": 5393.916045369214,
+      "fee_dd": 5434.903933743215,
+      "net_dd": 5455.745232916434,
+      "net_dd_pct": 0.5026102333737716
+    }
+  ],
+  "receipts": {
+    "BTCUSDT/2023-08-14": {
+      "signals": [
+        [
+          1693530000,
+          [
+            2023,
+            8
+          ],
+          "115741.81",
+          -1
+        ]
+      ],
+      "fills": [
+        [
+          1693530000,
+          -1,
+          0.3840570247870404,
+          26037.8
+        ]
+      ],
+      "settled": [],
+      "ending_position": [
+        -1,
+        0.3840570247870404,
+        26037.8
+      ],
+      "ending_chart_close": 25825.8,
+      "ending_realized_equity_gross": 10000.0,
+      "next_open_instruction": 0
+    },
+    "BTCUSDT/2023-09-13": {
+      "signals": [
+        [
+          1696122000,
+          [
+            2023,
+            9
+          ],
+          "116565.17",
+          1
+        ],
+        [
+          1698800400,
+          [
+            2023,
+            10
+          ],
+          "113143.67",
+          -1
+        ],
+        [
+          1701392400,
+          [
+            2023,
+            11
+          ],
+          "127331.12",
+          1
+        ],
+        [
+          1706749200,
+          [
+            2024,
+            1
+          ],
+          "127752.28",
+          -1
+        ],
+        [
+          1709254800,
+          [
+            2024,
+            2
+          ],
+          "129020.02",
+          1
+        ]
+      ],
+      "fills": [
+        [
+          1696122000,
+          1,
+          0.3706875141324615,
+          26976.9
+        ],
+        [
+          1698800400,
+          -1,
+          0.3706875141324614,
+          34522.3
+        ],
+        [
+          1701392400,
+          1,
+          0.30881949196781994,
+          37665.5
+        ],
+        [
+          1706749200,
+          -1,
+          0.30881949196781994,
+          42460.1
+        ],
+        [
+          1709254800,
+          1,
+          0.11708201434730416,
+          61575.3
+        ]
+      ],
+      "settled": [
+        [
+          1698800400,
+          2796.9855691350754,
+          13.450221485789697,
+          6.839095670740523
+        ],
+        [
+          1701392400,
+          -1165.1449944211518,
+          15.787878518287867,
+          8.027734839807389
+        ],
+        [
+          1706749200,
+          1480.665936188909,
+          14.599164780513886,
+          7.423304125685026
+        ],
+        [
+          1709254800,
+          -5903.146352863273,
+          18.955614031054672,
+          9.63844781240068
+        ]
+      ],
+      "ending_position": [
+        1,
+        0.11708201434730416,
+        61575.3
+      ],
+      "ending_chart_close": 71503.2,
+      "ending_realized_equity_gross": 7209.360158039558,
+      "next_open_instruction": 0
+    },
+    "ETHUSDT/2023-08-14": {
+      "signals": [
+        [
+          1693530000,
+          [
+            2023,
+            8
+          ],
+          "115741.81",
+          -1
+        ]
+      ],
+      "fills": [
+        [
+          1693530000,
+          -1,
+          6.053708501828219,
+          1651.88
+        ]
+      ],
+      "settled": [],
+      "ending_position": [
+        -1,
+        6.053708501828219,
+        1651.88
+      ],
+      "ending_chart_close": 1592.29,
+      "ending_realized_equity_gross": 10000.0,
+      "next_open_instruction": 0
+    },
+    "ETHUSDT/2023-09-13": {
+      "signals": [
+        [
+          1696122000,
+          [
+            2023,
+            9
+          ],
+          "116565.17",
+          1
+        ],
+        [
+          1698800400,
+          [
+            2023,
+            10
+          ],
+          "113143.67",
+          -1
+        ],
+        [
+          1701392400,
+          [
+            2023,
+            11
+          ],
+          "127331.12",
+          1
+        ],
+        [
+          1706749200,
+          [
+            2024,
+            1
+          ],
+          "127752.28",
+          -1
+        ],
+        [
+          1709254800,
+          [
+            2024,
+            2
+          ],
+          "129020.02",
+          1
+        ]
+      ],
+      "fills": [
+        [
+          1696122000,
+          1,
+          5.976464682081962,
+          1673.23
+        ],
+        [
+          1698800400,
+          -1,
+          5.976464682081961,
+          1819.37
+        ],
+        [
+          1701392400,
+          1,
+          4.636597452398686,
+          2049.06
+        ],
+        [
+          1706749200,
+          -1,
+          4.636597452398686,
+          2282.4
+        ],
+        [
+          1709254800,
+          1,
+          1.6197068596516835,
+          3383.01
+        ]
+      ],
+      "settled": [
+        [
+          1698800400,
+          873.4005486394572,
+          12.315306323697282,
+          6.262020164591838
+        ],
+        [
+          1701392400,
+          -1372.734172827406,
+          13.640525809362728,
+          6.9358605810318945
+        ],
+        [
+          1706749200,
+          1081.90364954271,
+          11.849109476688419,
+          6.024970920350043
+        ],
+        [
+          1709254800,
+          -5103.085522084518,
+          15.498253087948482,
+          7.88046767183821
+        ]
+      ],
+      "ending_position": [
+        1,
+        1.6197068596516835,
+        3383.01
+      ],
+      "ending_chart_close": 3984.18,
+      "ending_realized_equity_gross": 5479.484503270242,
+      "next_open_instruction": 0
+    }
+  },
+  "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E9%95%BF%E7%BA%BF%E5%AF%B9%E5%86%B2%E7%AD%96%E7%95%A5Long-Term-Hedging-Strategy.md",
+  "source_sha256": "7583710a7cc3fce6e46f8ae1aa690ec90fb6c50d7507ab38a5f45f70bcc802f4",
+  "index_source_page": "https://sistemaswebb3-listados.b3.com.br/indexStatisticsPage/daily-evolution/IBOVESPA?language=pt-br",
+  "input_files": {
+    "monthly.json": {
+      "url": "https://sistemaswebb3-listados.b3.com.br/indexStatisticsProxy/IndexCall/GetMonthlyEvolution/eyJpbmRleCI6IklCT1ZFU1BBIiwibGFuZ3VhZ2UiOiJwdC1iciIsImRhdGVJbml0aWFsIjoiMjAyMi0wMS0wMSIsImRhdGVGaW5hbCI6IjIwMjQtMTItMzEifQ==",
+      "sha256": "b2a173b42c144cefae8823a82cf7e0cff601010b957f625db962bedc38258a9c"
+    },
+    "monthly.csv": {
+      "url": "https://sistemaswebb3-listados.b3.com.br/indexStatisticsProxy/IndexCall/GetDownloadMonthlyEvolution/eyJpbmRleCI6IklCT1ZFU1BBIiwibGFuZ3VhZ2UiOiJwdC1iciIsImRhdGVJbml0aWFsIjoiMjAyMi0wMS0wMSIsImRhdGVGaW5hbCI6IjIwMjQtMTItMzEifQ==",
+      "sha256": "46f4397e8aa4d0a760a5690cc2522fd104b089da39646bb5064e777019bda759"
+    },
+    "BTCUSDT-1h-2023-08.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-08.zip",
+      "sha256": "599daa607ff593666036fe742d8272de6e0e9d284cd7d41d6585cf53baa20ca2"
+    },
+    "BTCUSDT-1h-2023-08.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-08.zip.CHECKSUM",
+      "sha256": "328a0a6bf9be53f7343b18818174dc517b6947688ff08a6171502c2a0dd9810e"
+    },
+    "BTCUSDT-1h-2023-09.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-09.zip",
+      "sha256": "7849f82af86aabcb9a79f64d0527480f22117656a68f98280fe8b840a6ee1339"
+    },
+    "BTCUSDT-1h-2023-09.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-09.zip.CHECKSUM",
+      "sha256": "2d4ab8ead352eed8a282c5f48c249ccca232afac250bcedc96133ed8681cac10"
+    },
+    "BTCUSDT-1h-2023-10.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-10.zip",
+      "sha256": "bbf0ef273c80f696ed9eb129a257812162487486692f124b9631ec38a924f6ae"
+    },
+    "BTCUSDT-1h-2023-10.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-10.zip.CHECKSUM",
+      "sha256": "7b34a920253ee2e368ff23424393f0d9c84a0a6d6b6926cab6fc4febaf326aba"
+    },
+    "BTCUSDT-1h-2023-11.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-11.zip",
+      "sha256": "26f1a2870f57925303edcf75581f0a33ff5e145c2126e15afc5fc1b400522428"
+    },
+    "BTCUSDT-1h-2023-11.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-11.zip.CHECKSUM",
+      "sha256": "e26e92a2af7c0939ecf3538ded0be4e922aca33eb49b50d6b34fe256506fbdfd"
+    },
+    "BTCUSDT-1h-2023-12.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-12.zip",
+      "sha256": "5377bec9e6dc04027717836cc1c2a3789da4e4122d57e8395265a0414b766b7c"
+    },
+    "BTCUSDT-1h-2023-12.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2023-12.zip.CHECKSUM",
+      "sha256": "dfe78ca3ae976a69671f2a4648ffcac49332a150b6a556abd774b3fc10a0c7ce"
+    },
+    "BTCUSDT-1h-2024-01.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip",
+      "sha256": "bf673f3d10804a951e8bac56dd2473486f113025971d43ebe5258ec40f9bfeb3"
+    },
+    "BTCUSDT-1h-2024-01.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip.CHECKSUM",
+      "sha256": "ee1d42fdcdb8dea97af0f4e33a583691a89b3e1c8dd6085724e84ac7607dce8d"
+    },
+    "BTCUSDT-1h-2024-02.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip",
+      "sha256": "655ff5ac0fc570956756944c7afef4895c9bd149342f1e437de97292cbd1fe22"
+    },
+    "BTCUSDT-1h-2024-02.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip.CHECKSUM",
+      "sha256": "d9201ea4f664efe6ff3999d819589def0b690510d9e6cc1c23c9a2fe4711a16c"
+    },
+    "BTCUSDT-1h-2024-03.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip",
+      "sha256": "8138642b757ddf5a42207130277be4569afb4c581a0a1817be9f5f35a4415498"
+    },
+    "BTCUSDT-1h-2024-03.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip.CHECKSUM",
+      "sha256": "31f1d3b79023c1e0321086346bfd7583fa3c68de8a1890733bc54e289ed3594e"
+    },
+    "ETHUSDT-1h-2023-08.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-08.zip",
+      "sha256": "74210a689eb85c8908ae05cff3297b9dc6eda76a0b41a3f9d72fdde0c14e3b2f"
+    },
+    "ETHUSDT-1h-2023-08.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-08.zip.CHECKSUM",
+      "sha256": "75dab9df02db8ad799ee5a13e15ef15b63c5c2f4e55f9d2a6065b45c0b928e78"
+    },
+    "ETHUSDT-1h-2023-09.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-09.zip",
+      "sha256": "38883595a881aadfbfd8c256e5170c8b016e9927119250f5128abfba96aba9c5"
+    },
+    "ETHUSDT-1h-2023-09.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-09.zip.CHECKSUM",
+      "sha256": "554cb9f8c77bbb6ca3f71c8df91a6b573283a7b3bb2f161c6a3dad506a7bf700"
+    },
+    "ETHUSDT-1h-2023-10.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-10.zip",
+      "sha256": "61d6692284b406c9f9f655aef68e151a1eeb90509ddcd7f4a97233b1a002ef9e"
+    },
+    "ETHUSDT-1h-2023-10.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-10.zip.CHECKSUM",
+      "sha256": "959e3478061107e7b40aac4b1e2ee5c6c3e973ce150d5a080f47e1ad0fcb0a9e"
+    },
+    "ETHUSDT-1h-2023-11.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-11.zip",
+      "sha256": "d57c333ac46e779b2399c498cc8fedfbc8804deb688873585ded09aceec1fa16"
+    },
+    "ETHUSDT-1h-2023-11.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-11.zip.CHECKSUM",
+      "sha256": "dd422a60800d526222ae4197699220afd2d8a1d00a86b0fca733a9a21d56fd19"
+    },
+    "ETHUSDT-1h-2023-12.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-12.zip",
+      "sha256": "8f581fcee21156d501435fc88db1d99515e6d7432fa7ae2993de3b5f95bb0069"
+    },
+    "ETHUSDT-1h-2023-12.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2023-12.zip.CHECKSUM",
+      "sha256": "b522d7f43d861cc8fe904e3ad79703d38f222b332b9506fa0cdb08518ff93389"
+    },
+    "ETHUSDT-1h-2024-01.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip",
+      "sha256": "2f3d1a6d9292f13b1d6cf86716cbda5b3f6119a310daed1dde5ee3d0d71e2fab"
+    },
+    "ETHUSDT-1h-2024-01.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip.CHECKSUM",
+      "sha256": "a2418d5aead464940c65e384b7364e7c288753d7b99fe54c0f2814a07475e716"
+    },
+    "ETHUSDT-1h-2024-02.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip",
+      "sha256": "bde9a1b0824b212ef6cea97065543fda0fc57c33479709d34e5db995fc79af01"
+    },
+    "ETHUSDT-1h-2024-02.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip.CHECKSUM",
+      "sha256": "ea04db4f96b37f6dcbaa5f83d3f153096fd75ddfe8f881b20dd2eabaec411ef1"
+    },
+    "ETHUSDT-1h-2024-03.zip": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip",
+      "sha256": "24af0ecf9db1953e8c83e94823f4aae368ff70ba54106ef121c204cb046f9e41"
+    },
+    "ETHUSDT-1h-2024-03.zip.CHECKSUM": {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip.CHECKSUM",
+      "sha256": "9b0154d853503b46bd7e34379b04b412f2817496396bc6b0eab0cb3c6d0f0537"
+    }
+  },
+  "assumptions": [
+    "The official B3 index closes replace the TradingView cross-symbol transfer. A published monthly close is eligible starting on the first UTC day after that month. The rule evaluates it after one complete BTC/ETH chart hour, which supplies a conservative explicit timing convention.",
+    "The source SMA is applied after completed monthly data is merged into the hourly series, so the average spans five hourly samples.",
+    "Archived window stays unchanged. The six-calendar-month follow-up is used only to observe several monthly updates. It is a separate historical comparison.",
+    "Each scope starts at 10,000 USDT. One position tracks the published 100%-equity reversal. The paired market close and contrary entry settle the old position once, at the next observed open.",
+    "Source has no commission setting. Reported cost sensitivity uses 5.9 bp fee and 3 bp friction per side on the same fills. Perpetual funding is outside the Pine comparison."
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "coverage": [
+    [
+      1389,
+      "Pending · FMZ Huobi source adapter undefined",
+      "The exact archived script calls undeclared Exchange() and a period setter absent from the configured FMZ Python object. Isolated initialization stops before market or order calls. Public successor market samples confirm a contract-unit mismatch with the archived quote-sized amount. A source-defined replacement binding and authorized quantity semantics are needed for a historical comparison."
+    ],
+    [
+      1391,
+      "Pending · FMZ Huobi source adapter undefined",
+      "The exact archived script calls undeclared Exchange() and a period setter absent from the configured FMZ Python object. Isolated initialization stops before market or order calls. Public successor market samples confirm a contract-unit mismatch with the archived quote-sized amount. A source-defined replacement binding and authorized quantity semantics are needed for a historical comparison."
+    ]
+  ],
+  "results": [],
+  "baseline_sha256": "c804a3acac412c611ce9d55402ebf137a50e71dc6e372f76291d2af9b0f6ed27",
+  "source_proofs": [
+    {
+      "id": 1389,
+      "archive": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%88%86%E4%BA%AB-%E8%B5%8C%E5%BE%92%E7%AD%96%E7%95%A5-%E9%A9%AC%E4%B8%81%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "3ee3ab19003fe2f9b6484b2366887f516e420a8e5818c38621c33607156116e0",
+      "source_sha256": "c381108c0269df5a90862145c96d93c2634ca11cf1e508178965c609cdbfe9ee",
+      "publisher": "https://www.fmz.com/strategy/410114",
+      "reviewed_lines": [
+        {
+          "line": 15,
+          "content": "exchange = Exchange()"
+        },
+        {
+          "line": 16,
+          "content": "exchange.SetContractType(symbol)"
+        },
+        {
+          "line": 17,
+          "content": "exchange.SetPeriod(period)"
+        },
+        {
+          "line": 49,
+          "content": "buy_amount = amount / buy_price"
+        },
+        {
+          "line": 57,
+          "content": "buy_amount = amount / buy_price"
+        }
+      ]
+    },
+    {
+      "id": 1391,
+      "archive": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%88%86%E4%BA%ABRSI%E8%B6%85%E4%B9%B0%E8%B6%85%E5%8D%96%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "d295efbab79a9fe668d96b64f0b1146ce03432c7ecc6138033780afcdd771d26",
+      "source_sha256": "4b22bae9fffd0e23864079af6182174ae48917febd6847c34a5afc074130d509",
+      "publisher": "https://www.fmz.com/strategy/410112",
+      "reviewed_lines": [
+        {
+          "line": 15,
+          "content": "exchange = Exchange()"
+        },
+        {
+          "line": 16,
+          "content": "exchange.SetContractType(symbol)"
+        },
+        {
+          "line": 17,
+          "content": "exchange.SetPeriod(period)"
+        },
+        {
+          "line": 37,
+          "content": "buy_amount = amount / buy_price"
+        },
+        {
+          "line": 44,
+          "content": "sell_amount = amount / sell_price"
+        }
+      ]
+    }
+  ],
+  "venue_reference": "https://www.fmz.com/syntax-guide/exchanges/cex/htx",
+  "native_binding_control": {
+    "fixture_sha256": "eeecea675c4f31957836b9475456ca38ea393f6f64311d637d9ff283df6c9f3f",
+    "cases": [
+      {
+        "id": 1389,
+        "source_sha256": "c381108c0269df5a90862145c96d93c2634ca11cf1e508178965c609cdbfe9ee",
+        "named_Exchange_available": false,
+        "configured_exchange_has_SetPeriod": false,
+        "configured_exchange_has_SetContractType": true,
+        "error_type": "NameError",
+        "error": "name 'Exchange' is not defined"
+      },
+      {
+        "id": 1391,
+        "source_sha256": "4b22bae9fffd0e23864079af6182174ae48917febd6847c34a5afc074130d509",
+        "named_Exchange_available": false,
+        "configured_exchange_has_SetPeriod": false,
+        "configured_exchange_has_SetContractType": true,
+        "error_type": "NameError",
+        "error": "name 'Exchange' is not defined"
+      }
+    ],
+    "calls": [],
+    "raw_receipt_sha256": "a68291e908c00d0ad83392e94524baa737b56b066b9d905789267820ecf914af",
+    "scope": "Complete pinned Python source parsed and evaluated only in the isolated local FMZ runtime."
+  },
+  "read_only_market_metadata": [
+    {
+      "url": "https://q.fmz.com/data/history?eid=Futures_HTX&symbol=BTC_USDT.swap&from=1790121600&to=1790128800&period=60000&detail=true&round=true&feeder=local&event=feed&depth=5&trades=0&custom=0",
+      "eid": "Futures_HTX",
+      "symbol": "BTC_USDT.swap",
+      "status": 200,
+      "rows": 121,
+      "detail": {
+        "symbol": "BTC_USDT.swap",
+        "alias": "BTC-USDT",
+        "baseCurrency": "BTC",
+        "basePrecision": 8,
+        "quoteCurrency": "USDT",
+        "quotePrecision": 1,
+        "marginCurrency": "USDT",
+        "minQty": 0,
+        "maxQty": 1.7976931348623157e+308,
+        "minNotional": 0,
+        "maxNotional": 1.7976931348623157e+308,
+        "priceTick": 0.1,
+        "volumeTick": 1e-08,
+        "eid": "Futures_HTX",
+        "contractType": "swap",
+        "marginLevel": 10,
+        "volumeMultiple": 0.001
+      },
+      "low": 86088.1
+    },
+    {
+      "url": "https://q.fmz.com/data/history?eid=Futures_HTX&symbol=ETH_USDT.swap&from=1790121600&to=1790128800&period=60000&detail=true&round=true&feeder=local&event=feed&depth=5&trades=0&custom=0",
+      "eid": "Futures_HTX",
+      "symbol": "ETH_USDT.swap",
+      "status": 200,
+      "rows": 121,
+      "detail": {
+        "symbol": "ETH_USDT.swap",
+        "alias": "ETH-USDT",
+        "baseCurrency": "ETH",
+        "basePrecision": 8,
+        "quoteCurrency": "USDT",
+        "quotePrecision": 2,
+        "marginCurrency": "USDT",
+        "minQty": 0,
+        "maxQty": 1.7976931348623157e+308,
+        "minNotional": 0,
+        "maxNotional": 1.7976931348623157e+308,
+        "priceTick": 0.01,
+        "volumeTick": 1e-08,
+        "eid": "Futures_HTX",
+        "contractType": "swap",
+        "marginLevel": 10,
+        "volumeMultiple": 0.01
+      },
+      "low": 2745.11
+    },
+    {
+      "url": "https://q.fmz.com/data/history?eid=Futures_HuobiDM&symbol=BTC_USDT.swap&from=1790121600&to=1790128800&period=60000&detail=true&round=true&feeder=local&event=feed&depth=5&trades=0&custom=0",
+      "eid": "Futures_HuobiDM",
+      "symbol": "BTC_USDT.swap",
+      "status": 500,
+      "error": "Futures_HuobiDM.BTC_USDT.swap not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?eid=Futures_HuobiDM&symbol=ETH_USDT.swap&from=1790121600&to=1790128800&period=60000&detail=true&round=true&feeder=local&event=feed&depth=5&trades=0&custom=0",
+      "eid": "Futures_HuobiDM",
+      "symbol": "ETH_USDT.swap",
+      "status": 500,
+      "error": "Futures_HuobiDM.ETH_USDT.swap not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?eid=Futures_Huobi&symbol=BTC_USDT.swap&from=1790121600&to=1790128800&period=60000&detail=true&round=true&feeder=local&event=feed&depth=5&trades=0&custom=0",
+      "eid": "Futures_Huobi",
+      "symbol": "BTC_USDT.swap",
+      "status": 500,
+      "error": "Futures_Huobi.BTC_USDT.swap not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?eid=Futures_Huobi&symbol=ETH_USDT.swap&from=1790121600&to=1790128800&period=60000&detail=true&round=true&feeder=local&event=feed&depth=5&trades=0&custom=0",
+      "eid": "Futures_Huobi",
+      "symbol": "ETH_USDT.swap",
+      "status": 500,
+      "error": "Futures_Huobi.ETH_USDT.swap not found\n"
+    }
+  ],
+  "input_bound_sample": {
+    "BTC_USDT.swap": {
+      "largest_archived_quantity_in_one_sample": 1.1616007322731016e-07,
+      "reference_contract_base_multiplier": 0.001
+    },
+    "ETH_USDT.swap": {
+      "largest_archived_quantity_in_one_sample": 3.6428412704773214e-06,
+      "reference_contract_base_multiplier": 0.01
+    }
+  },
+  "classification_scope": "The two-hour market sample checks the amount units. It supplies no result series or whole-window no-fill inference."
+}

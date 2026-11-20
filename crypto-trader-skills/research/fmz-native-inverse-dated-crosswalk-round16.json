@@ -1,0 +1,684 @@
+{
+  "coverage": [
+    [
+      961,
+      "Pending · OKX exact 2020 quarterly replay",
+      "Public free dated BTC-USD-200327 trade samples exist at monthly boundaries. The full January–April 2020 source window and correctly settled expiry are unverified."
+    ],
+    [
+      985,
+      "Pending · FMZ dated inverse quarter mismatch",
+      "Dated BTC-USD-210326 minute-trade aggregation proves all 96 Jan 1 2021 comparison bars differ from the available FMZ generic quarter feed. The authored Jan 1–Mar 12 interval needs exact dated coin-margined candles and a verified inverse ledger."
+    ],
+    [
+      4595,
+      "Pending · FMZ dated inverse quarter mismatch",
+      "Dated ETH-USD-210326 minute-trade aggregation proves all 96 Jan 1 2021 comparison bars differ from the available FMZ generic quarter feed. The authored Jan 1–Feb 13 interval needs exact dated coin-margined candles and a verified inverse ledger."
+    ]
+  ],
+  "results": [],
+  "baseline_sha256": "c804a3acac412c611ce9d55402ebf137a50e71dc6e372f76291d2af9b0f6ed27",
+  "instrument_docs": [
+    "https://www.fmz.com/syntax-guide/exchanges/cex/okx",
+    "https://www.okx.com/help/expiry-futures-pnl-calculation-rules",
+    "https://docs.tardis.dev/historical-data-details/okex-futures"
+  ],
+  "pinned_sources": [
+    {
+      "id": 258,
+      "name": "Dual Thrust OKCoin",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Dual-Thrust-OKCoin-%E6%9C%9F%E8%B4%A7.md"
+    },
+    {
+      "id": 961,
+      "name": "SuperTrend-V1",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/SuperTrend-V1.md"
+    },
+    {
+      "id": 985,
+      "name": "TD狄马克序列",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TD%E7%8B%84%E9%A9%AC%E5%85%8B%E5%BA%8F%E5%88%97.md"
+    },
+    {
+      "id": 4595,
+      "name": "恒温器-震荡修正为-最高价-最低价-添加增减仓选项-添加额外张数功能-修正cmi数据刷新日期问一天一次变为1小时一次-ok-准备修正一些功能",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%81%92%E6%B8%A9%E5%99%A8-%E9%9C%87%E8%8D%A1%E4%BF%AE%E6%AD%A3%E4%B8%BA-%E6%9C%80%E9%AB%98%E4%BB%B7-%E6%9C%80%E4%BD%8E%E4%BB%B7-%E6%B7%BB%E5%8A%A0%E5%A2%9E%E5%87%8F%E4%BB%93%E9%80%89%E9%A1%B9-%E6%B7%BB%E5%8A%A0%E9%A2%9D%E5%A4%96%E5%BC%A0%E6%95%B0%E5%8A%9F%E8%83%BD-%E4%BF%AE%E6%AD%A3cmi%E6%95%B0%E6%8D%AE%E5%88%B7%E6%96%B0%E6%97%A5%E6%9C%9F%E9%97%AE%E4%B8%80%E5%A4%A9%E4%B8%80%E6%AC%A1%E5%8F%98%E4%B8%BA1%E5%B0%8F%E6%97%B6%E4%B8%80%E6%AC%A1-ok-%E5%87%86%E5%A4%87%E4%BF%AE%E6%AD%A3%E4%B8%80%E4%BA%9B%E5%8A%9F%E8%83%BD.md"
+    }
+  ],
+  "matched_fmz_author_form": [
+    {
+      "id": 258,
+      "url": "https://www.fmz.com/strategy/12101",
+      "sha256": "9536b3649cc71cfb2d9b22bc73cde765549cd7428bea6c0488c7b43dcb3502f7",
+      "preview_chars": 148,
+      "args": {
+        "NPeriod": 4,
+        "Ks": 0.5,
+        "Kx": 0.5,
+        "AmountOP": 1,
+        "Interval": 2000,
+        "LoopInterval": 3,
+        "PeriodShow": 500
+      },
+      "still_missing": []
+    },
+    {
+      "id": 259,
+      "url": "https://www.fmz.com/strategy/103247",
+      "sha256": "96eae311755bf4f52b4db7db0f32713fb7cd74ea38d9aea3d66982e9fc54926d",
+      "preview_chars": 163,
+      "args": {
+        "NPeriod": 4,
+        "Ks": 0.5,
+        "Kx": 0.5,
+        "AmountOP": 1,
+        "Interval": 2000,
+        "LoopInterval": 3,
+        "PeriodShow": 500
+      },
+      "still_missing": []
+    },
+    {
+      "id": 4595,
+      "url": "https://www.fmz.com/strategy/255502",
+      "sha256": "263e1195b8a127d6b02ebd9613c85295fcb31893adb0ce9d7725f037d4383d28",
+      "preview_chars": 352,
+      "args": {
+        "LoopInterval": 2,
+        "AmountOP": 1,
+        "Cmi_kLine_Cycle": "PERIOD_D1",
+        "Shock_kLine_Cycle": "PERIOD_H1",
+        "Trend_kLine_Cycle": "PERIOD_D1",
+        "Shock_Reduce_N": 1,
+        "Shock_Stop_N": 2,
+        "Shock_MaxAddCountLimit": 4,
+        "Shock_Departure": 1,
+        "Shock_ATR_Cycle": 7,
+        "Shock_UseLeverval": 1,
+        "Shock_WarehouseMode": false,
+        "Shock_ExtraAmount_State": false,
+        "Trend_MaxAddCountLimit": 4,
+        "Trend_Reduce_N": 1,
+        "Trend_ATR_Cycle": 14,
+        "Trend_Stop_N": 2,
+        "Trend_UseLeverval": 1,
+        "Trend_WarehouseMode": false,
+        "Trend_ExtraAmount_State": false
+      },
+      "still_missing": []
+    }
+  ],
+  "dated_public_sample_access": [
+    {
+      "asset": "BTC",
+      "date": "2020/01/01",
+      "expiry": "200327",
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2020/01/01/BTC-USD-200327.csv.gz",
+      "status": 206,
+      "range": "bytes 0-127/2099806",
+      "head": "1f8b080000000000"
+    },
+    {
+      "asset": "BTC",
+      "date": "2021/01/01",
+      "expiry": "210326",
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2021/01/01/BTC-USD-210326.csv.gz",
+      "status": 206,
+      "range": "bytes 0-127/3611046",
+      "head": "1f8b080000000000"
+    },
+    {
+      "asset": "ETH",
+      "date": "2020/01/01",
+      "expiry": "200327",
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2020/01/01/ETH-USD-200327.csv.gz",
+      "status": 206,
+      "range": "bytes 0-127/1341277",
+      "head": "1f8b080000000000"
+    },
+    {
+      "asset": "ETH",
+      "date": "2021/01/01",
+      "expiry": "210326",
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2021/01/01/ETH-USD-210326.csv.gz",
+      "status": 206,
+      "range": "bytes 0-127/2723298",
+      "head": "1f8b080000000000"
+    }
+  ],
+  "pre_2021_dated_range_checks": [
+    {
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2020/01/01/BTC-USD-200103.csv.gz",
+      "status": 206,
+      "len": "128",
+      "range": "bytes 0-127/664637",
+      "prefix": "1f8b0800000000000203acbd"
+    },
+    {
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2020/01/01/BTC-USD-200327.csv.gz",
+      "status": 206,
+      "len": "128",
+      "range": "bytes 0-127/2099806",
+      "prefix": "1f8b0800000000000203ac9d"
+    },
+    {
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2020/02/01/BTC-USD-200327.csv.gz",
+      "status": 206,
+      "len": "128",
+      "range": "bytes 0-127/4419622",
+      "prefix": "1f8b0800000000000203ac9d"
+    },
+    {
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2020/03/01/BTC-USD-200327.csv.gz",
+      "status": 206,
+      "len": "128",
+      "range": "bytes 0-127/5548772",
+      "prefix": "1f8b0800000000000203acbd"
+    },
+    {
+      "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2021/01/01/BTC-USD-210326.csv.gz",
+      "status": 206,
+      "len": "128",
+      "range": "bytes 0-127/3611046",
+      "prefix": "1f8b0800000000000203acbd"
+    }
+  ],
+  "comparison": [
+    {
+      "coin": "BTC",
+      "contract": "BTC-USD-210326",
+      "direct_samples": {
+        "trades": 298651,
+        "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2021/01/01/BTC-USD-210326.csv.gz",
+        "sha256": "1541b7332dd24bd2762c37f6841fd71e4b42cb67bd2cbec7688266e127fac810"
+      },
+      "fmz_quarter": {
+        "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKX&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD.quarter&from=1609459200&to=1609545600",
+        "sha256": "7308ac7314d8fd9c1b069ae5ea7b2ac9a57a364d278de59505227dac89ac9128",
+        "detail": {
+          "symbol": "BTC_USD.quarter",
+          "alias": "BTC-USD_UM-270326",
+          "baseCurrency": "BTC",
+          "basePrecision": 2,
+          "quoteCurrency": "USD",
+          "quotePrecision": 1,
+          "marginCurrency": "BTC",
+          "minQty": 0.01,
+          "maxQty": 3000,
+          "minNotional": 0,
+          "maxNotional": 1.7976931348623157e+308,
+          "priceTick": 0.1,
+          "volumeTick": 0.01,
+          "eid": "Futures_OKX",
+          "contractType": "quarter",
+          "marginLevel": 10,
+          "volumeMultiple": 0.01
+        }
+      },
+      "aligned": 96,
+      "exact_equal_fields": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0
+      },
+      "points": [
+        {
+          "at": 1609459200000,
+          "fmz": [
+            289505,
+            290658,
+            287258,
+            287803,
+            6033200
+          ],
+          "dated_exchange_trades": [
+            300234,
+            301367,
+            297717,
+            298471,
+            "152203"
+          ]
+        },
+        {
+          "at": 1609466400000,
+          "fmz": [
+            294657,
+            295384,
+            292752,
+            293180,
+            6005600
+          ],
+          "dated_exchange_trades": [
+            306691,
+            307383,
+            304500,
+            304978,
+            "203125"
+          ]
+        },
+        {
+          "at": 1609473600000,
+          "fmz": [
+            293333,
+            294023,
+            293308,
+            293390,
+            2952200
+          ],
+          "dated_exchange_trades": [
+            305266,
+            305973,
+            305235,
+            305380,
+            "44204"
+          ]
+        },
+        {
+          "at": 1609480800000,
+          "fmz": [
+            292410,
+            293206,
+            292389,
+            292586,
+            3028400
+          ],
+          "dated_exchange_trades": [
+            303812,
+            304686,
+            303812,
+            304159,
+            "61459"
+          ]
+        },
+        {
+          "at": 1609488000000,
+          "fmz": [
+            291669,
+            305739,
+            285055,
+            291446,
+            671300
+          ],
+          "dated_exchange_trades": [
+            302647,
+            303599,
+            301300,
+            301479,
+            "123321"
+          ]
+        },
+        {
+          "at": 1609495200000,
+          "fmz": [
+            294397,
+            295494,
+            293958,
+            295073,
+            1819500
+          ],
+          "dated_exchange_trades": [
+            303824,
+            305323,
+            303465,
+            304749,
+            "98469"
+          ]
+        },
+        {
+          "at": 1609502400000,
+          "fmz": [
+            295686,
+            295937,
+            294454,
+            295253,
+            1618700
+          ],
+          "dated_exchange_trades": [
+            305390,
+            305553,
+            303838,
+            304731,
+            "90702"
+          ]
+        },
+        {
+          "at": 1609509600000,
+          "fmz": [
+            297190,
+            298069,
+            295922,
+            297217,
+            3315000
+          ],
+          "dated_exchange_trades": [
+            306768,
+            307969,
+            305420,
+            307269,
+            "277936"
+          ]
+        },
+        {
+          "at": 1609516800000,
+          "fmz": [
+            294248,
+            294971,
+            293562,
+            294573,
+            2372000
+          ],
+          "dated_exchange_trades": [
+            303225,
+            303962,
+            302491,
+            303328,
+            "174075"
+          ]
+        },
+        {
+          "at": 1609524000000,
+          "fmz": [
+            292897,
+            294924,
+            292094,
+            294494,
+            3291900
+          ],
+          "dated_exchange_trades": [
+            301619,
+            303866,
+            300767,
+            303454,
+            "168296"
+          ]
+        },
+        {
+          "at": 1609531200000,
+          "fmz": [
+            292397,
+            293769,
+            290950,
+            293689,
+            2730200
+          ],
+          "dated_exchange_trades": [
+            300823,
+            302279,
+            299207,
+            302139,
+            "154112"
+          ]
+        },
+        {
+          "at": 1609538400000,
+          "fmz": [
+            293847,
+            294628,
+            293270,
+            294622,
+            1220900
+          ],
+          "dated_exchange_trades": [
+            302484,
+            303423,
+            302090,
+            303423,
+            "29462"
+          ]
+        }
+      ],
+      "first_aligned_open_difference_pct": -3.5735459674786973
+    },
+    {
+      "coin": "ETH",
+      "contract": "ETH-USD-210326",
+      "direct_samples": {
+        "trades": 217018,
+        "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2021/01/01/ETH-USD-210326.csv.gz",
+        "sha256": "6f235a79e7c66ba9afdfde8ba37eb49c4a9db2c2d1728a24e369865504bec115"
+      },
+      "fmz_quarter": {
+        "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKX&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.quarter&from=1609459200&to=1609545600",
+        "sha256": "b72dce7d459f355056dd29e1042f4e2837e9cdd3a580813790b998f3b276822e",
+        "detail": {
+          "symbol": "ETH_USD.quarter",
+          "alias": "ETH-USD_UM-270326",
+          "baseCurrency": "ETH",
+          "basePrecision": 0,
+          "quoteCurrency": "USD",
+          "quotePrecision": 2,
+          "marginCurrency": "ETH",
+          "minQty": 1,
+          "maxQty": 50000,
+          "minNotional": 0,
+          "maxNotional": 1.7976931348623157e+308,
+          "priceTick": 0.01,
+          "volumeTick": 1,
+          "eid": "Futures_OKX",
+          "contractType": "quarter",
+          "marginLevel": 10,
+          "volumeMultiple": 0.001
+        }
+      },
+      "aligned": 96,
+      "exact_equal_fields": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0
+      },
+      "points": [
+        {
+          "at": 1609459200000,
+          "fmz": [
+            78298,
+            78554,
+            77577,
+            77696,
+            66556
+          ],
+          "dated_exchange_trades": [
+            76206,
+            76485,
+            75510,
+            75623,
+            "223674"
+          ]
+        },
+        {
+          "at": 1609466400000,
+          "fmz": [
+            80201,
+            80289,
+            79752,
+            79831,
+            80842
+          ],
+          "dated_exchange_trades": [
+            78006,
+            78084,
+            77556,
+            77600,
+            "399008"
+          ]
+        },
+        {
+          "at": 1609473600000,
+          "fmz": [
+            79857,
+            80028,
+            79727,
+            79810,
+            25530
+          ],
+          "dated_exchange_trades": [
+            77653,
+            77872,
+            77531,
+            77595,
+            "185059"
+          ]
+        },
+        {
+          "at": 1609480800000,
+          "fmz": [
+            79260,
+            79491,
+            79260,
+            79392,
+            36155
+          ],
+          "dated_exchange_trades": [
+            77074,
+            77383,
+            77074,
+            77269,
+            "149227"
+          ]
+        },
+        {
+          "at": 1609488000000,
+          "fmz": [
+            78808,
+            78909,
+            78304,
+            78386,
+            108382
+          ],
+          "dated_exchange_trades": [
+            76592,
+            76700,
+            76000,
+            76082,
+            "400319"
+          ]
+        },
+        {
+          "at": 1609495200000,
+          "fmz": [
+            78259,
+            78723,
+            78209,
+            78650,
+            80138
+          ],
+          "dated_exchange_trades": [
+            76174,
+            76635,
+            76119,
+            76547,
+            "229481"
+          ]
+        },
+        {
+          "at": 1609502400000,
+          "fmz": [
+            78863,
+            78996,
+            78392,
+            78605,
+            108811
+          ],
+          "dated_exchange_trades": [
+            76763,
+            76888,
+            76302,
+            76505,
+            "292552"
+          ]
+        },
+        {
+          "at": 1609509600000,
+          "fmz": [
+            79202,
+            79600,
+            78931,
+            79217,
+            151289
+          ],
+          "dated_exchange_trades": [
+            77054,
+            77378,
+            76763,
+            77080,
+            "425848"
+          ]
+        },
+        {
+          "at": 1609516800000,
+          "fmz": [
+            78508,
+            78730,
+            78219,
+            78491,
+            61167
+          ],
+          "dated_exchange_trades": [
+            76308,
+            76597,
+            75989,
+            76239,
+            "274892"
+          ]
+        },
+        {
+          "at": 1609524000000,
+          "fmz": [
+            77277,
+            77763,
+            77073,
+            77544,
+            99847
+          ],
+          "dated_exchange_trades": [
+            75233,
+            75673,
+            74955,
+            75453,
+            "449146"
+          ]
+        },
+        {
+          "at": 1609531200000,
+          "fmz": [
+            76662,
+            77076,
+            76400,
+            76893,
+            64383
+          ],
+          "dated_exchange_trades": [
+            74730,
+            75183,
+            74450,
+            74999,
+            "305408"
+          ]
+        },
+        {
+          "at": 1609538400000,
+          "fmz": [
+            77119,
+            77300,
+            76904,
+            77289,
+            45849
+          ],
+          "dated_exchange_trades": [
+            75207,
+            75392,
+            75007,
+            75392,
+            "63027"
+          ]
+        }
+      ],
+      "first_aligned_open_difference_pct": 2.745190667401509
+    }
+  ],
+  "method": "Aggregate exact dated contract trades by their exchange timestamps on UTC 15-minute boundaries, then compare open/high/low/close against exact timestamp-aligned FMZ generic-quarter bars at provider precision. Source strategies use generic quarter bindings. A source-credible dated comparison exposed substantial market-series disagreement, and the correct full historical contract input remains required.",
+  "method_source_sha256": "b89984ef0241df92a6a87ef8c313697f3b52c199a46339119cd1516010569d5b"
+}
