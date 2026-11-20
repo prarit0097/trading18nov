@@ -1,0 +1,90 @@
+{
+  "coverage": [
+    [
+      6011,
+      "Excluded · Remote order execution mode",
+      "The executable mode subscribes to remote orders and forwards each supplied signal to the producer. Its default trading_strategy is empty. No historical market signal generator is published."
+    ],
+    [
+      6014,
+      "Excluded · TradingView alert execution mode",
+      "The producer receives alert metadata, parses the external message and executes it. The published profile activates only this receiver and its feed. No independent signal source is configured."
+    ],
+    [
+      6010,
+      "Pending · Historical market-making lifecycle",
+      "The authored BTC/USDC market-making book and balances are available. The mode explicitly disables backtesting and uses asynchronous price-update and fill callbacks. A separate executable event replay needs verified market data and cancellation or queue assumptions."
+    ]
+  ],
+  "results": [],
+  "source_commit": "f0ebe0c14db0928e50c2e39ea68e2ff9f427f765",
+  "evidence": {
+    "6011": [
+      {
+        "archive_path": "Trading/Mode/remote_trading_signals_trading_mode/remote_trading_signals_trading.py",
+        "sha256": "c78c1c77379d40cac95f7ce740f6ea428e0ea001af79d09cd5df6bd894d1132d",
+        "markers": [
+          "_remote_trading_signal_callback",
+          "signal_callback(signal)"
+        ]
+      },
+      {
+        "archive_path": "Trading/Mode/remote_trading_signals_trading_mode/config/RemoteTradingSignalsTradingMode.json",
+        "sha256": "ad6900a0d47c4e35ae3c1393c6df97e216927cd46a53a876ff30e8c515aa0c35",
+        "markers": [
+          "\"trading_strategy\": \"\""
+        ]
+      }
+    ],
+    "6014": [
+      {
+        "archive_path": "Trading/Mode/trading_view_signals_trading_mode/trading_view_signals_trading.py",
+        "sha256": "e4451ed31a7ee80faa99a76dd76e06d1e648ca212d568c179e3023a4885b5efb",
+        "markers": [
+          "data.get(\"metadata\", \"\")",
+          "signal_callback(parsed_data"
+        ]
+      },
+      {
+        "archive_path": "profiles/tradingview_trading/tentacles_config.json",
+        "sha256": "d757f554eadd071c6c0c3d2832c57f45288d7d9c2d2704c1842cd573ab827ad5",
+        "markers": [
+          "\"TradingViewServiceFeed\": true",
+          "\"TradingViewSignalsTradingMode\": true"
+        ]
+      }
+    ],
+    "6010": [
+      {
+        "archive_path": "Trading/Mode/market_making_trading_mode/market_making_trading.py",
+        "sha256": "083ca9d67096b4108d8853e938ae6a6fbe207060325d43e6dc0156f6fb578073",
+        "markers": [
+          "def is_backtestable():",
+          "on_new_reference_price",
+          "order_filled_callback"
+        ]
+      },
+      {
+        "archive_path": "profiles/market_making/profile.json",
+        "sha256": "c51e61371c309d2d4a39a86cc646e1feaf102fbf24bf3d06d4866c2875307fda",
+        "markers": [
+          "\"BTC/USDC\"",
+          "\"starting-portfolio\""
+        ]
+      },
+      {
+        "archive_path": "profiles/market_making/specific_config/MarketMakingTradingMode.json",
+        "sha256": "1974fef08c6ae8efda4666e1505fae827493d8c055cda5f4daf668bf329330de",
+        "markers": [
+          "\"asks_count\": 3",
+          "\"max_spread\": 5"
+        ]
+      }
+    ]
+  },
+  "market_data_probe": {
+    "coverage_url": "https://api.tardis.dev/v1/exchanges/binance",
+    "method": "Public metadata lists BTCUSDC and ETHUSDC for order-book data. Direct recent sample probes were incomplete or returned 404. Historical January 2025 probes redirected, with data contents still unverified.",
+    "provider_specification": "https://docs.tardis.dev/historical-data-details/binance"
+  }
+}

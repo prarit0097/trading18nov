@@ -1,0 +1,226 @@
+{
+  "coverage": [
+    [
+      1100,
+      "Tested \u00b7 Historical buy-and-hold, open inventory",
+      "Authored limit purchases verified in four BTC/ETH windows. Strategy has no sell rule. Open positions and mark-to-market performance are reported separately."
+    ]
+  ],
+  "results": [
+    {
+      "id": 1100,
+      "period": "2026-09-23 to 2026-10-21 UTC",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "group": "FMZ buy-and-hold \u00b7 historical open inventory",
+      "trades": 0,
+      "unsettled": 1,
+      "interval": "1m",
+      "archive_interval": "60s source loop",
+      "order_family": "One-way limit purchases",
+      "exit": "Source has no sell rule",
+      "gross": 0,
+      "fees": 0,
+      "after_fees": 0,
+      "execution": 0,
+      "net": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0
+    },
+    {
+      "id": 1100,
+      "period": "2026-10-21 to 2026-11-05 UTC",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "group": "FMZ buy-and-hold \u00b7 historical open inventory",
+      "trades": 0,
+      "unsettled": 1,
+      "interval": "1m",
+      "archive_interval": "60s source loop",
+      "order_family": "One-way limit purchases",
+      "exit": "Source has no sell rule",
+      "gross": 0,
+      "fees": 0,
+      "after_fees": 0,
+      "execution": 0,
+      "net": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0
+    },
+    {
+      "id": 1100,
+      "period": "2026-09-23 to 2026-10-21 UTC",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "group": "FMZ buy-and-hold \u00b7 historical open inventory",
+      "trades": 0,
+      "unsettled": 1,
+      "interval": "1m",
+      "archive_interval": "60s source loop",
+      "order_family": "One-way limit purchases",
+      "exit": "Source has no sell rule",
+      "gross": 0,
+      "fees": 0,
+      "after_fees": 0,
+      "execution": 0,
+      "net": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0
+    },
+    {
+      "id": 1100,
+      "period": "2026-10-21 to 2026-11-05 UTC",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "group": "FMZ buy-and-hold \u00b7 historical open inventory",
+      "trades": 0,
+      "unsettled": 1,
+      "interval": "1m",
+      "archive_interval": "60s source loop",
+      "order_family": "One-way limit purchases",
+      "exit": "Source has no sell rule",
+      "gross": 0,
+      "fees": 0,
+      "after_fees": 0,
+      "execution": 0,
+      "net": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "net_dd_pct": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0
+    }
+  ],
+  "open_inventory": {
+    "BTCUSDT/2026-09-23": {
+      "submitted": 1,
+      "fills": [
+        [
+          1790121600,
+          86208.86,
+          86208.57,
+          0.115,
+          29.32596
+        ]
+      ],
+      "pending": null,
+      "cash": 83.04025433499919,
+      "base": 0.114885,
+      "base_fee": 0.000115,
+      "execution_cost": 2.9741956650000003,
+      "closing_mark": 83028.15,
+      "gross_marked_change": -365.7483000000011,
+      "after_fee_marked_change": -375.2965372500021,
+      "after_cost_marked_change": -378.27073291500164
+    },
+    "BTCUSDT/2026-10-21": {
+      "submitted": 1,
+      "fills": [
+        [
+          1792540800,
+          83028.45,
+          83028.14,
+          0.12,
+          18.85676
+        ]
+      ],
+      "pending": null,
+      "cash": 33.63418696000008,
+      "base": 0.11988,
+      "base_fee": 0.00012,
+      "execution_cost": 2.9890130399999997,
+      "closing_mark": 80504.01,
+      "gross_marked_change": -302.89560000000165,
+      "after_fee_marked_change": -312.55608120000034,
+      "after_cost_marked_change": -315.54509424000025
+    },
+    "ETHUSDT/2026-09-23": {
+      "submitted": 6,
+      "fills": [
+        [
+          1790121900,
+          2751.15,
+          2750.84,
+          3.634,
+          382.0922
+        ]
+      ],
+      "pending": null,
+      "cash": 0.4484742320000805,
+      "base": 3.630366,
+      "base_fee": 0.003634,
+      "execution_cost": 2.9989657679999997,
+      "closing_mark": 2449.2,
+      "gross_marked_change": -1096.1597600000005,
+      "after_fee_marked_change": -1105.0601528000007,
+      "after_cost_marked_change": -1108.0591185680005
+    },
+    "ETHUSDT/2026-10-21": {
+      "submitted": 10,
+      "fills": [
+        [
+          1792541340,
+          2448.1000000000004,
+          2447.8,
+          4.084,
+          46.411
+        ]
+      ],
+      "pending": null,
+      "cash": 0.18575544000123045,
+      "base": 4.079916,
+      "base_fee": 0.004084,
+      "execution_cost": 2.9990445599999993,
+      "closing_mark": 2424.61,
+      "gross_marked_change": -94.70795999999973,
+      "after_fee_marked_change": -104.6100672399989,
+      "after_cost_marked_change": -107.60911179999857
+    }
+  },
+  "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/buy-hold-%E4%B9%B0%E5%85%A5%E6%8C%81%E6%9C%89.md",
+  "source_sha256": "91d51a742138287e6fb561fc919ced0d9d8308b50c303056d3ee0f4e344f3aa4",
+  "js_sha256": "885f9c96c1b600bf782316bb8b3390c9bfc6a2b9a19649d40bbaffed27a4be56",
+  "archives": {
+    "BTCUSDT": {
+      "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08.zip": "acab442e02745177063031d402929703ae983715010064b40cf811c4beb843d4",
+      "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-09.zip": "7a021fb5981cfdb1a56457d68fa81360ab27350c981ddfe63112b2322df44b56",
+      "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-10.zip": "17168f260306752e39177a6c038bb8952f52bf08ff20e36d8da6068732621f1c",
+      "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-01.zip": "166e586106dda5083a32dbcf68108a80465bea04a60ba05ca3327fab7768a208",
+      "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-02.zip": "0e75a73c1642747e22159cfb6a9059dd0556086fa74fabffe4f7f4166a3e7c65",
+      "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-03.zip": "52d48d43d5fe174481b09d7f81eee932739e8b6de41de0b905322dd62ea148fe",
+      "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-04.zip": "44c7dfc10dff28bd3050f0129c201872994f3f09e2b2d00a76bd44fb419e509d"
+    },
+    "ETHUSDT": {
+      "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08.zip": "f2f2fe8da85467fb8ec8185e07f16f3af9f4ebcb266633ba494e76ac73c40c0c",
+      "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-09.zip": "827b46043bdc877d542edf8ff178dc0411cfa166a56fa73f2f850ad06c951b50",
+      "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-10.zip": "bcbfb8f896ba57167f297e6529ce5bb73761500e3affcd47b9045bb0d5d6c833",
+      "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-01.zip": "2a00c3a92769a164d7ecffeffca895bd5d3a06c8ff7059ff6bca0c3ad12e66d8",
+      "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-02.zip": "4d8839d68abb79c1b644b9a337a24d666404ac7cbf88f0d51a1d34eb278c37fe",
+      "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-03.zip": "7468568b38dbf795b0415dbba743351f10a41cf9ba817b10b1470dbc32d8bfb4",
+      "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-04.zip": "424d1b522fb215beddcb6a77b3b17aa9c04033816ac1f1fe8afc0c45606cb5d1"
+    }
+  },
+  "assumptions": [
+    "The archive omits a venue, market and initial wallet. This replay uses Binance BTC and ETH spot with 10,000 USDT per independent sleeve.",
+    "The source checks every 60 seconds. Last completed minute close is the observed ticker value. A submitted limit needs strict trade-through in the following minute and adequate minute volume. A favorable open can improve execution.",
+    "Each unfilled remainder is canceled before the next proposal. Price offset is source 0.3 quote, precision 0.001 base and minimum budget 100 quote. Binance lot and 5 USDT notional constrain fills.",
+    "Fee is modeled at 10 bp of acquired base and friction at 3 bp of turnover. The tail mark includes entry fees and costs. Open lots have no realized win rate."
+  ]
+}
