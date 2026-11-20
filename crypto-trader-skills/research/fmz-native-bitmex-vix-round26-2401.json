@@ -1,0 +1,736 @@
+{
+  "coverage": [
+    [
+      2401,
+      "Tested · archived BitMEX volatility breakout in two causal BTC scopes",
+      "Replayed the exact archived N=90 and 100-contract BitMEX XBTUSD strategy on two 20-hour slices within its published dates. Independent checks matched all decisions and BTC accounting. Each slice closed one long and carried one open short. Net win rate 0/2. Full original year and ETH are outside this evidence."
+    ]
+  ],
+  "results": [
+    {
+      "gross": -2.85498874264556e-05,
+      "fees": 2.8337995881467864e-05,
+      "execution": 1.7872356381363271e-06,
+      "after_fees": -5.688788330792347e-05,
+      "funding": 1.2772833556246554e-05,
+      "net": -4.590228538981324e-05,
+      "gross_dd": 2.85498874264556e-05,
+      "gross_dd_pct": 1.42749437132278e-05,
+      "fee_dd": 5.688788330792347e-05,
+      "fee_dd_pct": 2.8443941653961734e-05,
+      "net_dd": 4.590228538981324e-05,
+      "net_dd_pct": 2.295114269490662e-05,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "id": 2401,
+      "market": "BitMEX XBTUSD perpetual [BTC settlement]",
+      "period": "2019-05-01 02:00–22:00 UTC",
+      "group": "FMZ Native · BitMEX inverse volatility breakout",
+      "name": "吕神-简易波动率策略",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%90%95%E7%A5%9E-%E7%AE%80%E6%98%93%E6%B3%A2%E5%8A%A8%E7%8E%87%E7%AD%96%E7%95%A5.md",
+      "interval": "15m chart · 5s poll",
+      "exit": "Archived midline crossing · open short carried at cutoff",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 1,
+      "unsettled": 1,
+      "starting_equity": 2.0,
+      "mark_to_market_net": -1.2004217229863611e-05,
+      "remaining_unrealized": 5.3996696550000854e-05
+    },
+    {
+      "gross": 1.8446730120321053e-05,
+      "fees": 1.753464101960458e-05,
+      "execution": 6.821747592160156e-07,
+      "after_fees": 9.120891007164712e-07,
+      "funding": -3.003134220718924e-06,
+      "net": -2.773219879218468e-06,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "net_dd": 2.773219879218468e-06,
+      "net_dd_pct": 1.386609939609234e-06,
+      "gross_wins": 1,
+      "fee_wins": 1,
+      "net_wins": 0,
+      "id": 2401,
+      "market": "BitMEX XBTUSD perpetual [BTC settlement]",
+      "period": "2019-06-01 02:00–22:00 UTC",
+      "group": "FMZ Native · BitMEX inverse volatility breakout",
+      "name": "吕神-简易波动率策略",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%90%95%E7%A5%9E-%E7%AE%80%E6%98%93%E6%B3%A2%E5%8A%A8%E7%8E%87%E7%AD%96%E7%95%A5.md",
+      "interval": "15m chart · 5s poll",
+      "exit": "Archived midline crossing · open short carried at cutoff",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 12,
+      "trades": 1,
+      "unsettled": 1,
+      "starting_equity": 2.0,
+      "mark_to_market_net": -0.0001060551795556419,
+      "remaining_unrealized": -9.56557858005605e-05
+    }
+  ],
+  "diagnostics": [
+    {
+      "day": "2019-05-01",
+      "order_events": [
+        {
+          "id": 1,
+          "at": 1556676000,
+          "side": 1,
+          "open": true,
+          "direction": "buy",
+          "price": 5297.5,
+          "amount": 100,
+          "fee": 1.415762151958471e-05,
+          "gross": 0,
+          "slip": 0,
+          "cash": 1.9999858423784804,
+          "qty": 100,
+          "mark": 5301.38,
+          "last": 5297.5,
+          "quote": [
+            1556675999949380,
+            1556675999949380,
+            5297,
+            5297.5,
+            895816,
+            840300,
+            895816,
+            840300,
+            true,
+            true,
+            0
+          ],
+          "chart": 1556675100000
+        },
+        {
+          "id": 2,
+          "at": 1556699405,
+          "side": -1,
+          "open": false,
+          "direction": "closebuy",
+          "price": 5289,
+          "amount": 100,
+          "fee": 1.4180374361883154e-05,
+          "gross": -3.0337123064591467e-05,
+          "slip": 1.787235638135579e-06,
+          "cash": 1.9999540977146102,
+          "qty": 0,
+          "mark": 5290.66,
+          "last": 5289.5,
+          "quote": [
+            1556699404938373,
+            1556699404938373,
+            5289,
+            5289.5,
+            1777405,
+            1149703,
+            1777405,
+            1149703,
+            true,
+            true,
+            0
+          ],
+          "chart": 1556699400000
+        },
+        {
+          "id": 3,
+          "at": 1556712025,
+          "side": -1,
+          "open": true,
+          "direction": "sell",
+          "price": 5311.5,
+          "amount": 100,
+          "fee": 1.412030499858797e-05,
+          "gross": 0,
+          "slip": 1.772126631348998e-06,
+          "cash": 1.9999399774096116,
+          "qty": -100,
+          "mark": 5309.09,
+          "last": 5312,
+          "quote": [
+            1556712021501801,
+            1556712021501801,
+            5311.5,
+            5312,
+            43870,
+            1777790,
+            43870,
+            1777790,
+            true,
+            true,
+            0
+          ],
+          "chart": 1556712000000
+        }
+      ],
+      "funding_events": [
+        {
+          "at": 1556683200,
+          "qty": 100,
+          "rate": -0.000679,
+          "amount": 1.2772833556246554e-05,
+          "mark": 5315.97,
+          "laterMark": 5312.36,
+          "prior": [
+            1556683199079919,
+            1556683198601000,
+            5315.97,
+            5315.98,
+            1556683200000000,
+            "-0.000679"
+          ],
+          "later": [
+            1556683210213719,
+            1556683199993000,
+            5312.36,
+            5315.98,
+            1556712000000000,
+            "-0.000679"
+          ],
+          "cash": 1.9999986152120366
+        },
+        {
+          "at": 1556712000,
+          "qty": 0,
+          "rate": -0.000688,
+          "amount": 0,
+          "mark": 5312.28,
+          "laterMark": 5308.63,
+          "prior": [
+            1556711999064136,
+            1556711998756000,
+            5312.28,
+            5312.29,
+            1556712000000000,
+            "-0.000688"
+          ],
+          "later": [
+            1556712017465551,
+            1556711999796000,
+            5308.63,
+            5312.29,
+            1556740800000000,
+            "-0.000688"
+          ],
+          "cash": 1.9999540977146102
+        },
+        {
+          "at": 1556740800,
+          "qty": -100,
+          "rate": -0.000317,
+          "amount": -5.9783233914632566e-06,
+          "mark": 5302.49,
+          "laterMark": 5300.81,
+          "prior": [
+            1556740799062593,
+            1556740795000000,
+            5302.49,
+            5302.49,
+            1556740800000000,
+            "-0.000317"
+          ],
+          "later": [
+            1556740810563137,
+            1556740795000000,
+            5300.81,
+            5302.49,
+            1556769600000000,
+            "-0.000317"
+          ],
+          "cash": 1.9999339990862202
+        }
+      ],
+      "closed_trade_BTC": {
+        "entry_order": 1,
+        "exit_order": 2,
+        "gross": "-0.00002854988742645560151244813009612702487288500",
+        "gross_at_fills": "-0.00003033712306459192866564573324871060534963100",
+        "fees": "0.000028337995881467863484016931326836013841223171",
+        "execution": "0.00000178723563813632715319760315258358047674600",
+        "after_fees": "-0.000056887883307923464996465061422963038714108171",
+        "after_fees_at_fills": "-0.000058675118946059792149662664575546619190854171",
+        "funding": "0.000012772833556246555191244495360207074155798471",
+        "net": "-0.000045902285389813236958418169215339545035055700"
+      },
+      "ending_open_BTC": {
+        "position_contracts": -100,
+        "entry_USD": "5311.5",
+        "entry_fee": "0.000014120304998587969500141203049985879695001412",
+        "funding": "-0.0000059783233914632559420196926349696086178380345",
+        "unrealized": "0.00005399669655000085133665888749696436766152800"
+      },
+      "ending_wallet_BTC": "1.9999339990862201355375994209350997049666522",
+      "maximum_adjacent_funding_mark_sensitivity_BTC": "1.05744709550341507999626734785810079136948E-8",
+      "fractional_satoshi_fee_funding_bound_BTC": "6E-8",
+      "drawdown_on_five_second_marked_equity": {
+        "net": {
+          "BTC": "0.0003538041717609503984812839484333072564458",
+          "fraction": "0.00017689020542832207608948288552116073211682341"
+        },
+        "after_fees": {
+          "BTC": "0.0003665770053171969536725284437935143306016",
+          "fraction": "0.00018327619330523378933507764594726362649295515"
+        },
+        "gross": {
+          "BTC": "0.0003382763259567258304571291579301421775090",
+          "fraction": "0.00016912560681069667562466115382387937836049169"
+        }
+      },
+      "market_capture": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/trades/2019/05/01/XBTUSD.csv.gz",
+          "dataset": "trades",
+          "bytes": 9311539,
+          "sha256": "720c0f5fc609b3f6897bad240e6c66b018a44cf9bfe406bb8703391ec900c744",
+          "rows": 315553,
+          "first_local_us": 1556668811036013,
+          "last_local_us": 1556755199645436,
+          "max_gap_us": 52811761
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/quotes/2019/05/01/XBTUSD.csv.gz",
+          "dataset": "quotes",
+          "bytes": 10111490,
+          "sha256": "6a705a01e87634cba3a697211138ce37492f63f1ebdc4a36eeb089c41c19d24f",
+          "rows": 998390,
+          "first_local_us": 1556668802713363,
+          "last_local_us": 1556755199724720,
+          "max_gap_us": 14536467
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2019/05/01/XBTUSD.csv.gz",
+          "dataset": "derivative_ticker",
+          "bytes": 808824,
+          "sha256": "46f7c2790f78677c9f0ee4636b6b20b923ba04406aba7f5d91b3b94d2a1420a2",
+          "rows": 66418,
+          "first_local_us": 1556668802564840,
+          "last_local_us": 1556755199649039,
+          "max_gap_us": 31656032
+        }
+      },
+      "warmup_references": [
+        {
+          "date": "2019-04-29",
+          "one_minute": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/1m/XBTUSD-2019-04-29-1m.json",
+            "sha256": "f4fcb044d6f765932512350363762ce45ed4738d38123ac18bfe578ccb0bb5db",
+            "bytes": 86641,
+            "raw_bars": 1440,
+            "seconds": 60
+          },
+          "five_minutes": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/5m/XBTUSD-2019-04-29-5m.json",
+            "sha256": "7ca4792bb62d3e59a1c1b892466d77a7020c56ffe99c64129e6c2d64399e6dab",
+            "bytes": 17729,
+            "raw_bars": 288,
+            "seconds": 300
+          },
+          "mirrors_ohlc_equal": 96,
+          "mirrors_close_equal": 96
+        },
+        {
+          "date": "2019-04-30",
+          "one_minute": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/1m/XBTUSD-2019-04-30-1m.json",
+            "sha256": "3e0cc51ea33d6fe72b7f74431fe9724c87d51de2e1a22e9503b08929e605ec86",
+            "bytes": 86679,
+            "raw_bars": 1440,
+            "seconds": 60
+          },
+          "five_minutes": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/5m/XBTUSD-2019-04-30-5m.json",
+            "sha256": "05594ca4d56efc19dba6ea32d208cba5e9d9c4e3cc472b02ad6788aca9022cda",
+            "bytes": 17730,
+            "raw_bars": 288,
+            "seconds": 300
+          },
+          "mirrors_ohlc_equal": 96,
+          "mirrors_close_equal": 96
+        },
+        {
+          "date": "2019-05-01",
+          "one_minute": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/1m/XBTUSD-2019-05-01-1m.json",
+            "sha256": "acb3d41119f1ba8d098cb9a0bba616d31f4417ef28c51d11c48d360aa5f5f730",
+            "bytes": 86595,
+            "raw_bars": 1440,
+            "seconds": 60
+          },
+          "five_minutes": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/5m/XBTUSD-2019-05-01-5m.json",
+            "sha256": "6dc06b4d2ba9b348f1e85650a6bd3b9d9c9e1e3dfdec8f7e569e16f049613e35",
+            "bytes": 17710,
+            "raw_bars": 288,
+            "seconds": 300
+          },
+          "mirrors_ohlc_equal": 96,
+          "mirrors_close_equal": 96
+        }
+      ],
+      "same_day_receipt_crosschecks": {
+        "mirror_vs_capture_close_equal": 96,
+        "mirror_vs_capture_ohlc_equal": 64,
+        "comparable": 96
+      },
+      "indicator_events": 81,
+      "ta_highest_nonpositive_windows": 0,
+      "no_order_stale_quote_observations": 14
+    },
+    {
+      "day": "2019-06-01",
+      "order_events": [
+        {
+          "id": 1,
+          "at": 1559358010,
+          "side": 1,
+          "open": true,
+          "direction": "buy",
+          "price": 8548,
+          "amount": 100,
+          "fee": 8.773982218062705e-06,
+          "gross": 0,
+          "slip": 0,
+          "cash": 1.999991226017782,
+          "qty": 100,
+          "mark": 8541.51,
+          "last": 8548,
+          "quote": [
+            1559358008449196,
+            1559358008449196,
+            8547.5,
+            8548,
+            1173733,
+            237695,
+            1173733,
+            237695,
+            true,
+            true,
+            0
+          ],
+          "chart": 1559358000000
+        },
+        {
+          "id": 2,
+          "at": 1559394010,
+          "side": -1,
+          "open": false,
+          "direction": "closebuy",
+          "price": 8561,
+          "amount": 100,
+          "fee": 8.760658801541876e-06,
+          "gross": 1.776455536110506e-05,
+          "slip": 6.821747592172475e-07,
+          "cash": 1.999997226780121,
+          "qty": 0,
+          "mark": 8555.11,
+          "last": 8561.5,
+          "quote": [
+            1559394007321151,
+            1559394007321151,
+            8561,
+            8561.5,
+            307869,
+            721690,
+            307869,
+            721690,
+            true,
+            true,
+            0
+          ],
+          "chart": 1559394000000
+        },
+        {
+          "id": 3,
+          "at": 1559412905,
+          "side": -1,
+          "open": true,
+          "direction": "sell",
+          "price": 8525,
+          "amount": 100,
+          "fee": 8.797653958944282e-06,
+          "gross": 0,
+          "slip": 0,
+          "cash": 1.999988429126162,
+          "qty": -100,
+          "mark": 8518.15,
+          "last": 8525,
+          "quote": [
+            1559412904886593,
+            1559412904886593,
+            8525,
+            8525.5,
+            606091,
+            16685,
+            606091,
+            16685,
+            true,
+            true,
+            0
+          ],
+          "chart": 1559412900000
+        }
+      ],
+      "funding_events": [
+        {
+          "at": 1559361600,
+          "qty": 100,
+          "rate": 0.000116,
+          "amount": -1.3575412587216173e-06,
+          "mark": 8544.86,
+          "laterMark": 8545.85,
+          "prior": [
+            1559361599770172,
+            1559361599743000,
+            8544.86,
+            8544.86,
+            1559361600000000,
+            "0.000116"
+          ],
+          "later": [
+            1559361609291744,
+            1559361599743000,
+            8545.85,
+            8544.86,
+            1559390400000000,
+            "0.000116"
+          ],
+          "cash": 1.9999898684765232
+        },
+        {
+          "at": 1559390400,
+          "qty": 100,
+          "rate": 0.000141,
+          "amount": -1.6455929619973065e-06,
+          "mark": 8568.34,
+          "laterMark": 8569.55,
+          "prior": [
+            1559390399374538,
+            1559390399357000,
+            8568.34,
+            8568.34,
+            1559390400000000,
+            "0.000141"
+          ],
+          "later": [
+            1559390416040665,
+            1559390399357000,
+            8569.55,
+            8568.34,
+            1559419200000000,
+            "0.000141"
+          ],
+          "cash": 1.9999882228835613
+        },
+        {
+          "at": 1559419200,
+          "qty": -100,
+          "rate": 0.0001,
+          "amount": 1.1714800830813677e-06,
+          "mark": 8536.21,
+          "laterMark": 8537.07,
+          "prior": [
+            1559419195541026,
+            1559419195000000,
+            8536.21,
+            8536.21,
+            1559419200000000,
+            "0.0001"
+          ],
+          "later": [
+            1559419207492898,
+            1559419195000000,
+            8537.07,
+            8536.21,
+            1559448000000000,
+            "0.0001"
+          ],
+          "cash": 1.9999896006062452
+        }
+      ],
+      "closed_trade_BTC": {
+        "entry_order": 1,
+        "exit_order": 2,
+        "gross": "0.00001844673012032105181014209967131752914057200",
+        "gross_at_fills": "0.00001776455536110503624051283920940185539575400",
+        "fees": "0.000017534641019604580675323124963480173690343684",
+        "execution": "6.8217475921601556962926046191567374481800E-7",
+        "after_fees": "9.12089100716471134818974707837355450228316E-7",
+        "after_fees_at_fills": "2.29914341500455565189714245921681705410316E-7",
+        "funding": "-0.0000030031342207189238029181511088260914973915697",
+        "net": "-0.0000027732198792184682377284368629044097919812537"
+      },
+      "ending_open_BTC": {
+        "position_contracts": -100,
+        "entry_USD": "8525",
+        "entry_fee": "0.0000087976539589442815249266862170087976539589440",
+        "funding": "0.0000011714800830813674921305825419009138716128118",
+        "unrealized": "-0.00009565578580056050482808385360326211477575800"
+      },
+      "ending_wallet_BTC": "1.9999896006062449186177294754594619877064257",
+      "maximum_adjacent_funding_mark_sensitivity_BTC": "5.076306696257981699726202008805499410653E-10",
+      "fractional_satoshi_fee_funding_bound_BTC": "6E-8",
+      "drawdown_on_five_second_marked_equity": {
+        "net": {
+          "BTC": "0.0002166039575679841025679128411979863650355",
+          "fraction": "0.00010829721294829218983117738197703635535209808"
+        },
+        "after_fees": {
+          "BTC": "0.0002161298446890681636973173881250540673399",
+          "fraction": "0.00010806009359572837651699674022126888565225596"
+        },
+        "gross": {
+          "BTC": "0.0001985715319285820062233193317410087085365",
+          "fraction": "0.000099280893976406862719620342979300790971788809"
+        }
+      },
+      "market_capture": {
+        "trades": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/trades/2019/06/01/XBTUSD.csv.gz",
+          "dataset": "trades",
+          "bytes": 15430080,
+          "sha256": "bccc281eeb2b293868f761d4292389bdfc1140875b3c0d26abd1de21c82df78a",
+          "rows": 530184,
+          "first_local_us": 1559347209580412,
+          "last_local_us": 1559433598110068,
+          "max_gap_us": 33680880
+        },
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/quotes/2019/06/01/XBTUSD.csv.gz",
+          "dataset": "quotes",
+          "bytes": 17734006,
+          "sha256": "acab98cbb431378ac1836c9b6bffca0a7a8c668e2b7754737b4b89a1166d754e",
+          "rows": 1905521,
+          "first_local_us": 1559347200412237,
+          "last_local_us": 1559433599837049,
+          "max_gap_us": 15553437
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2019/06/01/XBTUSD.csv.gz",
+          "dataset": "derivative_ticker",
+          "bytes": 1066870,
+          "sha256": "71a1a2f9aebb8f034e6b1a9ee096a57167885195ba7c98c33a29329ba3c3ba7e",
+          "rows": 88093,
+          "first_local_us": 1559347200414549,
+          "last_local_us": 1559433598111251,
+          "max_gap_us": 23922565
+        }
+      },
+      "warmup_references": [
+        {
+          "date": "2019-05-30",
+          "one_minute": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/1m/XBTUSD-2019-05-30-1m.json",
+            "sha256": "ef4f94b63522055d9de95c27f853b5d7c092e390a9cbb3bf46cc8f15a0defdad",
+            "bytes": 87605,
+            "raw_bars": 1440,
+            "seconds": 60
+          },
+          "five_minutes": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/5m/XBTUSD-2019-05-30-5m.json",
+            "sha256": "695df4d3b1f11145649998a7068a901e28e16292c0d9ad6cfc6aa2ff3f749b90",
+            "bytes": 17869,
+            "raw_bars": 288,
+            "seconds": 300
+          },
+          "mirrors_ohlc_equal": 96,
+          "mirrors_close_equal": 96
+        },
+        {
+          "date": "2019-05-31",
+          "one_minute": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/1m/XBTUSD-2019-05-31-1m.json",
+            "sha256": "edba97dc7d6886037415a4905cf062a2723fc46db207a8a6fd54c12372d1d292",
+            "bytes": 87543,
+            "raw_bars": 1440,
+            "seconds": 60
+          },
+          "five_minutes": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/5m/XBTUSD-2019-05-31-5m.json",
+            "sha256": "ae9220e465647bc6b1f87ea5f385e91cdb215786edff7bd001e4db8259672f6e",
+            "bytes": 17843,
+            "raw_bars": 288,
+            "seconds": 300
+          },
+          "mirrors_ohlc_equal": 96,
+          "mirrors_close_equal": 96
+        },
+        {
+          "date": "2019-06-01",
+          "one_minute": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/1m/XBTUSD-2019-06-01-1m.json",
+            "sha256": "d0ef9e4ee420455962a4be0cde46c8b488071830e467a75f88b29a079d3cad94",
+            "bytes": 87053,
+            "raw_bars": 1440,
+            "seconds": 60
+          },
+          "five_minutes": {
+            "url": "https://raw.githubusercontent.com/Celeborn2BeAlive/bitmex-xbtusd-history/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9/5m/XBTUSD-2019-06-01-5m.json",
+            "sha256": "b1d4f5260401b47d7ad8d6de7835193057ca523cb1a965f137a9787df666b518",
+            "bytes": 17774,
+            "raw_bars": 288,
+            "seconds": 300
+          },
+          "mirrors_ohlc_equal": 96,
+          "mirrors_close_equal": 96
+        }
+      ],
+      "same_day_receipt_crosschecks": {
+        "mirror_vs_capture_close_equal": 95,
+        "mirror_vs_capture_ohlc_equal": 66,
+        "comparable": 96
+      },
+      "indicator_events": 81,
+      "ta_highest_nonpositive_windows": 0,
+      "no_order_stale_quote_observations": 21
+    }
+  ],
+  "source": {
+    "id": 2401,
+    "publisher": "https://www.fmz.com/strategy/200131",
+    "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%90%95%E7%A5%9E-%E7%AE%80%E6%98%93%E6%B3%A2%E5%8A%A8%E7%8E%87%E7%AD%96%E7%95%A5.md",
+    "archive_path": "strategies-7853bb2bf262c4567ac238d3552d97f0e50cb801/吕神-简易波动率策略.md",
+    "archive_document_sha256": "34c676efd2d098351a40a6bd59a13742c92c2338d2cb4b3fc4bd74873250fc64",
+    "archived_source_sha256": "ee93abbb891ec5aa95d7ed862137586102b69b1e7b40e4b34530950ce7ab581f",
+    "settings": {
+      "period": "15m",
+      "N": 90,
+      "Amount": 100,
+      "start": "2019-04-18 00:00:00",
+      "end": "2020-04-17 23:59:00",
+      "contract": "XBTUSD",
+      "exchange": "Futures_BitMEX"
+    }
+  },
+  "inputs": {
+    "staged_sha256": "01f17d697756c80f90dbaab8bcf087649c9b52250e492c96caa0375295844229",
+    "receipt_sha256": "a6ff690cfb7d9031ea735021652e9beff69a1afc211d8928848aca5253325aa4",
+    "native_engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "worker_sha256": "6f17c83326d4d205bcb35ea056bc624a116705214176214cced37590ec152297",
+    "stage_sha256": "98774b09588a9bba1c83b29524a4d00ff1dca0a2ea407d2b8f8f710533d9c46f",
+    "verifier_sha256": "563ed6adceda35ce3cc4b2b854cafe5c384dfdc932f72cc9bca10fedfb8edcd1"
+  },
+  "method": {
+    "market": "Exactly the authored XBTUSD venue/product. Free first-of-month UTC windows within the source period, flat with 2 virtual BTC collateral. No original wallet size published. The dates and 20-hour scopes were set before replay. One unresolved position at cutoff is marked separately in each window without forced liquidation.",
+    "signals": "Run the archived JavaScript in a network-denied worker using FMZ's native WASM TA.MA/Highest/Lowest. The source computes volatility once on the first available 5-second poll per new 15-minute bar, using the price then available. During initialization the archived lookback index differs by one from the live loop. Native Highest/Lowest exclude the current array element. Highest uses Number.MIN_VALUE for all-nonpositive pre-windows, which did not affect either measured scope. The Decimal ledger verifier independently replays the signals with a Python math calculation.",
+    "warmup": "200 causal XBTUSD closes seeded from a pinned exchange-API mirror. Its own 1m and 5m daily archives produce the same 96 closes for all six dates, and all sixteen overlapping seed closes match independent normalized raw trades. Across the two full replay dates, 191/192 complete-bar closes and 130/192 entire OHLC vectors match; API open conventions and boundary publication differ. Indicator entries after startup use the causal raw trade path. The FMZ Q 15m archive was independently rejected as not exact, and is unused.",
+    "fills": "Every programmed limit crosses the observed best bid or ask. Full 100-contract size is verified at that price for the ensuing 100ms of market quotes. Source identical executable logic uses neutral plotting output sinks. Delays beyond 100ms and counterfactual market impact are not estimated. Position equity exceeds 1.98 BTC above the maintenance and exit reserve throughout.",
+    "accounting": "Inverse USD-face contracts with native BTC settlement. Compare against entry and exit last-trade references to attribute pure execution cost separately. Gross is pre-fee reference P&L. Fee and funding models are separately pinned; venue 0.075% taker and the capture's scheduled funding rate and last pre-roll mark. Closed-trade P&L includes only fees and funding attributable to closed positions. Separate diagnostics give actual fill-price gross/after-fee P&L and realized-plus-open marked drawdown. No ETH history substitution or scaling.",
+    "precision": "Simulated amounts use continuous inverse contract math and fractional-satoshi precision. Decimal reconciliation independently matches every native cash/position/mark and source decision. Funding sensitivity uses the first observed rolled mark, and the separate rounding envelope allows up to one satoshi per debit/credit event."
+  },
+  "reproduction": "Run the stage with --archive and --output, using the published R20 BitMEX capture helper beside it. Run the worker in the existing offline AppContainer with the staged job named round26-2401-xbtusd-tape.json.gz. Verify the resulting receipt with --job --receipt --worker --stage --output.",
+  "reference_urls": [
+    "https://www.fmz.com/strategy/200131",
+    "https://www.fmz.com/syntax-guide/fun/ta/ta.highest",
+    "https://www.fmz.com/syntax-guide/fun/ta/ta.lowest",
+    "https://docs.tardis.dev/historical-data-details/bitmex",
+    "https://github.com/Celeborn2BeAlive/bitmex-xbtusd-history/tree/8e3e1a5eaeaf1af4de4fd77dbecca5deb644c5b9",
+    "https://docs.bitmex.com/api-explorer/get-trade-bucketed",
+    "https://www.bitmex.com/blog/why-we-revamped-our-fee-structure"
+  ]
+}
