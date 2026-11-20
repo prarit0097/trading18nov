@@ -1,0 +1,451 @@
+{
+  "coverage": [
+    [
+      363,
+      "Excluded · Execution, reference or operations artifact",
+      "Published source is a Python language primer with function, class, dictionary and module examples. It contains no exchange integration or trading decision rule."
+    ],
+    [
+      618,
+      "Excluded · Execution, reference or operations artifact",
+      "Exports a base exchange factory and configuration lookup. Its main tests subscription, account retrieval and accounting for a sample contract. Order examples are commented out."
+    ],
+    [
+      1016,
+      "Excluded · Execution, reference or operations artifact",
+      "Trading side, size and symbol are parsed from a command supplied to GetCommand. The published source translates once-received conditions into venue orders. It cannot produce historical signals from prices."
+    ],
+    [
+      1018,
+      "Excluded · Execution, reference or operations artifact",
+      "Author requires a separate server, and the source dispatches externally submitted instructions. Sizing, persistence and venue handling do not supply the originating market signal."
+    ],
+    [
+      1019,
+      "Excluded · Execution, reference or operations artifact",
+      "main passes GetCommand to HandleCommand. CheckSignal validates the external request and the remaining code routes the selected action. The source supplies no originating signal model."
+    ],
+    [
+      1020,
+      "Excluded · Execution, reference or operations artifact",
+      "This copy follows the same external signal path through CheckSignal and HandleCommand. It has no independent market decision source."
+    ],
+    [
+      1022,
+      "Excluded · Execution, reference or operations artifact",
+      "main processes GetCommand instructions or operator tests and submits the named trades through the Binance exchange interface. Prices are consulted to execute the requested instructions."
+    ],
+    [
+      1023,
+      "Excluded · Execution, reference or operations artifact",
+      "The OKX version also turns GetCommand messages into the directed trades. No market-driven entry generator is published in its source."
+    ],
+    [
+      1093,
+      "Excluded · Execution, reference or operations artifact",
+      "Exports account, instrument and funding information queries. The executable main only logs a funding-rate read and a position-risk read."
+    ],
+    [
+      1104,
+      "Excluded · Execution, reference or operations artifact",
+      "Exports caller-supplied order, depth, retry and metrics helpers. Its main prints sample calculations and executes a fixed demonstration TradeCancel call rather than deriving direction from prices."
+    ],
+    [
+      1311,
+      "Excluded · Execution, reference or operations artifact",
+      "Probes tiny fixed buy sizes to extract the venue minimum from its error text and stores that value in _G. These intentionally undersized requests implement a metadata workaround."
+    ],
+    [
+      2397,
+      "Excluded · Execution, reference or operations artifact",
+      "Exports OpenPos and ClosePos. Its main runs a fixed sequence of example calls on a configured contract. The side and quantity are supplied directly by the caller."
+    ],
+    [
+      4411,
+      "Excluded · Execution, reference or operations artifact",
+      "Iterates held assets, fetches venue lot sizes, cancels resting orders and liquidates balances into the selected quote currency. No entry signal is present."
+    ],
+    [
+      4413,
+      "Excluded · Execution, reference or operations artifact",
+      "Transfers USDT to spot, buys BNB and transfers it back to fund fee deductions. Its purpose and contract are maintenance, and it defines no BTC or ETH market exposure."
+    ],
+    [
+      4423,
+      "Excluded · Execution, reference or operations artifact",
+      "Polls the venue symbol list and persists symbols and notifications. Its main calls onTick; no executable exchange order function is present."
+    ],
+    [
+      4810,
+      "Excluded · Execution, reference or operations artifact",
+      "Reads already-held positions and sends close-only market orders for open longs and shorts. No entry or position selection strategy is authored."
+    ],
+    [
+      4919,
+      "Excluded · Execution, reference or operations artifact",
+      "Publisher documents a manually launched terminal plugin. It cancels and replaces orders to acquire an operator-supplied amount, then reports execution cost. There is no subsequent exit decision."
+    ],
+    [
+      4923,
+      "Excluded · Execution, reference or operations artifact",
+      "The companion manual plugin works down a caller-supplied sale amount from existing inventory and reports execution cost. It does not originate an entry."
+    ],
+    [
+      4940,
+      "Excluded · Execution, reference or operations artifact",
+      "Uses a random recurrence to print a simulated profit line from account balance. No historical market price or trade is involved."
+    ],
+    [
+      5151,
+      "Excluded · Execution, reference or operations artifact",
+      "Derives follower orders from balance changes of the selected leader account. Its virtual-only test randomly changes the leader for demonstration. The leader market signal is external."
+    ],
+    [
+      5198,
+      "Excluded · Execution, reference or operations artifact",
+      "The manager stores grid order state and exposes event callbacks. Its example supplies fake order IDs in the callbacks. No self-contained exchange strategy is provided."
+    ],
+    [
+      5308,
+      "Excluded · Execution, reference or operations artifact",
+      "Parses incoming GetCommand order instructions. Copy-size controls alter how a prescribed action is forwarded and provide no independent signal."
+    ]
+  ],
+  "results": [],
+  "source_evidence": [
+    {
+      "id": 363,
+      "role": "Python tutorial",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/FMZ%E6%95%99%E7%A8%8B-Python%E9%80%9F%E6%88%90%E6%89%8B%E5%86%8C.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "c8533e53a109d4616fef5af2b226f38651487aab35e521f4b338f3737f7aeb3c",
+      "block_sha256": [
+        "752f2e02b104b65f0d602144063d99a3dd51c0ffb05ea6dc305fe5ee29cc94ab"
+      ],
+      "verified_markers": [
+        "def varargs(",
+        "class Human(",
+        "dir(math)"
+      ]
+    },
+    {
+      "id": 618,
+      "role": "Multi-symbol exchange adapter",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/MultiSymbolCtrlLib.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "f010a630e8a3eb0abd0efae23518731b15f302c4f3d46be5eb07428ba876b07c",
+      "block_sha256": [
+        "7fc2d96f89692e274c0b0419f4667ca743a1e8678a81baa43a6eb8a60aab85a8"
+      ],
+      "verified_markers": [
+        "$.createBaseEx = createBaseEx",
+        "$.getConfigureFunc =",
+        "ex.goGetAcc(symbol, ts)",
+        "下单测试"
+      ]
+    },
+    {
+      "id": 1016,
+      "role": "TradingView webhook router",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TradingViewWebHook%E4%BF%A1%E5%8F%B7%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "8ceb4b7892e81fdd992ef26765e51cb7fd5c419f6961708d83332670f43adae5",
+      "block_sha256": [
+        "46fa6391f67182357510ad3458670b43ae782697ee100a5139cf9f930f438487"
+      ],
+      "verified_markers": [
+        "var cmd = GetCommand()",
+        "$.Buy(amount)",
+        "exchange.SetDirection"
+      ]
+    },
+    {
+      "id": 1018,
+      "role": "TradingView order executor",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TradingView%E4%B8%8B%E5%8D%95%E6%9C%BA%E5%99%A8%E4%BA%BA11.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "54c71cb3954bb1cc1d055fdb0b85cba809c4440cb450b2adb087689896e58fab",
+      "block_sha256": [
+        "2547a9a54312e156547bde909b100c875850d65b4288864ddbf5277a26279fa7"
+      ],
+      "verified_markers": [
+        "var cmd = GetCommand();",
+        "exchanges[num].Buy(",
+        "exchanges[num].Sell("
+      ]
+    },
+    {
+      "id": 1019,
+      "role": "TradingView signal validator and executor",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TradingView%E4%BF%A1%E5%8F%B7%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A521%E6%95%99%E5%AD%A6.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "366f17c066b1768e4834ec0cc54d477792fc3d70fe5575af4a1beef4ef50169b",
+      "block_sha256": [
+        "dfd4c41270e6d47f962d35d0dd197e5564a33c518e557ae2c5c33f73d3c5ac3b"
+      ],
+      "verified_markers": [
+        "function CheckSignal(Signal)",
+        "function HandleCommand(signal)",
+        "HandleCommand(GetCommand())"
+      ]
+    },
+    {
+      "id": 1020,
+      "role": "TradingView signal executor fork",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TradingView%E4%BF%A1%E5%8F%B7%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A52%E6%95%99%E5%AD%A6-Copy.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "565657b86c198c3516a764157ddcf0a005807b5a117394f87caef5c76d1750c0",
+      "block_sha256": [
+        "f81a9b0b5fc61134d0ac58254757c702913897c6373a57ecf51c722ed0f31883"
+      ],
+      "verified_markers": [
+        "function CheckSignal(Signal)",
+        "function HandleCommand(signal)",
+        "HandleCommand(GetCommand())"
+      ]
+    },
+    {
+      "id": 1022,
+      "role": "Binance TradingView execution bridge",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TradingView%E7%AD%96%E7%95%A5%E4%BF%A1%E5%8F%B7%E4%B8%8B%E5%8D%95%E6%9C%BA%E5%99%A8%E4%BA%BA-%E5%B8%81%E5%AE%89%E7%89%88.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "1f8646b425d1642522ad9b7e67c253889e87587df58105b35d66cb3959f3029a",
+      "block_sha256": [
+        "352477c3806a1f6643e164069cf8341b36c24759fbc29af93c96abe2c780263e"
+      ],
+      "verified_markers": [
+        "var cmd = GetCommand()",
+        "exchange.Buy(-1, amount)",
+        "exchange.Sell(-1, amount)"
+      ]
+    },
+    {
+      "id": 1023,
+      "role": "OKX TradingView execution bridge",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TradingView%E7%AD%96%E7%95%A5%E4%BF%A1%E5%8F%B7%E4%B8%8B%E5%8D%95%E6%9C%BA%E5%99%A8%E4%BA%BA-%E6%AC%A7%E6%98%93%E7%89%88.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "4405644ae84bc60bbb95468061a9396ee758a45d2f2d80b36cfb54d82f1e2c33",
+      "block_sha256": [
+        "13352813800962429a2e78c0e37c42040a298bad9b5b4178def538cfd047a494"
+      ],
+      "verified_markers": [
+        "var cmd = GetCommand()",
+        "exchange.Buy(-1, amount)",
+        "exchange.Sell(-1, amount)"
+      ]
+    },
+    {
+      "id": 1093,
+      "role": "Binance account and market utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/binance_util.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "752d03c9aff9fda69987b30443bc29f5aedce4d28a798e772ebbc03a978bbc96",
+      "block_sha256": [
+        "f975c3cd20fa16384dc3a849ac59a96543bcbe6d246ca36923901b0282b3713b"
+      ],
+      "verified_markers": [
+        "$.Binance_Api_Spot_ExchangeInfo",
+        "Log($.Binance_Api_FundingRate(exchange))",
+        "Log($.Binance_Api_PositionRisk(exchange))"
+      ]
+    },
+    {
+      "id": 1104,
+      "role": "Shared execution helper",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/common.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "38f34f80c31bf56adad57150f6676fb096fd691c39b3277046eb70ba836c6986",
+      "block_sha256": [
+        "ca672beb683f1cef875dc3da526777d4092d365193ab0c48c0e7da4f32599759"
+      ],
+      "verified_markers": [
+        "$.TradeCancel =",
+        "$.TradeRetry =",
+        "Log('TradeCancel buy:"
+      ]
+    },
+    {
+      "id": 1311,
+      "role": "Minimum-size metadata probe",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E4%BB%A3%E6%9B%BF%E5%BA%9F%E5%BC%83%E7%9A%84GetMinStock%E5%87%BD%E6%95%B0.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "eb44479591a077fb5665d7a97a2137e876e8934a5e5616fee8fec4dd5dcb45f4",
+      "block_sha256": [
+        "27ffd68b25a2d199a3a0fefeeea4384821dc31ca7f24a6c6da20541fdcb75f8d"
+      ],
+      "verified_markers": [
+        "SetErrorFilter(",
+        "exchange.Buy(ticker.Sell, 0.00000001)",
+        "_G(exchange.GetName()+exchange.GetCurrency(),min)"
+      ]
+    },
+    {
+      "id": 2397,
+      "role": "Open and close order template",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%90%88%E7%BA%A6%E4%B8%8B%E5%8D%95.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "13d9fde03f8c540d72b977a05fc67123cbc2a353950bef61f8823558d12cc11b",
+      "block_sha256": [
+        "d0519f844f154e1ec6b1a8248490fc2385b82795dfd10bd975c75e751aecb8f6"
+      ],
+      "verified_markers": [
+        "$.OpenPos =",
+        "$.ClosePos =",
+        "Log($.OpenPos('buy', 2))"
+      ]
+    },
+    {
+      "id": 4411,
+      "role": "One-shot balance liquidation",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%87%BA%E5%94%AE%E6%89%80%E6%9C%89%E5%B1%B1%E5%AF%A8%E5%B8%81.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "a4414b46bed1bce9fccffc9447b061f07b1c1efb80d6896df73a4bc52a4c71b0",
+      "block_sha256": [
+        "122eee1e39cb2d1590fd156adfdd8f8e0445bd1923144dac66ae4a89afd59077"
+      ],
+      "verified_markers": [
+        "var quoteCurrency",
+        "ele.free",
+        "exchange.Sell(-1, v)"
+      ]
+    },
+    {
+      "id": 4413,
+      "role": "BNB fee balance utility",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6BNB%E6%89%8B%E7%BB%AD%E8%B4%B9%E6%8A%B5%E6%89%A3-%E8%87%AA%E5%8A%A8%E8%B4%AD%E4%B9%B0%E8%87%AA%E5%8A%A8%E5%88%92%E8%BD%AC.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "01b84fc9058c28fc45d5616cfa756c9ce5523b58bb3c30e8cc71bfe7d9105f7e",
+      "block_sha256": [
+        "4f6024148eba5029858cce6c22c155b685a942084ba11539468e5cbc13d5f37d"
+      ],
+      "verified_markers": [
+        "def supply_bnb(",
+        "/sapi/v1/futures/transfer",
+        "transfer_bnb = acc.Stocks"
+      ]
+    },
+    {
+      "id": 4423,
+      "role": "Listing announcement monitor",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E6%96%B0%E4%BA%A4%E6%98%93%E5%AF%B9%E4%B8%8A%E7%BA%BF%E7%9B%91%E6%8E%A7.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "8f49b87dc0dab9ea916215c2b2d1ea918c0538779c9b8b51cb84dde3ec5eab8f",
+      "block_sha256": [
+        "8961900e828b7adba66aff758bd25394191c6bd343b66c5880d0659498884564"
+      ],
+      "verified_markers": [
+        "function onTick()",
+        "onTick();",
+        "_G(\"Notified\", Notified)"
+      ]
+    },
+    {
+      "id": 4810,
+      "role": "One-click perpetual liquidation",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%B0%B8%E7%BB%AD%E5%90%88%E7%BA%A6%E4%B8%80%E9%94%AE%E5%B8%82%E4%BB%B7%E5%B9%B3%E4%BB%93.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "e4a4a0f6758c4d3bb3d57a3061b83f0a3c61b3e35f9237eb5907d66b12b712ac",
+      "block_sha256": [
+        "51b76305bd4760d308ac7d862b1573b67c0decae7e09d18cf46f720d4fa430b6"
+      ],
+      "verified_markers": [
+        "positionAmt",
+        "exchange.SetDirection('closebuy')",
+        "exchange.SetDirection('closesell')"
+      ]
+    },
+    {
+      "id": 4919,
+      "role": "One-way best-bid execution",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%8E%B0%E8%B4%A7%E4%B9%B0%E5%85%A5%E4%B8%80%E7%9B%B4%E5%8D%A0%E6%8D%AE%E4%B9%B0%E4%B8%80%E6%8F%92%E4%BB%B6.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "e305daef902c9f70a0b66cf2c4463c47a926f43cd8bd5d6a617c97745939647a",
+      "block_sha256": [
+        "602f7321a7c1ad2a3d0766495f85ba0c2478d20b01bd37f6b9853ce83af38883"
+      ],
+      "verified_markers": [
+        "BuyAmount - dealAmount",
+        "exchange.Buy(ticker.Buy",
+        "return 'order is done, avg cost is '"
+      ]
+    },
+    {
+      "id": 4923,
+      "role": "One-way best-ask execution",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%8E%B0%E8%B4%A7%E5%8D%96%E5%87%BA%E4%B8%80%E7%9B%B4%E5%8D%A0%E6%8D%AE%E5%8D%96%E4%B8%80%E6%8F%92%E4%BB%B6.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "05668de64f663b334134206cb665fc6eff464ae11e823900d3db92d7e680e50f",
+      "block_sha256": [
+        "40c83c5e3c171189827ad22a7ebd071d5ef7d0142b5a7a0ec1817d109e480017"
+      ],
+      "verified_markers": [
+        "SellAmount - dealAmount",
+        "exchange.Sell(ticker.Sell",
+        "return 'order is done, avg cost is '"
+      ]
+    },
+    {
+      "id": 4940,
+      "role": "Synthetic reporting example",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%94%BB%E7%BA%BF%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%80%E5%B9%B4%E7%BF%BB%E5%80%8D%E5%9B%9E%E6%92%A41%E5%AE%8C%E7%BE%8E%E6%9B%B2%E7%BA%BF.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "d54d60da12962e6e5f04de4d631221963919728abd6751c6eb780384bd7620f8",
+      "block_sha256": [
+        "130f51c007f41b9288bc4add22a31b40f2673c1a2ccb61f33ac83ab66c6ad911"
+      ],
+      "verified_markers": [
+        "import random",
+        "LogProfit(balance - account[\"Balance\"])",
+        "random.random()"
+      ]
+    },
+    {
+      "id": 5151,
+      "role": "Copy-trade example",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%AE%80%E6%98%93%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%8E%B0%E8%B4%A7%E8%B7%9F%E5%8D%95%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%AD%96%E7%95%A5.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "df4cf637c7c15569e4f693dc29201aa55b9aa838fc639882d16df399a593a58b",
+      "block_sha256": [
+        "20d1c3edaf6c9641f0d77c89546978013020ac6085ccacc4da302eda0c7fd81a"
+      ],
+      "verified_markers": [
+        "if(IsVirtual())",
+        "test()",
+        "var nowAcc = _C(exchange.GetAccount)"
+      ]
+    },
+    {
+      "id": 5198,
+      "role": "Grid state manager",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%BD%91%E6%A0%BC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "84f72aa81c89b88e2408c340e0187e1108172322de468afad091ffcc1b8e6fdc",
+      "block_sha256": [
+        "4c93f51e30ea0c10ca9d7c8e4cabba00ea3047081d24ebd45fe6973698a46d28",
+        "cff8373fde211b89828246d22579785e95d33ca645e18ab16eaa9ce262f0f072",
+        "0b7a67e7a50a22496055d2431fbde6673dfa6af750f265cb5cbb31743a1e6dbc"
+      ],
+      "verified_markers": [
+        "class GridPriceManager",
+        "@gm.event('add_order')",
+        "'up': 36543"
+      ]
+    },
+    {
+      "id": 5308,
+      "role": "Order synchronization server",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%AE%A2%E5%8D%95%E5%90%8C%E6%AD%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9FSynchronous-Server.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "deffa3d431d7a72ee64500efc65791ad5454d9fb2d845e2489eb0cbdccfef2ee",
+      "block_sha256": [
+        "c0f47246b8df8b83ae66de6a0bff78a84027ea6bed1ec4d9d5237e062ad55a88"
+      ],
+      "verified_markers": [
+        "function parseCmd(cmd)",
+        "var cmd = GetCommand()",
+        "var objAction = parseCmd(cmd)"
+      ]
+    }
+  ],
+  "scope": "Pinned public source roles and decision paths reviewed individually. Historical P&L requires the independent source strategy, rather than inventing fills from an external signal or execution instruction."
+}

@@ -152,15 +152,15 @@ class Order:
         return None, None
 
 
-def proposal(mark, decision, note, cash, base, lot):
+def proposal(mark, decision, note, cash, base, lot, *, minimum_buy=0.98, market_floor=0.3):
     buy, market = note < 0, decision.startswith("very_")
     risk = 0.1 if buy else 0.5
     if market:
         limit, stop = None, None
-        fraction = min(1.0, 0.3 + (abs(note) + risk) * 0.35)
+        fraction = min(1.0, market_floor + (abs(note) + risk) * 0.35)
     else:
         skew = (1.5 - abs(note)) * 0.0075
-        factor = max(0.98, 0.995 - skew) if buy else min(1.02, 1.005 + skew)
+        factor = max(minimum_buy, 0.995 - skew) if buy else min(1.02, 1.005 + skew)
         limit = floor_lot(mark * factor, 0.01)
         stop = None if buy else floor_lot(mark * 0.97, 0.01)
         fraction = min(0.9, 0.1 + (abs(note) + risk) * 0.4)
@@ -175,8 +175,8 @@ def proposal(mark, decision, note, cash, base, lot):
     return None
 
 
-def replay(bars, signals, start, end, lot):
-    cash, base = START_CASH, START_BASE
+def replay(bars, signals, start, end, lot, *, start_base=START_BASE, order_factory=proposal):
+    cash, base = START_CASH, start_base
     inventory, receipts, fills = deque(), [], []
     pending, prev, seed_price = None, None, None
     for at, opn, high, low, close, volume in bars:
@@ -186,11 +186,12 @@ def replay(bars, signals, start, end, lot):
             break
         if seed_price is None:
             seed_price = opn
-            inventory.append([base, seed_price, 1.0])
+            if base:
+                inventory.append([base, seed_price, 1.0])
         if at in signals:
             price, state, note = signals[at]
             if prev != state and state != "neutral":
-                pending = proposal(price, state, note, cash, base, lot)
+                pending = order_factory(price, state, note, cash, base, lot)
             prev = state
         if pending is None:
             continue
@@ -249,12 +250,12 @@ def data_with_opens(root, symbol):
     return output, digests
 
 
-def summarize(result):
+def summarize(result, *, start_base=START_BASE):
     output = metrics(result["receipts"], len(result["inventory"]))
     changes = defaultdict(float)
     for at, gross, fees, costs in result["receipts"]:
         changes[at] += gross - fees - costs
-    equity = peak = START_CASH + START_BASE * result["seed"]
+    equity = peak = START_CASH + start_base * result["seed"]
     maximum = 0.0
     for at in sorted(changes):
         equity += changes[at]

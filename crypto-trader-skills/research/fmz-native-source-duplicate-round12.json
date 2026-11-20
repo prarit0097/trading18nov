@@ -1,0 +1,33 @@
+{
+  "coverage": [
+    [
+      4673,
+      "Excluded · Exact duplicate of FMZ #1320",
+      "Pinned JavaScript, embedded backtest settings and published parameter sections are byte-identical to #1320. Differences are name, author, FMZ listing and modification date. Follow the original #1320 for historical coverage."
+    ],
+    [
+      1320,
+      "Pending · Native registration and configuration",
+      "Canonical authored copy for #4673. Embedded ETH_USDT Futures_Binance settings and fees are available. The registration and stored arrCfg still need a source-bound offline runtime mapping."
+    ]
+  ],
+  "results": [],
+  "source_evidence": {
+    "1320": {
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E4%BB%B7%E6%A0%BC%E6%8C%AF%E5%B9%85%E5%9D%87%E7%BA%BF-3%E5%B9%B433%E4%B8%87%E5%80%8D%E6%94%B6%E7%9B%8A.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "a724f1bcf1704718cd6bc3eead852e15eb8847d3175f2d0600493afd8cf628b1",
+      "strategy_code_sha256": "92674f6abca6fb64fc3f5985de81a40368fe3917503a91e582c5418afb96b031",
+      "embedded_backtest_sha256": "3b4a529ff28d39b593b62ee8eccb0dfa9825deed88dc23e53f6dc5c4df8e6f70",
+      "layout_after_author": "545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d"
+    },
+    "4673": {
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%94%B6%E8%97%8F%E4%BB%B7%E6%A0%BC%E6%8C%AF%E5%B9%85%E5%9D%87%E7%BA%BF-3%E5%B9%B433%E4%B8%87%E5%80%8D%E6%94%B6%E7%9B%8A.md",
+      "archive_commit": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+      "document_sha256": "c1f188f485def49916d93b7f20146a4008f2a36b743fda2dd5fad5e2ca243348",
+      "strategy_code_sha256": "92674f6abca6fb64fc3f5985de81a40368fe3917503a91e582c5418afb96b031",
+      "embedded_backtest_sha256": "3b4a529ff28d39b593b62ee8eccb0dfa9825deed88dc23e53f6dc5c4df8e6f70",
+      "layout_after_author": "545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d"
+    }
+  }
+}

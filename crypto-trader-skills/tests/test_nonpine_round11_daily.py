@@ -43,3 +43,11 @@ def test_limit_requires_trade_through_and_neutral_keeps_order():
     assert fill["reason"] == "limit"
     assert result["remaining_base"] > 10
     assert result["remaining_cash"] >= 0
+
+
+def test_replay_with_cash_only_configuration_never_creates_short_inventory():
+    bars = [(0, 100, 101, 99, 100, 100), (60, 100, 101, 99, 100, 100)]
+    result = replay(bars, {0: (100, "very_short", 0.9)}, 0, 120, 0.001, start_base=0)
+    assert result["fills"] == []
+    assert result["inventory"] == []
+    assert result["remaining_cash"] == 1000

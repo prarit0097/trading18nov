@@ -1,0 +1,1035 @@
+{
+  "coverage": [
+    [
+      6012,
+      "Tested \u00b7 OctoBot Signal Trading isolated-pair replay",
+      "Published Klinger and Bollinger reversal evaluators, closing 30m/1h/4h candles and sampled 1m alerts executed in separate BTC and ETH spot sleeves."
+    ]
+  ],
+  "results": [
+    {
+      "id": 6012,
+      "period": "2026-09-23 to 2026-10-21 UTC",
+      "group": "OctoBot Signal Trading \u00b7 isolated pair variant",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "archive_interval": "30m, 1h, 4h and 1m",
+      "interval": "30m/1h/4h + sampled 1m",
+      "order_family": "Market, limit, and paired stop",
+      "exit": "Source state transitions and Sell OCO",
+      "trades": 7,
+      "unsettled": 10,
+      "gross": -7671.867209851471,
+      "after_fees": -8913.705322364123,
+      "net": -9286.256756117913,
+      "fees": 1241.8381125126523,
+      "execution": 372.5514337537905,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross_dd": 9678.215414651446,
+      "fee_dd": 10519.291162595699,
+      "net_dd": 10771.613886978968,
+      "net_dd_pct": 0.012458911038180354
+    },
+    {
+      "id": 6012,
+      "period": "2026-10-21 to 2026-11-05 UTC",
+      "group": "OctoBot Signal Trading \u00b7 isolated pair variant",
+      "market": "BTCUSDT",
+      "currency": "USDT",
+      "archive_interval": "30m, 1h, 4h and 1m",
+      "interval": "30m/1h/4h + sampled 1m",
+      "order_family": "Market, limit, and paired stop",
+      "exit": "Source state transitions and Sell OCO",
+      "trades": 9,
+      "unsettled": 2,
+      "gross": -21166.653586683256,
+      "after_fees": -22454.483517931847,
+      "net": -22840.83249730642,
+      "fees": 1287.8299312485879,
+      "execution": 386.34897937457,
+      "gross_wins": 3,
+      "fee_wins": 3,
+      "net_wins": 3,
+      "gross_dd": 26738.144258610857,
+      "fee_dd": 27624.54720735045,
+      "net_dd": 27890.46809197233,
+      "net_dd_pct": 0.03355117544067784
+    },
+    {
+      "id": 6012,
+      "period": "2026-09-23 to 2026-10-21 UTC",
+      "group": "OctoBot Signal Trading \u00b7 isolated pair variant",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "archive_interval": "30m, 1h, 4h and 1m",
+      "interval": "30m/1h/4h + sampled 1m",
+      "order_family": "Market, limit, and paired stop",
+      "exit": "Source state transitions and Sell OCO",
+      "trades": 11,
+      "unsettled": 9,
+      "gross": -43.078428459000015,
+      "after_fees": -45.75343668664879,
+      "net": -46.55593915494339,
+      "fees": 2.6750082276487688,
+      "execution": 0.8025024682945946,
+      "gross_wins": 4,
+      "fee_wins": 4,
+      "net_wins": 4,
+      "gross_dd": 44.857351691000076,
+      "fee_dd": 46.38431385560216,
+      "net_dd": 46.84240250498078,
+      "net_dd_pct": 0.04682898771628082
+    },
+    {
+      "id": 6012,
+      "period": "2026-10-21 to 2026-11-05 UTC",
+      "group": "OctoBot Signal Trading \u00b7 isolated pair variant",
+      "market": "ETHUSDT",
+      "currency": "USDT",
+      "archive_interval": "30m, 1h, 4h and 1m",
+      "interval": "30m/1h/4h + sampled 1m",
+      "order_family": "Market, limit, and paired stop",
+      "exit": "Source state transitions and Sell OCO",
+      "trades": 15,
+      "unsettled": 1,
+      "gross": 24.420950636000043,
+      "after_fees": 21.21764596565756,
+      "net": 20.256654564554854,
+      "fees": 3.203304670342483,
+      "execution": 0.9609914011027026,
+      "gross_wins": 8,
+      "fee_wins": 8,
+      "net_wins": 8,
+      "gross_dd": 7.057547755000996,
+      "fee_dd": 8.72609635293884,
+      "net_dd": 9.226660932321465,
+      "net_dd_pct": 0.009226660932320555
+    }
+  ],
+  "observations": {
+    "BTCUSDT/2026-09-23": {
+      "fills": [
+        {
+          "at": 1790172600,
+          "price": 85040.99,
+          "quantity": 0.0036300000000000004,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1790242200,
+          "price": 83201.24,
+          "quantity": 0.0027800000000000004,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1790915160,
+          "price": 86642.33,
+          "quantity": 4.6254800000000005,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1790961840,
+          "price": 84326.91,
+          "quantity": 1.2853500000000002,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791146820,
+          "price": 85863.48,
+          "quantity": 2.8910600000000004,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1791338340,
+          "price": 84417.08,
+          "quantity": 1.7124100000000002,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791380760,
+          "price": 82909.58,
+          "quantity": 1.64274,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791381600,
+          "price": 83192.02,
+          "quantity": 2.55438,
+          "buy": true,
+          "reason": "market"
+        },
+        {
+          "at": 1791433140,
+          "price": 82619.69,
+          "quantity": 0.17859000000000003,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791472980,
+          "price": 81486.89,
+          "quantity": 0.12112,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791475200,
+          "price": 81037.99,
+          "quantity": 0.22731,
+          "buy": true,
+          "reason": "market"
+        },
+        {
+          "at": 1791546360,
+          "price": 83507.08,
+          "quantity": 4.7784,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1791830880,
+          "price": 82319.25,
+          "quantity": 1.55821,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791987600,
+          "price": 81916.31,
+          "quantity": 1.33443,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792071060,
+          "price": 80118.72,
+          "quantity": 0.75555,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792455720,
+          "price": 81533.29000000001,
+          "quantity": 0.34689000000000003,
+          "buy": true,
+          "reason": "limit"
+        }
+      ],
+      "receipts": [
+        [
+          1790915160,
+          2006.348204799976,
+          400.7623645684001,
+          120.22870937052
+        ],
+        [
+          1791146820,
+          -997.6758954000321,
+          248.23647248880002,
+          74.47094174664001
+        ],
+        [
+          1791546360,
+          -6709.042355400011,
+          207.38649289679992,
+          62.21594786903997
+        ],
+        [
+          1791546360,
+          -5.5625252067000135,
+          0.6115263633996274,
+          0.18345790901988002
+        ],
+        [
+          1791546360,
+          0.8493849647999904,
+          0.4632169799176205,
+          0.13896509397528
+        ],
+        [
+          1791546360,
+          -1052.7147220095023,
+          215.61808322123161,
+          64.6854249663666
+        ],
+        [
+          1791546360,
+          -914.0693016000009,
+          168.7599559941033,
+          50.62798679822873
+        ]
+      ],
+      "pending": {
+        "buy": false,
+        "quantity": 4.11875,
+        "limit": 84415.47,
+        "stop": 80778.44,
+        "stopped": false
+      },
+      "seed": 86208.57,
+      "remaining_base": 9.416726610000001,
+      "remaining_cash": 75741.45074408516,
+      "inventory": [
+        [
+          0.706225829999999,
+          84417.08,
+          0.999
+        ],
+        [
+          1.64109726,
+          82909.58,
+          0.999
+        ],
+        [
+          2.5518256200000002,
+          83192.02,
+          0.999
+        ],
+        [
+          0.17841141000000002,
+          82619.69,
+          0.999
+        ],
+        [
+          0.12099888,
+          81486.89,
+          0.999
+        ],
+        [
+          0.22708269,
+          81037.99,
+          0.999
+        ],
+        [
+          1.55665179,
+          82319.25,
+          0.999
+        ],
+        [
+          1.33309557,
+          81916.31,
+          0.999
+        ],
+        [
+          0.75479445,
+          80118.72,
+          0.999
+        ],
+        [
+          0.34654311000000004,
+          81533.29000000001,
+          0.999
+        ]
+      ],
+      "initial_base": 10,
+      "decision_counts": {
+        "scheduled": 1344,
+        "sampled_1m": 1
+      }
+    },
+    "BTCUSDT/2026-10-21": {
+      "fills": [
+        {
+          "at": 1792660320,
+          "price": 81666.64,
+          "quantity": 0.00487,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792852020,
+          "price": 79989.5,
+          "quantity": 0.00204,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792854960,
+          "price": 79412.22,
+          "quantity": 0.0017200000000000002,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793176500,
+          "price": 81692.32,
+          "quantity": 4.590260000000001,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1793306580,
+          "price": 78988.06,
+          "quantity": 2.4420100000000002,
+          "buy": false,
+          "reason": "stop"
+        },
+        {
+          "at": 1793317560,
+          "price": 78063.47,
+          "quantity": 3.0224400000000005,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793354700,
+          "price": 77452.79000000001,
+          "quantity": 1.1546500000000002,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793386260,
+          "price": 76608.18000000001,
+          "quantity": 0.89187,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793803320,
+          "price": 79211.91,
+          "quantity": 3.4978800000000003,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1793804700,
+          "price": 80252.92,
+          "quantity": 2.5344900000000004,
+          "buy": false,
+          "reason": "limit"
+        }
+      ],
+      "receipts": [
+        [
+          1793176500,
+          -6131.7611131999665,
+          374.9889888032001,
+          112.49669664096002
+        ],
+        [
+          1793306580,
+          -9865.915760800006,
+          192.88963240060002,
+          57.86688972018
+        ],
+        [
+          1793803320,
+          -11325.540257899984,
+          235.07956166429994,
+          70.52386849928997
+        ],
+        [
+          1793803320,
+          -11.94258056489998,
+          0.7830927764983352,
+          0.23492783294949
+        ],
+        [
+          1793803320,
+          -1.584697316399993,
+          0.32460928410361445,
+          0.09738278523108
+        ],
+        [
+          1793803320,
+          -0.34418866679999605,
+          0.27269725911481213,
+          0.08180917773444002
+        ],
+        [
+          1793803320,
+          598.9443398372026,
+          82.06436655178301,
+          24.619309965533816
+        ],
+        [
+          1793804700,
+          5469.002917788492,
+          395.6519470851968,
+          118.69558412555386
+        ],
+        [
+          1793804700,
+          102.48775413910248,
+          5.7750354237912775,
+          1.7325106271373079
+        ]
+      ],
+      "pending": null,
+      "seed": 83028.14,
+      "remaining_base": 2.0078724099999987,
+      "remaining_cash": 653476.3834011235,
+      "inventory": [
+        [
+          1.1168942799999992,
+          77452.79000000001,
+          0.999
+        ],
+        [
+          0.89097813,
+          76608.18000000001,
+          0.999
+        ]
+      ],
+      "initial_base": 10,
+      "decision_counts": {
+        "scheduled": 720,
+        "sampled_1m": 1
+      }
+    },
+    "ETHUSDT/2026-09-23": {
+      "fills": [
+        {
+          "at": 1790172420,
+          "price": 2707.64,
+          "quantity": 0.1063,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1790179260,
+          "price": 2644.11,
+          "quantity": 0.0878,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1790242440,
+          "price": 2607.88,
+          "quantity": 0.08750000000000001,
+          "buy": false,
+          "reason": "stop"
+        },
+        {
+          "at": 1790929080,
+          "price": 2770.56,
+          "quantity": 0.0551,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1790966340,
+          "price": 2670.38,
+          "quantity": 0.11270000000000001,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791151320,
+          "price": 2717.79,
+          "quantity": 0.0713,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1791338220,
+          "price": 2670.6,
+          "quantity": 0.0908,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791367620,
+          "price": 2582.63,
+          "quantity": 0.0548,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791394800,
+          "price": 2547.21,
+          "quantity": 0.040100000000000004,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791467100,
+          "price": 2504.8,
+          "quantity": 0.0335,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791473700,
+          "price": 2440.94,
+          "quantity": 0.025500000000000002,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791841440,
+          "price": 2494.33,
+          "quantity": 0.1487,
+          "buy": false,
+          "reason": "stop"
+        },
+        {
+          "at": 1791849960,
+          "price": 2422.69,
+          "quantity": 0.0645,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1791986400,
+          "price": 2451.78,
+          "quantity": 0.0436,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792035540,
+          "price": 2356.85,
+          "quantity": 0.0263,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792072440,
+          "price": 2326.2000000000003,
+          "quantity": 0.0204,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792084860,
+          "price": 2458.46,
+          "quantity": 0.1504,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1792170960,
+          "price": 2407.0,
+          "quantity": 0.0601,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792352100,
+          "price": 2342.4900000000002,
+          "quantity": 0.0449,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792458540,
+          "price": 2376.81,
+          "quantity": 0.027800000000000002,
+          "buy": true,
+          "reason": "limit"
+        }
+      ],
+      "receipts": [
+        [
+          1790242440,
+          -8.72899999999998,
+          0.4653451556556767,
+          0.1396035466966967
+        ],
+        [
+          1790929080,
+          1.176207604000001,
+          0.10245849381634879,
+          0.03073754814490329
+        ],
+        [
+          1790929080,
+          4.603576634999994,
+          0.19722445904152208,
+          0.05916733771245407
+        ],
+        [
+          1791151320,
+          3.780218711999991,
+          0.27523289944749846,
+          0.08256986983424595
+        ],
+        [
+          1791151320,
+          0.9479202809999975,
+          0.10778505508705281,
+          0.032335516526114425
+        ],
+        [
+          1791841440,
+          -16.30103286000002,
+          0.4784645325079739,
+          0.1435393597523856
+        ],
+        [
+          1791841440,
+          -9.889945635999997,
+          0.2899376833329021,
+          0.08698130499986663
+        ],
+        [
+          1792084860,
+          -7.340553136,
+          0.17757028741511938,
+          0.053271086224533366
+        ],
+        [
+          1792084860,
+          -6.797711484000004,
+          0.27611700839201253,
+          0.0828351025176
+        ],
+        [
+          1792084860,
+          -3.555316125,
+          0.20062878275400903,
+          0.0601886348262
+        ],
+        [
+          1792084860,
+          -0.9727924500000023,
+          0.10424387019865322,
+          0.03127316105959457
+        ]
+      ],
+      "pending": {
+        "buy": false,
+        "quantity": 0.1496,
+        "limit": 2505.34,
+        "stop": 2398.4,
+        "stopped": false
+      },
+      "seed": 2753.63,
+      "remaining_base": 0.3252609,
+      "remaining_cash": 171.17476208720024,
+      "inventory": [
+        [
+          0.01247400000000002,
+          2504.8,
+          0.999
+        ],
+        [
+          0.0254745,
+          2440.94,
+          0.999
+        ],
+        [
+          0.0644355,
+          2422.69,
+          0.999
+        ],
+        [
+          0.0435564,
+          2451.78,
+          0.999
+        ],
+        [
+          0.0262737,
+          2356.85,
+          0.999
+        ],
+        [
+          0.0203796,
+          2326.2000000000003,
+          0.999
+        ],
+        [
+          0.0600399,
+          2407.0,
+          0.999
+        ],
+        [
+          0.0448551,
+          2342.4900000000002,
+          0.999
+        ],
+        [
+          0.0277722,
+          2376.81,
+          0.999
+        ]
+      ],
+      "initial_base": 0,
+      "decision_counts": {
+        "scheduled": 1344,
+        "sampled_1m": 5
+      }
+    },
+    "ETHUSDT/2026-10-21": {
+      "fills": [
+        {
+          "at": 1792656600,
+          "price": 2414.16,
+          "quantity": 0.124,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792687620,
+          "price": 2376.33,
+          "quantity": 0.07880000000000001,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792851360,
+          "price": 2343.58,
+          "quantity": 0.0616,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792854540,
+          "price": 2319.14,
+          "quantity": 0.054900000000000004,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1792857600,
+          "price": 2306.41,
+          "quantity": 0.08660000000000001,
+          "buy": true,
+          "reason": "market"
+        },
+        {
+          "at": 1792986780,
+          "price": 2295.19,
+          "quantity": 0.007200000000000001,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793176560,
+          "price": 2383.28,
+          "quantity": 0.2056,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1793241000,
+          "price": 2300.36,
+          "quantity": 0.0937,
+          "buy": false,
+          "reason": "stop"
+        },
+        {
+          "at": 1793306040,
+          "price": 2297.98,
+          "quantity": 0.0543,
+          "buy": false,
+          "reason": "stop"
+        },
+        {
+          "at": 1793319480,
+          "price": 2235.3,
+          "quantity": 0.1589,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793323800,
+          "price": 2200.46,
+          "quantity": 0.0757,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793368080,
+          "price": 2215.44,
+          "quantity": 0.042300000000000004,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793522940,
+          "price": 2277.68,
+          "quantity": 0.1449,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1793640360,
+          "price": 2258.21,
+          "quantity": 0.06910000000000001,
+          "buy": true,
+          "reason": "limit"
+        },
+        {
+          "at": 1793803440,
+          "price": 2348.98,
+          "quantity": 0.1233,
+          "buy": false,
+          "reason": "limit"
+        },
+        {
+          "at": 1793804580,
+          "price": 2412.37,
+          "quantity": 0.06760000000000001,
+          "buy": false,
+          "reason": "limit"
+        }
+      ],
+      "receipts": [
+        [
+          1793176560,
+          -3.825290879999957,
+          0.5945870332800265,
+          0.17837610998399997
+        ],
+        [
+          1793176560,
+          0.5471123400000215,
+          0.3748694655360166,
+          0.1124608396608
+        ],
+        [
+          1793176560,
+          0.11921116000000082,
+          0.014200859554370993,
+          0.0042602578663111105
+        ],
+        [
+          1793241000,
+          -2.529908631999988,
+          0.27197313444564175,
+          0.08159194033368888
+        ],
+        [
+          1793241000,
+          -0.6603874319999912,
+          0.16252357859942262,
+          0.04875707357982462
+        ],
+        [
+          1793306040,
+          -0.4164436119999972,
+          0.09091384157058863,
+          0.027274152471175376
+        ],
+        [
+          1793306040,
+          -0.2918406989999943,
+          0.15948068495294598,
+          0.047844205485881676
+        ],
+        [
+          1793522940,
+          -1.490917493000001,
+          0.23800703374907162,
+          0.07140211012471831
+        ],
+        [
+          1793522940,
+          -0.1259459280000016,
+          0.03290826470400146,
+          0.009872479411200001
+        ],
+        [
+          1793522940,
+          3.6367591779999704,
+          0.38746481407047945,
+          0.11623944422113873
+        ],
+        [
+          1793803440,
+          8.29045503999999,
+          0.3344855509775521,
+          0.10034566529326129
+        ],
+        [
+          1793803440,
+          7.481249439999997,
+          0.2292753442036534,
+          0.06878260326109306
+        ],
+        [
+          1793804580,
+          5.351214893000001,
+          0.11654018930736136,
+          0.03496205679220693
+        ],
+        [
+          1793804580,
+          8.321808860999994,
+          0.1956543197490083,
+          0.0586962959247
+        ],
+        [
+          1793804580,
+          0.013874399999997816,
+          0.00042055564234229456,
+          0.00012616669270268293
+        ]
+      ],
+      "pending": null,
+      "seed": 2449.19,
+      "remaining_base": 0.06894090000000001,
+      "remaining_cash": 864.3710342463002,
+      "inventory": [
+        [
+          0.06894090000000003,
+          2258.21,
+          0.999
+        ]
+      ],
+      "initial_base": 0,
+      "decision_counts": {
+        "scheduled": 720,
+        "sampled_1m": 1
+      }
+    }
+  },
+  "source_data": {
+    "BTCUSDT": {
+      "market_archives": {
+        "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08.zip": "acab442e02745177063031d402929703ae983715010064b40cf811c4beb843d4",
+        "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-09.zip": "7a021fb5981cfdb1a56457d68fa81360ab27350c981ddfe63112b2322df44b56",
+        "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-10.zip": "17168f260306752e39177a6c038bb8952f52bf08ff20e36d8da6068732621f1c",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-01.zip": "166e586106dda5083a32dbcf68108a80465bea04a60ba05ca3327fab7768a208",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-02.zip": "0e75a73c1642747e22159cfb6a9059dd0556086fa74fabffe4f7f4166a3e7c65",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-03.zip": "52d48d43d5fe174481b09d7f81eee932739e8b6de41de0b905322dd62ea148fe",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-11-04.zip": "44c7dfc10dff28bd3050f0129c201872994f3f09e2b2d00a76bd44fb419e509d"
+      },
+      "minutes": 138240
+    },
+    "ETHUSDT": {
+      "market_archives": {
+        "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08.zip": "f2f2fe8da85467fb8ec8185e07f16f3af9f4ebcb266633ba494e76ac73c40c0c",
+        "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-09.zip": "827b46043bdc877d542edf8ff178dc0411cfa166a56fa73f2f850ad06c951b50",
+        "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-10.zip": "bcbfb8f896ba57167f297e6529ce5bb73761500e3affcd47b9045bb0d5d6c833",
+        "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-01.zip": "2a00c3a92769a164d7ecffeffca895bd5d3a06c8ff7059ff6bca0c3ad12e66d8",
+        "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-02.zip": "4d8839d68abb79c1b644b9a337a24d666404ac7cbf88f0d51a1d34eb278c37fe",
+        "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-03.zip": "7468568b38dbf795b0415dbba743351f10a41cf9ba817b10b1470dbc32d8bfb4",
+        "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-11-04.zip": "424d1b522fb215beddcb6a77b3b17aa9c04033816ac1f1fe8afc0c45606cb5d1"
+      },
+      "minutes": 138240
+    }
+  },
+  "source": "https://github.com/Drakkar-Software/OctoBot-Tentacles/tree/f0ebe0c14db0928e50c2e39ea68e2ff9f427f765/profiles/signal_trading",
+  "source_archive_sha256": "5341dd9c9c014d4385173545080f6c54c24183ca8a9f7f04d9d299ecaa98172f",
+  "source_sha256": {
+    "Trading/Mode/signal_trading_mode/signal_trading.py": "a47651babebc8c9d3d35ac053545cdb9dda9f7cc5e334fea0fb1a6f3e447e439",
+    "Evaluator/Strategies/move_signals_strategy_evaluator/move_signals_strategy.py": "901db77da094fefe2b3427260a9093be025eb089d31b713ce9379ae32c57be0e",
+    "Evaluator/Util/trend_analysis/trend_analysis.py": "59d47b5ffc6007b49b28218d014473d9987c5e8a2e1a6a01c1b79212a0ebc4e0",
+    "Evaluator/TA/momentum_evaluator/momentum.py": "2a6e6e76d75a3d8159542659b69f15eee8b0597e843db6e60cca8fc3095c9f4f",
+    "Evaluator/RealTime/instant_fluctuations_evaluator/instant_fluctuations.py": "73dd32b4b6a5871a888c2f5602965a06cfdfa36efde1d1b2cc9ca58bd9be5e5e",
+    "profiles/signal_trading/profile.json": "41738fd0d546b7646e443bd38d3d4ec54f547896103650b193ab2b2544292824",
+    "profiles/signal_trading/specific_config/MoveSignalsStrategyEvaluator.json": "e242e6cd2e1a8b9da53b8f93edbd2cf084689e5fcb57d1df06aae43b7255505d",
+    "profiles/signal_trading/specific_config/SignalTradingMode.json": "4275ac139860288fe8afb0a9ecccc6d30d98f9c824cb255ebbbc78d91817931d",
+    "profiles/signal_trading/tentacles_config.json": "86682648e637b8ae299fbd9ecb2b262bc4667071e0c89cd8060d594809710057"
+  },
+  "assumptions": [
+    "Original BTC/USDT, ETH/USDT, and ETH/BTC are a shared portfolio. This variant runs BTC and ETH separately, so original cross-pair capital competition is unavailable.",
+    "BTC starts with the published 10 BTC and 1,000 USDT. The isolated ETH sleeve starts with 1,000 USDT and no base inventory. Both reset per test window.",
+    "TA updates use synchronized candles with a 500-bar cap. Alerts replay completed one-minute samples, including the technical inputs available at the minute close. Intra-minute notification timing is unavailable.",
+    "Published fee is 10 bp per side, with an additional 3 bp execution buffer. Passive trade-through, volume limits, OCO stop priority and next-minute execution follow the Round 11 spot replay.",
+    "Win rates and drawdowns follow realized FIFO inventory allocations. BTC's initial reserve has basis at first observed open. Remaining inventory is unsettled."
+  ]
+}

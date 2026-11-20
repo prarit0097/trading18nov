@@ -1,0 +1,408 @@
+{
+  "coverage": [
+    [
+      258,
+      "Pending · FMZ inverse weekly settlement",
+      "Canonical Dual Thrust. Public Futures_OKX current-week tapes exist, and their inverse face values match the published current specification. Exact dated contract binding, historical FMZ amount units, original chart interval, inverse fee accounting and expiry handling remain unverified."
+    ],
+    [
+      259,
+      "Excluded · Duplicate translation of FMZ #258",
+      "The archived executable AST and all parameter defaults match #258 after masking 19 specifically audited chart, log and startup-error strings. Reference the #258 implementation for one independent strategy test."
+    ],
+    [
+      4595,
+      "Pending · FMZ inverse quarterly contract input",
+      "The source selects the ETH_USD inverse quarter for January 1–February 13, 2021. The provider returned historical candles through Futures_OKX but currently attaches USD-margined delivery aliases and incompatible volume multipliers. Historical coin-margined contract identity and native ledger are unverified."
+    ]
+  ],
+  "results": [],
+  "baseline_sha256": "f45755ae5e879aa0f78e92862769ab43bbf6d58ba358ddc0d9ce0642163a96f4",
+  "source_archive_sha256": "a231a84e9f994446fe8a2ba89a7fda15e804b02f175c0bf608214a7f55295a9f",
+  "archive_sources": [
+    {
+      "id": 258,
+      "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Dual-Thrust-OKCoin-%E6%9C%9F%E8%B4%A7.md",
+      "document_sha256": "e985ff9ae972153f448b286da948b22e190f7858fa896430934fa7d1f84ef6ba",
+      "source_sha256": "2389a7c8857941ef28f8a23119c2d8e8ee3c857b3771464c2ddde366977c6225",
+      "args": {
+        "Argument": "Default",
+        "ContractTypeIdx": "0",
+        "MarginLevelIdx": "0",
+        "NPeriod": "4",
+        "Ks": "0.5",
+        "Kx": "0.5",
+        "AmountOP": "true",
+        "Interval": "2000",
+        "LoopInterval": "3",
+        "PeriodShow": "500"
+      },
+      "author_page": "https://www.fmz.com/strategy/12101"
+    },
+    {
+      "id": 259,
+      "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Dual-Thrust-OKEX-Feature.md",
+      "document_sha256": "1ae30be839ba8b4f3b096fdf38e88e207b323fb35945924ebdff6137b2795dbb",
+      "source_sha256": "b1a0c8077d7eba4d39d23d8e2a1756e329a86449df637b96583a8ccb42e1a8eb",
+      "args": {
+        "Argument": "Default",
+        "ContractTypeIdx": "0",
+        "MarginLevelIdx": "0",
+        "NPeriod": "4",
+        "Ks": "0.5",
+        "Kx": "0.5",
+        "AmountOP": "true",
+        "Interval": "2000",
+        "LoopInterval": "3",
+        "PeriodShow": "500"
+      },
+      "author_page": "https://www.fmz.com/strategy/103247"
+    },
+    {
+      "id": 4595,
+      "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%81%92%E6%B8%A9%E5%99%A8-%E9%9C%87%E8%8D%A1%E4%BF%AE%E6%AD%A3%E4%B8%BA-%E6%9C%80%E9%AB%98%E4%BB%B7-%E6%9C%80%E4%BD%8E%E4%BB%B7-%E6%B7%BB%E5%8A%A0%E5%A2%9E%E5%87%8F%E4%BB%93%E9%80%89%E9%A1%B9-%E6%B7%BB%E5%8A%A0%E9%A2%9D%E5%A4%96%E5%BC%A0%E6%95%B0%E5%8A%9F%E8%83%BD-%E4%BF%AE%E6%AD%A3cmi%E6%95%B0%E6%8D%AE%E5%88%B7%E6%96%B0%E6%97%A5%E6%9C%9F%E9%97%AE%E4%B8%80%E5%A4%A9%E4%B8%80%E6%AC%A1%E5%8F%98%E4%B8%BA1%E5%B0%8F%E6%97%B6%E4%B8%80%E6%AC%A1-ok-%E5%87%86%E5%A4%87%E4%BF%AE%E6%AD%A3%E4%B8%80%E4%BA%9B%E5%8A%9F%E8%83%BD.md",
+      "document_sha256": "1c8fde056f597828382d5b472d636e119be4dd0e892aa63958f758a585752482",
+      "source_sha256": "78adc966d5498845c626ba03a0f852b17c3024286b90aef03f4981eedca799ab",
+      "args": {
+        "Argument": "Default",
+        "ContractTypeIdx": "0",
+        "MarginLevelIdx": "0",
+        "LoopInterval": "2",
+        "AmountOP": "true",
+        "Cmi_kLine_Cycle": "PERIOD_D1",
+        "Shock_kLine_Cycle": "PERIOD_H1",
+        "Trend_kLine_Cycle": "PERIOD_D1",
+        "Shock_Reduce_N": "true",
+        "Shock_Stop_N": "2",
+        "Shock_MaxAddCountLimit": "4",
+        "Shock_Departure": "true",
+        "Shock_ATR_Cycle": "7",
+        "Shock_UseLeverval": "true",
+        "Shock_WarehouseMode": "false",
+        "Shock_ExtraAmount_State": "false",
+        "Trend_MaxAddCountLimit": "4",
+        "Trend_Reduce_N": "true",
+        "Trend_ATR_Cycle": "14",
+        "Trend_Stop_N": "2",
+        "Trend_UseLeverval": "true",
+        "Trend_WarehouseMode": "false",
+        "Trend_ExtraAmount_State": "false"
+      },
+      "author_page": "https://www.fmz.com/strategy/255502"
+    }
+  ],
+  "ast_comparison": {
+    "acorn": "8.19.0",
+    "differences": [
+      {
+        "path": "body.0.declarations.0.init.properties.1.value.properties.0.value.value",
+        "original": "Dual Thrust 上下轨图",
+        "translation": "Dual Thrust Up-Down Track"
+      },
+      {
+        "path": "body.0.declarations.0.init.properties.2.value.properties.0.value.elements.0.properties.3.value.properties.0.value.value",
+        "original": "上轨",
+        "translation": "Up Track"
+      },
+      {
+        "path": "body.0.declarations.0.init.properties.2.value.properties.0.value.elements.1.properties.3.value.properties.0.value.value",
+        "original": "下轨",
+        "translation": "Down Track"
+      },
+      {
+        "path": "body.0.declarations.0.init.properties.3.value.elements.0.properties.1.value.value",
+        "original": "当前周期",
+        "translation": "current cycle"
+      },
+      {
+        "path": "body.15.body.body.1.consequent.body.4.expression.arguments.1.value",
+        "original": "收益率:",
+        "translation": "Profit rate:"
+      },
+      {
+        "path": "body.15.body.body.3.body.body.1.consequent.body.0.expression.arguments.0.value",
+        "original": "持仓均价",
+        "translation": "Average Price"
+      },
+      {
+        "path": "body.15.body.body.3.body.body.1.consequent.body.0.expression.arguments.2.value",
+        "original": "数量:",
+        "translation": "amount:"
+      },
+      {
+        "path": "body.16.body.body.3.consequent.body.11.expression.right.properties.0.value.left.left.left.value",
+        "original": "上轨: ",
+        "translation": "Up Track: "
+      },
+      {
+        "path": "body.16.body.body.3.consequent.body.11.expression.right.properties.0.value.left.right.value",
+        "original": "  下轨: ",
+        "translation": "  Down Track: "
+      },
+      {
+        "path": "body.16.body.body.6.consequent.body.0.consequent.body.0.expression.right.left.left.left.value",
+        "original": "做多 触发价: ",
+        "translation": "Long Price: "
+      },
+      {
+        "path": "body.16.body.body.6.consequent.body.0.consequent.body.0.expression.right.left.right.value",
+        "original": " 上轨:",
+        "translation": " Up Track:"
+      },
+      {
+        "path": "body.16.body.body.6.consequent.body.0.consequent.body.4.expression.arguments.1.properties.3.value.value",
+        "original": "多",
+        "translation": "Long"
+      },
+      {
+        "path": "body.16.body.body.7.consequent.body.0.consequent.body.0.expression.right.left.left.left.value",
+        "original": "做空 触发价: ",
+        "translation": "Short Price: "
+      },
+      {
+        "path": "body.16.body.body.7.consequent.body.0.consequent.body.0.expression.right.left.right.value",
+        "original": " 下轨:",
+        "translation": " Down Track:"
+      },
+      {
+        "path": "body.16.body.body.7.consequent.body.0.consequent.body.3.expression.arguments.1.properties.3.value.value",
+        "original": "空",
+        "translation": "Short"
+      },
+      {
+        "path": "body.17.body.body.1.consequent.body.0.expression.arguments.0.value",
+        "original": "警告, 退出时有持仓",
+        "translation": "Warning, has positions when exiting"
+      },
+      {
+        "path": "body.18.body.body.0.consequent.body.0.argument.value",
+        "original": "只支持OKCoin期货",
+        "translation": "Only support OKEX features"
+      },
+      {
+        "path": "body.18.body.body.4.consequent.body.0.argument.value",
+        "original": "策略启动前不能有持仓.",
+        "translation": "Can't have Positions when start."
+      },
+      {
+        "path": "body.18.body.body.8.expression.arguments.0.value",
+        "original": "交易平台:",
+        "translation": "Exchange Name:"
+      }
+    ],
+    "common_normalized_ast_sha256": "d494f90b21a46773300447a09f96b8786103b4b41c7b59154baa1115f378074a",
+    "method": "Parse both complete JavaScript sources using Acorn with ecmaVersion latest. Delete parser positions, raw token formatting and one standalone EmptyStatement. Compare the entire trees. The only unequal leaves are the 19 audited presentation strings. After masking those literals the parsed trees are identical. Shared parameter names and raw default representations match exactly."
+  },
+  "primary_venue_docs": [
+    "https://www.fmz.com/syntax-guide/exchanges/cex/okx",
+    "https://www.okx.com/help/expiry-futures-pnl-calculation-rules",
+    "https://www.okx.com/historical-data"
+  ],
+  "provider_read_only_probe": [
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKCoin&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD.quarter&from=1609804800&to=1609848000",
+      "eid": "Futures_OKCoin",
+      "symbol": "BTC_USD.quarter",
+      "http_status": 500,
+      "prefix": "Futures_OKCoin.BTC_USD.quarter not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKCoin&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.quarter&from=1609804800&to=1609848000",
+      "eid": "Futures_OKCoin",
+      "symbol": "ETH_USD.quarter",
+      "http_status": 500,
+      "prefix": "Futures_OKCoin.ETH_USD.quarter not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKCoin&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD.this_week&from=1609804800&to=1609848000",
+      "eid": "Futures_OKCoin",
+      "symbol": "BTC_USD.this_week",
+      "http_status": 500,
+      "prefix": "Futures_OKCoin.BTC_USD.this_week not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKCoin&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.this_week&from=1609804800&to=1609848000",
+      "eid": "Futures_OKCoin",
+      "symbol": "ETH_USD.this_week",
+      "http_status": 500,
+      "prefix": "Futures_OKCoin.ETH_USD.this_week not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKCoin&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.swap&from=1609804800&to=1609848000",
+      "eid": "Futures_OKCoin",
+      "symbol": "ETH_USD.swap",
+      "http_status": 500,
+      "prefix": "Futures_OKCoin.ETH_USD.swap not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKX&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD.quarter&from=1609804800&to=1609848000",
+      "eid": "Futures_OKX",
+      "symbol": "BTC_USD.quarter",
+      "http_status": 200,
+      "rows": 49,
+      "detail": {
+        "symbol": "BTC_USD.quarter",
+        "alias": "BTC-USD_UM-270326",
+        "baseCurrency": "BTC",
+        "basePrecision": 2,
+        "quoteCurrency": "USD",
+        "quotePrecision": 1,
+        "marginCurrency": "BTC",
+        "minQty": 0.01,
+        "maxQty": 3000,
+        "minNotional": 0,
+        "maxNotional": 1.7976931348623157e+308,
+        "priceTick": 0.1,
+        "volumeTick": 0.01,
+        "eid": "Futures_OKX",
+        "contractType": "quarter",
+        "marginLevel": 10,
+        "volumeMultiple": 0.01
+      },
+      "prefix": "[[1609804800000, 322853, 327935, 322837, 327794, 8535400]]"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKX&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.quarter&from=1609804800&to=1609848000",
+      "eid": "Futures_OKX",
+      "symbol": "ETH_USD.quarter",
+      "http_status": 200,
+      "rows": 49,
+      "detail": {
+        "symbol": "ETH_USD.quarter",
+        "alias": "ETH-USD_UM-270326",
+        "baseCurrency": "ETH",
+        "basePrecision": 0,
+        "quoteCurrency": "USD",
+        "quotePrecision": 2,
+        "marginCurrency": "ETH",
+        "minQty": 1,
+        "maxQty": 50000,
+        "minNotional": 0,
+        "maxNotional": 1.7976931348623157e+308,
+        "priceTick": 0.01,
+        "volumeTick": 1,
+        "eid": "Futures_OKX",
+        "contractType": "quarter",
+        "marginLevel": 10,
+        "volumeMultiple": 0.001
+      },
+      "prefix": "[[1609804800000, 112570, 117922, 112570, 117778, 934709]]"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKX&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD.this_week&from=1609804800&to=1609848000",
+      "eid": "Futures_OKX",
+      "symbol": "BTC_USD.this_week",
+      "http_status": 200,
+      "rows": 49,
+      "detail": {
+        "symbol": "BTC_USD.this_week",
+        "alias": "BTC-USD-260904",
+        "baseCurrency": "BTC",
+        "basePrecision": 1,
+        "quoteCurrency": "USD",
+        "quotePrecision": 1,
+        "marginCurrency": "BTC",
+        "minQty": 0.1,
+        "maxQty": 10000,
+        "minNotional": 0,
+        "maxNotional": 1.7976931348623157e+308,
+        "priceTick": 0.1,
+        "volumeTick": 0.1,
+        "eid": "Futures_OKX",
+        "contractType": "this_week",
+        "marginLevel": 10,
+        "volumeMultiple": 100
+      },
+      "prefix": "[[1609804800000, 335029, 340321, 335029, 340300, 4431980]]"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKX&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.this_week&from=1609804800&to=1609848000",
+      "eid": "Futures_OKX",
+      "symbol": "ETH_USD.this_week",
+      "http_status": 200,
+      "rows": 49,
+      "detail": {
+        "symbol": "ETH_USD.this_week",
+        "alias": "ETH-USD-260904",
+        "baseCurrency": "ETH",
+        "basePrecision": 0,
+        "quoteCurrency": "USD",
+        "quotePrecision": 2,
+        "marginCurrency": "ETH",
+        "minQty": 1,
+        "maxQty": 100000,
+        "minNotional": 0,
+        "maxNotional": 1.7976931348623157e+308,
+        "priceTick": 0.01,
+        "volumeTick": 1,
+        "eid": "Futures_OKX",
+        "contractType": "this_week",
+        "marginLevel": 10,
+        "volumeMultiple": 10
+      },
+      "prefix": "[[1609804800000, 105088, 110293, 105088, 110143, 1286389]]"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKX&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.swap&from=1609804800&to=1609848000",
+      "eid": "Futures_OKX",
+      "symbol": "ETH_USD.swap",
+      "http_status": 200,
+      "rows": 49,
+      "detail": {
+        "symbol": "ETH_USD.swap",
+        "alias": "ETH-USD-SWAP",
+        "baseCurrency": "ETH",
+        "basePrecision": 0,
+        "quoteCurrency": "USD",
+        "quotePrecision": 2,
+        "marginCurrency": "ETH",
+        "minQty": 1,
+        "maxQty": 300000,
+        "minNotional": 0,
+        "maxNotional": 1.7976931348623157e+308,
+        "priceTick": 0.01,
+        "volumeTick": 1,
+        "eid": "Futures_OKX",
+        "contractType": "swap",
+        "marginLevel": 10,
+        "volumeMultiple": 10
+      },
+      "prefix": "[[1609804800000, 104288, 109499, 104288, 109297, 2201133]]"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKEX&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD.quarter&from=1609804800&to=1609848000",
+      "eid": "Futures_OKEX",
+      "symbol": "BTC_USD.quarter",
+      "http_status": 500,
+      "prefix": "Futures_OKEX.BTC_USD.quarter not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKEX&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.quarter&from=1609804800&to=1609848000",
+      "eid": "Futures_OKEX",
+      "symbol": "ETH_USD.quarter",
+      "http_status": 500,
+      "prefix": "Futures_OKEX.ETH_USD.quarter not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKEX&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD.this_week&from=1609804800&to=1609848000",
+      "eid": "Futures_OKEX",
+      "symbol": "BTC_USD.this_week",
+      "http_status": 500,
+      "prefix": "Futures_OKEX.BTC_USD.this_week not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKEX&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.this_week&from=1609804800&to=1609848000",
+      "eid": "Futures_OKEX",
+      "symbol": "ETH_USD.this_week",
+      "http_status": 500,
+      "prefix": "Futures_OKEX.ETH_USD.this_week not found\n"
+    },
+    {
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_OKEX&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD.swap&from=1609804800&to=1609848000",
+      "eid": "Futures_OKEX",
+      "symbol": "ETH_USD.swap",
+      "http_status": 500,
+      "prefix": "Futures_OKEX.ETH_USD.swap not found\n"
+    }
+  ]
+}
