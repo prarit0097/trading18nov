@@ -1,0 +1,167 @@
+{
+  "coverage": [
+    [
+      246,
+      "Excluded · API demonstration",
+      "The publisher and main define a fixed Deribit test-environment API walkthrough on an expired put. It exercises listings, cancellation and an immediate short-and-cover pair once. Prices supply test order terms, while the source provides no historical position selection or exit decision."
+    ],
+    [
+      1114,
+      "Excluded · One-shot execution utility",
+      "main samples startup price, submits 18 opening limits on each side at predefined distances, prints outstanding orders and returns. No fill-driven management, closing direction, unwind schedule or repeated rebalance is defined."
+    ],
+    [
+      1299,
+      "Excluded · Manual order coordination utility",
+      "The script waits for a manual command and then sends coordinated opposite orders according to account inventory and operator inputs. The code contains no market signal, no economic position objective and no strategy-owned cost basis."
+    ],
+    [
+      1310,
+      "Excluded · One-shot execution utility",
+      "The one startup method prepares 38 buy limits and 36 sell limits with fixed price ratios and sizes, logs outstanding orders and returns. The executable contains no position or fill-aware lifecycle for handling those ladders."
+    ],
+    [
+      4688,
+      "Excluded · One-shot execution utility",
+      "main waits for initial book availability of an operator-selected product, submits one buy ladder through the asynchronous order wrapper, and polls pending orders. It exits when orders disappear. There is no sell, liquidation or exit rule."
+    ]
+  ],
+  "results": [],
+  "source_evidence": [
+    {
+      "id": 246,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Deribit%E6%9C%9F%E6%9D%83%E6%B5%8B%E8%AF%95%E7%AD%96%E7%95%A5.md",
+      "archive_document_sha256": "3c5400943ca68b8659189cb24ee2ca4eea0918f41a85e8763f6ee6101f89c48b",
+      "source_code_sha256": "be86127e84156c429df8f33aa5567c1567dbac1ad960ebd66ceba74723dc3ecd",
+      "publisher": "https://www.fmz.com/strategy/179475",
+      "executable_scope": [
+        39,
+        110
+      ],
+      "reviewed_marker_lines": [
+        [
+          45
+        ],
+        [
+          96
+        ],
+        [
+          107
+        ]
+      ],
+      "direct_buy_sites": 2,
+      "direct_sell_sites": 1,
+      "indirect_buy_sites": 0,
+      "prior_reason": "Original external-market inputs required by GetDepth, GetTrades, IO"
+    },
+    {
+      "id": 1114,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/python.md",
+      "archive_document_sha256": "096771493c67f0286abd9705d440ac42344ebd25e6cde33ae954d2210954d081",
+      "source_code_sha256": "e43403e683649efec9745a9105a76f0d9ba62065beb3906ef2e8b99329a24f04",
+      "publisher": "https://www.fmz.com/strategy/343032",
+      "executable_scope": [
+        24,
+        73
+      ],
+      "reviewed_marker_lines": [
+        [
+          27
+        ],
+        [
+          50
+        ],
+        [
+          72
+        ]
+      ],
+      "direct_buy_sites": 18,
+      "direct_sell_sites": 18,
+      "indirect_buy_sites": 0,
+      "prior_reason": "Futures execution and funding reconciliation"
+    },
+    {
+      "id": 1299,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E4%BA%A4%E6%98%93%E6%89%80%E5%AF%B9%E5%80%92%E5%88%B7%E9%87%8F%E5%AF%B9%E6%95%B2%E4%BA%92%E5%88%B7.md",
+      "archive_document_sha256": "aabe46b93755b481ae2363bbc4d45af199aee5bc723a409f7c8728e65452cbf3",
+      "source_code_sha256": "c386e9e104293bb267791f50a8b112d7ff9f8227bb22e75c0c6534da53125ef5",
+      "publisher": "https://www.fmz.com/strategy/226845",
+      "executable_scope": [
+        33,
+        82
+      ],
+      "reviewed_marker_lines": [
+        [
+          40
+        ],
+        [
+          72
+        ],
+        [
+          74
+        ]
+      ],
+      "direct_buy_sites": 1,
+      "direct_sell_sites": 1,
+      "indirect_buy_sites": 0,
+      "prior_reason": "External host or stored state: GetCommand"
+    },
+    {
+      "id": 1310,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E9%85%8D%E7%BD%AE%E6%80%9D%E8%B7%AF.md",
+      "archive_document_sha256": "be1e1f8382c1a9e606850f6afd903f2faa3cef5ca59fff2f7652252a8b9418ca",
+      "source_code_sha256": "ca4bcd0c8c1c2c433210633519282faacf314c02a68b19a98d4be93d21ba5887",
+      "publisher": "https://www.fmz.com/strategy/353754",
+      "executable_scope": [
+        24,
+        109
+      ],
+      "reviewed_marker_lines": [
+        [
+          27,
+          32
+        ],
+        [
+          28,
+          71
+        ],
+        [
+          108
+        ]
+      ],
+      "direct_buy_sites": 38,
+      "direct_sell_sites": 36,
+      "indirect_buy_sites": 0,
+      "prior_reason": "Futures execution and funding reconciliation"
+    },
+    {
+      "id": 4688,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%8E%B0%E8%B4%A7%E6%89%93%E6%96%B0%E6%8A%A2%E5%B8%81%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+      "archive_document_sha256": "377533004515a0b3585ab26c9d80e661007c041349a802bb09a2dd7551e2d958",
+      "source_code_sha256": "4e7f96a8a98c2334958c0ddf63963e9cad2b76d8d318154298f87eb9787f817b",
+      "publisher": "https://www.fmz.com/strategy/358383",
+      "executable_scope": [
+        32,
+        89
+      ],
+      "reviewed_marker_lines": [
+        [
+          36
+        ],
+        [
+          32,
+          67
+        ],
+        [
+          70
+        ]
+      ],
+      "direct_buy_sites": 0,
+      "direct_sell_sites": 0,
+      "indirect_buy_sites": 1,
+      "prior_reason": "Original external-market inputs required by GetDepth, Go, SetCurrency"
+    }
+  ],
+  "method": "Check the entire pinned executable and comments, direct and wrapped order calls, fixed versus market-driven branch inputs, and program termination. Source roles apply to standalone closed-position strategy performance. Execution-quality measurements and hypothetical wrapping strategies are separate.",
+  "retained_examples": "The nearby #1384 listing script contains an actual relative-price partial exit, #1392 contains repeated paired orders for its distinct hard-coded market, and #3854 emits order-bearing commands through a strategy helper. Those files were not included in these execution-only dispositions."
+}
