@@ -1,0 +1,1048 @@
+{
+  "coverage": [
+    [
+      4899,
+      "Tested · archived ETH balance grid with FMZ modeled fills",
+      "Three prespecified May 2021 UTC days using the original ETHUSDT settings. An independent native quote trace verifies every modeled order and cancellation. A separate Decimal ledger reconciles closed P&L, marked equity, fees, funding and cutoff inventory."
+    ]
+  ],
+  "results": [
+    {
+      "gross": 116.58808882022073,
+      "fees": 2.217259492916158,
+      "net": 113.39499347831206,
+      "after_fees": 114.37082932730458,
+      "funding": -0.9758358489925194,
+      "gross_dd": 0.5219845893782753,
+      "gross_dd_pct": 5.219845893782752e-06,
+      "gross_wins": 229,
+      "fee_dd": 0.6742887578927879,
+      "fee_dd_pct": 6.742887578927879e-06,
+      "fee_wins": 228,
+      "net_dd": 0.6742887578927879,
+      "net_dd_pct": 6.742887578927879e-06,
+      "net_wins": 228,
+      "trades": 244,
+      "unsettled": 1,
+      "starting_equity": 100000.0,
+      "execution": 0,
+      "mark_to_market_net": 3071.9700626747594,
+      "remaining_unrealized": 3013.9913511797795,
+      "id": 4899,
+      "name": "ETH long-only USDT / coin balancing grid",
+      "group": "FMZ Native · Archived quote model",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%86%8A%E8%B5%9A%E5%B8%81%E7%89%9B%E8%B5%9AU%E4%B9%8B%E5%B9%B3%E8%A1%A1%E7%AD%96%E7%95%A5.md",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2021-05-01 24h UTC",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "30m / 15m native simulated ticks",
+      "exit": "Archived market and limit reductions. Open inventory marked at cutoff."
+    },
+    {
+      "gross": -1066.8189009958446,
+      "fees": 3.716514864612006,
+      "net": -1066.1800424803673,
+      "after_fees": -1070.5354158604566,
+      "funding": 4.355373380089389,
+      "gross_dd": 1067.4513917163974,
+      "gross_dd_pct": 0.010674446402281011,
+      "gross_wins": 8,
+      "fee_dd": 1071.0786175285623,
+      "fee_dd_pct": 0.010710727994432491,
+      "fee_wins": 8,
+      "net_dd": 1066.7232441484728,
+      "net_dd_pct": 0.01066717449721492,
+      "net_wins": 8,
+      "trades": 338,
+      "unsettled": 1,
+      "starting_equity": 100000.0,
+      "execution": 0,
+      "mark_to_market_net": -13774.703330525464,
+      "remaining_unrealized": -12802.280369004155,
+      "id": 4899,
+      "name": "ETH long-only USDT / coin balancing grid",
+      "group": "FMZ Native · Archived quote model",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%86%8A%E8%B5%9A%E5%B8%81%E7%89%9B%E8%B5%9AU%E4%B9%8B%E5%B9%B3%E8%A1%A1%E7%AD%96%E7%95%A5.md",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2021-05-19 24h UTC",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "30m / 15m native simulated ticks",
+      "exit": "Archived market and limit reductions. Open inventory marked at cutoff."
+    },
+    {
+      "gross": 195.9792040160645,
+      "fees": 2.8281212909964086,
+      "net": 192.72127417691365,
+      "after_fees": 193.1510827250681,
+      "funding": -0.4298085481544476,
+      "gross_dd": 33.55389184071072,
+      "gross_dd_pct": 0.0003355389184071072,
+      "gross_wins": 211,
+      "fee_dd": 34.33703600503679,
+      "fee_dd_pct": 0.00034337036005036795,
+      "fee_wins": 211,
+      "net_dd": 34.33703600503679,
+      "net_dd_pct": 0.00034337036005036795,
+      "net_wins": 211,
+      "trades": 286,
+      "unsettled": 1,
+      "starting_equity": 100000.0,
+      "execution": 0,
+      "mark_to_market_net": 6666.242358223076,
+      "remaining_unrealized": 6508.823645983935,
+      "id": 4899,
+      "name": "ETH long-only USDT / coin balancing grid",
+      "group": "FMZ Native · Archived quote model",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%86%8A%E8%B5%9A%E5%B8%81%E7%89%9B%E8%B5%9AU%E4%B9%8B%E5%B9%B3%E8%A1%A1%E7%AD%96%E7%95%A5.md",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2021-05-31 24h UTC",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "30m / 15m native simulated ticks",
+      "exit": "Archived market and limit reductions. Open inventory marked at cutoff."
+    }
+  ],
+  "diagnostics": [
+    {
+      "marked_drawdown": {
+        "gross": [
+          "1172.153500000000000000000000000000000000",
+          "0.0115134273822461505569907747778280545697601"
+        ],
+        "after_fees": [
+          "1172.419013820000000000000000000000000000",
+          "0.0115183382461796208884154542224168665380982"
+        ],
+        "net": [
+          "1190.537348435598581095489643874635398400",
+          "0.0116963403973729566725368926339292845893433"
+        ]
+      },
+      "closed_drawdown": {
+        "gross": [
+          "0.5219845893782752488211983732985691645",
+          "0.000005219845893782752488211983732985691645"
+        ],
+        "after_fees": [
+          "0.6742887578927878348075560156476630796",
+          "0.000006742887578927878348075560156476630796"
+        ],
+        "net": [
+          "0.6742887578927878348075560156476630796",
+          "0.000006742887578927878348075560156476630796"
+        ]
+      },
+      "final_wallet_USDT": "100057.978711494979999999999999999999999998",
+      "final_equity_USDT": "103071.970062674759260465368419101032254750",
+      "last_mark_USDT": "2947",
+      "remaining_qty_ETH": "18.003",
+      "remaining_fees_USDT": "19.5081046170838421110333583175604890964897",
+      "remaining_funding_USDT": "-35.9081773662482201704956582969958323207473",
+      "fees_USDT_total": "21.725364110",
+      "maker_fees_USDT_total": "1.062091770",
+      "taker_fees_USDT_total": "20.663272340",
+      "funding_USDT_total": "-36.8840132152407395346315808989677452480977",
+      "closed_reductions_sha256": "0ecdb01fcd6a915ee5484a6673d6d4f513809f31f3a8295d1ff57e2c94bce133",
+      "close_examples": [
+        {
+          "id": 5,
+          "at": 1619827316600,
+          "gross": "-0.0266961186581646797892985860826171333518",
+          "fees": "0.0110812303936789575824785140005544774050457",
+          "funding": "0E-45",
+          "after_fees": "-0.0377773490518436373717771000831716107568457",
+          "net": "-0.0377773490518436373717771000831716107568457"
+        },
+        {
+          "id": 884,
+          "at": 1619913425600,
+          "gross": "0.8340303063877629451939589010445570890275",
+          "fees": "0.0113107949466988396686755980440927870622923",
+          "funding": "-0.00651893239325705735831059774755803052536819",
+          "after_fees": "0.822719511441064105525283303000464301965208",
+          "net": "0.816200579047807048166972705252906271439840"
+        }
+      ],
+      "day": "2021-05-01",
+      "cancelled_orders": 402,
+      "stress_checks": {
+        "taker_modeled_fills": 112,
+        "taker_simulated_price_inside_observed_minute_range": 55,
+        "maker_modeled_fills": 370,
+        "maker_simulated_price_inside_observed_minute_range": 147
+      },
+      "pending_at_cutoff": [
+        {
+          "Id": 885,
+          "Time": 1619913541400,
+          "Price": 2944.58,
+          "Amount": 0.005,
+          "DealAmount": 0,
+          "AvgPrice": 0,
+          "Type": 0,
+          "Offset": 0,
+          "Status": 0,
+          "Symbol": "ETH_USDT.swap",
+          "ContractType": "swap"
+        },
+        {
+          "Id": 886,
+          "Time": 1619913541600,
+          "Price": 2948.11,
+          "Amount": 0.005,
+          "DealAmount": 0,
+          "AvgPrice": 0,
+          "Type": 1,
+          "Offset": 1,
+          "Status": 0,
+          "Symbol": "ETH_USDT.swap",
+          "ContractType": "swap"
+        }
+      ],
+      "settlements": [
+        {
+          "cash_flow_USDT": "-18.1183346155985810954896438746353983997191",
+          "rate": "0.00035155",
+          "venue_time_ms": 1619856000006,
+          "pre_settlement_ETH": "18.025",
+          "modeled_mark_USDT": "2859.27482482054702394679616773593280871166",
+          "public_bar_price_bounds_USDT": [
+            "2847.52",
+            "2869.99"
+          ],
+          "native_account_bracket_ms": [
+            1619855947400,
+            1619856006000
+          ]
+        },
+        {
+          "cash_flow_USDT": "-6.3295692085552989929794169771939592372720",
+          "rate": "0.00012262",
+          "venue_time_ms": 1619884800000,
+          "pre_settlement_ETH": "18.010",
+          "modeled_mark_USDT": "2866.15140438538286146662978476951143657391",
+          "public_bar_price_bounds_USDT": [
+            "2855.27",
+            "2885.47"
+          ],
+          "native_account_bracket_ms": [
+            1619884746600,
+            1619884805600
+          ]
+        },
+        {
+          "cash_flow_USDT": "-12.4361093910868594461625200471383876111066",
+          "rate": "0.00023451",
+          "venue_time_ms": 1619913600010,
+          "pre_settlement_ETH": "18.003",
+          "modeled_mark_USDT": "2945.63061787894926749969344775799336442296",
+          "public_bar_price_bounds_USDT": [
+            "2932.02",
+            "2954.85"
+          ],
+          "native_account_bracket_ms": [
+            1619913547000,
+            1619913600200
+          ]
+        }
+      ],
+      "native_source_stop_ms": 1619913600000,
+      "native_terminal_account_ms": 1619913600200,
+      "first_excluded_quote_ms": 1619913629000,
+      "native_order_path_sha256": "11842fae2d77e210614a87150ab406ebe3616386e2a2b0efde3f9ff9cdd5a99f",
+      "fill_examples": [
+        {
+          "at": 1619827201000,
+          "id": 1,
+          "qty": "18.03",
+          "price": "2773.17",
+          "close": false,
+          "posted": 1619827201000,
+          "limit": "0",
+          "fee": "20.00010204",
+          "type": "taker",
+          "source_pending_bracket": null
+        },
+        {
+          "at": 1619827287000,
+          "id": 2,
+          "qty": "0.005",
+          "price": "2770.37",
+          "close": false,
+          "posted": 1619827229400,
+          "limit": "2770.37",
+          "fee": "0.002770370",
+          "type": "maker",
+          "source_pending_bracket": [
+            1619827258200,
+            1619827287200
+          ]
+        },
+        {
+          "at": 1619913367000,
+          "id": 881,
+          "qty": "0.005",
+          "price": "2944.7",
+          "close": false,
+          "posted": 1619913222400,
+          "limit": "2944.7",
+          "fee": "0.00294470",
+          "type": "maker",
+          "source_pending_bracket": null
+        },
+        {
+          "at": 1619913425600,
+          "id": 884,
+          "qty": "0.005",
+          "price": "2946.39",
+          "close": true,
+          "posted": 1619913425600,
+          "limit": "2945.82",
+          "fee": "0.005892780",
+          "type": "taker",
+          "source_pending_bracket": null
+        }
+      ]
+    },
+    {
+      "marked_drawdown": {
+        "gross": [
+          "30372.5081200000000000000000000000000000000",
+          "0.300646089555597176241060113607936763068400"
+        ],
+        "after_fees": [
+          "30373.8928756820000000000000000000000000000",
+          "0.300719387684091326032296622092361659516666"
+        ],
+        "net": [
+          "30397.5029680419079794240127337749480728404",
+          "0.300953141472145302971055393401863434697180"
+        ]
+      },
+      "closed_drawdown": {
+        "gross": [
+          "1067.4513917163975257442366584453051286606",
+          "0.0106744464022810104378965402607370194476597"
+        ],
+        "after_fees": [
+          "1071.0786175285622231312075324626168889595",
+          "0.0107107279944324902222022549753736261461708"
+        ],
+        "net": [
+          "1066.7232441484728347625106624194230825240",
+          "0.0106671744972149197426774916769329935670666"
+        ]
+      },
+      "final_wallet_USDT": "99027.5770384786899999999999999999999999977",
+      "final_equity_USDT": "86225.2966694745346325612067152300178040917",
+      "last_mark_USDT": "2444.02",
+      "remaining_qty_ETH": "15.021",
+      "remaining_fees_USDT": "19.0498962473879939972227004245285695400816",
+      "remaining_funding_USDT": "112.806977206445244192509845186823997656122",
+      "fees_USDT_total": "22.766411112",
+      "maker_fees_USDT_total": "1.572157044",
+      "taker_fees_USDT_total": "21.194254068",
+      "funding_USDT_total": "117.162350586534632561206715230017804091620",
+      "closed_reductions_sha256": "c42ed9b8d4b50e1b1d08823bdf3f7d29467f09e0dd9af1f227ed23f412c69739",
+      "close_examples": [
+        {
+          "id": 5,
+          "at": 1621382516600,
+          "gross": "-0.0435562835921674544226873733963538149899",
+          "fees": "0.0107883735789331532748143146522619851451722",
+          "funding": "0E-45",
+          "after_fees": "-0.0543446571711006076975016880486158001350722",
+          "net": "-0.0543446571711006076975016880486158001350722"
+        },
+        {
+          "id": 1184,
+          "at": 1621468741600,
+          "gross": "-5.1200528935506911793244630656161302959481",
+          "fees": "0.0134724334712953840612033954162287076253572",
+          "funding": "0.0467879399027455439730460821140947887159350",
+          "after_fees": "-5.13352532702198656338566646103235900357346",
+          "net": "-5.08673738711924101941262037891826421485752"
+        }
+      ],
+      "day": "2021-05-19",
+      "cancelled_orders": 477,
+      "stress_checks": {
+        "taker_modeled_fills": 185,
+        "taker_simulated_price_inside_observed_minute_range": 94,
+        "maker_modeled_fills": 521,
+        "maker_simulated_price_inside_observed_minute_range": 193
+      },
+      "pending_at_cutoff": [
+        {
+          "Id": 1183,
+          "Time": 1621468741400,
+          "Price": 2440,
+          "Amount": 0.006,
+          "DealAmount": 0,
+          "AvgPrice": 0,
+          "Type": 0,
+          "Offset": 0,
+          "Status": 0,
+          "Symbol": "ETH_USDT.swap",
+          "ContractType": "swap"
+        }
+      ],
+      "settlements": [
+        {
+          "cash_flow_USDT": "-23.610092359907979424012733774948072840444",
+          "rate": "0.00053311",
+          "venue_time_ms": 1621411200003,
+          "pre_settlement_ETH": "14.824",
+          "modeled_mark_USDT": "2987.55184513516798651231451335570816257671",
+          "public_bar_price_bounds_USDT": [
+            "2940.88",
+            "3014.9"
+          ],
+          "native_account_bracket_ms": [
+            1621411147000,
+            1621411205600
+          ]
+        },
+        {
+          "cash_flow_USDT": "145.099073286520837129230470390778182826285",
+          "rate": "-0.00356332",
+          "venue_time_ms": 1621440000018,
+          "pre_settlement_ETH": "14.908",
+          "modeled_mark_USDT": "2731.43222721578060876264367517098902858036",
+          "public_bar_price_bounds_USDT": [
+            "2603.36",
+            "2780"
+          ],
+          "native_account_bracket_ms": [
+            1621439947400,
+            1621440006000
+          ]
+        },
+        {
+          "cash_flow_USDT": "-4.326630340078225144011021385812305894221",
+          "rate": "0.00011828",
+          "venue_time_ms": 1621468800005,
+          "pre_settlement_ETH": "15.021",
+          "modeled_mark_USDT": "2435.22800470178473393422210022657823305123",
+          "public_bar_price_bounds_USDT": [
+            "2430",
+            "2549.17"
+          ],
+          "native_account_bracket_ms": [
+            1621468747000,
+            1621468800200
+          ]
+        }
+      ],
+      "native_source_stop_ms": 1621468800000,
+      "native_terminal_account_ms": 1621468800200,
+      "first_excluded_quote_ms": 1621468829000,
+      "native_order_path_sha256": "db0aa9d69adc15918aa6a8a580dbacfc235577d17a100f326ccdd768baf09f6f",
+      "fill_examples": [
+        {
+          "at": 1621382401000,
+          "id": 1,
+          "qty": "14.806",
+          "price": "3377.04",
+          "close": false,
+          "posted": 1621382401000,
+          "limit": "0",
+          "fee": "20.000181696",
+          "type": "taker",
+          "source_pending_bracket": null
+        },
+        {
+          "at": 1621382487000,
+          "id": 2,
+          "qty": "0.004",
+          "price": "3373.6",
+          "close": false,
+          "posted": 1621382429400,
+          "limit": "3373.6",
+          "fee": "0.00269888",
+          "type": "maker",
+          "source_pending_bracket": [
+            1621382458200,
+            1621382487200
+          ]
+        },
+        {
+          "at": 1621468683000,
+          "id": 1181,
+          "qty": "0.006",
+          "price": "2438.2",
+          "close": false,
+          "posted": 1621468625400,
+          "limit": "2438.2",
+          "fee": "0.00292584",
+          "type": "maker",
+          "source_pending_bracket": null
+        },
+        {
+          "at": 1621468741600,
+          "id": 1184,
+          "qty": "0.006",
+          "price": "2442.97",
+          "close": true,
+          "posted": 1621468741600,
+          "limit": "2442.96",
+          "fee": "0.005863128",
+          "type": "taker",
+          "source_pending_bracket": null
+        }
+      ]
+    },
+    {
+      "marked_drawdown": {
+        "gross": [
+          "3008.0318600000000000000000000000000000000",
+          "0.0298994962061408219929509312668818639967878"
+        ],
+        "after_fees": [
+          "3008.2595693340000000000000000000000000000",
+          "0.0299077112712989376418998009745104185880594"
+        ],
+        "net": [
+          "3008.2595693340000000000000000000000000000",
+          "0.0299077112712989376418998009745104185880594"
+        ]
+      },
+      "closed_drawdown": {
+        "gross": [
+          "33.5538918407107211080735596204741851838",
+          "0.000335538918407107211080735596204741851838"
+        ],
+        "after_fees": [
+          "34.3370360050367925533884733212086266211",
+          "0.000343370360050367925533884733212086266211"
+        ],
+        "net": [
+          "34.3370360050367925533884733212086266211",
+          "0.000343370360050367925533884733212086266211"
+        ]
+      },
+      "final_wallet_USDT": "100157.418712239140000000000000000000000001",
+      "final_equity_USDT": "106666.242358223075495048058876904305739574",
+      "last_mark_USDT": "2706.46",
+      "remaining_qty_ETH": "20.905",
+      "remaining_fees_USDT": "19.4173100790035915709202210098593845859653",
+      "remaining_funding_USDT": "-15.8852518587700573902307624931895490591255",
+      "fees_USDT_total": "22.245431370",
+      "maker_fees_USDT_total": "1.255524330",
+      "taker_fees_USDT_total": "20.989907040",
+      "funding_USDT_total": "-16.3150604069245049519411230956942604272190",
+      "closed_reductions_sha256": "9f1a6444ab85f84f83ab139320972e4293b3ac38bd3dd3dd84add051726fc1cb",
+      "close_examples": [
+        {
+          "id": 5,
+          "at": 1622419316600,
+          "gross": "-0.0631757063117217689995706311721768999571",
+          "fees": "0.0114272835208243881494203520824388149420352",
+          "funding": "0E-45",
+          "after_fees": "-0.0746029898325461571489909832546157148991352",
+          "net": "-0.0746029898325461571489909832546157148991352"
+        },
+        {
+          "id": 1017,
+          "at": 1622505541000,
+          "gross": "1.8497548948052433853283115647656462299660",
+          "fees": "0.00881709413413162159414117799852457821170973",
+          "funding": "-0.00293536227675940827417910527067486628207172",
+          "after_fees": "1.84093780067111176373417038676712165175429",
+          "net": "1.83800243839435235545999128149644678547222"
+        }
+      ],
+      "day": "2021-05-31",
+      "cancelled_orders": 449,
+      "stress_checks": {
+        "taker_modeled_fills": 156,
+        "taker_simulated_price_inside_observed_minute_range": 70,
+        "maker_modeled_fills": 412,
+        "maker_simulated_price_inside_observed_minute_range": 134
+      },
+      "pending_at_cutoff": [],
+      "settlements": [
+        {
+          "cash_flow_USDT": "-5.1349750161472835017311227157542426445273",
+          "rate": "0.0001",
+          "venue_time_ms": 1622448000000,
+          "pre_settlement_ETH": "20.951",
+          "modeled_mark_USDT": "2450.94506999536227470341402117046567921689",
+          "public_bar_price_bounds_USDT": [
+            "2425.35",
+            "2459.96"
+          ],
+          "native_account_bracket_ms": [
+            1622447947000,
+            1622448005600
+          ]
+        },
+        {
+          "cash_flow_USDT": "-5.5221249312830690552649371673268153280177",
+          "rate": "0.0001",
+          "venue_time_ms": 1622476800000,
+          "pre_settlement_ETH": "20.934",
+          "modeled_mark_USDT": "2637.87376100270806117556948854820642400769",
+          "public_bar_price_bounds_USDT": [
+            "2607.49",
+            "2652.55"
+          ],
+          "native_account_bracket_ms": [
+            1622476747000,
+            1622476805600
+          ]
+        },
+        {
+          "cash_flow_USDT": "-5.6579604594941523949450632126132024546740",
+          "rate": "0.0001",
+          "venue_time_ms": 1622505600001,
+          "pre_settlement_ETH": "20.905",
+          "modeled_mark_USDT": "2706.51062401059669693616991753800643610332",
+          "public_bar_price_bounds_USDT": [
+            "2689",
+            "2741.45"
+          ],
+          "native_account_bracket_ms": [
+            1622505547400,
+            1622505600200
+          ]
+        }
+      ],
+      "native_source_stop_ms": 1622505600000,
+      "native_terminal_account_ms": 1622505600200,
+      "first_excluded_quote_ms": 1622505629000,
+      "native_order_path_sha256": "54327e34cd7a1ca76109c3dc5b6fdef34f608fbc50b1ba3b9982d2fdc9033e24",
+      "fill_examples": [
+        {
+          "at": 1622419201000,
+          "id": 1,
+          "qty": "20.955",
+          "price": "2386.12",
+          "close": false,
+          "posted": 1622419201000,
+          "limit": "0",
+          "fee": "20.000457840",
+          "type": "taker",
+          "source_pending_bracket": null
+        },
+        {
+          "at": 1622419287000,
+          "id": 2,
+          "qty": "0.006",
+          "price": "2383.62",
+          "close": false,
+          "posted": 1622419229400,
+          "limit": "2383.62",
+          "fee": "0.002860344",
+          "type": "maker",
+          "source_pending_bracket": [
+            1622419258200,
+            1622419287200
+          ]
+        },
+        {
+          "at": 1622505425000,
+          "id": 1015,
+          "qty": "0.006",
+          "price": "2699.26",
+          "close": true,
+          "posted": 1622505367600,
+          "limit": "2699.26",
+          "fee": "0.003239112",
+          "type": "maker",
+          "source_pending_bracket": null
+        },
+        {
+          "at": 1622505541000,
+          "id": 1017,
+          "qty": "0.006",
+          "price": "2703.4",
+          "close": true,
+          "posted": 1622505483600,
+          "limit": "2703.4",
+          "fee": "0.00324408",
+          "type": "maker",
+          "source_pending_bracket": null
+        }
+      ]
+    }
+  ],
+  "source": {
+    "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E7%86%8A%E8%B5%9A%E5%B8%81%E7%89%9B%E8%B5%9AU%E4%B9%8B%E5%B9%B3%E8%A1%A1%E7%AD%96%E7%95%A5.md",
+    "sha256": "636ad26ec51bbb067f7efec7d60d61d1f7ee50f40a5264fcde29a2d913c8d27d",
+    "document_sha256": "b7a03e06e56eb2380e634449c92f453b509c77b8fd8db7ee21324f0d8c4e0f09",
+    "publisher": "https://www.fmz.com/strategy/339698",
+    "parameters": {
+      "pricePrecision": 2,
+      "amountPrecision": 3,
+      "linjie": 30,
+      "leverage": 10
+    }
+  },
+  "proof": {
+    "input_sha256": "648652411370c83bfaa64e038ae3b360d0d66139aecde8d6f328b61b607720fe",
+    "receipt_sha256": "12df5263984b793d74083a9181a2e20534c06b68778d2eab430805b4e3e1b985",
+    "engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "stage_sha256": "3949b435d0b16157b25fce53338bd5e240cd636397148e6ee96097e8e3134728",
+    "worker_sha256": "3d41ab8de86cf8e05fdd7d9b29e3d7689f5b96dd269e1b3bab13dade653980cb",
+    "verifier_sha256": "359c702783732208dc0f139bac58eb84b2967e296c57e6bc797ef3906d57f3ad"
+  },
+  "venue_bindings": {
+    "2021-05-01": {
+      "swap": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.swap&event=feed&detail=true&round=true&period=900000&from=1619827200&to=1619913600",
+          "sha256": "db9a2418e7d3d28b79c946103b44b5403bbb328f695db07e8dfeafd0eb1974c0",
+          "rows": 97
+        },
+        "first_four_equal": [
+          96,
+          96,
+          96,
+          96
+        ],
+        "volume_equal": 96,
+        "maximum_price_or_rate_scaled_unit_difference": 0,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip",
+            "sha256": "60b7d0bfbed9bf1bbf9554dcf08f9c676740ef7161fddcc0fa408846a8072878",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip",
+            "sha256": "77c8ca3914321c8e59c34ba7d23a3c7d63f5e83c219e55c767ce9953022dcbf2",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip",
+            "sha256": "913546ade2f9425e89989e839ca3d3d14ac29838eb83e2fc735ea2438e2eb141",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "index": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.index&event=feed&detail=true&round=true&period=900000&from=1619827200&to=1619913600",
+          "sha256": "40cb3ea2e8323358074c3dd1c46880f4e9d6973730649477ab899d28901f5e98",
+          "rows": 97
+        },
+        "first_four_equal": [
+          96,
+          96,
+          96,
+          96
+        ],
+        "volume_equal": 96,
+        "maximum_price_or_rate_scaled_unit_difference": 0,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip",
+            "sha256": "25bcff219e6c046d51c674d5e3f12a7c31a3bab9e97e39be8122c5f54411b89b",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip",
+            "sha256": "d5a0df0ac2ff5561c3b1bfd800e0d69c446dcf5a290484727db2d42ff7ab2d10",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip",
+            "sha256": "74637f5582baf38ce6f262aa451a609740b8ec2c9687e0489b8bbea3105285c6",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "funding": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.funding&event=feed&detail=true&round=true&period=900000&from=1619827200&to=1619913600",
+          "sha256": "18ab3c088175a78daf79e52d8f41d52f435100a6cf6bc92ab8284f480f90fba4",
+          "rows": 3
+        },
+        "first_four_equal": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "volume_equal": 3,
+        "maximum_price_or_rate_scaled_unit_difference": 0,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-04.zip",
+            "sha256": "2fee34e8b9b6e828d01bab0df1c67104f7a98f3c063668c8db627b802ffa5a95",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-05.zip",
+            "sha256": "21809ef6691a1441bd55ba4af4494a038d1a399ae0ae432e80cb41b47d71f3bd",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-06.zip",
+            "sha256": "8e58ccf8f52c69c55754492daafadab92d4ca8c8bd027f4532582d06e9f36063",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "observed_1m": {
+        "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2021-05-01.zip",
+        "sha256": "12aefa0bbeebf44a10fb75aeee965b795d6f8e3dc9a461c7c45d9538e07f4c5c",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2021-05-01.zip.CHECKSUM"
+      }
+    },
+    "2021-05-19": {
+      "swap": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.swap&event=feed&detail=true&round=true&period=900000&from=1621382400&to=1621468800",
+          "sha256": "6ee718db5238dc01f5a4f9d61f9cbb655118b70cbfbaa4626c4a4ab17fbf482b",
+          "rows": 97
+        },
+        "first_four_equal": [
+          96,
+          96,
+          96,
+          96
+        ],
+        "volume_equal": 96,
+        "maximum_price_or_rate_scaled_unit_difference": 0,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip",
+            "sha256": "60b7d0bfbed9bf1bbf9554dcf08f9c676740ef7161fddcc0fa408846a8072878",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip",
+            "sha256": "77c8ca3914321c8e59c34ba7d23a3c7d63f5e83c219e55c767ce9953022dcbf2",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip",
+            "sha256": "913546ade2f9425e89989e839ca3d3d14ac29838eb83e2fc735ea2438e2eb141",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "index": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.index&event=feed&detail=true&round=true&period=900000&from=1621382400&to=1621468800",
+          "sha256": "4bd8b5b2d9aa7bf22634b8209f4eeb36d6504a5eb4556a519bdeecd2abaf10c0",
+          "rows": 97
+        },
+        "first_four_equal": [
+          96,
+          96,
+          96,
+          96
+        ],
+        "volume_equal": 96,
+        "maximum_price_or_rate_scaled_unit_difference": 0,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip",
+            "sha256": "25bcff219e6c046d51c674d5e3f12a7c31a3bab9e97e39be8122c5f54411b89b",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip",
+            "sha256": "d5a0df0ac2ff5561c3b1bfd800e0d69c446dcf5a290484727db2d42ff7ab2d10",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip",
+            "sha256": "74637f5582baf38ce6f262aa451a609740b8ec2c9687e0489b8bbea3105285c6",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "funding": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.funding&event=feed&detail=true&round=true&period=900000&from=1621382400&to=1621468800",
+          "sha256": "de7a9a7f7b1ae0ba57d05cd280b22f39ecd5df5ec8902d9aed81640d780c8430",
+          "rows": 3
+        },
+        "first_four_equal": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "volume_equal": 3,
+        "maximum_price_or_rate_scaled_unit_difference": 1,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-04.zip",
+            "sha256": "2fee34e8b9b6e828d01bab0df1c67104f7a98f3c063668c8db627b802ffa5a95",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-05.zip",
+            "sha256": "21809ef6691a1441bd55ba4af4494a038d1a399ae0ae432e80cb41b47d71f3bd",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-06.zip",
+            "sha256": "8e58ccf8f52c69c55754492daafadab92d4ca8c8bd027f4532582d06e9f36063",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "observed_1m": {
+        "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2021-05-19.zip",
+        "sha256": "d52ec0a94f3fc1972244716a73b1c9f829112519031b11b9cadaffe9733e2917",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2021-05-19.zip.CHECKSUM"
+      }
+    },
+    "2021-05-31": {
+      "swap": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.swap&event=feed&detail=true&round=true&period=900000&from=1622419200&to=1622505600",
+          "sha256": "0bbcaa3535be6b7084cb975e8ad77d52032d3cb4a209f960bf1f8e23b0598cc7",
+          "rows": 97
+        },
+        "first_four_equal": [
+          96,
+          96,
+          96,
+          96
+        ],
+        "volume_equal": 96,
+        "maximum_price_or_rate_scaled_unit_difference": 0,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip",
+            "sha256": "60b7d0bfbed9bf1bbf9554dcf08f9c676740ef7161fddcc0fa408846a8072878",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip",
+            "sha256": "77c8ca3914321c8e59c34ba7d23a3c7d63f5e83c219e55c767ce9953022dcbf2",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip",
+            "sha256": "913546ade2f9425e89989e839ca3d3d14ac29838eb83e2fc735ea2438e2eb141",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "index": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.index&event=feed&detail=true&round=true&period=900000&from=1622419200&to=1622505600",
+          "sha256": "30a085ca5ca6806c2a686a3176f09d888012bea3b77f6b1f30a21e08bf13fd4e",
+          "rows": 97
+        },
+        "first_four_equal": [
+          96,
+          96,
+          96,
+          96
+        ],
+        "volume_equal": 96,
+        "maximum_price_or_rate_scaled_unit_difference": 0,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip",
+            "sha256": "25bcff219e6c046d51c674d5e3f12a7c31a3bab9e97e39be8122c5f54411b89b",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip",
+            "sha256": "d5a0df0ac2ff5561c3b1bfd800e0d69c446dcf5a290484727db2d42ff7ab2d10",
+            "rows": 2976,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip",
+            "sha256": "74637f5582baf38ce6f262aa451a609740b8ec2c9687e0489b8bbea3105285c6",
+            "rows": 2880,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/15m/ETHUSDT-15m-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "funding": {
+        "native": {
+          "url": "https://q.fmz.com/data/history?eid=Futures_Binance&symbol=ETH_USDT.funding&event=feed&detail=true&round=true&period=900000&from=1622419200&to=1622505600",
+          "sha256": "2f85d1be95036e9c8b2b1c8c6001f4cd324ce6bf72d3155a340c25f61e7deb0d",
+          "rows": 3
+        },
+        "first_four_equal": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "volume_equal": 3,
+        "maximum_price_or_rate_scaled_unit_difference": 0,
+        "venue": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-04.zip",
+            "sha256": "2fee34e8b9b6e828d01bab0df1c67104f7a98f3c063668c8db627b802ffa5a95",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-04.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-05.zip",
+            "sha256": "21809ef6691a1441bd55ba4af4494a038d1a399ae0ae432e80cb41b47d71f3bd",
+            "rows": 93,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-05.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-06.zip",
+            "sha256": "8e58ccf8f52c69c55754492daafadab92d4ca8c8bd027f4532582d06e9f36063",
+            "rows": 90,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-06.zip.CHECKSUM"
+          }
+        ]
+      },
+      "observed_1m": {
+        "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2021-05-31.zip",
+        "sha256": "aadc8daa647c14d6cc34a1a475792a9bf8a067a98838ab8c10e0a3b355a265c0",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2021-05-31.zip.CHECKSUM"
+      }
+    }
+  },
+  "definitions": {
+    "scope": "Three independently restarted 24h UTC sessions inside the archived 2019 to 2024 author horizon. Flat initial position, 100,000 USDT available, 10x initial leverage and 30m / 15m FMZ chart and base settings.",
+    "matching": "The exact archived JavaScript runs in the original FMZ simulated-tick engine. A separate native tape verifies bid/ask touch, the first eligible tick and full simulated size. Initial market and marketable limit executions charge 0.04% taker. Resting modeled fills execute at their limit price and charge 0.02% maker. Additional fixed slippage is zero.",
+    "cutoff": "The strategy stops trading at the scheduled cutoff and no fill reaches the last scheduled tick. The final account includes the cutoff quote and the same boundary settlement, timestamped up to 10ms after UTC midnight. The next simulated quote is excluded from the final balance and marks.",
+    "settlement": "Each native funding cash posting is reconstructed from consecutive account snapshots and an independently computed no-funding ledger. The signed rate and exact pre-settlement inventory imply a modeled mark inside the checksum-verified adjacent venue index and contract candles. One funding rate in the FMZ feed differs from the official archived rate by 1e-8. The replay uses the exact venue rate.",
+    "drawdown": "Each reduction counts as a closed trade with prorated weighted basis, opening fee and held funding. Closed drawdown uses these reductions alone. Marked equity drawdown includes the open long position, funding and all fees at the modeled ticks and executed order times.",
+    "observed_market_sensitivity": "Checksummed Binance 1m OHLC independently checks whether the modeled execution price appears within the observed low-high interval of that minute. This is only a price plausibility diagnostic. Historical queues, executable size and strategy paths under recorded order books remain unknown."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/339698",
+    "https://github.com/binance/binance-public-data",
+    "https://www.fmz.com/user-guide/backtesting-system/backtest-modes-and-order-matching",
+    "https://www.binance.com/en/blog/futures/421499824684900660"
+  ],
+  "reproduction": "Stage the fixed three market windows and exact archive source. Invoke native worker twice in a fresh offline isolated process, copying the first receipt aside. Use this verifier with both receipts, which must be byte identical."
+}
