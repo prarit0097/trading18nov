@@ -1,0 +1,14 @@
+# FMZ #4307 adaptive KDJ archived replay
+
+The unchanged Pine v5 body combines KDJ values from the 1m, 5m and 15m feeds with weights of 0.50, 0.33 and 0.17. Its default ATR rule picks the swing lookback. KDJ then uses daily observations sampled from the final available lower-timeframe candle of each day. The script compares the composite to the authored 22 and 78 entry thresholds, along with directional crossover or anticipation gates. The archive saves a daily Binance USD-M BTC chart from 1 January to 25 January 2025, end exclusive. ETH applies the same settings to a second real contract. [FMZ source](https://www.fmz.com/strategy/489320) [TradingView historical lower-timeframe behavior](https://www.tradingview.com/pine-script-docs/concepts/other-timeframes-and-data/#lower-timeframes)
+
+Each replay loads 24 verified daily candles and 34,560 Binance one-minute candles. Aggregation provides 6,912 five-minute and 2,304 fifteen-minute candles per contract and independently reproduces the daily OHLC. An independent calculation matches all three swing lengths, K, D, J and the final composite. It uses the documented complete lookback for historical extrema. A control starting the EMA at its first defined value also produces no buy or sell event. Allowing an incomplete extrema window adds unsupported signals in both markets, so that diagnostic contributes no performance. [TradingView execution model](https://www.tradingview.com/pine-script-docs/language/execution-model/) [Binance archives](https://github.com/binance/binance-public-data)
+
+The author body compiles and completes in the pinned runtime without a diagnostic or order. Moving the crossover calls outside the expressions and separately removing the incomplete trailing argument leave every observed result identical. With no exposure, these runs do not establish execution behavior for an actual stop, slippage or trail. On each market and the pooled row, gross and after-fee P&L and drawdown are zero, and win rate is undefined. The result covers the saved window with the supplied start and without earlier chart history.
+
+## Reproduce
+
+1. Place the FMZ archive document pinned by the evidence JSON in AppContainer scratch as `source-4307.md`. Use the verified January daily and one-minute USD-M archives.
+2. Run `python -m research.fmz_round40_4307_stage DAILY_ARCHIVES MINUTE_ARCHIVES APP_CONTAINER_ROOT`.
+3. Copy `fmz_round40_4307_runner.py` into the existing AppContainer fixture directory with the pinned Pine Compat engine and the established `replay_2864` and `probe_1216` support. Run it using the isolated launcher with an allowance of 150 seconds and preserve the no-file/no-network receipt.
+4. Run `python -m research.fmz_round40_4307 APP_CONTAINER_ROOT OUTPUT_JSON`. The finalizer checks the exact Pine outputs, the independent indicator series and the flat equity on both contracts.
