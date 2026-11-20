@@ -125,7 +125,7 @@ def fix_inputs(code):
     return patch(code, changes), len(changes)
 
 
-def rename_global(code):
+def rename_global(code, names=GLOBAL_RENAME):
     """Rename one unshadowed global binding without touching labels or callees."""
     masked = NO_QUOTED.sub(lambda m: " " * len(m.group()), code)
     declarations = local_declarations(masked)
@@ -139,7 +139,7 @@ def rename_global(code):
             parts[span[0]].start() for span in args if keyword(parts, span)[0]
         )
     changes, renamed = [], 0
-    for name in sorted(GLOBAL_RENAME & declarations):
+    for name in sorted(names & declarations):
         word = re.escape(name)
         fresh = "fmz_global_" + name
         if re.search(r"\b" + fresh + r"\b", masked):

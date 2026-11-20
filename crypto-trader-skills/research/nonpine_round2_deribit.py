@@ -33,7 +33,7 @@ def sign(side):
     return 1 if side == "buy" else -1
 
 
-def load(work):
+def load(work, windows=WINDOWS):
     manifest = json.loads((work / "manifest.json").read_bytes())
     dates = defaultdict(list)
     book = defaultdict(list)
@@ -59,8 +59,8 @@ def load(work):
     assert len(dates) == 4
     for spans in dates.values():
         spans.sort()
-        assert spans[0][0] == epoch(WINDOWS["Reference"][0])
-        assert spans[-1][1] == epoch(WINDOWS["Later"][1])
+        assert spans[0][0] == epoch(next(iter(windows.values()))[0])
+        assert spans[-1][1] == epoch(list(windows.values())[-1][1])
         assert all(a[1] == b[0] for a, b in zip(spans, spans[1:])), spans[:3]
     for series in book.values():
         series.sort(
@@ -206,31 +206,31 @@ def summary(id_, item, coin, period, trades, unsettled):
     )
 
 
-def replay(work):
+def replay(work, windows=WINDOWS):
     with (
         Path(__file__)
         .with_name("public-strategy-catalogue.csv")
         .open(encoding="utf-8-sig") as stream
     ):
         stock = list(csv.DictReader(stream))
-    book, inputs = load(work)
+    book, inputs = load(work, windows)
     cases = []
     for id_, code in enumerate(STRUCTURES, 6054):
         item = stock[id_ - 1]
         assert item["source"] == "Deribit"
-        windows = {
+        runs = {
             (label, coin): run(book[coin, code], code, coin, dates)
-            for label, dates in WINDOWS.items()
+            for label, dates in windows.items()
             for coin in UNIT
         }
-        observed = sum(a[2] for a in windows.values())
-        eligible = sum(a[3] for a in windows.values())
-        closed = sum(len(a[0]) for a in windows.values())
+        observed = sum(a[2] for a in runs.values())
+        eligible = sum(a[3] for a in runs.values())
+        closed = sum(len(a[0]) for a in runs.values())
         exposure = {
             f"{label}/{coin}": dict(
                 observed=a[2], eligible=a[3], closed=len(a[0]), open=a[1]
             )
-            for (label, coin), a in windows.items()
+            for (label, coin), a in runs.items()
         }
         if closed == 0:
             cases.append(
@@ -243,8 +243,8 @@ def replay(work):
             continue
         rows = []
         ledger = {}
-        for label in WINDOWS:
-            btc, eth = windows[label, "BTC"], windows[label, "ETH"]
+        for label in windows:
+            btc, eth = runs[label, "BTC"], runs[label, "ETH"]
             rows.extend(
                 [
                     summary(id_, item, "BTC combo", label, btc[0], btc[1]),
@@ -260,7 +260,7 @@ def replay(work):
                 ]
             )
             ledger[label] = {
-                coin: [v[4:] for v in windows[label, coin][0]] for coin in UNIT
+                coin: [v[4:] for v in runs[label, coin][0]] for coin in UNIT
             }
         cases.append(dict(id=id_, results=rows, evidence=exposure, trade_ids=ledger))
     return dict(cases=cases, inputs=inputs)

@@ -143,7 +143,7 @@ def prepare_data():
     )
 
 
-def native_market(config, futures):
+def native_market(config, futures, max_leverage=1):
     exchange = Binance(config, validate=False)
     raw = read(ROOT / ("futures-exchange.json" if futures else "spot-exchange.json"))
     exchange._api.options["crossMarginPairsData"] = []
@@ -157,15 +157,14 @@ def native_market(config, futures):
     exchange._api_async.set_markets_from_exchange(exchange._api)
     exchange._markets = exchange._api.markets
     if futures:
-        # The sandbox uses native 1x isolated margin. This conservative single
-        # tier is a model input for BTC/ETH positions at the $1,000 stake cap.
+        # The single modeled tier serves BTC/ETH positions at the $1,000 stake cap.
         for pair in FUTURE_PAIRS:
             exchange._leverage_tiers[pair] = [
                 dict(
                     minNotional=0,
                     maxNotional=100000,
                     maintenanceMarginRate=0.005,
-                    maxLeverage=1,
+                maxLeverage=max_leverage,
                     maintAmt=0,
                 )
             ]
@@ -285,7 +284,7 @@ def summary(item, market, period, interval, source_hash, sample, unsettled):
     )
 
 
-def analyze(item, name, mode, source_hash, label, dates):
+def analyze(item, name, mode, source_hash, label, dates, *, order_ledger=None, max_leverage=1):
     is_futures = mode == "futures"
     pairs = FUTURE_PAIRS if is_futures else SPOT_PAIRS
     margin_mode = MarginMode.ISOLATED if is_futures else MarginMode.NONE
@@ -331,7 +330,7 @@ def analyze(item, name, mode, source_hash, label, dates):
     )
     if item["id"] == 5813:
         config["timeframe"] = "5m"
-    exchange = native_market(config, is_futures)
+    exchange = native_market(config, is_futures, max_leverage=max_leverage)
     engine = None
     try:
         engine = Backtesting(
@@ -367,6 +366,14 @@ def analyze(item, name, mode, source_hash, label, dates):
         engine.backtest_one_strategy(strat, data, timerange)
         trades = engine.all_bt_content[name]["results"]
         records = trades.to_dict("records")
+        native_trades = {}
+        if order_ledger:
+            from freqtrade.persistence import LocalTrade
+
+            for trade in LocalTrade.bt_trades:
+                key = (trade.pair, trade.open_date_utc, trade.close_date_utc)
+                assert key not in native_trades
+                native_trades[key] = trade
         groups = {p: [] for p in pairs}
         unsettled = defaultdict(int)
         for row in records:
@@ -379,14 +386,19 @@ def analyze(item, name, mode, source_hash, label, dates):
                 and row["close_date"].timestamp() < stop
             ), "Trade outside frozen window"
             side = -1 if row["is_short"] else 1
-            open_value = row["open_rate"] * row["amount"]
-            close_value = row["close_rate"] * row["amount"]
+            if order_ledger:
+                trade = native_trades[pair, row["open_date"], row["close_date"]]
+                open_value, close_value, benchmark = order_ledger(trade)
+            else:
+                open_value = row["open_rate"] * row["amount"]
+                close_value = row["close_rate"] * row["amount"]
+                benchmark = row["profit_abs"]
             gross = side * (close_value - open_value)
             fees = (open_value + close_value) * FEE
             fee_only = gross - fees
             funding_cash = row.get("funding_fees") or 0.0
             assert math.isclose(
-                fee_only + funding_cash, row["profit_abs"], rel_tol=2e-5, abs_tol=0.001
+                fee_only + funding_cash, benchmark, rel_tol=2e-5, abs_tol=0.001
             ), "Native gross, fees and funding failed trade reconciliation"
             groups[pair].append(
                 (
