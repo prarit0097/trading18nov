@@ -1,0 +1,269 @@
+{
+  "baseline_sha256": "f45755ae5e879aa0f78e92862769ab43bbf6d58ba358ddc0d9ce0642163a96f4",
+  "source_revision": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "coverage": [
+    [
+      131,
+      "Excluded - Live API test demonstration",
+      "The publisher presents a simple live API test. The complete archive makes one fixed market buy after displaying API results and has no sell or closing rule."
+    ],
+    [
+      181,
+      "Excluded - C++ API tutorial",
+      "The publisher marks this educational. The complete archive demonstrates diagnostic functions and asynchronous ticker/depth queries. It contains no order submission path."
+    ],
+    [
+      1302,
+      "Excluded - Terminal plugin demonstration",
+      "The publisher labels this an embedded-terminal plugin. It repeats one user-selected order side and quantity a fixed number of times. There is no market-driven strategy or round-trip rule."
+    ],
+    [
+      3745,
+      "Excluded - Manual multivenue chart and order tool",
+      "The publisher presents auxiliary trading and charting. Both order actions are guarded by a manual command. The internal asynchronous scheduler is used only for ticker and record queries."
+    ],
+    [
+      4788,
+      "Excluded - Template usage example",
+      "The publisher presents a template usage example and provides side and quantity as form inputs. Its complete main body demonstrates a single mutually exclusive Buy or Sell call selected by those inputs."
+    ]
+  ],
+  "results": [],
+  "evidence": [
+    {
+      "id": 131,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/BitMEX-%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95.md",
+      "publisher_page": "https://www.fmz.com/strategy/40289",
+      "publisher_profile": "https://www.fmz.com/user/3b1cb13f2d25352b3ccc85f5157c6afc",
+      "document_sha256": "455f7a71a5284de6ef34b788c41f5b09f1c0583d75f6288330183bd738bdb9c7",
+      "code_sha256": "cc961884217864b770e13d520dd2223ca90d1299026ad6db122898fb3790dba1",
+      "archive_blocks": [
+        "javascript"
+      ],
+      "parsed_runtime": {
+        "id": 131,
+        "index": 0,
+        "names": [
+          "main"
+        ],
+        "roots": [
+          "FunctionDeclaration"
+        ],
+        "calls": [
+          "Log",
+          "_C",
+          "exchange.Buy",
+          "exchange.SetContractType",
+          "exchange.SetDirection"
+        ],
+        "route_evidence": [
+          {
+            "line": 14,
+            "target": "exchange.Buy",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": false
+          }
+        ],
+        "dynamic_function_constructor_lines": []
+      }
+    },
+    {
+      "id": 181,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/C-API%E8%B0%83%E7%94%A8%E4%BE%8B%E5%AD%90.md",
+      "publisher_page": "https://www.fmz.com/strategy/61533",
+      "publisher_profile": "https://www.fmz.com/user/fb532eadb7fb3022fe55854ad473b54b",
+      "document_sha256": "1c20816e3867a0cef0b7e4f2a987a03905ff518076efb915bd9ba8a7c56ee9e0",
+      "code_sha256": "3b83b0e487eaefae99bd3fe0a7b5c2a2f1b997f656fa0202c4f5db3fb64f407b",
+      "archive_blocks": [
+        "cpp"
+      ],
+      "verified_async_operations": [
+        "GetTicker",
+        "GetDepth"
+      ],
+      "verified_io_modes": [
+        "mode",
+        "wait_any"
+      ]
+    },
+    {
+      "id": 1302,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E4%BA%A4%E6%98%93%E7%BB%88%E7%AB%AF%E6%8F%92%E4%BB%B6%E8%8C%83%E4%BE%8B.md",
+      "publisher_page": "https://www.fmz.com/strategy/187708",
+      "publisher_profile": "https://www.fmz.com/user/105ed6e51bcc97792c610fdbb7e2a1d6",
+      "document_sha256": "aeb5bf52b2a511de982959c22a0e5259a187c2342945b16f4bd51e805730720c",
+      "code_sha256": "8916ec098f8cc96c800ae78a65fc6ff5290389bb98a095fa84624dbbeda92930",
+      "archive_blocks": [
+        "javascript"
+      ],
+      "parsed_runtime": {
+        "id": 1302,
+        "index": 0,
+        "names": [
+          "main"
+        ],
+        "roots": [
+          "FunctionDeclaration"
+        ],
+        "calls": [
+          "$.Buy",
+          "$.Sell",
+          "JSON.stringify",
+          "Log",
+          "Sleep",
+          "_C",
+          "tbl.rows.push"
+        ],
+        "route_evidence": [
+          {
+            "line": 13,
+            "target": "$.Buy",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": false
+          },
+          {
+            "line": 15,
+            "target": "$.Sell",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": false
+          }
+        ],
+        "dynamic_function_constructor_lines": []
+      }
+    },
+    {
+      "id": 3745,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%A4%9A%E4%BA%A4%E6%98%93%E6%89%80%E9%9B%86%E5%90%88%E8%A1%8C%E6%83%85-%E4%B8%8B%E5%8D%95-%E7%AD%96%E7%95%A5-%E8%8C%83%E4%BE%8B.md",
+      "publisher_page": "https://www.fmz.com/strategy/125569",
+      "publisher_profile": "https://www.fmz.com/user/105ed6e51bcc97792c610fdbb7e2a1d6",
+      "document_sha256": "c964386444f30fa6deb7d780ab5aa8b47f9f50e91a194667b20a70d2ebafad0b",
+      "code_sha256": "1daa2115448a648d418f7c6d21d91f6716f83315231c2c6ff7fec82138b8a451",
+      "archive_blocks": [
+        "javascript"
+      ],
+      "active_async_calls": [
+        "GetTicker",
+        "GetRecords"
+      ],
+      "parsed_runtime": {
+        "id": 3745,
+        "index": 0,
+        "names": [
+          "CreateExchanges",
+          "main"
+        ],
+        "roots": [
+          "VariableDeclaration",
+          "VariableDeclaration",
+          "VariableDeclaration",
+          "VariableDeclaration",
+          "FunctionDeclaration",
+          "FunctionDeclaration"
+        ],
+        "calls": [
+          "$.Buy",
+          "$.Sell",
+          "<MemberExpression>.GetCurrency",
+          "<MemberExpression>.GetName",
+          "<MemberExpression>.Go",
+          "<MemberExpression>.SetProxy",
+          "<MemberExpression>.split",
+          "<MemberExpression>.wait",
+          "<NewExpression>.getTime",
+          "Chart",
+          "CreateExchanges",
+          "GetCommand",
+          "JSON.stringify",
+          "Log",
+          "LogStatus",
+          "Sleep",
+          "_.each",
+          "_D",
+          "arrCfg.push",
+          "chart.reset",
+          "chartObj.add",
+          "chartObj.update",
+          "cmd.split",
+          "exs.Chart",
+          "exs.GetRecords",
+          "exs.GetTicker",
+          "exs.TableUpdate",
+          "exs.ex_objs.push",
+          "parseInt",
+          "self.Go",
+          "self.table.rows.push"
+        ],
+        "route_evidence": [
+          {
+            "line": 197,
+            "target": "GetCommand",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": false
+          },
+          {
+            "line": 206,
+            "target": "$.Buy",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": true
+          },
+          {
+            "line": 208,
+            "target": "$.Sell",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": true
+          }
+        ],
+        "dynamic_function_constructor_lines": []
+      }
+    },
+    {
+      "id": 4788,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%A8%A1%E6%9D%BF%E5%BA%93%E4%BD%BF%E7%94%A8%E4%BE%8B%E5%AD%90.md",
+      "publisher_page": "https://www.fmz.com/strategy/10991",
+      "publisher_profile": "https://www.fmz.com/user/fb532eadb7fb3022fe55854ad473b54b",
+      "document_sha256": "794c0f2f2cff2efadf46d363d675d90998263cc4e54850f49c7630820c7bc54e",
+      "code_sha256": "738a046c5e5100e863a194a98990978bef0cfad6ab13cda59089a44c0688c611",
+      "archive_blocks": [
+        "javascript"
+      ],
+      "parsed_runtime": {
+        "id": 4788,
+        "index": 0,
+        "names": [
+          "main"
+        ],
+        "roots": [
+          "FunctionDeclaration"
+        ],
+        "calls": [
+          "$.Buy",
+          "$.Sell",
+          "Log"
+        ],
+        "route_evidence": [
+          {
+            "line": 3,
+            "target": "$.Buy",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": false
+          },
+          {
+            "line": 3,
+            "target": "$.Sell",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": false
+          }
+        ],
+        "dynamic_function_constructor_lines": []
+      }
+    }
+  ]
+}

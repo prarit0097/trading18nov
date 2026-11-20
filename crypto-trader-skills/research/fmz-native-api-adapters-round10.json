@@ -1,0 +1,161 @@
+{
+  "baseline_sha256": "f45755ae5e879aa0f78e92862769ab43bbf6d58ba358ddc0d9ce0642163a96f4",
+  "source_revision": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "coverage": [
+    [
+      133,
+      "Excluded - Bulk-order API interface",
+      "The publisher presents a BitMEX API interface. The complete main routine queries an account and logs the result. All bulk-order and cancellation actions are functions for a separate caller."
+    ],
+    [
+      4399,
+      "Excluded - Order-detail API example",
+      "The publisher presents a filled-order detail interface. The archive includes a request-schema block and two copies of the same fixed single-sell demonstration followed by a detail query. It supplies no market entry and exit lifecycle."
+    ]
+  ],
+  "results": [],
+  "evidence": [
+    {
+      "id": 133,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/BitMEX-%E9%AB%98%E7%BA%A7API%E5%8A%9F%E8%83%BD-%E6%9C%9F%E8%B4%A7%E6%89%B9%E9%87%8F%E4%B8%8B%E5%8D%95%E4%B8%80%E9%94%AE%E6%92%A4%E5%8D%95-JavaScript.md",
+      "publisher_page": "https://www.fmz.com/strategy/105056",
+      "publisher_profile": "https://www.fmz.com/user/0f8cface7dc823c686c100ba49268896",
+      "document_sha256": "94ffa5bac4427f6161a6b8d2fe5acd89cd63d26a76a16125be473dc16379eafe",
+      "code_sha256s": [
+        "80548c2e97e55ac835d19fdb2f3f28dd5a55c7157f11aeb61c66dc52c5ba1d14"
+      ],
+      "parsed_blocks": [
+        {
+          "id": 133,
+          "idx": 0,
+          "lang": "javascript",
+          "source_hash": "94ffa5bac4427f6161a6b8d2fe5acd89cd63d26a76a16125be473dc16379eafe",
+          "roots": [
+            "FunctionDeclaration",
+            "VariableDeclaration",
+            "FunctionDeclaration",
+            "FunctionDeclaration",
+            "FunctionDeclaration",
+            "FunctionDeclaration"
+          ],
+          "main_present": true,
+          "main_calls": [
+            {
+              "target": "Log"
+            },
+            {
+              "target": "exchange.GetAccount"
+            }
+          ],
+          "all_calls": [
+            "JSON.stringify",
+            "Log",
+            "Object.keys",
+            "exchange.GetAccount",
+            "exchange.GetCurrency",
+            "exchange.IO"
+          ],
+          "order_route_keywords": []
+        }
+      ]
+    },
+    {
+      "id": 4399,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B0%81%E8%A3%85Bithumb%E7%9A%84ordersDetail%E6%8E%A5%E5%8F%A3.md",
+      "publisher_page": "https://www.fmz.com/strategy/132241",
+      "publisher_profile": "https://www.fmz.com/user/105ed6e51bcc97792c610fdbb7e2a1d6",
+      "document_sha256": "a78ea8d9e0b2a05112bec5136c39db2f7b9cd0b80b17f6d0d3eeb739218937cf",
+      "code_sha256s": [
+        "d7c9b053fbfcf2bf6caebcaefbcd588bcd5c6d2cc80abdfd6c4d1c54cfee56ab",
+        "c6c7135f41da448b63865796ccc40bdd1e42aca7b2f9319b0afd37a690cffe34",
+        "29ccccf32aafcdbd8a66bc5a080648e4333bf063da2608787e20bd71d9176748"
+      ],
+      "parsed_blocks": [
+        {
+          "id": 4399,
+          "idx": 0,
+          "lang": "",
+          "source_hash": "a78ea8d9e0b2a05112bec5136c39db2f7b9cd0b80b17f6d0d3eeb739218937cf",
+          "roots": [],
+          "main_present": false,
+          "main_calls": [],
+          "all_calls": [],
+          "order_route_keywords": []
+        },
+        {
+          "id": 4399,
+          "idx": 1,
+          "lang": "",
+          "source_hash": "a78ea8d9e0b2a05112bec5136c39db2f7b9cd0b80b17f6d0d3eeb739218937cf",
+          "roots": [
+            "FunctionDeclaration"
+          ],
+          "main_present": true,
+          "main_calls": [
+            {
+              "target": "exchange.Sell",
+              "literalOrder": true
+            },
+            {
+              "target": "Sleep"
+            },
+            {
+              "target": "$.GetOrder"
+            },
+            {
+              "target": "Log"
+            }
+          ],
+          "all_calls": [
+            "$.GetOrder",
+            "Log",
+            "Sleep",
+            "exchange.Sell"
+          ],
+          "order_route_keywords": []
+        },
+        {
+          "id": 4399,
+          "idx": 2,
+          "lang": "javascript",
+          "source_hash": "a78ea8d9e0b2a05112bec5136c39db2f7b9cd0b80b17f6d0d3eeb739218937cf",
+          "roots": [
+            "FunctionDeclaration",
+            "ExpressionStatement",
+            "FunctionDeclaration"
+          ],
+          "main_present": true,
+          "main_calls": [
+            {
+              "target": "exchange.Sell",
+              "literalOrder": true
+            },
+            {
+              "target": "Sleep"
+            },
+            {
+              "target": "$.GetOrder"
+            },
+            {
+              "target": "Log"
+            }
+          ],
+          "all_calls": [
+            "$.GetOrder",
+            "GetOrder",
+            "Log",
+            "Sleep",
+            "e.GetCurrency",
+            "e.GetName",
+            "e.IO",
+            "exchange.Sell",
+            "symbol.split"
+          ],
+          "order_route_keywords": [
+            "order_detail"
+          ]
+        }
+      ]
+    }
+  ]
+}

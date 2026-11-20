@@ -1,0 +1,503 @@
+{
+  "source_revision": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "coverage": [
+    [
+      688,
+      "Tested · FMZ historical Python native",
+      "Use the author's SpreadVal=2, its hourly Bitfinex spot records and the source trading branches. Python 3 range replaces xrange. The seeded estimator uses the contemporary historical dual solver. BTC/USD is the archived instrument. ETH/USD uses the same USD thresholds as a separate port."
+    ]
+  ],
+  "results": [
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Python SVM model for buy and sell signals",
+      "market": "BTCUSD spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "id": 688,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%8B-SVM-%E9%A2%84%E6%B5%8B%E4%B9%B0%E5%8D%96.md",
+      "interval": "1h",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USD"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Python SVM model for buy and sell signals",
+      "market": "ETHUSD spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "id": 688,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%8B-SVM-%E9%A2%84%E6%B5%8B%E4%B9%B0%E5%8D%96.md",
+      "interval": "1h",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USD"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Python SVM model for buy and sell signals",
+      "market": "BTCUSD + ETHUSD spot",
+      "exit": "Archived Python venue orders",
+      "period": "Reference",
+      "trades": 0,
+      "unsettled": 4,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "id": 688,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%8B-SVM-%E9%A2%84%E6%B5%8B%E4%B9%B0%E5%8D%96.md",
+      "interval": "1h",
+      "archive_interval": "Legacy API",
+      "starting_equity": 20000.0,
+      "quote_currency": "USD"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Python SVM model for buy and sell signals",
+      "market": "BTCUSD spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 2,
+      "unsettled": 3,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross": 44.838885116033566,
+      "after_fees": 33.01978143968006,
+      "net": 27.010067705940987,
+      "fees": 11.819103676353507,
+      "execution": 6.009713733739073,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "id": 688,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%8B-SVM-%E9%A2%84%E6%B5%8B%E4%B9%B0%E5%8D%96.md",
+      "interval": "1h",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USD"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Python SVM model for buy and sell signals",
+      "market": "ETHUSD spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 0,
+      "unsettled": 2,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0,
+      "after_fees": 0,
+      "net": 0,
+      "fees": 0,
+      "execution": 0,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "id": 688,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%8B-SVM-%E9%A2%84%E6%B5%8B%E4%B9%B0%E5%8D%96.md",
+      "interval": "1h",
+      "archive_interval": "Legacy API",
+      "starting_equity": 10000.0,
+      "quote_currency": "USD"
+    },
+    {
+      "group": "FMZ Python · archived native spot",
+      "name": "Python SVM model for buy and sell signals",
+      "market": "BTCUSD + ETHUSD spot",
+      "exit": "Archived Python venue orders",
+      "period": "Later",
+      "trades": 2,
+      "unsettled": 5,
+      "gross_wins": 2,
+      "fee_wins": 2,
+      "net_wins": 2,
+      "gross": 44.838885116033566,
+      "after_fees": 33.01978143968006,
+      "net": 27.010067705940987,
+      "fees": 11.819103676353507,
+      "execution": 6.009713733739073,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "id": 688,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%8B-SVM-%E9%A2%84%E6%B5%8B%E4%B9%B0%E5%8D%96.md",
+      "interval": "1h",
+      "archive_interval": "Legacy API",
+      "starting_equity": 20000.0,
+      "quote_currency": "USD"
+    }
+  ],
+  "isolation": {
+    "file_error": [
+      "PermissionError",
+      null
+    ],
+    "network_error": [
+      "PermissionError",
+      10013
+    ]
+  },
+  "worker_sha256": "b8d12b376d4b9840819ce1d13e091a85e1f7da960f78b2746ca705e08505e8f5",
+  "retry_worker_sha256": {
+    "688": "d3c3c07d440f01368ec08f5e30b9cc995e60df7848a582c31785e95ecc4bfc7e"
+  },
+  "broker_sha256": "504c312b9b4b410e84c9812298964becc7ae669f253fa0790480330661b212c0",
+  "evidence": [
+    {
+      "id": 688,
+      "feed": {
+        "coin": "BTC",
+        "symbol": "BTC_USD",
+        "quote_currency": "USD",
+        "base": "15m",
+        "period": "1h",
+        "base_seconds": 900,
+        "file": "round9-bitfinex-BTC-15m.json",
+        "sha256": "cc529c04e5d04a1c42b7ad380d7f6c113083c2ed34fc149d3d399fcb55a7b74b",
+        "providers": [
+          {
+            "coin": "BTC",
+            "filename": "bitfinex-BTC-2026-09-10-2026-10-19-15m.json",
+            "uri": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Bitfinex&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD&from=1788998400&to=1792368000",
+            "sha256": "f49c8187f20f8abc83c5484d54dde11b26d179c18748d07427e17d1044b51f6d",
+            "rows": 3745,
+            "first": 1788998400000,
+            "last": 1792368000000
+          },
+          {
+            "coin": "BTC",
+            "filename": "bitfinex-BTC-2026-10-19-2026-11-06-15m.json",
+            "uri": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Bitfinex&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD&from=1792368000&to=1793923200",
+            "sha256": "56108e2d0b5876e6835a02d0a4c68d55fa3999c89b4388e3929e45c706c2f9b0",
+            "rows": 1729,
+            "first": 1792368000000,
+            "last": 1793923200000
+          }
+        ],
+        "start": "2026-09-23",
+        "end": "2026-10-21"
+      },
+      "source_sha256": "8a4d94d4a35ef10301aa9144f2ac805dc7e22f83f5e0d29fa657846d5e7c0662",
+      "initial_inventory": {
+        "price": 86295.0,
+        "base": 0,
+        "cash": 10000,
+        "timestamp": 1790100900000
+      },
+      "public_settings": {
+        "preview_chars": 2245,
+        "sha256": "5fd5cc33b367bd715f0519dac290bf5ba827941fd69c2b61ea2cc4457cef2645",
+        "args": {
+          "SpreadVal": 2
+        },
+        "estimated_runtime_profile": "https://scikit-learn.org/0.21/modules/generated/sklearn.svm.LinearSVC.html",
+        "dependency_versions": {
+          "sklearn": "1.9.1",
+          "numpy": "2.5.5",
+          "scipy": "1.18.1"
+        },
+        "reproducibility_seed": 0
+      },
+      "worker_code_sha256": "91d9d99eae10c848425d965165b02ccdd59086e7657cb238729d4349421d4ef4",
+      "raw_receipt_sha256": "77f0da604b7c4cf6a7fb036fbb64ad74209be3c8a974fd6d127fe987ace28ffd",
+      "template": null,
+      "order_count": 2,
+      "closing_account": {
+        "Balance": 0.003481,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.115897201382527,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": -9.094947017729282e-13,
+        "asset_error": 1.3877787807814457e-17
+      },
+      "close_count": 0,
+      "open_count": 2,
+      "scheduled_sleeps": 32969
+    },
+    {
+      "id": 688,
+      "feed": {
+        "coin": "BTC",
+        "symbol": "BTC_USD",
+        "quote_currency": "USD",
+        "base": "15m",
+        "period": "1h",
+        "base_seconds": 900,
+        "file": "round9-bitfinex-BTC-15m.json",
+        "sha256": "cc529c04e5d04a1c42b7ad380d7f6c113083c2ed34fc149d3d399fcb55a7b74b",
+        "providers": [
+          {
+            "coin": "BTC",
+            "filename": "bitfinex-BTC-2026-09-10-2026-10-19-15m.json",
+            "uri": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Bitfinex&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD&from=1788998400&to=1792368000",
+            "sha256": "f49c8187f20f8abc83c5484d54dde11b26d179c18748d07427e17d1044b51f6d",
+            "rows": 3745,
+            "first": 1788998400000,
+            "last": 1792368000000
+          },
+          {
+            "coin": "BTC",
+            "filename": "bitfinex-BTC-2026-10-19-2026-11-06-15m.json",
+            "uri": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Bitfinex&depth=5&trades=0&custom=0&period=900000&symbol=BTC_USD&from=1792368000&to=1793923200",
+            "sha256": "56108e2d0b5876e6835a02d0a4c68d55fa3999c89b4388e3929e45c706c2f9b0",
+            "rows": 1729,
+            "first": 1792368000000,
+            "last": 1793923200000
+          }
+        ],
+        "start": "2026-10-21",
+        "end": "2026-11-04"
+      },
+      "source_sha256": "8a4d94d4a35ef10301aa9144f2ac805dc7e22f83f5e0d29fa657846d5e7c0662",
+      "initial_inventory": {
+        "price": 82541.0,
+        "base": 0,
+        "cash": 10000,
+        "timestamp": 1792520100000
+      },
+      "public_settings": {
+        "preview_chars": 2245,
+        "sha256": "5fd5cc33b367bd715f0519dac290bf5ba827941fd69c2b61ea2cc4457cef2645",
+        "args": {
+          "SpreadVal": 2
+        },
+        "estimated_runtime_profile": "https://scikit-learn.org/0.21/modules/generated/sklearn.svm.LinearSVC.html",
+        "dependency_versions": {
+          "sklearn": "1.9.1",
+          "numpy": "2.5.5",
+          "scipy": "1.18.1"
+        },
+        "reproducibility_seed": 0
+      },
+      "worker_code_sha256": "91d9d99eae10c848425d965165b02ccdd59086e7657cb238729d4349421d4ef4",
+      "raw_receipt_sha256": "ee54d599ba8107ab538880862929660498a55216eb5968335a9d2d6bf2775134",
+      "template": null,
+      "order_count": 5,
+      "closing_account": {
+        "Balance": 32.69318148051402,
+        "FrozenBalance": 0.0,
+        "Stocks": 0.1205365136297287,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 0.0,
+        "asset_error": 1.3877787807814457e-17
+      },
+      "close_count": 2,
+      "open_count": 3,
+      "scheduled_sleeps": 16708
+    },
+    {
+      "id": 688,
+      "feed": {
+        "coin": "ETH",
+        "symbol": "ETH_USD",
+        "quote_currency": "USD",
+        "base": "15m",
+        "period": "1h",
+        "base_seconds": 900,
+        "file": "round9-bitfinex-ETH-15m.json",
+        "sha256": "d4baf1e1897dcc75da1de5b393163c8b7f4eb76b08e3040d18d612c429b29f1d",
+        "providers": [
+          {
+            "coin": "ETH",
+            "filename": "bitfinex-ETH-2026-09-10-2026-10-19-15m.json",
+            "uri": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Bitfinex&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD&from=1788998400&to=1792368000",
+            "sha256": "95f3c4631d94a4400a768c19714512853f06db86231b844c69a2cc127b6b52e6",
+            "rows": 3745,
+            "first": 1788998400000,
+            "last": 1792368000000
+          },
+          {
+            "coin": "ETH",
+            "filename": "bitfinex-ETH-2026-10-19-2026-11-06-15m.json",
+            "uri": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Bitfinex&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD&from=1792368000&to=1793923200",
+            "sha256": "0f8f50805ecb14f826aa40655fcd3ff455d8c542e1e3e785eb1c261c35cb6416",
+            "rows": 1729,
+            "first": 1792368000000,
+            "last": 1793923200000
+          }
+        ],
+        "start": "2026-09-23",
+        "end": "2026-10-21"
+      },
+      "source_sha256": "8a4d94d4a35ef10301aa9144f2ac805dc7e22f83f5e0d29fa657846d5e7c0662",
+      "initial_inventory": {
+        "price": 2742.7,
+        "base": 0,
+        "cash": 10000,
+        "timestamp": 1790100900000
+      },
+      "public_settings": {
+        "preview_chars": 2245,
+        "sha256": "5fd5cc33b367bd715f0519dac290bf5ba827941fd69c2b61ea2cc4457cef2645",
+        "args": {
+          "SpreadVal": 2
+        },
+        "estimated_runtime_profile": "https://scikit-learn.org/0.21/modules/generated/sklearn.svm.LinearSVC.html",
+        "dependency_versions": {
+          "sklearn": "1.9.1",
+          "numpy": "2.5.5",
+          "scipy": "1.18.1"
+        },
+        "reproducibility_seed": 0
+      },
+      "worker_code_sha256": "91d9d99eae10c848425d965165b02ccdd59086e7657cb238729d4349421d4ef4",
+      "raw_receipt_sha256": "5ac442b24cc4b00cc648a7fc32b7078fd0d3542598e52ea0f8ffefa3827e3f2f",
+      "template": null,
+      "order_count": 2,
+      "closing_account": {
+        "Balance": 0.003481,
+        "FrozenBalance": 0.0,
+        "Stocks": 3.637797147643572,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 9.094947017729282e-13,
+        "asset_error": 0.0
+      },
+      "close_count": 0,
+      "open_count": 2,
+      "scheduled_sleeps": 31621
+    },
+    {
+      "id": 688,
+      "feed": {
+        "coin": "ETH",
+        "symbol": "ETH_USD",
+        "quote_currency": "USD",
+        "base": "15m",
+        "period": "1h",
+        "base_seconds": 900,
+        "file": "round9-bitfinex-ETH-15m.json",
+        "sha256": "d4baf1e1897dcc75da1de5b393163c8b7f4eb76b08e3040d18d612c429b29f1d",
+        "providers": [
+          {
+            "coin": "ETH",
+            "filename": "bitfinex-ETH-2026-09-10-2026-10-19-15m.json",
+            "uri": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Bitfinex&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD&from=1788998400&to=1792368000",
+            "sha256": "95f3c4631d94a4400a768c19714512853f06db86231b844c69a2cc127b6b52e6",
+            "rows": 3745,
+            "first": 1788998400000,
+            "last": 1792368000000
+          },
+          {
+            "coin": "ETH",
+            "filename": "bitfinex-ETH-2026-10-19-2026-11-06-15m.json",
+            "uri": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Bitfinex&depth=5&trades=0&custom=0&period=900000&symbol=ETH_USD&from=1792368000&to=1793923200",
+            "sha256": "0f8f50805ecb14f826aa40655fcd3ff455d8c542e1e3e785eb1c261c35cb6416",
+            "rows": 1729,
+            "first": 1792368000000,
+            "last": 1793923200000
+          }
+        ],
+        "start": "2026-10-21",
+        "end": "2026-11-04"
+      },
+      "source_sha256": "8a4d94d4a35ef10301aa9144f2ac805dc7e22f83f5e0d29fa657846d5e7c0662",
+      "initial_inventory": {
+        "price": 2439.5,
+        "base": 0,
+        "cash": 10000,
+        "timestamp": 1792520100000
+      },
+      "public_settings": {
+        "preview_chars": 2245,
+        "sha256": "5fd5cc33b367bd715f0519dac290bf5ba827941fd69c2b61ea2cc4457cef2645",
+        "args": {
+          "SpreadVal": 2
+        },
+        "estimated_runtime_profile": "https://scikit-learn.org/0.21/modules/generated/sklearn.svm.LinearSVC.html",
+        "dependency_versions": {
+          "sklearn": "1.9.1",
+          "numpy": "2.5.5",
+          "scipy": "1.18.1"
+        },
+        "reproducibility_seed": 0
+      },
+      "worker_code_sha256": "91d9d99eae10c848425d965165b02ccdd59086e7657cb238729d4349421d4ef4",
+      "raw_receipt_sha256": "a1bc8b9047d7ee8f0abe6302cf717a20775277955eeca9b9382d2a0f8ce68aa2",
+      "template": null,
+      "order_count": 2,
+      "closing_account": {
+        "Balance": 0.003481,
+        "FrozenBalance": 0.0,
+        "Stocks": 4.064693588015304,
+        "FrozenStocks": 0.0,
+        "Equity": 0.0,
+        "UPnL": 0.0
+      },
+      "accounting": {
+        "cash_error": 9.094947017729282e-13,
+        "asset_error": 0.0
+      },
+      "close_count": 0,
+      "open_count": 2,
+      "scheduled_sleeps": 16098
+    }
+  ]
+}

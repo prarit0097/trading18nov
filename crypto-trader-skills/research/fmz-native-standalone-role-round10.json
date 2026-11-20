@@ -1,0 +1,656 @@
+{
+  "baseline_sha256": "f45755ae5e879aa0f78e92862769ab43bbf6d58ba358ddc0d9ce0642163a96f4",
+  "source_revision": "7853bb2bf262c4567ac238d3552d97f0e50cb801",
+  "native_sources_screened": 205,
+  "shortlisted_for_review": 33,
+  "coverage": [
+    [
+      113,
+      "Excluded - On-chain transfer tool",
+      "The publisher describes an automated wallet-transfer tool. Its complete executable source signs and broadcasts chain transfers, with no price signal or market entry/exit rule."
+    ],
+    [
+      1095,
+      "Excluded - Margin execution template",
+      "The author documents connecting this margin-order interface to a separate strategy. The complete archive defines initialization and callable margin order helpers, with no independent market-driven caller."
+    ],
+    [
+      1333,
+      "Excluded - Asynchronous programming template",
+      "The publisher classifies this as an asynchronous programming template. Its complete demonstration calls GetDepth and GetTicker, with no trade lifecycle."
+    ],
+    [
+      4414,
+      "Excluded - Account WebSocket tutorial",
+      "The publisher classifies this as a tool. The executable example creates a stream session, requests balance, account and position data, and logs incoming messages. It has no order submission."
+    ],
+    [
+      4422,
+      "Excluded - Manual order execution tool",
+      "The publisher confirms manual execution. All six archived order calls occur inside the button-command guard, with direction and quantity selected through the tool rather than a market signal."
+    ],
+    [
+      4548,
+      "Excluded - Companion strategy library",
+      "The business library is an explicit dependency of the separately catalogued Ghost trend strategy #4547. It exports service functions to that caller and does not independently run an order lifecycle."
+    ],
+    [
+      4549,
+      "Excluded - Companion strategy library",
+      "The data-access library exports the order and account interfaces consumed by the Ghost trend strategy business layer #4548. The publisher classifies it as a template without its own standalone execution schedule."
+    ],
+    [
+      4547,
+      "Pending - Linked futures strategy replay",
+      "The #4548 and #4549 library chain is now source-bound. The surviving parent strategy still needs synchronized Binance derivatives market data, raw position and margin responses, directions, and a reconciled futures execution model."
+    ]
+  ],
+  "results": [],
+  "evidence": [
+    {
+      "id": 113,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/BSC-Transaction.md",
+      "document_sha256": "6169ef632ad8a9cbdbc43762eef6e9363d157fc6153c210ea3dd448e076529eb",
+      "publisher_page": "https://www.fmz.com/strategy/263596",
+      "publisher_profile": "https://www.fmz.com/user/f7b29cbfa1cc6ee26cfd97c416ffe09f",
+      "code_sha256": "3afef209215eb90cf4e3d8dcbd98344a0947bc6d8f536ce5719729327d893b82",
+      "top_level": [
+        "ImportFrom",
+        "Import",
+        "Import",
+        "Import",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef"
+      ],
+      "definitions": [
+        "transaction",
+        "transaction_bnb",
+        "doAction",
+        "main"
+      ],
+      "verified_transfer_targets": [
+        "HTTPProvider",
+        "Log",
+        "LogReset",
+        "Sleep",
+        "Web3",
+        "_D",
+        "buildTransaction",
+        "contract",
+        "doAction",
+        "exit",
+        "fromWei",
+        "getTransactionCount",
+        "get_balance",
+        "get_transaction",
+        "isConnected",
+        "loads",
+        "sendRawTransaction",
+        "signTransaction",
+        "time",
+        "toChecksumAddress",
+        "toHex",
+        "toJSON",
+        "toWei",
+        "transaction",
+        "transaction_bnb",
+        "transfer",
+        "waitForTransactionReceipt"
+      ]
+    },
+    {
+      "id": 1095,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/bitfinex%E4%BF%9D%E8%AF%81%E9%87%91%E4%BA%A4%E6%98%93.md",
+      "document_sha256": "68c1a91600ff95d8e3798d4fe339658997d92301e5067a9f5a485b98a28619a8",
+      "publisher_page": "https://www.fmz.com/strategy/57333",
+      "publisher_profile": "https://www.fmz.com/user/47827adf6dfd6a4891c68b028456f0e2",
+      "code_sha256": "45081523f7bdd44332d5ef41355a9f00b18a00887e5816d834f7296668d2be8d",
+      "parsed_runtime": {
+        "id": 1095,
+        "index": 0,
+        "names": [
+          "init"
+        ],
+        "roots": [
+          "VariableDeclaration",
+          "VariableDeclaration",
+          "VariableDeclaration",
+          "FunctionDeclaration",
+          "ExpressionStatement",
+          "ExpressionStatement",
+          "ExpressionStatement",
+          "ExpressionStatement",
+          "ExpressionStatement",
+          "ExpressionStatement"
+        ],
+        "calls": [
+          "<CallExpression>.split",
+          "<MemberExpression>.GetCurrency",
+          "<MemberExpression>.GetName",
+          "<MemberExpression>.IO",
+          "amount.toString",
+          "parseInt",
+          "price.toString"
+        ],
+        "route_evidence": [],
+        "dynamic_function_constructor_lines": []
+      },
+      "archive_blocks": [
+        "javascript"
+      ]
+    },
+    {
+      "id": 1333,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E4%BB%BFPromise%E5%BC%82%E6%AD%A5%E6%A8%A1%E6%9D%BF.md",
+      "document_sha256": "ca20814bea3aed689866587ff16af2c49a83075dd249260ed5cd5eb9a2b19da0",
+      "publisher_page": "https://www.fmz.com/strategy/386497",
+      "publisher_profile": "https://www.fmz.com/user/ba5ede2f7dc7eca41e47e7a1d1c4ac37",
+      "code_sha256": "083e11cee19af74c03bdfaeb9d08cc54fcb7e7c44ecebc6025bc2c34ad9435e2",
+      "parsed_runtime": {
+        "id": 1333,
+        "index": 0,
+        "names": [
+          "handler",
+          "errback",
+          "processData",
+          "main"
+        ],
+        "roots": [
+          "ClassDeclaration",
+          "FunctionDeclaration"
+        ],
+        "calls": [
+          "<CallExpression>.catch",
+          "<CallExpression>.then",
+          "<NewExpression>.then",
+          "<ThisExpression>.onRejectedCallbacks.shift",
+          "<ThisExpression>.onResolvedCallbacks.shift",
+          "<ThisExpression>.then",
+          "Log",
+          "Task.WaitResults.push",
+          "Task.WaitResults.shift",
+          "Task.all",
+          "Task.wait",
+          "console.log",
+          "errback",
+          "exchange.Go",
+          "exchange.SetContractType",
+          "executor",
+          "handle",
+          "handler",
+          "item.then",
+          "onFulfilled",
+          "onRejected",
+          "processData",
+          "promise.onRejectedCallbacks.push",
+          "promise.onResolvedCallbacks.push",
+          "reject",
+          "resolve",
+          "ret.then"
+        ],
+        "route_evidence": [
+          {
+            "line": 139,
+            "target": "exchange.Go",
+            "function": "main",
+            "constant_operations": [
+              "GetDepth"
+            ],
+            "command_guard": false
+          },
+          {
+            "line": 161,
+            "target": "exchange.Go",
+            "function": "main",
+            "constant_operations": [
+              "GetDepth"
+            ],
+            "command_guard": false
+          },
+          {
+            "line": 164,
+            "target": "exchange.Go",
+            "function": "main",
+            "constant_operations": [
+              "GetTicker"
+            ],
+            "command_guard": false
+          }
+        ],
+        "dynamic_function_constructor_lines": []
+      },
+      "archive_blocks": [
+        "javascript"
+      ]
+    },
+    {
+      "id": 4414,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6websocket%E6%8E%A5%E5%8F%A3%E6%9F%A5%E8%AF%A2%E6%8C%81%E4%BB%93%E8%B4%A6%E6%88%B7%E8%8C%83%E4%BE%8B.md",
+      "document_sha256": "81a2bcdf2ea58ee51b9c5b822b7f1e30e95553187fa0c22876ef67f8786047f4",
+      "publisher_page": "https://www.fmz.com/strategy/242102",
+      "publisher_profile": "https://www.fmz.com/user/105ed6e51bcc97792c610fdbb7e2a1d6",
+      "code_sha256": "42c0957f19b1514f32af7abcb8fe9e0308c9587eec175b18cb7ba3f27638ed6b",
+      "parsed_runtime": {
+        "id": 4414,
+        "index": 0,
+        "names": [
+          "main"
+        ],
+        "roots": [
+          "FunctionDeclaration"
+        ],
+        "calls": [
+          "<NewExpression>.getTime",
+          "Dial",
+          "JSON.stringify",
+          "Log",
+          "LogReset",
+          "Sleep",
+          "String",
+          "exchange.IO",
+          "ws.read",
+          "ws.write"
+        ],
+        "route_evidence": [
+          {
+            "line": 4,
+            "target": "exchange.IO",
+            "function": "main",
+            "constant_operations": [
+              "base"
+            ],
+            "command_guard": false
+          },
+          {
+            "line": 5,
+            "target": "exchange.IO",
+            "function": "main",
+            "constant_operations": [
+              "api",
+              "POST",
+              "/dapi/v1/listenKey"
+            ],
+            "command_guard": false
+          },
+          {
+            "line": 21,
+            "target": "ws.write",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": false
+          }
+        ],
+        "dynamic_function_constructor_lines": []
+      },
+      "archive_blocks": [
+        "javascript"
+      ]
+    },
+    {
+      "id": 4422,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E6%89%8B%E5%8A%A8%E5%BC%80%E5%B9%B3%E4%BB%93%E5%B7%A5%E5%85%B7.md",
+      "document_sha256": "6bd7d76df570d4d2655852f5c8b2557fc399443223c963e681277dd6797456ac",
+      "publisher_page": "https://www.fmz.com/strategy/335089",
+      "publisher_profile": "https://www.fmz.com/user/01a7149bd3d2ec5f97ceb2ef13f722e6",
+      "code_sha256": "215c2d15272aa1ff2702d5e4818eee7fec057b5c3cee6cf4ea1a46ecc2962a56",
+      "parsed_runtime": {
+        "id": 4422,
+        "index": 0,
+        "names": [
+          "ButtonFun",
+          "main"
+        ],
+        "roots": [
+          "VariableDeclaration",
+          "FunctionDeclaration",
+          "FunctionDeclaration"
+        ],
+        "calls": [
+          "ButtonFun",
+          "GetCommand",
+          "Log",
+          "LogStatus",
+          "Number",
+          "Sleep",
+          "_D",
+          "cmd.split",
+          "exchange.Buy",
+          "exchange.GetDepth",
+          "exchange.GetPosition",
+          "exchange.GetTicker",
+          "exchange.Sell",
+          "exchange.SetContractType",
+          "exchange.SetCurrency",
+          "exchange.SetDirection"
+        ],
+        "route_evidence": [
+          {
+            "line": 6,
+            "target": "GetCommand",
+            "function": "ButtonFun",
+            "constant_operations": [],
+            "command_guard": false
+          },
+          {
+            "line": 24,
+            "target": "exchange.Sell",
+            "function": "ButtonFun",
+            "constant_operations": [],
+            "command_guard": true
+          },
+          {
+            "line": 30,
+            "target": "exchange.Buy",
+            "function": "ButtonFun",
+            "constant_operations": [],
+            "command_guard": true
+          },
+          {
+            "line": 41,
+            "target": "exchange.Sell",
+            "function": "ButtonFun",
+            "constant_operations": [],
+            "command_guard": true
+          },
+          {
+            "line": 49,
+            "target": "exchange.Buy",
+            "function": "ButtonFun",
+            "constant_operations": [],
+            "command_guard": true
+          },
+          {
+            "line": 57,
+            "target": "exchange.Buy",
+            "function": "ButtonFun",
+            "constant_operations": [],
+            "command_guard": true
+          },
+          {
+            "line": 64,
+            "target": "exchange.Sell",
+            "function": "ButtonFun",
+            "constant_operations": [],
+            "command_guard": true
+          },
+          {
+            "line": 77,
+            "target": "ButtonFun",
+            "function": "main",
+            "constant_operations": [],
+            "command_guard": false
+          }
+        ],
+        "dynamic_function_constructor_lines": []
+      },
+      "archive_blocks": [
+        "javascript"
+      ]
+    },
+    {
+      "id": 4548,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B9%BD%E7%81%B5%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%AD%96%E7%95%A5%E4%B8%9A%E5%8A%A1%E5%BA%93.md",
+      "document_sha256": "248c97ccb86be9441c36fdd2f4e34ebba41dbc83087bbc981d25173c13ade854",
+      "publisher_page": "https://www.fmz.com/strategy/363410",
+      "publisher_profile": "https://www.fmz.com/user/256c371425fe1ef5f09a80361995837d",
+      "code_sha256": "35307c09406c0197ebf4d9ac3ae86acc1fc91cc443b6a51b6e231167ca6b964d",
+      "top_level": [
+        "Import",
+        "Import",
+        "Import",
+        "Import",
+        "Assign",
+        "Assign",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign"
+      ],
+      "definitions": [
+        "TableAccountService",
+        "TablePositionsService",
+        "UpdateLogStatusService",
+        "GetAmountByOrderValueService",
+        "ClearanceService",
+        "GetNumByAmountService",
+        "GetMinOrderCountService",
+        "GetStopService",
+        "GetPositionsService",
+        "GetPriceService",
+        "GetSymbolService",
+        "FirstSignalService",
+        "SetSymbolsRecordsService",
+        "CheckRecordService",
+        "UpdateRecordService",
+        "GetMaxSymbolService",
+        "GetSideService",
+        "ClearAllService",
+        "GetCommandService",
+        "StopSurplusService",
+        "SetDualService"
+      ],
+      "linked_modules": {
+        "parent": 4547,
+        "business": 4548,
+        "data_access": 4549,
+        "resolved_parent_calls": [
+          "ClearAllService",
+          "FirstSignalService",
+          "GetCommandService",
+          "GetStopService",
+          "GetSymbolService",
+          "StopSurplusService",
+          "UpdateLogStatusService"
+        ],
+        "resolved_dao_calls": [
+          "GetAccountDao",
+          "GetCurrencyDao",
+          "GetNumByAmountDao",
+          "GetPositionsDao",
+          "GetRecordsDao",
+          "GetStopDao",
+          "GetTickerDao",
+          "SetCurrencyDao",
+          "SetDualDao",
+          "SetTransferDao"
+        ]
+      }
+    },
+    {
+      "id": 4549,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B9%BD%E7%81%B5%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%AD%96%E7%95%A5%E6%95%B0%E6%8D%AE%E5%BA%93.md",
+      "document_sha256": "f1c7a7d16b487765b2a737091b26a4ef02875a6cd3e391936d86447b161cca6e",
+      "publisher_page": "https://www.fmz.com/strategy/363411",
+      "publisher_profile": "https://www.fmz.com/user/256c371425fe1ef5f09a80361995837d",
+      "code_sha256": "099759f86b1ac0534f7cb062506776a631a6551234f2e36ad8d940dc60da353c",
+      "top_level": [
+        "Import",
+        "Import",
+        "ImportFrom",
+        "Assign",
+        "ClassDef",
+        "ClassDef",
+        "ClassDef",
+        "ClassDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign",
+        "Assign"
+      ],
+      "definitions": [
+        "Account",
+        "Position",
+        "Ticker",
+        "Order",
+        "GetAccountDao",
+        "GetPositionsDao",
+        "GetTickerDao",
+        "CreateOrderDao",
+        "CreateOrderDao2",
+        "GetNumByAmountDao",
+        "GetRecordsDao",
+        "SetCurrencyDao",
+        "SetTransferDao",
+        "GetPendingOrdersDao",
+        "GetOrderByIdDao",
+        "CancelOrderDao",
+        "AllCanelOrderDao",
+        "TimerDao",
+        "GetPeriodDao",
+        "GetCurrencyDao",
+        "GetStopDao",
+        "SetIFlageDao",
+        "TimerDao",
+        "SetDualDao",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__"
+      ],
+      "linked_modules": {
+        "parent": 4547,
+        "business": 4548,
+        "data_access": 4549,
+        "resolved_parent_calls": [
+          "ClearAllService",
+          "FirstSignalService",
+          "GetCommandService",
+          "GetStopService",
+          "GetSymbolService",
+          "StopSurplusService",
+          "UpdateLogStatusService"
+        ],
+        "resolved_dao_calls": [
+          "GetAccountDao",
+          "GetCurrencyDao",
+          "GetNumByAmountDao",
+          "GetPositionsDao",
+          "GetRecordsDao",
+          "GetStopDao",
+          "GetTickerDao",
+          "SetCurrencyDao",
+          "SetDualDao",
+          "SetTransferDao"
+        ]
+      }
+    },
+    {
+      "id": 4547,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B9%BD%E7%81%B5%E8%B6%8B%E5%8A%BF%E8%B7%9F%E8%B8%AA%E7%AD%96%E7%95%A5.md",
+      "document_sha256": "5d17868faa7861c5ec2a0fc42d008b909b468d71b4ea0196a8d7267c969f49e7",
+      "publisher_page": "https://www.fmz.com/strategy/363409",
+      "publisher_profile": "https://www.fmz.com/user/256c371425fe1ef5f09a80361995837d",
+      "code_sha256": "aca870c4c7d46c893e377f2336c642467e52739d3832bde95bc6017460eccb53",
+      "top_level": [
+        "Import",
+        "Import",
+        "Assign",
+        "FunctionDef",
+        "FunctionDef",
+        "FunctionDef"
+      ],
+      "definitions": [
+        "main",
+        "init",
+        "onexit"
+      ],
+      "linked_modules": {
+        "parent": 4547,
+        "business": 4548,
+        "data_access": 4549,
+        "resolved_parent_calls": [
+          "ClearAllService",
+          "FirstSignalService",
+          "GetCommandService",
+          "GetStopService",
+          "GetSymbolService",
+          "StopSurplusService",
+          "UpdateLogStatusService"
+        ],
+        "resolved_dao_calls": [
+          "GetAccountDao",
+          "GetCurrencyDao",
+          "GetNumByAmountDao",
+          "GetPositionsDao",
+          "GetRecordsDao",
+          "GetStopDao",
+          "GetTickerDao",
+          "SetCurrencyDao",
+          "SetDualDao",
+          "SetTransferDao"
+        ]
+      }
+    }
+  ]
+}

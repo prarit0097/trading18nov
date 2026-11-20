@@ -1,0 +1,143 @@
+diff --git a/crates/pine-runtime/src/builtins/strategy.rs b/crates/pine-runtime/src/builtins/strategy.rs
+index c27d0dc..ea42e97 100644
+--- a/crates/pine-runtime/src/builtins/strategy.rs
++++ b/crates/pine-runtime/src/builtins/strategy.rs
+@@ -455,7 +455,7 @@ impl<'a> HistoricalRuntime<'a> {
+                 self.program.strategy_settings.default_qty
+         {
+             self.strategy_broker
+-                .set_pending_market_same_bar_percent_of_equity(&oca_id, percent);
++                .set_pending_market_market_percent_of_equity(&oca_id, percent);
+         }
+         if let Some(name) = oca_name {
+             self.strategy_broker
+@@ -628,7 +628,7 @@ impl<'a> HistoricalRuntime<'a> {
+                 self.program.strategy_settings.default_qty
+         {
+             self.strategy_broker
+-                .set_pending_market_same_bar_percent_of_equity(&oca_id, percent);
++                .set_pending_market_market_percent_of_equity(&oca_id, percent);
+         }
+         if let Some(name) = oca_name {
+             self.strategy_broker
+diff --git a/crates/pine-runtime/src/strategy/broker/mod.rs b/crates/pine-runtime/src/strategy/broker/mod.rs
+index 5e15b96..afec8c2 100644
+--- a/crates/pine-runtime/src/strategy/broker/mod.rs
++++ b/crates/pine-runtime/src/strategy/broker/mod.rs
+@@ -296,10 +296,10 @@ impl BrokerState {
+         });
+     }
+ 
+-    pub(crate) fn set_pending_market_same_bar_percent_of_equity(&mut self, id: &str, percent: f64) {
++    pub(crate) fn set_pending_market_market_percent_of_equity(&mut self, id: &str, percent: f64) {
+         self.order_book
+             .entries_mut()
+-            .set_same_bar_percent_of_equity(id, percent);
++            .set_market_percent_of_equity(id, percent);
+     }
+ 
+     #[allow(dead_code)]
+diff --git a/crates/pine-runtime/src/strategy/broker/pending_entries.rs b/crates/pine-runtime/src/strategy/broker/pending_entries.rs
+index 5d55898..5c0aca2 100644
+--- a/crates/pine-runtime/src/strategy/broker/pending_entries.rs
++++ b/crates/pine-runtime/src/strategy/broker/pending_entries.rs
+@@ -33,7 +33,7 @@ pub(super) struct PendingEntry {
+     pub(super) direction: PendingEntryDirection,
+     pub(super) kind: PendingEntryKind,
+     pub(super) quantity: f64,
+-    pub(super) same_bar_percent_of_equity: Option<f64>,
++    pub(super) market_percent_of_equity: Option<f64>,
+     pub(super) created_bar_index: usize,
+     pub(super) metadata: StrategyOrderMetadata,
+     pub(super) enforce_pyramiding: bool,
+@@ -143,11 +143,11 @@ impl PendingEntryBook {
+             .map(|pending_entry| pending_entry.quantity)
+     }
+ 
+-    pub(super) fn set_same_bar_percent_of_equity(&mut self, id: &str, percent: f64) {
++    pub(super) fn set_market_percent_of_equity(&mut self, id: &str, percent: f64) {
+         if let Some(entry) = self.entries.iter_mut().find(|entry| entry.id == id)
+             && entry.kind == PendingEntryKind::Market
+         {
+-            entry.same_bar_percent_of_equity = Some(percent);
++            entry.market_percent_of_equity = Some(percent);
+         }
+     }
+ 
+@@ -1062,7 +1062,7 @@ impl PendingEntryBook {
+             direction: placement.direction,
+             kind: placement.kind,
+             quantity: placement.quantity,
+-            same_bar_percent_of_equity: None,
++            market_percent_of_equity: None,
+             created_bar_index: placement.created_bar_index,
+             metadata: placement.metadata,
+             enforce_pyramiding: matches!(placement.origin, StrategyCommandOrigin::Entry),
+diff --git a/crates/pine-runtime/src/strategy/broker/pending_entry_fills.rs b/crates/pine-runtime/src/strategy/broker/pending_entry_fills.rs
+index d3c72b8..6107cc9 100644
+--- a/crates/pine-runtime/src/strategy/broker/pending_entry_fills.rs
++++ b/crates/pine-runtime/src/strategy/broker/pending_entry_fills.rs
+@@ -337,7 +337,7 @@ impl BrokerState {
+             let Some(pending_entry) = pending_entry else {
+                 break;
+             };
+-            self.fill_one_pending_market_entry(pending_entry, bar_index, time, fill_price, false);
++            self.fill_one_pending_market_entry(pending_entry, bar_index, time, fill_price);
+         }
+     }
+ 
+@@ -355,7 +355,7 @@ impl BrokerState {
+             let Some(pending_entry) = pending_entry else {
+                 break;
+             };
+-            self.fill_one_pending_market_entry(pending_entry, bar_index, time, fill_price, true);
++            self.fill_one_pending_market_entry(pending_entry, bar_index, time, fill_price);
+         }
+     }
+ 
+@@ -374,9 +374,8 @@ impl BrokerState {
+         bar_index: usize,
+         time: i64,
+         fill_price: f64,
+-        same_bar: bool,
+     ) {
+-        if same_bar && let Some(percent) = pending_entry.same_bar_percent_of_equity {
++        if let Some(percent) = pending_entry.market_percent_of_equity {
+             let execution_price = match pending_entry.direction {
+                 PendingEntryDirection::Long => self.long_entry_fill_price(fill_price),
+                 PendingEntryDirection::Short => self.short_entry_fill_price(fill_price),
+diff --git a/crates/pine-runtime/src/strategy/broker/pending_entry_origin_tests.rs b/crates/pine-runtime/src/strategy/broker/pending_entry_origin_tests.rs
+index 19919bb..afcecf9 100644
+--- a/crates/pine-runtime/src/strategy/broker/pending_entry_origin_tests.rs
++++ b/crates/pine-runtime/src/strategy/broker/pending_entry_origin_tests.rs
+@@ -120,7 +120,7 @@ fn pending_entry_equality_includes_origin_and_key() {
+         direction: PendingEntryDirection::Long,
+         kind: PendingEntryKind::Market,
+         quantity: 1.0,
+-        same_bar_percent_of_equity: None,
++        market_percent_of_equity: None,
+         created_bar_index: 0,
+         metadata: StrategyOrderMetadata::default(),
+         enforce_pyramiding: true,
+diff --git a/crates/pine-runtime/src/strategy/broker/tests.rs b/crates/pine-runtime/src/strategy/broker/tests.rs
+index f6a67b9..4409835 100644
+--- a/crates/pine-runtime/src/strategy/broker/tests.rs
++++ b/crates/pine-runtime/src/strategy/broker/tests.rs
+@@ -2805,7 +2805,7 @@ fn pending_market_entry_records_internal_order_without_public_fill() {
+             direction: PendingEntryDirection::Long,
+             kind: PendingEntryKind::Market,
+             quantity: 2.0,
+-            same_bar_percent_of_equity: None,
++            market_percent_of_equity: None,
+             created_bar_index: 0,
+             metadata: StrategyOrderMetadata::default(),
+             enforce_pyramiding: true,
+@@ -2836,7 +2836,7 @@ fn pending_market_entry_replaces_same_id_without_public_fill() {
+             direction: PendingEntryDirection::Long,
+             kind: PendingEntryKind::Market,
+             quantity: 3.0,
+-            same_bar_percent_of_equity: None,
++            market_percent_of_equity: None,
+             created_bar_index: 1,
+             metadata: StrategyOrderMetadata::default(),
+             enforce_pyramiding: true,
