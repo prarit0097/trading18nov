@@ -1,0 +1,5679 @@
+{
+  "coverage": [
+    [
+      2693,
+      "Tested · exact ETH source across four consecutive dated windows",
+      "Native FMZ EMA and recorded ETH quote and signed-trade liquidity reproduce four complete archived-scope paths. February includes two verified modeled closed reductions. Maker entries and marked cutoff positions exist in all paths."
+    ]
+  ],
+  "results": [
+    {
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "funding": 0.0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "trades": 0,
+      "execution": 0,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": 0.03597204212,
+      "remaining_unrealized": 0.04763860612,
+      "id": 2693,
+      "name": "EMA-filtered layered entries",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2025-01-01 06:00-10:00 UTC",
+      "group": "FMZ archived source / observed through-volume 1x",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1h / 1m archive with causal completed EMA",
+      "exit": "No close. Open inventory marked at cutoff."
+    },
+    {
+      "gross": 0.28,
+      "fees": 0.018427164,
+      "after_fees": 0.261572836,
+      "funding": 0.0,
+      "net": 0.261572836,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 2,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 2,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 2,
+      "trades": 2,
+      "execution": 0,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": -0.5758420584406,
+      "remaining_unrealized": -0.8169,
+      "id": 2693,
+      "name": "EMA-filtered layered entries",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2025-02-01 06:00-10:00 UTC",
+      "group": "FMZ archived source / observed through-volume 1x",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1h / 1m archive with causal completed EMA",
+      "exit": "Archived maker reductions and cutoff mark"
+    },
+    {
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "funding": 0.0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "trades": 0,
+      "execution": 0,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": -0.1668505901828,
+      "remaining_unrealized": -0.15878564283,
+      "id": 2693,
+      "name": "EMA-filtered layered entries",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2025-03-01 06:00-10:00 UTC",
+      "group": "FMZ archived source / observed through-volume 1x",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1h / 1m archive with causal completed EMA",
+      "exit": "No close. Open inventory marked at cutoff."
+    },
+    {
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "funding": 0.0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "trades": 0,
+      "execution": 0,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": -0.6526563050140448,
+      "remaining_unrealized": -0.64152,
+      "id": 2693,
+      "name": "EMA-filtered layered entries",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2025-04-01 06:00-10:00 UTC",
+      "group": "FMZ archived source / observed through-volume 1x",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1h / 1m archive with causal completed EMA",
+      "exit": "No close. Open inventory marked at cutoff."
+    }
+  ],
+  "strict_double_volume_sensitivity": [
+    {
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "funding": 0.0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "trades": 0,
+      "execution": 0,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": 0.03597204212,
+      "remaining_unrealized": 0.04763860612,
+      "id": 2693,
+      "name": "EMA-filtered layered entries",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2025-01-01 06:00-10:00 UTC",
+      "group": "FMZ archived source / observed through-volume 2x",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1h / 1m archive with causal completed EMA",
+      "exit": "No close. Open inventory marked at cutoff."
+    },
+    {
+      "gross": 0.28,
+      "fees": 0.018427164,
+      "after_fees": 0.261572836,
+      "funding": 0.0,
+      "net": 0.261572836,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 2,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 2,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 2,
+      "trades": 2,
+      "execution": 0,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": -0.5758420584406,
+      "remaining_unrealized": -0.8169,
+      "id": 2693,
+      "name": "EMA-filtered layered entries",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2025-02-01 06:00-10:00 UTC",
+      "group": "FMZ archived source / observed through-volume 2x",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1h / 1m archive with causal completed EMA",
+      "exit": "Archived maker reductions and cutoff mark"
+    },
+    {
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "funding": 0.0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "trades": 0,
+      "execution": 0,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": -0.1668505901828,
+      "remaining_unrealized": -0.15878564283,
+      "id": 2693,
+      "name": "EMA-filtered layered entries",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2025-03-01 06:00-10:00 UTC",
+      "group": "FMZ archived source / observed through-volume 2x",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1h / 1m archive with causal completed EMA",
+      "exit": "No close. Open inventory marked at cutoff."
+    },
+    {
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "funding": 0.0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "fee_wins": 0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "net_wins": 0,
+      "trades": 0,
+      "execution": 0,
+      "unsettled": 1,
+      "starting_equity": 10000.0,
+      "mark_to_market_net": -0.6526563050140448,
+      "remaining_unrealized": -0.64152,
+      "id": 2693,
+      "name": "EMA-filtered layered entries",
+      "market": "Binance USD-M ETHUSDT perpetual",
+      "period": "2025-04-01 06:00-10:00 UTC",
+      "group": "FMZ archived source / observed through-volume 2x",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "interval": "1h / 1m archive with causal completed EMA",
+      "exit": "No close. Open inventory marked at cutoff."
+    }
+  ],
+  "verification": [
+    {
+      "day": "2025-01-01",
+      "threshold": 1,
+      "maker_fills": 2,
+      "taker_fills": 0,
+      "order_cancels": 2,
+      "original_ema_readings": [
+        {
+          "at": 1735711200600,
+          "last": 3344.21,
+          "hour": 1735707600000,
+          "ema": 3368.9560965803844,
+          "deviation": 0.007345330681365232,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1735711679600,
+          "last": 3340.01,
+          "hour": 1735707600000,
+          "ema": 3368.9560965803844,
+          "deviation": 0.00859200765773277,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1735723271800,
+          "last": 3322.51,
+          "hour": 1735718400000,
+          "ema": 3366.413873141729,
+          "deviation": 0.013041733665609866,
+          "usedRecords": 5000
+        }
+      ],
+      "raw_witness_ids": [
+        4937160240,
+        4937416383
+      ],
+      "events": [
+        {
+          "kind": "placement",
+          "t": 1735711201000,
+          "id": 1,
+          "direction": "buy",
+          "desired": 3340.21,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 334021,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1735711200200,
+            3344.21
+          ],
+          "latestEMA": {
+            "at": 1735711200600,
+            "last": 3344.21,
+            "hour": 1735707600000,
+            "ema": 3368.9560965803844,
+            "deviation": 0.007345330681365232,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1735711201200,
+          "id": 2,
+          "direction": "sell",
+          "desired": 3348.21,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 334821,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1735711200200,
+            3344.21
+          ],
+          "latestEMA": {
+            "at": 1735711200600,
+            "last": 3344.21,
+            "hour": 1735707600000,
+            "ema": 3368.9560965803844,
+            "deviation": 0.007345330681365232,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1735711668600,
+          "us": 1735711668599610,
+          "id": 1,
+          "fill_type": "maker",
+          "value": 23.38147,
+          "fee": 0.004676294,
+          "gross": 0,
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.38147,
+            0
+          ],
+          "wallet": 9999.995323706,
+          "proof": [
+            [
+              4937160240,
+              1735711668599610,
+              334020,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1735711669800,
+          "id": 2,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1735711680000,
+          "id": 3,
+          "direction": "buy",
+          "desired": 3320.01,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 332001,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1735711679200,
+            3340.01
+          ],
+          "latestEMA": {
+            "at": 1735711679600,
+            "last": 3340.01,
+            "hour": 1735707600000,
+            "ema": 3368.9560965803844,
+            "deviation": 0.00859200765773277,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.38147,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1735711680200,
+          "id": 4,
+          "direction": "closebuy",
+          "desired": 3360.21,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 336021,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1735711679200,
+            3340.01
+          ],
+          "latestEMA": {
+            "at": 1735711679600,
+            "last": 3340.01,
+            "hour": 1735707600000,
+            "ema": 3368.9560965803844,
+            "deviation": 0.00859200765773277,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.38147,
+            0
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1735718400000,
+          "us": 1735718400000000,
+          "mark": 3346.08,
+          "rate": 0.0001,
+          "signed": [
+            -0.002342256,
+            0
+          ],
+          "qty": [
+            7,
+            0
+          ],
+          "wallet": 9999.99298145
+        },
+        {
+          "kind": "fill",
+          "t": 1735723258400,
+          "us": 1735723258375306,
+          "id": 3,
+          "fill_type": "maker",
+          "value": 23.24007,
+          "fee": 0.004648014,
+          "gross": 0,
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            46.621539999999996,
+            0
+          ],
+          "wallet": 9999.988333435998,
+          "proof": [
+            [
+              4937416383,
+              1735723258375306,
+              332000,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1735723262000,
+          "id": 4,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1735723272200,
+          "id": 5,
+          "direction": "buy",
+          "desired": 3302.51,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 330251,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1735723271400,
+            3322.51
+          ],
+          "latestEMA": {
+            "at": 1735723271800,
+            "last": 3322.51,
+            "hour": 1735718400000,
+            "ema": 3366.413873141729,
+            "deviation": 0.013041733665609866,
+            "usedRecords": 5000
+          },
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            46.621539999999996,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1735723272400,
+          "id": 6,
+          "direction": "closebuy",
+          "desired": 3350.1099999999997,
+          "amount": 0.014,
+          "n": 14,
+          "limit": 335011,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1735723271400,
+            3322.51
+          ],
+          "latestEMA": {
+            "at": 1735723271800,
+            "last": 3322.51,
+            "hour": 1735718400000,
+            "ema": 3366.413873141729,
+            "deviation": 0.013041733665609866,
+            "usedRecords": 5000
+          },
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            46.621539999999996,
+            0
+          ]
+        }
+      ],
+      "source_call_counts": {
+        "ticker": 3,
+        "position": 3,
+        "records": 3997,
+        "account": 3997,
+        "submit": 6,
+        "orders": 4000,
+        "sleep": 4000,
+        "cancel": 2
+      },
+      "cutoff_open_orders": [
+        5,
+        6
+      ],
+      "paid_fees_USDT": "0.009324308",
+      "net_funding_USDT": "-0.002342256",
+      "conservative_margin_buffer_USDT": "9995.116888758754",
+      "marked_drawdown_USDT": "0.29567907299",
+      "marked_drawdown_fraction": "0.00002956775512171205328600232830902718927",
+      "ending_ETH_qty_by_side": [
+        "0.014",
+        "0"
+      ],
+      "ending_wallet_USDT": "9999.988333436",
+      "ending_equity_USDT": "10000.03597204212",
+      "closed_lot_details": []
+    },
+    {
+      "day": "2025-01-01",
+      "threshold": 2,
+      "maker_fills": 2,
+      "taker_fills": 0,
+      "order_cancels": 2,
+      "original_ema_readings": [
+        {
+          "at": 1735711200600,
+          "last": 3344.21,
+          "hour": 1735707600000,
+          "ema": 3368.9560965803844,
+          "deviation": 0.007345330681365232,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1735711679600,
+          "last": 3340.01,
+          "hour": 1735707600000,
+          "ema": 3368.9560965803844,
+          "deviation": 0.00859200765773277,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1735723271800,
+          "last": 3322.51,
+          "hour": 1735718400000,
+          "ema": 3366.413873141729,
+          "deviation": 0.013041733665609866,
+          "usedRecords": 5000
+        }
+      ],
+      "raw_witness_ids": [
+        4937160240,
+        4937160245,
+        4937416383
+      ],
+      "events": [
+        {
+          "kind": "placement",
+          "t": 1735711201000,
+          "id": 1,
+          "direction": "buy",
+          "desired": 3340.21,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 334021,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1735711200200,
+            3344.21
+          ],
+          "latestEMA": {
+            "at": 1735711200600,
+            "last": 3344.21,
+            "hour": 1735707600000,
+            "ema": 3368.9560965803844,
+            "deviation": 0.007345330681365232,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1735711201200,
+          "id": 2,
+          "direction": "sell",
+          "desired": 3348.21,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 334821,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1735711200200,
+            3344.21
+          ],
+          "latestEMA": {
+            "at": 1735711200600,
+            "last": 3344.21,
+            "hour": 1735707600000,
+            "ema": 3368.9560965803844,
+            "deviation": 0.007345330681365232,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1735711669400,
+          "us": 1735711669230881,
+          "id": 1,
+          "fill_type": "maker",
+          "value": 23.38147,
+          "fee": 0.004676294,
+          "gross": 0,
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.38147,
+            0
+          ],
+          "wallet": 9999.995323706,
+          "proof": [
+            [
+              4937160240,
+              1735711668599610,
+              334020,
+              10,
+              0
+            ],
+            [
+              4937160245,
+              1735711669230881,
+              334019,
+              4,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1735711669800,
+          "id": 2,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1735711680000,
+          "id": 3,
+          "direction": "buy",
+          "desired": 3320.01,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 332001,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1735711679200,
+            3340.01
+          ],
+          "latestEMA": {
+            "at": 1735711679600,
+            "last": 3340.01,
+            "hour": 1735707600000,
+            "ema": 3368.9560965803844,
+            "deviation": 0.00859200765773277,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.38147,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1735711680200,
+          "id": 4,
+          "direction": "closebuy",
+          "desired": 3360.21,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 336021,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1735711679200,
+            3340.01
+          ],
+          "latestEMA": {
+            "at": 1735711679600,
+            "last": 3340.01,
+            "hour": 1735707600000,
+            "ema": 3368.9560965803844,
+            "deviation": 0.00859200765773277,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.38147,
+            0
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1735718400000,
+          "us": 1735718400000000,
+          "mark": 3346.08,
+          "rate": 0.0001,
+          "signed": [
+            -0.002342256,
+            0
+          ],
+          "qty": [
+            7,
+            0
+          ],
+          "wallet": 9999.99298145
+        },
+        {
+          "kind": "fill",
+          "t": 1735723258400,
+          "us": 1735723258375306,
+          "id": 3,
+          "fill_type": "maker",
+          "value": 23.24007,
+          "fee": 0.004648014,
+          "gross": 0,
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            46.621539999999996,
+            0
+          ],
+          "wallet": 9999.988333435998,
+          "proof": [
+            [
+              4937416383,
+              1735723258375306,
+              332000,
+              14,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1735723262000,
+          "id": 4,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1735723272200,
+          "id": 5,
+          "direction": "buy",
+          "desired": 3302.51,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 330251,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1735723271400,
+            3322.51
+          ],
+          "latestEMA": {
+            "at": 1735723271800,
+            "last": 3322.51,
+            "hour": 1735718400000,
+            "ema": 3366.413873141729,
+            "deviation": 0.013041733665609866,
+            "usedRecords": 5000
+          },
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            46.621539999999996,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1735723272400,
+          "id": 6,
+          "direction": "closebuy",
+          "desired": 3350.1099999999997,
+          "amount": 0.014,
+          "n": 14,
+          "limit": 335011,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1735723271400,
+            3322.51
+          ],
+          "latestEMA": {
+            "at": 1735723271800,
+            "last": 3322.51,
+            "hour": 1735718400000,
+            "ema": 3366.413873141729,
+            "deviation": 0.013041733665609866,
+            "usedRecords": 5000
+          },
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            46.621539999999996,
+            0
+          ]
+        }
+      ],
+      "source_call_counts": {
+        "ticker": 3,
+        "position": 3,
+        "records": 3997,
+        "account": 3997,
+        "submit": 6,
+        "orders": 4000,
+        "sleep": 4000,
+        "cancel": 2
+      },
+      "cutoff_open_orders": [
+        5,
+        6
+      ],
+      "paid_fees_USDT": "0.009324308",
+      "net_funding_USDT": "-0.002342256",
+      "conservative_margin_buffer_USDT": "9995.116888758754",
+      "marked_drawdown_USDT": "0.29567907299",
+      "marked_drawdown_fraction": "0.00002956775512171205328600232830902718927",
+      "ending_ETH_qty_by_side": [
+        "0.014",
+        "0"
+      ],
+      "ending_wallet_USDT": "9999.988333436",
+      "ending_equity_USDT": "10000.03597204212",
+      "closed_lot_details": []
+    },
+    {
+      "day": "2025-02-01",
+      "threshold": 1,
+      "maker_fills": 8,
+      "taker_fills": 0,
+      "order_cancels": 8,
+      "original_ema_readings": [
+        {
+          "at": 1738389600600,
+          "last": 3298.81,
+          "hour": 1738386000000,
+          "ema": 3264.3994675941008,
+          "deviation": 0.010541152437835719,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738390047200,
+          "last": 3303.55,
+          "hour": 1738386000000,
+          "ema": 3264.3994675941008,
+          "deviation": 0.011993180612406422,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738392135400,
+          "last": 3282.32,
+          "hour": 1738386000000,
+          "ema": 3264.3994675941008,
+          "deviation": 0.005489687332631207,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738392366000,
+          "last": 3274.15,
+          "hour": 1738386000000,
+          "ema": 3264.3994675941008,
+          "deviation": 0.002986929909373369,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738393460600,
+          "last": 3298.55,
+          "hour": 1738389600000,
+          "ema": 3265.3991571811794,
+          "deviation": 0.010152156359174762,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738394087200,
+          "last": 3294.08,
+          "hour": 1738389600000,
+          "ema": 3265.3991571811794,
+          "deviation": 0.00878325786167563,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738397932200,
+          "last": 3274.56,
+          "hour": 1738393200000,
+          "ema": 3265.844758585075,
+          "deviation": 0.0026686024778167583,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738398789200,
+          "last": 3253.11,
+          "hour": 1738393200000,
+          "ema": 3265.844758585075,
+          "deviation": 0.003899376585980817,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738403159800,
+          "last": 3232.29,
+          "hour": 1738396800000,
+          "ema": 3265.888864860974,
+          "deviation": 0.010287816349930937,
+          "usedRecords": 5000
+        }
+      ],
+      "raw_witness_ids": [
+        5092155169,
+        5092212886,
+        5092231306,
+        5092290218,
+        5092305590,
+        5092421509,
+        5092508009,
+        5092805542
+      ],
+      "events": [
+        {
+          "kind": "placement",
+          "t": 1738389601000,
+          "id": 1,
+          "direction": "buy",
+          "desired": 3294.81,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 329481,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738389600200,
+            3298.81
+          ],
+          "latestEMA": {
+            "at": 1738389600600,
+            "last": 3298.81,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.010541152437835719,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738389601200,
+          "id": 2,
+          "direction": "sell",
+          "desired": 3302.81,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 330281,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738389600200,
+            3298.81
+          ],
+          "latestEMA": {
+            "at": 1738389600600,
+            "last": 3298.81,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.010541152437835719,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738390035400,
+          "us": 1738390035212582,
+          "id": 2,
+          "fill_type": "maker",
+          "value": 23.11967,
+          "fee": 0.004623934,
+          "gross": 0,
+          "qty": [
+            0,
+            7
+          ],
+          "basis": [
+            0,
+            23.11967
+          ],
+          "wallet": 9999.995376066,
+          "proof": [
+            [
+              5092155169,
+              1738390035212582,
+              330282,
+              7,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738390037400,
+          "id": 1,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738390047600,
+          "id": 3,
+          "direction": "closesell",
+          "desired": 3282.81,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 328281,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738390046800,
+            3303.55
+          ],
+          "latestEMA": {
+            "at": 1738390047200,
+            "last": 3303.55,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.011993180612406422,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            7
+          ],
+          "basis": [
+            0,
+            23.11967
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738390047800,
+          "id": 4,
+          "direction": "sell",
+          "desired": 3323.55,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 332355,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738390046800,
+            3303.55
+          ],
+          "latestEMA": {
+            "at": 1738390047200,
+            "last": 3303.55,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.011993180612406422,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            7
+          ],
+          "basis": [
+            0,
+            23.11967
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738392124200,
+          "us": 1738392124022490,
+          "id": 3,
+          "fill_type": "maker",
+          "value": 22.97967,
+          "fee": 0.004595934,
+          "gross": 0.14000000000000412,
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.130780132,
+          "proof": [
+            [
+              5092212886,
+              1738392124022490,
+              328280,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738392125600,
+          "id": 4,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738392135800,
+          "id": 5,
+          "direction": "buy",
+          "desired": 3278.32,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 327832,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738392135000,
+            3282.32
+          ],
+          "latestEMA": {
+            "at": 1738392135400,
+            "last": 3282.32,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.005489687332631207,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738392136000,
+          "id": 6,
+          "direction": "sell",
+          "desired": 3286.32,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 328632,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738392135000,
+            3282.32
+          ],
+          "latestEMA": {
+            "at": 1738392135400,
+            "last": 3282.32,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.005489687332631207,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738392355800,
+          "us": 1738392355759055,
+          "id": 5,
+          "fill_type": "maker",
+          "value": 22.94824,
+          "fee": 0.004589648,
+          "gross": 0,
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            22.94824,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.126190484,
+          "proof": [
+            [
+              5092231306,
+              1738392355759055,
+              327831,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738392356200,
+          "id": 6,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738392366400,
+          "id": 7,
+          "direction": "buy",
+          "desired": 3254.15,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 325415,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738392365600,
+            3274.15
+          ],
+          "latestEMA": {
+            "at": 1738392366000,
+            "last": 3274.15,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.002986929909373369,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            22.94824,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738392366600,
+          "id": 8,
+          "direction": "closebuy",
+          "desired": 3298.3199999999997,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 329832,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738392365600,
+            3274.15
+          ],
+          "latestEMA": {
+            "at": 1738392366000,
+            "last": 3274.15,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.002986929909373369,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            22.94824,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738393448600,
+          "us": 1738393448557214,
+          "id": 8,
+          "fill_type": "maker",
+          "value": 23.08824,
+          "fee": 0.004617648,
+          "gross": 0.14000000000000057,
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.261572836,
+          "proof": [
+            [
+              5092290218,
+              1738393448557214,
+              329833,
+              7,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738393450800,
+          "id": 7,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738393461000,
+          "id": 9,
+          "direction": "buy",
+          "desired": 3294.55,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 329455,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738393460200,
+            3298.55
+          ],
+          "latestEMA": {
+            "at": 1738393460600,
+            "last": 3298.55,
+            "hour": 1738389600000,
+            "ema": 3265.3991571811794,
+            "deviation": 0.010152156359174762,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738393461200,
+          "id": 10,
+          "direction": "sell",
+          "desired": 3302.55,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 330255,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738393460200,
+            3298.55
+          ],
+          "latestEMA": {
+            "at": 1738393460600,
+            "last": 3298.55,
+            "hour": 1738389600000,
+            "ema": 3265.3991571811794,
+            "deviation": 0.010152156359174762,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738394076400,
+          "us": 1738394076296043,
+          "id": 9,
+          "fill_type": "maker",
+          "value": 23.06185,
+          "fee": 0.00461237,
+          "gross": 0,
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.06185,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.256960466,
+          "proof": [
+            [
+              5092305590,
+              1738394076296043,
+              329454,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738394077400,
+          "id": 10,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738394087600,
+          "id": 11,
+          "direction": "buy",
+          "desired": 3274.08,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 327408,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738394086800,
+            3294.08
+          ],
+          "latestEMA": {
+            "at": 1738394087200,
+            "last": 3294.08,
+            "hour": 1738389600000,
+            "ema": 3265.3991571811794,
+            "deviation": 0.00878325786167563,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.06185,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738394087800,
+          "id": 12,
+          "direction": "closebuy",
+          "desired": 3314.5499999999997,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 331455,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738394086800,
+            3294.08
+          ],
+          "latestEMA": {
+            "at": 1738394087200,
+            "last": 3294.08,
+            "hour": 1738389600000,
+            "ema": 3265.3991571811794,
+            "deviation": 0.00878325786167563,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.06185,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1738396800000,
+          "us": 1738396800000000,
+          "mark": 3278.99,
+          "rate": 9.742e-05,
+          "signed": [
+            -0.0022360744406,
+            0
+          ],
+          "qty": [
+            7,
+            0
+          ],
+          "wallet": 10000.25472439156
+        },
+        {
+          "kind": "fill",
+          "t": 1738397920200,
+          "us": 1738397920023835,
+          "id": 11,
+          "fill_type": "maker",
+          "value": 22.91856,
+          "fee": 0.004583712,
+          "gross": 0,
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            45.98041,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.25014067956,
+          "proof": [
+            [
+              5092421509,
+              1738397920023835,
+              327407,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738397922400,
+          "id": 12,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738397932600,
+          "id": 13,
+          "direction": "buy",
+          "desired": 3254.56,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 325456,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738397931800,
+            3274.56
+          ],
+          "latestEMA": {
+            "at": 1738397932200,
+            "last": 3274.56,
+            "hour": 1738393200000,
+            "ema": 3265.844758585075,
+            "deviation": 0.0026686024778167583,
+            "usedRecords": 5000
+          },
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            45.98041,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738397932800,
+          "id": 14,
+          "direction": "closebuy",
+          "desired": 3304.3149999999996,
+          "amount": 0.014,
+          "n": 14,
+          "limit": 330432,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738397931800,
+            3274.56
+          ],
+          "latestEMA": {
+            "at": 1738397932200,
+            "last": 3274.56,
+            "hour": 1738393200000,
+            "ema": 3265.844758585075,
+            "deviation": 0.0026686024778167583,
+            "usedRecords": 5000
+          },
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            45.98041,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738398777800,
+          "us": 1738398777613214,
+          "id": 13,
+          "fill_type": "maker",
+          "value": 22.78192,
+          "fee": 0.004556384,
+          "gross": 0,
+          "qty": [
+            21,
+            0
+          ],
+          "basis": [
+            68.76232999999999,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.24558429556,
+          "proof": [
+            [
+              5092508009,
+              1738398777613214,
+              325455,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738398779400,
+          "id": 14,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738398789600,
+          "id": 15,
+          "direction": "buy",
+          "desired": 3233.11,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 323311,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738398788800,
+            3253.11
+          ],
+          "latestEMA": {
+            "at": 1738398789200,
+            "last": 3253.11,
+            "hour": 1738393200000,
+            "ema": 3265.844758585075,
+            "deviation": 0.003899376585980817,
+            "usedRecords": 5000
+          },
+          "qty": [
+            21,
+            0
+          ],
+          "basis": [
+            68.76232999999999,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738398789800,
+          "id": 16,
+          "direction": "closebuy",
+          "desired": 3294.396666666666,
+          "amount": 0.021,
+          "n": 21,
+          "limit": 329440,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738398788800,
+            3253.11
+          ],
+          "latestEMA": {
+            "at": 1738398789200,
+            "last": 3253.11,
+            "hour": 1738393200000,
+            "ema": 3265.844758585075,
+            "deviation": 0.003899376585980817,
+            "usedRecords": 5000
+          },
+          "qty": [
+            21,
+            0
+          ],
+          "basis": [
+            68.76232999999999,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738403149200,
+          "us": 1738403149024158,
+          "id": 15,
+          "fill_type": "maker",
+          "value": 22.63177,
+          "fee": 0.004526354,
+          "gross": 0,
+          "qty": [
+            28,
+            0
+          ],
+          "basis": [
+            91.3941,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.241057941561,
+          "proof": [
+            [
+              5092805542,
+              1738403149024158,
+              323310,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738403150000,
+          "id": 16,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738403160200,
+          "id": 17,
+          "direction": "buy",
+          "desired": 3212.29,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 321229,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738403159400,
+            3232.29
+          ],
+          "latestEMA": {
+            "at": 1738403159800,
+            "last": 3232.29,
+            "hour": 1738396800000,
+            "ema": 3265.888864860974,
+            "deviation": 0.010287816349930937,
+            "usedRecords": 5000
+          },
+          "qty": [
+            28,
+            0
+          ],
+          "basis": [
+            91.3941,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738403160400,
+          "id": 18,
+          "direction": "closebuy",
+          "desired": 3284.075,
+          "amount": 0.028,
+          "n": 28,
+          "limit": 328408,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738403159400,
+            3232.29
+          ],
+          "latestEMA": {
+            "at": 1738403159800,
+            "last": 3232.29,
+            "hour": 1738396800000,
+            "ema": 3265.888864860974,
+            "deviation": 0.010287816349930937,
+            "usedRecords": 5000
+          },
+          "qty": [
+            28,
+            0
+          ],
+          "basis": [
+            91.3941,
+            -3.552713678800501e-15
+          ]
+        }
+      ],
+      "source_call_counts": {
+        "ticker": 9,
+        "position": 9,
+        "records": 3985,
+        "account": 3985,
+        "submit": 18,
+        "orders": 4000,
+        "sleep": 4000,
+        "cancel": 8
+      },
+      "cutoff_open_orders": [
+        17,
+        18
+      ],
+      "paid_fees_USDT": "0.036705984",
+      "net_funding_USDT": "-0.0022360744406",
+      "conservative_margin_buffer_USDT": "9990.0703567415154",
+      "marked_drawdown_USDT": "1.1665316536006",
+      "marked_drawdown_fraction": "0.0001166501125043197840017238133403976359",
+      "ending_ETH_qty_by_side": [
+        "0.028",
+        "0"
+      ],
+      "ending_wallet_USDT": "10000.2410579415594",
+      "ending_equity_USDT": "9999.4241579415594",
+      "closed_lot_details": [
+        {
+          "gross": "0.14000",
+          "fees": "0.009219868",
+          "after_fees": "0.130780132",
+          "funding": "0",
+          "net": "0.130780132"
+        },
+        {
+          "gross": "0.14000",
+          "fees": "0.009207296",
+          "after_fees": "0.130792704",
+          "funding": "0",
+          "net": "0.130792704"
+        }
+      ]
+    },
+    {
+      "day": "2025-02-01",
+      "threshold": 2,
+      "maker_fills": 8,
+      "taker_fills": 0,
+      "order_cancels": 8,
+      "original_ema_readings": [
+        {
+          "at": 1738389600600,
+          "last": 3298.81,
+          "hour": 1738386000000,
+          "ema": 3264.3994675941008,
+          "deviation": 0.010541152437835719,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738390047200,
+          "last": 3303.55,
+          "hour": 1738386000000,
+          "ema": 3264.3994675941008,
+          "deviation": 0.011993180612406422,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738392135400,
+          "last": 3282.32,
+          "hour": 1738386000000,
+          "ema": 3264.3994675941008,
+          "deviation": 0.005489687332631207,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738392366000,
+          "last": 3274.15,
+          "hour": 1738386000000,
+          "ema": 3264.3994675941008,
+          "deviation": 0.002986929909373369,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738393460600,
+          "last": 3298.55,
+          "hour": 1738389600000,
+          "ema": 3265.3991571811794,
+          "deviation": 0.010152156359174762,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738394087200,
+          "last": 3294.08,
+          "hour": 1738389600000,
+          "ema": 3265.3991571811794,
+          "deviation": 0.00878325786167563,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738397932200,
+          "last": 3274.56,
+          "hour": 1738393200000,
+          "ema": 3265.844758585075,
+          "deviation": 0.0026686024778167583,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738398789200,
+          "last": 3253.11,
+          "hour": 1738393200000,
+          "ema": 3265.844758585075,
+          "deviation": 0.003899376585980817,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1738403159800,
+          "last": 3232.29,
+          "hour": 1738396800000,
+          "ema": 3265.888864860974,
+          "deviation": 0.010287816349930937,
+          "usedRecords": 5000
+        }
+      ],
+      "raw_witness_ids": [
+        5092155169,
+        5092155170,
+        5092155171,
+        5092212886,
+        5092212887,
+        5092231306,
+        5092231307,
+        5092290218,
+        5092305590,
+        5092305591,
+        5092421509,
+        5092508009,
+        5092805542
+      ],
+      "events": [
+        {
+          "kind": "placement",
+          "t": 1738389601000,
+          "id": 1,
+          "direction": "buy",
+          "desired": 3294.81,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 329481,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738389600200,
+            3298.81
+          ],
+          "latestEMA": {
+            "at": 1738389600600,
+            "last": 3298.81,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.010541152437835719,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738389601200,
+          "id": 2,
+          "direction": "sell",
+          "desired": 3302.81,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 330281,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738389600200,
+            3298.81
+          ],
+          "latestEMA": {
+            "at": 1738389600600,
+            "last": 3298.81,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.010541152437835719,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738390035400,
+          "us": 1738390035212583,
+          "id": 2,
+          "fill_type": "maker",
+          "value": 23.11967,
+          "fee": 0.004623934,
+          "gross": 0,
+          "qty": [
+            0,
+            7
+          ],
+          "basis": [
+            0,
+            23.11967
+          ],
+          "wallet": 9999.995376066,
+          "proof": [
+            [
+              5092155169,
+              1738390035212582,
+              330282,
+              9,
+              1
+            ],
+            [
+              5092155170,
+              1738390035212582,
+              330282,
+              3,
+              1
+            ],
+            [
+              5092155171,
+              1738390035212583,
+              330282,
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738390037400,
+          "id": 1,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738390047600,
+          "id": 3,
+          "direction": "closesell",
+          "desired": 3282.81,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 328281,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738390046800,
+            3303.55
+          ],
+          "latestEMA": {
+            "at": 1738390047200,
+            "last": 3303.55,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.011993180612406422,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            7
+          ],
+          "basis": [
+            0,
+            23.11967
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738390047800,
+          "id": 4,
+          "direction": "sell",
+          "desired": 3323.55,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 332355,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738390046800,
+            3303.55
+          ],
+          "latestEMA": {
+            "at": 1738390047200,
+            "last": 3303.55,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.011993180612406422,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            7
+          ],
+          "basis": [
+            0,
+            23.11967
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738392124200,
+          "us": 1738392124022494,
+          "id": 3,
+          "fill_type": "maker",
+          "value": 22.97967,
+          "fee": 0.004595934,
+          "gross": 0.14000000000000412,
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.130780132,
+          "proof": [
+            [
+              5092212886,
+              1738392124022490,
+              328280,
+              7,
+              0
+            ],
+            [
+              5092212887,
+              1738392124022494,
+              328280,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738392125600,
+          "id": 4,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738392135800,
+          "id": 5,
+          "direction": "buy",
+          "desired": 3278.32,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 327832,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738392135000,
+            3282.32
+          ],
+          "latestEMA": {
+            "at": 1738392135400,
+            "last": 3282.32,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.005489687332631207,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738392136000,
+          "id": 6,
+          "direction": "sell",
+          "desired": 3286.32,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 328632,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738392135000,
+            3282.32
+          ],
+          "latestEMA": {
+            "at": 1738392135400,
+            "last": 3282.32,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.005489687332631207,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738392355800,
+          "us": 1738392355759056,
+          "id": 5,
+          "fill_type": "maker",
+          "value": 22.94824,
+          "fee": 0.004589648,
+          "gross": 0,
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            22.94824,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.126190484,
+          "proof": [
+            [
+              5092231306,
+              1738392355759055,
+              327831,
+              7,
+              0
+            ],
+            [
+              5092231307,
+              1738392355759056,
+              327831,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738392356200,
+          "id": 6,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738392366400,
+          "id": 7,
+          "direction": "buy",
+          "desired": 3254.15,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 325415,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738392365600,
+            3274.15
+          ],
+          "latestEMA": {
+            "at": 1738392366000,
+            "last": 3274.15,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.002986929909373369,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            22.94824,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738392366600,
+          "id": 8,
+          "direction": "closebuy",
+          "desired": 3298.3199999999997,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 329832,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738392365600,
+            3274.15
+          ],
+          "latestEMA": {
+            "at": 1738392366000,
+            "last": 3274.15,
+            "hour": 1738386000000,
+            "ema": 3264.3994675941008,
+            "deviation": 0.002986929909373369,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            22.94824,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738393448600,
+          "us": 1738393448557214,
+          "id": 8,
+          "fill_type": "maker",
+          "value": 23.08824,
+          "fee": 0.004617648,
+          "gross": 0.14000000000000057,
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.261572836,
+          "proof": [
+            [
+              5092290218,
+              1738393448557214,
+              329833,
+              14,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738393450800,
+          "id": 7,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738393461000,
+          "id": 9,
+          "direction": "buy",
+          "desired": 3294.55,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 329455,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738393460200,
+            3298.55
+          ],
+          "latestEMA": {
+            "at": 1738393460600,
+            "last": 3298.55,
+            "hour": 1738389600000,
+            "ema": 3265.3991571811794,
+            "deviation": 0.010152156359174762,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738393461200,
+          "id": 10,
+          "direction": "sell",
+          "desired": 3302.55,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 330255,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738393460200,
+            3298.55
+          ],
+          "latestEMA": {
+            "at": 1738393460600,
+            "last": 3298.55,
+            "hour": 1738389600000,
+            "ema": 3265.3991571811794,
+            "deviation": 0.010152156359174762,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738394076400,
+          "us": 1738394076296047,
+          "id": 9,
+          "fill_type": "maker",
+          "value": 23.06185,
+          "fee": 0.00461237,
+          "gross": 0,
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.06185,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.256960466,
+          "proof": [
+            [
+              5092305590,
+              1738394076296043,
+              329454,
+              7,
+              0
+            ],
+            [
+              5092305591,
+              1738394076296047,
+              329453,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738394077400,
+          "id": 10,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738394087600,
+          "id": 11,
+          "direction": "buy",
+          "desired": 3274.08,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 327408,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738394086800,
+            3294.08
+          ],
+          "latestEMA": {
+            "at": 1738394087200,
+            "last": 3294.08,
+            "hour": 1738389600000,
+            "ema": 3265.3991571811794,
+            "deviation": 0.00878325786167563,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.06185,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738394087800,
+          "id": 12,
+          "direction": "closebuy",
+          "desired": 3314.5499999999997,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 331455,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738394086800,
+            3294.08
+          ],
+          "latestEMA": {
+            "at": 1738394087200,
+            "last": 3294.08,
+            "hour": 1738389600000,
+            "ema": 3265.3991571811794,
+            "deviation": 0.00878325786167563,
+            "usedRecords": 5000
+          },
+          "qty": [
+            7,
+            0
+          ],
+          "basis": [
+            23.06185,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1738396800000,
+          "us": 1738396800000000,
+          "mark": 3278.99,
+          "rate": 9.742e-05,
+          "signed": [
+            -0.0022360744406,
+            0
+          ],
+          "qty": [
+            7,
+            0
+          ],
+          "wallet": 10000.25472439156
+        },
+        {
+          "kind": "fill",
+          "t": 1738397920200,
+          "us": 1738397920023835,
+          "id": 11,
+          "fill_type": "maker",
+          "value": 22.91856,
+          "fee": 0.004583712,
+          "gross": 0,
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            45.98041,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.25014067956,
+          "proof": [
+            [
+              5092421509,
+              1738397920023835,
+              327407,
+              14,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738397922400,
+          "id": 12,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738397932600,
+          "id": 13,
+          "direction": "buy",
+          "desired": 3254.56,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 325456,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738397931800,
+            3274.56
+          ],
+          "latestEMA": {
+            "at": 1738397932200,
+            "last": 3274.56,
+            "hour": 1738393200000,
+            "ema": 3265.844758585075,
+            "deviation": 0.0026686024778167583,
+            "usedRecords": 5000
+          },
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            45.98041,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738397932800,
+          "id": 14,
+          "direction": "closebuy",
+          "desired": 3304.3149999999996,
+          "amount": 0.014,
+          "n": 14,
+          "limit": 330432,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738397931800,
+            3274.56
+          ],
+          "latestEMA": {
+            "at": 1738397932200,
+            "last": 3274.56,
+            "hour": 1738393200000,
+            "ema": 3265.844758585075,
+            "deviation": 0.0026686024778167583,
+            "usedRecords": 5000
+          },
+          "qty": [
+            14,
+            0
+          ],
+          "basis": [
+            45.98041,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738398777800,
+          "us": 1738398777613214,
+          "id": 13,
+          "fill_type": "maker",
+          "value": 22.78192,
+          "fee": 0.004556384,
+          "gross": 0,
+          "qty": [
+            21,
+            0
+          ],
+          "basis": [
+            68.76232999999999,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.24558429556,
+          "proof": [
+            [
+              5092508009,
+              1738398777613214,
+              325455,
+              14,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738398779400,
+          "id": 14,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738398789600,
+          "id": 15,
+          "direction": "buy",
+          "desired": 3233.11,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 323311,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738398788800,
+            3253.11
+          ],
+          "latestEMA": {
+            "at": 1738398789200,
+            "last": 3253.11,
+            "hour": 1738393200000,
+            "ema": 3265.844758585075,
+            "deviation": 0.003899376585980817,
+            "usedRecords": 5000
+          },
+          "qty": [
+            21,
+            0
+          ],
+          "basis": [
+            68.76232999999999,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738398789800,
+          "id": 16,
+          "direction": "closebuy",
+          "desired": 3294.396666666666,
+          "amount": 0.021,
+          "n": 21,
+          "limit": 329440,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738398788800,
+            3253.11
+          ],
+          "latestEMA": {
+            "at": 1738398789200,
+            "last": 3253.11,
+            "hour": 1738393200000,
+            "ema": 3265.844758585075,
+            "deviation": 0.003899376585980817,
+            "usedRecords": 5000
+          },
+          "qty": [
+            21,
+            0
+          ],
+          "basis": [
+            68.76232999999999,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1738403149200,
+          "us": 1738403149024158,
+          "id": 15,
+          "fill_type": "maker",
+          "value": 22.63177,
+          "fee": 0.004526354,
+          "gross": 0,
+          "qty": [
+            28,
+            0
+          ],
+          "basis": [
+            91.3941,
+            -3.552713678800501e-15
+          ],
+          "wallet": 10000.241057941561,
+          "proof": [
+            [
+              5092805542,
+              1738403149024158,
+              323310,
+              14,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1738403150000,
+          "id": 16,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1738403160200,
+          "id": 17,
+          "direction": "buy",
+          "desired": 3212.29,
+          "amount": 0.007,
+          "n": 7,
+          "limit": 321229,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1738403159400,
+            3232.29
+          ],
+          "latestEMA": {
+            "at": 1738403159800,
+            "last": 3232.29,
+            "hour": 1738396800000,
+            "ema": 3265.888864860974,
+            "deviation": 0.010287816349930937,
+            "usedRecords": 5000
+          },
+          "qty": [
+            28,
+            0
+          ],
+          "basis": [
+            91.3941,
+            -3.552713678800501e-15
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1738403160400,
+          "id": 18,
+          "direction": "closebuy",
+          "desired": 3284.075,
+          "amount": 0.028,
+          "n": 28,
+          "limit": 328408,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1738403159400,
+            3232.29
+          ],
+          "latestEMA": {
+            "at": 1738403159800,
+            "last": 3232.29,
+            "hour": 1738396800000,
+            "ema": 3265.888864860974,
+            "deviation": 0.010287816349930937,
+            "usedRecords": 5000
+          },
+          "qty": [
+            28,
+            0
+          ],
+          "basis": [
+            91.3941,
+            -3.552713678800501e-15
+          ]
+        }
+      ],
+      "source_call_counts": {
+        "ticker": 9,
+        "position": 9,
+        "records": 3985,
+        "account": 3985,
+        "submit": 18,
+        "orders": 4000,
+        "sleep": 4000,
+        "cancel": 8
+      },
+      "cutoff_open_orders": [
+        17,
+        18
+      ],
+      "paid_fees_USDT": "0.036705984",
+      "net_funding_USDT": "-0.0022360744406",
+      "conservative_margin_buffer_USDT": "9990.0703567415154",
+      "marked_drawdown_USDT": "1.1665316536006",
+      "marked_drawdown_fraction": "0.0001166501125043197840017238133403976359",
+      "ending_ETH_qty_by_side": [
+        "0.028",
+        "0"
+      ],
+      "ending_wallet_USDT": "10000.2410579415594",
+      "ending_equity_USDT": "9999.4241579415594",
+      "closed_lot_details": [
+        {
+          "gross": "0.14000",
+          "fees": "0.009219868",
+          "after_fees": "0.130780132",
+          "funding": "0",
+          "net": "0.130780132"
+        },
+        {
+          "gross": "0.14000",
+          "fees": "0.009207296",
+          "after_fees": "0.130792704",
+          "funding": "0",
+          "net": "0.130792704"
+        }
+      ]
+    },
+    {
+      "day": "2025-03-01",
+      "threshold": 1,
+      "maker_fills": 2,
+      "taker_fills": 0,
+      "order_cancels": 2,
+      "original_ema_readings": [
+        {
+          "at": 1740808800600,
+          "last": 2255.17,
+          "hour": 1740805200000,
+          "ema": 2272.1563322469096,
+          "deviation": 0.007475864228986382,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1740809693600,
+          "last": 2251,
+          "hour": 1740805200000,
+          "ema": 2272.1563322469096,
+          "deviation": 0.009311125271907847,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1740810745000,
+          "last": 2231.75,
+          "hour": 1740805200000,
+          "ema": 2272.1563322469096,
+          "deviation": 0.01778325358755235,
+          "usedRecords": 5000
+        }
+      ],
+      "raw_witness_ids": [
+        5263775682,
+        5263861671
+      ],
+      "events": [
+        {
+          "kind": "placement",
+          "t": 1740808801000,
+          "id": 1,
+          "direction": "buy",
+          "desired": 2251.17,
+          "amount": 0.009,
+          "n": 9,
+          "limit": 225117,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1740808800200,
+            2255.17
+          ],
+          "latestEMA": {
+            "at": 1740808800600,
+            "last": 2255.17,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.007475864228986382,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1740808801200,
+          "id": 2,
+          "direction": "sell",
+          "desired": 2259.17,
+          "amount": 0.009,
+          "n": 9,
+          "limit": 225917,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1740808800200,
+            2255.17
+          ],
+          "latestEMA": {
+            "at": 1740808800600,
+            "last": 2255.17,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.007475864228986382,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1740809680600,
+          "us": 1740809680463217,
+          "id": 1,
+          "fill_type": "maker",
+          "value": 20.26053,
+          "fee": 0.004052106,
+          "gross": 0,
+          "qty": [
+            9,
+            0
+          ],
+          "basis": [
+            20.26053,
+            0
+          ],
+          "wallet": 9999.995947894,
+          "proof": [
+            [
+              5263775682,
+              1740809680463217,
+              225116,
+              9,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1740809683800,
+          "id": 2,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1740809694000,
+          "id": 3,
+          "direction": "buy",
+          "desired": 2231,
+          "amount": 0.01,
+          "n": 10,
+          "limit": 223100,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1740809693200,
+            2251
+          ],
+          "latestEMA": {
+            "at": 1740809693600,
+            "last": 2251,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.009311125271907847,
+            "usedRecords": 5000
+          },
+          "qty": [
+            9,
+            0
+          ],
+          "basis": [
+            20.26053,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1740809694200,
+          "id": 4,
+          "direction": "closebuy",
+          "desired": 2271.17,
+          "amount": 0.009,
+          "n": 9,
+          "limit": 227117,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1740809693200,
+            2251
+          ],
+          "latestEMA": {
+            "at": 1740809693600,
+            "last": 2251,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.009311125271907847,
+            "usedRecords": 5000
+          },
+          "qty": [
+            9,
+            0
+          ],
+          "basis": [
+            20.26053,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1740810733000,
+          "us": 1740810732868512,
+          "id": 3,
+          "fill_type": "maker",
+          "value": 22.31,
+          "fee": 0.004462,
+          "gross": 0,
+          "qty": [
+            19,
+            0
+          ],
+          "basis": [
+            42.57053,
+            0
+          ],
+          "wallet": 9999.991485894,
+          "proof": [
+            [
+              5263861671,
+              1740810732868512,
+              223099,
+              10,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1740810735200,
+          "id": 4,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1740810745400,
+          "id": 5,
+          "direction": "buy",
+          "desired": 2211.75,
+          "amount": 0.01,
+          "n": 10,
+          "limit": 221175,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1740810744600,
+            2231.75
+          ],
+          "latestEMA": {
+            "at": 1740810745000,
+            "last": 2231.75,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.01778325358755235,
+            "usedRecords": 5000
+          },
+          "qty": [
+            19,
+            0
+          ],
+          "basis": [
+            42.57053,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1740810745600,
+          "id": 6,
+          "direction": "closebuy",
+          "desired": 2260.5542105263157,
+          "amount": 0.019,
+          "n": 19,
+          "limit": 226055,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1740810744600,
+            2231.75
+          ],
+          "latestEMA": {
+            "at": 1740810745000,
+            "last": 2231.75,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.01778325358755235,
+            "usedRecords": 5000
+          },
+          "qty": [
+            19,
+            0
+          ],
+          "basis": [
+            42.57053,
+            0
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1740816000000,
+          "us": 1740816000000000,
+          "mark": 2228.08,
+          "rate": -1.061e-05,
+          "signed": [
+            0.0004491586472,
+            0
+          ],
+          "qty": [
+            19,
+            0
+          ],
+          "wallet": 9999.991935052647
+        }
+      ],
+      "source_call_counts": {
+        "ticker": 3,
+        "position": 3,
+        "records": 3997,
+        "account": 3997,
+        "submit": 6,
+        "orders": 4000,
+        "sleep": 4000,
+        "cancel": 2
+      },
+      "cutoff_open_orders": [
+        5,
+        6
+      ],
+      "paid_fees_USDT": "0.008514106",
+      "net_funding_USDT": "0.0004491586472",
+      "conservative_margin_buffer_USDT": "9995.443329072604",
+      "marked_drawdown_USDT": "0.33196279644",
+      "marked_drawdown_fraction": "0.000033196279644",
+      "ending_ETH_qty_by_side": [
+        "0.019",
+        "0"
+      ],
+      "ending_wallet_USDT": "9999.9919350526472",
+      "ending_equity_USDT": "9999.8331494098172",
+      "closed_lot_details": []
+    },
+    {
+      "day": "2025-03-01",
+      "threshold": 2,
+      "maker_fills": 2,
+      "taker_fills": 0,
+      "order_cancels": 2,
+      "original_ema_readings": [
+        {
+          "at": 1740808800600,
+          "last": 2255.17,
+          "hour": 1740805200000,
+          "ema": 2272.1563322469096,
+          "deviation": 0.007475864228986382,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1740809693600,
+          "last": 2251,
+          "hour": 1740805200000,
+          "ema": 2272.1563322469096,
+          "deviation": 0.009311125271907847,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1740810745000,
+          "last": 2231.75,
+          "hour": 1740805200000,
+          "ema": 2272.1563322469096,
+          "deviation": 0.01778325358755235,
+          "usedRecords": 5000
+        }
+      ],
+      "raw_witness_ids": [
+        5263775682,
+        5263861671,
+        5263861672
+      ],
+      "events": [
+        {
+          "kind": "placement",
+          "t": 1740808801000,
+          "id": 1,
+          "direction": "buy",
+          "desired": 2251.17,
+          "amount": 0.009,
+          "n": 9,
+          "limit": 225117,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1740808800200,
+            2255.17
+          ],
+          "latestEMA": {
+            "at": 1740808800600,
+            "last": 2255.17,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.007475864228986382,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1740808801200,
+          "id": 2,
+          "direction": "sell",
+          "desired": 2259.17,
+          "amount": 0.009,
+          "n": 9,
+          "limit": 225917,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1740808800200,
+            2255.17
+          ],
+          "latestEMA": {
+            "at": 1740808800600,
+            "last": 2255.17,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.007475864228986382,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1740809680600,
+          "us": 1740809680463217,
+          "id": 1,
+          "fill_type": "maker",
+          "value": 20.26053,
+          "fee": 0.004052106,
+          "gross": 0,
+          "qty": [
+            9,
+            0
+          ],
+          "basis": [
+            20.26053,
+            0
+          ],
+          "wallet": 9999.995947894,
+          "proof": [
+            [
+              5263775682,
+              1740809680463217,
+              225116,
+              18,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1740809683800,
+          "id": 2,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1740809694000,
+          "id": 3,
+          "direction": "buy",
+          "desired": 2231,
+          "amount": 0.01,
+          "n": 10,
+          "limit": 223100,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1740809693200,
+            2251
+          ],
+          "latestEMA": {
+            "at": 1740809693600,
+            "last": 2251,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.009311125271907847,
+            "usedRecords": 5000
+          },
+          "qty": [
+            9,
+            0
+          ],
+          "basis": [
+            20.26053,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1740809694200,
+          "id": 4,
+          "direction": "closebuy",
+          "desired": 2271.17,
+          "amount": 0.009,
+          "n": 9,
+          "limit": 227117,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1740809693200,
+            2251
+          ],
+          "latestEMA": {
+            "at": 1740809693600,
+            "last": 2251,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.009311125271907847,
+            "usedRecords": 5000
+          },
+          "qty": [
+            9,
+            0
+          ],
+          "basis": [
+            20.26053,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1740810733000,
+          "us": 1740810732868515,
+          "id": 3,
+          "fill_type": "maker",
+          "value": 22.31,
+          "fee": 0.004462,
+          "gross": 0,
+          "qty": [
+            19,
+            0
+          ],
+          "basis": [
+            42.57053,
+            0
+          ],
+          "wallet": 9999.991485894,
+          "proof": [
+            [
+              5263861671,
+              1740810732868512,
+              223099,
+              10,
+              0
+            ],
+            [
+              5263861672,
+              1740810732868515,
+              223099,
+              10,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1740810735200,
+          "id": 4,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1740810745400,
+          "id": 5,
+          "direction": "buy",
+          "desired": 2211.75,
+          "amount": 0.01,
+          "n": 10,
+          "limit": 221175,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1740810744600,
+            2231.75
+          ],
+          "latestEMA": {
+            "at": 1740810745000,
+            "last": 2231.75,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.01778325358755235,
+            "usedRecords": 5000
+          },
+          "qty": [
+            19,
+            0
+          ],
+          "basis": [
+            42.57053,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1740810745600,
+          "id": 6,
+          "direction": "closebuy",
+          "desired": 2260.5542105263157,
+          "amount": 0.019,
+          "n": 19,
+          "limit": 226055,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1740810744600,
+            2231.75
+          ],
+          "latestEMA": {
+            "at": 1740810745000,
+            "last": 2231.75,
+            "hour": 1740805200000,
+            "ema": 2272.1563322469096,
+            "deviation": 0.01778325358755235,
+            "usedRecords": 5000
+          },
+          "qty": [
+            19,
+            0
+          ],
+          "basis": [
+            42.57053,
+            0
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1740816000000,
+          "us": 1740816000000000,
+          "mark": 2228.08,
+          "rate": -1.061e-05,
+          "signed": [
+            0.0004491586472,
+            0
+          ],
+          "qty": [
+            19,
+            0
+          ],
+          "wallet": 9999.991935052647
+        }
+      ],
+      "source_call_counts": {
+        "ticker": 3,
+        "position": 3,
+        "records": 3997,
+        "account": 3997,
+        "submit": 6,
+        "orders": 4000,
+        "sleep": 4000,
+        "cancel": 2
+      },
+      "cutoff_open_orders": [
+        5,
+        6
+      ],
+      "paid_fees_USDT": "0.008514106",
+      "net_funding_USDT": "0.0004491586472",
+      "conservative_margin_buffer_USDT": "9995.443329072604",
+      "marked_drawdown_USDT": "0.33196279644",
+      "marked_drawdown_fraction": "0.000033196279644",
+      "ending_ETH_qty_by_side": [
+        "0.019",
+        "0"
+      ],
+      "ending_wallet_USDT": "9999.9919350526472",
+      "ending_equity_USDT": "9999.8331494098172",
+      "closed_lot_details": []
+    },
+    {
+      "day": "2025-04-01",
+      "threshold": 1,
+      "maker_fills": 3,
+      "taker_fills": 0,
+      "order_cancels": 3,
+      "original_ema_readings": [
+        {
+          "at": 1743487200600,
+          "last": 1840.74,
+          "hour": 1743483600000,
+          "ema": 1834.9294607194067,
+          "deviation": 0.0031666281483731704,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1743488147600,
+          "last": 1845.55,
+          "hour": 1743483600000,
+          "ema": 1834.9294607194067,
+          "deviation": 0.005787982321908607,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1743489616600,
+          "last": 1864.89,
+          "hour": 1743483600000,
+          "ema": 1834.9294607194067,
+          "deviation": 0.016327897023816363,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1743495805200,
+          "last": 1879.9,
+          "hour": 1743490800000,
+          "ema": 1836.2266414308667,
+          "deviation": 0.023784296330163913,
+          "usedRecords": 5000
+        }
+      ],
+      "raw_witness_ids": [
+        5418444954,
+        5418511021,
+        5418829686
+      ],
+      "events": [
+        {
+          "kind": "placement",
+          "t": 1743487201000,
+          "id": 1,
+          "direction": "buy",
+          "desired": 1836.74,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 183674,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743487200200,
+            1840.74
+          ],
+          "latestEMA": {
+            "at": 1743487200600,
+            "last": 1840.74,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.0031666281483731704,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1743487201200,
+          "id": 2,
+          "direction": "sell",
+          "desired": 1844.74,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 184474,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743487200200,
+            1840.74
+          ],
+          "latestEMA": {
+            "at": 1743487200600,
+            "last": 1840.74,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.0031666281483731704,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1743488135000,
+          "us": 1743488134928069,
+          "id": 2,
+          "fill_type": "maker",
+          "value": 20.29214,
+          "fee": 0.004058428,
+          "gross": 0,
+          "qty": [
+            0,
+            11
+          ],
+          "basis": [
+            0,
+            20.29214
+          ],
+          "wallet": 9999.995941572,
+          "proof": [
+            [
+              5418444954,
+              1743488134928069,
+              184475,
+              11,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1743488137800,
+          "id": 1,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1743488148000,
+          "id": 3,
+          "direction": "closesell",
+          "desired": 1824.74,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 182474,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1743488147200,
+            1845.55
+          ],
+          "latestEMA": {
+            "at": 1743488147600,
+            "last": 1845.55,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.005787982321908607,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            11
+          ],
+          "basis": [
+            0,
+            20.29214
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1743488148200,
+          "id": 4,
+          "direction": "sell",
+          "desired": 1865.55,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 186555,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743488147200,
+            1845.55
+          ],
+          "latestEMA": {
+            "at": 1743488147600,
+            "last": 1845.55,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.005787982321908607,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            11
+          ],
+          "basis": [
+            0,
+            20.29214
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1743489606400,
+          "us": 1743489606209511,
+          "id": 4,
+          "fill_type": "maker",
+          "value": 20.52105,
+          "fee": 0.00410421,
+          "gross": 0,
+          "qty": [
+            0,
+            22
+          ],
+          "basis": [
+            0,
+            40.81319
+          ],
+          "wallet": 9999.991837362,
+          "proof": [
+            [
+              5418511021,
+              1743489606209511,
+              186556,
+              11,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1743489606800,
+          "id": 3,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1743489617000,
+          "id": 5,
+          "direction": "closesell",
+          "desired": 1835.1450000000002,
+          "amount": 0.022,
+          "n": 22,
+          "limit": 183514,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1743489616200,
+            1864.89
+          ],
+          "latestEMA": {
+            "at": 1743489616600,
+            "last": 1864.89,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.016327897023816363,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            22
+          ],
+          "basis": [
+            0,
+            40.81319
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1743489617200,
+          "id": 6,
+          "direction": "sell",
+          "desired": 1884.89,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 188489,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743489616200,
+            1864.89
+          ],
+          "latestEMA": {
+            "at": 1743489616600,
+            "last": 1864.89,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.016327897023816363,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            22
+          ],
+          "basis": [
+            0,
+            40.81319
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1743494400200,
+          "us": 1743494400001000,
+          "mark": 1853.39998413,
+          "rate": 2.877e-05,
+          "signed": [
+            0,
+            0.001173090985955242
+          ],
+          "qty": [
+            0,
+            22
+          ],
+          "wallet": 9999.993010452987
+        },
+        {
+          "kind": "fill",
+          "t": 1743495794400,
+          "us": 1743495794274688,
+          "id": 6,
+          "fill_type": "maker",
+          "value": 20.73379,
+          "fee": 0.004146758,
+          "gross": 0,
+          "qty": [
+            0,
+            33
+          ],
+          "basis": [
+            0,
+            61.54698
+          ],
+          "wallet": 9999.988863694987,
+          "proof": [
+            [
+              5418829686,
+              1743495794274688,
+              188490,
+              11,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1743495795400,
+          "id": 5,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1743495805600,
+          "id": 7,
+          "direction": "closesell",
+          "desired": 1845.06,
+          "amount": 0.033,
+          "n": 33,
+          "limit": 184506,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1743495804800,
+            1879.9
+          ],
+          "latestEMA": {
+            "at": 1743495805200,
+            "last": 1879.9,
+            "hour": 1743490800000,
+            "ema": 1836.2266414308667,
+            "deviation": 0.023784296330163913,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            33
+          ],
+          "basis": [
+            0,
+            61.54698
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1743495805800,
+          "id": 8,
+          "direction": "sell",
+          "desired": 1899.9,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 189990,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743495804800,
+            1879.9
+          ],
+          "latestEMA": {
+            "at": 1743495805200,
+            "last": 1879.9,
+            "hour": 1743490800000,
+            "ema": 1836.2266414308667,
+            "deviation": 0.023784296330163913,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            33
+          ],
+          "basis": [
+            0,
+            61.54698
+          ]
+        }
+      ],
+      "source_call_counts": {
+        "ticker": 4,
+        "position": 4,
+        "records": 3995,
+        "account": 3995,
+        "submit": 8,
+        "orders": 4000,
+        "sleep": 4000,
+        "cancel": 3
+      },
+      "cutoff_open_orders": [
+        7,
+        8
+      ],
+      "paid_fees_USDT": "0.012309396",
+      "net_funding_USDT": "0.0011730909859552422",
+      "conservative_margin_buffer_USDT": "9992.9130840213089552422",
+      "marked_drawdown_USDT": "0.9211706430840447578",
+      "marked_drawdown_fraction": "0.00009211639473863142560021828208664509499",
+      "ending_ETH_qty_by_side": [
+        "0",
+        "0.033"
+      ],
+      "ending_wallet_USDT": "9999.9888636949859552422",
+      "ending_equity_USDT": "9999.3473436949859552422",
+      "closed_lot_details": []
+    },
+    {
+      "day": "2025-04-01",
+      "threshold": 2,
+      "maker_fills": 3,
+      "taker_fills": 0,
+      "order_cancels": 3,
+      "original_ema_readings": [
+        {
+          "at": 1743487200600,
+          "last": 1840.74,
+          "hour": 1743483600000,
+          "ema": 1834.9294607194067,
+          "deviation": 0.0031666281483731704,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1743488147600,
+          "last": 1845.55,
+          "hour": 1743483600000,
+          "ema": 1834.9294607194067,
+          "deviation": 0.005787982321908607,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1743489616600,
+          "last": 1864.89,
+          "hour": 1743483600000,
+          "ema": 1834.9294607194067,
+          "deviation": 0.016327897023816363,
+          "usedRecords": 5000
+        },
+        {
+          "at": 1743495805200,
+          "last": 1879.9,
+          "hour": 1743490800000,
+          "ema": 1836.2266414308667,
+          "deviation": 0.023784296330163913,
+          "usedRecords": 5000
+        }
+      ],
+      "raw_witness_ids": [
+        5418444954,
+        5418511021,
+        5418829686
+      ],
+      "events": [
+        {
+          "kind": "placement",
+          "t": 1743487201000,
+          "id": 1,
+          "direction": "buy",
+          "desired": 1836.74,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 183674,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743487200200,
+            1840.74
+          ],
+          "latestEMA": {
+            "at": 1743487200600,
+            "last": 1840.74,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.0031666281483731704,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1743487201200,
+          "id": 2,
+          "direction": "sell",
+          "desired": 1844.74,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 184474,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743487200200,
+            1840.74
+          ],
+          "latestEMA": {
+            "at": 1743487200600,
+            "last": 1840.74,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.0031666281483731704,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            0
+          ],
+          "basis": [
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1743488135000,
+          "us": 1743488134928069,
+          "id": 2,
+          "fill_type": "maker",
+          "value": 20.29214,
+          "fee": 0.004058428,
+          "gross": 0,
+          "qty": [
+            0,
+            11
+          ],
+          "basis": [
+            0,
+            20.29214
+          ],
+          "wallet": 9999.995941572,
+          "proof": [
+            [
+              5418444954,
+              1743488134928069,
+              184475,
+              22,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1743488137800,
+          "id": 1,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1743488148000,
+          "id": 3,
+          "direction": "closesell",
+          "desired": 1824.74,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 182474,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1743488147200,
+            1845.55
+          ],
+          "latestEMA": {
+            "at": 1743488147600,
+            "last": 1845.55,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.005787982321908607,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            11
+          ],
+          "basis": [
+            0,
+            20.29214
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1743488148200,
+          "id": 4,
+          "direction": "sell",
+          "desired": 1865.55,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 186555,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743488147200,
+            1845.55
+          ],
+          "latestEMA": {
+            "at": 1743488147600,
+            "last": 1845.55,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.005787982321908607,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            11
+          ],
+          "basis": [
+            0,
+            20.29214
+          ]
+        },
+        {
+          "kind": "fill",
+          "t": 1743489606400,
+          "us": 1743489606209511,
+          "id": 4,
+          "fill_type": "maker",
+          "value": 20.52105,
+          "fee": 0.00410421,
+          "gross": 0,
+          "qty": [
+            0,
+            22
+          ],
+          "basis": [
+            0,
+            40.81319
+          ],
+          "wallet": 9999.991837362,
+          "proof": [
+            [
+              5418511021,
+              1743489606209511,
+              186556,
+              22,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1743489606800,
+          "id": 3,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1743489617000,
+          "id": 5,
+          "direction": "closesell",
+          "desired": 1835.1450000000002,
+          "amount": 0.022,
+          "n": 22,
+          "limit": 183514,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1743489616200,
+            1864.89
+          ],
+          "latestEMA": {
+            "at": 1743489616600,
+            "last": 1864.89,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.016327897023816363,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            22
+          ],
+          "basis": [
+            0,
+            40.81319
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1743489617200,
+          "id": 6,
+          "direction": "sell",
+          "desired": 1884.89,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 188489,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743489616200,
+            1864.89
+          ],
+          "latestEMA": {
+            "at": 1743489616600,
+            "last": 1864.89,
+            "hour": 1743483600000,
+            "ema": 1834.9294607194067,
+            "deviation": 0.016327897023816363,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            22
+          ],
+          "basis": [
+            0,
+            40.81319
+          ]
+        },
+        {
+          "kind": "funding",
+          "t": 1743494400200,
+          "us": 1743494400001000,
+          "mark": 1853.39998413,
+          "rate": 2.877e-05,
+          "signed": [
+            0,
+            0.001173090985955242
+          ],
+          "qty": [
+            0,
+            22
+          ],
+          "wallet": 9999.993010452987
+        },
+        {
+          "kind": "fill",
+          "t": 1743495794400,
+          "us": 1743495794274688,
+          "id": 6,
+          "fill_type": "maker",
+          "value": 20.73379,
+          "fee": 0.004146758,
+          "gross": 0,
+          "qty": [
+            0,
+            33
+          ],
+          "basis": [
+            0,
+            61.54698
+          ],
+          "wallet": 9999.988863694987,
+          "proof": [
+            [
+              5418829686,
+              1743495794274688,
+              188490,
+              22,
+              1
+            ]
+          ]
+        },
+        {
+          "kind": "cancel",
+          "t": 1743495795400,
+          "id": 5,
+          "was_resting": true
+        },
+        {
+          "kind": "placement",
+          "t": 1743495805600,
+          "id": 7,
+          "direction": "closesell",
+          "desired": 1845.06,
+          "amount": 0.033,
+          "n": 33,
+          "limit": 184506,
+          "clipped": false,
+          "offset": true,
+          "sourceTicker": [
+            1743495804800,
+            1879.9
+          ],
+          "latestEMA": {
+            "at": 1743495805200,
+            "last": 1879.9,
+            "hour": 1743490800000,
+            "ema": 1836.2266414308667,
+            "deviation": 0.023784296330163913,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            33
+          ],
+          "basis": [
+            0,
+            61.54698
+          ]
+        },
+        {
+          "kind": "placement",
+          "t": 1743495805800,
+          "id": 8,
+          "direction": "sell",
+          "desired": 1899.9,
+          "amount": 0.011,
+          "n": 11,
+          "limit": 189990,
+          "clipped": false,
+          "offset": false,
+          "sourceTicker": [
+            1743495804800,
+            1879.9
+          ],
+          "latestEMA": {
+            "at": 1743495805200,
+            "last": 1879.9,
+            "hour": 1743490800000,
+            "ema": 1836.2266414308667,
+            "deviation": 0.023784296330163913,
+            "usedRecords": 5000
+          },
+          "qty": [
+            0,
+            33
+          ],
+          "basis": [
+            0,
+            61.54698
+          ]
+        }
+      ],
+      "source_call_counts": {
+        "ticker": 4,
+        "position": 4,
+        "records": 3995,
+        "account": 3995,
+        "submit": 8,
+        "orders": 4000,
+        "sleep": 4000,
+        "cancel": 3
+      },
+      "cutoff_open_orders": [
+        7,
+        8
+      ],
+      "paid_fees_USDT": "0.012309396",
+      "net_funding_USDT": "0.0011730909859552422",
+      "conservative_margin_buffer_USDT": "9992.9130840213089552422",
+      "marked_drawdown_USDT": "0.9211706430840447578",
+      "marked_drawdown_fraction": "0.00009211639473863142560021828208664509499",
+      "ending_ETH_qty_by_side": [
+        "0",
+        "0.033"
+      ],
+      "ending_wallet_USDT": "9999.9888636949859552422",
+      "ending_equity_USDT": "9999.3473436949859552422",
+      "closed_lot_details": []
+    }
+  ],
+  "source": {
+    "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%9F%BA%E4%BA%8EEMA%E8%B6%8B%E5%8A%BF%E8%BF%87%E6%BB%A4%E7%9A%84%E9%80%90%E7%BA%A7%E5%8A%A0%E4%BB%93%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5-%E6%95%99%E5%AD%A6.md",
+    "archive_sha256": "e40d96585ace49f4a7e94b97049f22a51b69818809802d01ffd95f22003605aa",
+    "source_sha256": "72b2319d5cf7a4cd2c7b470bbb2054ee59dfaaf61de59d20e1c1ed38c1d56de6",
+    "author_form_sha256": "8deb71908f128187b14ba0b9c47ef25082f262f9143a04cee9f40bf5c4692c13",
+    "archive_overrides": {
+      "targetProfit": 20,
+      "amount": 20,
+      "amountPrecision": 3,
+      "isAmountForUSDT": true
+    },
+    "author_args": {
+      "targetProfit": 20,
+      "amount": 20,
+      "totalEq": -1,
+      "isReset": false,
+      "pricePrecision": 2,
+      "amountPrecision": 3,
+      "isSimulate": false,
+      "ratio": 1,
+      "contractType": "swap",
+      "isAmountForUSDT": true,
+      "oneCtValue": 1,
+      "setAddCounter": -1,
+      "reserve": 0.2,
+      "marginLevel": 10,
+      "maxAddCounter": 10,
+      "isDoubling": false,
+      "interval": 3000,
+      "isMaxAddCounterClear": true
+    },
+    "selected_windows": "Four consecutive first-of-month 4-hour UTC windows. The first study fixed Jan and Apr; Feb and Mar complete the consecutive-month series."
+  },
+  "data": {
+    "2025-01-01": {
+      "proof": {
+        "archive_hourly": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-06.zip",
+            "sha256": "479dced4a591035987e084dc8a5e5f3f1f2593704c0aeecdebc20c89b35c1d98",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-06.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-07.zip",
+            "sha256": "8cc8d8b6ef13fa0393f53690e5d569afb8a50488e4d7852e20ac22d7bcf17cf5",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-07.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip",
+            "sha256": "00eddbb3297515be14426119f07468846cd04dc527dbc19834dd45294740a67c",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip",
+            "sha256": "37bea2dbe4281fbcaa45a849b6eed4393713b7236c5cb35cff63876e96df5677",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip",
+            "sha256": "b4cda93568426a315e1de2fc7ca0ffb56586495680b233ffd7ce6bec11d18713",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip",
+            "sha256": "3e8286eb77062f7c1047ee32aa1ce98dbf42f8e8029acebe38cc1bdd33967c63",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip",
+            "sha256": "330397f0cfd0dc62253ce6cf61ec142714fe65592a9f8447e4b88ca428bb4c9c",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip",
+            "sha256": "99928eb8fdc5d565d317b0e9685e07fc5f9487510a39b8675d7374cfdfcbec82",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip.CHECKSUM"
+          }
+        ],
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/quotes/2025/01/01/ETHUSDT.csv.gz",
+          "records": 1190604,
+          "bytes": 17440405,
+          "sha256": "89e860e24bbd324b218b69d1d4b9e84d37d6ca14704625db3cea6cd61fa1f268",
+          "start_local_us": 1735689601040380,
+          "end_local_us": 1735775999886129,
+          "replay_grid_rows": 72001
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/derivative_ticker/2025/01/01/ETHUSDT.csv.gz",
+          "records": 126566,
+          "bytes": 1906674,
+          "sha256": "70bd326da507686a2a13bceabf9164494f7e7dcb8bb28e5d2baf3d6cd25b3d76",
+          "start_local_us": 1735689600055335,
+          "end_local_us": 1735775999037872,
+          "replay_grid_rows": 72001
+        },
+        "depth": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_5/2025/01/01/ETHUSDT.csv.gz",
+          "records": 1281888,
+          "bytes": 26281198,
+          "sha256": "53c412724f21a5c54d817e288cd1a7de9977c346d29eec17fd5803eb4bb724e0",
+          "start_local_us": 1735689601040380,
+          "end_local_us": 1735775999886129,
+          "replay_grid_rows": 72001
+        },
+        "flow": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/trades/2025/01/01/ETHUSDT.csv.gz",
+          "sha256": "ed30f2ba0cc675e3570ae3fb349ed01fbca3a6e958e1202073b2a9b073cffa2d",
+          "daily_rows": 2495858,
+          "capture_scope_rows": 395235,
+          "venue_clock_after_local_rows": 0,
+          "raw_bytes": 23191271
+        },
+        "exact_BBO_binding": 72001
+      },
+      "funding": {
+        "boundary_ms": 1735718400000,
+        "exchange_settlement_ms": 1735718400000,
+        "rate": 0.0001,
+        "prior_mark": [
+          1735718399041125,
+          1735718399001000,
+          334609,
+          3346.08,
+          3346.74863636,
+          1735718400000000,
+          "0.0001"
+        ],
+        "next_mark": [
+          1735718401046560,
+          1735718401000000,
+          334583,
+          3345.84,
+          3346.89227273,
+          1735747200000000,
+          "0.0001"
+        ],
+        "official_two_minute_mark_price_bounds_USDT": [
+          3344.49,
+          3346.61
+        ],
+        "pre_settlement_capture_indicative_rate": 0.0001,
+        "official_funding_source": {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2025-01.zip",
+          "sha256": "88c95b99d2784a7baac529fe578563d7e05038a1b8a498b2f59bf81b216fee20",
+          "rows": 93,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2025-01.zip.CHECKSUM"
+        },
+        "official_mark_minute_source": {
+          "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2025-01-01.zip",
+          "sha256": "67f572bedfab312ab4f5c2d17d72e00a33c662082c698eb1bd97d00ed0dc9681"
+        }
+      },
+      "binance_trade_crosswalk": {
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2025-01-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2025-01-01.zip.CHECKSUM",
+        "archive_sha256": "7f682c4cc8a362e7a11c7adcd9e1b4e5f30debad5eb796407c6d785c95a4ae6c",
+        "aggregate_rows": 816837,
+        "all_witnesses": [
+          {
+            "raw_id": 4937160240,
+            "raw_venue_us": 1735711668596000,
+            "aggressor_buy": 0,
+            "raw_cents": 334020,
+            "raw_units": 10,
+            "aggregate_id": 1953198767,
+            "aggregate_ms": 1735711668596,
+            "aggregate_units": 10,
+            "aggregate_first_id": 4937160240,
+            "aggregate_last_id": 4937160240
+          },
+          {
+            "raw_id": 4937160245,
+            "raw_venue_us": 1735711669228000,
+            "aggressor_buy": 0,
+            "raw_cents": 334019,
+            "raw_units": 20,
+            "aggregate_id": 1953198770,
+            "aggregate_ms": 1735711669228,
+            "aggregate_units": 311,
+            "aggregate_first_id": 4937160245,
+            "aggregate_last_id": 4937160248
+          },
+          {
+            "raw_id": 4937416383,
+            "raw_venue_us": 1735723258371000,
+            "aggressor_buy": 0,
+            "raw_cents": 332000,
+            "raw_units": 150,
+            "aggregate_id": 1953279031,
+            "aggregate_ms": 1735723258371,
+            "aggregate_units": 2255377,
+            "aggregate_first_id": 4937416383,
+            "aggregate_last_id": 4937417078
+          }
+        ]
+      }
+    },
+    "2025-02-01": {
+      "proof": {
+        "archive_hourly": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-07.zip",
+            "sha256": "8cc8d8b6ef13fa0393f53690e5d569afb8a50488e4d7852e20ac22d7bcf17cf5",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-07.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip",
+            "sha256": "00eddbb3297515be14426119f07468846cd04dc527dbc19834dd45294740a67c",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip",
+            "sha256": "37bea2dbe4281fbcaa45a849b6eed4393713b7236c5cb35cff63876e96df5677",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip",
+            "sha256": "b4cda93568426a315e1de2fc7ca0ffb56586495680b233ffd7ce6bec11d18713",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip",
+            "sha256": "3e8286eb77062f7c1047ee32aa1ce98dbf42f8e8029acebe38cc1bdd33967c63",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip",
+            "sha256": "330397f0cfd0dc62253ce6cf61ec142714fe65592a9f8447e4b88ca428bb4c9c",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip",
+            "sha256": "99928eb8fdc5d565d317b0e9685e07fc5f9487510a39b8675d7374cfdfcbec82",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip",
+            "sha256": "d7466620f50bb4048080ece1deab8eb0298274413a3eb2a9f4c728536ab3c647",
+            "rows": 672,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip.CHECKSUM"
+          }
+        ],
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/quotes/2025/02/01/ETHUSDT.csv.gz",
+          "records": 1316054,
+          "bytes": 19804105,
+          "sha256": "3ca714c6b61d9321af030647fdfb3849a5eb9f34db893b55aceadf8b8d0cced6",
+          "start_local_us": 1738368000757441,
+          "end_local_us": 1738454399991494,
+          "replay_grid_rows": 72001
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/derivative_ticker/2025/02/01/ETHUSDT.csv.gz",
+          "records": 130777,
+          "bytes": 1972882,
+          "sha256": "e75231597dafb97de3eef33e6062f7904ce6511fa71ffac16b8de368d54d6ee7",
+          "start_local_us": 1738368000026095,
+          "end_local_us": 1738454399505578,
+          "replay_grid_rows": 72001
+        },
+        "depth": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_5/2025/02/01/ETHUSDT.csv.gz",
+          "records": 1387656,
+          "bytes": 31751413,
+          "sha256": "8619c13a8bd4a5010f64e947790d30147a1fa8b3d52531855f149cc83d1002c5",
+          "start_local_us": 1738368000757441,
+          "end_local_us": 1738454399991494,
+          "replay_grid_rows": 72001
+        },
+        "flow": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/trades/2025/02/01/ETHUSDT.csv.gz",
+          "sha256": "9401520f8c6da4913c5ca7725eeee2d4e4ed420295b8dcdf06e4709a381a870c",
+          "daily_rows": 4302084,
+          "capture_scope_rows": 748589,
+          "venue_clock_after_local_rows": 0,
+          "raw_bytes": 40466721
+        },
+        "exact_BBO_binding": 72001
+      },
+      "funding": {
+        "boundary_ms": 1738396800000,
+        "exchange_settlement_ms": 1738396800000,
+        "rate": 9.742e-05,
+        "prior_mark": [
+          1738396799020406,
+          1738396799000000,
+          327899,
+          3278.99,
+          3280.11404762,
+          1738396800000000,
+          "0.00009742"
+        ],
+        "next_mark": [
+          1738396801023290,
+          1738396801000000,
+          327899,
+          3279.0,
+          3280.08071429,
+          1738425600000000,
+          "0.00009742"
+        ],
+        "official_two_minute_mark_price_bounds_USDT": [
+          3278.48,
+          3282.22
+        ],
+        "pre_settlement_capture_indicative_rate": 9.742e-05,
+        "official_funding_source": {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2025-02.zip",
+          "sha256": "9e116dd6754484a19ecc41ced40b8dfa7f62c33d41cdc3317336b1e1f043767f",
+          "rows": 84,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2025-02.zip.CHECKSUM"
+        },
+        "official_mark_minute_source": {
+          "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2025-02-01.zip",
+          "sha256": "76d036681916c4d7071ce84196861b145b6d378de92bf4ebaa06ef31073e72b7"
+        }
+      },
+      "binance_trade_crosswalk": {
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2025-02-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2025-02-01.zip.CHECKSUM",
+        "archive_sha256": "f083b4285ea924d0cece496f8c04fcfd475168cf17a3f3beab7a95595b67f747",
+        "aggregate_rows": 1457463,
+        "all_witnesses": [
+          {
+            "raw_id": 5092155169,
+            "raw_venue_us": 1738390035210000,
+            "aggressor_buy": 1,
+            "raw_cents": 330282,
+            "raw_units": 9,
+            "aggregate_id": 2008651916,
+            "aggregate_ms": 1738390035210,
+            "aggregate_units": 2017,
+            "aggregate_first_id": 5092155169,
+            "aggregate_last_id": 5092155173
+          },
+          {
+            "raw_id": 5092155170,
+            "raw_venue_us": 1738390035210000,
+            "aggressor_buy": 1,
+            "raw_cents": 330282,
+            "raw_units": 3,
+            "aggregate_id": 2008651916,
+            "aggregate_ms": 1738390035210,
+            "aggregate_units": 2017,
+            "aggregate_first_id": 5092155169,
+            "aggregate_last_id": 5092155173
+          },
+          {
+            "raw_id": 5092155171,
+            "raw_venue_us": 1738390035210000,
+            "aggressor_buy": 1,
+            "raw_cents": 330282,
+            "raw_units": 297,
+            "aggregate_id": 2008651916,
+            "aggregate_ms": 1738390035210,
+            "aggregate_units": 2017,
+            "aggregate_first_id": 5092155169,
+            "aggregate_last_id": 5092155173
+          },
+          {
+            "raw_id": 5092212886,
+            "raw_venue_us": 1738392124019000,
+            "aggressor_buy": 0,
+            "raw_cents": 328280,
+            "raw_units": 7,
+            "aggregate_id": 2008670145,
+            "aggregate_ms": 1738392124019,
+            "aggregate_units": 3448,
+            "aggregate_first_id": 5092212886,
+            "aggregate_last_id": 5092212888
+          },
+          {
+            "raw_id": 5092212887,
+            "raw_venue_us": 1738392124019000,
+            "aggressor_buy": 0,
+            "raw_cents": 328280,
+            "raw_units": 3289,
+            "aggregate_id": 2008670145,
+            "aggregate_ms": 1738392124019,
+            "aggregate_units": 3448,
+            "aggregate_first_id": 5092212886,
+            "aggregate_last_id": 5092212888
+          },
+          {
+            "raw_id": 5092231306,
+            "raw_venue_us": 1738392355755000,
+            "aggressor_buy": 0,
+            "raw_cents": 327831,
+            "raw_units": 7,
+            "aggregate_id": 2008675376,
+            "aggregate_ms": 1738392355755,
+            "aggregate_units": 118,
+            "aggregate_first_id": 5092231306,
+            "aggregate_last_id": 5092231309
+          },
+          {
+            "raw_id": 5092231307,
+            "raw_venue_us": 1738392355755000,
+            "aggressor_buy": 0,
+            "raw_cents": 327831,
+            "raw_units": 97,
+            "aggregate_id": 2008675376,
+            "aggregate_ms": 1738392355755,
+            "aggregate_units": 118,
+            "aggregate_first_id": 5092231306,
+            "aggregate_last_id": 5092231309
+          },
+          {
+            "raw_id": 5092290218,
+            "raw_venue_us": 1738393448554000,
+            "aggressor_buy": 1,
+            "raw_cents": 329833,
+            "raw_units": 19,
+            "aggregate_id": 2008693774,
+            "aggregate_ms": 1738393448554,
+            "aggregate_units": 183,
+            "aggregate_first_id": 5092290218,
+            "aggregate_last_id": 5092290223
+          },
+          {
+            "raw_id": 5092305590,
+            "raw_venue_us": 1738394076293000,
+            "aggressor_buy": 0,
+            "raw_cents": 329454,
+            "raw_units": 7,
+            "aggregate_id": 2008698789,
+            "aggregate_ms": 1738394076293,
+            "aggregate_units": 7,
+            "aggregate_first_id": 5092305590,
+            "aggregate_last_id": 5092305590
+          },
+          {
+            "raw_id": 5092305591,
+            "raw_venue_us": 1738394076293000,
+            "aggressor_buy": 0,
+            "raw_cents": 329453,
+            "raw_units": 7,
+            "aggregate_id": 2008698790,
+            "aggregate_ms": 1738394076293,
+            "aggregate_units": 7,
+            "aggregate_first_id": 5092305591,
+            "aggregate_last_id": 5092305591
+          },
+          {
+            "raw_id": 5092421509,
+            "raw_venue_us": 1738397920020000,
+            "aggressor_buy": 0,
+            "raw_cents": 327407,
+            "raw_units": 14,
+            "aggregate_id": 2008738066,
+            "aggregate_ms": 1738397920020,
+            "aggregate_units": 357,
+            "aggregate_first_id": 5092421509,
+            "aggregate_last_id": 5092421512
+          },
+          {
+            "raw_id": 5092508009,
+            "raw_venue_us": 1738398777609000,
+            "aggressor_buy": 0,
+            "raw_cents": 325455,
+            "raw_units": 22,
+            "aggregate_id": 2008766122,
+            "aggregate_ms": 1738398777609,
+            "aggregate_units": 541,
+            "aggregate_first_id": 5092508009,
+            "aggregate_last_id": 5092508011
+          },
+          {
+            "raw_id": 5092805542,
+            "raw_venue_us": 1738403149020000,
+            "aggressor_buy": 0,
+            "raw_cents": 323310,
+            "raw_units": 75,
+            "aggregate_id": 2008869949,
+            "aggregate_ms": 1738403149020,
+            "aggregate_units": 3169,
+            "aggregate_first_id": 5092805542,
+            "aggregate_last_id": 5092805544
+          }
+        ]
+      }
+    },
+    "2025-03-01": {
+      "proof": {
+        "archive_hourly": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip",
+            "sha256": "00eddbb3297515be14426119f07468846cd04dc527dbc19834dd45294740a67c",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip",
+            "sha256": "37bea2dbe4281fbcaa45a849b6eed4393713b7236c5cb35cff63876e96df5677",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip",
+            "sha256": "b4cda93568426a315e1de2fc7ca0ffb56586495680b233ffd7ce6bec11d18713",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip",
+            "sha256": "3e8286eb77062f7c1047ee32aa1ce98dbf42f8e8029acebe38cc1bdd33967c63",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip",
+            "sha256": "330397f0cfd0dc62253ce6cf61ec142714fe65592a9f8447e4b88ca428bb4c9c",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip",
+            "sha256": "99928eb8fdc5d565d317b0e9685e07fc5f9487510a39b8675d7374cfdfcbec82",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip",
+            "sha256": "d7466620f50bb4048080ece1deab8eb0298274413a3eb2a9f4c728536ab3c647",
+            "rows": 672,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip",
+            "sha256": "9dbad1e542ff8344fe8610450cf71d5cb98e1af2e8f2d7a31dbe8679ef263535",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip.CHECKSUM"
+          }
+        ],
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/quotes/2025/03/01/ETHUSDT.csv.gz",
+          "records": 1420644,
+          "bytes": 22355380,
+          "sha256": "33f4afc5466a100b6e8f11489f01b3e2076ecb9c6c87d794a447608d52f3645b",
+          "start_local_us": 1740787201036679,
+          "end_local_us": 1740873599930403,
+          "replay_grid_rows": 72001
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/derivative_ticker/2025/03/01/ETHUSDT.csv.gz",
+          "records": 137282,
+          "bytes": 2082938,
+          "sha256": "e2843201a9becbc17058767c01e4fae2ebf548ab07ce4449ab86250ab4dea1cb",
+          "start_local_us": 1740787200038718,
+          "end_local_us": 1740873599033224,
+          "replay_grid_rows": 72001
+        },
+        "depth": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_5/2025/03/01/ETHUSDT.csv.gz",
+          "records": 1498817,
+          "bytes": 38447142,
+          "sha256": "6a6298949589b9d117e0443f482754b233ded75257f8ba09bb67557d5252c904",
+          "start_local_us": 1740787201036679,
+          "end_local_us": 1740873599930403,
+          "replay_grid_rows": 72001
+        },
+        "flow": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/trades/2025/03/01/ETHUSDT.csv.gz",
+          "sha256": "7c1af1ca8cc45069aabfd4cc3b81bc858e0d8f7b36537cd7772b152d5074120e",
+          "daily_rows": 4872005,
+          "capture_scope_rows": 576843,
+          "venue_clock_after_local_rows": 0,
+          "raw_bytes": 45148757
+        },
+        "exact_BBO_binding": 72001
+      },
+      "funding": {
+        "boundary_ms": 1740816000000,
+        "exchange_settlement_ms": 1740816000000,
+        "rate": -1.061e-05,
+        "prior_mark": [
+          1740815999023296,
+          1740815999000000,
+          222808,
+          2228.08,
+          2228.72690476,
+          1740816000000000,
+          "-0.00001061"
+        ],
+        "next_mark": [
+          1740816001031795,
+          1740816001000000,
+          222808,
+          2228.15,
+          2228.90071429,
+          1740844800000000,
+          "-0.00001061"
+        ],
+        "official_two_minute_mark_price_bounds_USDT": [
+          2226.42885714,
+          2230.01
+        ],
+        "pre_settlement_capture_indicative_rate": -1.061e-05,
+        "official_funding_source": {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2025-03.zip",
+          "sha256": "62464a8bfb7ba515628acb76d3e2172d33b88805faa2e701a22537c51a17d139",
+          "rows": 93,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2025-03.zip.CHECKSUM"
+        },
+        "official_mark_minute_source": {
+          "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2025-03-01.zip",
+          "sha256": "855a0faff3b9b051103aa89b143f01b02b41888fcc3d7fde358c4b728c7f3b9a"
+        }
+      },
+      "binance_trade_crosswalk": {
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2025-03-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2025-03-01.zip.CHECKSUM",
+        "archive_sha256": "f0e00280e2cec4249d2a4dcf5ad8cb5396eef3967042448c92a54442d6170276",
+        "aggregate_rows": 1527388,
+        "all_witnesses": [
+          {
+            "raw_id": 5263775682,
+            "raw_venue_us": 1740809680459000,
+            "aggressor_buy": 0,
+            "raw_cents": 225116,
+            "raw_units": 17332,
+            "aggregate_id": 2069097792,
+            "aggregate_ms": 1740809680459,
+            "aggregate_units": 17332,
+            "aggregate_first_id": 5263775682,
+            "aggregate_last_id": 5263775682
+          },
+          {
+            "raw_id": 5263861671,
+            "raw_venue_us": 1740810732864000,
+            "aggressor_buy": 0,
+            "raw_cents": 223099,
+            "raw_units": 10,
+            "aggregate_id": 2069121770,
+            "aggregate_ms": 1740810732864,
+            "aggregate_units": 49,
+            "aggregate_first_id": 5263861671,
+            "aggregate_last_id": 5263861674
+          },
+          {
+            "raw_id": 5263861672,
+            "raw_venue_us": 1740810732864000,
+            "aggressor_buy": 0,
+            "raw_cents": 223099,
+            "raw_units": 10,
+            "aggregate_id": 2069121770,
+            "aggregate_ms": 1740810732864,
+            "aggregate_units": 49,
+            "aggregate_first_id": 5263861671,
+            "aggregate_last_id": 5263861674
+          }
+        ]
+      }
+    },
+    "2025-04-01": {
+      "proof": {
+        "archive_hourly": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip",
+            "sha256": "37bea2dbe4281fbcaa45a849b6eed4393713b7236c5cb35cff63876e96df5677",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip",
+            "sha256": "b4cda93568426a315e1de2fc7ca0ffb56586495680b233ffd7ce6bec11d18713",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip",
+            "sha256": "3e8286eb77062f7c1047ee32aa1ce98dbf42f8e8029acebe38cc1bdd33967c63",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip",
+            "sha256": "330397f0cfd0dc62253ce6cf61ec142714fe65592a9f8447e4b88ca428bb4c9c",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip",
+            "sha256": "99928eb8fdc5d565d317b0e9685e07fc5f9487510a39b8675d7374cfdfcbec82",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip",
+            "sha256": "d7466620f50bb4048080ece1deab8eb0298274413a3eb2a9f4c728536ab3c647",
+            "rows": 672,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip",
+            "sha256": "9dbad1e542ff8344fe8610450cf71d5cb98e1af2e8f2d7a31dbe8679ef263535",
+            "rows": 744,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip.CHECKSUM"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-04.zip",
+            "sha256": "238c691129962d9fe08aaca46ea367f911e62c58a820a8e5ded371bff7f4eec4",
+            "rows": 720,
+            "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-04.zip.CHECKSUM"
+          }
+        ],
+        "quotes": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/quotes/2025/04/01/ETHUSDT.csv.gz",
+          "records": 1390316,
+          "bytes": 21567787,
+          "sha256": "e1f4ebc7a28f67240ae0601e99e9f03d370d2c22902fea0d2621b9baa4924779",
+          "start_local_us": 1743465600847947,
+          "end_local_us": 1743551999967230,
+          "replay_grid_rows": 72001
+        },
+        "derivative_ticker": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/derivative_ticker/2025/04/01/ETHUSDT.csv.gz",
+          "records": 128958,
+          "bytes": 1929853,
+          "sha256": "f0c2f44e18164c1c1fc1bf081e820fc08715e514e62cfb9552ff7414b654aaed",
+          "start_local_us": 1743465600024076,
+          "end_local_us": 1743551999270771,
+          "replay_grid_rows": 72001
+        },
+        "depth": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/book_snapshot_5/2025/04/01/ETHUSDT.csv.gz",
+          "records": 1483518,
+          "bytes": 34651287,
+          "sha256": "81036d10a259543481ad66c5e111b231153824f4f31046f18b19bf7dc461625f",
+          "start_local_us": 1743465600847947,
+          "end_local_us": 1743551999967230,
+          "replay_grid_rows": 72001
+        },
+        "flow": {
+          "url": "https://datasets.tardis.dev/v1/binance-futures/trades/2025/04/01/ETHUSDT.csv.gz",
+          "sha256": "a27fa9cd6d73e32c8194d692ce48c5f411d2c046ee83642be0c4b9a256013820",
+          "daily_rows": 3992479,
+          "capture_scope_rows": 753972,
+          "venue_clock_after_local_rows": 0,
+          "raw_bytes": 38576365
+        },
+        "exact_BBO_binding": 72001
+      },
+      "funding": {
+        "boundary_ms": 1743494400000,
+        "exchange_settlement_ms": 1743494400001,
+        "rate": 2.877e-05,
+        "prior_mark": [
+          1743494399724093,
+          1743494399618000,
+          185334,
+          1853.39998413,
+          1854.24285714,
+          1743494400000000,
+          "0.00002877"
+        ],
+        "next_mark": [
+          1743494401023045,
+          1743494401000000,
+          185334,
+          1853.41094444,
+          1854.25547619,
+          1743523200000000,
+          "0.00002877"
+        ],
+        "official_two_minute_mark_price_bounds_USDT": [
+          1852.98088889,
+          1854.56
+        ],
+        "pre_settlement_capture_indicative_rate": 2.877e-05,
+        "official_funding_source": {
+          "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2025-04.zip",
+          "sha256": "7db62cb5e9f32397dacabb3d571b96397024bda3810bde0799c90f61cb773679",
+          "rows": 90,
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2025-04.zip.CHECKSUM"
+        },
+        "official_mark_minute_source": {
+          "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2025-04-01.zip",
+          "sha256": "1c38b1679a8ce15ff8c2e2bac6ef3113f5e34bb32ce945dd8325b1900300219c"
+        }
+      },
+      "binance_trade_crosswalk": {
+        "url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2025-04-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2025-04-01.zip.CHECKSUM",
+        "archive_sha256": "7a92c9c7840ed372895856da19132375fad8a31f2e50b00ab7006be77bbc3815",
+        "aggregate_rows": 1332202,
+        "all_witnesses": [
+          {
+            "raw_id": 5418444954,
+            "raw_venue_us": 1743488134924000,
+            "aggressor_buy": 1,
+            "raw_cents": 184475,
+            "raw_units": 348,
+            "aggregate_id": 2121744598,
+            "aggregate_ms": 1743488134924,
+            "aggregate_units": 10728,
+            "aggregate_first_id": 5418444954,
+            "aggregate_last_id": 5418444960
+          },
+          {
+            "raw_id": 5418511021,
+            "raw_venue_us": 1743489606204000,
+            "aggressor_buy": 1,
+            "raw_cents": 186556,
+            "raw_units": 32,
+            "aggregate_id": 2121764286,
+            "aggregate_ms": 1743489606204,
+            "aggregate_units": 1299,
+            "aggregate_first_id": 5418511021,
+            "aggregate_last_id": 5418511023
+          },
+          {
+            "raw_id": 5418829686,
+            "raw_venue_us": 1743495794269000,
+            "aggressor_buy": 1,
+            "raw_cents": 188490,
+            "raw_units": 166,
+            "aggregate_id": 2121865141,
+            "aggregate_ms": 1743495794269,
+            "aggregate_units": 34634,
+            "aggregate_first_id": 5418829686,
+            "aggregate_last_id": 5418829693
+          }
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "input_sha256": "384d162a31327a4bcc43131975a7a0513300d1e86241e9d6c26f68457ac9f3ef",
+    "receipt_sha256": "a7570f7b7ad6640946767e3f4bb8739e84f9966bee423d54c02ed9a3d766f0ca",
+    "official_witness_map_sha256": "9bcc879813d25b6313c330dca334ad9b6d85ae832dcc6f8bbfd20663ad371034",
+    "native_TA_engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "native_rounding": {
+      "virtual": true,
+      "default_balance": 10000,
+      "engine_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+      "input_sha256": "648652411370c83bfaa64e038ae3b360d0d66139aecde8d6f328b61b607720fe",
+      "replay_receipt_sha256": "a7570f7b7ad6640946767e3f4bb8739e84f9966bee423d54c02ed9a3d766f0ca",
+      "calls": [
+        {
+          "desired": 3304.3149999999996,
+          "native": 3304.32,
+          "nearest_js_binary": 3304.31
+        },
+        {
+          "desired": 3304.315,
+          "native": 3304.32,
+          "nearest_js_binary": 3304.32
+        },
+        {
+          "desired": 3304.3150000000005,
+          "native": 3304.32,
+          "nearest_js_binary": 3304.32
+        },
+        {
+          "desired": 3304.3149,
+          "native": 3304.31,
+          "nearest_js_binary": 3304.31
+        },
+        {
+          "desired": 3304.3151,
+          "native": 3304.32,
+          "nearest_js_binary": 3304.32
+        },
+        {
+          "desired": 3340.21,
+          "native": 3340.21,
+          "nearest_js_binary": 3340.21
+        },
+        {
+          "desired": 3348.21,
+          "native": 3348.21,
+          "nearest_js_binary": 3348.21
+        },
+        {
+          "desired": 3320.01,
+          "native": 3320.01,
+          "nearest_js_binary": 3320.01
+        },
+        {
+          "desired": 3360.21,
+          "native": 3360.21,
+          "nearest_js_binary": 3360.21
+        },
+        {
+          "desired": 3302.51,
+          "native": 3302.51,
+          "nearest_js_binary": 3302.51
+        },
+        {
+          "desired": 3350.1099999999997,
+          "native": 3350.11,
+          "nearest_js_binary": 3350.11
+        },
+        {
+          "desired": 3294.81,
+          "native": 3294.81,
+          "nearest_js_binary": 3294.81
+        },
+        {
+          "desired": 3302.81,
+          "native": 3302.81,
+          "nearest_js_binary": 3302.81
+        },
+        {
+          "desired": 3282.81,
+          "native": 3282.81,
+          "nearest_js_binary": 3282.81
+        },
+        {
+          "desired": 3323.55,
+          "native": 3323.55,
+          "nearest_js_binary": 3323.55
+        },
+        {
+          "desired": 3278.32,
+          "native": 3278.32,
+          "nearest_js_binary": 3278.32
+        },
+        {
+          "desired": 3286.32,
+          "native": 3286.32,
+          "nearest_js_binary": 3286.32
+        },
+        {
+          "desired": 3254.15,
+          "native": 3254.15,
+          "nearest_js_binary": 3254.15
+        },
+        {
+          "desired": 3298.3199999999997,
+          "native": 3298.32,
+          "nearest_js_binary": 3298.32
+        },
+        {
+          "desired": 3294.55,
+          "native": 3294.55,
+          "nearest_js_binary": 3294.55
+        },
+        {
+          "desired": 3302.55,
+          "native": 3302.55,
+          "nearest_js_binary": 3302.55
+        },
+        {
+          "desired": 3274.08,
+          "native": 3274.08,
+          "nearest_js_binary": 3274.08
+        },
+        {
+          "desired": 3314.5499999999997,
+          "native": 3314.55,
+          "nearest_js_binary": 3314.55
+        },
+        {
+          "desired": 3254.56,
+          "native": 3254.56,
+          "nearest_js_binary": 3254.56
+        },
+        {
+          "desired": 3233.11,
+          "native": 3233.11,
+          "nearest_js_binary": 3233.11
+        },
+        {
+          "desired": 3294.396666666666,
+          "native": 3294.4,
+          "nearest_js_binary": 3294.4
+        },
+        {
+          "desired": 3212.29,
+          "native": 3212.29,
+          "nearest_js_binary": 3212.29
+        },
+        {
+          "desired": 3284.075,
+          "native": 3284.08,
+          "nearest_js_binary": 3284.08
+        },
+        {
+          "desired": 2251.17,
+          "native": 2251.17,
+          "nearest_js_binary": 2251.17
+        },
+        {
+          "desired": 2259.17,
+          "native": 2259.17,
+          "nearest_js_binary": 2259.17
+        },
+        {
+          "desired": 2231,
+          "native": 2231,
+          "nearest_js_binary": 2231
+        },
+        {
+          "desired": 2271.17,
+          "native": 2271.17,
+          "nearest_js_binary": 2271.17
+        },
+        {
+          "desired": 2211.75,
+          "native": 2211.75,
+          "nearest_js_binary": 2211.75
+        },
+        {
+          "desired": 2260.5542105263157,
+          "native": 2260.55,
+          "nearest_js_binary": 2260.55
+        },
+        {
+          "desired": 1836.74,
+          "native": 1836.74,
+          "nearest_js_binary": 1836.74
+        },
+        {
+          "desired": 1844.74,
+          "native": 1844.74,
+          "nearest_js_binary": 1844.74
+        },
+        {
+          "desired": 1824.74,
+          "native": 1824.74,
+          "nearest_js_binary": 1824.74
+        },
+        {
+          "desired": 1865.55,
+          "native": 1865.55,
+          "nearest_js_binary": 1865.55
+        },
+        {
+          "desired": 1835.1450000000002,
+          "native": 1835.14,
+          "nearest_js_binary": 1835.15
+        },
+        {
+          "desired": 1884.89,
+          "native": 1884.89,
+          "nearest_js_binary": 1884.89
+        },
+        {
+          "desired": 1845.06,
+          "native": 1845.06,
+          "nearest_js_binary": 1845.06
+        },
+        {
+          "desired": 1899.9,
+          "native": 1899.9,
+          "nearest_js_binary": 1899.9
+        }
+      ]
+    },
+    "native_rounding_receipt_sha256": "1b00d161dc1c26e581cc1bba368bd09b94ad94e9003223c316f34db1eff3cf91",
+    "original_Jan_Apr_input_sha256": "3753888023e3c08e6676254facba1f15083684dfdf45cb71d0e6823c18c76d89",
+    "worker_sha256": "9796e608e607bf539db22c7053c1b56dd3c703ccf4015e60057828dcce95e08b",
+    "stage_sha256": "3bd525df24969a1ea370b24692d9e1c41d2a9bceac36eddcc27891aad9d2d65b",
+    "cross_code_sha256": "b964c3c3b42222f26796c8d32c95ce956050cd9fe8954f9a68fb5acaf33c6e5b",
+    "rounding_code_sha256": "407210954d809e51c8137b9b00f78839f63cfc4a9f76e0f9515ce8c585632613",
+    "verifier_sha256": "b71fc74df3bcad835c5adaaf05ea9763fc273d168fa4039bf73d20f736231913"
+  },
+  "method": {
+    "scope": "Exact Binance USD-M ETHUSDT settings from the archive and checksum-bound public parameter form. Cold simulation uses the native 10,000 USDT default, 10x leverage and the four saved source overrides. Four consecutive first-of-month four-hour UTC windows inside the author horizon. January and April were preselected initially. February and March fill the calendar gap and all four outcomes remain present. February supplies two closed outcomes. All windows leave modeled inventory and outstanding orders at cutoff.",
+    "ema": "Give the original code native FMZ TA.EMA on 4,999 confirmed hourly bars and the evolving current bar. Independent Decimal arithmetic verifies each selected previous completed-hour EMA. The 3% lock guard did not trigger. The source recalculates on each outer loop. A separate native fixture verifies the exact two-decimal placement prices, including near-half-cent values from weighted entry.",
+    "fill": "Use known recorded signed trade prints strictly through each resting price and after posting, supported by another Binance checksummed archive keyed by raw fills. The primary threshold is the full order size and the sensitivity requires double. No maker queue or historical account identity is inferred. Use the contemporaneous book for marketability and verified historical 20 USDT opening minimum.",
+    "accounting": "Track the captured funding settlement and marks with exact independent Decimal arithmetic. Maker fees are 0.02%; taker fees are 0.04%, and these scoped paths did not use taker. All fees, closed and open funding allocations, valuations, margin buffer and marked drawdown are listed separately."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/492116",
+    "https://www.fmz.com/lang/en/syntax-guide/fun/market/exchange.getrecords",
+    "https://www.fmz.com/lang/en/syntax-guide/fun/ta/ta.ema",
+    "https://www.binance.com/en/support/announcement/detail/e4384cba297a4bd2a154be644d5d76f9",
+    "https://docs.tardis.dev/downloadable-csv-files/data-types"
+  ]
+}
