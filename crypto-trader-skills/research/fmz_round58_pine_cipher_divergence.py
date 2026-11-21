@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import re
+from hashlib import sha256 as digest_bytes
 from itertools import batched
 from math import ceil, floor, fsum, isclose
 from pathlib import Path
@@ -24,6 +25,13 @@ HOUR = 3_600_000
 QUARTER = HOUR // 4
 START, CUT, STOP = map(date_ms, ("2023-01-01", "2023-12-25", "2024-01-24"))
 WORKER = "fmz_round58_pine_cipher_divergence_probe.py"
+
+EXECUTED_SOURCES = {
+    "archive": "7a09bcc3700e62c084156c6332952766377087ff114f7534410029f3669eb6e0",
+    "projected": "0c42db0557e2b264c73bae66b9aeb88a4ece13a10cc1a4566eed487483f470dc",
+    "documented": "827ed6df7bba58abad5e482070a4f16e129642b68ec3afc46c8f92e6448489ec",
+    "documented-explicit": "674b8007864b255775b5896c14f4a3ef8ad50a1766d17fed83353d9576ca8f5e",
+}
 FIVE_SHA = "2dc35b1e7c14e83cf1d839bd6ba7428bf0f183ea978f11edb473af668c3704dd"
 DAY_SHA = "60fbc08c0a73afa5f04d8bc9b8b960cb782435147c1a1080a2b449714db1ea20"
 SOURCE_OBS = '\nplot(validlong?1:0,"LongGate")\nplot(validshort?1:0,"ShortGate")\nplot(wt1,"WT1")\nplot(wt2,"WT2")\nplot(basis,"LocalBasis")\nplot(limit_price,"Entry-limit")\nplot(tradeTargetPrice,"Target")\nplot(tradeStopPrice,"Stop")\n'
@@ -79,6 +87,10 @@ def archived(archive, baseline):
         "documented": compatible,
         "documented-explicit": persistent_source(compatible),
     }
+    assert {
+        name: digest_bytes(source.encode()).hexdigest()
+        for name, source in scripts.items()
+    } == EXECUTED_SOURCES
     return item, digest, fields, scripts
 
 
@@ -149,25 +161,12 @@ def documented(s):
         for line in s.splitlines()
         if line.startswith("[wt1, wt2, wtOversold") and "timeframe.period)" in line
     )
-    adapt = """chartBasis = 0.0
-    chartRate = 2.0/(wtChannelLen + 1)
-    chartBasis := na(chartBasis[1]) ? wtMASource : chartRate * wtMASource + (1 - chartRate) * chartBasis[1]
-    chartDevInput = abs(wtMASource - chartBasis)
-    chartDev = 0.0
-    chartDev := na(chartDev[1]) ? chartDevInput : chartRate * chartDevInput + (1 - chartRate) * chartDev[1]
-    chartIndex = chartDev == 0 ? na : (wtMASource - chartBasis) / (0.015 * chartDev)
-    wt1 = 0.0
-    waveRate = 2.0 / (wtAverageLen + 1)
-    wt1 := na(wt1[1]) ? chartIndex : waveRate * chartIndex + (1 - waveRate) * wt1[1]
-    wt2 = sma(wt1, wtMALen)
-    """
+    adapt = "chartBasis = 0.0\nchartRate = 2.0/(wtChannelLen + 1)\nchartBasis := na(chartBasis[1]) ? wtMASource : chartRate * wtMASource + (1 - chartRate) * chartBasis[1]\nchartDevInput = abs(wtMASource - chartBasis)\nchartDev = 0.0\nchartDev := na(chartDev[1]) ? chartDevInput : chartRate * chartDevInput + (1 - chartRate) * chartDev[1]\nchartIndex = chartDev == 0 ? na : (wtMASource - chartBasis) / (0.015 * chartDev)\nwt1 = 0.0\nwaveRate = 2.0 / (wtAverageLen + 1)\nwt1 := na(wt1[1]) ? chartIndex : waveRate * chartIndex + (1 - waveRate) * wt1[1]\nwt2 = sma(wt1, wtMALen)\n"
     s = s.replace(old, adapt + derived)
     assert s.count("basis = ema(close, localFilter_length)") == 1
     s = s.replace(
         "basis = ema(close, localFilter_length)",
-        """basis = 0.0
-    localRate = 2.0 / (localFilter_length + 1)
-    basis := na(basis[1]) ? close : localRate * close + (1 - localRate) * basis[1]""",
+        "basis = 0.0\nlocalRate = 2.0 / (localFilter_length + 1)\nbasis := na(basis[1]) ? close : localRate * close + (1 - localRate) * basis[1]",
     )
     return s
 
@@ -572,6 +571,7 @@ def validated(args, meta, data, paths, worker):
         "native_runtime_sha256": NATIVE_BINARY_HASH,
         "probe_sha256": sha256(worker),
         "offline_isolation": isolation,
+        "staged_source_sha256": EXECUTED_SOURCES,
         "receipt_sha256": {k: sha256(path) for k, path in paths.items()},
         "binance_provider_archives": data["receipts"],
         "btc_november_repair": {

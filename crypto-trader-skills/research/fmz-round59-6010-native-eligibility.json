@@ -1,0 +1,33 @@
+{
+  "schema": "OctoBot 6010 native historical launcher eligibility",
+  "scope": "Original MarketMakingTradingMode and separately pinned supported web backtest launcher",
+  "source": {
+    "url": "https://github.com/Drakkar-Software/OctoBot-Tentacles/blob/f0ebe0c14db0928e50c2e39ea68e2ff9f427f765/Trading/Mode/market_making_trading_mode/market_making_trading.py",
+    "sha256": "083ca9d67096b4108d8853e938ae6a6fbe207060325d43e6dc0156f6fb578073",
+    "mode_flag_line": 237,
+    "mode_is_backtestable": false,
+    "producer_initialization_is_conditional": true,
+    "producer_callbacks": {
+      "_on_reference_price_update": 1268,
+      "order_filled_callback": 1275
+    }
+  },
+  "launcher": {
+    "template_url": "https://github.com/Drakkar-Software/OctoBot/blob/fe09c9585519a41b420329ebe71bf867c64e8f32/packages/tentacles/Services/Interfaces/web_interface/templates/backtesting.html",
+    "template_sha256": "76aea6e8304f7c3c3af90564434703566f42016d741433f70f2d61c3f2a7b453",
+    "mode_guard_line": 79,
+    "start_control_line": 99,
+    "blocked_message_line": 110,
+    "mode_catalogue_url": "https://github.com/Drakkar-Software/OctoBot/blob/fe09c9585519a41b420329ebe71bf867c64e8f32/packages/tentacles/Services/Interfaces/web_interface/models/configuration.py",
+    "mode_catalogue_sha256": "438aafa1cb5b50b226cf75d419e3f852a8449025ecf4434b861d1b5ffa00f3b5",
+    "catalogue_eligibility_line": 233
+  },
+  "coverage": [
+    [
+      6010,
+      "Pending - published native backtest disabled",
+      "The pinned OctoBot market-making mode explicitly returns False for native backtesting eligibility. The supported launcher suppresses the Start action and the backtestable-mode filter excludes it. Source-authentic offline replay would require timestamped reference prices, book and fill states, plus verified queue and cancellation behavior."
+    ]
+  ],
+  "results": []
+}
