@@ -1,0 +1,746 @@
+{
+  "coverage": [
+    [
+      4427,
+      "Tested · authored fixed-exposure BTC hedge notebook",
+      "Exact author-linked research rules and the archived 14-coin short basket were reproduced on verified Binance USD-M prices. Matched BTC hedge is active. The author excludes ETH from this basket. Native production IOC/live execution remains outside scope."
+    ]
+  ],
+  "results": [
+    {
+      "id": 4427,
+      "name": "Author notebook fixed alt-basket shorts, BTC hedge",
+      "market": "Binance USD-M, BTC hedge + 14 authored altcoins",
+      "group": "author research",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E6%B0%B8%E7%BB%AD%E5%A4%9A%E5%B8%81%E7%A7%8D%E5%AF%B9%E5%86%B2%E7%AD%96%E7%95%A5%E5%81%9A%E7%A9%BA%E6%88%96%E5%81%9A%E5%A4%9A%E5%B1%B1%E5%AF%A8%E5%B8%81%E6%8C%87%E6%95%B04%E6%9C%8810%E6%97%A5%E6%94%B9%E8%BF%9BBug%E9%9C%80%E8%A6%81%E6%9B%B4%E6%96%B0.md",
+      "period": "2020-02-05 16:00:00 to 2020-04-08 03:00:00 UTC",
+      "interval": "Authored 1h Binance prices and close-based notebook execution",
+      "exit": "Directional reductions use average-cost basis and allocate entry commissions and modeled carry.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 5875.235875684293,
+      "fees": 275.4205649255755,
+      "after_fees": 5599.815310758718,
+      "execution": 0.0,
+      "funding": 3.523068022122804,
+      "net": 5603.33837878084,
+      "gross_dd": 2262.8600653660783,
+      "gross_dd_pct": 0.14453180672321062,
+      "fee_dd": 2268.5538012776615,
+      "fee_dd_pct": 0.14580828442159152,
+      "net_dd": 2289.417679132177,
+      "net_dd_pct": 0.14671517940195025,
+      "gross_wins": 2379,
+      "fee_wins": 2369,
+      "net_wins": 2385,
+      "trades": 4085,
+      "unsettled": 15,
+      "mark_to_market_net": 5056.532861807108,
+      "remaining_unrealized": -519.9165398533983,
+      "marked_dd": 3430.0301126541685,
+      "marked_dd_pct": 0.20623284302190378,
+      "all_costs": 298.9258278293253,
+      "all_funding": 0.1393538055412628
+    }
+  ],
+  "no_commission_sensitivity": [
+    {
+      "id": 4427,
+      "name": "Author notebook fixed alt-basket shorts, BTC hedge",
+      "market": "Binance USD-M, BTC hedge + 14 authored altcoins",
+      "group": "zero commission",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E6%B0%B8%E7%BB%AD%E5%A4%9A%E5%B8%81%E7%A7%8D%E5%AF%B9%E5%86%B2%E7%AD%96%E7%95%A5%E5%81%9A%E7%A9%BA%E6%88%96%E5%81%9A%E5%A4%9A%E5%B1%B1%E5%AF%A8%E5%B8%81%E6%8C%87%E6%95%B04%E6%9C%8810%E6%97%A5%E6%94%B9%E8%BF%9BBug%E9%9C%80%E8%A6%81%E6%9B%B4%E6%96%B0.md",
+      "period": "2020-02-05 16:00:00 to 2020-04-08 03:00:00 UTC",
+      "interval": "Authored 1h Binance prices and close-based notebook execution",
+      "exit": "Directional reductions use average-cost basis and allocate entry commissions and modeled carry.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 5875.235875684293,
+      "fees": 0.0,
+      "after_fees": 5875.235875684293,
+      "execution": 0.0,
+      "funding": 3.523068022122804,
+      "net": 5878.758943706415,
+      "gross_dd": 2262.8600653660783,
+      "gross_dd_pct": 0.14453180672321062,
+      "fee_dd": 2262.8600653660783,
+      "fee_dd_pct": 0.14453180672321062,
+      "net_dd": 2283.723943220594,
+      "net_dd_pct": 0.14543678307861815,
+      "gross_wins": 2379,
+      "fee_wins": 2379,
+      "net_wins": 2398,
+      "trades": 4085,
+      "unsettled": 15,
+      "mark_to_market_net": 5355.4586896364335,
+      "remaining_unrealized": -519.9165398533983,
+      "marked_dd": 3270.1609842013863,
+      "marked_dd_pct": 0.20404758865463232,
+      "all_costs": 0.0,
+      "all_funding": 0.1393538055412628
+    }
+  ],
+  "official_terminal_candle_sensitivity": [
+    {
+      "id": 4427,
+      "name": "Author notebook fixed alt-basket shorts, BTC hedge",
+      "market": "Binance USD-M, BTC hedge + 14 authored altcoins",
+      "group": "official final candle",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E6%B0%B8%E7%BB%AD%E5%A4%9A%E5%B8%81%E7%A7%8D%E5%AF%B9%E5%86%B2%E7%AD%96%E7%95%A5%E5%81%9A%E7%A9%BA%E6%88%96%E5%81%9A%E5%A4%9A%E5%B1%B1%E5%AF%A8%E5%B8%81%E6%8C%87%E6%95%B04%E6%9C%8810%E6%97%A5%E6%94%B9%E8%BF%9BBug%E9%9C%80%E8%A6%81%E6%9B%B4%E6%96%B0.md",
+      "period": "2020-02-05 16:00:00 to 2020-04-08 03:00:00 UTC",
+      "interval": "Authored 1h Binance prices and close-based notebook execution",
+      "exit": "Directional reductions use average-cost basis and allocate entry commissions and modeled carry.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 5871.900394283007,
+      "fees": 275.19937886707476,
+      "after_fees": 5596.701015415932,
+      "execution": 0.0,
+      "funding": 3.5746118717286803,
+      "net": 5600.27562728766,
+      "gross_dd": 2262.8600653660783,
+      "gross_dd_pct": 0.14453180672321062,
+      "fee_dd": 2268.5538012776615,
+      "fee_dd_pct": 0.14580828442159152,
+      "net_dd": 2289.417679132177,
+      "net_dd_pct": 0.14671517940195025,
+      "gross_wins": 2379,
+      "fee_wins": 2369,
+      "net_wins": 2385,
+      "trades": 4084,
+      "unsettled": 15,
+      "mark_to_market_net": 5034.104635687876,
+      "remaining_unrealized": -539.1295439439912,
+      "marked_dd": 3430.0301126541685,
+      "marked_dd_pct": 0.20623284302190378,
+      "all_costs": 298.8055684566775,
+      "all_funding": 0.1393538055412628
+    }
+  ],
+  "details": [
+    {
+      "case": "author research",
+      "open_legs": 15,
+      "order_quantity": 8125,
+      "closed_reductions_by_leg": {
+        "BTC": 632,
+        "ADA": 248,
+        "TRX": 265,
+        "XLM": 266,
+        "ZEC": 262,
+        "DASH": 247,
+        "XMR": 266,
+        "XRP": 221,
+        "ONT": 261,
+        "IOTA": 250,
+        "BAT": 273,
+        "VET": 240,
+        "NEO": 227,
+        "QTUM": 210,
+        "IOST": 217
+      },
+      "gross_by_leg": {
+        "ADA": 982.3085257086,
+        "BAT": 1013.0113005799026,
+        "DASH": 847.3740122924827,
+        "IOST": 926.8293583969586,
+        "IOTA": 1358.780102345725,
+        "NEO": 1109.2212107865255,
+        "ONT": 1302.6904340873177,
+        "QTUM": 902.9301541649813,
+        "TRX": 706.9352251272675,
+        "VET": 1278.5323872933436,
+        "XLM": 643.5713174797604,
+        "XMR": 654.8555315761346,
+        "XRP": 682.6005086754152,
+        "ZEC": 1173.760847129247,
+        "BTC": -7708.165039959369
+      },
+      "native_terminal_chart_pre_trade_equity": 15057.00893,
+      "min_research_margin_headroom_USDT": 6235.700953505224
+    },
+    {
+      "case": "zero commission",
+      "open_legs": 15,
+      "order_quantity": 8125,
+      "closed_reductions_by_leg": {
+        "BTC": 632,
+        "ADA": 248,
+        "TRX": 265,
+        "XLM": 266,
+        "ZEC": 262,
+        "DASH": 247,
+        "XMR": 266,
+        "XRP": 221,
+        "ONT": 261,
+        "IOTA": 250,
+        "BAT": 273,
+        "VET": 240,
+        "NEO": 227,
+        "QTUM": 210,
+        "IOST": 217
+      },
+      "gross_by_leg": {
+        "ADA": 982.3085257086,
+        "BAT": 1013.0113005799026,
+        "DASH": 847.3740122924827,
+        "IOST": 926.8293583969586,
+        "IOTA": 1358.780102345725,
+        "NEO": 1109.2212107865255,
+        "ONT": 1302.6904340873177,
+        "QTUM": 902.9301541649813,
+        "TRX": 706.9352251272675,
+        "VET": 1278.5323872933436,
+        "XLM": 643.5713174797604,
+        "XMR": 654.8555315761346,
+        "XRP": 682.6005086754152,
+        "ZEC": 1173.760847129247,
+        "BTC": -7708.165039959369
+      },
+      "native_terminal_chart_pre_trade_equity": 15355.45869,
+      "min_research_margin_headroom_USDT": 6271.574681800968
+    },
+    {
+      "case": "official final candle",
+      "open_legs": 15,
+      "order_quantity": 8124,
+      "closed_reductions_by_leg": {
+        "BTC": 632,
+        "ADA": 248,
+        "TRX": 265,
+        "XLM": 266,
+        "ZEC": 262,
+        "DASH": 247,
+        "XMR": 266,
+        "XRP": 220,
+        "ONT": 261,
+        "IOTA": 250,
+        "BAT": 273,
+        "VET": 240,
+        "NEO": 227,
+        "QTUM": 210,
+        "IOST": 217
+      },
+      "gross_by_leg": {
+        "ADA": 983.6001396613141,
+        "BAT": 1014.1252398548775,
+        "DASH": 849.1370883729853,
+        "IOST": 926.9758612187807,
+        "IOTA": 1360.845979364232,
+        "NEO": 1109.8122998227298,
+        "ONT": 1304.787673662296,
+        "QTUM": 903.52476547172,
+        "TRX": 708.3161379186754,
+        "VET": 1271.6804994254003,
+        "XLM": 646.2186093045333,
+        "XMR": 657.1025359319999,
+        "XRP": 687.6659002988732,
+        "ZEC": 1177.273131429409,
+        "BTC": -7729.16546745482
+      },
+      "native_terminal_chart_pre_trade_equity": 15034.460445,
+      "min_research_margin_headroom_USDT": 6235.700953505224
+    }
+  ],
+  "source_and_data": {
+    "source": {
+      "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E6%B0%B8%E7%BB%AD%E5%A4%9A%E5%B8%81%E7%A7%8D%E5%AF%B9%E5%86%B2%E7%AD%96%E7%95%A5%E5%81%9A%E7%A9%BA%E6%88%96%E5%81%9A%E5%A4%9A%E5%B1%B1%E5%AF%A8%E5%B8%81%E6%8C%87%E6%95%B04%E6%9C%8810%E6%97%A5%E6%94%B9%E8%BF%9BBug%E9%9C%80%E8%A6%81%E6%9B%B4%E6%96%B0.md",
+      "archive_sha256": "9669e713b843c3b59831cb9240962d5934ebe2aea5af18d52069e5d9b773ec92",
+      "author_url": "https://www.fmz.com/strategy/194825",
+      "article_url": "https://www.fmz.com/digest-topic/5294",
+      "notebook_url": "https://www.fmz.com/upload/asset/13427101e9d296c8f03.ipynb",
+      "notebook_sha256": "eed08c7dfa720bb29fccbfb49a57e3db09b480e41a0700a621c917f674178ee9",
+      "original_cells": {
+        "3": "f09f1c9f4c920a1e7292a81a8e102c07d29829f412ba319786d0b62d4292ef05",
+        "17": "51e5702b68856c2b0c4e4ac92e26c1329437f7bc625ed4aa1d8681a539b278f6",
+        "24": "199aab413eed5ba11ba7d6465eafc63cdc3fde666655419c08c131080174072b",
+        "27": "cbee335cb4bcfe08963477069dbb7e9ce42a427835262e3b5314059b8c8fb739"
+      },
+      "public_data_url": "https://www.fmz.com/upload/asset/20227de6c1d10cb9dd1.csv",
+      "csv_sha256": "47dac237f183390ee217aa4ca8245c8cd65873552efc243bdb6f2089d96cb483"
+    },
+    "short_symbols": [
+      "TRX",
+      "DASH",
+      "ONT",
+      "QTUM",
+      "BAT",
+      "IOST",
+      "ADA",
+      "ZEC",
+      "XMR",
+      "NEO",
+      "VET",
+      "XRP",
+      "IOTA",
+      "XLM"
+    ],
+    "long_symbols": [
+      "BTC"
+    ],
+    "official_market_proof": [
+      {
+        "symbol": "TRX",
+        "no_price_rows": 0,
+        "finalized_exact_matches": 1499,
+        "first_bar_ms": 1580918400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.01371",
+        "terminal_official_close": "0.01366",
+        "terminal_official_ohlc": [
+          "0.01353",
+          "0.01377",
+          "0.01351",
+          "0.01366"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1h/TRXUSDT-1h-2020-02.zip",
+            "checksum_sha256": "21dff80ff58087a162393bb7adeba70911f763301392c6aaa0e7b8172ec5ea56"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1h/TRXUSDT-1h-2020-03.zip",
+            "checksum_sha256": "9c15a1f21f95111b6927b8a84bf721e777e76336b196918c45eebfbd323bd762"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1h/TRXUSDT-1h-2020-04.zip",
+            "checksum_sha256": "ab6b072b4d0c362a1ad2f7d0ed705520a4900694d83df7b32609964c6037da84"
+          }
+        ]
+      },
+      {
+        "symbol": "DASH",
+        "no_price_rows": 0,
+        "finalized_exact_matches": 1499,
+        "first_bar_ms": 1580918400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "74.66",
+        "terminal_official_close": "74.24",
+        "terminal_official_ohlc": [
+          "72.91",
+          "75.05",
+          "72.82",
+          "74.24"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1h/DASHUSDT-1h-2020-02.zip",
+            "checksum_sha256": "3ed444d224035d8cd7b359c74df7a38787eba2d6c580effd5613d7aba7494884"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1h/DASHUSDT-1h-2020-03.zip",
+            "checksum_sha256": "895ece6bf00ffc7f443bd285789541750bafc25bd8c3b6c32621aadda42e76e5"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1h/DASHUSDT-1h-2020-04.zip",
+            "checksum_sha256": "b31e96bae222973b5485223699df7b21eafe2e3e1b34df9fc0bd9ce70fc3e9ca"
+          }
+        ]
+      },
+      {
+        "symbol": "ONT",
+        "no_price_rows": 136,
+        "finalized_exact_matches": 1363,
+        "first_bar_ms": 1581408000000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.4355",
+        "terminal_official_close": "0.4327",
+        "terminal_official_ohlc": [
+          "0.4242",
+          "0.4365",
+          "0.4237",
+          "0.4327"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ONTUSDT/1h/ONTUSDT-1h-2020-02.zip",
+            "checksum_sha256": "6726b56d40680edea31b453cfdbd75f77e38417567ded35d50ae04e10714fb01"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ONTUSDT/1h/ONTUSDT-1h-2020-03.zip",
+            "checksum_sha256": "5ee5f1f348108a095495073912c802ca7043f2e985779fd0c089662672651e06"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ONTUSDT/1h/ONTUSDT-1h-2020-04.zip",
+            "checksum_sha256": "d78b9b629a8760753c11565bf3d9ed4efb63289a0bf620fac8eeaa97a4f3754e"
+          }
+        ]
+      },
+      {
+        "symbol": "QTUM",
+        "no_price_rows": 352,
+        "finalized_exact_matches": 1147,
+        "first_bar_ms": 1582185600000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "1.42",
+        "terminal_official_close": "1.417",
+        "terminal_official_ohlc": [
+          "1.399",
+          "1.424",
+          "1.398",
+          "1.417"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/QTUMUSDT/1h/QTUMUSDT-1h-2020-02.zip",
+            "checksum_sha256": "36ab40719a9a1e161f28f590f73c604aaa8b1e603892c3b6099de36dcac42ba2"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/QTUMUSDT/1h/QTUMUSDT-1h-2020-03.zip",
+            "checksum_sha256": "e9653689e015774139ed03d7fe9e1b5ae3207e7d149812c428f5448e36bfce9d"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/QTUMUSDT/1h/QTUMUSDT-1h-2020-04.zip",
+            "checksum_sha256": "137c700ff335a51fbb58c52f541295be5f04f0408381a27d94a498b090a7b486"
+          }
+        ]
+      },
+      {
+        "symbol": "BAT",
+        "no_price_rows": 184,
+        "finalized_exact_matches": 1315,
+        "first_bar_ms": 1581580800000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.1702",
+        "terminal_official_close": "0.1697",
+        "terminal_official_ohlc": [
+          "0.1671",
+          "0.1709",
+          "0.1670",
+          "0.1697"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BATUSDT/1h/BATUSDT-1h-2020-02.zip",
+            "checksum_sha256": "2c3a82d3a884b3da19f2f8ef95fb71865161ba78e37ad28727137f03d292a4a4"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BATUSDT/1h/BATUSDT-1h-2020-03.zip",
+            "checksum_sha256": "4bf5c6c9bc94a2690d335da8bc91bffdd2e9aad9c0d14dae5ed70a78f028b38c"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BATUSDT/1h/BATUSDT-1h-2020-04.zip",
+            "checksum_sha256": "651cac04721e67e923a5924a9f826e8bf92f4996ee2c720a1be63a4148772238"
+          }
+        ]
+      },
+      {
+        "symbol": "IOST",
+        "no_price_rows": 376,
+        "finalized_exact_matches": 1123,
+        "first_bar_ms": 1582272000000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.003484",
+        "terminal_official_close": "0.003482",
+        "terminal_official_ohlc": [
+          "0.003444",
+          "0.003505",
+          "0.003441",
+          "0.003482"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOSTUSDT/1h/IOSTUSDT-1h-2020-02.zip",
+            "checksum_sha256": "5b67fab654ca3f933d1d31032e18165085d2ddd5d1801d73c67d2e6c31d949dc"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOSTUSDT/1h/IOSTUSDT-1h-2020-03.zip",
+            "checksum_sha256": "d137001ba93034bceaa254ae5f92161710635078e93e3b72be44504212f2633c"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOSTUSDT/1h/IOSTUSDT-1h-2020-04.zip",
+            "checksum_sha256": "438400c027c1dfc54e4f2dfeefaf8cbb81c5fe68088ebb2c0f33aa12c149f169"
+          }
+        ]
+      },
+      {
+        "symbol": "ADA",
+        "no_price_rows": 0,
+        "finalized_exact_matches": 1499,
+        "first_bar_ms": 1580918400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.03669",
+        "terminal_official_close": "0.03657",
+        "terminal_official_ohlc": [
+          "0.03618",
+          "0.03678",
+          "0.03617",
+          "0.03657"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2020-02.zip",
+            "checksum_sha256": "e2410766c0c52b0f6015bdd7790b970836c7254eb22d3ee79e76c1373d8fc654"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2020-03.zip",
+            "checksum_sha256": "dc730323d7e8c687fae3684a3d1f0320d7232b249c88e118179dbcd57ca4fe90"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2020-04.zip",
+            "checksum_sha256": "2b868720089f1d39de9a22f78f078b9a50fe69308983cbc267831541a5e451f4"
+          }
+        ]
+      },
+      {
+        "symbol": "ZEC",
+        "no_price_rows": 0,
+        "finalized_exact_matches": 1499,
+        "first_bar_ms": 1580918400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "38.01",
+        "terminal_official_close": "37.66",
+        "terminal_official_ohlc": [
+          "37.22",
+          "38.25",
+          "37.18",
+          "37.66"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1h/ZECUSDT-1h-2020-02.zip",
+            "checksum_sha256": "6dea20f7e504b5db7a537cb3cb64e47a034f282d115baa7f8aa4e4a6c1a7a6fb"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1h/ZECUSDT-1h-2020-03.zip",
+            "checksum_sha256": "999298d05aa677091830bb0abb8a7b15b4b2e80a8aa97a027d6d4e38389fa06e"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1h/ZECUSDT-1h-2020-04.zip",
+            "checksum_sha256": "c3beef6fd995c74b2f1baae5c0447b08134b62610391d3e38c4cbb9076163196"
+          }
+        ]
+      },
+      {
+        "symbol": "XMR",
+        "no_price_rows": 0,
+        "finalized_exact_matches": 1499,
+        "first_bar_ms": 1580918400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "58.02",
+        "terminal_official_close": "57.75",
+        "terminal_official_ohlc": [
+          "57.08",
+          "58.31",
+          "57.04",
+          "57.75"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1h/XMRUSDT-1h-2020-02.zip",
+            "checksum_sha256": "cf11b5afe43d380fcc4b18f235e960983ad57bf20327029727b127f6a16955df"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1h/XMRUSDT-1h-2020-03.zip",
+            "checksum_sha256": "7ed56de94ca4bf91e417a1304a71f7c8c3c6b21902f5fa8ec4bafc4a9e37dc39"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1h/XMRUSDT-1h-2020-04.zip",
+            "checksum_sha256": "574bb21d5ac839857391628c9512c15cd64687a485ecfeecdcba14b88479c4ec"
+          }
+        ]
+      },
+      {
+        "symbol": "NEO",
+        "no_price_rows": 280,
+        "finalized_exact_matches": 1219,
+        "first_bar_ms": 1581926400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "7.965",
+        "terminal_official_close": "7.952",
+        "terminal_official_ohlc": [
+          "7.800",
+          "7.984",
+          "7.800",
+          "7.952"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEOUSDT/1h/NEOUSDT-1h-2020-02.zip",
+            "checksum_sha256": "8273cfe08b14d6e931ccc949be33c96d104d20e30c74b21609ea31bd17bb8018"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEOUSDT/1h/NEOUSDT-1h-2020-03.zip",
+            "checksum_sha256": "6e21d3b4a5c73e1a2eb2ee8b51fcc41c5ce036fc71ba8995bb3180a34b60e0cd"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEOUSDT/1h/NEOUSDT-1h-2020-04.zip",
+            "checksum_sha256": "84d00d1a05a85c2dbc1e0b6609795bab34952f0d2564c6ba57011cec649ef4dc"
+          }
+        ]
+      },
+      {
+        "symbol": "VET",
+        "no_price_rows": 208,
+        "finalized_exact_matches": 1291,
+        "first_bar_ms": 1581667200000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.00393",
+        "terminal_official_close": "0.003985",
+        "terminal_official_ohlc": [
+          "0.003874",
+          "0.003985",
+          "0.003874",
+          "0.003985"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/VETUSDT/1h/VETUSDT-1h-2020-02.zip",
+            "checksum_sha256": "e8d951554f05b1b9853743f00ac51b318aa949b6c4c78c1af09d0767dc52780b"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/VETUSDT/1h/VETUSDT-1h-2020-03.zip",
+            "checksum_sha256": "3456ad6a4c5d516d1663974a2efdcd169d2e03b647adf3999c979ca8309f7b87"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/VETUSDT/1h/VETUSDT-1h-2020-04.zip",
+            "checksum_sha256": "cd3c3b7780c763bc272f010db21b9e1915c8bc2e5c36f5977e5cbb6ef3eea32f"
+          }
+        ]
+      },
+      {
+        "symbol": "XRP",
+        "no_price_rows": 0,
+        "finalized_exact_matches": 1499,
+        "first_bar_ms": 1580918400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.2003",
+        "terminal_official_close": "0.1987",
+        "terminal_official_ohlc": [
+          "0.1973",
+          "0.2006",
+          "0.1971",
+          "0.1987"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2020-02.zip",
+            "checksum_sha256": "530f7bac3e39ab3b5e82a78f961cd9b282d7fe579b9538caaf2a9ffbeb5d1dbb"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2020-03.zip",
+            "checksum_sha256": "7b6078802e433e531d9273faef0272572cb2d3688fff87737c3b114d5f242f36"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2020-04.zip",
+            "checksum_sha256": "0b5a8fade812f8d5563b4dbb8f15cb349efd1b6cf874bbc921f6b0f5a25ddf5d"
+          }
+        ]
+      },
+      {
+        "symbol": "IOTA",
+        "no_price_rows": 160,
+        "finalized_exact_matches": 1339,
+        "first_bar_ms": 1581494400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.17",
+        "terminal_official_close": "0.1691",
+        "terminal_official_ohlc": [
+          "0.1662",
+          "0.1702",
+          "0.1662",
+          "0.1691"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1h/IOTAUSDT-1h-2020-02.zip",
+            "checksum_sha256": "62734d3d73d83278507fd6245b04b07b29e307440190876b9db43e137222083c"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1h/IOTAUSDT-1h-2020-03.zip",
+            "checksum_sha256": "d1c1c710a76478dab2e57178140d3c326baad4a2ca91157e12721024485a26f6"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1h/IOTAUSDT-1h-2020-04.zip",
+            "checksum_sha256": "ec93b968fdf8841b7e59459c4da54d680ac80085cbe24b0da1a404f2733787b7"
+          }
+        ]
+      },
+      {
+        "symbol": "XLM",
+        "no_price_rows": 0,
+        "finalized_exact_matches": 1499,
+        "first_bar_ms": 1580918400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "0.05033",
+        "terminal_official_close": "0.05000",
+        "terminal_official_ohlc": [
+          "0.04950",
+          "0.05068",
+          "0.04947",
+          "0.05000"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1h/XLMUSDT-1h-2020-02.zip",
+            "checksum_sha256": "1c486fec93ea3a95774362c65464d3fb4395e6ddc23ce7c485caf602ff713f01"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1h/XLMUSDT-1h-2020-03.zip",
+            "checksum_sha256": "de3879cd5a286f8c43f1e9302685eda77778104715928a91fd17589f0edc7fb3"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1h/XLMUSDT-1h-2020-04.zip",
+            "checksum_sha256": "5c9d0292568581604f8967668977acc14f308b282011046b5af041741d8f90f3"
+          }
+        ]
+      },
+      {
+        "symbol": "BTC",
+        "no_price_rows": 0,
+        "finalized_exact_matches": 1499,
+        "first_bar_ms": 1580918400000,
+        "terminal_bar_ms": 1586314800000,
+        "terminal_author_price": "7378.88",
+        "terminal_official_close": "7348.71",
+        "terminal_official_ohlc": [
+          "7262.38",
+          "7385.52",
+          "7258.49",
+          "7348.71"
+        ],
+        "sources": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-02.zip",
+            "checksum_sha256": "13d067e5c7b258764b8524e1d3c61b129c44838c2ce9850f4d86cae13c61f198"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-03.zip",
+            "checksum_sha256": "9fc0c560cce35fd083febee10c0c8c3ffcd56a9185f9b489f265a51bbf60ec6e"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-04.zip",
+            "checksum_sha256": "bfa6d2adc1aefd8a96b3cbd38932486741caa1ae40f1e646df3606205402176f"
+          }
+        ]
+      }
+    ],
+    "rows": 1500
+  },
+  "proof": {
+    "native_duplicate_sha256": "cd7895001369d7fe0509e85ad97eac1742bf2fcd274a928ca84691f9b2db7a44",
+    "unordered_original_set_repeat_sha256": "08fa8906e8ccc41ea83e16339f945af188594cf2b9ffd7bc33d7f456bd96f440",
+    "data_binding_sha256": "ff81dcbc7fd239df5697512f4ffd0b14056e1b8e4f2bf04d050954ed9012a3bb",
+    "worker_sha256": "ee88feeee52e117fc69a938dbc7129c0badc674e9c9d5b5f4b6a2c4a6d8dd944",
+    "stage_sha256": "e4b1f51969477d526675020e9dbcc11db0c8809f296b1f17f29969a9d98931f7",
+    "verifier_sha256": "b4bbd290f7bcdc76dedbad9eb4dfd949ac320c3c96f4a0086f3b6710b77a3f09"
+  },
+  "method": {
+    "strategy": "First author notebook checks each alt short against its 2,000 USDT research target and rebalances a BTC long to their total. Trade orders use the historical hourly prices and a 20 USDT threshold. These are the author’s notebook settings. Archived live JS has a 50 USDT default and exchange-dependent execution.",
+    "prices": "All finalized BTC and selected alt coin prices match independent checksummed Binance files. Unavailable early listings have no assumed price. Preserve original terminal author snapshot in primary and rerun using all official finalized closes.",
+    "funding_and_fees": "Original notebook charges 0.05% commission. It credits/debits a fixed 0.01% funding proxy on each open leg at 00, 08 and 16 UTC. Historical funding rates, liquidation and actual quoted execution risk are outside the original simulation. Hold the decisions fixed in the no-fee run.",
+    "measurement": "Count each closing reduction from the joint BTC and short-basket portfolio, and allocate opening costs and accrued proxy funding proportionately. Keep BTC hedge and ALT market paths in one portfolio result. Drawdown ratios have fractional units. The native chart and the marked terminal portfolio can differ due to final orders.",
+    "host": "Original code executes in offline native Python with published notebook cells and pandas 2.2.3. Set iteration is sorted deterministically. Same decisions and cash/equity path independently reproduced with native set ordering."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/194825",
+    "https://www.fmz.com/digest-topic/5294",
+    "https://github.com/binance/binance-public-data"
+  ]
+}

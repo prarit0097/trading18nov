@@ -1,0 +1,30 @@
+{
+  "schema": "FMZ 5530 author-source follow-up",
+  "source": {
+    "author": "RafaelZioni",
+    "publication_date": "2018-09-16",
+    "title": "Inverse Fisher RSI-MTF2",
+    "url": "https://www.tradingview.com/script/UfLWnWQ6-Inverse-Fisher-RSI-MTF2/",
+    "observed_surface": "Visible, selected Source code tab",
+    "archived_public_chart": "BITMEX:XBTUSD 1h",
+    "short_operand": "Boolean series comparing v below -0.8",
+    "short_order_predicate": "crossunder of v versus that Boolean series",
+    "long_operand": "Numeric scalar 0.8"
+  },
+  "related_evidence": {
+    "author_alert_script": "https://www.tradingview.com/script/XDJWADe9-Inverse-Fisher-RSI-MTF2-alerts/",
+    "comment_date": "2018-10-09",
+    "comment_author": "mark-sch",
+    "community_variant": "Explicit 1/0 conversion of the Boolean and disabled security lookahead",
+    "author_reply": "Acknowledges repainting without specifying an operand conversion",
+    "prior_report": "fmz-round40-5530-evidence.json"
+  },
+  "coverage": [
+    [
+      5530,
+      "Pending · original Boolean crossing confirmed",
+      "The primary TradingView source passes a Boolean series to crossunder. An explicit 1/0 conversion is a community variant. Using -0.8 as a scalar has no source-authorized basis and changes an actual ETH order signal. Original host coercion and timing remain unresolved."
+    ]
+  ],
+  "results": []
+}

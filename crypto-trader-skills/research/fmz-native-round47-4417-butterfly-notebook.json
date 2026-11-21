@@ -1,0 +1,570 @@
+{
+  "coverage": [
+    [
+      4417,
+      "Tested · authored BTC/ETH butterfly notebook model",
+      "Both published original historical notebook cases execute on independently verified Binance COIN-M price legs. Results reflect the notebook’s explicitly linear USDT paper engine. The separate live IOC implementation and executable inverse settlement are outside this historical result."
+    ]
+  ],
+  "results": [
+    {
+      "id": 4417,
+      "name": "Binance COIN-M butterfly hedge, author notebook",
+      "market": "Binance COIN-M BTC, three-leg basket, USDT notebook proxy",
+      "group": "authored research",
+      "period": "2020-08-14 16:05:00 to 2020-09-14 02:30:00 UTC",
+      "interval": "Original 5m Binance historical prices, author linear synthetic execution",
+      "exit": "Per synchronized three-leg basket reduction. Remaining legs marked at terminal research prices.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 1903.9408695652173,
+      "fees": 1123.6503135652174,
+      "after_fees": 780.290556,
+      "net": 780.290556,
+      "execution": 0.0,
+      "funding": 0.0,
+      "gross_dd": 14.839402524167562,
+      "gross_dd_pct": 0.0014349468617171476,
+      "net_dd": 123.2006655544277,
+      "net_dd_pct": 0.012126725005420464,
+      "fee_dd": 123.2006655544277,
+      "fee_dd_pct": 0.012126725005420464,
+      "gross_wins": 68,
+      "net_wins": 59,
+      "fee_wins": 59,
+      "trades": 71,
+      "unsettled": 1,
+      "marked_dd": 258.434066,
+      "marked_dd_pct": 0.025420536368978307,
+      "mark_to_market_net": 786.17733,
+      "remaining_unrealized": 6.729130434782609,
+      "total_paid_fees": 1124.49267,
+      "open_position_fee_not_allocated": 0.8423564347826087,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6%E8%9D%B6%E5%BC%8F%E5%A5%97%E5%88%A9%E5%8D%83%E5%9B%A2%E5%A4%A7%E6%88%98%E7%AD%96%E7%95%A53.md"
+    },
+    {
+      "id": 4417,
+      "name": "Binance COIN-M butterfly hedge, author notebook",
+      "market": "Binance COIN-M ETH, three-leg basket, USDT notebook proxy",
+      "group": "authored research",
+      "period": "2020-08-18 09:30:00 to 2020-09-14 02:30:00 UTC",
+      "interval": "Original 5m Binance historical prices, author linear synthetic execution",
+      "exit": "Per synchronized three-leg basket reduction. Remaining legs marked at terminal research prices.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 271.55,
+      "fees": 84.518754,
+      "after_fees": 187.031246,
+      "net": 187.031246,
+      "execution": 0.0,
+      "funding": 0.0,
+      "gross_dd": 1.2510416666666666,
+      "gross_dd_pct": 0.00012476123960606945,
+      "net_dd": 3.3218917291666665,
+      "net_dd_pct": 0.00033148400213715493,
+      "fee_dd": 3.3218917291666665,
+      "fee_dd_pct": 0.00033148400213715493,
+      "gross_wins": 130,
+      "net_wins": 121,
+      "fee_wins": 121,
+      "trades": 132,
+      "unsettled": 1,
+      "marked_dd": 29.56011,
+      "marked_dd_pct": 0.0029333673995387394,
+      "mark_to_market_net": 181.671338,
+      "remaining_unrealized": -4.47,
+      "total_paid_fees": 85.408662,
+      "open_position_fee_not_allocated": 0.889908,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6%E8%9D%B6%E5%BC%8F%E5%A5%97%E5%88%A9%E5%8D%83%E5%9B%A2%E5%A4%A7%E6%88%98%E7%AD%96%E7%95%A53.md"
+    }
+  ],
+  "fixed_grid_higher_fee_sensitivity": [
+    {
+      "id": 4417,
+      "name": "Binance COIN-M butterfly hedge, author notebook",
+      "market": "Binance COIN-M BTC, three-leg basket, USDT notebook proxy",
+      "group": "0.04% fixed-grid taker fee",
+      "period": "2020-08-14 16:05:00 to 2020-09-14 02:30:00 UTC",
+      "interval": "Original 5m Binance historical prices, author linear synthetic execution",
+      "exit": "Per synchronized three-leg basket reduction. Remaining legs marked at terminal research prices.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 1903.9408695652173,
+      "fees": 2247.300627130435,
+      "after_fees": -343.35975756521736,
+      "net": -343.35975756521736,
+      "execution": 0.0,
+      "funding": 0.0,
+      "gross_dd": 14.839402524167562,
+      "gross_dd_pct": 0.0014349468617171476,
+      "net_dd": 400.8442175,
+      "net_dd_pct": 0.04008442175,
+      "fee_dd": 400.8442175,
+      "fee_dd_pct": 0.04008442175,
+      "gross_wins": 68,
+      "net_wins": 24,
+      "fee_wins": 24,
+      "trades": 71,
+      "unsettled": 1,
+      "marked_dd": 613.136996,
+      "marked_dd_pct": 0.06121696572612532,
+      "mark_to_market_net": -338.31534,
+      "remaining_unrealized": 6.729130434782609,
+      "total_paid_fees": 2248.98534,
+      "open_position_fee_not_allocated": 1.6847128695652174,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6%E8%9D%B6%E5%BC%8F%E5%A5%97%E5%88%A9%E5%8D%83%E5%9B%A2%E5%A4%A7%E6%88%98%E7%AD%96%E7%95%A53.md"
+    },
+    {
+      "id": 4417,
+      "name": "Binance COIN-M butterfly hedge, author notebook",
+      "market": "Binance COIN-M ETH, three-leg basket, USDT notebook proxy",
+      "group": "0.04% fixed-grid taker fee",
+      "period": "2020-08-18 09:30:00 to 2020-09-14 02:30:00 UTC",
+      "interval": "Original 5m Binance historical prices, author linear synthetic execution",
+      "exit": "Per synchronized three-leg basket reduction. Remaining legs marked at terminal research prices.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 271.55,
+      "fees": 169.037508,
+      "after_fees": 102.512492,
+      "net": 102.512492,
+      "execution": 0.0,
+      "funding": 0.0,
+      "gross_dd": 1.2510416666666666,
+      "gross_dd_pct": 0.00012476123960606945,
+      "net_dd": 6.609658625,
+      "net_dd_pct": 0.0006599314624322237,
+      "fee_dd": 6.609658625,
+      "fee_dd_pct": 0.0006599314624322237,
+      "gross_wins": 130,
+      "net_wins": 102,
+      "fee_wins": 102,
+      "trades": 132,
+      "unsettled": 1,
+      "marked_dd": 30.958664,
+      "marked_dd_pct": 0.0030862296983809726,
+      "mark_to_market_net": 96.262676,
+      "remaining_unrealized": -4.47,
+      "total_paid_fees": 170.817324,
+      "open_position_fee_not_allocated": 1.779816,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6%E8%9D%B6%E5%BC%8F%E5%A5%97%E5%88%A9%E5%8D%83%E5%9B%A2%E5%A4%A7%E6%88%98%E7%AD%96%E7%95%A53.md"
+    }
+  ],
+  "official_terminal_price_sensitivity": [
+    {
+      "id": 4417,
+      "name": "Binance COIN-M butterfly hedge, author notebook",
+      "market": "Binance COIN-M BTC, three-leg basket, USDT notebook proxy",
+      "group": "official finalized terminal candle",
+      "period": "2020-08-14 16:05:00 to 2020-09-14 02:30:00 UTC",
+      "interval": "Original 5m Binance historical prices, author linear synthetic execution",
+      "exit": "Per synchronized three-leg basket reduction. Remaining legs marked at terminal research prices.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 1903.9408695652173,
+      "fees": 1123.6503135652174,
+      "after_fees": 780.290556,
+      "net": 780.290556,
+      "execution": 0.0,
+      "funding": 0.0,
+      "gross_dd": 14.839402524167562,
+      "gross_dd_pct": 0.0014349468617171476,
+      "net_dd": 123.2006655544277,
+      "net_dd_pct": 0.012126725005420464,
+      "fee_dd": 123.2006655544277,
+      "fee_dd_pct": 0.012126725005420464,
+      "gross_wins": 68,
+      "net_wins": 59,
+      "fee_wins": 59,
+      "trades": 71,
+      "unsettled": 1,
+      "marked_dd": 258.434066,
+      "marked_dd_pct": 0.025420536368978307,
+      "mark_to_market_net": 785.46733,
+      "remaining_unrealized": 6.019130434782609,
+      "total_paid_fees": 1124.49267,
+      "open_position_fee_not_allocated": 0.8423564347826087,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6%E8%9D%B6%E5%BC%8F%E5%A5%97%E5%88%A9%E5%8D%83%E5%9B%A2%E5%A4%A7%E6%88%98%E7%AD%96%E7%95%A53.md"
+    },
+    {
+      "id": 4417,
+      "name": "Binance COIN-M butterfly hedge, author notebook",
+      "market": "Binance COIN-M ETH, three-leg basket, USDT notebook proxy",
+      "group": "official finalized terminal candle",
+      "period": "2020-08-18 09:30:00 to 2020-09-14 02:30:00 UTC",
+      "interval": "Original 5m Binance historical prices, author linear synthetic execution",
+      "exit": "Per synchronized three-leg basket reduction. Remaining legs marked at terminal research prices.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 271.55,
+      "fees": 84.518754,
+      "after_fees": 187.031246,
+      "net": 187.031246,
+      "execution": 0.0,
+      "funding": 0.0,
+      "gross_dd": 1.2510416666666666,
+      "gross_dd_pct": 0.00012476123960606945,
+      "net_dd": 3.3218917291666665,
+      "net_dd_pct": 0.00033148400213715493,
+      "fee_dd": 3.3218917291666665,
+      "fee_dd_pct": 0.00033148400213715493,
+      "gross_wins": 130,
+      "net_wins": 121,
+      "fee_wins": 121,
+      "trades": 132,
+      "unsettled": 1,
+      "marked_dd": 29.56011,
+      "marked_dd_pct": 0.0029333673995387394,
+      "mark_to_market_net": 182.001338,
+      "remaining_unrealized": -4.14,
+      "total_paid_fees": 85.408662,
+      "open_position_fee_not_allocated": 0.889908,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6%E8%9D%B6%E5%BC%8F%E5%A5%97%E5%88%A9%E5%8D%83%E5%9B%A2%E5%A4%A7%E6%88%98%E7%AD%96%E7%95%A53.md"
+    }
+  ],
+  "proof": {
+    "notebook_sha256": "b7cc256da48f2e99489043feec81276c71e36b80d7a6908ebefe3c931533d983",
+    "csv_sha256": "b30db1ace801c3b5acbe4af0c79699a8c8423351daa978fb8bcd3474ffbdcc80",
+    "official_candle_proof_sha256": "3fb6bd41f8cd62a0e70dc01fb07ed817445352c23ada230628b1d4c0cbd43fcd",
+    "numpy_version": "2.2.2",
+    "pandas_version": "2.2.3",
+    "worker_sha256": "ce829d4c70d5109edaa3011f6119a4e774ff328df276b03334ace5425f1129be",
+    "reproducible_runtime_receipt_sha256": "506520f77f802a8f097b152d588d2bf759a43f38267efd355c24a19e523f9ce5",
+    "stage_sha256": "519338ebb1fe5f94d8dde61430524d3148f7deff88175a51913864a347feb245",
+    "independent_verifier_sha256": "8746ffc6428b9933e03777717f1febbd56a5060af589b5522e0fdc09ba606897"
+  },
+  "source": {
+    "source_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%B8%81%E5%AE%89%E5%90%88%E7%BA%A6%E8%9D%B6%E5%BC%8F%E5%A5%97%E5%88%A9%E5%8D%83%E5%9B%A2%E5%A4%A7%E6%88%98%E7%AD%96%E7%95%A53.md",
+    "published_runtime_doc_sha256": "36126c29da0e8a4025d243911a0f4bc1e1d419fd8ca0910d0aa75d32450cfdb1",
+    "author_notebook_url": "https://www.fmz.com/upload/asset/1bc8575bad003167f2d.ipynb?name=%E5%B8%81%E5%AE%89%E4%BA%A4%E5%89%B2%E5%90%88%E7%BA%A6%E7%AD%96%E7%95%A53.ipynb",
+    "author_notebook_sha256": "b7cc256da48f2e99489043feec81276c71e36b80d7a6908ebefe3c931533d983",
+    "author_csv_url": "https://www.fmz.com/upload/asset/1420b2081ecd122522d.csv",
+    "author_csv_sha256": "b30db1ace801c3b5acbe4af0c79699a8c8423351daa978fb8bcd3474ffbdcc80",
+    "source_cells": {
+      "13": "8dc8081e26537701ffa466d88730379fb960a4a1f461d77655a4c3071aab56c8",
+      "14": "861cd862551da59058e5d2c1320928705de97f656f81a6c53d434b9080344202",
+      "18": "d2fcbf37316557c6740a810632b472260d2fc16144c8fe9cac70420fe5ca521d"
+    }
+  },
+  "price_series_provenance": [
+    {
+      "symbol": "BTCUSD_200925",
+      "first_price_bar_ms": 1597421100000,
+      "last_price_bar_ms": 1600050600000,
+      "independent_final_candle_close": "10364.7",
+      "exact_finalized_price_matches": 8765,
+      "terminal_snapshot_discrepancy": {
+        "at_ms": 1600050600000,
+        "author": "10362.8",
+        "independent_OHLC": [
+          "10366.2",
+          "10372.5",
+          "10362.5",
+          "10364.7"
+        ]
+      },
+      "binance_files": [
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_200925/5m/BTCUSD_200925-5m-2020-08.zip",
+          "source_zip_sha256": "e5be9f54d7734cdea19360a1d7e980162e00696663e6e74f6f183b3d09b86311",
+          "rows": 8928
+        },
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_200925/5m/BTCUSD_200925-5m-2020-09.zip",
+          "source_zip_sha256": "33548228af0d31000a261082ecf090e820b21a00c11bc2ffdc24fa3fee5356c9",
+          "rows": 8640
+        }
+      ]
+    },
+    {
+      "symbol": "BTCUSD_201225",
+      "first_price_bar_ms": 1597421100000,
+      "last_price_bar_ms": 1600050600000,
+      "independent_final_candle_close": "10502.9",
+      "exact_finalized_price_matches": 8765,
+      "terminal_snapshot_discrepancy": {
+        "at_ms": 1600050600000,
+        "author": "10498.6",
+        "independent_OHLC": [
+          "10509.0",
+          "10509.0",
+          "10498.6",
+          "10502.9"
+        ]
+      },
+      "binance_files": [
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_201225/5m/BTCUSD_201225-5m-2020-08.zip",
+          "source_zip_sha256": "a07a5d53063b3756d4cb2c5052f5b7cfb98d31488e60118ea99babfc9328fca3",
+          "rows": 8928
+        },
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_201225/5m/BTCUSD_201225-5m-2020-09.zip",
+          "source_zip_sha256": "6bb617e8c1a1c196c44170db52d6274b445abd34c0392b72cf1ca132cbde424d",
+          "rows": 8640
+        }
+      ]
+    },
+    {
+      "symbol": "BTCUSD_PERP",
+      "first_price_bar_ms": 1597421100000,
+      "last_price_bar_ms": 1600050600000,
+      "independent_final_candle_close": "10363.4",
+      "exact_finalized_price_matches": 8765,
+      "terminal_snapshot_discrepancy": {
+        "at_ms": 1600050600000,
+        "author": "10356.8",
+        "independent_OHLC": [
+          "10360.4",
+          "10369.9",
+          "10356.8",
+          "10363.4"
+        ]
+      },
+      "binance_files": [
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_PERP/5m/BTCUSD_PERP-5m-2020-08.zip",
+          "source_zip_sha256": "1bf2c1d1a9c082837cd600d7d72fe457a4db910315424d6daf0060dcac62b662",
+          "rows": 5964
+        },
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_PERP/5m/BTCUSD_PERP-5m-2020-09.zip",
+          "source_zip_sha256": "c08c96274498b4df542e9a26818904ddd33d6cc8104e73b7119de0f2e027cde8",
+          "rows": 8640
+        }
+      ]
+    },
+    {
+      "symbol": "ETHUSD_200925",
+      "first_price_bar_ms": 1597421100000,
+      "last_price_bar_ms": 1600050600000,
+      "independent_final_candle_close": "366.15",
+      "exact_finalized_price_matches": 8765,
+      "terminal_snapshot_discrepancy": {
+        "at_ms": 1600050600000,
+        "author": "366.13",
+        "independent_OHLC": [
+          "366.66",
+          "367.24",
+          "366.03",
+          "366.15"
+        ]
+      },
+      "binance_files": [
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_200925/5m/ETHUSD_200925-5m-2020-08.zip",
+          "source_zip_sha256": "741d4ebb0abf85cb362db00829238611b3a0423d891c8ab26c10c340af0d5216",
+          "rows": 8928
+        },
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_200925/5m/ETHUSD_200925-5m-2020-09.zip",
+          "source_zip_sha256": "60e12f2ee019ac093631f64649a92b7ecaf91449cad0a01870aa5b7cc97c593f",
+          "rows": 8640
+        }
+      ]
+    },
+    {
+      "symbol": "ETHUSD_201225",
+      "first_price_bar_ms": 1597421100000,
+      "last_price_bar_ms": 1600050600000,
+      "independent_final_candle_close": "367.49",
+      "exact_finalized_price_matches": 8765,
+      "terminal_snapshot_discrepancy": {
+        "at_ms": 1600050600000,
+        "author": "367.44",
+        "independent_OHLC": [
+          "367.90",
+          "368.53",
+          "367.40",
+          "367.49"
+        ]
+      },
+      "binance_files": [
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_201225/5m/ETHUSD_201225-5m-2020-08.zip",
+          "source_zip_sha256": "90dc19645067be6056474fe6938df748a5c15660f3d43bbbe8ab4b8cda01d41f",
+          "rows": 7692
+        },
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_201225/5m/ETHUSD_201225-5m-2020-09.zip",
+          "source_zip_sha256": "bb34aeee11cf77c24f4b5e6d8c62031a1a9cdd9595e813c7031bd639bdecfe67",
+          "rows": 8640
+        }
+      ]
+    },
+    {
+      "symbol": "ETHUSD_PERP",
+      "first_price_bar_ms": 1597734000000,
+      "last_price_bar_ms": 1600050600000,
+      "independent_final_candle_close": "366.01",
+      "exact_finalized_price_matches": 7722,
+      "terminal_snapshot_discrepancy": {
+        "at_ms": 1600050600000,
+        "author": "365.91",
+        "independent_OHLC": [
+          "366.37",
+          "366.93",
+          "365.78",
+          "366.01"
+        ]
+      },
+      "binance_files": [
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_PERP/5m/ETHUSD_PERP-5m-2020-08.zip",
+          "source_zip_sha256": "6000c1592d6bb0b8205d1f26bc740a9496353ed984d77a4eb4f6838ee00f7535",
+          "rows": 3948
+        },
+        {
+          "archive_url": "https://data.binance.vision/data/futures/cm/monthly/klines/ETHUSD_PERP/5m/ETHUSD_PERP-5m-2020-09.zip",
+          "source_zip_sha256": "58667aca34af7ad418f7988809d96a1cff3c15e0ae1861d266c6e14ef9017a02",
+          "rows": 8640
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "coin": "BTC",
+      "scenario": "authored research",
+      "fee_rate_decimal": 0.0002,
+      "num_authored_mark_rows": 8766,
+      "basket_adjustment_count": 106,
+      "individual_leg_fills": 318,
+      "closed_basket_reductions": 71,
+      "highest_margined_leverage_ratio_before_orders": 18.381943519830347,
+      "minimum_linear_research_collateral_headroom_USDT": 801.5783666402116,
+      "terminal_per_leg": {
+        "BTCUSD_201225": "-0.1",
+        "BTCUSD_200925": "0.2",
+        "BTCUSD_PERP": "-0.1"
+      },
+      "author_chart_final_pre_trade_marked": 786.177330000012,
+      "active_cell_sha256": "93c42fd38bd23ab62432830436e4a417933e13898c6baa65d36d592a0d285323",
+      "engine_cell_sha256": "d2fcbf37316557c6740a810632b472260d2fc16144c8fe9cac70420fe5ca521d",
+      "trade_trace_digest": "93fd0e9937304cf8b9407b70ab150e01bce9032240327f05c4a6c6b9a49e25a5"
+    },
+    {
+      "coin": "BTC",
+      "scenario": "0.04% fixed-grid taker fee",
+      "fee_rate_decimal": 0.0004,
+      "num_authored_mark_rows": 8766,
+      "basket_adjustment_count": 106,
+      "individual_leg_fills": 318,
+      "closed_basket_reductions": 71,
+      "highest_margined_leverage_ratio_before_orders": 18.920349715555968,
+      "minimum_linear_research_collateral_headroom_USDT": 519.6341466402116,
+      "terminal_per_leg": {
+        "BTCUSD_201225": "-0.1",
+        "BTCUSD_200925": "0.2",
+        "BTCUSD_PERP": "-0.1"
+      },
+      "author_chart_final_pre_trade_marked": -338.31533999998726,
+      "active_cell_sha256": "93c42fd38bd23ab62432830436e4a417933e13898c6baa65d36d592a0d285323",
+      "engine_cell_sha256": "d2fcbf37316557c6740a810632b472260d2fc16144c8fe9cac70420fe5ca521d",
+      "trade_trace_digest": "46a2722c1ebfd83cc1696a3df3de90c3c232e239af7571a2eb5dd6aa4980ff60"
+    },
+    {
+      "coin": "BTC",
+      "scenario": "official finalized terminal candle",
+      "fee_rate_decimal": 0.0002,
+      "num_authored_mark_rows": 8766,
+      "basket_adjustment_count": 106,
+      "individual_leg_fills": 318,
+      "closed_basket_reductions": 71,
+      "highest_margined_leverage_ratio_before_orders": 18.381943519830347,
+      "minimum_linear_research_collateral_headroom_USDT": 801.5783666402116,
+      "terminal_per_leg": {
+        "BTCUSD_201225": "-0.1",
+        "BTCUSD_200925": "0.2",
+        "BTCUSD_PERP": "-0.1"
+      },
+      "author_chart_final_pre_trade_marked": 785.4673300000125,
+      "active_cell_sha256": "93c42fd38bd23ab62432830436e4a417933e13898c6baa65d36d592a0d285323",
+      "engine_cell_sha256": "d2fcbf37316557c6740a810632b472260d2fc16144c8fe9cac70420fe5ca521d",
+      "trade_trace_digest": "93fd0e9937304cf8b9407b70ab150e01bce9032240327f05c4a6c6b9a49e25a5"
+    },
+    {
+      "coin": "ETH",
+      "scenario": "authored research",
+      "fee_rate_decimal": 0.0002,
+      "num_authored_mark_rows": 7693,
+      "basket_adjustment_count": 267,
+      "individual_leg_fills": 801,
+      "closed_basket_reductions": 132,
+      "highest_margined_leverage_ratio_before_orders": 1.267584077444859,
+      "minimum_linear_research_collateral_headroom_USDT": 9414.409251333333,
+      "terminal_per_leg": {
+        "ETHUSD_201225": "3.0",
+        "ETHUSD_200925": "-6.0",
+        "ETHUSD_PERP": "3.0"
+      },
+      "author_chart_final_pre_trade_marked": 181.67133800000076,
+      "active_cell_sha256": "1da9d31842b5adf7d0797a5cd7dbb4c9a4927a19960b3ba25edf8f87e1fd0bd6",
+      "engine_cell_sha256": "d2fcbf37316557c6740a810632b472260d2fc16144c8fe9cac70420fe5ca521d",
+      "trade_trace_digest": "302c17b124f2f9b258e10163acbd80f05994498c75b02bed42c3e8309b1f94b1"
+    },
+    {
+      "coin": "ETH",
+      "scenario": "0.04% fixed-grid taker fee",
+      "fee_rate_decimal": 0.0004,
+      "num_authored_mark_rows": 7693,
+      "basket_adjustment_count": 267,
+      "individual_leg_fills": 801,
+      "closed_basket_reductions": 132,
+      "highest_margined_leverage_ratio_before_orders": 1.2736614960311163,
+      "minimum_linear_research_collateral_headroom_USDT": 9366.331669333333,
+      "terminal_per_leg": {
+        "ETHUSD_201225": "3.0",
+        "ETHUSD_200925": "-6.0",
+        "ETHUSD_PERP": "3.0"
+      },
+      "author_chart_final_pre_trade_marked": 96.26267600000062,
+      "active_cell_sha256": "1da9d31842b5adf7d0797a5cd7dbb4c9a4927a19960b3ba25edf8f87e1fd0bd6",
+      "engine_cell_sha256": "d2fcbf37316557c6740a810632b472260d2fc16144c8fe9cac70420fe5ca521d",
+      "trade_trace_digest": "aa0d12a3bbcb1de0d5a581b1a68a8396692ba29e7bcc3e1665eb2bbf2e31d662"
+    },
+    {
+      "coin": "ETH",
+      "scenario": "official finalized terminal candle",
+      "fee_rate_decimal": 0.0002,
+      "num_authored_mark_rows": 7693,
+      "basket_adjustment_count": 267,
+      "individual_leg_fills": 801,
+      "closed_basket_reductions": 132,
+      "highest_margined_leverage_ratio_before_orders": 1.267584077444859,
+      "minimum_linear_research_collateral_headroom_USDT": 9414.409251333333,
+      "terminal_per_leg": {
+        "ETHUSD_201225": "3.0",
+        "ETHUSD_200925": "-6.0",
+        "ETHUSD_PERP": "3.0"
+      },
+      "author_chart_final_pre_trade_marked": 182.0013380000008,
+      "active_cell_sha256": "1da9d31842b5adf7d0797a5cd7dbb4c9a4927a19960b3ba25edf8f87e1fd0bd6",
+      "engine_cell_sha256": "d2fcbf37316557c6740a810632b472260d2fc16144c8fe9cac70420fe5ca521d",
+      "trade_trace_digest": "302c17b124f2f9b258e10163acbd80f05994498c75b02bed42c3e8309b1f94b1"
+    }
+  ],
+  "scope": {
+    "fills": "Author-linked notebook cells 13, 14 and 18 simulate synchronized three-leg fills at candle observations with a 20x linear USDT engine. Only plot display is omitted. Neither actual inverse coin P&L, funding rates nor IOC leg slippage is implemented in the author model.",
+    "dates": "Use the author CSV timestamps, independently identified as UTC bucket-open labels. ETH starts after the author’s 30-valid-bar warmup. All finalized source prices independently cross-match. Each final saved source price is within its official OHLC range and differs from its finalized close. Preserve it in primary results and rerun with the documented official close.",
+    "fees": "Primary uses the original author research 0.02% taker fees. Alternate fixed-grid reruns use the author-discussed 0.04% rate while leaving signal thresholds fixed. Fee changes produce an identical quantity/price decision trace. Basket-reduction P&L allocates previous open fees pro rata; marked equity counts all fees.",
+    "risk": "Quoted cash plus remaining marked linear legs is research equity. The author engine computes linear margin, without venue liquidation, maintenance rules, collateral valuation dynamics or practical partial-leg ordering. Drawdown fields are fractions and refer only to this model."
+  },
+  "references": [
+    "https://www.fmz.com/digest-topic/6102",
+    "https://www.fmz.com/strategy/226882",
+    "https://github.com/binance/binance-public-data"
+  ]
+}
