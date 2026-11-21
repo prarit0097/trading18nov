@@ -1,0 +1,325 @@
+{
+  "schema": "FMZ original Python Levy fixed weekly replay",
+  "input_sha256": "11f3c32156cc63a73f712d65343b706a37acdb1f7dcb9f0421ccaca099e1a5cf",
+  "worker_sha256": "9acae2ac4b8394d3fbcb3121974cd7b7f953aaadd1d2fc56a99456d193215022",
+  "executed_worker_sha256": "117c3ba63243156f1acd08a471230684f0d69e17192dfab1f2f616d784c23302",
+  "market_proof": {
+    "url": "https://datasets.tardis.dev/v1/okex-futures/trades/2019/09/01/BTC-USD-190906.csv.gz",
+    "sha256": "0d5ceac29ea2f34688bf2ec145d038779bb57e2502dae441dd56ffc74569d5ae",
+    "bytes": 688648,
+    "market_trade_count": 45240,
+    "missing_minutes_ms": [
+      1567299960000,
+      1567302060000,
+      1567304280000,
+      1567307220000,
+      1567307460000,
+      1567308600000,
+      1567309920000,
+      1567316340000,
+      1567318320000,
+      1567318980000,
+      1567319520000,
+      1567320480000,
+      1567320840000,
+      1567323540000,
+      1567323660000,
+      1567324080000,
+      1567324140000,
+      1567324620000,
+      1567324740000,
+      1567324800000,
+      1567331640000,
+      1567334640000,
+      1567335240000,
+      1567337100000,
+      1567337340000,
+      1567337580000,
+      1567339500000,
+      1567342140000,
+      1567342440000,
+      1567347360000,
+      1567348440000,
+      1567349220000,
+      1567349760000,
+      1567350240000,
+      1567350300000,
+      1567350360000,
+      1567351440000,
+      1567355880000,
+      1567358460000,
+      1567359060000,
+      1567359120000,
+      1567359480000,
+      1567362540000,
+      1567363260000,
+      1567364880000,
+      1567368540000,
+      1567368780000,
+      1567369380000,
+      1567369440000,
+      1567369560000,
+      1567369620000,
+      1567369920000,
+      1567371420000
+    ]
+  },
+  "publishers": {
+    "666": {
+      "settings": {
+        "STOP_LOSS": 0.015,
+        "TAKE_PROFIT": 0.03,
+        "START_SIZE": 1,
+        "RISK_LIMIT": 1025,
+        "LEVERAGE_RATE": 20,
+        "CONTRACT_TYPE": "this_week",
+        "DELAY": 30,
+        "AMP": 2
+      },
+      "sha": "aaacdfe654150d2956233072dc11d1d4069f0208faa6a043bfae6064dfae2443",
+      "source_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Paul-The-Gambler-L%C3%A9vy-Gold-Edition.md",
+      "publication": "https://www.fmz.com/strategy/119038",
+      "publication_sha256": "9f6f1dfeefc10fe96185d546c04de9e969098ddcc0b5fbfcb71b03b5ce61a03e"
+    },
+    "667": {
+      "settings": {
+        "STOP_LOSS": 0.015,
+        "TAKE_PROFIT": 0.03,
+        "START_SIZE": 1,
+        "RISK_LIMIT": 1025,
+        "LEVERAGE_RATE": 20,
+        "CONTRACT_TYPE": "this_week",
+        "DELAY": 30,
+        "AMP": 2
+      },
+      "sha": "96d6675e74c99bf4bfb58adecbbb2cda464171d298d003b41e22b1b7b7bd2ed6",
+      "source_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Paul-The-Gambler-L%C3%A9vy.md",
+      "publication": "https://www.fmz.com/strategy/117768",
+      "publication_sha256": "7497304861ed74bab560763aefb41492e455dd30dbc00f37834b0c9c976f1bf1"
+    }
+  },
+  "cases": [
+    {
+      "id": 666,
+      "seed": 0,
+      "run_sha256": "12325f97f7fe0cf5eba568868ab7604008e248a4042c47bf8fd85e5cd0eb43cc",
+      "repeat_sha256": "12325f97f7fe0cf5eba568868ab7604008e248a4042c47bf8fd85e5cd0eb43cc",
+      "first_signal": "sell",
+      "signal_witness": [
+        "50.41425585058299054950670936",
+        "50.27876174552774519720919170"
+      ],
+      "fills": [
+        [
+          1567317601200,
+          "sell",
+          1,
+          "9614.11",
+          "0.000005200689403387313022214224718"
+        ],
+        [
+          1567373693000,
+          "closesell",
+          1,
+          "9785.01",
+          "0.000005109856811592425557051040316"
+        ],
+        [
+          1567373693200,
+          "buy",
+          2,
+          "9785.01",
+          "0.00001021971362318485111410208063"
+        ]
+      ],
+      "ending_contracts": 2
+    },
+    {
+      "id": 667,
+      "seed": 0,
+      "run_sha256": "74c249cc76a07cb2f126f3e611ff5377815ad7a90df34fa3fc09d0a00238918d",
+      "repeat_sha256": "74c249cc76a07cb2f126f3e611ff5377815ad7a90df34fa3fc09d0a00238918d",
+      "first_signal": "sell",
+      "signal_witness": [
+        "4"
+      ],
+      "fills": [
+        [
+          1567317601000,
+          "sell",
+          1,
+          "9614.11",
+          "0.000005200689403387313022214224718"
+        ],
+        [
+          1567373701800,
+          "closesell",
+          1,
+          "9769.45",
+          "0.000005117995383568164021516052593"
+        ],
+        [
+          1567373702000,
+          "buy",
+          2,
+          "9769.45",
+          "0.00001023599076713632804303210519"
+        ]
+      ],
+      "ending_contracts": 2
+    },
+    {
+      "id": 667,
+      "seed": 1,
+      "run_sha256": "057e8069597dad2584c77235dc159138b6c20069fc47b69f86fb11c26f53c0d9",
+      "repeat_sha256": "057e8069597dad2584c77235dc159138b6c20069fc47b69f86fb11c26f53c0d9",
+      "first_signal": "sell",
+      "signal_witness": [
+        "2"
+      ],
+      "fills": [
+        [
+          1567317601000,
+          "sell",
+          1,
+          "9614.11",
+          "0.000005200689403387313022214224718"
+        ],
+        [
+          1567373701800,
+          "closesell",
+          1,
+          "9769.45",
+          "0.000005117995383568164021516052593"
+        ],
+        [
+          1567373702000,
+          "buy",
+          2,
+          "9769.45",
+          "0.00001023599076713632804303210519"
+        ]
+      ],
+      "ending_contracts": 2
+    },
+    {
+      "id": 667,
+      "seed": 2,
+      "run_sha256": "9d6fbd0749eaf8628077c09450dd2a2f3430eba24940d48250baa75795d57d95",
+      "repeat_sha256": "8c3e462b64810b9c1b001bded920fc09f544c435f9159fa6c5d3e9b025dd30b6",
+      "first_signal": "buy",
+      "signal_witness": [
+        "1"
+      ],
+      "fills": [
+        [
+          1567317601000,
+          "buy",
+          1,
+          "9614.13",
+          "0.000005200678584541711002451599885"
+        ]
+      ],
+      "ending_contracts": 1
+    }
+  ],
+  "method": "Named current-week inverse BTC instrument. The source defaults retain 20x and one-contract starting size. The calendar, 15m chart, 0.1 BTC wallet, explicit 0.02% maker and 0.05% taker fees and random seeds are study selections. Native simulated subticks and one-tick quote offsets are checked against signed dated trade observations. Marked outcome is separate from settled reductions.",
+  "coverage": [
+    [
+      666,
+      "Tested · original RSI and reversal on dated BTC weekly",
+      "Publisher defaults, original Python, an independently reproduced 15m RSI and an inverse-wallet check validate the dated BTC case. The research supplies the calendar, chart period and starting wallet."
+    ],
+    [
+      667,
+      "Tested · original random and reversal on dated BTC weekly",
+      "Three reproducible seeds cover both sides of the first authored random decision on the same historical tape. Two seeds produce the same result. Open inventory is marked separately."
+    ]
+  ],
+  "results": [
+    {
+      "id": 666,
+      "group": "Original Python / dated OKCoin weekly",
+      "market": "OKEX dated BTC-USD-190906 inverse current-week",
+      "period": "2019-09-01 06:00–22:00 UTC",
+      "interval": "Native 1m simulated ticks and 30s author pause",
+      "exit": "15m RSI entry, then authored stop and reversal",
+      "currency": "BTC",
+      "starting_equity": 0.1,
+      "trades": 1,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": -0.00018166518358977494,
+      "fees": 1.0310546214979738e-05,
+      "after_fees": -0.00019197572980475468,
+      "net": -0.00019197572980475468,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0.00018166518358977494,
+      "fee_dd": 0.00019197572980475468,
+      "net_dd": 0.00019197572980475468,
+      "net_dd_pct": 0.0019197572980475467,
+      "total_fee_BTC": 2.053025983816459e-05,
+      "terminal_marked_PnL_BTC": -0.00038600244342792,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Paul-The-Gambler-L%C3%A9vy-Gold-Edition.md"
+    },
+    {
+      "id": 667,
+      "group": "Original Python / dated OKCoin weekly",
+      "market": "OKEX dated BTC-USD-190906 inverse current-week",
+      "period": "2019-09-01 06:00–22:00 UTC",
+      "interval": "Native 1m simulated ticks and 30s author pause",
+      "exit": "Equivalent die-roll seeds 0 and 1, then authored reversal",
+      "currency": "BTC",
+      "starting_equity": 0.1,
+      "trades": 1,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": -0.000165388039638298,
+      "fees": 1.0318684786955477e-05,
+      "after_fees": -0.00017570672442525348,
+      "net": -0.00017570672442525348,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0.000165388039638298,
+      "fee_dd": 0.00017570672442525348,
+      "net_dd": 0.00017570672442525348,
+      "net_dd_pct": 0.0017570672442525348,
+      "total_fee_BTC": 2.0554675554091806e-05,
+      "terminal_marked_PnL_BTC": -0.00033719571519238,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Paul-The-Gambler-L%C3%A9vy.md"
+    },
+    {
+      "id": 667,
+      "group": "Original Python / dated OKCoin weekly",
+      "market": "OKEX dated BTC-USD-190906 inverse current-week",
+      "period": "2019-09-01 06:00–22:00 UTC",
+      "interval": "Native 1m simulated ticks and 30s author pause",
+      "exit": "Authored die roll seed 2, then original reversal rules",
+      "currency": "BTC",
+      "starting_equity": 0.1,
+      "trades": 0,
+      "unsettled": 1,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "net": 0.0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0.0,
+      "fee_dd": 0.0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "total_fee_BTC": 5.200678584541711e-06,
+      "terminal_marked_PnL_BTC": 8.453932141546e-05,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Paul-The-Gambler-L%C3%A9vy.md"
+    }
+  ]
+}

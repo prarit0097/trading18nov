@@ -1,0 +1,80 @@
+{
+  "coverage": [
+    [
+      929,
+      "Pending · recorded BTC replay awaiting independent reconciliation",
+      "Whole declared date ran in the existing offline recorded book and through-print fill model. Read-only fill/account reconciliation and a deterministic repeat remain necessary before publishing metrics."
+    ]
+  ],
+  "results": [],
+  "source": {
+    "source_sha256": "c9035d9fe2cb1eb7ce2c1812462c3e6b73d2578558808c7aba8f05df549a78d4",
+    "archive_sha256": "2d1c73a269eed3a1ae8e09bea3def3bb5fa91c2cbdf0e0fed2535f32e962d1ed",
+    "source_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Shannons-Demon.md",
+    "publisher_url": "https://www.fmz.com/strategy/64455",
+    "publisher_snapshot_sha256": "afc13c2233f805544e88b4d2f6c04b1bb608850019b756b5ad7054142fa6af1f",
+    "params": {
+      "DELAY": 30,
+      "DS": 1.04,
+      "DB": 1.08,
+      "RSIB": 80,
+      "RSIS": 20
+    }
+  },
+  "first_run_diagnostic": [
+    {
+      "wallet": {
+        "name": "initially BTC-heavy",
+        "base": 1.62,
+        "fee": 0.001,
+        "volume": 1
+      },
+      "orders": 1,
+      "fills": 1,
+      "end_pending": 0,
+      "initial_quote_equity": 25576.964200000002,
+      "terminal_quote_equity": 25660.678551973,
+      "sampled_drawdown_fraction": 0.006911862169901259
+    },
+    {
+      "wallet": {
+        "name": "initially BTC-light",
+        "base": 0.64,
+        "fee": 0.001,
+        "volume": 1
+      },
+      "orders": 3,
+      "fills": 3,
+      "end_pending": 0,
+      "initial_quote_equity": 16153.8624,
+      "terminal_quote_equity": 16204.3578702804,
+      "sampled_drawdown_fraction": 0.006911671295250527
+    },
+    {
+      "wallet": {
+        "name": "approximately balanced",
+        "base": 1.04,
+        "fee": 0.001,
+        "volume": 1
+      },
+      "orders": 0,
+      "fills": 0,
+      "end_pending": 0,
+      "initial_quote_equity": 20000.026400000002,
+      "terminal_quote_equity": 20067.252,
+      "sampled_drawdown_fraction": 0.006911775872171869
+    }
+  ],
+  "proof": {
+    "input_sha256": "2da30e7350a26172973effa64f875292414af30a453068b30c869a453d90dd93",
+    "first_receipt_sha256": "df1498600794021f619cee7e96cbd9783d1ebf3db7e0a0df7dd6bb0579377ecc",
+    "worker_sha256": "b0af86f61126cb751855724729f0cbffe7ac9c17471592c40081c053cb1332e6",
+    "stage_sha256": "7f9245eabf3258a030859727e5aa1f7475942b6288deabd2642b3e2d3a0b59b1",
+    "recorded_input_sha256": "a27dd0dbaeea95cf7919bb96b26376db16c165d408316e78d0da57e3311cd845"
+  },
+  "checkpoint": {
+    "replay_window_utc": "2019-09-01 01:00–22:00 UTC",
+    "wallet": "Each scoped wallet starts with 10,000 USDT and explicit BTC inventory. The author omits wallet settings.",
+    "readme": "Run existing AppContainer sandbox a second time only after work resumes. Cross-reconcile source RSI, displayed second levels, strict traded-through maker proofs and cost-basis, then look for early before/after evidence."
+  }
+}

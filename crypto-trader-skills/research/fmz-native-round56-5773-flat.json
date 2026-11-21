@@ -1,0 +1,182 @@
+{
+  "schema": "FMZ #5773 short flat compatibility",
+  "source_sha256": "602c3dfa0537f667c5318137083fafea45523dd4c4150a36d2fb240b2b7a437f",
+  "runtime_loader_sha256": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+  "source_code_sha256": "1706f4945a523a5ed0fb751c7dca9a1c1dfe59f784a02d342b679dd04ec38161",
+  "coverage": [
+    [
+      5773,
+      "Tested - short flat recorded futures compatibility",
+      "Literal startup fails on an absent reporting field. A reporting-only adaptation and domain-verified Underscore helpers complete both fixed 60-second BTC/ETH scopes. All three passive sells were canceled without fills. The actual tape independently stays below all three limits. Filled-position behavior remains unverified."
+    ]
+  ],
+  "cases": [
+    {
+      "coin": "BTC",
+      "exact_abort_ms_after_start": 200,
+      "reporting_only_missing_helper_ms": 900,
+      "recorded_input": [
+        [
+          "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_Binance&depth=10&trades=1&custom=0&period=1000&symbol=BTC_USDT.swap&from=1795079595&to=1795083600",
+          88194,
+          "7314bfbddf90ce93ea55824f0e7e81fc6d118321404d21863e7d1f0822f56777"
+        ],
+        [
+          "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_Binance&depth=10&trades=1&custom=0&period=1000&symbol=BTC_USDT.swap&from=1795083600&to=1795086600",
+          58278,
+          "346301ade792aa1fd162004c4ca79935881ef4e7a4fb82609ce05c0ef1199656"
+        ],
+        [
+          "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_Binance&depth=10&trades=1&custom=0&period=1000&symbol=BTC_USDT.swap&from=1795086600&to=1795089665",
+          76366,
+          "20dc09639360951008612c7ab4b8daac4e1702bc3b5cfbece53e76db21ee0b96"
+        ]
+      ],
+      "in_window_events": 3491,
+      "native_api_calls": {
+        "SetContractType": 1,
+        "GetAccount": 2,
+        "GetTrades": 83,
+        "GetDepth": 83,
+        "GetPosition": 83,
+        "SetDirection": 1,
+        "Sell": 1,
+        "CancelOrder": 1
+      },
+      "array_helper_domain_checks": {
+        "reduce": 83,
+        "max": 158,
+        "min": 158
+      },
+      "unfilled_order_proofs": [
+        {
+          "id": 1,
+          "submit_ms": 1795089620400,
+          "cancel_ms": 1795089620900,
+          "limit": "63858.9",
+          "max_recorded_bid": "63856.7",
+          "max_recorded_print": "63856.8",
+          "tape_events_checked": 221
+        }
+      ]
+    },
+    {
+      "coin": "ETH",
+      "exact_abort_ms_after_start": 200,
+      "reporting_only_missing_helper_ms": 900,
+      "recorded_input": [
+        [
+          "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_Binance&depth=10&trades=1&custom=0&period=1000&symbol=ETH_USDT.swap&from=1795079595&to=1795083600",
+          82781,
+          "38d017eb0036125d6a6fa156e6e686ee14a7d2d328440b937a9062eafd0b3a54"
+        ],
+        [
+          "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_Binance&depth=10&trades=1&custom=0&period=1000&symbol=ETH_USDT.swap&from=1795083600&to=1795086600",
+          52779,
+          "c5741c24ff07b4dd659e99c89b6b607ba6ac834aa40da4f2c68553c5b3bcb042"
+        ],
+        [
+          "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Futures_Binance&depth=10&trades=1&custom=0&period=1000&symbol=ETH_USDT.swap&from=1795086600&to=1795089665",
+          63908,
+          "7339903778178630219dbc256219753b8fe1791ce4f4035498200070a404f608"
+        ]
+      ],
+      "in_window_events": 2902,
+      "native_api_calls": {
+        "SetContractType": 1,
+        "GetAccount": 3,
+        "GetTrades": 82,
+        "GetDepth": 81,
+        "GetPosition": 81,
+        "SetDirection": 2,
+        "Sell": 2,
+        "CancelOrder": 2
+      },
+      "array_helper_domain_checks": {
+        "reduce": 82,
+        "max": 150,
+        "min": 148
+      },
+      "unfilled_order_proofs": [
+        {
+          "id": 1,
+          "submit_ms": 1795089619700,
+          "cancel_ms": 1795089620200,
+          "limit": "1805.22",
+          "max_recorded_bid": "1805.09",
+          "max_recorded_print": "1805.1",
+          "tape_events_checked": 20
+        },
+        {
+          "id": 2,
+          "submit_ms": 1795089646100,
+          "cancel_ms": 1795089646600,
+          "limit": "1802.22",
+          "max_recorded_bid": "1802",
+          "max_recorded_print": "1801.94",
+          "tape_events_checked": 68
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": 5773,
+      "name": "Modified LeeksReaper",
+      "source": "https://www.fmz.com/strategy/260806",
+      "market": "BTCUSDT perpetual",
+      "group": "Flat short-window compatibility",
+      "period": "2026-11-19 12:00:00–12:01:00 UTC",
+      "interval": "Native recorded Binance book and trade events",
+      "quote_currency": "USDT",
+      "exit": "Source canceled its passive short entries. No order filled.",
+      "starting_equity": 10000,
+      "trades": 0,
+      "gross": 0,
+      "fees": 0,
+      "after_fees": 0,
+      "net": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "unsettled": 0
+    },
+    {
+      "id": 5773,
+      "name": "Modified LeeksReaper",
+      "source": "https://www.fmz.com/strategy/260806",
+      "market": "ETHUSDT perpetual",
+      "group": "Flat short-window compatibility",
+      "period": "2026-11-19 12:00:00–12:01:00 UTC",
+      "interval": "Native recorded Binance book and trade events",
+      "quote_currency": "USDT",
+      "exit": "Source canceled its passive short entries. No order filled.",
+      "starting_equity": 10000,
+      "trades": 0,
+      "gross": 0,
+      "fees": 0,
+      "after_fees": 0,
+      "net": 0,
+      "execution": 0,
+      "funding": 0,
+      "gross_dd": 0,
+      "fee_dd": 0,
+      "net_dd": 0,
+      "gross_dd_pct": 0,
+      "fee_dd_pct": 0,
+      "net_dd_pct": 0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "unsettled": 0
+    }
+  ]
+}

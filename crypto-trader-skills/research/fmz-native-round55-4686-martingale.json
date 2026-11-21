@@ -1,0 +1,2553 @@
+{
+  "coverage": [
+    [
+      4686,
+      "Tested · May 19 ETH martingale stress completed",
+      "Original archived code completes the author-named May 19 market day. The separate six-month attempt aborts on February 23 when both sides fill. Only the completed day contributes performance rows."
+    ]
+  ],
+  "results": [
+    {
+      "id": 4686,
+      "name": "Futures martingale ETH May 19 stress",
+      "market": "Binance USD-M perpetual ETHUSDT",
+      "period": "2021-05-19 UTC+08:00, 24h",
+      "interval": "1d chart, FMZ 5m generated ticks",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E6%9C%9F%E8%B4%A7%E7%B1%BB%E9%A9%AC%E4%B8%81%E7%AD%96%E7%95%A5.md",
+      "group": "Original archived 2023 JS / author May 19 stress",
+      "exit": "Completed day. Original target reductions and separate still-open long.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "starting_equity": 10000.0,
+      "gross": 2.22605,
+      "fees": 0.11976255,
+      "after_fees": 2.10628745,
+      "net": 2.104599821254,
+      "funding": -0.001687628746,
+      "execution": 0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "gross_wins": 26,
+      "fee_wins": 26,
+      "net_wins": 26,
+      "trades": 26,
+      "unsettled": 1,
+      "mark_to_market_net": -26.12154826080365,
+      "remaining_unrealized": -28.0036,
+      "marked_dd": 263.741959966058,
+      "marked_dd_pct": 0.0263685649165131,
+      "all_fees": 0.167114318
+    }
+  ],
+  "source": {
+    "catalogue_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E6%9C%9F%E8%B4%A7%E7%B1%BB%E9%A9%AC%E4%B8%81%E7%AD%96%E7%95%A5.md",
+    "catalogue_document_sha256": "f3bb8c23a2d3b976e230a7e32735c6d698253653107a304a876a988fb064273c",
+    "javascript_sha256": "c66da4d1377436141f010ea15814a3517150e1410a9cc4c1f3f31a07ef206f7a",
+    "author_design": "https://www.fmz.com/bbs-topic/7457",
+    "author_setup_screenshot": {
+      "url": "https://www.fmz.com/upload/asset/1763ccc10fd4a299b2db.png",
+      "sha256": "781f5f42709531c5557c22bad482e48395bc3729185bca2e238a0ba272f9de0e"
+    },
+    "author_2021_result_screenshot": {
+      "url": "https://www.fmz.com/upload/asset/167521e5bd36ee139298.png",
+      "sha256": "7d206bd04e9c9e4a3bda7e9e882f23ca213d51bb0b10eda9013d77bccc4a81a0"
+    },
+    "applied_parameters": {
+      "targetProfit": 10,
+      "amount": 0.005,
+      "totalEq": -1,
+      "isReset": false,
+      "pricePrecision": 2,
+      "amountPrecision": 3,
+      "isSimulate": false,
+      "SpecifyPosField": "",
+      "showLine": false,
+      "mode": 0,
+      "maxPendingDiff": 60,
+      "increment": false
+    }
+  },
+  "venue": [
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/5m/ETHUSDT-5m-2020-12.zip",
+      "archive_sha256": "2c097c2db6f33d4517f5ab1a6f43140538b752bb7d1a7f48337b478e12cbdeb2",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/5m/ETHUSDT-5m-2021-01.zip",
+      "archive_sha256": "8dc831f63e33755739d465e586cbe3e520c1bbe1227b1790b17cd21bb9a547cd",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/5m/ETHUSDT-5m-2021-02.zip",
+      "archive_sha256": "4fc5a26b0132d58de647b392826fd56edf4e627d83d1ddb8fb0c06c25afd1fa6",
+      "rows": 8064
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/5m/ETHUSDT-5m-2021-03.zip",
+      "archive_sha256": "524028d905ad2ed73ed6bb38d16191741c8338a48d1765310f25b567e2837723",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/5m/ETHUSDT-5m-2021-04.zip",
+      "archive_sha256": "312d810fa2e03b6640aeceab01cfc95ad64a3333ccf9c353950c08ae3a125e16",
+      "rows": 8640
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/5m/ETHUSDT-5m-2021-05.zip",
+      "archive_sha256": "37072bf05f50f78cb73f81918a864718aadae38f74195e0e19348e9eae085cbe",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/5m/ETHUSDT-5m-2021-06.zip",
+      "archive_sha256": "005912a99d12ce0f09310d63b8c98563db2befad017ecf2b2b1776c047cff39f",
+      "rows": 8640
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/5m/ETHUSDT-5m-2021-07.zip",
+      "archive_sha256": "2d13ae8d38a6c413d4f9d3627eb89e12396087742353ff8fd9190a534f0148d1",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2020-12.zip",
+      "archive_sha256": "0a8bc12b450e0271e8a05424421979f5ccc27b4b6a8cf8875a7a7914452d4be5",
+      "rows": 8924
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-01.zip",
+      "archive_sha256": "83c186d04b38a7e3d5c8a44cc3dfc21ba353025080b6ef6edece36ff2081d281",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-02.zip",
+      "archive_sha256": "011479ef398c75a0c4f7504396348c5c50132f1bf76d873873b0681970158cfe",
+      "rows": 8064
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-03.zip",
+      "archive_sha256": "c852872b32aa22d7996d6d42f2ba94e102477ea9c7177efae68ed96a7ccffee7",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-04.zip",
+      "archive_sha256": "8cbb6b5dab60954bfe6692307186f870001175da16caa026398f1d31a97f46d9",
+      "rows": 8640
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-05.zip",
+      "archive_sha256": "d2c61f9f6affbad7be52a378e72e8419d33cfc9135ffa6c634ffbb4a7a7a2fcf",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-06.zip",
+      "archive_sha256": "fcc3b9dcec756a4807b551851519280d8719bf1fcf17ee82d3fbd0a5d07cfa52",
+      "rows": 8640
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/indexPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-07.zip",
+      "archive_sha256": "d8a7fd1463389e7836b9338ea40bc08478a3ecc3b6cca96022f7c987cb1405c3",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2020-12.zip",
+      "archive_sha256": "6df3f562ccbd40f02e0d91bf0d0a819157d9fb950215faf6c8f1b1a8d6ac9077",
+      "rows": 8924
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-01.zip",
+      "archive_sha256": "dd0b8532aca2808392dbee76cf341c3495262c1d831511b299b735c93bf4c356",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-02.zip",
+      "archive_sha256": "1d94c04d24030ae54be596dc38ba7ab9f2bdd710c2e298db79c877c3a0796a2f",
+      "rows": 8064
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-03.zip",
+      "archive_sha256": "56918e06c53d906b19d2f0f10da62eab45506251c55f8b76391b346309863ab3",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-04.zip",
+      "archive_sha256": "4acd362ed609c4414cfcfa6ca0aab7529bd599b3a605c42339c31cd97cb6b183",
+      "rows": 8640
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-05.zip",
+      "archive_sha256": "219d55bb48850960c7ea0e4d7664bf420aebd7ac3485a30c0d1a8272690fb8f7",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-06.zip",
+      "archive_sha256": "fedd86bd3db3d1ebbbeddc472b49586b280644f381f16bd974e16270f5832e3f",
+      "rows": 8640
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2021-07.zip",
+      "archive_sha256": "064eaf94e6cf880f7c963064fdd999a2832fac1083b12db22faae0160aa8826e",
+      "rows": 8928
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2020-12.zip",
+      "archive_sha256": "f99267a3fef35dd201e76c8338be877fb52883376b4cd0acb890a1387de0b0d4",
+      "rows": 93
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-01.zip",
+      "archive_sha256": "4c18c1df8904dea9770aeba5326d26b3fa9a3ffac4891f5f7125d4be2da847c0",
+      "rows": 93
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-02.zip",
+      "archive_sha256": "15e9a939f253a11fc1af2858bb3844f3d39019ccf7efa66a9456f0f60afba3dd",
+      "rows": 84
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-03.zip",
+      "archive_sha256": "2bcaadc8206cb8d76a26f0f3cbf97020b747545b0e75c3dd8a3b195b435478a5",
+      "rows": 93
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-04.zip",
+      "archive_sha256": "2fee34e8b9b6e828d01bab0df1c67104f7a98f3c063668c8db627b802ffa5a95",
+      "rows": 90
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-05.zip",
+      "archive_sha256": "21809ef6691a1441bd55ba4af4494a038d1a399ae0ae432e80cb41b47d71f3bd",
+      "rows": 93
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ETHUSDT/ETHUSDT-fundingRate-2021-06.zip",
+      "archive_sha256": "8e58ccf8f52c69c55754492daafadab92d4ca8c8bd027f4532582d06e9f36063",
+      "rows": 90
+    }
+  ],
+  "proof": {
+    "input_sha256": "1a9cddbd5e7b451df410c6ab08b81658afee75470d5f82445981c944b3fbcf7c",
+    "base_run_sha256": "24911c521adfbf426dc74115b4527954bf274774f010f55c2102405f4cbc4dd0",
+    "audited_run_sha256": "21ec4f4f34fd9d4bfeedb0bbe195f0bd42f67a61a84e657ca92d436a791680ea",
+    "incomplete_halfyear_run_sha256": "87eec1dc74035c4ae9e822aa59502a9853bb563066b67092935eb41840f9dc51",
+    "stage_sha256": "133da041db6ee60cbd4be0b9fab2a8d69749a95452a172ef2c0c413a635bd682",
+    "worker_sha256": "e90d564a31ad675591e12420f3c2c1ce38d253082c149b8e0e3874e1104f5627",
+    "verifier_sha256": "388eaf8b36f7ba71db3e5a5dd3aadf98996a39801394b0e8235ed00765208a1b",
+    "pinned_fmz_wasm": "10759660cb8d8979176908703326e8e2a83d9f25edc31e11e0b22330f7d3b483",
+    "primary_order_and_financial_states_match_tail_audit": true,
+    "position_account_snapshots": 289
+  },
+  "completed_scope": {
+    "terminal_ETH": 0.205,
+    "terminal_pending_order_ids": [
+      223,
+      224
+    ],
+    "total_paid_funding_USDT": -0.17688394280364983,
+    "unallocated_open_order_fee_USDT": 0.047351768,
+    "unallocated_funding_USDT": -0.17519631405764982,
+    "funding_receipts": {
+      "1621382400000": {
+        "native_snapshot_ms": 1621382400000,
+        "native_funding_USDT": -0.001687628746,
+        "funding_rate": 0.0001,
+        "native_cash_implied_reference_USDT": 3375.257492,
+        "exposed_long_ETH": 0.005,
+        "official_index_open_USDT": 3374.92,
+        "official_mark_open_USDT": 3376.01
+      },
+      "1621411200003": {
+        "native_snapshot_ms": 1621411500000,
+        "native_funding_USDT": -0.17519631405764982,
+        "funding_rate": 0.00053311,
+        "native_cash_implied_reference_USDT": 2987.551845136,
+        "exposed_long_ETH": 0.11,
+        "official_index_open_USDT": 2985.96,
+        "official_mark_open_USDT": 2987.18
+      }
+    },
+    "five_minute_marked_equity": [
+      [
+        1621353600000,
+        10000.0
+      ],
+      [
+        1621353900000,
+        10000.078886534
+      ],
+      [
+        1621354200000,
+        10000.120087894
+      ],
+      [
+        1621354500000,
+        9999.916868626
+      ],
+      [
+        1621354800000,
+        10000.214691362
+      ],
+      [
+        1621355100000,
+        10000.19150213
+      ],
+      [
+        1621355400000,
+        10000.309339474
+      ],
+      [
+        1621355700000,
+        10000.325384658
+      ],
+      [
+        1621356000000,
+        10000.403927306
+      ],
+      [
+        1621356300000,
+        10000.451203354
+      ],
+      [
+        1621356600000,
+        10000.42438139
+      ],
+      [
+        1621356900000,
+        10000.39553139
+      ],
+      [
+        1621357200000,
+        10000.42733139
+      ],
+      [
+        1621357500000,
+        10000.244916974
+      ],
+      [
+        1621357800000,
+        10000.368816974
+      ],
+      [
+        1621358100000,
+        10000.54577259
+      ],
+      [
+        1621358400000,
+        10000.519704862
+      ],
+      [
+        1621358700000,
+        10000.593033134
+      ],
+      [
+        1621359000000,
+        10000.62916285
+      ],
+      [
+        1621359300000,
+        10000.603367886
+      ],
+      [
+        1621359600000,
+        10000.689305642
+      ],
+      [
+        1621359900000,
+        10000.673105642
+      ],
+      [
+        1621360200000,
+        10000.561105642
+      ],
+      [
+        1621360500000,
+        10000.50404545
+      ],
+      [
+        1621360800000,
+        10000.46714545
+      ],
+      [
+        1621361100000,
+        9999.700594754
+      ],
+      [
+        1621361400000,
+        9999.923844754
+      ],
+      [
+        1621361700000,
+        10000.201594754
+      ],
+      [
+        1621362000000,
+        9999.923094754
+      ],
+      [
+        1621362300000,
+        10000.212344754
+      ],
+      [
+        1621362600000,
+        10000.210344754
+      ],
+      [
+        1621362900000,
+        10000.199844754
+      ],
+      [
+        1621363200000,
+        9999.309805618
+      ],
+      [
+        1621363500000,
+        10000.016305618
+      ],
+      [
+        1621363800000,
+        9999.491005618
+      ],
+      [
+        1621364100000,
+        9999.546223086
+      ],
+      [
+        1621364400000,
+        10000.106923086
+      ],
+      [
+        1621364700000,
+        10000.401973086
+      ],
+      [
+        1621365000000,
+        9999.784923086
+      ],
+      [
+        1621365300000,
+        9999.339023086
+      ],
+      [
+        1621365600000,
+        10000.416840978
+      ],
+      [
+        1621365900000,
+        9999.758040978
+      ],
+      [
+        1621366200000,
+        9999.495240978
+      ],
+      [
+        1621366500000,
+        9999.468440978
+      ],
+      [
+        1621366800000,
+        10000.182040978
+      ],
+      [
+        1621367100000,
+        10001.018811378
+      ],
+      [
+        1621367400000,
+        10001.066079698
+      ],
+      [
+        1621367700000,
+        10001.09622419
+      ],
+      [
+        1621368000000,
+        10001.113364682
+      ],
+      [
+        1621368300000,
+        10001.114497814
+      ],
+      [
+        1621368600000,
+        10001.160634946
+      ],
+      [
+        1621368900000,
+        10001.15573289
+      ],
+      [
+        1621369200000,
+        10001.204486582
+      ],
+      [
+        1621369500000,
+        10001.255280214
+      ],
+      [
+        1621369800000,
+        10001.058217022
+      ],
+      [
+        1621370100000,
+        10001.158217022
+      ],
+      [
+        1621370400000,
+        10001.163267022
+      ],
+      [
+        1621370700000,
+        10001.144617022
+      ],
+      [
+        1621371000000,
+        10001.205117022
+      ],
+      [
+        1621371300000,
+        10001.099567022
+      ],
+      [
+        1621371600000,
+        10001.133817022
+      ],
+      [
+        1621371900000,
+        10000.967934174
+      ],
+      [
+        1621372200000,
+        10001.028034174
+      ],
+      [
+        1621372500000,
+        10001.077034174
+      ],
+      [
+        1621372800000,
+        10001.195834174
+      ],
+      [
+        1621373100000,
+        10001.267534174
+      ],
+      [
+        1621373400000,
+        10001.158934174
+      ],
+      [
+        1621373700000,
+        10001.286634174
+      ],
+      [
+        1621374000000,
+        10001.258034174
+      ],
+      [
+        1621374300000,
+        10001.349796134
+      ],
+      [
+        1621374600000,
+        10001.373588674
+      ],
+      [
+        1621374900000,
+        10001.397077214
+      ],
+      [
+        1621375200000,
+        10001.400665858
+      ],
+      [
+        1621375500000,
+        10001.328815858
+      ],
+      [
+        1621375800000,
+        10001.39941345
+      ],
+      [
+        1621376100000,
+        10001.450530078
+      ],
+      [
+        1621376400000,
+        10001.482980078
+      ],
+      [
+        1621376700000,
+        10001.538864466
+      ],
+      [
+        1621377000000,
+        10001.555852526
+      ],
+      [
+        1621377300000,
+        10001.586136586
+      ],
+      [
+        1621377600000,
+        10001.624022042
+      ],
+      [
+        1621377900000,
+        10001.680622134
+      ],
+      [
+        1621378200000,
+        10001.66785629
+      ],
+      [
+        1621378500000,
+        10001.504597294
+      ],
+      [
+        1621378800000,
+        10001.300195806
+      ],
+      [
+        1621379100000,
+        10000.542903038
+      ],
+      [
+        1621379400000,
+        10000.556103038
+      ],
+      [
+        1621379700000,
+        10000.725703038
+      ],
+      [
+        1621380000000,
+        10001.127303038
+      ],
+      [
+        1621380300000,
+        10001.114703038
+      ],
+      [
+        1621380600000,
+        10001.648903038
+      ],
+      [
+        1621380900000,
+        10001.136503038
+      ],
+      [
+        1621381200000,
+        10000.822503038
+      ],
+      [
+        1621381500000,
+        10001.163103038
+      ],
+      [
+        1621381800000,
+        10001.795903038
+      ],
+      [
+        1621382100000,
+        10001.79821041
+      ],
+      [
+        1621382400000,
+        10001.782922781254
+      ],
+      [
+        1621382700000,
+        10001.649825573253
+      ],
+      [
+        1621383000000,
+        10001.962812837253
+      ],
+      [
+        1621383300000,
+        10001.990838049254
+      ],
+      [
+        1621383600000,
+        10002.010067261253
+      ],
+      [
+        1621383900000,
+        10002.057338469254
+      ],
+      [
+        1621384200000,
+        10002.104599821254
+      ],
+      [
+        1621384500000,
+        10002.002727705254
+      ],
+      [
+        1621384800000,
+        10001.995927705255
+      ],
+      [
+        1621385100000,
+        10002.135527705253
+      ],
+      [
+        1621385400000,
+        10001.751925545253
+      ],
+      [
+        1621385700000,
+        10001.683675545253
+      ],
+      [
+        1621386000000,
+        10001.481580989255
+      ],
+      [
+        1621386300000,
+        10001.220194589254
+      ],
+      [
+        1621386600000,
+        10000.905694589253
+      ],
+      [
+        1621386900000,
+        9999.853394505253
+      ],
+      [
+        1621387200000,
+        9999.034130641254
+      ],
+      [
+        1621387500000,
+        9998.297729385253
+      ],
+      [
+        1621387800000,
+        9998.365229385254
+      ],
+      [
+        1621388100000,
+        9998.067329385252
+      ],
+      [
+        1621388400000,
+        9997.626940233255
+      ],
+      [
+        1621388700000,
+        9996.642748989252
+      ],
+      [
+        1621389000000,
+        9994.874617605254
+      ],
+      [
+        1621389300000,
+        9995.400452265254
+      ],
+      [
+        1621389600000,
+        9995.269152265255
+      ],
+      [
+        1621389900000,
+        9997.787252265254
+      ],
+      [
+        1621390200000,
+        9995.514202265254
+      ],
+      [
+        1621390500000,
+        9994.671802265255
+      ],
+      [
+        1621390800000,
+        9993.110885797254
+      ],
+      [
+        1621391100000,
+        9995.604985797254
+      ],
+      [
+        1621391400000,
+        9994.277085797254
+      ],
+      [
+        1621391700000,
+        9993.433585797255
+      ],
+      [
+        1621392000000,
+        9994.902185797255
+      ],
+      [
+        1621392300000,
+        9995.665185797254
+      ],
+      [
+        1621392600000,
+        9994.360385797254
+      ],
+      [
+        1621392900000,
+        9991.792375797253
+      ],
+      [
+        1621393200000,
+        9989.601323809255
+      ],
+      [
+        1621393500000,
+        9986.657484609254
+      ],
+      [
+        1621393800000,
+        9990.607434609254
+      ],
+      [
+        1621394100000,
+        9988.663484609255
+      ],
+      [
+        1621394400000,
+        9989.014534609254
+      ],
+      [
+        1621394700000,
+        9990.882834609254
+      ],
+      [
+        1621395000000,
+        9993.056284609254
+      ],
+      [
+        1621395300000,
+        9991.515234609255
+      ],
+      [
+        1621395600000,
+        9992.041384609254
+      ],
+      [
+        1621395900000,
+        9989.254234609254
+      ],
+      [
+        1621396200000,
+        9989.487984609254
+      ],
+      [
+        1621396500000,
+        9990.234284609254
+      ],
+      [
+        1621396800000,
+        9988.833484609255
+      ],
+      [
+        1621397100000,
+        9989.644384609253
+      ],
+      [
+        1621397400000,
+        9987.170884609253
+      ],
+      [
+        1621397700000,
+        9985.523584609255
+      ],
+      [
+        1621398000000,
+        9981.432964761254
+      ],
+      [
+        1621398300000,
+        9979.047811357254
+      ],
+      [
+        1621398600000,
+        9974.541318581254
+      ],
+      [
+        1621398900000,
+        9978.642318581255
+      ],
+      [
+        1621399200000,
+        9975.609318581253
+      ],
+      [
+        1621399500000,
+        9973.768844073253
+      ],
+      [
+        1621399800000,
+        9972.114044073252
+      ],
+      [
+        1621400100000,
+        9966.308346097254
+      ],
+      [
+        1621400400000,
+        9973.812546097253
+      ],
+      [
+        1621400700000,
+        9978.871446097253
+      ],
+      [
+        1621401000000,
+        9979.235546097254
+      ],
+      [
+        1621401300000,
+        9981.082446097254
+      ],
+      [
+        1621401600000,
+        9978.997946097254
+      ],
+      [
+        1621401900000,
+        9983.797246097254
+      ],
+      [
+        1621402200000,
+        9983.645446097255
+      ],
+      [
+        1621402500000,
+        9978.874746097254
+      ],
+      [
+        1621402800000,
+        9975.669346097255
+      ],
+      [
+        1621403100000,
+        9974.504446097253
+      ],
+      [
+        1621403400000,
+        9972.355046097255
+      ],
+      [
+        1621403700000,
+        9974.985146097253
+      ],
+      [
+        1621404000000,
+        9973.315346097253
+      ],
+      [
+        1621404300000,
+        9978.066246097254
+      ],
+      [
+        1621404600000,
+        9980.734846097253
+      ],
+      [
+        1621404900000,
+        9980.833846097254
+      ],
+      [
+        1621405200000,
+        9980.878946097255
+      ],
+      [
+        1621405500000,
+        9980.869046097254
+      ],
+      [
+        1621405800000,
+        9982.061446097254
+      ],
+      [
+        1621406100000,
+        9977.589946097254
+      ],
+      [
+        1621406400000,
+        9976.521846097254
+      ],
+      [
+        1621406700000,
+        9975.597846097255
+      ],
+      [
+        1621407000000,
+        9975.983946097254
+      ],
+      [
+        1621407300000,
+        9973.208646097253
+      ],
+      [
+        1621407600000,
+        9975.023646097254
+      ],
+      [
+        1621407900000,
+        9974.300946097253
+      ],
+      [
+        1621408200000,
+        9972.060246097253
+      ],
+      [
+        1621408500000,
+        9967.109146097255
+      ],
+      [
+        1621408800000,
+        9974.178846097255
+      ],
+      [
+        1621409100000,
+        9973.600246097254
+      ],
+      [
+        1621409400000,
+        9975.637446097255
+      ],
+      [
+        1621409700000,
+        9973.348346097255
+      ],
+      [
+        1621410000000,
+        9976.126946097254
+      ],
+      [
+        1621410300000,
+        9980.348746097254
+      ],
+      [
+        1621410600000,
+        9978.818646097254
+      ],
+      [
+        1621410900000,
+        9979.730546097255
+      ],
+      [
+        1621411200000,
+        9979.161846097253
+      ],
+      [
+        1621411500000,
+        9977.831649783197
+      ],
+      [
+        1621411800000,
+        9976.341149783197
+      ],
+      [
+        1621412100000,
+        9974.424949783195
+      ],
+      [
+        1621412400000,
+        9973.660449783196
+      ],
+      [
+        1621412700000,
+        9972.190849783196
+      ],
+      [
+        1621413000000,
+        9975.504049783196
+      ],
+      [
+        1621413300000,
+        9975.653649783197
+      ],
+      [
+        1621413600000,
+        9977.423549783196
+      ],
+      [
+        1621413900000,
+        9977.524749783195
+      ],
+      [
+        1621414200000,
+        9979.820449783196
+      ],
+      [
+        1621414500000,
+        9979.572949783196
+      ],
+      [
+        1621414800000,
+        9978.449849783196
+      ],
+      [
+        1621415100000,
+        9980.606949783196
+      ],
+      [
+        1621415400000,
+        9980.884149783196
+      ],
+      [
+        1621415700000,
+        9979.039449783197
+      ],
+      [
+        1621416000000,
+        9977.012149783195
+      ],
+      [
+        1621416300000,
+        9976.773449783195
+      ],
+      [
+        1621416600000,
+        9975.878049783196
+      ],
+      [
+        1621416900000,
+        9975.874749783196
+      ],
+      [
+        1621417200000,
+        9975.100349783195
+      ],
+      [
+        1621417500000,
+        9974.749449783196
+      ],
+      [
+        1621417800000,
+        9973.905749783196
+      ],
+      [
+        1621418100000,
+        9975.312649783196
+      ],
+      [
+        1621418400000,
+        9977.904249783196
+      ],
+      [
+        1621418700000,
+        9976.205849783197
+      ],
+      [
+        1621419000000,
+        9973.374449783196
+      ],
+      [
+        1621419300000,
+        9971.649649783196
+      ],
+      [
+        1621419600000,
+        9972.783749783195
+      ],
+      [
+        1621419900000,
+        9971.292149783196
+      ],
+      [
+        1621420200000,
+        9971.122749783195
+      ],
+      [
+        1621420500000,
+        9967.223249783196
+      ],
+      [
+        1621420800000,
+        9965.341958019197
+      ],
+      [
+        1621421100000,
+        9965.392819427196
+      ],
+      [
+        1621421400000,
+        9961.267032639196
+      ],
+      [
+        1621421700000,
+        9961.743282639196
+      ],
+      [
+        1621422000000,
+        9965.622032639196
+      ],
+      [
+        1621422300000,
+        9961.925782639197
+      ],
+      [
+        1621422600000,
+        9959.461306071196
+      ],
+      [
+        1621422900000,
+        9958.034036327195
+      ],
+      [
+        1621423200000,
+        9948.081374859195
+      ],
+      [
+        1621423500000,
+        9946.291588367198
+      ],
+      [
+        1621423800000,
+        9937.434307247197
+      ],
+      [
+        1621424100000,
+        9934.824854483197
+      ],
+      [
+        1621424400000,
+        9945.429404483197
+      ],
+      [
+        1621424700000,
+        9943.315754483197
+      ],
+      [
+        1621425000000,
+        9935.367704483197
+      ],
+      [
+        1621425300000,
+        9950.004854483197
+      ],
+      [
+        1621425600000,
+        9948.965354483196
+      ],
+      [
+        1621425900000,
+        9955.029104483197
+      ],
+      [
+        1621426200000,
+        9952.019504483196
+      ],
+      [
+        1621426500000,
+        9949.435604483197
+      ],
+      [
+        1621426800000,
+        9943.705154483197
+      ],
+      [
+        1621427100000,
+        9938.395454483198
+      ],
+      [
+        1621427400000,
+        9937.050704483197
+      ],
+      [
+        1621427700000,
+        9922.647594403195
+      ],
+      [
+        1621428000000,
+        9921.800994403195
+      ],
+      [
+        1621428300000,
+        9898.190796515197
+      ],
+      [
+        1621428600000,
+        9885.264931427197
+      ],
+      [
+        1621428900000,
+        9821.881360139198
+      ],
+      [
+        1621429200000,
+        9882.510760139197
+      ],
+      [
+        1621429500000,
+        9860.731210139196
+      ],
+      [
+        1621429800000,
+        9738.393567739196
+      ],
+      [
+        1621430100000,
+        9840.402951739197
+      ],
+      [
+        1621430400000,
+        9854.591001739196
+      ],
+      [
+        1621430700000,
+        9871.107851739196
+      ],
+      [
+        1621431000000,
+        9852.985851739197
+      ],
+      [
+        1621431300000,
+        9887.729251739196
+      ],
+      [
+        1621431600000,
+        9912.521951739198
+      ],
+      [
+        1621431900000,
+        9884.477951739196
+      ],
+      [
+        1621432200000,
+        9875.949951739198
+      ],
+      [
+        1621432500000,
+        9912.159101739197
+      ],
+      [
+        1621432800000,
+        9919.561651739197
+      ],
+      [
+        1621433100000,
+        9889.684951739197
+      ],
+      [
+        1621433400000,
+        9908.795051739196
+      ],
+      [
+        1621433700000,
+        9905.828701739198
+      ],
+      [
+        1621434000000,
+        9909.897951739196
+      ],
+      [
+        1621434300000,
+        9922.706351739196
+      ],
+      [
+        1621434600000,
+        9915.410401739196
+      ],
+      [
+        1621434900000,
+        9911.658901739196
+      ],
+      [
+        1621435200000,
+        9907.255501739197
+      ],
+      [
+        1621435500000,
+        9896.857901739197
+      ],
+      [
+        1621435800000,
+        9917.023751739198
+      ],
+      [
+        1621436100000,
+        9921.353351739197
+      ],
+      [
+        1621436400000,
+        9946.008701739196
+      ],
+      [
+        1621436700000,
+        9931.855501739197
+      ],
+      [
+        1621437000000,
+        9947.708151739196
+      ],
+      [
+        1621437300000,
+        9956.289451739198
+      ],
+      [
+        1621437600000,
+        9969.997801739197
+      ],
+      [
+        1621437900000,
+        9953.575251739197
+      ],
+      [
+        1621438200000,
+        9951.246451739196
+      ],
+      [
+        1621438500000,
+        9959.913851739197
+      ],
+      [
+        1621438800000,
+        9961.625601739197
+      ],
+      [
+        1621439100000,
+        9972.146201739197
+      ],
+      [
+        1621439400000,
+        9974.614401739196
+      ],
+      [
+        1621439700000,
+        9968.351651739196
+      ],
+      [
+        1621440000000,
+        9973.878451739198
+      ]
+    ],
+    "receipts": [
+      {
+        "id": 1,
+        "submission_ms": 1621353600600,
+        "status_observed_by_ms": 1621353663200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3336.94,
+        "fee_USDT": 0.001334776
+      },
+      {
+        "id": 4,
+        "submission_ms": 1621353716600,
+        "status_observed_by_ms": 1621353716600,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3352.1,
+        "fee_USDT": 0.00167605,
+        "realized_gross_USDT": 0.0758,
+        "allocated_entry_fee_USDT": 0.001334776,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 6,
+        "submission_ms": 1621353774600,
+        "status_observed_by_ms": 1621353827533,
+        "direction": "sell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3381.6,
+        "fee_USDT": 0.00135264
+      },
+      {
+        "id": 7,
+        "submission_ms": 1621353861400,
+        "status_observed_by_ms": 1621354127533,
+        "direction": "closesell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3371.6,
+        "fee_USDT": 0.00134864,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.00135264,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 9,
+        "submission_ms": 1621354161400,
+        "status_observed_by_ms": 1621354301866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3352.15,
+        "fee_USDT": 0.00134086
+      },
+      {
+        "id": 11,
+        "submission_ms": 1621354355066,
+        "status_observed_by_ms": 1621354427533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3321.02,
+        "fee_USDT": 0.001328408
+      },
+      {
+        "id": 14,
+        "submission_ms": 1621354461600,
+        "status_observed_by_ms": 1621354727533,
+        "direction": "closebuy",
+        "dealt_ETH": 0.01,
+        "price_USDT": 3346.58,
+        "fee_USDT": 0.002677264,
+        "realized_gross_USDT": 0.09995,
+        "allocated_entry_fee_USDT": 0.002669268,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 15,
+        "submission_ms": 1621354761400,
+        "status_observed_by_ms": 1621355027533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3348.08,
+        "fee_USDT": 0.001339232
+      },
+      {
+        "id": 17,
+        "submission_ms": 1621355061400,
+        "status_observed_by_ms": 1621355134200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3331.78,
+        "fee_USDT": 0.001332712
+      },
+      {
+        "id": 20,
+        "submission_ms": 1621355158600,
+        "status_observed_by_ms": 1621355259866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.01,
+        "price_USDT": 3349.93,
+        "fee_USDT": 0.002679944,
+        "realized_gross_USDT": 0.1,
+        "allocated_entry_fee_USDT": 0.002671944,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 21,
+        "submission_ms": 1621355322733,
+        "status_observed_by_ms": 1621355434200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3371.83,
+        "fee_USDT": 0.001348732
+      },
+      {
+        "id": 24,
+        "submission_ms": 1621355458600,
+        "status_observed_by_ms": 1621355559866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3381.83,
+        "fee_USDT": 0.001352732,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001348732,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 25,
+        "submission_ms": 1621355622733,
+        "status_observed_by_ms": 1621355646866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3383.38,
+        "fee_USDT": 0.001353352
+      },
+      {
+        "id": 28,
+        "submission_ms": 1621355680933,
+        "status_observed_by_ms": 1621355859866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3393.38,
+        "fee_USDT": 0.001357352,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001353352,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 29,
+        "submission_ms": 1621355922733,
+        "status_observed_by_ms": 1621356034200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3399.94,
+        "fee_USDT": 0.001359976
+      },
+      {
+        "id": 32,
+        "submission_ms": 1621356058600,
+        "status_observed_by_ms": 1621356159866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3409.94,
+        "fee_USDT": 0.001363976,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001359976,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 33,
+        "submission_ms": 1621356222733,
+        "status_observed_by_ms": 1621356401866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3429.91,
+        "fee_USDT": 0.001371964
+      },
+      {
+        "id": 35,
+        "submission_ms": 1621356455066,
+        "status_observed_by_ms": 1621357466200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3411.04,
+        "fee_USDT": 0.001364416
+      },
+      {
+        "id": 38,
+        "submission_ms": 1621357500600,
+        "status_observed_by_ms": 1621358027533,
+        "direction": "closebuy",
+        "dealt_ETH": 0.01,
+        "price_USDT": 3430.48,
+        "fee_USDT": 0.002744384,
+        "realized_gross_USDT": 0.10005,
+        "allocated_entry_fee_USDT": 0.00273638,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 39,
+        "submission_ms": 1621358061400,
+        "status_observed_by_ms": 1621358259866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3419.32,
+        "fee_USDT": 0.001367728
+      },
+      {
+        "id": 42,
+        "submission_ms": 1621358322933,
+        "status_observed_by_ms": 1621358627533,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3429.32,
+        "fee_USDT": 0.001371728,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001367728,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 43,
+        "submission_ms": 1621358661400,
+        "status_observed_by_ms": 1621358927533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3425.71,
+        "fee_USDT": 0.001370284
+      },
+      {
+        "id": 46,
+        "submission_ms": 1621358961600,
+        "status_observed_by_ms": 1621359034200,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3435.71,
+        "fee_USDT": 0.001374284,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001370284,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 47,
+        "submission_ms": 1621359058400,
+        "status_observed_by_ms": 1621359159866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3426.7,
+        "fee_USDT": 0.00137068
+      },
+      {
+        "id": 49,
+        "submission_ms": 1621359222733,
+        "status_observed_by_ms": 1621359363200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3405.61,
+        "fee_USDT": 0.001362244
+      },
+      {
+        "id": 51,
+        "submission_ms": 1621359416400,
+        "status_observed_by_ms": 1621360427533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3400.48,
+        "fee_USDT": 0.001360192
+      },
+      {
+        "id": 53,
+        "submission_ms": 1621360461400,
+        "status_observed_by_ms": 1621360901866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3391.06,
+        "fee_USDT": 0.001356424
+      },
+      {
+        "id": 55,
+        "submission_ms": 1621360955066,
+        "status_observed_by_ms": 1621361027533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3360.68,
+        "fee_USDT": 0.001344272
+      },
+      {
+        "id": 57,
+        "submission_ms": 1621361061400,
+        "status_observed_by_ms": 1621363127533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3347.84,
+        "fee_USDT": 0.001339136
+      },
+      {
+        "id": 59,
+        "submission_ms": 1621363161400,
+        "status_observed_by_ms": 1621364027533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3331.33,
+        "fee_USDT": 0.001332532
+      },
+      {
+        "id": 61,
+        "submission_ms": 1621364061400,
+        "status_observed_by_ms": 1621365363200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3330.27,
+        "fee_USDT": 0.001332108
+      },
+      {
+        "id": 64,
+        "submission_ms": 1621365416600,
+        "status_observed_by_ms": 1621366959866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.04,
+        "price_USDT": 3384.25,
+        "fee_USDT": 0.0108296,
+        "realized_gross_USDT": 0.40015,
+        "allocated_entry_fee_USDT": 0.010797588,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 66,
+        "submission_ms": 1621367022933,
+        "status_observed_by_ms": 1621367163200,
+        "direction": "sell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3419.6,
+        "fee_USDT": 0.00136784
+      },
+      {
+        "id": 67,
+        "submission_ms": 1621367216400,
+        "status_observed_by_ms": 1621367259866,
+        "direction": "closesell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3409.6,
+        "fee_USDT": 0.00136384,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.00136784,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 69,
+        "submission_ms": 1621367322733,
+        "status_observed_by_ms": 1621367627533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3388.77,
+        "fee_USDT": 0.001355508
+      },
+      {
+        "id": 72,
+        "submission_ms": 1621367661600,
+        "status_observed_by_ms": 1621367859866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3398.77,
+        "fee_USDT": 0.001359508,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001355508,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 74,
+        "submission_ms": 1621367922933,
+        "status_observed_by_ms": 1621368227533,
+        "direction": "sell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3417.17,
+        "fee_USDT": 0.001366868
+      },
+      {
+        "id": 75,
+        "submission_ms": 1621368261400,
+        "status_observed_by_ms": 1621368459866,
+        "direction": "closesell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3407.17,
+        "fee_USDT": 0.001362868,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001366868,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 77,
+        "submission_ms": 1621368522733,
+        "status_observed_by_ms": 1621368827533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3380.14,
+        "fee_USDT": 0.001352056
+      },
+      {
+        "id": 79,
+        "submission_ms": 1621368861400,
+        "status_observed_by_ms": 1621369127533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3365.77,
+        "fee_USDT": 0.001346308
+      },
+      {
+        "id": 82,
+        "submission_ms": 1621369161600,
+        "status_observed_by_ms": 1621369359866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.01,
+        "price_USDT": 3382.96,
+        "fee_USDT": 0.002706368,
+        "realized_gross_USDT": 0.10005,
+        "allocated_entry_fee_USDT": 0.002698364,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 84,
+        "submission_ms": 1621369422933,
+        "status_observed_by_ms": 1621369766200,
+        "direction": "sell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3407.98,
+        "fee_USDT": 0.001363192
+      },
+      {
+        "id": 86,
+        "submission_ms": 1621369800600,
+        "status_observed_by_ms": 1621371827533,
+        "direction": "sell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3457.12,
+        "fee_USDT": 0.001382848
+      },
+      {
+        "id": 87,
+        "submission_ms": 1621371861400,
+        "status_observed_by_ms": 1621374159866,
+        "direction": "closesell",
+        "dealt_ETH": 0.01,
+        "price_USDT": 3422.55,
+        "fee_USDT": 0.00273804,
+        "realized_gross_USDT": 0.1,
+        "allocated_entry_fee_USDT": 0.00274604,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 89,
+        "submission_ms": 1621374222733,
+        "status_observed_by_ms": 1621374527533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3393.65,
+        "fee_USDT": 0.00135746
+      },
+      {
+        "id": 92,
+        "submission_ms": 1621374561600,
+        "status_observed_by_ms": 1621374759866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3403.65,
+        "fee_USDT": 0.00136146,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.00135746,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 93,
+        "submission_ms": 1621374822733,
+        "status_observed_by_ms": 1621375059866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3403.39,
+        "fee_USDT": 0.001361356
+      },
+      {
+        "id": 95,
+        "submission_ms": 1621375122733,
+        "status_observed_by_ms": 1621375534200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3381.02,
+        "fee_USDT": 0.001352408
+      },
+      {
+        "id": 98,
+        "submission_ms": 1621375558600,
+        "status_observed_by_ms": 1621375959866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.01,
+        "price_USDT": 3402.2,
+        "fee_USDT": 0.00272176,
+        "realized_gross_USDT": 0.09995,
+        "allocated_entry_fee_USDT": 0.002713764,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 99,
+        "submission_ms": 1621376022733,
+        "status_observed_by_ms": 1621376046866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3404.03,
+        "fee_USDT": 0.001361612
+      },
+      {
+        "id": 102,
+        "submission_ms": 1621376080933,
+        "status_observed_by_ms": 1621376627533,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3414.03,
+        "fee_USDT": 0.001365612,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001361612,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 103,
+        "submission_ms": 1621376661400,
+        "status_observed_by_ms": 1621376927533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3404.85,
+        "fee_USDT": 0.00136194
+      },
+      {
+        "id": 106,
+        "submission_ms": 1621376961600,
+        "status_observed_by_ms": 1621377159866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3414.85,
+        "fee_USDT": 0.00136594,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.00136194,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 107,
+        "submission_ms": 1621377222733,
+        "status_observed_by_ms": 1621377566200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3411.36,
+        "fee_USDT": 0.001364544
+      },
+      {
+        "id": 109,
+        "submission_ms": 1621377600400,
+        "status_observed_by_ms": 1621377663200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3409.21,
+        "fee_USDT": 0.001363684
+      },
+      {
+        "id": 112,
+        "submission_ms": 1621377716600,
+        "status_observed_by_ms": 1621377827533,
+        "direction": "closebuy",
+        "dealt_ETH": 0.01,
+        "price_USDT": 3420.28,
+        "fee_USDT": 0.002736224,
+        "realized_gross_USDT": 0.09995,
+        "allocated_entry_fee_USDT": 0.002728228,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 113,
+        "submission_ms": 1621377861400,
+        "status_observed_by_ms": 1621378059866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3414.61,
+        "fee_USDT": 0.001365844
+      },
+      {
+        "id": 115,
+        "submission_ms": 1621378122733,
+        "status_observed_by_ms": 1621378466200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3397.49,
+        "fee_USDT": 0.001358996
+      },
+      {
+        "id": 117,
+        "submission_ms": 1621378500400,
+        "status_observed_by_ms": 1621378659866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3378.72,
+        "fee_USDT": 0.001351488
+      },
+      {
+        "id": 119,
+        "submission_ms": 1621378722733,
+        "status_observed_by_ms": 1621378959866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3356.92,
+        "fee_USDT": 0.001342768
+      },
+      {
+        "id": 122,
+        "submission_ms": 1621379022933,
+        "status_observed_by_ms": 1621381834200,
+        "direction": "closebuy",
+        "dealt_ETH": 0.02,
+        "price_USDT": 3396.94,
+        "fee_USDT": 0.005435104,
+        "realized_gross_USDT": 0.2001,
+        "allocated_entry_fee_USDT": 0.005419096,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 123,
+        "submission_ms": 1621381858400,
+        "status_observed_by_ms": 1621381959866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3393.81,
+        "fee_USDT": 0.001357524
+      },
+      {
+        "id": 125,
+        "submission_ms": 1621382022733,
+        "status_observed_by_ms": 1621382627533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3368.02,
+        "fee_USDT": 0.001347208
+      },
+      {
+        "id": 128,
+        "submission_ms": 1621382661600,
+        "status_observed_by_ms": 1621382859866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.01,
+        "price_USDT": 3390.92,
+        "fee_USDT": 0.002712736,
+        "realized_gross_USDT": 0.10005,
+        "allocated_entry_fee_USDT": 0.002704732,
+        "attributed_funding_USDT": -0.001687628746
+      },
+      {
+        "id": 130,
+        "submission_ms": 1621382922933,
+        "status_observed_by_ms": 1621383159866,
+        "direction": "sell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3436.97,
+        "fee_USDT": 0.001374788
+      },
+      {
+        "id": 131,
+        "submission_ms": 1621383222733,
+        "status_observed_by_ms": 1621383401866,
+        "direction": "closesell",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3426.97,
+        "fee_USDT": 0.001370788,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001374788,
+        "attributed_funding_USDT": 0.0
+      },
+      {
+        "id": 133,
+        "submission_ms": 1621383455066,
+        "status_observed_by_ms": 1621383663200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3405.99,
+        "fee_USDT": 0.001362396
+      },
+      {
+        "id": 136,
+        "submission_ms": 1621383716600,
+        "status_observed_by_ms": 1621383759866,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3415.99,
+        "fee_USDT": 0.001366396,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001362396,
+        "attributed_funding_USDT": -0.0
+      },
+      {
+        "id": 137,
+        "submission_ms": 1621383822733,
+        "status_observed_by_ms": 1621383934200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3418.31,
+        "fee_USDT": 0.001367324
+      },
+      {
+        "id": 140,
+        "submission_ms": 1621383958600,
+        "status_observed_by_ms": 1621384127533,
+        "direction": "closebuy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3428.31,
+        "fee_USDT": 0.001371324,
+        "realized_gross_USDT": 0.05,
+        "allocated_entry_fee_USDT": 0.001367324,
+        "attributed_funding_USDT": -0.0
+      },
+      {
+        "id": 141,
+        "submission_ms": 1621384161400,
+        "status_observed_by_ms": 1621384301866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3415.49,
+        "fee_USDT": 0.001366196
+      },
+      {
+        "id": 143,
+        "submission_ms": 1621384355066,
+        "status_observed_by_ms": 1621384427533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3389.8,
+        "fee_USDT": 0.00135592
+      },
+      {
+        "id": 145,
+        "submission_ms": 1621384461400,
+        "status_observed_by_ms": 1621385327533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3380.4,
+        "fee_USDT": 0.00135216
+      },
+      {
+        "id": 147,
+        "submission_ms": 1621385361400,
+        "status_observed_by_ms": 1621385859866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3361.39,
+        "fee_USDT": 0.001344556
+      },
+      {
+        "id": 149,
+        "submission_ms": 1621385922733,
+        "status_observed_by_ms": 1621386227533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3341.0,
+        "fee_USDT": 0.0013364
+      },
+      {
+        "id": 151,
+        "submission_ms": 1621386261400,
+        "status_observed_by_ms": 1621386701866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3328.98,
+        "fee_USDT": 0.001331592
+      },
+      {
+        "id": 153,
+        "submission_ms": 1621386755066,
+        "status_observed_by_ms": 1621386827533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3296.23,
+        "fee_USDT": 0.001318492
+      },
+      {
+        "id": 155,
+        "submission_ms": 1621386861400,
+        "status_observed_by_ms": 1621387059866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3284.66,
+        "fee_USDT": 0.001313864
+      },
+      {
+        "id": 157,
+        "submission_ms": 1621387122733,
+        "status_observed_by_ms": 1621387359866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3253.14,
+        "fee_USDT": 0.001301256
+      },
+      {
+        "id": 159,
+        "submission_ms": 1621387422733,
+        "status_observed_by_ms": 1621388366200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3222.88,
+        "fee_USDT": 0.001289152
+      },
+      {
+        "id": 161,
+        "submission_ms": 1621388400400,
+        "status_observed_by_ms": 1621388559866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3228.11,
+        "fee_USDT": 0.001291244
+      },
+      {
+        "id": 163,
+        "submission_ms": 1621388622733,
+        "status_observed_by_ms": 1621388859866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3203.46,
+        "fee_USDT": 0.001281384
+      },
+      {
+        "id": 165,
+        "submission_ms": 1621388922733,
+        "status_observed_by_ms": 1621389063200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3163.35,
+        "fee_USDT": 0.00126534
+      },
+      {
+        "id": 167,
+        "submission_ms": 1621389116400,
+        "status_observed_by_ms": 1621390727533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3166.17,
+        "fee_USDT": 0.001266468
+      },
+      {
+        "id": 169,
+        "submission_ms": 1621390761400,
+        "status_observed_by_ms": 1621392827533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3150.0,
+        "fee_USDT": 0.00126
+      },
+      {
+        "id": 171,
+        "submission_ms": 1621392861400,
+        "status_observed_by_ms": 1621393059866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3129.97,
+        "fee_USDT": 0.001251988
+      },
+      {
+        "id": 173,
+        "submission_ms": 1621393122733,
+        "status_observed_by_ms": 1621393359866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3098.0,
+        "fee_USDT": 0.0012392
+      },
+      {
+        "id": 175,
+        "submission_ms": 1621393422733,
+        "status_observed_by_ms": 1621397995200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3049.62,
+        "fee_USDT": 0.001219848
+      },
+      {
+        "id": 177,
+        "submission_ms": 1621398010066,
+        "status_observed_by_ms": 1621398159866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 3008.51,
+        "fee_USDT": 0.001203404
+      },
+      {
+        "id": 179,
+        "submission_ms": 1621398222733,
+        "status_observed_by_ms": 1621398459866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2981.94,
+        "fee_USDT": 0.001192776
+      },
+      {
+        "id": 181,
+        "submission_ms": 1621398522733,
+        "status_observed_by_ms": 1621399359866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2936.27,
+        "fee_USDT": 0.001174508
+      },
+      {
+        "id": 183,
+        "submission_ms": 1621399422733,
+        "status_observed_by_ms": 1621400027533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2869.94,
+        "fee_USDT": 0.001147976
+      },
+      {
+        "id": 185,
+        "submission_ms": 1621400061400,
+        "status_observed_by_ms": 1621420727533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2854.41,
+        "fee_USDT": 0.001141764
+      },
+      {
+        "id": 187,
+        "submission_ms": 1621420761400,
+        "status_observed_by_ms": 1621421027533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2846.48,
+        "fee_USDT": 0.001138592
+      },
+      {
+        "id": 189,
+        "submission_ms": 1621421061400,
+        "status_observed_by_ms": 1621421327533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2841.97,
+        "fee_USDT": 0.001136788
+      },
+      {
+        "id": 191,
+        "submission_ms": 1621421361400,
+        "status_observed_by_ms": 1621422527533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2816.42,
+        "fee_USDT": 0.001126568
+      },
+      {
+        "id": 193,
+        "submission_ms": 1621422561400,
+        "status_observed_by_ms": 1621422827533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2799.36,
+        "fee_USDT": 0.001119744
+      },
+      {
+        "id": 195,
+        "submission_ms": 1621422861400,
+        "status_observed_by_ms": 1621423001866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2786.39,
+        "fee_USDT": 0.001114556
+      },
+      {
+        "id": 197,
+        "submission_ms": 1621423055066,
+        "status_observed_by_ms": 1621423127533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2742.28,
+        "fee_USDT": 0.001096912
+      },
+      {
+        "id": 199,
+        "submission_ms": 1621423161400,
+        "status_observed_by_ms": 1621423427533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2716.23,
+        "fee_USDT": 0.001086492
+      },
+      {
+        "id": 201,
+        "submission_ms": 1621423461400,
+        "status_observed_by_ms": 1621423659866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2702.8,
+        "fee_USDT": 0.00108112
+      },
+      {
+        "id": 203,
+        "submission_ms": 1621423722733,
+        "status_observed_by_ms": 1621423901866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2633.47,
+        "fee_USDT": 0.001053388
+      },
+      {
+        "id": 205,
+        "submission_ms": 1621423955066,
+        "status_observed_by_ms": 1621424027533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2498.44,
+        "fee_USDT": 0.000999376
+      },
+      {
+        "id": 207,
+        "submission_ms": 1621424061400,
+        "status_observed_by_ms": 1621427627533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2525.2,
+        "fee_USDT": 0.00101008
+      },
+      {
+        "id": 209,
+        "submission_ms": 1621427661400,
+        "status_observed_by_ms": 1621428101866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2530.36,
+        "fee_USDT": 0.001012144
+      },
+      {
+        "id": 211,
+        "submission_ms": 1621428155066,
+        "status_observed_by_ms": 1621428227533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2464.36,
+        "fee_USDT": 0.000985744
+      },
+      {
+        "id": 213,
+        "submission_ms": 1621428261400,
+        "status_observed_by_ms": 1621428459866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2412.72,
+        "fee_USDT": 0.000965088
+      },
+      {
+        "id": 215,
+        "submission_ms": 1621428522733,
+        "status_observed_by_ms": 1621428701866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2330.0,
+        "fee_USDT": 0.000932
+      },
+      {
+        "id": 217,
+        "submission_ms": 1621428755066,
+        "status_observed_by_ms": 1621428827533,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 2098.22,
+        "fee_USDT": 0.000839288
+      },
+      {
+        "id": 219,
+        "submission_ms": 1621428861400,
+        "status_observed_by_ms": 1621429659866,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 1981.0,
+        "fee_USDT": 0.0007924
+      },
+      {
+        "id": 221,
+        "submission_ms": 1621429722733,
+        "status_observed_by_ms": 1621429834200,
+        "direction": "buy",
+        "dealt_ETH": 0.005,
+        "price_USDT": 1540.0,
+        "fee_USDT": 0.000616
+      }
+    ]
+  },
+  "incomplete_scope": {
+    "begin_ms": 1609430400000,
+    "configured_end_ms": 1625068800000,
+    "source_abort_ms": 1614092700200,
+    "source_exact_diagnostic": "同时有多空持仓",
+    "dual_side_inventory": [
+      {
+        "Price": 1515.47,
+        "Amount": 0.005,
+        "FrozenAmount": 0,
+        "Profit": 0.1531,
+        "Margin": 0.757735,
+        "MarginLevel": 10,
+        "Type": 0,
+        "Symbol": "ETH_USDT.swap",
+        "ContractType": "swap"
+      },
+      {
+        "Price": 1535.47,
+        "Amount": 0.005,
+        "FrozenAmount": 0,
+        "Profit": -0.0531,
+        "Margin": 0.767735,
+        "MarginLevel": 10,
+        "Type": 1,
+        "Symbol": "ETH_USDT.swap",
+        "ContractType": "swap"
+      }
+    ],
+    "orders_before_abort": 3570,
+    "execution_marking": "After source error, the engine still emits final marks. Do not treat those as completed strategy execution."
+  },
+  "scope": {
+    "dates": "Author prototype design names May 19. This independently completed 24-hour cohort uses a UTC+08:00 calendar, starts flat at 10,000 USDT and keeps terminal positions marked. The original six-month author screenshot is for an older revision.",
+    "model": "Current official FMZ local WASM supports generated tick mode. 200 ms default latency, 1d chart, 5m base, zero slippage, and author settings of 0.008% maker/0.01% taker. The local scope uses depth 5 and disabled fault injection. The author screenshot contains depth 20 and tolerance field 0.1. No historical order-book fills are claimed.",
+    "settlement": "Closed reductions are counted individually and funded amounts are allocated to average-price inventory. Independently validates all modeled fills against official bar ranges, native resting status, fees and P&L, and both funding rates against official index and mark ranges.",
+    "limitations": "May 19 provides one stress scenario for execution risk. The study does not estimate median performance. Open long drawdown materially changes the result relative to closed trade win rate."
+  },
+  "references": [
+    "https://www.fmz.com/bbs-topic/7457",
+    "https://github.com/binance/binance-public-data",
+    "https://www.fmz.com/user-guide/backtesting-system/local-backtesting-engine"
+  ]
+}
