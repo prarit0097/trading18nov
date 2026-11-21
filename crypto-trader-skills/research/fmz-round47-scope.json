@@ -1,0 +1,137 @@
+{
+  "schema": "Pinned FMZ strategy scope and eligibility review",
+  "prior_checkpoint_sha256": "be46f6a3b3319e8cf476a9a4c1f8430a9a799531e3a78322b80b2ea43f7cae39",
+  "evidence": [
+    {
+      "id": 391,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/GuoJian_First.md",
+      "source_sha256": "d8fcf56fdb4ef614d9dd63e6eac2623d00d08be8a038f199233f8108b5b4840f",
+      "reviewed_source_lines": [
+        18,
+        19,
+        29,
+        44,
+        50
+      ],
+      "public_references": [
+        "https://www.fmz.com/strategy/113871"
+      ]
+    },
+    {
+      "id": 405,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/HUSD-USD%E7%A8%B3%E5%AE%9A%E5%B8%81%E5%A5%97%E5%88%A9.md",
+      "source_sha256": "2c59af991f9a7acc2ffee9d6c90326a03ecb4f5d2262a17b20fd0f0b6f5b3817",
+      "reviewed_source_lines": [
+        12,
+        14,
+        23,
+        249
+      ],
+      "public_references": [
+        "https://www.fmz.com/strategy/164047"
+      ]
+    },
+    {
+      "id": 1017,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TradingViewWebHook%E7%9B%B4%E8%BF%9E%E7%AD%96%E7%95%A5.md",
+      "source_sha256": "5578b74abf4694fb669d15bf34443d1a09c2466d45ece9bbaf3df4509b3e9640",
+      "reviewed_source_lines": [
+        98,
+        99,
+        102,
+        107,
+        109,
+        114,
+        116,
+        121,
+        123,
+        128,
+        130,
+        161,
+        186
+      ],
+      "public_references": [
+        "https://www.fmz.com/strategy/221850"
+      ]
+    },
+    {
+      "id": 1021,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/TradingView%E4%BF%A1%E5%8F%B7%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5%E5%86%85%E5%BB%BAHttp%E6%9C%8D%E5%8A%A1%E7%89%88%E6%9C%AC.md",
+      "source_sha256": "c100b6e087db5c6c87a48c46b7f830cf6c11dc24477a75251c6cbe50d6e53615",
+      "reviewed_source_lines": [
+        163,
+        274,
+        350,
+        353
+      ],
+      "public_references": [
+        "https://www.fmz.com/strategy/475235",
+        "https://www.fmz.com/digest-topic/10556"
+      ]
+    },
+    {
+      "id": 1384,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%86%B2%E5%B8%81%E5%AE%89%E6%96%B0%E4%B8%8A%E5%B8%81%E5%BC%80%E7%9B%98.md",
+      "source_sha256": "b53c9680909c6640b0af00566160eec148e90d8a25b285b33d0b8ea506bbcf13",
+      "reviewed_source_lines": [
+        12,
+        20,
+        28,
+        31,
+        40
+      ],
+      "public_references": [
+        "https://www.fmz.com/strategy/324178",
+        "https://www.binance.com/en/support/announcement/detail/28c68286fe9340cd97740774b4e13af9"
+      ]
+    },
+    {
+      "id": 1392,
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E5%88%86%E4%BA%AB%E6%8A%A2%E6%96%B0%E7%8E%B0%E8%B4%A7%E7%AD%96%E7%95%A5.md",
+      "source_sha256": "c774ac031a74d9366f17845b1410ddd2a8f97f93937ec06671edd3252a65ae57",
+      "reviewed_source_lines": [
+        20,
+        22,
+        23,
+        28,
+        40
+      ],
+      "public_references": [
+        "https://www.fmz.com/strategy/410113"
+      ]
+    }
+  ],
+  "coverage": [
+    [
+      391,
+      "Excluded · original LTC/BTC threshold strategy",
+      "Saved Huobi configuration trades one LTC per order at fixed BTC-per-LTC thresholds. BTC is the quote unit. A BTC or ETH base-asset result would require new instrument settings and thresholds."
+    ],
+    [
+      405,
+      "Excluded · original HUSD/USDT peg arbitrage",
+      "The author targets a zero-fee Huobi HUSD campaign and a stablecoin price returning to 1. BTC/ETH candles do not represent that peg or fee regime."
+    ],
+    [
+      1017,
+      "Excluded · external TradingView order relay",
+      "Order side and quantity are taken from incoming webhook commands. Its main loop publishes status and does not generate market signals. The archive supplies the executor without a historical signal generator."
+    ],
+    [
+      1021,
+      "Excluded · external HTTP signal executor",
+      "Market depth supplies execution precision. Incoming messages supply action, market, price and quantity. The sample BTC template documents the payload format and supplies no historical decision rules."
+    ],
+    [
+      1384,
+      "Pending · original new-listing timestamp and fills",
+      "Recovered XX=200. The documented deployment was the Binance DAR listing on 4 November 2021 at 08:00 UTC, with four possible quote pairs. Source can use a configured market. A comparable BTC/ETH case needs a provable first tradable ticker and the first-second execution inputs expected by the original strategy."
+    ],
+    [
+      1392,
+      "Excluded · fixed Huobi Token market",
+      "The only configured instrument is HT/USDT. Entry uses fixed HT price bounds of 0.5 and 1.5. Replacing the market and bounds would create a different setup."
+    ]
+  ],
+  "results": []
+}

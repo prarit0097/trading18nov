@@ -1,0 +1,655 @@
+{
+  "coverage": [
+    [
+      4850,
+      "Tested · source-compatible BTC inverse quarter scenario",
+      "Unchanged archive uses the authored indicator and order logic in independently bound native FMZ. Named 100 USD BTC inverse quarterly data and fees reconcile. Venue, capital and calendar are explicitly the selected research case, with no saved author deployment configuration."
+    ]
+  ],
+  "results": [
+    {
+      "id": 4850,
+      "name": "Turtle with overwritten 55 and 20 day channels",
+      "market": "Binance COIN-M BTCUSD_211231, compatible quarter scenario",
+      "period": "2021-10-01 to 2021-12-24 UTC",
+      "interval": "UTC+8 daily indicators, 1h FMZ simulated subticks",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%B5%B7%E9%BE%9F.md",
+      "group": "Original Python / source-compatible fixed quarter",
+      "exit": "Contract reductions in the unchanged Turtle. Keep open quarter inventory marked.",
+      "currency": "BTC",
+      "quote_currency": "BTC",
+      "currency_decimal_places": 10,
+      "starting_equity": 0.1,
+      "gross": -0.006974279160317166,
+      "fees": 0.0002478890493148056,
+      "after_fees": -0.007222168209631971,
+      "net": -0.007222168209631971,
+      "execution": 0.0,
+      "funding": 0.0,
+      "gross_dd": 0.006974279160317166,
+      "gross_dd_pct": 0.06974279160317165,
+      "fee_dd": 0.007222168209631971,
+      "fee_dd_pct": 0.07222168209631971,
+      "net_dd": 0.007222168209631971,
+      "net_dd_pct": 0.07222168209631971,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "trades": 6,
+      "unsettled": 1,
+      "mark_to_market_net": -0.007116288157978466,
+      "remaining_unrealized": 0.0001254515789966516,
+      "marked_dd": 0.008549365830402111,
+      "marked_dd_pct": 0.0851188457193865,
+      "all_fees": 0.00026746057665795236
+    }
+  ],
+  "diagnostics": {
+    "closing_reductions": 6,
+    "native_orders": 21,
+    "days_with_wallet_observations": 85,
+    "matching_closed_prior_daily_bars_count": 60,
+    "min_daily_observed_headroom_BTC": 0.08896940637339218,
+    "ending_contracts": {
+      "Long": 0,
+      "Short": 20
+    },
+    "ending_coin_equity_BTC": "0.09288371184202153382929833021",
+    "receipts": [
+      {
+        "timestamp_ms": 1633527056400,
+        "id": 1,
+        "side": "buy",
+        "quantity": 10,
+        "price": "56117.4",
+        "fee_BTC": "0.000008909892475417606660322823224"
+      },
+      {
+        "timestamp_ms": 1633623096400,
+        "id": 2,
+        "side": "closebuy",
+        "quantity": 10,
+        "price": "54590.9",
+        "gross_realized_BTC": "-0.0004982863760709193864538884500",
+        "allocated_fees_BTC": "0.00001806892813887067301387259068"
+      },
+      {
+        "timestamp_ms": 1633682668400,
+        "id": 3,
+        "side": "buy",
+        "quantity": 11,
+        "price": "57645.9",
+        "fee_BTC": "0.000009541008120265274720318357420"
+      },
+      {
+        "timestamp_ms": 1633960332400,
+        "id": 4,
+        "side": "buy",
+        "quantity": 12,
+        "price": "59269.0",
+        "fee_BTC": "0.00001012333597664883834719667955"
+      },
+      {
+        "timestamp_ms": 1634056256400,
+        "id": 5,
+        "side": "closebuy",
+        "quantity": 23,
+        "price": "57674.9",
+        "gross_realized_BTC": "-0.0005500112057372694271642255000",
+        "allocated_fees_BTC": "0.00003960369379669686084861218668"
+      },
+      {
+        "timestamp_ms": 1634174360400,
+        "id": 6,
+        "side": "buy",
+        "quantity": 12,
+        "price": "59825.6",
+        "fee_BTC": "0.00001002915140006953544970714878"
+      },
+      {
+        "timestamp_ms": 1634265868400,
+        "id": 7,
+        "side": "buy",
+        "quantity": 13,
+        "price": "61348.3",
+        "fee_BTC": "0.00001059524061791443283676972304"
+      },
+      {
+        "timestamp_ms": 1634315456400,
+        "id": 8,
+        "side": "buy",
+        "quantity": 14,
+        "price": "63233.2",
+        "fee_BTC": "0.00001107013404350878968643054598"
+      },
+      {
+        "timestamp_ms": 1634330668400,
+        "id": 9,
+        "side": "buy",
+        "quantity": 14,
+        "price": "65267.2",
+        "fee_BTC": "0.00001072514218474210629535202981"
+      },
+      {
+        "timestamp_ms": 1634406268400,
+        "id": 10,
+        "side": "closebuy",
+        "quantity": 53,
+        "price": "61843.4",
+        "gross_realized_BTC": "-0.0008609969303369088734553300000",
+        "allocated_fees_BTC": "0.00008526983495763818297324656022"
+      },
+      {
+        "timestamp_ms": 1634651068400,
+        "id": 11,
+        "side": "buy",
+        "quantity": 14,
+        "price": "65345.9",
+        "fee_BTC": "0.00001071222525055129702093015782"
+      },
+      {
+        "timestamp_ms": 1634735960400,
+        "id": 12,
+        "side": "buy",
+        "quantity": 15,
+        "price": "67135.4",
+        "fee_BTC": "0.00001117145351036859838475677511"
+      },
+      {
+        "timestamp_ms": 1634737468400,
+        "id": 13,
+        "side": "buy",
+        "quantity": 15,
+        "price": "68948.4",
+        "fee_BTC": "0.00001087769984510155420575386811"
+      },
+      {
+        "timestamp_ms": 1634831068400,
+        "id": 14,
+        "side": "closebuy",
+        "quantity": 44,
+        "price": "64000.6",
+        "gross_realized_BTC": "-0.003226598262749524598145075780",
+        "allocated_fees_BTC": "0.00006713605634341766152195413998"
+      },
+      {
+        "timestamp_ms": 1636415068400,
+        "id": 15,
+        "side": "buy",
+        "quantity": 13,
+        "price": "70071.7",
+        "fee_BTC": "0.000009276212793467262817942193496"
+      },
+      {
+        "timestamp_ms": 1636549548400,
+        "id": 16,
+        "side": "closebuy",
+        "quantity": 13,
+        "price": "67523.5",
+        "gross_realized_BTC": "-0.0007001309304260969621740667300",
+        "allocated_fees_BTC": "0.00001890249105214757411697142036"
+      },
+      {
+        "timestamp_ms": 1636555468400,
+        "id": 17,
+        "side": "buy",
+        "quantity": 13,
+        "price": "70887.5",
+        "fee_BTC": "0.000009169458649268206665491095045"
+      },
+      {
+        "timestamp_ms": 1636576256400,
+        "id": 18,
+        "side": "closebuy",
+        "quantity": 13,
+        "price": "66744.8",
+        "gross_realized_BTC": "-0.001138255454996446157697077810",
+        "allocated_fees_BTC": "0.00001890804502603463640983072899"
+      },
+      {
+        "timestamp_ms": 1638562760400,
+        "id": 19,
+        "side": "sell",
+        "quantity": 7,
+        "price": "53150.0",
+        "fee_BTC": "0.000006585136406396989651928504233"
+      },
+      {
+        "timestamp_ms": 1638564268400,
+        "id": 20,
+        "side": "sell",
+        "quantity": 7,
+        "price": "50991.2",
+        "fee_BTC": "0.000006863929462338599601499866644"
+      },
+      {
+        "timestamp_ms": 1638593068400,
+        "id": 21,
+        "side": "sell",
+        "quantity": 6,
+        "price": "48999.9",
+        "fee_BTC": "0.000006122461474411172267698505507"
+      }
+    ],
+    "maximum_native_aggregate_display_residual_BTC": "4.9836717445364299380E-10",
+    "daily_portfolio_marks": [
+      [
+        1633046400000,
+        "0.1"
+      ],
+      [
+        1633132800000,
+        "0.1"
+      ],
+      [
+        1633219200000,
+        "0.1"
+      ],
+      [
+        1633305600000,
+        "0.1"
+      ],
+      [
+        1633392000000,
+        "0.1"
+      ],
+      [
+        1633478400000,
+        "0.1"
+      ],
+      [
+        1633564800000,
+        "0.1001246568670232128328296354"
+      ],
+      [
+        1633651200000,
+        "0.09948364469579020994053223896"
+      ],
+      [
+        1633737600000,
+        "0.09863861461384793977692618479"
+      ],
+      [
+        1633824000000,
+        "0.09908878169735679736510407948"
+      ],
+      [
+        1633910400000,
+        "0.09896343405595193060655372348"
+      ],
+      [
+        1633996800000,
+        "0.1000556307162777531518734389"
+      ],
+      [
+        1634083200000,
+        "0.09889402979625624365251940127"
+      ],
+      [
+        1634169600000,
+        "0.09889402979625624365251940127"
+      ],
+      [
+        1634256000000,
+        "0.09862879834969105027768181136"
+      ],
+      [
+        1634342400000,
+        "0.1004403403047431736584761655"
+      ],
+      [
+        1634428800000,
+        "0.09794776303096169659609082471"
+      ],
+      [
+        1634515200000,
+        "0.09794776303096169659609082471"
+      ],
+      [
+        1634601600000,
+        "0.09794776303096169659609082471"
+      ],
+      [
+        1634688000000,
+        "0.09826887302973494782800118236"
+      ],
+      [
+        1634774400000,
+        "0.09925037839515964705719295511"
+      ],
+      [
+        1634860800000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1634947200000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635033600000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635120000000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635206400000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635292800000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635379200000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635465600000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635552000000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635638400000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635724800000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635811200000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635897600000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1635984000000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1636070400000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1636156800000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1636243200000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1636329600000,
+        "0.09465402871186875433642379479"
+      ],
+      [
+        1636416000000,
+        "0.09455672658559685501471186022"
+      ],
+      [
+        1636502400000,
+        "0.09430188417698047849243854497"
+      ],
+      [
+        1636588800000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1636675200000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1636761600000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1636848000000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1636934400000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637020800000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637107200000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637193600000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637280000000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637366400000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637452800000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637539200000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637625600000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637712000000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637798400000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637884800000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1637971200000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1638057600000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1638144000000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1638230400000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1638316800000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1638403200000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1638489600000,
+        "0.09277783179036802900602584810"
+      ],
+      [
+        1638576000000,
+        "0.09189097447434106220985061616"
+      ],
+      [
+        1638662400000,
+        "0.09418546108820057043534331448"
+      ],
+      [
+        1638748800000,
+        "0.09400765865079900040416880213"
+      ],
+      [
+        1638835200000,
+        "0.09311186021008391424083920004"
+      ],
+      [
+        1638921600000,
+        "0.09299877396432868584562881835"
+      ],
+      [
+        1639008000000,
+        "0.09311076825026498769908934867"
+      ],
+      [
+        1639094400000,
+        "0.09557145779254592934995795439"
+      ],
+      [
+        1639180800000,
+        "0.09594369582530541818700212985"
+      ],
+      [
+        1639267200000,
+        "0.09398874153138380361798534289"
+      ],
+      [
+        1639353600000,
+        "0.09346060542531883977761854227"
+      ],
+      [
+        1639440000000,
+        "0.09643029789677417429457101128"
+      ],
+      [
+        1639526400000,
+        "0.09489300101223273994450828598"
+      ],
+      [
+        1639612800000,
+        "0.09443469770061035389979894157"
+      ],
+      [
+        1639699200000,
+        "0.09551213076139205695364299380"
+      ],
+      [
+        1639785600000,
+        "0.09686826843424495688388679930"
+      ],
+      [
+        1639872000000,
+        "0.09620963209602131011217440498"
+      ],
+      [
+        1639958400000,
+        "0.09637107809582185628202487541"
+      ],
+      [
+        1640044800000,
+        "0.09615147306179581228155771237"
+      ],
+      [
+        1640131200000,
+        "0.09444186375145312552679023962"
+      ],
+      [
+        1640217600000,
+        "0.09471030786244094833341831594"
+      ],
+      [
+        1640304000000,
+        "0.09288371184202153382929833021"
+      ]
+    ]
+  },
+  "source": {
+    "url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E6%B5%B7%E9%BE%9F.md",
+    "archive_sha256": "90ddbf2cbdfa6d2be3ffa614780d8b4c8b7978a3fa530d835d008634451ce6c4",
+    "code_sha256": "6271afa65907a6a6283bef82fbb4a40c42ed495b1f41d1cf3d2271524f63e93d",
+    "publisher": "https://www.fmz.com/strategy/192353",
+    "arguments": {
+      "Donchian_open": 20,
+      "Donchian_stop": 10,
+      "Atr": 20
+    },
+    "scenario": {
+      "chart": "1d author-day-based indicator scenario, causal 1h FMZ synthetic tick feed",
+      "account": "0.1 BTC flat simulated wallet, native default 10x, explicit model fees of 0.02% maker and 0.05% taker",
+      "date": "Named December 2021 quarter throughout the first full month through the week before expiry"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_211231/1h/BTCUSD_211231-1h-2021-08.zip",
+      "sha256": "7aded0433a5b8b7466363d75a078c08da9f7f3fd498565864f0e73fa77d9bdb2",
+      "rows": 744,
+      "first": 1627776000000,
+      "last": 1630450800000
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_211231/1h/BTCUSD_211231-1h-2021-09.zip",
+      "sha256": "420d4d90c0e49e6e863ec10fc65a7707f27a9454b0b1e717000d1ee1f3864766",
+      "rows": 720,
+      "first": 1630454400000,
+      "last": 1633042800000
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_211231/1h/BTCUSD_211231-1h-2021-10.zip",
+      "sha256": "84dd425ce7c6bb4e642a843d677b3ce942efaccc7bcb268b72367b2f33c3c1fc",
+      "rows": 744,
+      "first": 1633046400000,
+      "last": 1635721200000
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_211231/1h/BTCUSD_211231-1h-2021-11.zip",
+      "sha256": "ab94870519f0b61856b96b1ccf942eaa299db14f0186e0435a17228a28ce1ab4",
+      "rows": 720,
+      "first": 1635724800000,
+      "last": 1638313200000
+    },
+    {
+      "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_211231/1h/BTCUSD_211231-1h-2021-12.zip",
+      "sha256": "effdb1189093d470a63a14771be6dc450b916b040c27f0b76cf3dd301d635ec9",
+      "rows": 729,
+      "first": 1638316800000,
+      "last": 1640937600000
+    }
+  ],
+  "verification": {
+    "inverse_quote_abi_sha256": "582e1e3b9e1526d00fced4bea1396e2786c63e232ad53f8fad1594718a390ba4",
+    "source_and_data_sha256": "6d8a30666b9b0900ac1329054a2d4fd59f338347647fad8b011aedbd4ee25226",
+    "original_uninstrumented_run_sha256": "64966a5b937a63fbeefa64892e97b8063c52cc7c2ef1309310d2a954a14c0b31",
+    "byte_identical_fill_runs_sha256": "6d089f96d1e05737ab01fa16c5a4f6f53503ee132d17f86a27ea85daf6d634f1",
+    "worker_sha256": "404b1e0fad246ea5c7dfefd11c0101ff82d13518cb5ff5a9e2a82ed48ca63a11",
+    "abi_code_sha256": "5b39430d5e289fc60bf2adcecd7192c671961e4fc243d7cce649054540ed2d92",
+    "stage_sha256": "b17101f489431762ebef3b0659395e6caf4ab6c3e2e0f17c130ddb4690f1d3c3",
+    "verifier_sha256": "6001d7abe69cd706fb066789079c71a8c2c8911bd294b9b99766b7776af83bb1",
+    "engine_sha256": "504c312b9b4b410e84c9812298964becc7ae669f253fa0790480330661b212c0"
+  },
+  "scope": {
+    "source": "Archive selects generic quarter and sizes against BTC coin collateral with USD 100 inverse contracts. Venue/data dates and 0.1 BTC flat wallet are explicit research choices. Author arguments 20/10/20 retained, but entry channel overwrites to 55 and stop threshold overwrites to 20 in the source.",
+    "engine": "Fixed historical instrument BTCUSD_211231. Native calendar bars begin at 16:00 UTC (UTC+8), independently checked against warmed one-hour exchange series. FMZ generates subticks. The normal run and GetOrder receipt run have identical order times, decisions, daily portfolio snapshots and final state.",
+    "accounting": "A separate one-contract roundtrip proves native inverse settlement mechanics. Every authored order has a fully filled marketable receipt and native .05% taker commission confirmed by independent BTC currency ledger. No funding applies to this dated quarterly model. Drawdown columns are ratios; marked drawdown samples daily native marks and is a lower bound versus intraday risk.",
+    "reproducibility": "Exact original source, canonical data, repeat engine runs and independent quote/fee checks. Source results are simulated within one named market; the native quote range proof does not infer actual historical order queue, liquidity or fill timing."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/192353",
+    "https://www.fmz.com/lang/en/syntax-guide/fun/ta/ta.highest",
+    "https://www.fmz.com/syntax-guide/fun/futures/exchange.setcontracttype",
+    "https://www.binance.com/en-IN/support/faq/detail/85eac2bba0b342819122dc9bd4745e9b",
+    "https://github.com/binance/binance-public-data"
+  ]
+}

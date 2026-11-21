@@ -1,0 +1,766 @@
+{
+  "schema": "FMZ #694 saved OKEX spot windows and official symbol remapping",
+  "id": 694,
+  "archived_document": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/Python%E7%89%88%E5%A4%9A%E5%93%81%E7%A7%8D%E8%BF%BD%E6%B6%A8%E6%9D%80%E8%B7%8C%E7%AD%96%E7%95%A5%E6%95%99%E5%AD%A6.md",
+  "archived_sha256": "3f7e7b54c7c5e90916728770fa0a90b4c1b4fd8e54c4f05d66924651cbe785ee",
+  "original_market": "OKEX spot (now OKX)",
+  "strategy_start": "2019-02-20T00:00:00Z",
+  "strategy_end_exclusive": "2020-01-10T00:00:00Z",
+  "warmup_start": "2019-02-19T00:00:00Z",
+  "feed_observations": {
+    "BTC": {
+      "strategy_minutes": 466560,
+      "warmup_minutes": 1440,
+      "gaps": 0,
+      "zero_volume_strategy_minutes": 561
+    },
+    "ETH": {
+      "strategy_minutes": 466560,
+      "warmup_minutes": 1440,
+      "gaps": 0,
+      "zero_volume_strategy_minutes": 1322
+    },
+    "LTC": {
+      "strategy_minutes": 466560,
+      "warmup_minutes": 1440,
+      "gaps": 0,
+      "zero_volume_strategy_minutes": 5819
+    }
+  },
+  "market_receipts": [
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1550534400&to=1551743940",
+      "from": 1550534400,
+      "to_exclusive": 1551744000,
+      "rows": 20160,
+      "sha256": "7956d5565c2ca8276f7731426694239362d56076d3f3941f36a281d4c97533ba",
+      "zero_volume": 1,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1551744000&to=1552953540",
+      "from": 1551744000,
+      "to_exclusive": 1552953600,
+      "rows": 20160,
+      "sha256": "3fe17e99cd7aec8ca07b07376e2670f3e74632f78a12fc7295ca1b0fdb4eaa4b",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1552953600&to=1554163140",
+      "from": 1552953600,
+      "to_exclusive": 1554163200,
+      "rows": 20160,
+      "sha256": "09e4eb830322eb611f6e3a79e09d9ba0d2c5083c28336b6cf8ad813f55ef1292",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1554163200&to=1555372740",
+      "from": 1554163200,
+      "to_exclusive": 1555372800,
+      "rows": 20160,
+      "sha256": "c9410f6374f9330a276030ee4810f4c0752da5c4195acba99f3a7b75a53c18c4",
+      "zero_volume": 1,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1555372800&to=1556582340",
+      "from": 1555372800,
+      "to_exclusive": 1556582400,
+      "rows": 20160,
+      "sha256": "8b658ada17291ca9b8724b19c58e77b4a580ab6d8c3230595d38ab4fef3d30f1",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1556582400&to=1557791940",
+      "from": 1556582400,
+      "to_exclusive": 1557792000,
+      "rows": 20160,
+      "sha256": "f5894c3f53750ad5cae7374784d058af0905fc105670ecaa473af19e2148bb5b",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1557792000&to=1559001540",
+      "from": 1557792000,
+      "to_exclusive": 1559001600,
+      "rows": 20160,
+      "sha256": "35b83f50578a3531e6134ec729273cd9767ec02507564bac3638be10d3b7fc6f",
+      "zero_volume": 5,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1559001600&to=1560211140",
+      "from": 1559001600,
+      "to_exclusive": 1560211200,
+      "rows": 20160,
+      "sha256": "6b7063ba4407389655f7d7ecfd90c6699a91badce50afc5c6ad45b14f2f8edb7",
+      "zero_volume": 8,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1560211200&to=1561420740",
+      "from": 1560211200,
+      "to_exclusive": 1561420800,
+      "rows": 20160,
+      "sha256": "93a66fa115928fe3bf45d57b94f3a9d7a44c6f816bf72e6b6925ea4060a23719",
+      "zero_volume": 4,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1561420800&to=1562630340",
+      "from": 1561420800,
+      "to_exclusive": 1562630400,
+      "rows": 20160,
+      "sha256": "6b93354edb2e5fca651d15f4505483303710119ee74582535b97e9377bdb0512",
+      "zero_volume": 22,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1562630400&to=1563839940",
+      "from": 1562630400,
+      "to_exclusive": 1563840000,
+      "rows": 20160,
+      "sha256": "44534553f5f1500d2f5fd894fca7d40682b807c58333bbe7e5c5a7ffd7c69471",
+      "zero_volume": 5,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1563840000&to=1565049540",
+      "from": 1563840000,
+      "to_exclusive": 1565049600,
+      "rows": 20160,
+      "sha256": "7dd2a1fbfd00338e7136e2aea128b45cf039e99d05af4046a58d0b986dc7703e",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1565049600&to=1566259140",
+      "from": 1565049600,
+      "to_exclusive": 1566259200,
+      "rows": 20160,
+      "sha256": "a5ac6cb752b28f14c31e329ae499376a1ad8364e37add18a88a5524528113a37",
+      "zero_volume": 4,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1566259200&to=1567468740",
+      "from": 1566259200,
+      "to_exclusive": 1567468800,
+      "rows": 20160,
+      "sha256": "d7c418a393af6ff05735207391613abb00ceddf180c528ebb6bd8f8b57c4ac03",
+      "zero_volume": 8,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1567468800&to=1568678340",
+      "from": 1567468800,
+      "to_exclusive": 1568678400,
+      "rows": 20160,
+      "sha256": "4b6d2936c5902ad001c9d525eb76abf423a9b393f6967371ad6701f2dc49dad5",
+      "zero_volume": 23,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1568678400&to=1569887940",
+      "from": 1568678400,
+      "to_exclusive": 1569888000,
+      "rows": 20160,
+      "sha256": "905262dd4e4fc16754d51fa5aaeb23d5e4fc6772c1367536fac491369792fcab",
+      "zero_volume": 26,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1569888000&to=1571097540",
+      "from": 1569888000,
+      "to_exclusive": 1571097600,
+      "rows": 20160,
+      "sha256": "f6d7b62763b7f32bc769cd49611b9083102b589250f82e0b5338002673d43e56",
+      "zero_volume": 68,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1571097600&to=1572307140",
+      "from": 1571097600,
+      "to_exclusive": 1572307200,
+      "rows": 20160,
+      "sha256": "a7276489df2cee26633b74ca141507d58f24fc24d2b0bf32207ed5e8fe0f01e0",
+      "zero_volume": 40,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1572307200&to=1573516740",
+      "from": 1572307200,
+      "to_exclusive": 1573516800,
+      "rows": 20160,
+      "sha256": "9196b4a07249de37ee6a9b9b3abf01107c824fe0e7815c0a7e9ba87be8167f08",
+      "zero_volume": 57,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1573516800&to=1574726340",
+      "from": 1573516800,
+      "to_exclusive": 1574726400,
+      "rows": 20160,
+      "sha256": "971f796ea5b2d0bc11a3aa45a30232653fe5960982b11a4dc12b75d122c6b9be",
+      "zero_volume": 93,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1574726400&to=1575935940",
+      "from": 1574726400,
+      "to_exclusive": 1575936000,
+      "rows": 20160,
+      "sha256": "346f4396e276ec66acd3b8a20fb3245872232fee2be78144762062019da36dde",
+      "zero_volume": 29,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1575936000&to=1577145540",
+      "from": 1575936000,
+      "to_exclusive": 1577145600,
+      "rows": 20160,
+      "sha256": "5f4663c8cbf4363916b6fc43c47eb5c061eaf599f49fd88fe4b7c05b60797607",
+      "zero_volume": 82,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1577145600&to=1578355140",
+      "from": 1577145600,
+      "to_exclusive": 1578355200,
+      "rows": 20160,
+      "sha256": "725b07e324a9be50447954f05b8673236a69dd3aea5d1cdecadf052c2152c3a8",
+      "zero_volume": 85,
+      "missing": []
+    },
+    {
+      "coin": "BTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1578355200&to=1578614340",
+      "from": 1578355200,
+      "to_exclusive": 1578614400,
+      "rows": 4320,
+      "sha256": "b301ddc08107557546e11ef199ba3e821b09e83b2147010f53d3cfa08ff7b73e",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1550534400&to=1551743940",
+      "from": 1550534400,
+      "to_exclusive": 1551744000,
+      "rows": 20160,
+      "sha256": "075a963e43ac5bb204671d87221d182265a50c2628eb17d2f5a2f5d2a8a43b79",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1551744000&to=1552953540",
+      "from": 1551744000,
+      "to_exclusive": 1552953600,
+      "rows": 20160,
+      "sha256": "fba8b59f727cf9768b5b46db5264d69eca9938e86a2644e72e0ca8db481540d1",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1552953600&to=1554163140",
+      "from": 1552953600,
+      "to_exclusive": 1554163200,
+      "rows": 20160,
+      "sha256": "2daa7ad6d9afaf48d9ed735ccf3e77e31899e37ef59a36fad36d617de545c32a",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1554163200&to=1555372740",
+      "from": 1554163200,
+      "to_exclusive": 1555372800,
+      "rows": 20160,
+      "sha256": "224ea1f4e23f16f2371e38dc9c283266bc1cdbde07e13375a94442dea0bf1528",
+      "zero_volume": 1,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1555372800&to=1556582340",
+      "from": 1555372800,
+      "to_exclusive": 1556582400,
+      "rows": 20160,
+      "sha256": "bbc41e741f6a1e0d5a21def067528160b839d085d352ee40566ba113f3cc2bc8",
+      "zero_volume": 1,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1556582400&to=1557791940",
+      "from": 1556582400,
+      "to_exclusive": 1557792000,
+      "rows": 20160,
+      "sha256": "f4bd3cf37bff8597511966fba63d43f749b5b167ca23274e39b526e55663eb9d",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1557792000&to=1559001540",
+      "from": 1557792000,
+      "to_exclusive": 1559001600,
+      "rows": 20160,
+      "sha256": "b8a619880f0ab7aef359a6cf9376a35e1b132107168fe6b0c6d41673e661f665",
+      "zero_volume": 8,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1559001600&to=1560211140",
+      "from": 1559001600,
+      "to_exclusive": 1560211200,
+      "rows": 20160,
+      "sha256": "823d756ae7ea23977fdf8dc2853f89e6dceb9633f2612a0eeeb73e45257f74e0",
+      "zero_volume": 8,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1560211200&to=1561420740",
+      "from": 1560211200,
+      "to_exclusive": 1561420800,
+      "rows": 20160,
+      "sha256": "527a8c0ca91f6db2e13a93e16894f553a0a9e498f70fe38634a7835e5d511b22",
+      "zero_volume": 4,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1561420800&to=1562630340",
+      "from": 1561420800,
+      "to_exclusive": 1562630400,
+      "rows": 20160,
+      "sha256": "b3f6b8ba1803f26e5c50e8e369235c476ff87a5b117859c6b7c9b57ae2e22d81",
+      "zero_volume": 26,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1562630400&to=1563839940",
+      "from": 1562630400,
+      "to_exclusive": 1563840000,
+      "rows": 20160,
+      "sha256": "ffb4f2cbddc016d45ada478060058e210932e777e636c39d035a7425b5a3f647",
+      "zero_volume": 8,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1563840000&to=1565049540",
+      "from": 1563840000,
+      "to_exclusive": 1565049600,
+      "rows": 20160,
+      "sha256": "6aa2cccb37fdbfb2a1a2ced455751572cb1229f9385719a0a5a50c20898bc7ed",
+      "zero_volume": 0,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1565049600&to=1566259140",
+      "from": 1565049600,
+      "to_exclusive": 1566259200,
+      "rows": 20160,
+      "sha256": "0b21abe347bfe1c6ad9eb5be4887c91b0c694d056a24da6cf28deddda1d79998",
+      "zero_volume": 23,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1566259200&to=1567468740",
+      "from": 1566259200,
+      "to_exclusive": 1567468800,
+      "rows": 20160,
+      "sha256": "31017e3a4d6dd9738db106de76260a8f3118494f8e8547cb2b9f398e36a8b6e0",
+      "zero_volume": 7,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1567468800&to=1568678340",
+      "from": 1567468800,
+      "to_exclusive": 1568678400,
+      "rows": 20160,
+      "sha256": "cb4d91df67d726c7916edeab54878cafced01ef3f845d2c4f3c1d6d82d7a26f0",
+      "zero_volume": 18,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1568678400&to=1569887940",
+      "from": 1568678400,
+      "to_exclusive": 1569888000,
+      "rows": 20160,
+      "sha256": "2429f5464d86855730d9a7fb4a3e09384ba3c33024cded9b1c41fe342b94cc67",
+      "zero_volume": 4,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1569888000&to=1571097540",
+      "from": 1569888000,
+      "to_exclusive": 1571097600,
+      "rows": 20160,
+      "sha256": "9ba06ea71c41812936bf2da900c7f0c907f612034bb75b49031ab92d9c48f33f",
+      "zero_volume": 75,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1571097600&to=1572307140",
+      "from": 1571097600,
+      "to_exclusive": 1572307200,
+      "rows": 20160,
+      "sha256": "3710d4b864346874d3048c7b20916087c099afc45a5dee33736607bc5b9e79ef",
+      "zero_volume": 102,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1572307200&to=1573516740",
+      "from": 1572307200,
+      "to_exclusive": 1573516800,
+      "rows": 20160,
+      "sha256": "b1376e0e8cb114af3b4dbddbe08f054f2ee3d6705e0deee019f4fb6fd6f2e7c7",
+      "zero_volume": 123,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1573516800&to=1574726340",
+      "from": 1573516800,
+      "to_exclusive": 1574726400,
+      "rows": 20160,
+      "sha256": "f395be4ac28d5f06c78b6368b02bd6200c972a2af5b20064316aaf34f7a1e73e",
+      "zero_volume": 197,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1574726400&to=1575935940",
+      "from": 1574726400,
+      "to_exclusive": 1575936000,
+      "rows": 20160,
+      "sha256": "d6d000a3d4f2e28942be9769867fa8531bb6aa443061e94356e24d7bf8f6bb56",
+      "zero_volume": 185,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1575936000&to=1577145540",
+      "from": 1575936000,
+      "to_exclusive": 1577145600,
+      "rows": 20160,
+      "sha256": "e444a0977a22cce550eb948664c0d51869dbf2235eaaeb1ed6f3287059f1cac2",
+      "zero_volume": 336,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1577145600&to=1578355140",
+      "from": 1577145600,
+      "to_exclusive": 1578355200,
+      "rows": 20160,
+      "sha256": "4e501e707cbd648ff6a334ec77ff805062b94aa717bf15ab42181d281ce4f269",
+      "zero_volume": 187,
+      "missing": []
+    },
+    {
+      "coin": "ETH",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1578355200&to=1578614340",
+      "from": 1578355200,
+      "to_exclusive": 1578614400,
+      "rows": 4320,
+      "sha256": "3d3c89d70fdbb0e23c919d1591bb6c08ece404846eb58eaff6d5a5791e4e7c08",
+      "zero_volume": 9,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1550534400&to=1551743940",
+      "from": 1550534400,
+      "to_exclusive": 1551744000,
+      "rows": 20160,
+      "sha256": "7be38aa31e0cd7e08de4d36899f330a21e01ed7283a8901d6f6216359f8e6785",
+      "zero_volume": 7,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1551744000&to=1552953540",
+      "from": 1551744000,
+      "to_exclusive": 1552953600,
+      "rows": 20160,
+      "sha256": "5b7b0442fdf7d94c7a7d3fb83391c3a1072da10c4130e6e5d113612e79fc0922",
+      "zero_volume": 19,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1552953600&to=1554163140",
+      "from": 1552953600,
+      "to_exclusive": 1554163200,
+      "rows": 20160,
+      "sha256": "e28acca34cd66a3cfa7472b90b5ca02a91f02c78a646559f14b6b3d299cfb351",
+      "zero_volume": 29,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1554163200&to=1555372740",
+      "from": 1554163200,
+      "to_exclusive": 1555372800,
+      "rows": 20160,
+      "sha256": "38919014d6ba38b2f0ba25b988beb1b01b6991c3256441abf5120a881c5b74ca",
+      "zero_volume": 2,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1555372800&to=1556582340",
+      "from": 1555372800,
+      "to_exclusive": 1556582400,
+      "rows": 20160,
+      "sha256": "19a565ff5c3fffcac7ee616f80a4dc31fc21d81b835b6ab7f10cfd635f922fef",
+      "zero_volume": 1,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1556582400&to=1557791940",
+      "from": 1556582400,
+      "to_exclusive": 1557792000,
+      "rows": 20160,
+      "sha256": "e0668d4ff571bb8f00fdf7abda1172e0e7e6854511957106446cb2dd582078d8",
+      "zero_volume": 1,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1557792000&to=1559001540",
+      "from": 1557792000,
+      "to_exclusive": 1559001600,
+      "rows": 20160,
+      "sha256": "db09f0c74fb4f273189739d78a89d3c90d13b09aae4696fef0a8175975bd2d3e",
+      "zero_volume": 6,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1559001600&to=1560211140",
+      "from": 1559001600,
+      "to_exclusive": 1560211200,
+      "rows": 20160,
+      "sha256": "59514063f172cec8d1a50f3e3431ab800efd93e2e55b84ecff761a72c97b3605",
+      "zero_volume": 9,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1560211200&to=1561420740",
+      "from": 1560211200,
+      "to_exclusive": 1561420800,
+      "rows": 20160,
+      "sha256": "38ec72d61d2d54b05b81608c86c6506c633db53a1a89755be600aa38b896dfa9",
+      "zero_volume": 5,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1561420800&to=1562630340",
+      "from": 1561420800,
+      "to_exclusive": 1562630400,
+      "rows": 20160,
+      "sha256": "d260c152838a7f837d5a7490659e008d52db204fe7a1d9d2059c5fc7bf68d1dd",
+      "zero_volume": 28,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1562630400&to=1563839940",
+      "from": 1562630400,
+      "to_exclusive": 1563840000,
+      "rows": 20160,
+      "sha256": "6ea7e205638da66eec3bbd855960357415860c0a789aaa7fcfdcae1b5515c53d",
+      "zero_volume": 4,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1563840000&to=1565049540",
+      "from": 1563840000,
+      "to_exclusive": 1565049600,
+      "rows": 20160,
+      "sha256": "a77a4648bab9a04800d490ada60bd451236f35f3baf84c1005799f7086b9fcb0",
+      "zero_volume": 10,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1565049600&to=1566259140",
+      "from": 1565049600,
+      "to_exclusive": 1566259200,
+      "rows": 20160,
+      "sha256": "26bca1a8933bec7794fc7da369a47d1052999a68e557a2bb6968e15cc8992bf7",
+      "zero_volume": 48,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1566259200&to=1567468740",
+      "from": 1566259200,
+      "to_exclusive": 1567468800,
+      "rows": 20160,
+      "sha256": "718f0533c41824e8641c16dfb6cd180eaa800c30457cca613777b1a79bb24633",
+      "zero_volume": 46,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1567468800&to=1568678340",
+      "from": 1567468800,
+      "to_exclusive": 1568678400,
+      "rows": 20160,
+      "sha256": "d3c9208abc59f06ca5efd42e86bc2ecb06c17f4d41c4400191005ddb4c0f8b8c",
+      "zero_volume": 108,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1568678400&to=1569887940",
+      "from": 1568678400,
+      "to_exclusive": 1569888000,
+      "rows": 20160,
+      "sha256": "be0815e31875e7cd52370a134c169a3779f02531962ba831228b090dd007d57b",
+      "zero_volume": 133,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1569888000&to=1571097540",
+      "from": 1569888000,
+      "to_exclusive": 1571097600,
+      "rows": 20160,
+      "sha256": "3204109dd49066dc22c73f86009f11b6ef5c88db3afe5e38ae62c4f8e21cd627",
+      "zero_volume": 526,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1571097600&to=1572307140",
+      "from": 1571097600,
+      "to_exclusive": 1572307200,
+      "rows": 20160,
+      "sha256": "aa921d4876035adbb11ae1593c1b6da00777fd777fd63293d724220b86c1e39e",
+      "zero_volume": 587,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1572307200&to=1573516740",
+      "from": 1572307200,
+      "to_exclusive": 1573516800,
+      "rows": 20160,
+      "sha256": "86521d1dca6659e6257249c6e1834ab0a0fc06466c193c83bf477a771f1766c1",
+      "zero_volume": 211,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1573516800&to=1574726340",
+      "from": 1573516800,
+      "to_exclusive": 1574726400,
+      "rows": 20160,
+      "sha256": "b9b1c5bd4c4d04372472bafa4ce165a873fee2bf976864333bfe72f6298a1749",
+      "zero_volume": 587,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1574726400&to=1575935940",
+      "from": 1574726400,
+      "to_exclusive": 1575936000,
+      "rows": 20160,
+      "sha256": "40e4b0cfc80fb132165581c28c9299de3d5864b7af8e535e8e5499b09027b53f",
+      "zero_volume": 740,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1575936000&to=1577145540",
+      "from": 1575936000,
+      "to_exclusive": 1577145600,
+      "rows": 20160,
+      "sha256": "f283bccbb6cd5d333272837b6539a49a2141858f8c54ef8a5b42cf2263c3e9e9",
+      "zero_volume": 1793,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1577145600&to=1578355140",
+      "from": 1577145600,
+      "to_exclusive": 1578355200,
+      "rows": 20160,
+      "sha256": "941f4bac4d7cdb748085297bacfd9ba31ab02b1dd28b3608bd7d3789aec24ec2",
+      "zero_volume": 862,
+      "missing": []
+    },
+    {
+      "coin": "LTC",
+      "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1578355200&to=1578614340",
+      "from": 1578355200,
+      "to_exclusive": 1578614400,
+      "rows": 4320,
+      "sha256": "14c5c8910fb3692c943ad0638d8ea0ac5050821903b65b2c00158bb33542e0d1",
+      "zero_volume": 57,
+      "missing": []
+    }
+  ],
+  "notes": "FMZ documents that its spot OKEX adapter maps to OKX. The supported historical feed API returned full 1m histories with the OKX identifier. The archived OKEX identifier returned HTTP 500 at the opening and closing sample requests. Source uses a 500ms loop with separate holdings, resting orders and timed cancellation. Zero-volume minutes have price fields without traded liquidity. Replay needs to establish clock progression, untraded interval behavior and account settlement.",
+  "references": [
+    "https://www.fmz.com/strategy/182268",
+    "https://www.fmz.com/syntax-guide/exchanges/cex/okx",
+    "https://www.okx.com/historical-data"
+  ],
+  "coverage": [
+    [
+      694,
+      "Pending - complete BTC/ETH/LTC spot inputs recovered",
+      "All 466,560 authored one-minute bars per asset are now available from the official FMZ OKX adapter. Native clock, limit fills and the three balance ledgers still need independent verification."
+    ]
+  ],
+  "results": []
+}
