@@ -1,0 +1,14 @@
+# FMZ #5004 capital verification
+
+The archived FMZ derivative declares an initial broker capital of 10 and later attempts to assign 50,000 to the broker variable. The original HatiKO Envelopes publication by CraZy_HuT declares 10 and reads the broker value to calculate the sizing balance. Its Source code tab also shows different take-profit order bindings. That identifies the provenance of the declaration and leaves the FMZ derivative's host capital treatment unresolved. [FMZ publication](https://www.fmz.com/strategy/433004) · [Original TradingView source](https://www.tradingview.com/script/QVIOQozI-hatiko-envelopes/) · [TradingView broker settings](https://www.tradingview.com/support/solutions/43000628599-strategy-properties/)
+
+In the isolated Pine Compat v4 parser the minimal control declares 10 in the strategy header and plots the broker field across four bars. All four values are 10. Inserting the FMZ assignment between declaration and plot fails at line 3, column 26. The complete FMZ source, after stripping only its outer backtest metadata, fails at the same statement, line 136, column 26. Removing only that assignment compiles cleanly, and is a diagnostic because the removed line governs the subsequent lot-sizing calculation.
+
+The FMZ saved window starts at 2023-10-23 00:00 UTC, within its default 2019–2099 date gate. The source uses three hourly OHLC4 observations, a tick-rounded simple moving average, 100% lot sizing, and default level shifts of 4%, 7%, and 10% in each direction. Aggregate the first twelve quarter-hour bars into those three complete hours, average their three OHLC4 observations and round to the market tick. The average long envelope used for sizing equals the rounded SMA multiplied by 0.93. The short envelope equals the SMA multiplied by 1.07. Divide each candidate balance by the appropriate envelope price, with no realized P&L at that initial calculation. The JSON records the underlying hourly bars and archive hashes so this sizing check can be repeated. [Binance BTCUSDT archive](https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/15m/BTCUSDT-15m-2023-10.zip) · [Binance ETHUSDT archive](https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2023-10.zip)
+
+| Market | Rounded SMA | Raw long quantity at 10 | Raw long quantity at 50,000 | Raw short quantity at 10 | Raw short quantity at 50,000 |
+|---|---:|---:|---:|---:|---:|
+| BTCUSDT | 30,211.0 | 0.000355919638 | 1.779598188084 | 0.000309350713 | 1.546753565344 |
+| ETHUSDT | 1,673.22 | 0.006426344517 | 32.131722582933 | 0.005585514393 | 27.927571964605 |
+
+These are pre-rounding order quantities in base units. The selected balance changes the result by a factor of 5,000. A faithful performance run still needs an authoritative FMZ host trace or publication settings that specify broker capital and sizing balance for this derivative. Strategy #5004 remains pending with zero workbook performance rows.

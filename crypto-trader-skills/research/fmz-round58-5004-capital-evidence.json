@@ -1,0 +1,74 @@
+{
+  "schema": "FMZ 5004 original-source and capital sensitivity",
+  "baseline_commit": "7046f6eceae81a5ee74814763445a02f87dae4ef",
+  "source": {
+    "fmz_publication": "https://www.fmz.com/strategy/433004",
+    "fmz_snapshot_sha256": "1630b9461ddad2eea00d68ea1b95307d6deace8950bb21764773903f6122d9c4",
+    "fmz_saved_market": "Binance USD-M BTCUSDT",
+    "fmz_start": "2023-10-23T00:00:00Z",
+    "fmz_end_exclusive": "2023-11-22T00:00:00Z",
+    "chart_and_base_period": ["1h", "15m"],
+    "original_author": "CraZy_HuT",
+    "original_publication": "https://www.tradingview.com/script/QVIOQozI-hatiko-envelopes/",
+    "original_observed_surface": "TradingView public Source code tab",
+    "original_chart": "BINANCE:TRXBTC 1h",
+    "original_declared_capital": 10,
+    "original_reference": "Initial capital plus realized net profit",
+    "fmz_declared_capital": 10,
+    "fmz_written_capital": 50000,
+    "downstream_differences": "FMZ adds a broker-variable write and uses TPL/TPS with explicit L1-L4 and S1-S4 bindings. The author publication uses an unbound TakeProfit and Long/Short order IDs."
+  },
+  "parser_check": {
+    "runtime": "Pine Compat AppContainer",
+    "runtime_sha256": "6c4ad673c8a78e3d31d40ae66908d86423c209fc92d52930c0c6f55853fafcda",
+    "fixture_declared_capital_read": [10, 10, 10, 10],
+    "fixture_broker_variable_assignment": "E_PARSE_EXPR:Error:3:26: expected expression",
+    "literal_fmz": "E_PARSE_EXPR:Error:136:26: expected expression",
+    "single_write_removal_diagnostic_count": 0,
+    "removal_disposition": "Compiler control only. Removing the line changes sizing economics."
+  },
+  "sizing_check": {
+    "price_tick": ["0.10", "0.01"],
+    "time": "2023-10-23T03:00:00Z",
+    "method": "Three hourly OHLC4 observations from 12 complete 15m candles per market, source default SMA and active levels, assumed zero realized net profit at the calculation. Quantities are pre-rounding source proposals in base units. No fills.",
+    "variant_balance_multiplier": 5000,
+    "markets": [
+      {
+        "symbol": "BTCUSDT",
+        "role": "Saved source instrument",
+        "official_zip_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/15m/BTCUSDT-15m-2023-10.zip",
+        "official_zip_sha256": "bf3f1b7d22b67155373cbc0334ec44c34c8861bf2127ccd432698d95aa31ead6",
+        "hourly_ohlc": [["29981.40", "30150", "29869.40", "30107.30"], ["30107.30", "30650", "30065.60", "30336.60"], ["30336.70", "30394", "30165", "30368.10"]],
+        "rounded_sma": "30211.0",
+        "long_sizing_price": "28096.230",
+        "short_sizing_price": "32325.770",
+        "raw_long_qty_cap_10": "0.000355919638",
+        "raw_long_qty_cap_50000": "1.779598188084",
+        "raw_short_qty_cap_10": "0.000309350713",
+        "raw_short_qty_cap_50000": "1.546753565344"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "role": "User-requested out-of-source comparator",
+        "official_zip_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/15m/ETHUSDT-15m-2023-10.zip",
+        "official_zip_sha256": "ecd769121c93962daf9cd5ebfc251e44466db72cf9e1487ce343888056dfadd4",
+        "hourly_ohlc": [["1662.82", "1676.77", "1656.25", "1672.22"], ["1672.22", "1688.82", "1669.66", "1675.51"], ["1675.52", "1679.90", "1670.15", "1678.78"]],
+        "rounded_sma": "1673.22",
+        "long_sizing_price": "1556.0946",
+        "short_sizing_price": "1790.3454",
+        "raw_long_qty_cap_10": "0.006426344517",
+        "raw_long_qty_cap_50000": "32.131722582933",
+        "raw_short_qty_cap_10": "0.005585514393",
+        "raw_short_qty_cap_50000": "27.927571964605"
+      }
+    ]
+  },
+  "coverage": [
+    [
+      5004,
+      "Pending - source capital conflict quantified",
+      "The original author publishes a $10 broker declaration and reads that value. The FMZ derivative adds an unsupported $50,000 write and changes order bindings. Treating either figure as the FMZ sizing balance changes the first defined BTC/ETH raw size by 5,000 times on actual archived candles. The FMZ host treatment remains unknown."
+    ]
+  ],
+  "results": []
+}

@@ -1,0 +1,807 @@
+{
+  "coverage": [
+    [
+      5366,
+      "Tested · authored minute BTC/ETH EMA portfolio model",
+      "The author’s later minute EMA benchmark was executed, including BTC and ETH as real portfolio legs. A portfolio of 24 instruments is preserved. Archived production risk gates and its different default list are outside this research scope."
+    ]
+  ],
+  "results": [
+    {
+      "id": 5366,
+      "name": "Author notebook minute EMA relative value",
+      "market": "Binance USD-M BTC and ETH plus 22 other active perpetuals",
+      "group": "author minute case",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%B6%85%E8%B7%8C%E8%B6%85%E6%B6%A8%E8%B6%85%E7%89%9B%E7%89%88.md",
+      "period": "2020-04-10 01:00:00 to 2020-04-15 05:59:00 UTC",
+      "interval": "Authored 1m Binance prices and close-based notebook execution",
+      "exit": "Directional reductions use average-cost basis and allocate entry commissions and modeled carry.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 575.6343738727481,
+      "fees": 290.3161938248573,
+      "after_fees": 285.3181800478909,
+      "execution": 0.0,
+      "funding": 0.0,
+      "net": 285.3181800478909,
+      "gross_dd": 45.36187621106795,
+      "gross_dd_pct": 0.004272317055585281,
+      "fee_dd": 100.30597257324186,
+      "fee_dd_pct": 0.009660560507579602,
+      "net_dd": 100.30597257324186,
+      "net_dd_pct": 0.009660560507579602,
+      "gross_wins": 798,
+      "fee_wins": 745,
+      "net_wins": 745,
+      "trades": 1301,
+      "unsettled": 22,
+      "mark_to_market_net": 271.1462377177956,
+      "remaining_unrealized": -10.628408369648632,
+      "marked_dd": 125.06559457576016,
+      "marked_dd_pct": 0.012064447995039659,
+      "all_costs": 293.85972778530424,
+      "all_funding": 0.0
+    }
+  ],
+  "zero_commission_sensitivity": [
+    {
+      "id": 5366,
+      "name": "Author notebook minute EMA relative value",
+      "market": "Binance USD-M BTC and ETH plus 22 other active perpetuals",
+      "group": "zero commission sensitivity",
+      "source": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%B6%85%E8%B7%8C%E8%B6%85%E6%B6%A8%E8%B6%85%E7%89%9B%E7%89%88.md",
+      "period": "2020-04-10 01:00:00 to 2020-04-15 05:59:00 UTC",
+      "interval": "Authored 1m Binance prices and close-based notebook execution",
+      "exit": "Directional reductions use average-cost basis and allocate entry commissions and modeled carry.",
+      "currency": "USDT",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 575.6343738727481,
+      "fees": 0.0,
+      "after_fees": 575.6343738727481,
+      "execution": 0.0,
+      "funding": 0.0,
+      "net": 575.6343738727481,
+      "gross_dd": 45.36187621106795,
+      "gross_dd_pct": 0.004272317055585281,
+      "fee_dd": 45.36187621106795,
+      "fee_dd_pct": 0.004272317055585281,
+      "net_dd": 45.36187621106795,
+      "net_dd_pct": 0.004272317055585281,
+      "gross_wins": 798,
+      "fee_wins": 798,
+      "net_wins": 798,
+      "trades": 1301,
+      "unsettled": 22,
+      "mark_to_market_net": 565.0059655030998,
+      "remaining_unrealized": -10.628408369648632,
+      "marked_dd": 89.18410293545621,
+      "marked_dd_pct": 0.008520401611087929,
+      "all_costs": 0.0,
+      "all_funding": 0.0
+    }
+  ],
+  "diagnostics": [
+    {
+      "case": "author minute case",
+      "open_legs": 22,
+      "order_quantity": 2181,
+      "closed_reductions_by_leg": {
+        "BAT": 70,
+        "LINK": 182,
+        "ZEC": 73,
+        "DASH": 87,
+        "BNB": 70,
+        "XRP": 36,
+        "XTZ": 126,
+        "ETC": 56,
+        "BTC": 39,
+        "ATOM": 77,
+        "ETH": 30,
+        "ADA": 34,
+        "TRX": 40,
+        "LTC": 21,
+        "IOTA": 32,
+        "QTUM": 30,
+        "BCH": 48,
+        "IOST": 28,
+        "XLM": 45,
+        "VET": 60,
+        "EOS": 35,
+        "NEO": 20,
+        "XMR": 35,
+        "ONT": 27
+      },
+      "gross_by_leg": {
+        "ADA": -3.2833406196501254,
+        "ATOM": 23.893965657608906,
+        "BAT": 45.00086122549725,
+        "BCH": -21.967500179058447,
+        "BNB": -98.44496004887024,
+        "BTC": 5.68168706,
+        "DASH": 160.890799302217,
+        "EOS": 13.441243063000007,
+        "ETC": 65.26239797858658,
+        "ETH": 5.21697896866942,
+        "IOST": -23.34898994241988,
+        "IOTA": 43.0096908761,
+        "LINK": 84.68091805953803,
+        "LTC": -11.819982078043928,
+        "NEO": 4.200521297999928,
+        "ONT": -23.733863782599983,
+        "QTUM": 18.775236073000098,
+        "TRX": -5.932352632080633,
+        "VET": -17.98371083920939,
+        "XLM": 64.77392261894019,
+        "XMR": 49.429867335656205,
+        "XRP": 15.58100124,
+        "XTZ": 146.9208015920001,
+        "ZEC": 35.389181645867076
+      },
+      "native_terminal_chart_pre_trade_equity": 10271.146238,
+      "min_research_margin_headroom_USDT": 9525.454975117735,
+      "native_binary_gate_ties": 264
+    },
+    {
+      "case": "zero commission sensitivity",
+      "open_legs": 22,
+      "order_quantity": 2181,
+      "closed_reductions_by_leg": {
+        "BAT": 70,
+        "LINK": 182,
+        "ZEC": 73,
+        "DASH": 87,
+        "BNB": 70,
+        "XRP": 36,
+        "XTZ": 126,
+        "ETC": 56,
+        "BTC": 39,
+        "ATOM": 77,
+        "ETH": 30,
+        "ADA": 34,
+        "TRX": 40,
+        "LTC": 21,
+        "IOTA": 32,
+        "QTUM": 30,
+        "BCH": 48,
+        "IOST": 28,
+        "XLM": 45,
+        "VET": 60,
+        "EOS": 35,
+        "NEO": 20,
+        "XMR": 35,
+        "ONT": 27
+      },
+      "gross_by_leg": {
+        "ADA": -3.2833406196501254,
+        "ATOM": 23.893965657608906,
+        "BAT": 45.00086122549725,
+        "BCH": -21.967500179058447,
+        "BNB": -98.44496004887024,
+        "BTC": 5.68168706,
+        "DASH": 160.890799302217,
+        "EOS": 13.441243063000007,
+        "ETC": 65.26239797858658,
+        "ETH": 5.21697896866942,
+        "IOST": -23.34898994241988,
+        "IOTA": 43.0096908761,
+        "LINK": 84.68091805953803,
+        "LTC": -11.819982078043928,
+        "NEO": 4.200521297999928,
+        "ONT": -23.733863782599983,
+        "QTUM": 18.775236073000098,
+        "TRX": -5.932352632080633,
+        "VET": -17.98371083920939,
+        "XLM": 64.77392261894019,
+        "XMR": 49.429867335656205,
+        "XRP": 15.58100124,
+        "XTZ": 146.9208015920001,
+        "ZEC": 35.389181645867076
+      },
+      "native_terminal_chart_pre_trade_equity": 10565.005966,
+      "min_research_margin_headroom_USDT": 9532.407476271574,
+      "native_binary_gate_ties": 264
+    }
+  ],
+  "author_sources_and_data": {
+    "source": {
+      "archive_url": "https://github.com/fmzquant/strategies/blob/7853bb2bf262c4567ac238d3552d97f0e50cb801/%E8%B6%85%E8%B7%8C%E8%B6%85%E6%B6%A8%E8%B6%85%E7%89%9B%E7%89%88.md",
+      "archive_sha256": "44d06dc91e80ab13e2df1996b5638d687afa1411a0b48c63c117a3ccceac9baa",
+      "publisher": "https://www.fmz.com/strategy/196784",
+      "linked_predecessor_article": "https://www.fmz.com/bbs-topic/5364",
+      "author_minute_research": "https://www.fmz.com/digest-topic/5430",
+      "notebook_url": "https://www.fmz.com/upload/asset/1e5d2f766d2b7db9709.ipynb",
+      "notebook_sha256": "374cabdfbbc6aa93fa865c95f3dc14bc728837741e3196bf99c7ca5c56799716",
+      "source_cells": {
+        "2": "1f47b25192172b2ad079a7deb0f893d1e6d5b2f52a9ca9177a1f435a5ed852d8",
+        "4": "1f193e6087d484503d7a3b349f6b869ff4422125e78206f7ad3deadc043de0e0",
+        "5": "b609dae07b74c179a8179aa909effd450affa09bfdae946bc2261b297d4f6a19",
+        "6": "02b1007f6e3471a0aa305e7416958c002f1bb2fb6c9dec648fbc2d12731ec2c4",
+        "8": "a2f213744fe34a32489c2fe7f12dd1ce444a3abf5ce3d427f71beb0b6b7f372a"
+      },
+      "csv_url": "https://www.fmz.com/upload/asset/2b1fa7ab641385067ad.csv",
+      "csv_sha256": "9db1aa6eb7cd07ce9128ab946e636343752dce60879d5453346bd17c1d5efa86"
+    },
+    "data": [
+      {
+        "symbol": "ADA",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1m/ADAUSDT-1m-2020-02.zip",
+            "verified_sha256": "c7844a8b293f853168f5df9cc3f7e58201d953a92449719c61fd0bd622607f9f"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1m/ADAUSDT-1m-2020-03.zip",
+            "verified_sha256": "74d90ce1b5596a18a7dcdbe39989e5634ab1a3d02176a50073ffba4f239c769f"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1m/ADAUSDT-1m-2020-04.zip",
+            "verified_sha256": "1abfead4ae8ae992f86ead49441bc35ac50cbf7c0edb666f7775eae9a4b85a1c"
+          }
+        ]
+      },
+      {
+        "symbol": "ATOM",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ATOMUSDT/1m/ATOMUSDT-1m-2020-02.zip",
+            "verified_sha256": "95ed17d25ab04e5847553933996e147a643cf17df7ec73c44a518da3018e5723"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ATOMUSDT/1m/ATOMUSDT-1m-2020-03.zip",
+            "verified_sha256": "cf70f294b4d9a0deaa0c6f9ca5f72921fa7a01c3c045bf5211489234777cab08"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ATOMUSDT/1m/ATOMUSDT-1m-2020-04.zip",
+            "verified_sha256": "729b18d4d476f9692fdc0cc449627696f8df6c08c1af7b8d1ee9fafe0faae7c0"
+          }
+        ]
+      },
+      {
+        "symbol": "BAT",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BATUSDT/1m/BATUSDT-1m-2020-02.zip",
+            "verified_sha256": "1087953ed8582b9ab5d87609404602a919fba8ae21adeaac79e67d1ecc4b548b"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BATUSDT/1m/BATUSDT-1m-2020-03.zip",
+            "verified_sha256": "9c87bcc1805e8e807dd3ee1cc48fa70ac1012aef04506c6666c8fa6ae7bbd174"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BATUSDT/1m/BATUSDT-1m-2020-04.zip",
+            "verified_sha256": "ebecdbb2c14f0131a2ad8c5d241fb5206bf257c7d7675f7e277c029cf54d951d"
+          }
+        ]
+      },
+      {
+        "symbol": "BCH",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BCHUSDT/1m/BCHUSDT-1m-2020-02.zip",
+            "verified_sha256": "cbbfa034659a5e3dd5e00110d7eca54c76d7bbd900dbe1925b71cc38b5215e8b"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BCHUSDT/1m/BCHUSDT-1m-2020-03.zip",
+            "verified_sha256": "7684cddccaa2c69ea4cd239d2ae6f7817205887bb699b7818c654b236b245c6f"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BCHUSDT/1m/BCHUSDT-1m-2020-04.zip",
+            "verified_sha256": "42918f63d26f0eca104e5c72a475e9d59ee15cefa9b0f4e37206f3c4d2246807"
+          }
+        ]
+      },
+      {
+        "symbol": "BNB",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1m/BNBUSDT-1m-2020-02.zip",
+            "verified_sha256": "944ab6335532cadc0c6231440523657f38225dec47e44a98d0d69ac0797e8f3f"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1m/BNBUSDT-1m-2020-03.zip",
+            "verified_sha256": "ee0d266b44db32853ff960857b2f2f795c3b0895cebec0635dd8731272dd2d34"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1m/BNBUSDT-1m-2020-04.zip",
+            "verified_sha256": "69b32fb6b3452319261a611e5b66559901894ec5bf79c50fd7fae43b62ebbed2"
+          }
+        ]
+      },
+      {
+        "symbol": "BTC",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2020-02.zip",
+            "verified_sha256": "f32b20168ea590cd7d04a2995bc5ec500ea06331c8174f7fd14f29c1078e5ed2"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2020-03.zip",
+            "verified_sha256": "15790b4b031cbc5f59cae30e523fb8341588d279fe3839ba1224c7fe8a6bc929"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2020-04.zip",
+            "verified_sha256": "f45228183c21030fc3a787109eada99187d9ba8c4d5d7ea5c178967150fa7467"
+          }
+        ]
+      },
+      {
+        "symbol": "DASH",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1m/DASHUSDT-1m-2020-02.zip",
+            "verified_sha256": "511b7f9101d20701056431a00dd370df37d9f4e4e7e0d35f9fbfacf6b76b9447"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1m/DASHUSDT-1m-2020-03.zip",
+            "verified_sha256": "c7c740961d876baa40c30a30fd86ab6fcc3acee4e7bc7e4542ef3e840a8bdec3"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/DASHUSDT/1m/DASHUSDT-1m-2020-04.zip",
+            "verified_sha256": "fe7a7375cd0dcdf53ed96baf7837b216260080a406f943ac28ebdd3a85168921"
+          }
+        ]
+      },
+      {
+        "symbol": "EOS",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/EOSUSDT/1m/EOSUSDT-1m-2020-02.zip",
+            "verified_sha256": "911407a77e2d251b6038f94b88948169e2d7c1ad43982329f461164dc777fa78"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/EOSUSDT/1m/EOSUSDT-1m-2020-03.zip",
+            "verified_sha256": "4c381907586fbde761621d1ede3fa39764e74d67c479165ec159c098d0fa1400"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/EOSUSDT/1m/EOSUSDT-1m-2020-04.zip",
+            "verified_sha256": "ef9db7a1403757894aa344950a3bd321a89a34e5f1d005041e82b7c5bc2f7abf"
+          }
+        ]
+      },
+      {
+        "symbol": "ETC",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETCUSDT/1m/ETCUSDT-1m-2020-02.zip",
+            "verified_sha256": "03d7d2f33764d31fb5403f8b36f69abc9b2908df93c5637a6e66b56881dba5a4"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETCUSDT/1m/ETCUSDT-1m-2020-03.zip",
+            "verified_sha256": "fccab2d376d87d185e661c887be9b4ab70336bb947529c2ff0514eeb2351570f"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETCUSDT/1m/ETCUSDT-1m-2020-04.zip",
+            "verified_sha256": "923b66ef09650735ef211a23af5e17b8f895eb949b7903af6fd929709db635db"
+          }
+        ]
+      },
+      {
+        "symbol": "ETH",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2020-02.zip",
+            "verified_sha256": "b5267b5dc4f45cb23aedede25b0586948d41fcbb8f79e3460351ebb182633ee4"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2020-03.zip",
+            "verified_sha256": "f4a6a230bf25a1d4f6a7f612d3a365e9bc8ea19a62e43b4eda6804cf923eca3f"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2020-04.zip",
+            "verified_sha256": "01023b5182512955021849e207592b10e28a750da7f705cbba34a44fa15936dd"
+          }
+        ]
+      },
+      {
+        "symbol": "IOST",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOSTUSDT/1m/IOSTUSDT-1m-2020-02.zip",
+            "verified_sha256": "9776e75fd78889adba7c359384487014adbbcf44df99ecc0a09b78c79670c9bb"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOSTUSDT/1m/IOSTUSDT-1m-2020-03.zip",
+            "verified_sha256": "441d84eab9c6317c8817ce6ecd04d4696af7eff0a10247bb8fa2d2fc4e1c2d97"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOSTUSDT/1m/IOSTUSDT-1m-2020-04.zip",
+            "verified_sha256": "2a6d826196f45dd8cee0e1dce2b6d1bf67343a50a770d3ea2c668e8284546547"
+          }
+        ]
+      },
+      {
+        "symbol": "IOTA",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1m/IOTAUSDT-1m-2020-02.zip",
+            "verified_sha256": "40e1a718ea9888cfdefebf30208ac9ea299212351cf7a696b9c33e7c93147964"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1m/IOTAUSDT-1m-2020-03.zip",
+            "verified_sha256": "91ecde0e415bc4143415180f01bb1a626a58fdeb10e91d6471089ee69b985810"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/IOTAUSDT/1m/IOTAUSDT-1m-2020-04.zip",
+            "verified_sha256": "bb7c208e0573103558e1d553a599115f03d100d7e36abd02e8dc6dd49196aa38"
+          }
+        ]
+      },
+      {
+        "symbol": "LINK",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LINKUSDT/1m/LINKUSDT-1m-2020-02.zip",
+            "verified_sha256": "d86f7e6dda8ae9551e197ecdcf76c1769cd2b60bf291391742100f21dbf9755d"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LINKUSDT/1m/LINKUSDT-1m-2020-03.zip",
+            "verified_sha256": "f1b9e9911a1ac5b0a68d4c5e20e21800c087f91754677bda4e78db796ac339cf"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LINKUSDT/1m/LINKUSDT-1m-2020-04.zip",
+            "verified_sha256": "55c2e7ae2b5b08180cc79100668c39cb024817959a986d9d8b5f0e82bccebd12"
+          }
+        ]
+      },
+      {
+        "symbol": "LTC",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1m/LTCUSDT-1m-2020-02.zip",
+            "verified_sha256": "9932d93fc6e8854de01f54e1493967316ebe6d8aa6c9600235010650f64634da"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1m/LTCUSDT-1m-2020-03.zip",
+            "verified_sha256": "dae8f7ae7e9ce7e5bd82b14e4d50dfa387979bf80562e3e3a83ccd03e14d6b0f"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/LTCUSDT/1m/LTCUSDT-1m-2020-04.zip",
+            "verified_sha256": "fd3e212aa883b3988aac2292049a7bf7f2d2b80eeede26fb260795940bb2567e"
+          }
+        ]
+      },
+      {
+        "symbol": "NEO",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEOUSDT/1m/NEOUSDT-1m-2020-02.zip",
+            "verified_sha256": "57585a0cdfc374c9efd422cb238e25fceb9b39c12fe7b85b1fd7b6fed1dccac8"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEOUSDT/1m/NEOUSDT-1m-2020-03.zip",
+            "verified_sha256": "6b24404e9c28888be5e861613abd630917a846e547af502a24710bd37f800256"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/NEOUSDT/1m/NEOUSDT-1m-2020-04.zip",
+            "verified_sha256": "c0c4c26e92016cf1cec25954c611d8b92e451754816ce8e695fef0f126e1be2a"
+          }
+        ]
+      },
+      {
+        "symbol": "ONT",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ONTUSDT/1m/ONTUSDT-1m-2020-02.zip",
+            "verified_sha256": "51a47085c0b0651d46760ca2f4f010eeaaa8a9c8c864122e89bddc0b11e80c3a"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ONTUSDT/1m/ONTUSDT-1m-2020-03.zip",
+            "verified_sha256": "78d9acf06ec8eec6409c75b421a38e166f34691f86d8b923d0db06e654657a32"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ONTUSDT/1m/ONTUSDT-1m-2020-04.zip",
+            "verified_sha256": "15d6927159ea3b3329ac14dd4354e4b2026354c6c0097df71bf35b369fb6b9fa"
+          }
+        ]
+      },
+      {
+        "symbol": "QTUM",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/QTUMUSDT/1m/QTUMUSDT-1m-2020-02.zip",
+            "verified_sha256": "1498fbbd70ba1475e4d71f0dc89060f82bfce37115945e580b1964af45784286"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/QTUMUSDT/1m/QTUMUSDT-1m-2020-03.zip",
+            "verified_sha256": "ef03fe94abd5b7f4768e3bf896942369b5d6b99c97db3eb573968bc11e3b40d7"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/QTUMUSDT/1m/QTUMUSDT-1m-2020-04.zip",
+            "verified_sha256": "60a551cd6d494ed1635e2a1cbaec6f6b16ff8bcc0329a5a0dade27f4a50d2343"
+          }
+        ]
+      },
+      {
+        "symbol": "TRX",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1m/TRXUSDT-1m-2020-02.zip",
+            "verified_sha256": "b1a591c46e65d49f6bedaeb5104dfa034d9c99610c522e58fea7494a7507026a"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1m/TRXUSDT-1m-2020-03.zip",
+            "verified_sha256": "c76e99111383d01864234d695c31a81c71655fa25fd21e7f8a75f7ab7a0de49b"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/TRXUSDT/1m/TRXUSDT-1m-2020-04.zip",
+            "verified_sha256": "b5f08ffb96ae3875135e19aaa35fb0efc5355520e9bd68bc0e835a68f2a62b2f"
+          }
+        ]
+      },
+      {
+        "symbol": "VET",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/VETUSDT/1m/VETUSDT-1m-2020-02.zip",
+            "verified_sha256": "79def6aa234b255fab650823b8851bb928ee9629629f7e62944fe81c00771337"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/VETUSDT/1m/VETUSDT-1m-2020-03.zip",
+            "verified_sha256": "8bfd10c501009026c708532a40d5326735756efb01ad83ae3186743a3b79cb43"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/VETUSDT/1m/VETUSDT-1m-2020-04.zip",
+            "verified_sha256": "16f61fba7a33a54ec63b1ee5b52c72484c4f40ffcc1a4ead37b2a8b96de1ae34"
+          }
+        ]
+      },
+      {
+        "symbol": "XLM",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1m/XLMUSDT-1m-2020-02.zip",
+            "verified_sha256": "3d39b436045a7906bbdc7a26ed306f5bb65dddcbd178ddcadecc5929f7b810df"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1m/XLMUSDT-1m-2020-03.zip",
+            "verified_sha256": "20ea94bd79ec2dd5ca4c6be3c76628e773010dcb0d8b2419017b98b90db2274c"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XLMUSDT/1m/XLMUSDT-1m-2020-04.zip",
+            "verified_sha256": "576207fef7e665d9e63d278eb8c86591e538b073b1889ef22f8d643f2daf8a37"
+          }
+        ]
+      },
+      {
+        "symbol": "XMR",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1m/XMRUSDT-1m-2020-02.zip",
+            "verified_sha256": "76c56a848358f5b1164b97864ef53095e6effbead9fbae7453af59a8cf3b01b6"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1m/XMRUSDT-1m-2020-03.zip",
+            "verified_sha256": "cf08e0ede83e0ccd623e6212461d35ff08a4579f3957c4d15d75aac4797f963a"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XMRUSDT/1m/XMRUSDT-1m-2020-04.zip",
+            "verified_sha256": "1ff8baaf0826f4d50a29433ec24aea9c74f143f08820b2ccaf16e3de19bd0a05"
+          }
+        ]
+      },
+      {
+        "symbol": "XRP",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1m/XRPUSDT-1m-2020-02.zip",
+            "verified_sha256": "afee1dc64cee6a9870b11e8f65b051e464a2d4935448411276a22e3063865eaa"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1m/XRPUSDT-1m-2020-03.zip",
+            "verified_sha256": "a7e77ea26fb9f0f346504669cd655b8685f811f5383d4437cc70b88bb85e307f"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1m/XRPUSDT-1m-2020-04.zip",
+            "verified_sha256": "7a98fd9fb03beb1559d43c5eab11d5ac9826963955c6fa8dbaedaa6fa0babb98"
+          }
+        ]
+      },
+      {
+        "symbol": "XTZ",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XTZUSDT/1m/XTZUSDT-1m-2020-02.zip",
+            "verified_sha256": "355cb5c80d5d83b6b6189c80a3142c6c149b714885bcfeae327a26605ad5cde5"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XTZUSDT/1m/XTZUSDT-1m-2020-03.zip",
+            "verified_sha256": "d40815895dd4554d9ccd9805e6196488766e4389ba0602c1b7547e9c57592101"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/XTZUSDT/1m/XTZUSDT-1m-2020-04.zip",
+            "verified_sha256": "2021fc886df226bf8f8fabd9bf188392845d99de7f8bc4e333e2733030bf5806"
+          }
+        ]
+      },
+      {
+        "symbol": "ZEC",
+        "first_bar_ms": 1582300800000,
+        "last_bar_ms": 1586930340000,
+        "checked": 77160,
+        "matching_closed_prices": 77160,
+        "different_observations": [],
+        "outside_official_candle": [],
+        "checksums": [
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1m/ZECUSDT-1m-2020-02.zip",
+            "verified_sha256": "55f207dcc46a20f515ed918561a484f439d8d40b4cbdf48deda67fdd83ecda74"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1m/ZECUSDT-1m-2020-03.zip",
+            "verified_sha256": "57a62432b9655b20cf55e42d99161082464323374b30eb72e59084cb9a871bc4"
+          },
+          {
+            "url": "https://data.binance.vision/data/futures/um/monthly/klines/ZECUSDT/1m/ZECUSDT-1m-2020-04.zip",
+            "verified_sha256": "ffce8948e7826c37094f9b32f22699c1e73ccf57df086205e0d2b77e13a081ae"
+          }
+        ]
+      }
+    ],
+    "full_warm_rows": 77160,
+    "signal_rows": 7500,
+    "native_market": "Binance USD-M BTC and ETH perpetuals within full 24-symbol basket"
+  },
+  "verification": {
+    "catalogue_sha256": "f88334ebfef76dc77733fdd6b2cdc7b2ec20d2e8a980ea3e96f72245d1a64537",
+    "source_binding_sha256": "cc0d0a85b1c87044f83a117daedbd2068289905889cc5b0bb13449c3e57820ff",
+    "byte_identical_source_run_sha256": "edbb0e8469ec3fcb66f13960cfd7fad32a4e498556b45971d94e3bc6c880c14f",
+    "natural_set_reproducibility_sha256": "c0314978d841d3975ddb647429676fbd91bd4c5e2e7537e8e8ae1c6718f529ad",
+    "worker_sha256": "000e3d1e6cc68b2e1c2b9535154ff6429cce7492eaf10ab71675954b494b68d6",
+    "stage_sha256": "6699da365f14745bc5e184f43282183cb128a4af80a2f5e72617d1f951bef3d9",
+    "verifier_sha256": "a2c3af13eb8096d3a451648e32bf1233e5724f0185d67ea17276d485bdacb083"
+  },
+  "method": {
+    "scope": "Author’s Part4 one-minute executable historical study (cell 8 and its original engine). EMA alpha .001 matches the later live archive’s documented cadence. The model uses 24 original markets, including BTC and ETH, $300 per 1% deviation and a $150 rebalance gate; the active JS starts from a 19-asset default and applies quote, imbalance and risk checks separately.",
+    "observations": "Preserve the author’s full warmup of 69,660 minutes and the 7,500-minute executed segment. All 1,851,840 price observations, including both BTC and ETH, cross-check against independent Binance 1m closed candles. Source floating serialization is compared at 1e-12.",
+    "execution": "Same-candle modeled execution uses the original author notebook’s linear USDT venue approximation and 0.075% commission. Zero commission reruns preserve the same order path. The engine supplies no simulated funding or liquidation. No live websocket, market account, IOC or order book is part of these metrics.",
+    "measurement": "Reconstruct each per-symbol EMA and portfolio state with Decimal arithmetic. At exact $150 rebalance ties, native floating-point source decisions are retained and the side, size, fees and position transition remain independently checked. Count distinct position reductions across one portfolio. Drawdown values are fractions. BTC and ETH gross leg totals are in diagnostics."
+  },
+  "references": [
+    "https://www.fmz.com/strategy/196784",
+    "https://www.fmz.com/bbs-topic/5364",
+    "https://www.fmz.com/digest-topic/5430",
+    "https://github.com/binance/binance-public-data"
+  ]
+}
