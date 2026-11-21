@@ -1,0 +1,14 @@
+{
+  "BTC_USDT": [
+    "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=BTC_USDT&from=1578614400&to=1578700740",
+    "e0d240f112761be3516a335d7ea84bf266562f9297984e1ce964e7d4a9bb7b91"
+  ],
+  "ETH_USDT": [
+    "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=ETH_USDT&from=1578614400&to=1578700740",
+    "4178bd4a0d470930fcc846682332e4e9e1f839bb58ba3401101382413a3a1205"
+  ],
+  "LTC_USDT": [
+    "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=OKX&depth=5&trades=0&custom=0&period=60000&symbol=LTC_USDT&from=1578614400&to=1578700740",
+    "ffbee03e75af96b345b2a02d75dfc94d5de71f46dcbe298385d8e819044b8bd3"
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "schema": "FMZ #5091 native real-book archived alternate sessions",
+  "pinned_source_sha256": "39a88ca1b1bd6671eff96af5dc47100140298e3de56da9bb715999b34b991a7c",
+  "runtime_sha256": "504c312b9b4b410e84c9812298964becc7ae669f253fa0790480330661b212c0",
+  "loader_sha256": "836dcbb307e38d64cb99c7de53733e07c4fa8319fc1d3be9e48583929e1e1208",
+  "isolation": {
+    "file_error": [
+      "PermissionError",
+      null
+    ],
+    "network_error": [
+      "PermissionError",
+      10013
+    ]
+  },
+  "source_parameters": {
+    "BurstThresholdPct": "0.00127",
+    "BurstThresholdVol": 10,
+    "MinStock": "0.001",
+    "CalcNetInterval": 60,
+    "BalanceTimeout": 10000,
+    "TickInterval": 280
+  },
+  "verification": {
+    "source_reads_and_orders_equal_in_77_second_prefix": true,
+    "first_btc_buy_lots": [
+      [
+        900,
+        "63936.25000"
+      ],
+      [
+        1100,
+        "63942.81000"
+      ],
+      [
+        1300,
+        "63942.81000"
+      ]
+    ],
+    "eth_pre_start_bid": "1807.33",
+    "eth_pre_start_bid_ms": 1795089599917
+  },
+  "coverage": [
+    [
+      5091,
+      "Tested - Native recorded spot events on two alternative dates",
+      "The pinned source ran four BTC/ETH spot cases with recorded book and trade-print events. Original March 2022 snapshots are unavailable. Two scopes have no closes. The other two contain exact FIFO and fee-reconciled exits."
+    ]
+  ],
+  "cases": [
+    {
+      "date": "2026-10-01",
+      "symbol": "BTC",
+      "recorded_feed": {
+        "downloads": [
+          {
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=1&custom=0&period=1000&symbol=BTC_USDT&from=1790845995&to=1790851000",
+            "event_content_sha256": "bd8b623f545b3268e24c00f413fff0faff9c30df3906de5fd000a64dda06e165",
+            "rows": 74552
+          },
+          {
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=1&custom=0&period=1000&symbol=BTC_USDT&from=1790851000&to=1790857210",
+            "event_content_sha256": "2ce4f58b71b0ed82dc3858dcad0d3bbb8b26954cfde2dc50c45370fc37ece31c",
+            "rows": 86830
+          }
+        ],
+        "first": 1790845995609,
+        "last": 1790857209831,
+        "replay_events": 15212,
+        "nonempty_trade_rows": 6337,
+        "depth_three_rows": 8875
+      },
+      "checks": {
+        "accepted_buys": 75,
+        "buy_fills": 59,
+        "canceled_orders": 16,
+        "rejected_buys": 0,
+        "closing_sales": [],
+        "base_at_end": "0.059",
+        "quote_at_end": "5046.38778",
+        "native_fees": "0.0"
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "symbol": "ETH",
+      "recorded_feed": {
+        "downloads": [
+          {
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=1&custom=0&period=1000&symbol=ETH_USDT&from=1790845995&to=1790851000",
+            "event_content_sha256": "95e46048ade3c1fe88baa71ed5ba0c0890775a19586fab45fd4c7d3dc2b820d6",
+            "rows": 60556
+          },
+          {
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=1&custom=0&period=1000&symbol=ETH_USDT&from=1790851000&to=1790857210",
+            "event_content_sha256": "321bbc266afb86befb77ec6376c845f404a268808259ec989221e16e464e62f6",
+            "rows": 73840
+          }
+        ],
+        "first": 1790845995324,
+        "last": 1790857209961,
+        "replay_events": 14387,
+        "nonempty_trade_rows": 6223,
+        "depth_three_rows": 8164
+      },
+      "checks": {
+        "accepted_buys": 0,
+        "buy_fills": 0,
+        "canceled_orders": 0,
+        "rejected_buys": 159,
+        "closing_sales": [],
+        "base_at_end": "3.0",
+        "quote_at_end": "10000.0",
+        "native_fees": "0.0"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "symbol": "BTC",
+      "recorded_feed": {
+        "downloads": [
+          {
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=1&custom=0&period=1000&symbol=BTC_USDT&from=1795079595&to=1795084600",
+            "event_content_sha256": "fc45e006fa04bb75e281529f56f6827daf9e779abd387bd9e16e48c102373c81",
+            "rows": 61662
+          },
+          {
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=1&custom=0&period=1000&symbol=BTC_USDT&from=1795084600&to=1795090810",
+            "event_content_sha256": "ceb5e9c8a658aefc7b6ef385be949bc50cea96400b7156b28799854a2b2164b3",
+            "rows": 81769
+          }
+        ],
+        "first": 1795079596810,
+        "last": 1795090809984,
+        "replay_events": 18125,
+        "nonempty_trade_rows": 8434,
+        "depth_three_rows": 9691
+      },
+      "checks": {
+        "accepted_buys": 96,
+        "buy_fills": 78,
+        "canceled_orders": 18,
+        "rejected_buys": 0,
+        "closing_sales": [
+          {
+            "Id": 10,
+            "Time": 1795089658160,
+            "Price": "63794.97",
+            "Amount": "0.00243",
+            "DealAmount": "0.00243",
+            "AvgPrice": "63806.13",
+            "Type": 1,
+            "Offset": 0,
+            "Status": 1,
+            "Symbol": "BTC_USDT"
+          }
+        ],
+        "base_at_end": "0.07557",
+        "quote_at_end": "5177.3497259",
+        "native_fees": "0.0",
+        "fifo_basis": "155.3744683000",
+        "source_price_confirmation_offsets_ms": [
+          58016,
+          58116,
+          58216,
+          58316,
+          58416,
+          58516,
+          58616,
+          58716
+        ],
+        "closed_gross": "-0.3255724000",
+        "closed_after_fees": "-0.3255724000"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "symbol": "ETH",
+      "recorded_feed": {
+        "downloads": [
+          {
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=1&custom=0&period=1000&symbol=ETH_USDT&from=1795079595&to=1795084600",
+            "event_content_sha256": "5ae53f70bd27ec38f07043d85d179f463a2294a1a99755cb04b0b8da8272493c",
+            "rows": 60819
+          },
+          {
+            "url": "https://q.fmz.com/data/history?detail=true&round=true&feeder=local&event=feed&eid=Binance&depth=5&trades=1&custom=0&period=1000&symbol=ETH_USDT&from=1795084600&to=1795090810",
+            "event_content_sha256": "2cd70fd41fee8d38b161524e808c7f406178ac2b5acd104ee087aca3b76a2182",
+            "rows": 80607
+          }
+        ],
+        "first": 1795079596215,
+        "last": 1795090809971,
+        "replay_events": 19615,
+        "nonempty_trade_rows": 8691,
+        "depth_three_rows": 10924
+      },
+      "checks": {
+        "accepted_buys": 0,
+        "buy_fills": 0,
+        "canceled_orders": 1,
+        "rejected_buys": 156,
+        "closing_sales": [
+          {
+            "Id": 2,
+            "Time": 1795089671960,
+            "Price": "1802.99",
+            "Amount": "1.728",
+            "DealAmount": "1.728",
+            "AvgPrice": "1802.99",
+            "Type": 1,
+            "Offset": 0,
+            "Status": 1,
+            "Symbol": "ETH_USDT"
+          }
+        ],
+        "base_at_end": "1.272",
+        "quote_at_end": "13114.943606656",
+        "native_fees": "0.623113344",
+        "fifo_basis": "3123.06624",
+        "source_price_confirmation_offsets_ms": [
+          71817,
+          71917
+        ],
+        "closed_gross": "-7.49952",
+        "closed_after_fees": "-8.122633344"
+      }
+    }
+  ],
+  "results": [
+    {
+      "id": 5091,
+      "name": "LeeksReaper multi-asset Python",
+      "market": "BTCUSDT spot",
+      "source": "https://www.fmz.com/strategy/354232",
+      "period": "2026-10-01 12:00–12:20 UTC",
+      "interval": "Recorded FMZ Binance spot book and trade events",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "execution": 0,
+      "funding": 0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "trades": 0,
+      "unsettled": 59
+    },
+    {
+      "id": 5091,
+      "name": "LeeksReaper multi-asset Python",
+      "market": "ETHUSDT spot",
+      "source": "https://www.fmz.com/strategy/354232",
+      "period": "2026-10-01 12:00–12:20 UTC",
+      "interval": "Recorded FMZ Binance spot book and trade events",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 18119.68,
+      "gross": 0.0,
+      "fees": 0.0,
+      "after_fees": 0.0,
+      "execution": 0,
+      "funding": 0,
+      "net": 0.0,
+      "gross_dd": 0.0,
+      "gross_dd_pct": 0.0,
+      "fee_dd": 0.0,
+      "fee_dd_pct": 0.0,
+      "net_dd": 0.0,
+      "net_dd_pct": 0.0,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "trades": 0,
+      "unsettled": 1
+    },
+    {
+      "id": 5091,
+      "name": "LeeksReaper multi-asset Python",
+      "market": "BTCUSDT spot",
+      "source": "https://www.fmz.com/strategy/354232",
+      "period": "2026-11-19 12:00–12:20 UTC",
+      "interval": "Recorded FMZ Binance spot book and trade events",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 10000.0,
+      "gross": -0.3255724,
+      "fees": 0.0,
+      "after_fees": -0.3255724,
+      "execution": 0,
+      "funding": 0,
+      "net": -0.3255724,
+      "gross_dd": 0.3255724,
+      "gross_dd_pct": 3.255724e-05,
+      "fee_dd": 0.3255724,
+      "fee_dd_pct": 3.255724e-05,
+      "net_dd": 0.3255724,
+      "net_dd_pct": 3.255724e-05,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "trades": 1,
+      "unsettled": 76
+    },
+    {
+      "id": 5091,
+      "name": "LeeksReaper multi-asset Python",
+      "market": "ETHUSDT spot",
+      "source": "https://www.fmz.com/strategy/354232",
+      "period": "2026-11-19 12:00–12:20 UTC",
+      "interval": "Recorded FMZ Binance spot book and trade events",
+      "quote_currency": "USDT",
+      "currency_decimal_places": 8,
+      "starting_equity": 15421.99,
+      "gross": -7.49952,
+      "fees": 0.623113344,
+      "after_fees": -8.122633344,
+      "execution": 0,
+      "funding": 0,
+      "net": -8.122633344,
+      "gross_dd": 7.49952,
+      "gross_dd_pct": 0.0004862874376134338,
+      "fee_dd": 8.122633344,
+      "fee_dd_pct": 0.0005266916490024958,
+      "net_dd": 8.122633344,
+      "net_dd_pct": 0.0005266916490024958,
+      "gross_wins": 0,
+      "fee_wins": 0,
+      "net_wins": 0,
+      "trades": 1,
+      "unsettled": 1
+    }
+  ]
+}

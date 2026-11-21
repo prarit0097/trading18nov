@@ -1,0 +1,68 @@
+{
+  "schema": "FMZ 4429 default tradable universe and two-symbol diagnostic",
+  "source": "https://www.fmz.com/strategy/196445",
+  "source_sha256": "a2be33c927d74469f46ff16cb03923cdd12f30a6a56a2fff9234cad0ef4d3a68",
+  "default_basket_assets": [
+    "IOST",
+    "TRX",
+    "XLM",
+    "QTUM",
+    "DASH",
+    "ADA",
+    "XMR",
+    "ZEC",
+    "ATOM",
+    "IOTA",
+    "NEO",
+    "ONT",
+    "XRP",
+    "VET",
+    "EOS",
+    "ETC",
+    "LTC"
+  ],
+  "btc_benchmark_for_reference": true,
+  "plain_js_parser": "Illegal top-level return statement",
+  "valid_function_body": true,
+  "two_asset_controls": [
+    {
+      "quotes": {
+        "BTC": 100,
+        "ETH": 80
+      },
+      "index_type": "NaN",
+      "attempts": []
+    },
+    {
+      "quotes": {
+        "BTC": 100,
+        "ETH": 120
+      },
+      "index_type": "NaN",
+      "attempts": []
+    },
+    {
+      "quotes": {
+        "BTC": 100,
+        "ETH": 100
+      },
+      "index_type": "Infinity",
+      "attempts": [
+        {
+          "symbol": "ETH",
+          "side": "buy",
+          "valueType": "Infinity",
+          "finite": false
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    [
+      4429,
+      "Pending - archived BTC/ETH order scope ineligible",
+      "The 17 authored tradable symbols contain neither BTC nor ETH. BTC is added as a valuation reference only. A two-symbol override has a zero divisor after deleting the top and bottom constituent. A larger author-supported custom basket with both target instruments needs separately verified books, settings and settlement."
+    ]
+  ],
+  "results": []
+}
